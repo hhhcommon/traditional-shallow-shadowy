@@ -1,0 +1,2054 @@
+<!DOCTYPE html>
+<html lang='zh-CN'>
+<head>
+<title>README.md · 翔妖除魔/ZhiHuDaily-Swift - 码云 Gitee.com</title>
+<link href="https://assets.gitee.com/assets/favicon-9007bd527d8a7851c8330e783151df58.ico" rel="shortcut icon" type="image/vnd.microsoft.icon" />
+<meta content='gitee.com/xycm/ZhiHuDaily-Swift git https://gitee.com/xycm/ZhiHuDaily-Swift.git' name='go-import'>
+<meta charset='utf-8'>
+<meta content='always' name='referrer'>
+<meta content='码云' property='og:site_name'>
+<meta content='Object' property='og:type'>
+<meta content='http://gitee.com/xycm/ZhiHuDaily-Swift/blob/master/README.md' property='og:url'>
+<meta content='https://gitee.com/static/images/logo_themecolor.png' itemprop='image' property='og:image'>
+<meta content='README.md · 翔妖除魔/ZhiHuDaily-Swift - 码云 Gitee.com' itemprop='name' property='og:title'>
+<meta content='码云(gitee.com)是 OSCHINA.NET 推出的代码托管平台，支持 Git 和 SVN，提供免费的私有仓库托管。目前已有超过 500 万的开发者选择码云。' property='og:description'>
+<meta content='码云,代码托管,git,Git@OSC,gitee.com,开源,内源,项目管理,版本控制,开源代码,代码分享,项目协作,开源项目托管,免费代码托管,Git代码托管,Git托管服务' name='Keywords'>
+<meta content='个人练习swift用的 知乎日报的 IOS 客户端' itemprop='description' name='Description'>
+
+<meta content="IE=edge" http-equiv="X-UA-Compatible" />
+<meta content="authenticity_token" name="csrf-param" />
+<meta content="hfqRCnqMVwvxlD+68Kl0rG77XHoKJAV3cHpXsY18i0Q=" name="csrf-token" />
+
+<link href="https://assets.gitee.com/assets/application-4353e40c527157901930256fb2cba2d4.css" media="screen" rel="stylesheet" />
+<script>
+//<![CDATA[
+window.gon = {};gon.locale="zh-CN";gon.sentry_dsn=null;gon.baidu_register_hm_push=null;gon.info={"controller_path":"blob","action_name":"show","current_user":false};gon.tour_env={"current_user":null,"action_name":"show","original_url":"http://gitee.com/xycm/ZhiHuDaily-Swift/blob/master/README.md","controller_path":"blob"};gon.http_clone="https://gitee.com/xycm/ZhiHuDaily-Swift.git";gon.user_project="xycm/ZhiHuDaily-Swift";gon.manage_branch="管理分支";gon.manage_tag="管理标签";gon.enterprise_id=0;gon.create_reaction_path="/xycm/ZhiHuDaily-Swift/reactions";gon.ref="master";
+//]]>
+</script>
+<script src="https://assets.gitee.com/assets/static/sentry-5.1.0-109ee3d8895a239331efcf947ba7f5d8.js"></script>
+<script src="https://assets.gitee.com/assets/application-25134bf44f1dbb308bb450bdb036a1cc.js"></script>
+<script src="https://assets.gitee.com/assets/lib/jquery.timeago.zh-CN-9c36ca7c4899a28168320613879d208a.js"></script>
+
+<link href="https://assets.gitee.com/assets/projects/application-c4d2b90e83d054a150b44a0e5a32f7c5.css" media="screen" rel="stylesheet" />
+<script src="https://assets.gitee.com/assets/projects/app-06d07e23f4df11285e052fe9499ae8ba.js"></script>
+
+<script src="//res.wx.qq.com/open/js/jweixin-1.2.0.js"></script>
+<script>
+  var title = document.title.replace(/( - Gitee| - 码云)$/, '')
+      imgUrl = '';
+  
+  document.addEventListener('DOMContentLoaded', function(event) {
+    var imgUrlEl = document.querySelector('.readme-box .markdown-body > img, .readme-box .markdown-body :not(a) > img');
+    imgUrl = imgUrlEl && imgUrlEl.getAttribute('src');
+  
+    if (!imgUrl) {
+      imgUrlEl = document.querySelector('meta[itemprop=image]');
+      imgUrl = imgUrlEl && imgUrlEl.getAttribute('content'); 
+      imgUrl = imgUrl || "https://gitee.com/static/images/logo_themecolor.png";
+    }
+  
+    wx.config({
+      debug: false,
+      appId: "wxff219d611a159737",
+      timestamp: "1586737551",
+      nonceStr: "8cf6c744ade9ad3b7fbe2c681ee09334",
+      signature: "e35dadfffb13d5758c352a222a3bfe57b5b9d073",
+      jsApiList: [
+        'onMenuShareTimeline',
+        'onMenuShareAppMessage'
+      ]
+    });
+  
+    wx.ready(function () {
+      wx.onMenuShareTimeline({
+        title: title, // 分享标题
+        link: "https://gitee.com/xycm/ZhiHuDaily-Swift/blob/master/README.md", // 分享链接，该链接域名或路径必须与当前页面对应的公众号JS安全域名一致
+        imgUrl: imgUrl // 分享图标
+      });
+      wx.onMenuShareAppMessage({
+        title: title, // 分享标题
+        link: "https://gitee.com/xycm/ZhiHuDaily-Swift/blob/master/README.md", // 分享链接，该链接域名或路径必须与当前页面对应的公众号JS安全域名一致
+        desc: document.querySelector('meta[name=Description]').getAttribute('content'),
+        imgUrl: imgUrl // 分享图标
+      });
+    });
+    wx.error(function(res){
+      console.error('err', res)
+    });
+  })
+</script>
+
+<script type='text/x-mathjax-config'>
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    displayMath: [["$$","$$"],["\\[","\\]"]],
+    processEscapes: true,
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
+    ignoreClass: "container|files",
+    processClass: "markdown-body"
+  }
+});
+</script>
+<script src="https://assets.gitee.com/uploads/resources/MathJax-2.7.2/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+<script>
+  (function () {
+    var messages = {
+      'zh-CN': {
+        addResult: '增加 <b>{term}</b>',
+        count: '已选择 {count}',
+        maxSelections: '最多 {maxCount} 个选择',
+        noResults: '未找到结果',
+        serverError: '连接服务器时发生错误'
+      },
+      'zh-TW': {
+        addResult: '增加 <b>{term}</b>',
+        count: '已選擇 {count}',
+        maxSelections: '最多 {maxCount} 個選擇',
+        noResults: '未找到結果',
+        serverError: '連接服務器時發生錯誤'
+      }
+    }
+  
+    if (messages[gon.locale]) {
+      $.fn.dropdown.settings.message = messages[gon.locale]
+    }
+  }());
+</script>
+
+<!--[if lt IE 10]>
+<script>
+    window.location.href = "/incompatible.html";
+</script>
+<![endif]-->
+</head>
+
+<body class='git-project lang-zh-CN'>
+<header class='common-header fixed noborder' id='git-header-nav'>
+<div class='ui container'>
+<div class='ui menu header-menu'>
+<div class='git-nav-expand-bar'>
+<i class='iconfont icon-mode-table'></i>
+</div>
+<div class='gitee-nav__sidebar'>
+<div class='gitee-nav__sidebar-container'>
+<div class='gitee-nav__sidebar-top'>
+<div class='gitee-nav__avatar-box'></div>
+<div class='gitee-nav__buttons-box'>
+<a class="ui button small fluid orange" href="/login">登录</a>
+<a class="ui button small fluid basic is-register" href="/signup">注册</a>
+</div>
+</div>
+<div class='gitee-nav__sidebar-middle'>
+<div class='gitee-nav__sidebar-list'>
+<ul>
+<li class='gitee-nav__sidebar-item'>
+<a href="/explore"><i class='iconfont icon-ic-discover'></i>
+<span class='gitee-nav__sidebar-name'>开源软件</span>
+</a></li>
+<li class='gitee-nav__sidebar-item'>
+<a href="/enterprises"><i class='iconfont icon-ic-enterprise'></i>
+<span class='gitee-nav__sidebar-name'>企业版</span>
+</a></li>
+<li class='gitee-nav__sidebar-item'>
+<a href="/education"><i class='iconfont icon-ic-education'></i>
+<span class='gitee-nav__sidebar-name'>高校版</span>
+</a></li>
+<li class='gitee-nav__sidebar-item split-line'></li>
+<li class='gitee-nav__sidebar-item'>
+<a href="/search"><i class='iconfont icon-ic-search'></i>
+<span class='gitee-nav__sidebar-name'>搜索</span>
+</a></li>
+<li class='gitee-nav__sidebar-item'>
+<a href="/help"><i class='iconfont icon-help-circle'></i>
+<span class='gitee-nav__sidebar-name'>帮助中心</span>
+</a></li>
+<li class='gitee-nav__sidebar-item'>
+<a href="/terms"><i class='iconfont icon-file'></i>
+<span class='gitee-nav__sidebar-name'>使用条款</span>
+</a></li>
+<li class='gitee-nav__sidebar-item'>
+<a href="/about_us"><i class='iconfont icon-issuepx'></i>
+<span class='gitee-nav__sidebar-name'>关于我们</span>
+</a></li>
+</ul>
+</div>
+</div>
+<div class='gitee-nav__sidebar-bottom'>
+<div class='gitee-nav__sidebar-close-button'>
+<i class='fa fa-angle-double-left'></i>
+</div>
+</div>
+</div>
+</div>
+
+<div class='item gitosc-logo'>
+<a href="/"><img alt='码云 Gitee — 基于 Git 的代码托管和研发协作平台' class='ui inline image' height='28' src='/static/images/logo.svg?t=158106664' title='码云 Gitee — 基于 Git 的代码托管和研发协作平台' width='95'>
+<img alt='码云 Gitee — 基于 Git 的代码托管和研发协作平台' class='ui inline black image' height='28' src='/static/images/logo-black.svg?t=158106664' title='码云 Gitee — 基于 Git 的代码托管和研发协作平台' width='95'>
+</a></div>
+<a class="item " href="/explore" title="开源软件">开源软件
+</a><a class="item " href="/enterprises" title="企业版">企业版
+<sup class='ui red label'>
+特惠
+</sup>
+</a><a class="item " href="/education" title="高校版">高校版
+</a><a class="item" href="https://blog.gitee.com/" id="gitee-blog" target="_blank" title="博客">博客
+</a><div class='center responsive-logo'>
+<a href="/"><img alt='码云 Gitee — 基于 Git 的代码托管和研发协作平台' class='ui inline image' height='24' src='/static/images/logo.svg?t=158106664' title='码云 Gitee — 基于 Git 的代码托管和研发协作平台' width='85'>
+<img alt='码云 Gitee — 基于 Git 的代码托管和研发协作平台' class='ui inline black image' height='24' src='/static/images/logo-black.svg?t=158106664' title='码云 Gitee — 基于 Git 的代码托管和研发协作平台' width='85'>
+</a></div>
+<div class='right menu userbar' id='git-nav-user-bar'>
+<form accept-charset="UTF-8" action="/search" class="ui item" data-text-filter="搜索格式不正确" data-text-require="搜索关键字不能少于1个" id="navbar-search-form" method="get"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /></div>
+<input id="navbar-search-type" name="type" type="hidden" />
+<input id="fork_filter" name="fork_filter" type="hidden" value="on" />
+<div class='ui search'>
+<input class="prompt" id="navbar-search-input" name="q" placeholder="搜索项目" type="text" value="" />
+</div>
+</form>
+
+<script>
+  var can_search_in_repo = 1,
+      repo = "VGtSRmQwOUVUVFZaVkdNeVRUSlpQV0UzTmpObWE3NjNm",
+      reponame = "xycm/ZhiHuDaily-Swift";
+  
+  $(function() {
+    var $search = $('#navbar-search-form .ui.search');
+    $search.search({
+      apiSettings: {
+        url: '/search/relative_project?q={query}',
+        onResponse: function (res) {
+          if (res && res.status === 200 && res.data) {
+            var query = $search.search('get value');
+  
+            res.data.map(function (item) {
+              item.path_ns = '/' + item.path_ns;
+              item.icon = 'iconfont icon-project-public';
+            });
+            res.data.unshift({
+              name_ns: "在全站搜索 <b class='hl'>" + query +"</b> 相关项目",
+              path_ns: '/search?fork_filter=on&q=' + query,
+              icon: 'iconfont icon-search'
+            });
+            if(can_search_in_repo == 1) {
+              res.data.unshift({
+                name_ns: "在当前仓库搜索 <b class='hl'>" + query +"</b> 相关代码",
+                path_ns: '/search?type=code&q=' + query + '&repo=' + repo + '&reponame=' + reponame,
+                icon: 'iconfont icon-search'
+              });
+            }
+            return res;
+          } else {
+            return { data: [] };
+          }
+        }
+      },
+      fields: {
+        results: 'data',
+        description: 'name_ns',
+        url: 'path_ns',
+        icon: 'icon'
+      },
+      minCharacters: 1,
+      maxResults: 10,
+      searchDelay: 120,
+      showNoResults: false,
+      transition: 'fade'
+    });
+  });
+</script>
+
+<a class="item git-nav-user__login-item" href="/login">登录
+</a><a class="item git-nav-user__register-item" href="/signup">注册
+</a><script>
+  $('.destroy-user-session').on('click', function() {
+    $.cookie('access_token', null, { path: '/' });
+  })
+</script>
+
+</div>
+</div>
+</div>
+</header>
+<script>
+  Gitee.initNavbar()
+  Gitee.initRepoRemoteWay()
+</script>
+
+<!--[if lt IE 10]>
+<script>
+  window.location.href = "/incompatible.html"
+</script>
+<![endif]-->
+
+<div class='fixed-notice-infos'>
+<div class='all-messages'>
+<div class='ui info message' id='git-bulletin'>
+<a href=https://blog.gitee.com/2020/04/07/gitee-go/ target='_blank'>Gitee 企业版上线 DevOps 工具「Gitee Go」</a>
+<i class='icon remove' id='remove-bulletin'></i>
+</div>
+</div>
+<div class='ui container'>
+<div class='flash-messages' id='messages-container'></div>
+</div>
+<script>
+  (function() {
+    $(function() {
+      var $error_box, alertTip, notify_content, notify_options, template;
+      template = '<div data-notify="container" class="ui {0} message" role="alert">' + '<i data-notify="dismiss" class="close icon"></i>' + '<span data-notify="message">{2}</span>' + '</div>';
+      notify_content = null;
+      notify_options = {};
+      alertTip = '';
+      $error_box = $(".flash_error.flash_error_box");
+      if (notify_options.type === 'error' && $error_box.length > 0 && !$.isEmptyObject(notify_content.message)) {
+        if (notify_content.message === 'captcha_fail') {
+          alertTip = "验证码不正确";
+        } else if (notify_content.message === 'captcha_expired') {
+          alertTip = "验证码已过期，请点击刷新";
+        } else if (notify_content.message === 'not_found_in_database') {
+          alertTip = "帐号或者密码错误";
+        } else if (notify_content.message === 'not_found_and_show_captcha') {
+          alertTip = "帐号或者密码错误";
+        } else if (notify_content.message === 'phone_captcha_fail') {
+          alertTip = "手机验证码不通过";
+        } else {
+          alertTip = notify_content.message;
+        }
+        return $error_box.html(alertTip).show();
+      } else if (notify_content) {
+        if ("show" === 'third_party_binding') {
+          return $('#third_party_binding-message').html(notify_content.message).addClass('ui message red');
+        }
+        notify_options.delay = 3000;
+        notify_options.template = template;
+        notify_options.offset = {
+          x: 10,
+          y: 30
+        };
+        notify_options.element = '#messages-container';
+        return $.notify(notify_content, notify_options);
+      }
+    });
+  
+  }).call(this);
+</script>
+
+</div>
+<script>
+  (function() {
+    $(function() {
+      var setCookie;
+      setCookie = function(name, value) {
+        $.cookie(name, value, {
+          path: '/',
+          expires: 365
+        });
+      };
+      $('#remove-bulletin, #remove-bulletin-dashboard').on('click', function() {
+        setCookie('remove_bulletin', "gitee-maintain-1586321954");
+        $('#git-bulletin').hide();
+      });
+      $('#remove-member-bulletin').on('click', function() {
+        setCookie('remove_member_bulletin', "gitee_member_bulletin");
+        $(this).parent().hide();
+      });
+      return $('#remove-gift-bulletin').on('click', function() {
+        setCookie('remove_gift_bulletin', "gitee-gift-bulletin");
+        $(this).parent().hide();
+      });
+    });
+  
+  }).call(this);
+</script>
+<script>
+  function closeMessageBanner(pthis, type, val) {
+    var json = {}
+  
+    val = typeof val === 'undefined' ? null : val
+    $(pthis).parent().remove()
+    if (type === 'out_of_enterprise_member') {
+      json = {type: type, data: val}
+    } else if (type === 'enterprise_overdue') {
+      json = {type: type, data: val}
+    }
+    $.post('/profile/close_flash_tip', json)
+  }
+</script>
+
+<div class='site-content'>
+<div class='git-project-header'>
+<div class='fixed-notice-infos'>
+<div class='ui info icon floating message green' id='fetch-ok' style='display: none'>
+<div class='content'>
+<div class='header status-title'>
+<i class='info icon status-icon'></i>
+代码拉取完成，页面将自动刷新
+</div>
+</div>
+</div>
+<div class='ui info icon floating message error' id='fetch-error' style='display: none'>
+<div class='content'>
+<div class='header status-title'>
+<i class='info icon status-icon'></i>
+<span class='error_msg'></span>
+</div>
+</div>
+</div>
+</div>
+<div class='ui container'>
+<div class='git-project-categories'>
+<a href="/explore">开源项目</a>
+<span class='symbol'>></span>
+<a href="/explore/mobile-develop">手机/移动开发</a>
+<span class='symbol'>></span>
+<a href="/explore/mobile-app">移动App</a>
+<span class='symbol and-symbol'>&</span>
+</div>
+
+<div class='git-project-header-details'>
+<div class='git-project-header-container'>
+<div class='git-project-header-actions'>
+<span class='basic ui buttons pointing top left dropdown metrics-radar'>
+<div class='ui button project-radar'>
+<i class='iconfont icon-radar'></i>
+指数
+</div>
+<div class='ui button action-social-count exponent-total-sorce'>
+0
+</div>
+<div class='menu radar'>
+<div class='item radar-menu'>
+<div class='hide' data-url='/xycm/ZhiHuDaily-Swift/project_radars' id='metrics-radar'>
+<div class='title'>
+<div class='fisrt-title'>
+<div class='project-name' title='ZhiHuDaily-Swift'>
+ZhiHuDaily-Swift
+</div>
+<div class='gitee-exponent'>
+<div class='text'></div>
+<div class='exponent-score'></div>
+</div>
+</div>
+<div class='total-percent'>
+<div class='percent-header'></div>
+<div class='percent-score'></div>
+<div class='percent-end'></div>
+</div>
+</div>
+<div class='wrap'></div>
+<div class='project-radar-list'>
+<div class='descript-contianer'>
+<div class='descript-title'>
+<p>代码活跃度</p>
+<p>社区活跃度</p>
+<p>团队健康</p>
+<p>流行趋势</p>
+<p>影响力</p>
+</div>
+<div class='descript'>
+<p>：与代码提交频次相关</p>
+<p>：与项目和用户的issue、pr互动相关</p>
+<p>：与团队成员人数和稳定度相关</p>
+<p>：与项目近期受关注度相关</p>
+<p>：与项目的star、下载量等社交指标相关</p>
+</div>
+</div>
+</div>
+<div class='finaltime'></div>
+</div>
+<script src="https://assets.gitee.com/assets/skill_radar/rep_app-301ecccea9b1eac212beffa1823bf8c7.js"></script>
+
+</div>
+</div>
+</span>
+<div class='ui tiny modal project-donate-modal' id='project-donate-modal'>
+<i class='iconfont icon-close close'></i>
+<div class='header'>捐赠</div>
+<div class='content'>
+捐赠前请先登录
+</div>
+<div class='actions'>
+<a class='ui blank button cancel'>取消</a>
+<a class='ui orange ok button' href='/login'>前往登录</a>
+</div>
+</div>
+<div class='ui small modal wepay-qrcode'>
+<i class='iconfont icon-close close'></i>
+<div class='header'>
+扫描微信二维码支付
+<span class='wepay-cash'></span>
+</div>
+<div class='content weqcode-center'>
+<img id='wepay-qrcode' src=''>
+</div>
+<div class='actions'>
+<div class='ui cancel blank button'>取消</div>
+<div class='ui ok orange button'>
+支付完成
+</div>
+</div>
+</div>
+<div class='ui mini modal' id='confirm-alipay-modal'>
+<div class='header'>支付提示</div>
+<div class='content'>
+将跳转至支付宝完成支付
+</div>
+<div class='actions'>
+<div class='ui approve orange button'>
+确定
+</div>
+<div class='ui blank cancel button'>
+取消
+</div>
+</div>
+</div>
+
+<span class='ui basic buttons watch-container'>
+<a class="ui button watch" href="/login" title="你必须登录后才可以watch一个仓库"><i class='iconfont icon-watch'></i>
+Watch
+</a><a class="ui button action-social-count" href="/xycm/ZhiHuDaily-Swift/watchers" title="155">155
+</a></span>
+<span class='ui basic buttons star-container'>
+<a class="ui button star" href="/login" title="你必须登录后才可以star一个仓库"><i class='iconfont icon-star'></i>
+Star
+</a><a class="ui button action-social-count" href="/xycm/ZhiHuDaily-Swift/stargazers" title="438">438
+</a></span>
+<span class='ui basic buttons fork-container' title='无权 Fork 此仓库'>
+<a class="ui button fork" href="/login" title="你必须登录后才可以fork一个仓库"><i class='iconfont icon-fork'></i>
+Fork
+</a><a class="ui button action-social-count disabled-style" href="/xycm/ZhiHuDaily-Swift/members" title="155">155
+</a></span>
+</div>
+<h2 class='git-project-title'>
+<span class="project-title"><i class="project-icon iconfont icon-project-public" title="这是一个公开仓库"></i> <a class="author" href="/xycm" title="翔妖除魔">翔妖除魔</a> / <a class="repository" href="/xycm/ZhiHuDaily-Swift" style="padding-bottom: 0px" target="" title="ZhiHuDaily-Swift">ZhiHuDaily-Swift</a></span><span class="project-badges"><a class="ui small label proj-language" href="/explore/all?lang=Swift" target="_blank" title="主要编程语言">Swift</a><a class="git-project-recommend-badge" href="/explore" title="已被推荐"><i class='iconfont icon-recommended'></i>
+</a></span>
+<input id="recomm_at" name="recomm_at" type="hidden" value="2015-06-12 05:42" />
+<input id="project_title" name="project_title" type="hidden" value="翔妖除魔/ZhiHuDaily-Swift" />
+</h2>
+</div>
+</div>
+</div>
+<div class='row' id='import-result-message' style='padding-top: 0px; display: none'>
+<div class='sixteen wide column'>
+<div class='ui icon yellow message status-color'>
+<i class='info icon status-icon' style='width:60px;padding-right:12px;'></i>
+<i class='close icon'></i>
+<div class='header status-title'>
+同步状态
+</div>
+<span class='status-message'></span>
+</div>
+</div>
+</div>
+<script>
+  var title_import_url = "false";
+  var title_post_url = "/xycm/ZhiHuDaily-Swift/update_import";
+  var title_fork_url = "/xycm/ZhiHuDaily-Swift/sync_fork";
+  var title_project_path = "ZhiHuDaily-Swift";
+  var title_p_name = "ZhiHuDaily-Swift";
+  var title_p_id= "410839";
+  var title_description = "个人练习swift用的 知乎日报的 IOS 客户端";
+  var title_form_authenticity_token = "hfqRCnqMVwvxlD+68Kl0rG77XHoKJAV3cHpXsY18i0Q=";
+  var watch_type = "unwatch";
+  
+  $('.metrics-radar').dropdown({ action: 'nothing' });
+  $('.js-project-watch').dropdown('set selected', watch_type);
+  $('.checkbox.sync-wiki').checkbox();
+</script>
+<style>
+  i.loading {
+    -webkit-animation: icon-loading 1.2s linear infinite;
+    animation: icon-loading 1.2s linear infinite;
+  }
+  .qrcode_cs {
+    float: left;
+  }
+  .check-sync-wiki {
+    float: left;
+    height: 28px;
+    line-height: 28px;
+  }
+  .sync-wiki-warn {
+    color: #e28560;
+  }
+</style>
+
+<div class='git-project-nav'>
+<div class='ui container'>
+<div class='ui secondary pointing menu'>
+<a class="item active" href="/xycm/ZhiHuDaily-Swift"><i class='iconfont icon-code'></i>
+代码
+</a><a class="item " href="/xycm/ZhiHuDaily-Swift/issues"><i class='iconfont icon-issue'></i>
+Issues
+<span class='ui mini circular label'>
+6
+</span>
+</a><a class="item " href="/xycm/ZhiHuDaily-Swift/pulls"><i class='iconfont icon-pull-request'></i>
+Pull Requests
+<span class='ui mini circular label'>
+0
+</span>
+</a><a class="item " href="/xycm/ZhiHuDaily-Swift/attach_files"><i class='iconfont icon-annex'></i>
+附件
+<span class='ui mini circular label'>0</span>
+</a><a class="item " href="/xycm/ZhiHuDaily-Swift/wikis"><i class='iconfont icon-wiki'></i>
+Wiki
+<span class='ui mini circular label'>
+1
+</span>
+</a><a class="item  " href="/xycm/ZhiHuDaily-Swift/graph/master"><i class='iconfont icon-statistics'></i>
+统计
+</a><div class='item project-devops-item'>
+<div class='ui pointing top right dropdown project-devops-dropdown'>
+<div class='text'>
+<i class='iconfont icon-devops'></i>
+DevOps
+</div>
+<i class='dropdown icon'></i>
+<div class='menu' style='display:none'>
+<a class="item" href="https://gitee.com/help/articles/4285" target="_blank"><img alt="Baidu efficiency cloud" src="https://assets.gitee.com/assets/baidu_efficiency_cloud-81a98c2eb67fac83b1453ca3d2feb326.svg" />
+<div class='item-title'>
+百度效率云
+</div>
+</a><a class="item" href="https://gitee.com/help/articles/4193" target="_blank"><img alt="Jenkins for gitee" src="https://assets.gitee.com/assets/jenkins_for_gitee-554ec65c490d0f1f18de632c48acc4e7.png" />
+<div class='item-title'>
+Jenkins for Gitee
+</div>
+</a><a class="item" href="/xycm/ZhiHuDaily-Swift/paas/huaweicloud_cse"><img alt="Hauweiwfw" src="https://assets.gitee.com/assets/hauweiwfw-6d23ceba77e4f4b8c4498f3f5dc2fd99.png" />
+<div class='item-title'>
+华为微服务平台
+</div>
+</a><a class="item" href="/xycm/ZhiHuDaily-Swift/paas/select_platform"><img alt="Mopaas mini" src="https://assets.gitee.com/assets/mopaas_mini-e0279e635080d94a1a1d7a386c86ac5f.png" />
+<div class='item-title'>
+MoPaaS V3
+</div>
+</a></div>
+</div>
+</div>
+<div class='item'>
+<div class='ui pointing top right dropdown git-project-service'>
+<div class='text'>
+<i class='iconfont icon-service'></i>
+服务
+</div>
+<i class='dropdown icon'></i>
+<div class='menu' style='display:none'>
+<a class="item" href="/xycm/ZhiHuDaily-Swift/pages"><img alt="Logo en" src="/static/images/logo-en.svg" />
+<div class='item-title'>
+Gitee Pages
+</div>
+</a><a class="item" href="/xycm/ZhiHuDaily-Swift/quality_analyses?platform=sonar_qube"><img alt="Sonar mini" src="https://assets.gitee.com/assets/sonar_mini-5e1b54bb9f6c951d97fb778ef623afea.png" />
+<div class='item-title'>
+质量分析
+</div>
+</a><a class="item" href="/xycm/ZhiHuDaily-Swift/quality_analyses?platform=codesafe"><img alt="Codesafe mini" src="https://assets.gitee.com/assets/codesafe_mini-accbe1e555e9864c552620240d10e4de.png" width="100%" />
+<div class='item-title'>
+奇安信代码卫士
+</div>
+</a><button class='ui orange basic button quit-button' id='quiting-button'>
+我知道了，不再自动展开
+</button>
+</div>
+</div>
+</div>
+<div class='item right mr-0 pr-0'>
+
+</div>
+</div>
+</div>
+</div>
+<script>
+  $('.git-project-nav .ui.dropdown').dropdown({ action: 'nothing' });
+</script>
+<style>
+  .git-project-nav i.checkmark.icon {
+    color: green;
+  }
+  #quiting-button {
+    display: none;
+  }
+  
+  .git-project-nav .dropdown .menu.hidden:after {
+    visibility: hidden !important;
+  }
+</style>
+<script>
+  isSignIn = false
+  isClickGuide = false
+  $('#git-versions.dropdown').dropdown();
+  $.ajax({
+    url:"/xycm/ZhiHuDaily-Swift/access/add_access_log",
+    type:"GET"
+  });
+  $('#quiting-button').on('click',function() {
+    $('.git-project-service').click();
+    if (isSignIn) {
+      $.post("/projects/set_service_guide")
+    }
+    $.cookie("Serve_State", true, { expires: 3650, path: '/'})
+    $('#quiting-button').hide();
+  });
+  if (!(isClickGuide || $.cookie("Serve_State") == 'true')) {
+    $('.git-project-service').click()
+    $('#quiting-button').show()
+  }
+</script>
+
+</div>
+<div class='ui container'>
+<div class='register-guide'>
+<div class='register-container'>
+<div class='regist'>
+加入 Gitee
+</div>
+<div class='description'>
+与超过 500 万 开发者一起发现、参与优秀开源项目，私有仓库也完全免费 ：）
+</div>
+<a class="ui orange button free-registion" href="/signup?from=project-guide">免费加入</a>
+<div class='login'>
+已有帐号？
+<a href="/login?from=project-guide">立即登录</a>
+</div>
+</div>
+</div>
+
+<div class='git-project-content-wrapper'>
+<div class='git-project-content' id='git-project-content'>
+<div class='row'>
+<div class='git-project-desc-wrapper'>
+<div class='ui yellow message no-license' id='user-no-license-message'>
+该仓库未指定开源许可证，未经作者的许可，此代码仅用于学习，不能用于其他用途。
+<i class='help circle icon'></i>
+<div class='ui popup dark'>
+项目仓库所选许可证以仓库主分支所使用许可证为准
+</div>
+<i class='remove icon' id='remove-no-license-message'></i>
+</div>
+<div class='git-project-desc'>
+<div class='project-introduce'>
+<span class='git-project-desc-text'>
+个人练习swift用的 知乎日报的 IOS 客户端
+</span>
+<a class='hide spread' href='javascript:void(0);'>
+展开
+<i class='caret down icon'></i>
+</a>
+<a class='retract hide' href='javascript:void(0);'>
+收起
+<i class='caret up icon'></i>
+</a>
+<p class='git-project-homepage'>
+</p>
+</div>
+</div>
+<div class='git-project-desc-edit flex'>
+<div class='sixty-percent ui small input'>
+<input name='project[description]' placeholder='描述' type='text' value='个人练习swift用的 知乎日报的 IOS 客户端'>
+</div>
+<div class='twenty-percent ui small input'>
+<input data-regex-value='(^$)|(^(http|https):\/\/(([0-9]|[1-9][0-9]|1[0-9]{2}|2[0-4][0-9]|25[0-5])\.){3}([0-9]|[1-9][0-9]|1[0-9]{2}|2[0-4][0-9]|25[0-5]).*)|(^(http|https):\/\/[a-zA-Z0-9]+([_\-\.]{1}[a-zA-Z0-9]+)*\.[a-zA-Z]{2,10}(:[0-9]{1,10})?(\/.*)?$)' name='project[homepage]' placeholder='主页(eg: https://gitee.com)' type='text' value=''>
+</div>
+<div class='zero-percent'>
+<button class='ui orange button btn-save'>
+保存更改
+</button>
+<button class='ui button btn-cancel-edit'>
+取消
+</button>
+</div>
+</div>
+<script>
+  $(function () {
+    new ProjectInfoEditor({
+      el: '.git-project-desc-wrapper',
+      homepage: "",
+      description: "个人练习swift用的 知乎日报的 IOS 客户端",
+      url: "/xycm/ZhiHuDaily-Swift/update_description",
+      modalHelper: Gitee.modalHelper
+    })
+  })
+  
+  if (false) {
+    gon.project_new_blob_path = "/xycm/ZhiHuDaily-Swift/new/master/README.md"
+    bindShowModal({
+      el: $('.no-license .project-license__create'),
+      complete: function(data, modal) {
+        if (!data.haveNoChoice && !data.data) {
+          Flash.show('请选择一项开源许可证')
+        } else {
+          location.href = gon.project_new_blob_path + '?license=' + data.data
+        }
+      },
+      skip: function () {
+        location.href = gon.project_new_blob_path + '?license'
+      }
+    })
+  }
+  
+  $('i.help.circle.icon').popup({
+    popup: '.no-license .ui.popup',
+    position: 'right center'
+  })
+  
+  $('#remove-no-license-message').on('click', function(){
+    $.cookie("skip_repo_no_license_message_410839", 'hide', { expires: 365 })
+    $('#user-no-license-message').hide()
+    return
+  })
+</script>
+</div>
+
+</div>
+<div class='git-project-summary' id='git-project-summary'>
+<div class='summary-viewer'>
+<div class='viewer-wrapper'>
+<ul>
+<li>
+<a href="/xycm/ZhiHuDaily-Swift/commits/master"><i class='iconfont icon-commit'></i>
+<b>144</b>
+次提交
+</a></li>
+<li>
+<a href="/xycm/ZhiHuDaily-Swift/branches"><i class='iconfont icon-branches'></i>
+<b>1</b>
+个分支
+</a></li>
+<li>
+<a href="/xycm/ZhiHuDaily-Swift/tags"><i class='iconfont icon-tag'></i>
+<b>0</b>
+个标签
+</a></li>
+<li>
+<a href="/xycm/ZhiHuDaily-Swift/releases"><i class='iconfont icon-release'></i>
+<b>0</b>
+个发行版
+</a></li>
+<li>
+<a href="/xycm/ZhiHuDaily-Swift/contributors?ref=master"><i class='iconfont icon-collaborators'></i>
+<b class='contributor-count' data-url='/xycm/ZhiHuDaily-Swift/contributors_count?ref=master'></b>
+<span class='contributor-text'>
+正在获取贡献者
+</span>
+</a></li>
+</ul>
+<ul>
+</ul>
+</div>
+</div>
+<div class='summary-languages' title='点击查看语言占比'>
+</div>
+
+</div>
+<div class='git-project-bread' id='git-project-bread'>
+<div class='git-project-right-actions float-right'>
+<div class='d-inline-block' id='git-project-tree-actions'>
+<script>
+  $('.disabled-upload-readonly').popup({
+    content: "只读目录不允许上传文件",
+    className: {
+      popup: 'ui popup',
+    },
+    position: 'bottom center',
+  })
+  $('.disabled-create-folder').popup({
+    content: "只读目录不允许创建目录",
+    className: {
+      popup: 'ui popup',
+    },
+    position: 'bottom center',
+  })
+  $('.disabled-create-file').popup({
+    content: "只读目录不允许创建文件",
+    className: {
+      popup: 'ui popup',
+    },
+    position: 'bottom center',
+  })
+  $('.disabled-upload-readonly').click(() => {
+    return false
+  })
+  $('.disabled-create-folder').click(() => {
+    return false
+  })
+  $('.disabled-create-file').click(() => {
+    return false
+  })
+</script>
+<style>
+  .disabled-upload-readonly, .disabled-create-file, .disabled-create-folder {
+    background-color: #dcddde !important;
+    color: rgba(0, 0, 0, 0.4) !important;
+    opacity: 0.3 !important;
+    background-image: none !important;
+    -webkit-box-shadow: none !important;
+            box-shadow: none !important; }
+</style>
+
+</div>
+<div class='ui orange button' id='btn-dl-or-clone'>
+克隆/下载
+<i class='dropdown icon'></i>
+<div class='git-project-download-panel for-project ui bottom right popup'>
+<div class='ui small secondary pointing menu'>
+<a class='item active' data-text='' data-type='http' data-url='https://gitee.com/xycm/ZhiHuDaily-Swift.git'>HTTPS</a>
+<a class='item' data-text='' data-type='ssh' data-url='git@gitee.com:xycm/ZhiHuDaily-Swift.git'>SSH</a>
+<a class='item' data-text="该仓库未启用SVN访问，请仓库管理员前往&lt;a target='_blank' href=/xycm/ZhiHuDaily-Swift/settings&gt;【仓库设置】&lt;/a&gt;开启。" data-type='svn' data-url=''>SVN</a>
+<a class='item' data-text="该仓库未启用SVN访问，请仓库管理员前往&lt;a target='_blank' href=/xycm/ZhiHuDaily-Swift/settings&gt;【仓库设置】&lt;/a&gt;开启。" data-type='svn_ssh' data-url=''>SVN+SSH</a>
+</div>
+<div class='ui fluid right labeled small input download-url-panel'>
+<input id="project_clone_url" name="project_clone_url" onclick="focus();select()" readonly="readonly" type="text" value="https://gitee.com/xycm/ZhiHuDaily-Swift.git" />
+<div class='ui basic label'>
+<div class='ui small basic orange button' data-clipboard-target='#project_clone_url' id='btn-copy-clone-url'>
+复制
+</div>
+</div>
+</div>
+<div class='ui fluid right labeled warning-text forbid-warning-text'>
+
+</div>
+<hr>
+<a class="ui fluid download link button" href="javascript:void(0);"><i class='icon download'></i>
+下载ZIP
+</a><div class='download_repository_zip form modal tiny ui' id='unlanding-complaint-modal'>
+<i class='iconfont icon-close close'></i>
+<div class='header'>
+登录提示
+</div>
+<div class='container actions'>
+<div class='content'>
+该操作需登录码云帐号，请先登录后再操作。
+</div>
+<div class='ui orange icon large button ok'>
+立即登录
+</div>
+<div class='ui button blank cancel'>
+没有帐号，去注册
+</div>
+</div>
+</div>
+<script>
+  var $elm = $('.download');
+  
+  $elm.on('click', function() {
+    var modals = $("#unlanding-complaint-modal.download_repository_zip");
+    if (modals.length > 1) {
+      modals.eq(0).modal('show');
+    } else {
+      modals.modal('show');
+    }
+  })
+  $("#unlanding-complaint-modal.download_repository_zip").modal({
+    onDeny: function() {
+      window.location.href = "/signup?from=download_repository_zip";
+    },
+    onApprove: function() {
+      window.location.href = "/login?from=download_repository_zip";
+    }
+  })
+</script>
+
+<hr>
+<div class='ent-poster mt-1 toschina-content__hidden'>
+<h2>企业级软件开发协作工具</h2>
+<p>代码托管 项目管理 文档协作 完备安全策略</p>
+<a class="ui button orange" href="/enterprises?utm_source=g_download" target="_blank">了解更多</a>
+</div>
+</div>
+<script>
+  (function() {
+    var $btnCopy, $input, $item, $panel, clipboard, dataUrl, remoteWay;
+  
+    $input = $('#project_clone_url');
+  
+    remoteWay = '';
+  
+    clipboard = new Clipboard('#btn-copy-clone-url');
+  
+    $panel = $('.git-project-download-panel');
+  
+    $btnCopy = $('#btn-copy-clone-url');
+  
+    $panel.find('.menu > .item').on('click', function() {
+      var $item, dataUrl;
+      $item = $(this).addClass('active');
+      $item.siblings().removeClass('active');
+      dataUrl = $item.attr('data-url');
+      if (dataUrl) {
+        $panel.find('.download-url-panel').show();
+        $input.val(dataUrl);
+        $panel.find('.forbid-warning-text').html('');
+      } else {
+        $panel.find('.download-url-panel').hide();
+        $panel.find('.forbid-warning-text').html($item.attr('data-text') || '');
+      }
+      return $.cookie('remote_way', $item.attr('data-type'), {
+        expires: 365,
+        path: '/'
+      });
+    });
+  
+    $('body').on('click', '#btn-dl-or-clone', function(e) {
+      e.stopImmediatePropagation();
+      if ($(e.target)[0] === $panel[0] || $(e.target).closest($panel).length) {
+        return;
+      }
+      return $panel.transition('fade up');
+    });
+  
+    $('body').on('click', function() {
+      if ($panel.transition('is visible')) {
+        return $panel.transition('fade up');
+      }
+    });
+  
+    $item = $panel.find('.ui.menu .item').eq(0);
+  
+    $item.addClass('active').siblings().removeClass('active');
+  
+    dataUrl = $item.attr('data-url');
+  
+    if (dataUrl) {
+      $panel.find('.download-url-panel').show();
+      $input.val(dataUrl);
+      $panel.find('.forbid-warning-text').html('');
+    } else {
+      $panel.find('.download-url-panel').hide();
+      $panel.find('.forbid-warning-text').html($item.attr('data-text') || '');
+    }
+  
+    clipboard.on('success', function() {
+      $btnCopy.popup({
+        content: '已复制',
+        position: 'right center',
+        onHidden: function() {
+          return $btnCopy.popup('destroy');
+        }
+      });
+      return $btnCopy.popup('show');
+    });
+  
+    clipboard.on('error', function() {
+      $btnCopy.popup({
+        content: '复制失败，请手动复制',
+        position: 'right center',
+        onHidden: function() {
+          return $btnCopy.popup('destroy');
+        }
+      });
+      return $btnCopy.popup('show');
+    });
+  
+  }).call(this);
+</script>
+
+</div>
+</div>
+<div class='ui horizontal list'>
+<div class='item git-project-branch-item'>
+<input id="path" name="path" type="hidden" value="README.md" />
+<div class='ui top left pointing dropdown gradient button dropdown-has-tabs' id='git-project-branch'>
+<input id="ref" name="ref" type="hidden" value="master" />
+<div class='default text'>
+master
+</div>
+<i class='dropdown icon'></i>
+<div class='menu'>
+<div class='ui left icon search input'>
+<i class='iconfont icon-search'></i>
+<input placeholder='搜索分支' type='text'>
+</div>
+<div class='tab-menu'>
+<div class='tab-menu-action' data-tab='branches'>
+<a class="ui link button" href="/xycm/ZhiHuDaily-Swift/branches">管理</a>
+</div>
+<div class='tab-menu-action' data-tab='tags'>
+<a class="ui link button" href="/xycm/ZhiHuDaily-Swift/tags">管理</a>
+</div>
+<div class='tab-menu-item' data-placeholder='搜索分支' data-tab='branches'>
+分支 (1)
+</div>
+</div>
+<div class='tab scrolling menu' data-tab='branches'>
+<div class="item" data-value="master"><span>master</span></div>
+</div>
+</div>
+</div>
+<style>
+  .iconfont.icon-shieldlock {
+    color: #8c92a4;
+  }
+</style>
+
+<script>
+  $(function () {
+    Gitee.initTabsInDropdown($('#git-project-branch').dropdown({
+      fullTextSearch: true,
+      onChange: function (value, text) {
+        var path = $('#path').val();
+        var href = ['/xycm/ZhiHuDaily-Swift/tree', encodeURIComponent(value), path].join('/');
+        window.location.href = href;
+      }
+    }));
+    $('.protected-branch-popup').popup()
+  })
+</script>
+
+</div>
+<div class='item' id='git-project-root-actions'>
+<div class='repo-index repo-none-index' style='margin-left:0px;'>
+<div class='ui horizontal list repo-action-list'>
+<div class='item'>
+<div class='ui pointing right top dropdown gradient button' id='git-project-file'>
+<div class='text'>文件</div>
+<i class='dropdown icon'></i>
+<div class='menu'>
+<a class="item repo-action" href="/xycm/ZhiHuDaily-Swift/new/master/README.md" id="new_file_bread" title="新建文件">新建文件
+</a><div class='disabled item'>上传文件</div>
+<a class='item repo-action' id='search-files'>
+搜索文件
+</a>
+</div>
+</div>
+</div>
+<div class='item toschina-content__hidden'>
+<a class="ui gradient button webide" href="/-/ide/project/xycm/ZhiHuDaily-Swift/edit/master" target="_blank">Web IDE</a>
+</div>
+<div class='item toschina-content__hidden'>
+<a class="ui gradient button repo-action" href="/xycm/ZhiHuDaily-Swift/widget"><i class='iconfont icon-widget icon-orange'></i>
+挂件
+</a></div>
+</div>
+<script>
+  $('#git-project-file').dropdown({ action: 'hide' });
+</script>
+</div>
+
+</div>
+<div class='item breadcrumb_path path-breadcrumb-contrainer' id='git-project-breadcrumb'>
+<div class='ui breadcrumb path project-path-breadcrumb' id='path-breadcrumb'>
+<a class="section repo-name" data-direction="back" href="/xycm/ZhiHuDaily-Swift/tree/master" style="font-weight: bold">ZhiHuDaily-Swift
+</a><div class='divider'>
+/
+</div>
+<strong>
+README.md
+</strong>
+</div>
+
+
+</div>
+</div>
+</div>
+
+<style>
+  .ui.dropdown .menu > .header {
+    text-transform: none; }
+</style>
+<script>
+  $(document).ready(function () {
+    var $gitProjectSummary = $('#git-project-summary');
+    var $gitProjectLanguages = $gitProjectSummary.find('.summary-languages');
+    var $statsSwitcherWrapper = $gitProjectSummary.find('.viewer-wrapper');
+    var $contributorCount = $gitProjectSummary.find('.contributor-count');
+    var $contributorText = $gitProjectSummary.find('.contributor-text');
+    var contributorsCountUrl = $contributorCount.data('url');
+  
+    $gitProjectLanguages.on('click', function() {
+      $statsSwitcherWrapper.toggleClass('js-lang');
+    });
+  
+    $.ajax({
+      url: contributorsCountUrl,
+      method: 'GET',
+      success: function(data) {
+        if (data.status === 1) {
+          $contributorCount.text(data.contributors_count);
+          $contributorText.text('位贡献者')
+        } else {
+          $contributorText.text('获取失败')
+        }
+      }
+    });
+    var $tip = $('#apk-download-tip');
+    if (!$tip.length) {
+      return;
+    }
+    $tip.find('.btn-close').on('click', function () {
+      $tip.slideUp();
+    });
+  });
+  (function(){
+    function pathAutoRender() {
+      var $parent = $('#git-project-bread'),
+          $child = $('#git-project-bread').children('.ui.horizontal.list'),
+          mainWidth = 0;
+      $child.each(function (i,item) {
+        mainWidth += $(item).width()
+        });
+      $('.breadcrumb.path.fork-path').remove();
+      if (mainWidth > 995) {
+        $('#path-breadcrumb').hide();
+        $parent.append('<div class="ui breadcrumb path fork-path">' + $('#path-breadcrumb').html() + '<div/>')
+      } else {
+        $('#path-breadcrumb').show();
+      }
+    }
+    window.pathAutoRender = pathAutoRender;
+    pathAutoRender();
+  })();
+</script>
+
+<div class='row column tree-holder' id='tree-holder'>
+
+<div class='tree-content-holder' id='tree-content-holder'>
+<div class='file_holder'>
+<div class='file_title'>
+<div class='blob-header-title'>
+<div class='blob-description'>
+<i class="iconfont icon-file"></i>
+<span class='file_name' title='README.md'>
+README.md
+</span>
+<small>17.58 KB</small>
+</div>
+<div class='options'><div class='ui mini buttons basic'>
+<textarea id="blob_raw" name="blob_raw" style="display:none;">
+JAVA程序猿一枚,开始学习Swift一个多月,以前没有iOS的经验.在看了官方的文档和老镇的豆瓣电台视频后,想自己做一个东西来练手,因此有了这个东西.说实话iOS开发和JAVA开发区别还是很大的,最简单的就是IDE用起来各种不顺手...就更别说语法,思维,理念上的差别了.这方面也是需要我认真学习的.&#x000A;  &#x000A;在做的过程中,遇到了很多的问题,没想到一个看似很简单的东西,真要给它做像了,还是比较麻烦的,要学习的东西很多. 我现在只能尽量的把样子做像了,代码这些一团糟,毫无章法可言,很多思维都还是JAVA的思维,希望各位大神不要耻笑.等以后接触多了后,再来重构吧.  &#x000A;&#x000A;因为我没有入手开发者账号,因此我只在模拟器中运行了,并且是 iOS8和iphone6的模式下测试.估计选择其他的是有问题的.不过,貌似Xcode7支持非开发者真机调试了,这真是令开发大快人心的大好事.到时候我再来尝试兼容ipad,估计要改很多的地方.&#x000A;    &#x000A;&#x000A;#Screenshot&#x000A;[@新的截图太大(25MB),请点击此处查看](http://git.oschina.net/xycm/ZhiHuDaily-Swift/raw/master/screenshot-new.gif)  &#x000A;&#x000A;新增加了3D-Touch 功能:  &#x000A;![](http://git.oschina.net/xycm/ZhiHuDaily-Swift/raw/master/3d-touch-screenshot.gif) &#x000A;&#x000A;![alt text](http://git.oschina.net/xycm/ZhiHuDaily-Swift/raw/master/screenshot.gif &quot;程序运行截图 2015-06-12 09:51:26&quot;)&#x000A;&#x000A;#API 说明&#x000A;* API这里要感谢[@izzyleung](https://github.com/izzyleung/ZhihuDailyPurify/wiki/%E7%9F%A5%E4%B9%8E%E6%97%A5%E6%8A%A5-API-%E5%88%86%E6%9E%90 &quot;感谢&quot;)   , 给予了很大的帮助,基本上就是把他的分析稍微有些修改.感谢[@izzyleung](https://github.com/izzyleung/ZhihuDailyPurify/wiki/%E7%9F%A5%E4%B9%8E%E6%97%A5%E6%8A%A5-API-%E5%88%86%E6%9E%90 &quot;感谢&quot;)! [@izzyleung](https://github.com/izzyleung/ZhihuDailyPurify/wiki/%E7%9F%A5%E4%B9%8E%E6%97%A5%E6%8A%A5-API-%E5%88%86%E6%9E%90 &quot;感谢&quot;)! [@izzyleung](https://github.com/izzyleung/ZhihuDailyPurify/wiki/%E7%9F%A5%E4%B9%8E%E6%97%A5%E6%8A%A5-API-%E5%88%86%E6%9E%90 &quot;感谢&quot;)!重要的事情要说三遍.&#x000A;* 知乎日报的消息以 JSON 格式输出&#x000A;* 网址中 `api` 后数字代表 API 版本，过高或过低均会得到错误信息&#x000A;* 较老的接口（启动界面图像获取，最新消息，过往消息）中将数字 2 替换为 1.2 获得效果相同，替换为 1.1 获得的是老版本 API 输出的 JSON 格式（替换为更低，如 1.0，或更高，如 1.3，将会获得错误消息）&#x000A;* 以下所有 API 使用的 HTTP Method 均为 `GET`&#x000A;&#x000A;#API 分析&#x000A;--&#x000A;###1. 启动界面图像获取&#x000A;* URL: `http://news-at.zhihu.com/api/4/start-image/{aspec}`&#x000A;* `start-image` 后为图像分辨率，接受如下格式&#x000A;	* 320*432&#x000A;	* 480*728&#x000A;	* 720*1184&#x000A;	* 1080*1776&#x000A;* 响应实例:&#x000A;&#x000A;```json&#x000A;{&#x000A;	text: &quot;© Fido Dido&quot;,&#x000A;	img: &quot;http://p2.zhimg.com/10/7b/107bb4894b46d75a892da6fa80ef504a.jpg&quot;&#x000A;	} &#x000A;``` &#x000A;* 分析:  &#x000A;&#x000A;|字段名|备注|&#x000A;|---|---|&#x000A;| text |供显示的图片版权信息|&#x000A;|img|图像的URL地址|&#x000A;&#x000A;###2. 软件版本查询&#x000A;* Android:`http://news-at.zhihu.com/api/4/version/android/2.3.0`&#x000A;* IOS:`http://news-at.zhihu.com/api/4/version/ios/{version}`&#x000A;* URL 最后部分的数字代表所安装『知乎日报』的版本&#x000A;* 响应实例：&#x000A;	* 软件为最新版本时:&#x000A;	&#x000A;	```json&#x000A;	{&#x000A;	&quot;status&quot;: 0,&#x000A;	&quot;latest&quot;: &quot;2.2.0&quot;&#x000A;	}&#x000A;	```&#x000A;	&#x000A;	* 软件为较老版本时:&#x000A;	&#x000A;	```json&#x000A;	{&#x000A;	&quot;status&quot;: 1,&#x000A;	&quot;msg&quot;: &quot;【更新内容】（后略）&quot;,&#x000A;	&quot;latest&quot;: &quot;2.2.0&quot;&#x000A;	}&#x000A;	```&#x000A;* 分析:&#x000A;&#x000A;|字段名|备注|&#x000A;|---|---|&#x000A;| status |0 代表软件为最新版本，1 代表软件需要升级|&#x000A;| latest |软件最新版本的版本号（数字的第二段会比最新的版本号低 1）|&#x000A;| msg |仅出现在软件需要升级的情形下，提示用户升级软件的对话框中显示的消息|&#x000A;&#x000A;###3. 最新消息&#x000A;* URL:`http://news-at.zhihu.com/api/4/news/latest`&#x000A;* 响应实例:&#x000A;&#x000A;```json&#x000A;{&#x000A;	date: &quot;20140523&quot;,&#x000A;	stories: [&#x000A;	{&#x000A;	title: &quot;中国古代家具发展到今天有两个高峰，一个两宋一个明末（多图）&quot;,&#x000A;	ga_prefix: &quot;052321&quot;,&#x000A;	images: [&#x000A;	&quot;http://p1.zhimg.com/45/b9/45b9f057fc1957ed2c946814342c0f02.jpg&quot;&#x000A;	 ],&#x000A;	type: 0,&#x000A;	id: 3930445&#x000A;	},&#x000A;	...&#x000A;	],&#x000A;	top_stories: [&#x000A;	{&#x000A;	title: &quot;商场和很多人家里，竹制家具越来越多（多图）&quot;,&#x000A;	image: &quot;http://p2.zhimg.com/9a/15/9a1570bb9e5fa53ae9fb9269a56ee019.jpg&quot;,&#x000A;	ga_prefix: &quot;052315&quot;,&#x000A;	type: 0,&#x000A;	id: 3930883&#x000A;	},&#x000A;	...&#x000A;	]&#x000A;	}&#x000A;```&#x000A;* 分析&#x000A;&#x000A;|字段名|备注|&#x000A;|---|---|&#x000A;| date |日期|&#x000A;| stories |当日新闻|&#x000A;| -&gt; title |新闻标题|&#x000A;| -&gt; images |图像地址（官方 API 使用数组形式。目前暂未有使用多张图片的情形出现，曾见无 `images` 属性的情况，请在使用中注意 ）|&#x000A;| -&gt; ga_prefix |供 Google Analytics 使用|&#x000A;| -&gt; type | 作用未知|&#x000A;| -&gt; id | url 与 share_url 中最后的数字（应为内容的 id）|&#x000A;| -&gt; multipic | 消息是否包含多张图片（仅出现在包含多图的新闻中）|&#x000A;| top_stories | 界面顶部 ViewPager 滚动显示的显示内容（子项格式同上）|&#x000A;&#x000A;###4. 消息内容获取与离线下载&#x000A;* URL:`http://news-at.zhihu.com/api/4/news/{id}`&#x000A;* 响应实例:&#x000A;&#x000A;```json&#x000A;{&#x000A;    body: &quot;&lt;div class=\&quot;main-wrap content-wrap\&quot;&gt;\n&lt;div class=\&quot;headline\&quot;&gt;\n\n&lt;div class=\&quot;img-place-holder\&quot;&gt;&lt;/div&gt;\n\n\n\n&lt;/div&gt;\n\n&lt;div class=\&quot;content-inner\&quot;&gt;\n\n\n\n\n&lt;div class=\&quot;question\&quot;&gt; ... &lt;/div&gt;&quot;,&#x000A;    image_source: &quot;Yestone.com 版权图片库&quot;,&#x000A;    title: &quot;瞎扯 · 如何正确地吐槽&quot;,&#x000A;    image: &quot;http://pic2.zhimg.com/9fe062c07b11959a2dd47068e116a9d5.jpg&quot;,&#x000A;    share_url: &quot;http://daily.zhihu.com/story/4760976&quot;,&#x000A;    js: [],&#x000A;    recommenders: [&#x000A;        {&#x000A;            avatar: &quot;http://pic3.zhimg.com/449b2931521389e4fcbc31a0e2d9d896_m.jpg&quot;&#x000A;        },&#x000A;        {&#x000A;            avatar: &quot;http://pic1.zhimg.com/4e45f545ee8b194476d3131ca7f3a9c8_m.jpg&quot;&#x000A;        },&#x000A;        {&#x000A;            avatar: &quot;http://pic4.zhimg.com/6a682ab23_m.jpg&quot;&#x000A;        }&#x000A;    ],&#x000A;    ga_prefix: &quot;052606&quot;,&#x000A;    section: {&#x000A;        thumbnail: &quot;http://pic3.zhimg.com/a82322fc78dff305c3df43fcc4cb96c2.jpg&quot;,&#x000A;        id: 2,&#x000A;        name: &quot;瞎扯&quot;&#x000A;    },&#x000A;    type: 0,&#x000A;    id: 4760976,&#x000A;    css: [&#x000A;        &quot;http://news.at.zhihu.com/css/news_qa.auto.css?v=1edab&quot;&#x000A;    ]&#x000A;}&#x000A;```&#x000A;*分析:&#x000A;&#x000A;|字段名|备注|&#x000A;|---|---|&#x000A;| body |`HTML`格式的新闻内容|&#x000A;| image-source |图片的内容提供方。为了避免被起诉非法使用图片，在显示图片时最好附上其版权信息。|&#x000A;| title |新闻标题|&#x000A;| image |获得的图片同 `最新消息` 获得的图片分辨率不同。这里获得的是在文章浏览界面中使用的大图。|&#x000A;| share_url |供在线查看内容与分享至 SNS 用的 URL|&#x000A;| js | 供手机端的 WebView(UIWebView) 使用|&#x000A;| recommenders | 推荐者 |&#x000A;| -&gt; avatar | 推荐者的头像 |&#x000A;| ga_prefix | 供 Google Analytics 使用|&#x000A;| section | 栏目 |&#x000A;| -&gt; thumbnail | 缩略图 |&#x000A;| -&gt; id | 栏目id|&#x000A;| -&gt; name | 栏目名称 |&#x000A;| type | 新闻的类型|&#x000A;| id | 新闻的 id|&#x000A;| css | 供手机端的 WebView(UIWebView) 使用|&#x000A;&#x000A;**可知，知乎日报的文章浏览界面利用 WebView(UIWebView) 实现**&#x000A;&#x000A;* **特别注意**  &#x000A;在较为特殊的情况下，知乎日报可能将某个主题日报的站外文章推送至知乎日报首页。&#x000A;&#x000A;	* 响应实例:&#x000A;	&#x000A;	```json&#x000A;	{&#x000A;&quot;theme_name&quot;: &quot;电影日报&quot;,&#x000A;&quot;title&quot;: &quot;五分钟读懂明星的花样昵称：一美、法鲨……&quot;,&#x000A;&quot;share_url&quot;: &quot;http://daily.zhihu.com/story/3942319&quot;,&#x000A;&quot;js&quot;: [],&#x000A;&quot;ga_prefix&quot;: &quot;052921&quot;,&#x000A;&quot;editor_name&quot;: &quot;邹波&quot;,&#x000A;&quot;theme_id&quot;: 3,&#x000A;&quot;type&quot;: 1,&#x000A;&quot;id&quot;: 3942319,&#x000A;&quot;css&quot;: [&#x000A;&quot;http://news.at.zhihu.com/css/news_qa.6.css?v=b390f&quot;&#x000A;]&#x000A;}&#x000A;	```&#x000A;	&#x000A;	此时返回的 JSON 数据缺少 `body`，`iamge-source`，`image`，`js` 属性。多出 `theme_name`，`editor_name`，`theme_id` 三个属性。`type` 由 0 变为 1。&#x000A;&#x000A;###4.5 新闻推荐者信息&#x000A;* URL:`http://news-at.zhihu.com/api/4/story/#{id}/recommenders`&#x000A;* 这个返回的就是某一篇新闻的推荐者的详细信息.&#x000A;* 响应实例:&#x000A;&#x000A;```json&#x000A;{&#x000A;    &quot;items&quot;: [&#x000A;        {&#x000A;            &quot;index&quot;: 1,&#x000A;            &quot;recommenders&quot;: [&#x000A;                {&#x000A;                    &quot;bio&quot;: &quot;&quot;,&#x000A;                    &quot;zhihu_url_token&quot;: &quot;90b373201c03b47548dcac5832da1a95&quot;,&#x000A;                    &quot;id&quot;: 1162,&#x000A;                    &quot;avatar&quot;: &quot;http://pic1.zhimg.com/f81b942d0_m.jpg&quot;,&#x000A;                    &quot;name&quot;: &quot;Wang Chris&quot;&#x000A;                },&#x000A;                {&#x000A;                    &quot;bio&quot;: &quot;Phys2CS&quot;,&#x000A;                    &quot;zhihu_url_token&quot;: &quot;d2facf05b7138a6eb4631a161915f7d4&quot;,&#x000A;                    &quot;id&quot;: 629,&#x000A;                    &quot;avatar&quot;: &quot;http://pic3.zhimg.com/9dfd356e2f137540439448fa25ef0ea6_m.jpg&quot;,&#x000A;                    &quot;name&quot;: &quot;Badger&quot;&#x000A;                },&#x000A;                {&#x000A;                    &quot;bio&quot;: &quot;&quot;,&#x000A;                    &quot;zhihu_url_token&quot;: &quot;75a591efecfd4c22a6fc778a38a90f8d&quot;,&#x000A;                    &quot;id&quot;: 69,&#x000A;                    &quot;avatar&quot;: &quot;http://pic1.zhimg.com/428ce35d11440c08c83f46dbfe435a5c_m.jpg&quot;,&#x000A;                    &quot;name&quot;: &quot;One Two&quot;&#x000A;                },&#x000A;                {&#x000A;                    &quot;bio&quot;: &quot;重新做人&quot;,&#x000A;                    &quot;zhihu_url_token&quot;: &quot;4d2540e03e0e5e225f4817f7ff7fc389&quot;,&#x000A;                    &quot;id&quot;: 7895,&#x000A;                    &quot;avatar&quot;: &quot;http://pic3.zhimg.com/816934c948f5e3cc781ecda1ece08c3e_m.jpg&quot;,&#x000A;                    &quot;name&quot;: &quot;王RRR&quot;&#x000A;                },&#x000A;                {&#x000A;                    &quot;bio&quot;: &quot;金融菜鸟 音乐草根 技能点加歪&quot;,&#x000A;                    &quot;zhihu_url_token&quot;: &quot;b929aa5072baae224a74a18b5bd65376&quot;,&#x000A;                    &quot;id&quot;: 2576,&#x000A;                    &quot;avatar&quot;: &quot;http://pic4.zhimg.com/1814a1b987a44cc49a448268412dbe23_m.jpg&quot;,&#x000A;                    &quot;name&quot;: &quot;酷冰&quot;&#x000A;                },&#x000A;                {&#x000A;                    &quot;bio&quot;: &quot;你读书少，不骗你骗谁。&quot;,&#x000A;                    &quot;zhihu_url_token&quot;: &quot;1cd7424d0a7990aaff8e2ed24644992a&quot;,&#x000A;                    &quot;id&quot;: 369,&#x000A;                    &quot;avatar&quot;: &quot;http://pic3.zhimg.com/bbb689a7a_m.jpg&quot;,&#x000A;                    &quot;name&quot;: &quot;卞卡&quot;&#x000A;                },&#x000A;                {&#x000A;                    &quot;bio&quot;: &quot;智商捉不了鸡&quot;,&#x000A;                    &quot;zhihu_url_token&quot;: &quot;794c4d35096ad3dafb802124cdd83294&quot;,&#x000A;                    &quot;id&quot;: 5778,&#x000A;                    &quot;avatar&quot;: &quot;http://pic4.zhimg.com/131bb14f5a12920afc975b3833538027_m.jpg&quot;,&#x000A;                    &quot;name&quot;: &quot;二核桃&quot;&#x000A;                },&#x000A;                {&#x000A;                    &quot;bio&quot;: &quot;软件工程师&quot;,&#x000A;                    &quot;zhihu_url_token&quot;: &quot;93ce68e327ef290f84192014bbc168b2&quot;,&#x000A;                    &quot;id&quot;: 6519,&#x000A;                    &quot;avatar&quot;: &quot;http://pic2.zhimg.com/5d55b2e8d_m.jpg&quot;,&#x000A;                    &quot;name&quot;: &quot;戴威&quot;&#x000A;                }&#x000A;            ],&#x000A;            &quot;author&quot;: {&#x000A;                &quot;name&quot;: &quot;灿妞儿&quot;&#x000A;            }&#x000A;        },&#x000A;        {&#x000A;            &quot;index&quot;: 2,&#x000A;            &quot;recommenders&quot;: [&#x000A;                {&#x000A;                    &quot;bio&quot;: &quot;&quot;,&#x000A;                    &quot;zhihu_url_token&quot;: &quot;75a591efecfd4c22a6fc778a38a90f8d&quot;,&#x000A;                    &quot;id&quot;: 69,&#x000A;                    &quot;avatar&quot;: &quot;http://pic1.zhimg.com/428ce35d11440c08c83f46dbfe435a5c_m.jpg&quot;,&#x000A;                    &quot;name&quot;: &quot;One Two&quot;&#x000A;                }&#x000A;            ],&#x000A;            &quot;author&quot;: {&#x000A;                &quot;name&quot;: &quot;Badger&quot;&#x000A;            }&#x000A;        }&#x000A;    ],&#x000A;    &quot;item_count&quot;: 3&#x000A;}&#x000A;```&#x000A;&#x000A;* 分析:&#x000A;&#x000A;|字段名|备注|&#x000A;|---|---|&#x000A;| item_count |表示这篇日报里面有 几篇内容|&#x000A;| items |表示推荐者信息|&#x000A;| --&gt;index |表示这个推荐信息对应的是日报中的第几篇内容|&#x000A;| --&gt;recommenders |推荐者信息|&#x000A;| ----&gt;bio |推荐者的个性备注|&#x000A;| ----&gt;zhihu_url_token | 用户的token |&#x000A;| ----&gt;id | 用户id |&#x000A;| ----&gt;avatar | 用户头像|&#x000A;| ----&gt;name | 用户名 |&#x000A;| --&gt; author | 第几篇内容对应的作者 |&#x000A;| ----&gt; name | 第几篇内容对应的作者的名字|&#x000A;&#x000A;&#x000A;&#x000A;###5. 过往消息&#x000A;* URL:`http://news.at.zhihu.com/api/4/news/before/{date}`&#x000A;* 若果需要查询 11 月 18 日的消息，{date}的数字应为 20131119&#x000A;* 知乎日报的生日为 2013 年 5 月 19 日，若 {date}数字小于 20130520 ，只会接收到空消息&#x000A;* 响应实例：&#x000A;&#x000A;```json&#x000A;{&#x000A;	date: &quot;20131118&quot;,&#x000A;	stories: [&#x000A;	    {&#x000A;	        title: &quot;深夜食堂 · 我的张曼妮&quot;,&#x000A;	        ga_prefix: &quot;111822&quot;,&#x000A;	        images: [&#x000A;	            &quot;http://p4.zhimg.com/7b/c8/7bc8ef5947b069513c51e4b9521b5c82.jpg&quot;&#x000A;	        ],&#x000A;	        type: 0,&#x000A;	        id: 1747159&#x000A;	    },&#x000A;	...&#x000A;	]&#x000A;}&#x000A;&#x000A;```&#x000A;格式与前同，恕不再赘述&#x000A;&#x000A;###6. 新闻额外信息&#x000A;* URL: `http://news-at.zhihu.com/api/4/story-extra/#{id}`&#x000A;* 输入新闻的ID，获取对应新闻的额外信息，如评论数量，所获的『赞』的数量。&#x000A;* 响应实例：&#x000A;&#x000A;```json&#x000A;{&#x000A;&quot;long_comments&quot;: 0,&#x000A;&quot;popularity&quot;: 161,&#x000A;&quot;short_comments&quot;: 19,&#x000A;&quot;comments&quot;: 19,&#x000A;}&#x000A;```&#x000A;* 分析:&#x000A;&#x000A;|字段名|备注|&#x000A;|---|---|&#x000A;| long_comments  |长评论总数|&#x000A;| popularity |点赞总数|&#x000A;| short_comments| 短评论总数|&#x000A;| comments | 评论总数 |&#x000A;&#x000A;###7. 新闻对应长评论查看&#x000A;* URL: http://news-at.zhihu.com/api/4/story/#{id}/long-comments&#x000A;* 使用在 `最新消息` 中获得的 `id`，传入#{id}，得到长评论 JSON 格式的内容&#x000A;* 最新的测试结果,一次只返回20条.找到显示全的方法了,调用  `http://news-at.zhihu.com/api/4/story/#{id}/long-comments/before/#{lasetId}` 就可以获取lasetId评论之前的的评论了,还是返回20个.不断的重复,就可以读取完成所有的评论&#x000A;* 响应实例:&#x000A;&#x000A;```json&#x000A;{&#x000A;	&quot;comments&quot;: [&#x000A;	    {&#x000A;	        &quot;author&quot;: &quot;EleganceWorld&quot;,&#x000A;	        &quot;id&quot;: 545442,&#x000A;	        &quot;content&quot;: &quot;上海到济南，无尽的猪排盖饭… （后略）&quot;,&#x000A;	        &quot;likes&quot;: 0,&#x000A;	        &quot;time&quot;: 1413589303,&#x000A;	        &quot;avatar&quot;: &quot;http://pic2.zhimg.com/1f76e6a25_im.jpg&quot;&#x000A;	    },&#x000A;	    ...&#x000A;	]&#x000A;}&#x000A;```&#x000A;*分析:&#x000A;&#x000A;|字段名|备注|&#x000A;|---|---|&#x000A;| comments  |长评论列表，形式为数组（请注意，其长度可能为 0）|&#x000A;| author |评论作者|&#x000A;| id | 评论者的唯一标识符|&#x000A;| content | 评论的内容 |&#x000A;| likes | 评论所获『赞』的数量 |&#x000A;| time | 评论时间 |&#x000A;| avatar | 用户头像图片的地址 |&#x000A;&#x000A;###8. 新闻对应短评论查看&#x000A;* URL: `http://news-at.zhihu.com/api/4/story/#{id}/short-comments`&#x000A;* 使用在 `最新消息` 中获得的 `id`，传入#{id}，得到短评论 JSON 格式的内容&#x000A;* 最新的测试结果,一次只返回20条.找到显示全的方法了,调用  `http://news-at.zhihu.com/api/4/story/#{id}/short-comments/before/#{lasetId}` 就可以获取lasetId评论之前的的评论了,还是返回20个.不断的重复,就可以读取完成所有的评论&#x000A;* 响应实例:&#x000A;&#x000A;```json&#x000A;{&#x000A;	&quot;comments&quot;: [&#x000A;	    {&#x000A;	        &quot;author&quot;: &quot;Xiaole说&quot;,&#x000A;	        &quot;id&quot;: 545721,&#x000A;	        &quot;content&quot;: &quot;就吃了个花生米，呵呵&quot;,&#x000A;	        &quot;likes&quot;: 0,&#x000A;	        &quot;time&quot;: 1413600071,&#x000A;	        &quot;avatar&quot;: &quot;http://pic1.zhimg.com/c41f035ab_im.jpg&quot;&#x000A;	    },&#x000A;	    ...&#x000A;	]&#x000A;}&#x000A;```&#x000A;格式与前同，恕不再赘述&#x000A;&#x000A;###9. 主题日报列表查看&#x000A;* URL: http://news-at.zhihu.com/api/4/themes&#x000A;* 响应实例：&#x000A;&#x000A;```json  &#x000A;{&#x000A;    &quot;limit&quot;: 1000,&#x000A;    &quot;subscribed&quot;: [],&#x000A;    &quot;others&quot;: [&#x000A;        {&#x000A;            &quot;color&quot;: 15007,&#x000A;            &quot;thumbnail&quot;: &quot;http://pic3.zhimg.com/0e71e90fd6be47630399d63c58beebfc.jpg&quot;,&#x000A;            &quot;description&quot;: &quot;了解自己和别人，了解彼此的欲望和局限。&quot;,&#x000A;            &quot;id&quot;: 13,&#x000A;            &quot;name&quot;: &quot;日常心理学&quot;&#x000A;        }&#x000A;        ...&#x000A;    ]&#x000A;}&#x000A;```&#x000A;&#x000A;* 分析:&#x000A;&#x000A;|字段名|备注|&#x000A;|---|---|&#x000A;| limit  |返回数目之限制（仅为猜测）|&#x000A;| subscribed | 已订阅条目 |&#x000A;| others | 其他条目|&#x000A;| -&gt; color | 颜色，作用未知 |&#x000A;| -&gt; thumbnail | 供显示的图片地址 |&#x000A;| -&gt; description | 主题日报的介绍 |&#x000A;| -&gt; id | 该主题日报的编号 |&#x000A;| -&gt; name | 供显示的主题日报名称 |&#x000A;&#x000A;###10. 主题日报内容查看&#x000A;* URL: http://news-at.zhihu.com/api/4/theme/#{id}&#x000A;* 使用在 `主题日报列表查看` 中获得需要查看的主题日报的 id，赋值给#{id}，得到对应主题日报 JSON 格式的内容&#x000A;* 响应实例：&#x000A;&#x000A;```json&#x000A;{&#x000A;    &quot;stories&quot;: [&#x000A;        {&#x000A;            &quot;images&quot;: [&#x000A;                &quot;http://pic4.zhimg.com/fabeb6ece13d1b4f3fecd484f475feeb_t.jpg&quot;&#x000A;            ],&#x000A;            &quot;type&quot;: 2,&#x000A;            &quot;id&quot;: 4759968,&#x000A;            &quot;title&quot;: &quot;你的密码保护问题真的安全吗？&quot;&#x000A;        },&#x000A;        {&#x000A;            &quot;images&quot;: [&#x000A;                &quot;http://pic2.zhimg.com/969a13db3fad18b1d35ce9d3e2633ef1_t.jpg&quot;&#x000A;            ],&#x000A;            &quot;type&quot;: 2,&#x000A;            &quot;id&quot;: 4745004,&#x000A;            &quot;title&quot;: &quot;当DNS泄漏让VPN不再安全，我们该怎么办？&quot;&#x000A;        },&#x000A; 		...&#x000A;    ],&#x000A;    &quot;description&quot;: &quot;把黑客知识科普到你的面前&quot;,&#x000A;    &quot;background&quot;: &quot;http://p4.zhimg.com/32/55/32557676e84fcfda4d82d9b8042464e1.jpg&quot;,&#x000A;    &quot;color&quot;: 9699556,&#x000A;    &quot;name&quot;: &quot;互联网安全&quot;,&#x000A;    &quot;image&quot;: &quot;http://p4.zhimg.com/30/6f/306f3ab291c415f40fe4485b75627230.jpg&quot;,&#x000A;    &quot;editors&quot;: [&#x000A;        {&#x000A;            &quot;url&quot;: &quot;http://www.zhihu.com/people/THANKS&quot;,&#x000A;            &quot;bio&quot;: &quot;FreeBuf.com 小编，专注黑客与极客&quot;,&#x000A;            &quot;id&quot;: 65,&#x000A;            &quot;avatar&quot;: &quot;http://pic4.zhimg.com/ecd93e213_m.jpg&quot;,&#x000A;            &quot;name&quot;: &quot;THANKS&quot;&#x000A;        },&#x000A;        {&#x000A;            &quot;url&quot;: &quot;http://www.zhihu.com/people/____&quot;,&#x000A;            &quot;bio&quot;: &quot;PKAV &amp; Wooyun&quot;,&#x000A;            &quot;id&quot;: 38,&#x000A;            &quot;avatar&quot;: &quot;http://pic1.zhimg.com/815b2ec82_m.jpg&quot;,&#x000A;            &quot;name&quot;: &quot;长短短&quot;&#x000A;        },&#x000A;        ...&#x000A;    ],&#x000A;    &quot;image_source&quot;: &quot;&quot;&#x000A;}&#x000A;```&#x000A;&#x000A;* 分析:&#x000A;&#x000A;|字段名|备注|&#x000A;|---|---|&#x000A;| stories |该主题日报中的文章列表|&#x000A;| -&gt; images | 图像地址（其类型为数组。请留意在代码中处理无该属性与数组长度为 0 的情况）|&#x000A;| -&gt; type | 类型，作用未知 |&#x000A;| -&gt; title |消息的标题|&#x000A;| -&gt; id |消息的id|&#x000A;| description | 该主题日报的介绍|&#x000A;| background | 该主题日报的背景图片（大图） |&#x000A;| color | 颜色，作用未知 |&#x000A;| name | 该主题日报的名称 |&#x000A;| image | 背景图片的小图版本 |&#x000A;| editors | 该主题日报的编辑（『用户推荐日报』中此项的指是一个空数组，在 App 中的主编栏显示为『许多人』，点击后访问该主题日报的介绍页面，请留意) |&#x000A;| -&gt; url | 主编的知乎用户主页|&#x000A;| -&gt; bio | 主编的个人简介 |&#x000A;| -&gt; id | 数据库中的唯一表示符 |&#x000A;| -&gt; avatar | 主编的头像 |&#x000A;| -&gt; name | 主编的姓名 |&#x000A;| image_source | 图像的版权信息|&#x000A;</textarea>
+<a class="ui button" href="#" id="copy-text" style="border-left: none;">一键复制</a>
+<a class="ui button edit-blob" href="/xycm/ZhiHuDaily-Swift/edit/master/README.md" title="只有登陆后才可以编辑">编辑</a>
+<a class="ui button web-ide" href="/-/ide/project/xycm/ZhiHuDaily-Swift/edit/master/-/README.md" target="_blank">Web IDE</a>
+<a class="ui button edit-raw" href="/xycm/ZhiHuDaily-Swift/raw/master/README.md" target="_blank">原始数据</a>
+<a class="ui button edit-blame" href="/xycm/ZhiHuDaily-Swift/blame/master/README.md">按行查看</a>
+<a class="ui button edit-history" href="/xycm/ZhiHuDaily-Swift/commits/master/README.md">历史</a>
+</div>
+<script>
+  "use strict";
+  try {
+    if((gon.wait_fork!=undefined && gon.wait_fork==true) || (gon.wait_fetch!=undefined && gon.wait_fetch==true)){
+      $('.edit-blob').popup({content:"当前仓库正在后台处理中,暂时无法编辑", on: 'hover', delay: { show: 200, hide: 200 }});
+      $('.edit-blob').click(function(e){
+        e.preventDefault();
+      })
+    }
+  
+    var setUrl = function() {
+      var params = window.location.search
+      if (params==undefined || $.trim(params).length==0) return;
+      $('span.options').children('.basic').find('a').each(function(index,ele){
+        var origin_href = $(ele).attr('href');
+        if (origin_href!="#" && origin_href.indexOf('?') == -1){
+          $(ele).attr('href',origin_href+params);
+        }
+      });
+    }
+  
+    setUrl();
+  
+    var clipboard = null,
+        $btncopy  = $("#copy-text");
+  
+    clipboard = new Clipboard("#copy-text", {
+      text: function(trigger) {
+        return $("#blob_raw").val();
+      }
+    })
+  
+    clipboard.on('success', function(e) {
+      $btncopy.popup('hide');
+      $btncopy.popup('destroy');
+      $btncopy.popup({content: '已复制', position: 'bottom center'});
+      $btncopy.popup('show');
+    })
+  
+    clipboard.on('error', function(e) {
+      var giteeModal = new GiteeModalHelper({okText: '确定'});
+      giteeModal.alert("一键复制", '复制失败，请手动复制');
+    })
+  
+    $(function() {
+      $btncopy.popup({
+        content: '点击复制',
+        position: 'bottom center'
+      })
+    })
+  
+  } catch (error) {
+    console.log('blob/action error:' + error);
+  }
+  
+  $('.disabled-edit-readonly').popup({
+    content: "只读文件不可编辑",
+    className: {
+      popup: 'ui popup',
+    },
+    position: 'bottom center',
+  })
+  $('.disabled-edit-readonly').click(() => {
+    return false
+  })
+</script>
+<style>
+  .disabled-edit-readonly {
+    background-color: #dcddde !important;
+    color: rgba(0, 0, 0, 0.4) !important;
+    opacity: 0.3 !important;
+    background-image: none !important;
+    -webkit-box-shadow: none !important;
+            box-shadow: none !important; }
+</style>
+</div>
+</div>
+<div class='contributor-description'><span class='recent-commit' style='margin-top: 0.7rem'>
+<a class="commit-author-link " href="/xycm">翔妖除魔</a>
+<span>提交于</span>
+<span class='timeago commit-date' title='2015-10-18 16:02:37 +0800'>
+2015-10-18 16:02
+</span>
+.
+<a href="/xycm/ZhiHuDaily-Swift/commit/c30b527f6c63499e63c8c9e621ae63011a082ef4">更新了截图</a>
+</span>
+</div>
+</div>
+<div class='clearfix'></div>
+<div class='file_content markdown-body'>
+<p>JAVA程序猿一枚,开始学习Swift一个多月,以前没有iOS的经验.在看了官方的文档和老镇的豆瓣电台视频后,想自己做一个东西来练手,因此有了这个东西.说实话iOS开发和JAVA开发区别还是很大的,最简单的就是IDE用起来各种不顺手...就更别说语法,思维,理念上的差别了.这方面也是需要我认真学习的.</p>&#x000A;<p>在做的过程中,遇到了很多的问题,没想到一个看似很简单的东西,真要给它做像了,还是比较麻烦的,要学习的东西很多. 我现在只能尽量的把样子做像了,代码这些一团糟,毫无章法可言,很多思维都还是JAVA的思维,希望各位大神不要耻笑.等以后接触多了后,再来重构吧.</p>&#x000A;<p>因为我没有入手开发者账号,因此我只在模拟器中运行了,并且是 iOS8和iphone6的模式下测试.估计选择其他的是有问题的.不过,貌似Xcode7支持非开发者真机调试了,这真是令开发大快人心的大好事.到时候我再来尝试兼容ipad,估计要改很多的地方.</p>&#x000A;<p>#Screenshot&#x000A;<a href="http://git.oschina.net/xycm/ZhiHuDaily-Swift/raw/master/screenshot-new.gif">@新的截图太大(25MB),请点击此处查看</a></p>&#x000A;<p>新增加了3D-Touch 功能:<br>&#x000A;<img src="http://git.oschina.net/xycm/ZhiHuDaily-Swift/raw/master/3d-touch-screenshot.gif" alt=""></p>&#x000A;<p><img src="http://git.oschina.net/xycm/ZhiHuDaily-Swift/raw/master/screenshot.gif" alt="alt text" title="程序运行截图 2015-06-12 09:51:26"></p>&#x000A;<p>#API 说明</p>&#x000A;<ul>&#x000A;<li>API这里要感谢<a href="https://github.com/izzyleung/ZhihuDailyPurify/wiki/%E7%9F%A5%E4%B9%8E%E6%97%A5%E6%8A%A5-API-%E5%88%86%E6%9E%90" title="感谢">@izzyleung</a>   , 给予了很大的帮助,基本上就是把他的分析稍微有些修改.感谢<a href="https://github.com/izzyleung/ZhihuDailyPurify/wiki/%E7%9F%A5%E4%B9%8E%E6%97%A5%E6%8A%A5-API-%E5%88%86%E6%9E%90" title="感谢">@izzyleung</a>! <a href="https://github.com/izzyleung/ZhihuDailyPurify/wiki/%E7%9F%A5%E4%B9%8E%E6%97%A5%E6%8A%A5-API-%E5%88%86%E6%9E%90" title="感谢">@izzyleung</a>! <a href="https://github.com/izzyleung/ZhihuDailyPurify/wiki/%E7%9F%A5%E4%B9%8E%E6%97%A5%E6%8A%A5-API-%E5%88%86%E6%9E%90" title="感谢">@izzyleung</a>!重要的事情要说三遍.</li>&#x000A;<li>知乎日报的消息以 JSON 格式输出</li>&#x000A;<li>网址中 <code>api</code> 后数字代表 API 版本，过高或过低均会得到错误信息</li>&#x000A;<li>较老的接口（启动界面图像获取，最新消息，过往消息）中将数字 2 替换为 1.2 获得效果相同，替换为 1.1 获得的是老版本 API 输出的 JSON 格式（替换为更低，如 1.0，或更高，如 1.3，将会获得错误消息）</li>&#x000A;<li>以下所有 API 使用的 HTTP Method 均为 <code>GET</code>&#x000A;</li>&#x000A;</ul>&#x000A;<h2>&#x000A;<a id="api-分析" class="anchor" href="#api-%E5%88%86%E6%9E%90"></a>#API 分析</h2>&#x000A;<p>###1. 启动界面图像获取</p>&#x000A;<ul>&#x000A;<li>URL: <code>http://news-at.zhihu.com/api/4/start-image/{aspec}</code>&#x000A;</li>&#x000A;<li>&#x000A;<code>start-image</code> 后为图像分辨率，接受如下格式&#x000A;<ul>&#x000A;<li>320*432</li>&#x000A;<li>480*728</li>&#x000A;<li>720*1184</li>&#x000A;<li>1080*1776</li>&#x000A;</ul>&#x000A;</li>&#x000A;<li>响应实例:</li>&#x000A;</ul>&#x000A;<div class="white"><div class="highlight"><pre><span id="LC1" class="line"><span class="p">{</span></span>&#x000A;<span id="LC2" class="line"><span class="w">	</span><span class="err">text:</span><span class="w"> </span><span class="s2">"© Fido Dido"</span><span class="p">,</span></span>&#x000A;<span id="LC3" class="line"><span class="w">	</span><span class="err">img:</span><span class="w"> </span><span class="s2">"http://p2.zhimg.com/10/7b/107bb4894b46d75a892da6fa80ef504a.jpg"</span></span>&#x000A;<span id="LC4" class="line"><span class="w">	</span><span class="p">}</span><span class="w"> </span></span></pre></div></div>&#x000A;<ul>&#x000A;<li>分析:</li>&#x000A;</ul>&#x000A;<table>&#x000A;<thead>&#x000A;<tr>&#x000A;<th>字段名</th>&#x000A;<th>备注</th>&#x000A;</tr>&#x000A;</thead>&#x000A;<tbody>&#x000A;<tr>&#x000A;<td>text</td>&#x000A;<td>供显示的图片版权信息</td>&#x000A;</tr>&#x000A;<tr>&#x000A;<td>img</td>&#x000A;<td>图像的URL地址</td>&#x000A;</tr>&#x000A;</tbody>&#x000A;</table>&#x000A;<p>###2. 软件版本查询</p>&#x000A;<ul>&#x000A;<li>&#x000A;<p>Android:<code>http://news-at.zhihu.com/api/4/version/android/2.3.0</code></p>&#x000A;</li>&#x000A;<li>&#x000A;<p>IOS:<code>http://news-at.zhihu.com/api/4/version/ios/{version}</code></p>&#x000A;</li>&#x000A;<li>&#x000A;<p>URL 最后部分的数字代表所安装『知乎日报』的版本</p>&#x000A;</li>&#x000A;<li>&#x000A;<p>响应实例：</p>&#x000A;<ul>&#x000A;<li>软件为最新版本时:</li>&#x000A;</ul>&#x000A;<div class="white"><div class="highlight"><pre><span id="LC1" class="line"><span class="w"> </span><span class="p">{</span></span>&#x000A;<span id="LC2" class="line"><span class="w"> </span><span class="nl">"status"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span></span>&#x000A;<span id="LC3" class="line"><span class="w"> </span><span class="nl">"latest"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2.2.0"</span></span>&#x000A;<span id="LC4" class="line"><span class="w"> </span><span class="p">}</span></span></pre></div></div>&#x000A;<ul>&#x000A;<li>软件为较老版本时:</li>&#x000A;</ul>&#x000A;<div class="white"><div class="highlight"><pre><span id="LC1" class="line"><span class="w"> </span><span class="p">{</span></span>&#x000A;<span id="LC2" class="line"><span class="w"> </span><span class="nl">"status"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span></span>&#x000A;<span id="LC3" class="line"><span class="w"> </span><span class="nl">"msg"</span><span class="p">:</span><span class="w"> </span><span class="s2">"【更新内容】（后略）"</span><span class="p">,</span></span>&#x000A;<span id="LC4" class="line"><span class="w"> </span><span class="nl">"latest"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2.2.0"</span></span>&#x000A;<span id="LC5" class="line"><span class="w"> </span><span class="p">}</span></span></pre></div></div>&#x000A;</li>&#x000A;<li>&#x000A;<p>分析:</p>&#x000A;</li>&#x000A;</ul>&#x000A;<table>&#x000A;<thead>&#x000A;<tr>&#x000A;<th>字段名</th>&#x000A;<th>备注</th>&#x000A;</tr>&#x000A;</thead>&#x000A;<tbody>&#x000A;<tr>&#x000A;<td>status</td>&#x000A;<td>0 代表软件为最新版本，1 代表软件需要升级</td>&#x000A;</tr>&#x000A;<tr>&#x000A;<td>latest</td>&#x000A;<td>软件最新版本的版本号（数字的第二段会比最新的版本号低 1）</td>&#x000A;</tr>&#x000A;<tr>&#x000A;<td>msg</td>&#x000A;<td>仅出现在软件需要升级的情形下，提示用户升级软件的对话框中显示的消息</td>&#x000A;</tr>&#x000A;</tbody>&#x000A;</table>&#x000A;<p>###3. 最新消息</p>&#x000A;<ul>&#x000A;<li>URL:<code>http://news-at.zhihu.com/api/4/news/latest</code>&#x000A;</li>&#x000A;<li>响应实例:</li>&#x000A;</ul>&#x000A;<div class="white"><div class="highlight"><pre><span id="LC1" class="line"><span class="p">{</span></span>&#x000A;<span id="LC2" class="line"><span class="w">	</span><span class="err">date:</span><span class="w"> </span><span class="s2">"20140523"</span><span class="p">,</span></span>&#x000A;<span id="LC3" class="line"><span class="w">	</span><span class="err">stories:</span><span class="w"> </span><span class="p">[</span></span>&#x000A;<span id="LC4" class="line"><span class="w">	</span><span class="p">{</span></span>&#x000A;<span id="LC5" class="line"><span class="w">	</span><span class="err">title:</span><span class="w"> </span><span class="s2">"中国古代家具发展到今天有两个高峰，一个两宋一个明末（多图）"</span><span class="p">,</span></span>&#x000A;<span id="LC6" class="line"><span class="w">	</span><span class="err">ga_prefix:</span><span class="w"> </span><span class="s2">"052321"</span><span class="p">,</span></span>&#x000A;<span id="LC7" class="line"><span class="w">	</span><span class="err">images:</span><span class="w"> </span><span class="p">[</span></span>&#x000A;<span id="LC8" class="line"><span class="w">	</span><span class="s2">"http://p1.zhimg.com/45/b9/45b9f057fc1957ed2c946814342c0f02.jpg"</span></span>&#x000A;<span id="LC9" class="line"><span class="w">	 </span><span class="p">],</span></span>&#x000A;<span id="LC10" class="line"><span class="w">	</span><span class="err">type:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span></span>&#x000A;<span id="LC11" class="line"><span class="w">	</span><span class="err">id:</span><span class="w"> </span><span class="mi">3930445</span></span>&#x000A;<span id="LC12" class="line"><span class="w">	</span><span class="p">},</span></span>&#x000A;<span id="LC13" class="line"><span class="w">	</span><span class="err">...</span></span>&#x000A;<span id="LC14" class="line"><span class="w">	</span><span class="p">],</span></span>&#x000A;<span id="LC15" class="line"><span class="w">	</span><span class="err">top_stories:</span><span class="w"> </span><span class="p">[</span></span>&#x000A;<span id="LC16" class="line"><span class="w">	</span><span class="p">{</span></span>&#x000A;<span id="LC17" class="line"><span class="w">	</span><span class="err">title:</span><span class="w"> </span><span class="s2">"商场和很多人家里，竹制家具越来越多（多图）"</span><span class="p">,</span></span>&#x000A;<span id="LC18" class="line"><span class="w">	</span><span class="err">image:</span><span class="w"> </span><span class="s2">"http://p2.zhimg.com/9a/15/9a1570bb9e5fa53ae9fb9269a56ee019.jpg"</span><span class="p">,</span></span>&#x000A;<span id="LC19" class="line"><span class="w">	</span><span class="err">ga_prefix:</span><span class="w"> </span><span class="s2">"052315"</span><span class="p">,</span></span>&#x000A;<span id="LC20" class="line"><span class="w">	</span><span class="err">type:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span></span>&#x000A;<span id="LC21" class="line"><span class="w">	</span><span class="err">id:</span><span class="w"> </span><span class="mi">3930883</span></span>&#x000A;<span id="LC22" class="line"><span class="w">	</span><span class="p">},</span></span>&#x000A;<span id="LC23" class="line"><span class="w">	</span><span class="err">...</span></span>&#x000A;<span id="LC24" class="line"><span class="w">	</span><span class="p">]</span></span>&#x000A;<span id="LC25" class="line"><span class="w">	</span><span class="p">}</span></span></pre></div></div>&#x000A;<ul>&#x000A;<li>分析</li>&#x000A;</ul>&#x000A;<table>&#x000A;<thead>&#x000A;<tr>&#x000A;<th>字段名</th>&#x000A;<th>备注</th>&#x000A;</tr>&#x000A;</thead>&#x000A;<tbody>&#x000A;<tr>&#x000A;<td>date</td>&#x000A;<td>日期</td>&#x000A;</tr>&#x000A;<tr>&#x000A;<td>stories</td>&#x000A;<td>当日新闻</td>&#x000A;</tr>&#x000A;<tr>&#x000A;<td>-&gt; title</td>&#x000A;<td>新闻标题</td>&#x000A;</tr>&#x000A;<tr>&#x000A;<td>-&gt; images</td>&#x000A;<td>图像地址（官方 API 使用数组形式。目前暂未有使用多张图片的情形出现，曾见无 <code>images</code> 属性的情况，请在使用中注意 ）</td>&#x000A;</tr>&#x000A;<tr>&#x000A;<td>-&gt; ga_prefix</td>&#x000A;<td>供 Google Analytics 使用</td>&#x000A;</tr>&#x000A;<tr>&#x000A;<td>-&gt; type</td>&#x000A;<td>作用未知</td>&#x000A;</tr>&#x000A;<tr>&#x000A;<td>-&gt; id</td>&#x000A;<td>url 与 share_url 中最后的数字（应为内容的 id）</td>&#x000A;</tr>&#x000A;<tr>&#x000A;<td>-&gt; multipic</td>&#x000A;<td>消息是否包含多张图片（仅出现在包含多图的新闻中）</td>&#x000A;</tr>&#x000A;<tr>&#x000A;<td>top_stories</td>&#x000A;<td>界面顶部 ViewPager 滚动显示的显示内容（子项格式同上）</td>&#x000A;</tr>&#x000A;</tbody>&#x000A;</table>&#x000A;<p>###4. 消息内容获取与离线下载</p>&#x000A;<ul>&#x000A;<li>URL:<code>http://news-at.zhihu.com/api/4/news/{id}</code>&#x000A;</li>&#x000A;<li>响应实例:</li>&#x000A;</ul>&#x000A;<div class="white"><div class="highlight"><pre><span id="LC1" class="line"><span class="p">{</span></span>&#x000A;<span id="LC2" class="line"><span class="w">    </span><span class="err">body:</span><span class="w"> </span><span class="s2">"&lt;div class=</span><span class="se">\"</span><span class="s2">main-wrap content-wrap</span><span class="se">\"</span><span class="s2">&gt;</span><span class="se">\n</span><span class="s2">&lt;div class=</span><span class="se">\"</span><span class="s2">headline</span><span class="se">\"</span><span class="s2">&gt;</span><span class="se">\n\n</span><span class="s2">&lt;div class=</span><span class="se">\"</span><span class="s2">img-place-holder</span><span class="se">\"</span><span class="s2">&gt;&lt;/div&gt;</span><span class="se">\n\n\n\n</span><span class="s2">&lt;/div&gt;</span><span class="se">\n\n</span><span class="s2">&lt;div class=</span><span class="se">\"</span><span class="s2">content-inner</span><span class="se">\"</span><span class="s2">&gt;</span><span class="se">\n\n\n\n\n</span><span class="s2">&lt;div class=</span><span class="se">\"</span><span class="s2">question</span><span class="se">\"</span><span class="s2">&gt; ... &lt;/div&gt;"</span><span class="p">,</span></span>&#x000A;<span id="LC3" class="line"><span class="w">    </span><span class="err">image_source:</span><span class="w"> </span><span class="s2">"Yestone.com 版权图片库"</span><span class="p">,</span></span>&#x000A;<span id="LC4" class="line"><span class="w">    </span><span class="err">title:</span><span class="w"> </span><span class="s2">"瞎扯 · 如何正确地吐槽"</span><span class="p">,</span></span>&#x000A;<span id="LC5" class="line"><span class="w">    </span><span class="err">image:</span><span class="w"> </span><span class="s2">"http://pic2.zhimg.com/9fe062c07b11959a2dd47068e116a9d5.jpg"</span><span class="p">,</span></span>&#x000A;<span id="LC6" class="line"><span class="w">    </span><span class="err">share_url:</span><span class="w"> </span><span class="s2">"http://daily.zhihu.com/story/4760976"</span><span class="p">,</span></span>&#x000A;<span id="LC7" class="line"><span class="w">    </span><span class="err">js:</span><span class="w"> </span><span class="p">[],</span></span>&#x000A;<span id="LC8" class="line"><span class="w">    </span><span class="err">recommenders:</span><span class="w"> </span><span class="p">[</span></span>&#x000A;<span id="LC9" class="line"><span class="w">        </span><span class="p">{</span></span>&#x000A;<span id="LC10" class="line"><span class="w">            </span><span class="err">avatar:</span><span class="w"> </span><span class="s2">"http://pic3.zhimg.com/449b2931521389e4fcbc31a0e2d9d896_m.jpg"</span></span>&#x000A;<span id="LC11" class="line"><span class="w">        </span><span class="p">},</span></span>&#x000A;<span id="LC12" class="line"><span class="w">        </span><span class="p">{</span></span>&#x000A;<span id="LC13" class="line"><span class="w">            </span><span class="err">avatar:</span><span class="w"> </span><span class="s2">"http://pic1.zhimg.com/4e45f545ee8b194476d3131ca7f3a9c8_m.jpg"</span></span>&#x000A;<span id="LC14" class="line"><span class="w">        </span><span class="p">},</span></span>&#x000A;<span id="LC15" class="line"><span class="w">        </span><span class="p">{</span></span>&#x000A;<span id="LC16" class="line"><span class="w">            </span><span class="err">avatar:</span><span class="w"> </span><span class="s2">"http://pic4.zhimg.com/6a682ab23_m.jpg"</span></span>&#x000A;<span id="LC17" class="line"><span class="w">        </span><span class="p">}</span></span>&#x000A;<span id="LC18" class="line"><span class="w">    </span><span class="p">],</span></span>&#x000A;<span id="LC19" class="line"><span class="w">    </span><span class="err">ga_prefix:</span><span class="w"> </span><span class="s2">"052606"</span><span class="p">,</span></span>&#x000A;<span id="LC20" class="line"><span class="w">    </span><span class="err">section:</span><span class="w"> </span><span class="p">{</span></span>&#x000A;<span id="LC21" class="line"><span class="w">        </span><span class="err">thumbnail:</span><span class="w"> </span><span class="s2">"http://pic3.zhimg.com/a82322fc78dff305c3df43fcc4cb96c2.jpg"</span><span class="p">,</span></span>&#x000A;<span id="LC22" class="line"><span class="w">        </span><span class="err">id:</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span></span>&#x000A;<span id="LC23" class="line"><span class="w">        </span><span class="err">name:</span><span class="w"> </span><span class="s2">"瞎扯"</span></span>&#x000A;<span id="LC24" class="line"><span class="w">    </span><span class="p">},</span></span>&#x000A;<span id="LC25" class="line"><span class="w">    </span><span class="err">type:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span></span>&#x000A;<span id="LC26" class="line"><span class="w">    </span><span class="err">id:</span><span class="w"> </span><span class="mi">4760976</span><span class="p">,</span></span>&#x000A;<span id="LC27" class="line"><span class="w">    </span><span class="err">css:</span><span class="w"> </span><span class="p">[</span></span>&#x000A;<span id="LC28" class="line"><span class="w">        </span><span class="s2">"http://news.at.zhihu.com/css/news_qa.auto.css?v=1edab"</span></span>&#x000A;<span id="LC29" class="line"><span class="w">    </span><span class="p">]</span></span>&#x000A;<span id="LC30" class="line"><span class="p">}</span></span></pre></div></div>&#x000A;<p>*分析:</p>&#x000A;<table>&#x000A;<thead>&#x000A;<tr>&#x000A;<th>字段名</th>&#x000A;<th>备注</th>&#x000A;</tr>&#x000A;</thead>&#x000A;<tbody>&#x000A;<tr>&#x000A;<td>body</td>&#x000A;<td>&#x000A;<code>HTML</code>格式的新闻内容</td>&#x000A;</tr>&#x000A;<tr>&#x000A;<td>image-source</td>&#x000A;<td>图片的内容提供方。为了避免被起诉非法使用图片，在显示图片时最好附上其版权信息。</td>&#x000A;</tr>&#x000A;<tr>&#x000A;<td>title</td>&#x000A;<td>新闻标题</td>&#x000A;</tr>&#x000A;<tr>&#x000A;<td>image</td>&#x000A;<td>获得的图片同 <code>最新消息</code> 获得的图片分辨率不同。这里获得的是在文章浏览界面中使用的大图。</td>&#x000A;</tr>&#x000A;<tr>&#x000A;<td>share_url</td>&#x000A;<td>供在线查看内容与分享至 SNS 用的 URL</td>&#x000A;</tr>&#x000A;<tr>&#x000A;<td>js</td>&#x000A;<td>供手机端的 WebView(UIWebView) 使用</td>&#x000A;</tr>&#x000A;<tr>&#x000A;<td>recommenders</td>&#x000A;<td>推荐者</td>&#x000A;</tr>&#x000A;<tr>&#x000A;<td>-&gt; avatar</td>&#x000A;<td>推荐者的头像</td>&#x000A;</tr>&#x000A;<tr>&#x000A;<td>ga_prefix</td>&#x000A;<td>供 Google Analytics 使用</td>&#x000A;</tr>&#x000A;<tr>&#x000A;<td>section</td>&#x000A;<td>栏目</td>&#x000A;</tr>&#x000A;<tr>&#x000A;<td>-&gt; thumbnail</td>&#x000A;<td>缩略图</td>&#x000A;</tr>&#x000A;<tr>&#x000A;<td>-&gt; id</td>&#x000A;<td>栏目id</td>&#x000A;</tr>&#x000A;<tr>&#x000A;<td>-&gt; name</td>&#x000A;<td>栏目名称</td>&#x000A;</tr>&#x000A;<tr>&#x000A;<td>type</td>&#x000A;<td>新闻的类型</td>&#x000A;</tr>&#x000A;<tr>&#x000A;<td>id</td>&#x000A;<td>新闻的 id</td>&#x000A;</tr>&#x000A;<tr>&#x000A;<td>css</td>&#x000A;<td>供手机端的 WebView(UIWebView) 使用</td>&#x000A;</tr>&#x000A;</tbody>&#x000A;</table>&#x000A;<p><strong>可知，知乎日报的文章浏览界面利用 WebView(UIWebView) 实现</strong></p>&#x000A;<ul>&#x000A;<li>&#x000A;<p><strong>特别注意</strong><br>&#x000A;在较为特殊的情况下，知乎日报可能将某个主题日报的站外文章推送至知乎日报首页。</p>&#x000A;<ul>&#x000A;<li>响应实例:</li>&#x000A;</ul>&#x000A;<div class="white"><div class="highlight"><pre><span id="LC1" class="line"><span class="w"> </span><span class="p">{</span></span></pre></div></div>&#x000A;</li>&#x000A;</ul>&#x000A;<p>"theme_name": "电影日报",&#x000A;"title": "五分钟读懂明星的花样昵称：一美、法鲨……",&#x000A;"share_url": "<a href="http://daily.zhihu.com/story/3942319">http://daily.zhihu.com/story/3942319</a>",&#x000A;"js": [],&#x000A;"ga_prefix": "052921",&#x000A;"editor_name": "邹波",&#x000A;"theme_id": 3,&#x000A;"type": 1,&#x000A;"id": 3942319,&#x000A;"css": [&#x000A;"http://news.at.zhihu.com/css/news_qa.6.css?v=b390f"&#x000A;]&#x000A;}&#x000A;```</p>&#x000A;<div class="white"><div class="highlight"><pre><span id="LC1" class="line">此时返回的 JSON 数据缺少 `body`，`iamge-source`，`image`，`js` 属性。多出 `theme_name`，`editor_name`，`theme_id` 三个属性。`type` 由 0 变为 1。</span></pre></div></div>&#x000A;<p>###4.5 新闻推荐者信息</p>&#x000A;<ul>&#x000A;<li>URL:<code>http://news-at.zhihu.com/api/4/story/#{id}/recommenders</code>&#x000A;</li>&#x000A;<li>这个返回的就是某一篇新闻的推荐者的详细信息.</li>&#x000A;<li>响应实例:</li>&#x000A;</ul>&#x000A;<div class="white"><div class="highlight"><pre><span id="LC1" class="line"><span class="p">{</span></span>&#x000A;<span id="LC2" class="line"><span class="w">    </span><span class="nl">"items"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span></span>&#x000A;<span id="LC3" class="line"><span class="w">        </span><span class="p">{</span></span>&#x000A;<span id="LC4" class="line"><span class="w">            </span><span class="nl">"index"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span></span>&#x000A;<span id="LC5" class="line"><span class="w">            </span><span class="nl">"recommenders"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span></span>&#x000A;<span id="LC6" class="line"><span class="w">                </span><span class="p">{</span></span>&#x000A;<span id="LC7" class="line"><span class="w">                    </span><span class="nl">"bio"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span></span>&#x000A;<span id="LC8" class="line"><span class="w">                    </span><span class="nl">"zhihu_url_token"</span><span class="p">:</span><span class="w"> </span><span class="s2">"90b373201c03b47548dcac5832da1a95"</span><span class="p">,</span></span>&#x000A;<span id="LC9" class="line"><span class="w">                    </span><span class="nl">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">1162</span><span class="p">,</span></span>&#x000A;<span id="LC10" class="line"><span class="w">                    </span><span class="nl">"avatar"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://pic1.zhimg.com/f81b942d0_m.jpg"</span><span class="p">,</span></span>&#x000A;<span id="LC11" class="line"><span class="w">                    </span><span class="nl">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Wang Chris"</span></span>&#x000A;<span id="LC12" class="line"><span class="w">                </span><span class="p">},</span></span>&#x000A;<span id="LC13" class="line"><span class="w">                </span><span class="p">{</span></span>&#x000A;<span id="LC14" class="line"><span class="w">                    </span><span class="nl">"bio"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Phys2CS"</span><span class="p">,</span></span>&#x000A;<span id="LC15" class="line"><span class="w">                    </span><span class="nl">"zhihu_url_token"</span><span class="p">:</span><span class="w"> </span><span class="s2">"d2facf05b7138a6eb4631a161915f7d4"</span><span class="p">,</span></span>&#x000A;<span id="LC16" class="line"><span class="w">                    </span><span class="nl">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">629</span><span class="p">,</span></span>&#x000A;<span id="LC17" class="line"><span class="w">                    </span><span class="nl">"avatar"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://pic3.zhimg.com/9dfd356e2f137540439448fa25ef0ea6_m.jpg"</span><span class="p">,</span></span>&#x000A;<span id="LC18" class="line"><span class="w">                    </span><span class="nl">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Badger"</span></span>&#x000A;<span id="LC19" class="line"><span class="w">                </span><span class="p">},</span></span>&#x000A;<span id="LC20" class="line"><span class="w">                </span><span class="p">{</span></span>&#x000A;<span id="LC21" class="line"><span class="w">                    </span><span class="nl">"bio"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span></span>&#x000A;<span id="LC22" class="line"><span class="w">                    </span><span class="nl">"zhihu_url_token"</span><span class="p">:</span><span class="w"> </span><span class="s2">"75a591efecfd4c22a6fc778a38a90f8d"</span><span class="p">,</span></span>&#x000A;<span id="LC23" class="line"><span class="w">                    </span><span class="nl">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">69</span><span class="p">,</span></span>&#x000A;<span id="LC24" class="line"><span class="w">                    </span><span class="nl">"avatar"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://pic1.zhimg.com/428ce35d11440c08c83f46dbfe435a5c_m.jpg"</span><span class="p">,</span></span>&#x000A;<span id="LC25" class="line"><span class="w">                    </span><span class="nl">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"One Two"</span></span>&#x000A;<span id="LC26" class="line"><span class="w">                </span><span class="p">},</span></span>&#x000A;<span id="LC27" class="line"><span class="w">                </span><span class="p">{</span></span>&#x000A;<span id="LC28" class="line"><span class="w">                    </span><span class="nl">"bio"</span><span class="p">:</span><span class="w"> </span><span class="s2">"重新做人"</span><span class="p">,</span></span>&#x000A;<span id="LC29" class="line"><span class="w">                    </span><span class="nl">"zhihu_url_token"</span><span class="p">:</span><span class="w"> </span><span class="s2">"4d2540e03e0e5e225f4817f7ff7fc389"</span><span class="p">,</span></span>&#x000A;<span id="LC30" class="line"><span class="w">                    </span><span class="nl">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">7895</span><span class="p">,</span></span>&#x000A;<span id="LC31" class="line"><span class="w">                    </span><span class="nl">"avatar"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://pic3.zhimg.com/816934c948f5e3cc781ecda1ece08c3e_m.jpg"</span><span class="p">,</span></span>&#x000A;<span id="LC32" class="line"><span class="w">                    </span><span class="nl">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"王RRR"</span></span>&#x000A;<span id="LC33" class="line"><span class="w">                </span><span class="p">},</span></span>&#x000A;<span id="LC34" class="line"><span class="w">                </span><span class="p">{</span></span>&#x000A;<span id="LC35" class="line"><span class="w">                    </span><span class="nl">"bio"</span><span class="p">:</span><span class="w"> </span><span class="s2">"金融菜鸟 音乐草根 技能点加歪"</span><span class="p">,</span></span>&#x000A;<span id="LC36" class="line"><span class="w">                    </span><span class="nl">"zhihu_url_token"</span><span class="p">:</span><span class="w"> </span><span class="s2">"b929aa5072baae224a74a18b5bd65376"</span><span class="p">,</span></span>&#x000A;<span id="LC37" class="line"><span class="w">                    </span><span class="nl">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">2576</span><span class="p">,</span></span>&#x000A;<span id="LC38" class="line"><span class="w">                    </span><span class="nl">"avatar"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://pic4.zhimg.com/1814a1b987a44cc49a448268412dbe23_m.jpg"</span><span class="p">,</span></span>&#x000A;<span id="LC39" class="line"><span class="w">                    </span><span class="nl">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"酷冰"</span></span>&#x000A;<span id="LC40" class="line"><span class="w">                </span><span class="p">},</span></span>&#x000A;<span id="LC41" class="line"><span class="w">                </span><span class="p">{</span></span>&#x000A;<span id="LC42" class="line"><span class="w">                    </span><span class="nl">"bio"</span><span class="p">:</span><span class="w"> </span><span class="s2">"你读书少，不骗你骗谁。"</span><span class="p">,</span></span>&#x000A;<span id="LC43" class="line"><span class="w">                    </span><span class="nl">"zhihu_url_token"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1cd7424d0a7990aaff8e2ed24644992a"</span><span class="p">,</span></span>&#x000A;<span id="LC44" class="line"><span class="w">                    </span><span class="nl">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">369</span><span class="p">,</span></span>&#x000A;<span id="LC45" class="line"><span class="w">                    </span><span class="nl">"avatar"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://pic3.zhimg.com/bbb689a7a_m.jpg"</span><span class="p">,</span></span>&#x000A;<span id="LC46" class="line"><span class="w">                    </span><span class="nl">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"卞卡"</span></span>&#x000A;<span id="LC47" class="line"><span class="w">                </span><span class="p">},</span></span>&#x000A;<span id="LC48" class="line"><span class="w">                </span><span class="p">{</span></span>&#x000A;<span id="LC49" class="line"><span class="w">                    </span><span class="nl">"bio"</span><span class="p">:</span><span class="w"> </span><span class="s2">"智商捉不了鸡"</span><span class="p">,</span></span>&#x000A;<span id="LC50" class="line"><span class="w">                    </span><span class="nl">"zhihu_url_token"</span><span class="p">:</span><span class="w"> </span><span class="s2">"794c4d35096ad3dafb802124cdd83294"</span><span class="p">,</span></span>&#x000A;<span id="LC51" class="line"><span class="w">                    </span><span class="nl">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">5778</span><span class="p">,</span></span>&#x000A;<span id="LC52" class="line"><span class="w">                    </span><span class="nl">"avatar"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://pic4.zhimg.com/131bb14f5a12920afc975b3833538027_m.jpg"</span><span class="p">,</span></span>&#x000A;<span id="LC53" class="line"><span class="w">                    </span><span class="nl">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"二核桃"</span></span>&#x000A;<span id="LC54" class="line"><span class="w">                </span><span class="p">},</span></span>&#x000A;<span id="LC55" class="line"><span class="w">                </span><span class="p">{</span></span>&#x000A;<span id="LC56" class="line"><span class="w">                    </span><span class="nl">"bio"</span><span class="p">:</span><span class="w"> </span><span class="s2">"软件工程师"</span><span class="p">,</span></span>&#x000A;<span id="LC57" class="line"><span class="w">                    </span><span class="nl">"zhihu_url_token"</span><span class="p">:</span><span class="w"> </span><span class="s2">"93ce68e327ef290f84192014bbc168b2"</span><span class="p">,</span></span>&#x000A;<span id="LC58" class="line"><span class="w">                    </span><span class="nl">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">6519</span><span class="p">,</span></span>&#x000A;<span id="LC59" class="line"><span class="w">                    </span><span class="nl">"avatar"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://pic2.zhimg.com/5d55b2e8d_m.jpg"</span><span class="p">,</span></span>&#x000A;<span id="LC60" class="line"><span class="w">                    </span><span class="nl">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"戴威"</span></span>&#x000A;<span id="LC61" class="line"><span class="w">                </span><span class="p">}</span></span>&#x000A;<span id="LC62" class="line"><span class="w">            </span><span class="p">],</span></span>&#x000A;<span id="LC63" class="line"><span class="w">            </span><span class="nl">"author"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span></span>&#x000A;<span id="LC64" class="line"><span class="w">                </span><span class="nl">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"灿妞儿"</span></span>&#x000A;<span id="LC65" class="line"><span class="w">            </span><span class="p">}</span></span>&#x000A;<span id="LC66" class="line"><span class="w">        </span><span class="p">},</span></span>&#x000A;<span id="LC67" class="line"><span class="w">        </span><span class="p">{</span></span>&#x000A;<span id="LC68" class="line"><span class="w">            </span><span class="nl">"index"</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span></span>&#x000A;<span id="LC69" class="line"><span class="w">            </span><span class="nl">"recommenders"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span></span>&#x000A;<span id="LC70" class="line"><span class="w">                </span><span class="p">{</span></span>&#x000A;<span id="LC71" class="line"><span class="w">                    </span><span class="nl">"bio"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span></span>&#x000A;<span id="LC72" class="line"><span class="w">                    </span><span class="nl">"zhihu_url_token"</span><span class="p">:</span><span class="w"> </span><span class="s2">"75a591efecfd4c22a6fc778a38a90f8d"</span><span class="p">,</span></span>&#x000A;<span id="LC73" class="line"><span class="w">                    </span><span class="nl">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">69</span><span class="p">,</span></span>&#x000A;<span id="LC74" class="line"><span class="w">                    </span><span class="nl">"avatar"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://pic1.zhimg.com/428ce35d11440c08c83f46dbfe435a5c_m.jpg"</span><span class="p">,</span></span>&#x000A;<span id="LC75" class="line"><span class="w">                    </span><span class="nl">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"One Two"</span></span>&#x000A;<span id="LC76" class="line"><span class="w">                </span><span class="p">}</span></span>&#x000A;<span id="LC77" class="line"><span class="w">            </span><span class="p">],</span></span>&#x000A;<span id="LC78" class="line"><span class="w">            </span><span class="nl">"author"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span></span>&#x000A;<span id="LC79" class="line"><span class="w">                </span><span class="nl">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Badger"</span></span>&#x000A;<span id="LC80" class="line"><span class="w">            </span><span class="p">}</span></span>&#x000A;<span id="LC81" class="line"><span class="w">        </span><span class="p">}</span></span>&#x000A;<span id="LC82" class="line"><span class="w">    </span><span class="p">],</span></span>&#x000A;<span id="LC83" class="line"><span class="w">    </span><span class="nl">"item_count"</span><span class="p">:</span><span class="w"> </span><span class="mi">3</span></span>&#x000A;<span id="LC84" class="line"><span class="p">}</span></span></pre></div></div>&#x000A;<ul>&#x000A;<li>分析:</li>&#x000A;</ul>&#x000A;<table>&#x000A;<thead>&#x000A;<tr>&#x000A;<th>字段名</th>&#x000A;<th>备注</th>&#x000A;</tr>&#x000A;</thead>&#x000A;<tbody>&#x000A;<tr>&#x000A;<td>item_count</td>&#x000A;<td>表示这篇日报里面有 几篇内容</td>&#x000A;</tr>&#x000A;<tr>&#x000A;<td>items</td>&#x000A;<td>表示推荐者信息</td>&#x000A;</tr>&#x000A;<tr>&#x000A;<td>--&gt;index</td>&#x000A;<td>表示这个推荐信息对应的是日报中的第几篇内容</td>&#x000A;</tr>&#x000A;<tr>&#x000A;<td>--&gt;recommenders</td>&#x000A;<td>推荐者信息</td>&#x000A;</tr>&#x000A;<tr>&#x000A;<td>----&gt;bio</td>&#x000A;<td>推荐者的个性备注</td>&#x000A;</tr>&#x000A;<tr>&#x000A;<td>----&gt;zhihu_url_token</td>&#x000A;<td>用户的token</td>&#x000A;</tr>&#x000A;<tr>&#x000A;<td>----&gt;id</td>&#x000A;<td>用户id</td>&#x000A;</tr>&#x000A;<tr>&#x000A;<td>----&gt;avatar</td>&#x000A;<td>用户头像</td>&#x000A;</tr>&#x000A;<tr>&#x000A;<td>----&gt;name</td>&#x000A;<td>用户名</td>&#x000A;</tr>&#x000A;<tr>&#x000A;<td>--&gt; author</td>&#x000A;<td>第几篇内容对应的作者</td>&#x000A;</tr>&#x000A;<tr>&#x000A;<td>----&gt; name</td>&#x000A;<td>第几篇内容对应的作者的名字</td>&#x000A;</tr>&#x000A;</tbody>&#x000A;</table>&#x000A;<p>###5. 过往消息</p>&#x000A;<ul>&#x000A;<li>URL:<code>http://news.at.zhihu.com/api/4/news/before/{date}</code>&#x000A;</li>&#x000A;<li>若果需要查询 11 月 18 日的消息，{date}的数字应为 20131119</li>&#x000A;<li>知乎日报的生日为 2013 年 5 月 19 日，若 {date}数字小于 20130520 ，只会接收到空消息</li>&#x000A;<li>响应实例：</li>&#x000A;</ul>&#x000A;<div class="white"><div class="highlight"><pre><span id="LC1" class="line"><span class="p">{</span></span>&#x000A;<span id="LC2" class="line"><span class="w">	</span><span class="err">date:</span><span class="w"> </span><span class="s2">"20131118"</span><span class="p">,</span></span>&#x000A;<span id="LC3" class="line"><span class="w">	</span><span class="err">stories:</span><span class="w"> </span><span class="p">[</span></span>&#x000A;<span id="LC4" class="line"><span class="w">	    </span><span class="p">{</span></span>&#x000A;<span id="LC5" class="line"><span class="w">	        </span><span class="err">title:</span><span class="w"> </span><span class="s2">"深夜食堂 · 我的张曼妮"</span><span class="p">,</span></span>&#x000A;<span id="LC6" class="line"><span class="w">	        </span><span class="err">ga_prefix:</span><span class="w"> </span><span class="s2">"111822"</span><span class="p">,</span></span>&#x000A;<span id="LC7" class="line"><span class="w">	        </span><span class="err">images:</span><span class="w"> </span><span class="p">[</span></span>&#x000A;<span id="LC8" class="line"><span class="w">	            </span><span class="s2">"http://p4.zhimg.com/7b/c8/7bc8ef5947b069513c51e4b9521b5c82.jpg"</span></span>&#x000A;<span id="LC9" class="line"><span class="w">	        </span><span class="p">],</span></span>&#x000A;<span id="LC10" class="line"><span class="w">	        </span><span class="err">type:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span></span>&#x000A;<span id="LC11" class="line"><span class="w">	        </span><span class="err">id:</span><span class="w"> </span><span class="mi">1747159</span></span>&#x000A;<span id="LC12" class="line"><span class="w">	    </span><span class="p">},</span></span>&#x000A;<span id="LC13" class="line"><span class="w">	</span><span class="err">...</span></span>&#x000A;<span id="LC14" class="line"><span class="w">	</span><span class="p">]</span></span>&#x000A;<span id="LC15" class="line"><span class="p">}</span></span>&#x000A;<span id="LC16" class="line"></span></pre></div></div>&#x000A;<p>格式与前同，恕不再赘述</p>&#x000A;<p>###6. 新闻额外信息</p>&#x000A;<ul>&#x000A;<li>URL: <code>http://news-at.zhihu.com/api/4/story-extra/#{id}</code>&#x000A;</li>&#x000A;<li>输入新闻的ID，获取对应新闻的额外信息，如评论数量，所获的『赞』的数量。</li>&#x000A;<li>响应实例：</li>&#x000A;</ul>&#x000A;<div class="white"><div class="highlight"><pre><span id="LC1" class="line"><span class="p">{</span></span>&#x000A;<span id="LC2" class="line"><span class="nl">"long_comments"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span></span>&#x000A;<span id="LC3" class="line"><span class="nl">"popularity"</span><span class="p">:</span><span class="w"> </span><span class="mi">161</span><span class="p">,</span></span>&#x000A;<span id="LC4" class="line"><span class="nl">"short_comments"</span><span class="p">:</span><span class="w"> </span><span class="mi">19</span><span class="p">,</span></span>&#x000A;<span id="LC5" class="line"><span class="nl">"comments"</span><span class="p">:</span><span class="w"> </span><span class="mi">19</span><span class="p">,</span></span>&#x000A;<span id="LC6" class="line"><span class="p">}</span></span></pre></div></div>&#x000A;<ul>&#x000A;<li>分析:</li>&#x000A;</ul>&#x000A;<table>&#x000A;<thead>&#x000A;<tr>&#x000A;<th>字段名</th>&#x000A;<th>备注</th>&#x000A;</tr>&#x000A;</thead>&#x000A;<tbody>&#x000A;<tr>&#x000A;<td>long_comments</td>&#x000A;<td>长评论总数</td>&#x000A;</tr>&#x000A;<tr>&#x000A;<td>popularity</td>&#x000A;<td>点赞总数</td>&#x000A;</tr>&#x000A;<tr>&#x000A;<td>short_comments</td>&#x000A;<td>短评论总数</td>&#x000A;</tr>&#x000A;<tr>&#x000A;<td>comments</td>&#x000A;<td>评论总数</td>&#x000A;</tr>&#x000A;</tbody>&#x000A;</table>&#x000A;<p>###7. 新闻对应长评论查看</p>&#x000A;<ul>&#x000A;<li>URL: <a href="http://news-at.zhihu.com/api/4/story/#%7Bid%7D/long-comments">http://news-at.zhihu.com/api/4/story/#{id}/long-comments</a>&#x000A;</li>&#x000A;<li>使用在 <code>最新消息</code> 中获得的 <code>id</code>，传入#{id}，得到长评论 JSON 格式的内容</li>&#x000A;<li>最新的测试结果,一次只返回20条.找到显示全的方法了,调用  <code>http://news-at.zhihu.com/api/4/story/#{id}/long-comments/before/#{lasetId}</code> 就可以获取lasetId评论之前的的评论了,还是返回20个.不断的重复,就可以读取完成所有的评论</li>&#x000A;<li>响应实例:</li>&#x000A;</ul>&#x000A;<div class="white"><div class="highlight"><pre><span id="LC1" class="line"><span class="p">{</span></span>&#x000A;<span id="LC2" class="line"><span class="w">	</span><span class="nl">"comments"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span></span>&#x000A;<span id="LC3" class="line"><span class="w">	    </span><span class="p">{</span></span>&#x000A;<span id="LC4" class="line"><span class="w">	        </span><span class="nl">"author"</span><span class="p">:</span><span class="w"> </span><span class="s2">"EleganceWorld"</span><span class="p">,</span></span>&#x000A;<span id="LC5" class="line"><span class="w">	        </span><span class="nl">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">545442</span><span class="p">,</span></span>&#x000A;<span id="LC6" class="line"><span class="w">	        </span><span class="nl">"content"</span><span class="p">:</span><span class="w"> </span><span class="s2">"上海到济南，无尽的猪排盖饭… （后略）"</span><span class="p">,</span></span>&#x000A;<span id="LC7" class="line"><span class="w">	        </span><span class="nl">"likes"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span></span>&#x000A;<span id="LC8" class="line"><span class="w">	        </span><span class="nl">"time"</span><span class="p">:</span><span class="w"> </span><span class="mi">1413589303</span><span class="p">,</span></span>&#x000A;<span id="LC9" class="line"><span class="w">	        </span><span class="nl">"avatar"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://pic2.zhimg.com/1f76e6a25_im.jpg"</span></span>&#x000A;<span id="LC10" class="line"><span class="w">	    </span><span class="p">},</span></span>&#x000A;<span id="LC11" class="line"><span class="w">	    </span><span class="err">...</span></span>&#x000A;<span id="LC12" class="line"><span class="w">	</span><span class="p">]</span></span>&#x000A;<span id="LC13" class="line"><span class="p">}</span></span></pre></div></div>&#x000A;<p>*分析:</p>&#x000A;<table>&#x000A;<thead>&#x000A;<tr>&#x000A;<th>字段名</th>&#x000A;<th>备注</th>&#x000A;</tr>&#x000A;</thead>&#x000A;<tbody>&#x000A;<tr>&#x000A;<td>comments</td>&#x000A;<td>长评论列表，形式为数组（请注意，其长度可能为 0）</td>&#x000A;</tr>&#x000A;<tr>&#x000A;<td>author</td>&#x000A;<td>评论作者</td>&#x000A;</tr>&#x000A;<tr>&#x000A;<td>id</td>&#x000A;<td>评论者的唯一标识符</td>&#x000A;</tr>&#x000A;<tr>&#x000A;<td>content</td>&#x000A;<td>评论的内容</td>&#x000A;</tr>&#x000A;<tr>&#x000A;<td>likes</td>&#x000A;<td>评论所获『赞』的数量</td>&#x000A;</tr>&#x000A;<tr>&#x000A;<td>time</td>&#x000A;<td>评论时间</td>&#x000A;</tr>&#x000A;<tr>&#x000A;<td>avatar</td>&#x000A;<td>用户头像图片的地址</td>&#x000A;</tr>&#x000A;</tbody>&#x000A;</table>&#x000A;<p>###8. 新闻对应短评论查看</p>&#x000A;<ul>&#x000A;<li>URL: <code>http://news-at.zhihu.com/api/4/story/#{id}/short-comments</code>&#x000A;</li>&#x000A;<li>使用在 <code>最新消息</code> 中获得的 <code>id</code>，传入#{id}，得到短评论 JSON 格式的内容</li>&#x000A;<li>最新的测试结果,一次只返回20条.找到显示全的方法了,调用  <code>http://news-at.zhihu.com/api/4/story/#{id}/short-comments/before/#{lasetId}</code> 就可以获取lasetId评论之前的的评论了,还是返回20个.不断的重复,就可以读取完成所有的评论</li>&#x000A;<li>响应实例:</li>&#x000A;</ul>&#x000A;<div class="white"><div class="highlight"><pre><span id="LC1" class="line"><span class="p">{</span></span>&#x000A;<span id="LC2" class="line"><span class="w">	</span><span class="nl">"comments"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span></span>&#x000A;<span id="LC3" class="line"><span class="w">	    </span><span class="p">{</span></span>&#x000A;<span id="LC4" class="line"><span class="w">	        </span><span class="nl">"author"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Xiaole说"</span><span class="p">,</span></span>&#x000A;<span id="LC5" class="line"><span class="w">	        </span><span class="nl">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">545721</span><span class="p">,</span></span>&#x000A;<span id="LC6" class="line"><span class="w">	        </span><span class="nl">"content"</span><span class="p">:</span><span class="w"> </span><span class="s2">"就吃了个花生米，呵呵"</span><span class="p">,</span></span>&#x000A;<span id="LC7" class="line"><span class="w">	        </span><span class="nl">"likes"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span></span>&#x000A;<span id="LC8" class="line"><span class="w">	        </span><span class="nl">"time"</span><span class="p">:</span><span class="w"> </span><span class="mi">1413600071</span><span class="p">,</span></span>&#x000A;<span id="LC9" class="line"><span class="w">	        </span><span class="nl">"avatar"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://pic1.zhimg.com/c41f035ab_im.jpg"</span></span>&#x000A;<span id="LC10" class="line"><span class="w">	    </span><span class="p">},</span></span>&#x000A;<span id="LC11" class="line"><span class="w">	    </span><span class="err">...</span></span>&#x000A;<span id="LC12" class="line"><span class="w">	</span><span class="p">]</span></span>&#x000A;<span id="LC13" class="line"><span class="p">}</span></span></pre></div></div>&#x000A;<p>格式与前同，恕不再赘述</p>&#x000A;<p>###9. 主题日报列表查看</p>&#x000A;<ul>&#x000A;<li>URL: <a href="http://news-at.zhihu.com/api/4/themes">http://news-at.zhihu.com/api/4/themes</a>&#x000A;</li>&#x000A;<li>响应实例：</li>&#x000A;</ul>&#x000A;<div class="white"><div class="highlight"><pre><span id="LC1" class="line"><span class="p">{</span></span>&#x000A;<span id="LC2" class="line"><span class="w">    </span><span class="nl">"limit"</span><span class="p">:</span><span class="w"> </span><span class="mi">1000</span><span class="p">,</span></span>&#x000A;<span id="LC3" class="line"><span class="w">    </span><span class="nl">"subscribed"</span><span class="p">:</span><span class="w"> </span><span class="p">[],</span></span>&#x000A;<span id="LC4" class="line"><span class="w">    </span><span class="nl">"others"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span></span>&#x000A;<span id="LC5" class="line"><span class="w">        </span><span class="p">{</span></span>&#x000A;<span id="LC6" class="line"><span class="w">            </span><span class="nl">"color"</span><span class="p">:</span><span class="w"> </span><span class="mi">15007</span><span class="p">,</span></span>&#x000A;<span id="LC7" class="line"><span class="w">            </span><span class="nl">"thumbnail"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://pic3.zhimg.com/0e71e90fd6be47630399d63c58beebfc.jpg"</span><span class="p">,</span></span>&#x000A;<span id="LC8" class="line"><span class="w">            </span><span class="nl">"description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"了解自己和别人，了解彼此的欲望和局限。"</span><span class="p">,</span></span>&#x000A;<span id="LC9" class="line"><span class="w">            </span><span class="nl">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">13</span><span class="p">,</span></span>&#x000A;<span id="LC10" class="line"><span class="w">            </span><span class="nl">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"日常心理学"</span></span>&#x000A;<span id="LC11" class="line"><span class="w">        </span><span class="p">}</span></span>&#x000A;<span id="LC12" class="line"><span class="w">        </span><span class="err">...</span></span>&#x000A;<span id="LC13" class="line"><span class="w">    </span><span class="p">]</span></span>&#x000A;<span id="LC14" class="line"><span class="p">}</span></span></pre></div></div>&#x000A;<ul>&#x000A;<li>分析:</li>&#x000A;</ul>&#x000A;<table>&#x000A;<thead>&#x000A;<tr>&#x000A;<th>字段名</th>&#x000A;<th>备注</th>&#x000A;</tr>&#x000A;</thead>&#x000A;<tbody>&#x000A;<tr>&#x000A;<td>limit</td>&#x000A;<td>返回数目之限制（仅为猜测）</td>&#x000A;</tr>&#x000A;<tr>&#x000A;<td>subscribed</td>&#x000A;<td>已订阅条目</td>&#x000A;</tr>&#x000A;<tr>&#x000A;<td>others</td>&#x000A;<td>其他条目</td>&#x000A;</tr>&#x000A;<tr>&#x000A;<td>-&gt; color</td>&#x000A;<td>颜色，作用未知</td>&#x000A;</tr>&#x000A;<tr>&#x000A;<td>-&gt; thumbnail</td>&#x000A;<td>供显示的图片地址</td>&#x000A;</tr>&#x000A;<tr>&#x000A;<td>-&gt; description</td>&#x000A;<td>主题日报的介绍</td>&#x000A;</tr>&#x000A;<tr>&#x000A;<td>-&gt; id</td>&#x000A;<td>该主题日报的编号</td>&#x000A;</tr>&#x000A;<tr>&#x000A;<td>-&gt; name</td>&#x000A;<td>供显示的主题日报名称</td>&#x000A;</tr>&#x000A;</tbody>&#x000A;</table>&#x000A;<p>###10. 主题日报内容查看</p>&#x000A;<ul>&#x000A;<li>URL: <a href="http://news-at.zhihu.com/api/4/theme/#%7Bid%7D">http://news-at.zhihu.com/api/4/theme/#{id}</a>&#x000A;</li>&#x000A;<li>使用在 <code>主题日报列表查看</code> 中获得需要查看的主题日报的 id，赋值给#{id}，得到对应主题日报 JSON 格式的内容</li>&#x000A;<li>响应实例：</li>&#x000A;</ul>&#x000A;<div class="white"><div class="highlight"><pre><span id="LC1" class="line"><span class="p">{</span></span>&#x000A;<span id="LC2" class="line"><span class="w">    </span><span class="nl">"stories"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span></span>&#x000A;<span id="LC3" class="line"><span class="w">        </span><span class="p">{</span></span>&#x000A;<span id="LC4" class="line"><span class="w">            </span><span class="nl">"images"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span></span>&#x000A;<span id="LC5" class="line"><span class="w">                </span><span class="s2">"http://pic4.zhimg.com/fabeb6ece13d1b4f3fecd484f475feeb_t.jpg"</span></span>&#x000A;<span id="LC6" class="line"><span class="w">            </span><span class="p">],</span></span>&#x000A;<span id="LC7" class="line"><span class="w">            </span><span class="nl">"type"</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span></span>&#x000A;<span id="LC8" class="line"><span class="w">            </span><span class="nl">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">4759968</span><span class="p">,</span></span>&#x000A;<span id="LC9" class="line"><span class="w">            </span><span class="nl">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"你的密码保护问题真的安全吗？"</span></span>&#x000A;<span id="LC10" class="line"><span class="w">        </span><span class="p">},</span></span>&#x000A;<span id="LC11" class="line"><span class="w">        </span><span class="p">{</span></span>&#x000A;<span id="LC12" class="line"><span class="w">            </span><span class="nl">"images"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span></span>&#x000A;<span id="LC13" class="line"><span class="w">                </span><span class="s2">"http://pic2.zhimg.com/969a13db3fad18b1d35ce9d3e2633ef1_t.jpg"</span></span>&#x000A;<span id="LC14" class="line"><span class="w">            </span><span class="p">],</span></span>&#x000A;<span id="LC15" class="line"><span class="w">            </span><span class="nl">"type"</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span></span>&#x000A;<span id="LC16" class="line"><span class="w">            </span><span class="nl">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">4745004</span><span class="p">,</span></span>&#x000A;<span id="LC17" class="line"><span class="w">            </span><span class="nl">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"当DNS泄漏让VPN不再安全，我们该怎么办？"</span></span>&#x000A;<span id="LC18" class="line"><span class="w">        </span><span class="p">},</span></span>&#x000A;<span id="LC19" class="line"><span class="w"> 		</span><span class="err">...</span></span>&#x000A;<span id="LC20" class="line"><span class="w">    </span><span class="p">],</span></span>&#x000A;<span id="LC21" class="line"><span class="w">    </span><span class="nl">"description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"把黑客知识科普到你的面前"</span><span class="p">,</span></span>&#x000A;<span id="LC22" class="line"><span class="w">    </span><span class="nl">"background"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://p4.zhimg.com/32/55/32557676e84fcfda4d82d9b8042464e1.jpg"</span><span class="p">,</span></span>&#x000A;<span id="LC23" class="line"><span class="w">    </span><span class="nl">"color"</span><span class="p">:</span><span class="w"> </span><span class="mi">9699556</span><span class="p">,</span></span>&#x000A;<span id="LC24" class="line"><span class="w">    </span><span class="nl">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"互联网安全"</span><span class="p">,</span></span>&#x000A;<span id="LC25" class="line"><span class="w">    </span><span class="nl">"image"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://p4.zhimg.com/30/6f/306f3ab291c415f40fe4485b75627230.jpg"</span><span class="p">,</span></span>&#x000A;<span id="LC26" class="line"><span class="w">    </span><span class="nl">"editors"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span></span>&#x000A;<span id="LC27" class="line"><span class="w">        </span><span class="p">{</span></span>&#x000A;<span id="LC28" class="line"><span class="w">            </span><span class="nl">"url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://www.zhihu.com/people/THANKS"</span><span class="p">,</span></span>&#x000A;<span id="LC29" class="line"><span class="w">            </span><span class="nl">"bio"</span><span class="p">:</span><span class="w"> </span><span class="s2">"FreeBuf.com 小编，专注黑客与极客"</span><span class="p">,</span></span>&#x000A;<span id="LC30" class="line"><span class="w">            </span><span class="nl">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">65</span><span class="p">,</span></span>&#x000A;<span id="LC31" class="line"><span class="w">            </span><span class="nl">"avatar"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://pic4.zhimg.com/ecd93e213_m.jpg"</span><span class="p">,</span></span>&#x000A;<span id="LC32" class="line"><span class="w">            </span><span class="nl">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"THANKS"</span></span>&#x000A;<span id="LC33" class="line"><span class="w">        </span><span class="p">},</span></span>&#x000A;<span id="LC34" class="line"><span class="w">        </span><span class="p">{</span></span>&#x000A;<span id="LC35" class="line"><span class="w">            </span><span class="nl">"url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://www.zhihu.com/people/____"</span><span class="p">,</span></span>&#x000A;<span id="LC36" class="line"><span class="w">            </span><span class="nl">"bio"</span><span class="p">:</span><span class="w"> </span><span class="s2">"PKAV &amp; Wooyun"</span><span class="p">,</span></span>&#x000A;<span id="LC37" class="line"><span class="w">            </span><span class="nl">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">38</span><span class="p">,</span></span>&#x000A;<span id="LC38" class="line"><span class="w">            </span><span class="nl">"avatar"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://pic1.zhimg.com/815b2ec82_m.jpg"</span><span class="p">,</span></span>&#x000A;<span id="LC39" class="line"><span class="w">            </span><span class="nl">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"长短短"</span></span>&#x000A;<span id="LC40" class="line"><span class="w">        </span><span class="p">},</span></span>&#x000A;<span id="LC41" class="line"><span class="w">        </span><span class="err">...</span></span>&#x000A;<span id="LC42" class="line"><span class="w">    </span><span class="p">],</span></span>&#x000A;<span id="LC43" class="line"><span class="w">    </span><span class="nl">"image_source"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span></span>&#x000A;<span id="LC44" class="line"><span class="p">}</span></span></pre></div></div>&#x000A;<ul>&#x000A;<li>分析:</li>&#x000A;</ul>&#x000A;<table>&#x000A;<thead>&#x000A;<tr>&#x000A;<th>字段名</th>&#x000A;<th>备注</th>&#x000A;</tr>&#x000A;</thead>&#x000A;<tbody>&#x000A;<tr>&#x000A;<td>stories</td>&#x000A;<td>该主题日报中的文章列表</td>&#x000A;</tr>&#x000A;<tr>&#x000A;<td>-&gt; images</td>&#x000A;<td>图像地址（其类型为数组。请留意在代码中处理无该属性与数组长度为 0 的情况）</td>&#x000A;</tr>&#x000A;<tr>&#x000A;<td>-&gt; type</td>&#x000A;<td>类型，作用未知</td>&#x000A;</tr>&#x000A;<tr>&#x000A;<td>-&gt; title</td>&#x000A;<td>消息的标题</td>&#x000A;</tr>&#x000A;<tr>&#x000A;<td>-&gt; id</td>&#x000A;<td>消息的id</td>&#x000A;</tr>&#x000A;<tr>&#x000A;<td>description</td>&#x000A;<td>该主题日报的介绍</td>&#x000A;</tr>&#x000A;<tr>&#x000A;<td>background</td>&#x000A;<td>该主题日报的背景图片（大图）</td>&#x000A;</tr>&#x000A;<tr>&#x000A;<td>color</td>&#x000A;<td>颜色，作用未知</td>&#x000A;</tr>&#x000A;<tr>&#x000A;<td>name</td>&#x000A;<td>该主题日报的名称</td>&#x000A;</tr>&#x000A;<tr>&#x000A;<td>image</td>&#x000A;<td>背景图片的小图版本</td>&#x000A;</tr>&#x000A;<tr>&#x000A;<td>editors</td>&#x000A;<td>该主题日报的编辑（『用户推荐日报』中此项的指是一个空数组，在 App 中的主编栏显示为『许多人』，点击后访问该主题日报的介绍页面，请留意)</td>&#x000A;</tr>&#x000A;<tr>&#x000A;<td>-&gt; url</td>&#x000A;<td>主编的知乎用户主页</td>&#x000A;</tr>&#x000A;<tr>&#x000A;<td>-&gt; bio</td>&#x000A;<td>主编的个人简介</td>&#x000A;</tr>&#x000A;<tr>&#x000A;<td>-&gt; id</td>&#x000A;<td>数据库中的唯一表示符</td>&#x000A;</tr>&#x000A;<tr>&#x000A;<td>-&gt; avatar</td>&#x000A;<td>主编的头像</td>&#x000A;</tr>&#x000A;<tr>&#x000A;<td>-&gt; name</td>&#x000A;<td>主编的姓名</td>&#x000A;</tr>&#x000A;<tr>&#x000A;<td>image_source</td>&#x000A;<td>图像的版权信息</td>&#x000A;</tr>&#x000A;</tbody>&#x000A;</table></div>
+<script>
+  toMathMlCode('','markdown-body');
+</script>
+
+</div>
+</div>
+<div class='tree_progress'></div>
+<div class='ui small modal' id='modal-linejump'>
+<div class='ui custom form content'>
+<div class='field'>
+<div class='ui right action input'>
+<input placeholder='跳转至某一行...' type='number'>
+<div class='ui orange button'>
+跳转
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class='row column inner-comment' id='blob-comment'>
+<input id="comment_path" name="comment_path" type="hidden" value="README.md" />
+<div class='tree-comments'>
+<h3 id='tree_comm_title'>
+评论
+(
+<span class='comments-count'>
+0
+</span>
+)
+</h3>
+<div class='ui threaded comments middle aligned' id='notes-list'></div>
+<input id="ajax_add_note_id" name="ajax_add_note_id" type="hidden" />
+<div class='text-center'>
+<div class='tip-loading' style='display: none'>
+<div class='ui active mini inline loader'></div>
+正在加载...
+</div>
+</div>
+</div>
+<script>
+  "use strict";
+  $(function(){
+    var page = 1
+    var commentsCount = 0
+    var $container = $('.tree-comments')
+    var $comments = $container.find('.ui.comments')
+    var $tipLoading = $container.find('.tip-loading')
+    var $btnLoad = $container.find('.btn-load-more')
+    var noteAnchor = new Gitee.NoteAnchor({ defaultAnchor: '#tree_comm_title' })
+  
+    if (commentsCount < 1) {
+      return;
+    }
+  
+    var path;
+    if ($('#comment_path').val() === '') {
+      path = '/';
+    } else {
+      path = $('#comment_path').val();
+    }
+  
+    function loadComments () {
+      $btnLoad.hide();
+      $tipLoading.show();
+      $.ajax({
+        url: '/xycm/ZhiHuDaily-Swift/comment_list',
+        data: {
+          page: page,
+          path: path
+        },
+        success: function(data) {
+          var err;
+          try {
+            $tipLoading.hide();
+            $btnLoad.show();
+            if (data.status !== 0) {
+              $btnLoad.text('无更多评论')
+              return $btnLoad.prop('disabled', true).addClass('disabled');
+            } else {
+              TreeComment.CommentListHandler(data);
+              page += 1;
+              if (data.comments_count < 10) {
+                $('#ajax_add_note_id').val('');
+                $btnLoad.text('无更多评论')
+                $btnLoad.prop('disabled', true).addClass('disabled');
+              }
+              // osctree can not load script
+              $comments.find('.timeago').timeago();
+              $comments.find('.commenter-role-label').popup();
+              noteAnchor.locate();
+              toMathMlCode('', 'comments');
+              return $('.markdown-body pre code').each(function(i, block) {
+                return hljs.highlightBlock(block);
+              });
+            }
+          } catch (error) {
+            err = error;
+            return console.log('loadComments error:' + err);
+          }
+        }
+      });
+    };
+  
+  
+    function checkLoad () {
+      var listTop, top;
+      top = $(window).scrollTop();
+      listTop = $container.offset().top;
+      if (listTop >= top && listTop < top + $(window).height()) {
+        $(window).off('scroll', checkLoad);
+        return loadComments();
+      }
+    };
+  
+    $btnLoad.on('click', loadComments);
+    loadComments()
+  })
+</script>
+
+</div>
+<div class='inner-comment-box' id='comment-box'>
+<p>
+你可以在<a href="/login">登录</a>后，发表评论
+</p>
+
+</div>
+
+<div class='complaint'>
+<div class='ui modal small form' id='landing-comments-complaint-modal'>
+<i class='iconfont icon-close close'></i>
+<div class='header'>
+举报
+</div>
+<div class='content'>
+<div class='appeal-success-tip hide'>
+<i class='iconfont icon-ic_msg_success'></i>
+<div class='appeal-success-text'>
+举报成功
+</div>
+<span>
+我们将于2个工作日内通过站内信反馈结果给你！
+</span>
+</div>
+<div class='appeal-tip'>
+请认真填写举报原因，尽可能描述详细。
+</div>
+<div class='ui form appeal-form'>
+<div class='inline field'>
+<label class='left-part appeal-type-wrap'>
+举报类型
+</label>
+<div class='ui dropdown selection' id='appeal-comments-types'>
+<div class='text default'>
+请选择举报类型
+</div>
+<i class='dropdown icon'></i>
+<div class='menu'></div>
+</div>
+</div>
+<div class='inline field'>
+<label class='left-part'>
+举报原因
+</label>
+<textarea class='appeal-reason' id='appeal-comment-reason' name='msg' placeholder='请说明举报原因' rows='3'></textarea>
+</div>
+<div class='ui message callback-msg hide'></div>
+<div class='ui small error text message exceeded-size-tip'></div>
+</div>
+</div>
+<div class='actions'>
+<div class='ui button blank cancel'>
+取消
+</div>
+<div class='ui orange icon button disabled ok' id='complaint-comment-confirm'>
+发送
+</div>
+</div>
+</div>
+<script>
+  var $complaintCommentsModal = $('#landing-comments-complaint-modal'),
+      $complainCommentType = $complaintCommentsModal.find('#appeal-comments-types'),
+      $complaintModalTip = $complaintCommentsModal.find('.callback-msg'),
+      $complaintCommentsContent = $complaintCommentsModal.find('.appeal-reason'),
+      $complaintCommentBtn = $complaintCommentsModal.find('#complaint-comment-confirm'),
+      complaintSending = false,
+      initedCommentsType = false;
+  
+  function initCommentsTypeList() {
+    if (!initedCommentsType) {
+      $.ajax({
+        url: "/appeals/fetch_types",
+        method: 'get',
+        data: {'type': 'comment'},
+        success: function (data) {
+          var result = '';
+          for (var i = 0; i < data.length; i++) {
+            result = result + "<div class='item' data-value='" + data[i].id + "'>" + data[i].name + "</div>";
+          }
+          $complainCommentType.find('.menu').html(result);
+        }
+      });
+      $complainCommentType.dropdown({showOnFocus: false});
+      initedCommentsType = true;
+    }
+  }
+  $complainCommentType.on('click', function() {
+    $complaintCommentsModal.modal({
+      autofocus: false,
+      onApprove: function() {
+        return false;
+      },
+      onHidden: function() {
+        restoreCommonentDefault();
+      }
+    }).modal('show');
+  });
+  
+  $complaintCommentsContent.on('change keyup', function(e) {
+    var content = $(this).val();
+    if ($.trim(content).length > 0 && $complainCommentType.dropdown('get value').length > 0 ) {
+      $complaintCommentBtn.removeClass('disabled');
+      return;
+    }
+    $complaintCommentBtn.addClass('disabled');
+  });
+  
+  
+  $complainCommentType.dropdown({
+    showOnFocus: false,
+    onChange: function(value, text, $selectedItem) {
+      if (value.length > 0 && $.trim($complaintCommentsContent.val()).length > 0) {
+        $complaintCommentBtn.removeClass('disabled');
+        return
+      }
+      $complaintCommentBtn.addClass('disabled');
+    }
+  });
+  
+  function restoreCommonentDefault() {
+    $complainCommentType.dropdown('restore defaults');
+    $complaintCommentsContent.val('');
+    $('.exceeded-size-tip').text('').hide();
+    $complaintModalTip.text('').hide();
+    setTimeout(function() {
+      setCommentSendTip(false);
+    }, 1500);
+  }
+  
+  $complaintCommentBtn.on('click',function(e){
+    var reason = $complaintCommentsContent.val();
+    var appealableId = $('#landing-comments-complaint-modal').attr('data-id');
+    if (complaintSending) {
+      return;
+    }
+    var appealType = $complainCommentType.dropdown('get value');
+    var formData = new FormData();
+    formData.append('appeal_type_id', appealType);
+    formData.append('reason', reason);
+    formData.append('appeal_type','Note');
+    formData.append('target_id',appealableId);
+    $.ajax({
+      type: 'POST',
+      url: "/appeals",
+      cache: false,
+      contentType: false,
+      processData: false,
+      data: formData,
+      beforeSend: function() {
+        setCommentSendStatus(true);
+      },
+      success: function(res) {
+        if (res.status == 200) {
+          setCommentSendTip(true);
+          setTimeout(function() {
+            $complaintCommentsModal.modal('hide');
+            restoreCommonentDefault();
+          }, 3000);
+        }
+        setCommentSendStatus(false);
+      },
+      error: function(err) {
+        showCommonTips(err.responseJSON.message, 'error');
+        setCommentSendStatus(false);
+      }
+    })
+  });
+  
+  function showCommonTips(text, type) {
+    $complaintModalTip.text(text).show();
+    if (type == 'error') {
+      $complaintModalTip.removeClass('success').addClass('error');
+    } else {
+      $complaintModalTip.removeClass('error').addClass('success');
+    }
+  }
+  
+  function setCommentSendStatus(value) {
+    complaintSending = value;
+    if (complaintSending) {
+      $complaintCommentBtn.addClass('loading');
+      $complaintCommentsContent.attr('readonly', true);
+      $complainCommentType.attr('readonly', true);
+    } else {
+      $complaintCommentBtn.removeClass('loading');
+      $complaintCommentsContent.attr('readonly', false);
+      $complainCommentType.attr('readonly', false);
+    }
+  }
+  
+  function setCommentSendTip(value) {
+    if (value) {
+      $('.appeal-success-tip').removeClass('hide');
+      $('.appeal-tip').addClass('hide');
+      $('.appeal-form').addClass('hide');
+      $('#landing-comments-complaint-modal .actions').addClass('hide');
+    } else {
+      $('.appeal-success-tip').addClass('hide');
+      $('.appeal-tip').removeClass('hide');
+      $('.appeal-form').removeClass('hide');
+      $('#landing-comments-complaint-modal .actions').removeClass('hide');
+    }
+  }
+</script>
+
+</div>
+<script>
+  "use strict";
+  $('.js-check-star').checkbox('set unchecked')
+</script>
+
+</div>
+</div>
+</div>
+<script>
+  (function() {
+    $(function() {
+      Tree.init();
+      return TreeCommentActions.init();
+    });
+  
+  }).call(this);
+</script>
+
+</div>
+<script>
+  (function() {
+    var donateModal;
+  
+    Gitee.modalHelper = new GiteeModalHelper({
+      alertText: '提示',
+      okText: '确定'
+    });
+  
+    donateModal = new ProjectDonateModal({
+      el: '#project-donate-modal',
+      alipayUrl: '/xycm/ZhiHuDaily-Swift/alipay',
+      wepayUrl: '/xycm/ZhiHuDaily-Swift/wepay',
+      nameIsBlank: '名称不能为空',
+      nameTooLong: '名称过长（最多为 36 个字符）',
+      modalHelper: Gitee.modalHelper
+    });
+  
+    if ("" === 'true') {
+      donateModal.show();
+    }
+  
+    $('#project-donate').on('click', function() {
+      return donateModal.show();
+    });
+  
+  }).call(this);
+</script>
+<script>
+  Tree.initHighlightTheme('white')
+</script>
+
+
+</div>
+<div class='gitee-project-extension'>
+<div class='extension lang'>Swift</div>
+<div class='extension public'>1</div>
+<div class='extension https'>https://gitee.com/xycm/ZhiHuDaily-Swift.git</div>
+<div class='extension ssh'>git@gitee.com:xycm/ZhiHuDaily-Swift.git</div>
+<div class='extension namespace'>xycm</div>
+<div class='extension repo'>ZhiHuDaily-Swift</div>
+<div class='extension name'>ZhiHuDaily-Swift</div>
+<div class='extension branch'>master</div>
+</div>
+
+<script>
+  $(function() {
+    GitLab.GfmAutoComplete.dataSource = "/xycm/ZhiHuDaily-Swift/autocomplete_sources"
+    GitLab.GfmAutoComplete.Emoji.assetBase = '/assets/emoji'
+    GitLab.GfmAutoComplete.setup();
+  });
+</script>
+
+<footer id='git-footer-main'>
+<div class='ui container'>
+<div class='ui two column grid '>
+<div class='nine wide column git-footer-left'>
+<p><a href="https://gitee.com/" target="_blank">© Gitee.com</a></p>
+<div class='ui four column grid' id='footer-left'>
+<div class='column'>
+<div class='ui link list'>
+<div class='item'>
+<a class="item" href="/about_us">关于我们</a>
+</div>
+<div class='item'>
+<a class="item" href="/terms">使用条款</a>
+</div>
+<div class='item'>
+<a class="item" href="/oschina/git-osc/issues">意见建议</a>
+</div>
+<div class='item'>
+<a class="item" href="/links.html">合作伙伴</a>
+</div>
+</div>
+</div>
+<div class='column'>
+<div class='ui link list'>
+<div class='item'>
+<a class="item" href="/all-about-git">Git 大全</a>
+</div>
+<div class='item'>
+<a class="item" href="https://oschina.gitee.io/learn-git-branching/">Git 命令学习</a>
+</div>
+<div class='item'>
+<a class="item" href="https://copycat.gitee.com/">代码克隆检测</a>
+</div>
+<div class='item'>
+<a class="item" href="/appclient">APP与插件下载</a>
+</div>
+</div>
+</div>
+<div class='column'>
+<div class='ui link list'>
+<div class='item'>
+<a class="item" href="/gitee-stars">码云封面人物</a>
+</div>
+<div class='item'>
+<a class="item" href="/gvp">GVP项目</a>
+</div>
+<div class='item'>
+<a class="item" href="https://blog.gitee.com/">码云博客</a>
+</div>
+<div class='item'>
+<a class="item" href="/enterprises#nonprofit-plan">Gitee 公益计划</a>
+</div>
+</div>
+</div>
+<div class='column'>
+<div class='ui link list'>
+<div class='item'>
+<a class="item" href="/api/v5/swagger">OpenAPI</a>
+</div>
+<div class='item'>
+<a class="item" href="/help">帮助文档</a>
+</div>
+<div class='item'>
+<a class="item" href="/self_services">在线自助服务</a>
+</div>
+<div class='item'>
+<a class="item" href="/git-osc">更新日志</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class='seven wide column right aligned followus git-footer-right'>
+<div class='qrcode weixin'>
+<img alt="Qrcode weixin" src="https://assets.gitee.com/assets/qrcode-weixin-9e7cfb27165143d2b8e8b268a52ea822.jpg" />
+<p class='weixin-text'>微信服务号</p>
+</div>
+<div class='phone-and-qq column'>
+<div class='ui list official-support-container'>
+<div class='item'>
+<a class="icon-popup" href="//shang.qq.com/wpa/qunwpa?idkey=df785aa7af71f7d74149ab062742d761b845464350ecba25eb440357a3e573b7" title="点击加入码云官方群"><i class='iconfont icon-logo-qq'></i>
+<span>官方技术交流QQ群：1050025484</span>
+</a></div>
+<div class='item mail-and-zhihu'>
+<a href="mailto: git@oschina.cn"><i class='iconfont icon-ic-mail'></i>
+<span id='git-footer-email'>git#oschina.cn</span>
+</a><a href="https://www.zhihu.com/org/ma-yun-osc/ " target="_blank"><i class='iconfont icon-zhihu'></i>
+<span>码云Gitee</span>
+</a></div>
+<div class='item'>企业版售前及售后使用咨询：400-606-0201</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class='bottombar'>
+<div class='ui container'>
+<div class='ui grid'>
+<div class='seven wide column partner'>
+<div class='copyright'>
+<a href="http://www.beian.miit.gov.cn/">粤ICP备12009483号</a>
+深圳市奥思网络科技有限公司版权所有
+</div>
+</div>
+<div class='nine wide column right aligned'>
+<i class='icon world'></i>
+<a href="/language/zh-CN">简 体</a>
+/
+<a href="/language/zh-TW">繁 體</a>
+/
+<a href="/language/en">English</a>
+</div>
+</div>
+</div>
+</div>
+</footer>
+<script>
+  var officialEmail = $('#git-footer-email').text()
+  $('#git-footer-main .icon-popup').popup({ position: 'bottom center' })
+  $('#git-footer-email').text(officialEmail.replace('#', '@'))
+</script>
+
+
+<div class='side-toolbar'>
+<div class='button toolbar-help'>
+<i class='iconfont icon-help'></i>
+</div>
+<div class='ui popup left center dark'>点此查找更多帮助</div>
+<div class='toolbar-help-dialog'>
+<div class='toolbar-dialog-header'>
+<h3 class='toolbar-dialog-title'>搜索帮助</h3>
+<form accept-charset="UTF-8" action="/help/load_keywords_data" class="toolbar-help-search-form" method="get"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /></div>
+<div class='ui icon input fluid toolbar-help-search'>
+<input name='keywords' placeholder='请输入产品名称或问题' type='text'>
+<i class='icon search'></i>
+</div>
+</form>
+
+<i class='iconfont icon-close toolbar-dialog-close-icon'></i>
+</div>
+<div class='toolbar-dialog-content'>
+<div class='toolbar-help-hot-search'>
+<div class='toolbar-roll'>
+<a class="init active" href="https://oschina.gitee.io/learn-git-branching/?utm_source==gitee-help-widget" title="Git 命令在线学习"><i class='Blue icon icon-command iconfont'></i>
+<span>Git 命令在线学习</span>
+</a><a class="init " href="https://gitee.com/help/articles/4261?utm_source==gitee-help-widget" title="如何在码云上导入 GitHub 仓库"><i class='icon icon-clipboard iconfont orange'></i>
+<span>如何在码云上导入 GitHub 仓库</span>
+</a></div>
+<div class='toolbar-list'>
+<div class='toolbar-list-item'>
+<a href="/help/articles/4114">Git 仓库基础操作</a>
+</div>
+<div class='toolbar-list-item'>
+<a href="/help/articles/4166">企业版和社区版功能对比</a>
+</div>
+<div class='toolbar-list-item'>
+<a href="/help/articles/4191">SSH 公钥设置</a>
+</div>
+<div class='toolbar-list-item'>
+<a href="/help/articles/4194">如何处理代码冲突</a>
+</div>
+<div class='toolbar-list-item'>
+<a href="/help/articles/4232">仓库体积过大，如何减小？</a>
+</div>
+<div class='toolbar-list-item'>
+<a href="/help/articles/4279">如何找回被删除的仓库数据</a>
+</div>
+<div class='toolbar-list-item'>
+<a href="/help/articles/4283">码云使用容量说明</a>
+</div>
+<div class='toolbar-list-item'>
+<a href="/help/articles/4284">GitHub仓库快速导入Gitee及同步更新</a>
+</div>
+</div>
+</div>
+<div class='toolbar-help-search-reseult'>
+<div class='toolbar-help-flex-column'>
+<div class='ui centered inline loader toolbar-help-loader'></div>
+<div class='toolbar-list'></div>
+<div class='toolbar-help-link-to-help'>
+<a href="" target="_blank">查看更多搜索结果</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script>
+  var opt = { position: 'left center' };
+  var $helpSideToolbar = $(".button.toolbar-help");
+  var $toolbarRoll = $('.toolbar-roll');
+  
+  $(function() {
+    if (false) {
+      $helpSideToolbar.popup(opt);
+    } else {
+      $helpSideToolbar.popup('show', opt);
+      setTimeout(function() {
+        $helpSideToolbar.popup('hide', opt);
+      }, 3000);
+    }
+  
+    if ($toolbarRoll.length) {
+      setInterval(function() {
+        var $nextActiveLink = $toolbarRoll.find('a.active').next();
+        if (!$nextActiveLink.length) {
+          $nextActiveLink = $toolbarRoll.find('a:first-child');
+        }
+        $nextActiveLink.attr('class', 'active').siblings().removeClass('active init');
+      }, 5000);
+    }
+  })
+</script>
+
+<div class='button share-link'>
+<i class='iconfont icon-share'></i>
+</div>
+<div class='ui popup dark'>
+<div class='header'>
+分享到
+</div>
+<div class='bdsharebuttonbox' style='display: flex'>
+<a class='iconfont icon-home-service-wechat' data-cmd='weixin' title='分享到微信'></a>
+<a class='iconfont icon-weibo' data-cmd='tsina' title='分享到新浪微博'></a>
+<a class='iconfont icon-qq' data-cmd='sqq' title='分享到QQ好友'></a>
+<a class='iconfont icon-qzone' data-cmd='qzone' title='分享到QQ空间'></a>
+</div>
+</div>
+<div class='popup button' id='home-comment'>
+<i class='iconfont icon-comment'></i>
+</div>
+<div class='ui popup dark'>评论</div>
+<div class='toolbar-appeal popup button'>
+<i class='iconfont icon-report'></i>
+</div>
+<div class='ui popup dark'>
+仓库举报
+</div>
+<script>
+  $('.toolbar-appeal').popup({ position: 'left center' });
+</script>
+
+<div class='button gotop popup' id='gotop'>
+<i class='iconfont icon-top'></i>
+</div>
+<div class='ui popup dark'>回到顶部</div>
+</div>
+<div class='form modal normal-modal tiny ui' id='unlanding-complaint-modal'>
+<i class='iconfont icon-close close'></i>
+<div class='header'>
+登录提示
+</div>
+<div class='container actions'>
+<div class='content'>
+该操作需登录码云帐号，请先登录后再操作。
+</div>
+<div class='ui orange icon large button ok'>
+立即登录
+</div>
+<div class='ui button blank cancel'>
+没有帐号，去注册
+</div>
+</div>
+</div>
+<script>
+  var $elm = $('.toolbar-appeal');
+  
+  $elm.on('click', function() {
+    var modals = $("#unlanding-complaint-modal.normal-modal");
+    if (modals.length > 1) {
+      modals.eq(0).modal('show');
+    } else {
+      modals.modal('show');
+    }
+  })
+  $("#unlanding-complaint-modal.normal-modal").modal({
+    onDeny: function() {
+      window.location.href = "/signup?from=";
+    },
+    onApprove: function() {
+      window.location.href = "/login?from=";
+    }
+  })
+</script>
+
+<style>
+  .side-toolbar .bdsharebuttonbox a {
+    font-size: 24px;
+    color: white !important;
+    opacity: 0.9;
+    margin: 6px 6px 0px 6px;
+    background-image: none;
+    text-indent: 0;
+    height: auto;
+    width: auto;
+  }
+</style>
+<script>
+  (function() {
+    $('#project-user-message').popup({
+      position: 'left center'
+    });
+  
+  }).call(this);
+</script>
+<script>
+  Gitee.initSideToolbar({
+    hasComment: true,
+    commentUrl: '/xycm/ZhiHuDaily-Swift#tree_comm_title'
+  })
+</script>
+<script>
+  window._bd_share_config = {
+    "common": {
+      "bdSnsKey": {},
+      "bdText": document.title,
+      "bdMini": "1",
+      "bdMiniList": ["bdxc","tqf","douban","bdhome","sqq","thx","ibaidu","meilishuo","mogujie","diandian","huaban","duitang","hx","fx","youdao","sdo","qingbiji","people","xinhua","mail","isohu","yaolan","wealink","ty","iguba","fbook","twi","linkedin","h163","evernotecn","copy","print"],
+      "bdPic": "",
+      "bdStyle": "1",
+      "bdSize": "32"
+    },
+    "share": {}
+  }
+</script>
+<script src="/bd_share/static/api/js/share.js"></script>
+
+
+
+
+
+<script>
+  (function() {
+    this.__gac = {
+      domain: 'www.oschina.net'
+    };
+  
+  }).call(this);
+</script>
+<script defer src='//www.oschina.net/public/javascripts/cjl/ga.js?t=20160926' type='text/javascript'></script>
+
+</body>
+</html>
