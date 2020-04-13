@@ -1,0 +1,2026 @@
+<!DOCTYPE html>
+<html lang='zh-CN'>
+<head>
+<link href="https://gitee.com/toumingyu/obs-studio/releases.atom" rel="alternate" title="Recent Releases to obs-studio" type="application/atom+xml" />
+<link href="https://gitee.com/toumingyu/obs-studio/tags.atom" rel="alternate" title="Recent Tags to obs-studio" type="application/atom+xml" />
+<title>obs-studio 发行版 - 码云 Gitee.com</title>
+<link href="https://assets.gitee.com/assets/favicon-9007bd527d8a7851c8330e783151df58.ico" rel="shortcut icon" type="image/vnd.microsoft.icon" />
+<meta content='gitee.com/toumingyu/obs-studio git https://gitee.com/toumingyu/obs-studio.git' name='go-import'>
+<meta charset='utf-8'>
+<meta content='always' name='referrer'>
+<meta content='码云' property='og:site_name'>
+<meta content='Object' property='og:type'>
+<meta content='http://gitee.com/toumingyu/obs-studio/releases' property='og:url'>
+<meta content='https://gitee.com/static/images/logo_themecolor.png' itemprop='image' property='og:image'>
+<meta content='obs-studio 发行版 - 码云 Gitee.com' itemprop='name' property='og:title'>
+<meta content='码云(gitee.com)是 OSCHINA.NET 推出的代码托管平台，支持 Git 和 SVN，提供免费的私有仓库托管。目前已有超过 500 万的开发者选择码云。' property='og:description'>
+<meta content='码云,代码托管,git,Git@OSC,gitee.com,开源,内源,项目管理,版本控制,开源代码,代码分享,项目协作,开源项目托管,免费代码托管,Git代码托管,Git托管服务' name='Keywords'>
+<meta content='仓库 toumingyu/obs-studio 的 Releases' itemprop='description' name='Description'>
+
+<meta content="IE=edge" http-equiv="X-UA-Compatible" />
+<meta content="authenticity_token" name="csrf-param" />
+<meta content="YNSXbcXwOhTidrzaLh9WCz7/aJfOYRXJfgINr6WWMww=" name="csrf-token" />
+
+<link href="https://assets.gitee.com/assets/application-4353e40c527157901930256fb2cba2d4.css" media="screen" rel="stylesheet" />
+<script>
+//<![CDATA[
+window.gon = {};gon.locale="zh-CN";gon.sentry_dsn=null;gon.baidu_register_hm_push=null;gon.info={"controller_path":"releases","action_name":"index","current_user":false};gon.tour_env={"current_user":null,"action_name":"index","original_url":"http://gitee.com/toumingyu/obs-studio/releases","controller_path":"releases"};gon.http_clone="https://gitee.com/toumingyu/obs-studio.git";gon.user_project="toumingyu/obs-studio";gon.manage_branch="管理分支";gon.manage_tag="管理标签";gon.enterprise_id=0;gon.create_reaction_path="/toumingyu/obs-studio/reactions";
+//]]>
+</script>
+<script src="https://assets.gitee.com/assets/static/sentry-5.1.0-109ee3d8895a239331efcf947ba7f5d8.js"></script>
+<script src="https://assets.gitee.com/assets/application-25134bf44f1dbb308bb450bdb036a1cc.js"></script>
+<script src="https://assets.gitee.com/assets/lib/jquery.timeago.zh-CN-9c36ca7c4899a28168320613879d208a.js"></script>
+
+<link href="https://assets.gitee.com/assets/projects/application-c4d2b90e83d054a150b44a0e5a32f7c5.css" media="screen" rel="stylesheet" />
+<script src="https://assets.gitee.com/assets/projects/app-06d07e23f4df11285e052fe9499ae8ba.js"></script>
+
+<script src="//res.wx.qq.com/open/js/jweixin-1.2.0.js"></script>
+<script>
+  var title = document.title.replace(/( - Gitee| - 码云)$/, '')
+      imgUrl = '';
+  
+  document.addEventListener('DOMContentLoaded', function(event) {
+    var imgUrlEl = document.querySelector('.readme-box .markdown-body > img, .readme-box .markdown-body :not(a) > img');
+    imgUrl = imgUrlEl && imgUrlEl.getAttribute('src');
+  
+    if (!imgUrl) {
+      imgUrlEl = document.querySelector('meta[itemprop=image]');
+      imgUrl = imgUrlEl && imgUrlEl.getAttribute('content'); 
+      imgUrl = imgUrl || "https://gitee.com/static/images/logo_themecolor.png";
+    }
+  
+    wx.config({
+      debug: false,
+      appId: "wxff219d611a159737",
+      timestamp: "1586742396",
+      nonceStr: "e024ef242014fd45140556e46efb189a",
+      signature: "93fa239b0ce25227aacd5dcd5e38c2e1fbc60ecd",
+      jsApiList: [
+        'onMenuShareTimeline',
+        'onMenuShareAppMessage'
+      ]
+    });
+  
+    wx.ready(function () {
+      wx.onMenuShareTimeline({
+        title: title, // 分享标题
+        link: "https://gitee.com/toumingyu/obs-studio/releases", // 分享链接，该链接域名或路径必须与当前页面对应的公众号JS安全域名一致
+        imgUrl: imgUrl // 分享图标
+      });
+      wx.onMenuShareAppMessage({
+        title: title, // 分享标题
+        link: "https://gitee.com/toumingyu/obs-studio/releases", // 分享链接，该链接域名或路径必须与当前页面对应的公众号JS安全域名一致
+        desc: document.querySelector('meta[name=Description]').getAttribute('content'),
+        imgUrl: imgUrl // 分享图标
+      });
+    });
+    wx.error(function(res){
+      console.error('err', res)
+    });
+  })
+</script>
+
+<script type='text/x-mathjax-config'>
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    displayMath: [["$$","$$"],["\\[","\\]"]],
+    processEscapes: true,
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
+    ignoreClass: "container|files",
+    processClass: "markdown-body"
+  }
+});
+</script>
+<script src="https://assets.gitee.com/uploads/resources/MathJax-2.7.2/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+<script>
+  (function () {
+    var messages = {
+      'zh-CN': {
+        addResult: '增加 <b>{term}</b>',
+        count: '已选择 {count}',
+        maxSelections: '最多 {maxCount} 个选择',
+        noResults: '未找到结果',
+        serverError: '连接服务器时发生错误'
+      },
+      'zh-TW': {
+        addResult: '增加 <b>{term}</b>',
+        count: '已選擇 {count}',
+        maxSelections: '最多 {maxCount} 個選擇',
+        noResults: '未找到結果',
+        serverError: '連接服務器時發生錯誤'
+      }
+    }
+  
+    if (messages[gon.locale]) {
+      $.fn.dropdown.settings.message = messages[gon.locale]
+    }
+  }());
+</script>
+
+<!--[if lt IE 10]>
+<script>
+    window.location.href = "/incompatible.html";
+</script>
+<![endif]-->
+</head>
+
+<body class='git-project lang-zh-CN'>
+<header class='common-header fixed noborder' id='git-header-nav'>
+<div class='ui container'>
+<div class='ui menu header-menu'>
+<div class='git-nav-expand-bar'>
+<i class='iconfont icon-mode-table'></i>
+</div>
+<div class='gitee-nav__sidebar'>
+<div class='gitee-nav__sidebar-container'>
+<div class='gitee-nav__sidebar-top'>
+<div class='gitee-nav__avatar-box'></div>
+<div class='gitee-nav__buttons-box'>
+<a class="ui button small fluid orange" href="/login">登录</a>
+<a class="ui button small fluid basic is-register" href="/signup">注册</a>
+</div>
+</div>
+<div class='gitee-nav__sidebar-middle'>
+<div class='gitee-nav__sidebar-list'>
+<ul>
+<li class='gitee-nav__sidebar-item'>
+<a href="/explore"><i class='iconfont icon-ic-discover'></i>
+<span class='gitee-nav__sidebar-name'>开源软件</span>
+</a></li>
+<li class='gitee-nav__sidebar-item'>
+<a href="/enterprises"><i class='iconfont icon-ic-enterprise'></i>
+<span class='gitee-nav__sidebar-name'>企业版</span>
+</a></li>
+<li class='gitee-nav__sidebar-item'>
+<a href="/education"><i class='iconfont icon-ic-education'></i>
+<span class='gitee-nav__sidebar-name'>高校版</span>
+</a></li>
+<li class='gitee-nav__sidebar-item split-line'></li>
+<li class='gitee-nav__sidebar-item'>
+<a href="/search"><i class='iconfont icon-ic-search'></i>
+<span class='gitee-nav__sidebar-name'>搜索</span>
+</a></li>
+<li class='gitee-nav__sidebar-item'>
+<a href="/help"><i class='iconfont icon-help-circle'></i>
+<span class='gitee-nav__sidebar-name'>帮助中心</span>
+</a></li>
+<li class='gitee-nav__sidebar-item'>
+<a href="/terms"><i class='iconfont icon-file'></i>
+<span class='gitee-nav__sidebar-name'>使用条款</span>
+</a></li>
+<li class='gitee-nav__sidebar-item'>
+<a href="/about_us"><i class='iconfont icon-issuepx'></i>
+<span class='gitee-nav__sidebar-name'>关于我们</span>
+</a></li>
+</ul>
+</div>
+</div>
+<div class='gitee-nav__sidebar-bottom'>
+<div class='gitee-nav__sidebar-close-button'>
+<i class='fa fa-angle-double-left'></i>
+</div>
+</div>
+</div>
+</div>
+
+<div class='item gitosc-logo'>
+<a href="/"><img alt='码云 Gitee — 基于 Git 的代码托管和研发协作平台' class='ui inline image' height='28' src='/static/images/logo.svg?t=158106664' title='码云 Gitee — 基于 Git 的代码托管和研发协作平台' width='95'>
+<img alt='码云 Gitee — 基于 Git 的代码托管和研发协作平台' class='ui inline black image' height='28' src='/static/images/logo-black.svg?t=158106664' title='码云 Gitee — 基于 Git 的代码托管和研发协作平台' width='95'>
+</a></div>
+<a class="item " href="/explore" title="开源软件">开源软件
+</a><a class="item " href="/enterprises" title="企业版">企业版
+<sup class='ui red label'>
+特惠
+</sup>
+</a><a class="item " href="/education" title="高校版">高校版
+</a><a class="item" href="https://blog.gitee.com/" id="gitee-blog" target="_blank" title="博客">博客
+</a><div class='center responsive-logo'>
+<a href="/"><img alt='码云 Gitee — 基于 Git 的代码托管和研发协作平台' class='ui inline image' height='24' src='/static/images/logo.svg?t=158106664' title='码云 Gitee — 基于 Git 的代码托管和研发协作平台' width='85'>
+<img alt='码云 Gitee — 基于 Git 的代码托管和研发协作平台' class='ui inline black image' height='24' src='/static/images/logo-black.svg?t=158106664' title='码云 Gitee — 基于 Git 的代码托管和研发协作平台' width='85'>
+</a></div>
+<div class='right menu userbar' id='git-nav-user-bar'>
+<form accept-charset="UTF-8" action="/search" class="ui item" data-text-filter="搜索格式不正确" data-text-require="搜索关键字不能少于1个" id="navbar-search-form" method="get"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /></div>
+<input id="navbar-search-type" name="type" type="hidden" />
+<input id="fork_filter" name="fork_filter" type="hidden" value="on" />
+<div class='ui search'>
+<input class="prompt" id="navbar-search-input" name="q" placeholder="搜索项目" type="text" value="" />
+</div>
+</form>
+
+<script>
+  var can_search_in_repo = 1,
+      repo = "VDBSQk1rMTZVWGROVjBVelRtcE9iV0UzTmpObWE3NjNm",
+      reponame = "toumingyu/obs-studio";
+  
+  $(function() {
+    var $search = $('#navbar-search-form .ui.search');
+    $search.search({
+      apiSettings: {
+        url: '/search/relative_project?q={query}',
+        onResponse: function (res) {
+          if (res && res.status === 200 && res.data) {
+            var query = $search.search('get value');
+  
+            res.data.map(function (item) {
+              item.path_ns = '/' + item.path_ns;
+              item.icon = 'iconfont icon-project-public';
+            });
+            res.data.unshift({
+              name_ns: "在全站搜索 <b class='hl'>" + query +"</b> 相关项目",
+              path_ns: '/search?fork_filter=on&q=' + query,
+              icon: 'iconfont icon-search'
+            });
+            if(can_search_in_repo == 1) {
+              res.data.unshift({
+                name_ns: "在当前仓库搜索 <b class='hl'>" + query +"</b> 相关代码",
+                path_ns: '/search?type=code&q=' + query + '&repo=' + repo + '&reponame=' + reponame,
+                icon: 'iconfont icon-search'
+              });
+            }
+            return res;
+          } else {
+            return { data: [] };
+          }
+        }
+      },
+      fields: {
+        results: 'data',
+        description: 'name_ns',
+        url: 'path_ns',
+        icon: 'icon'
+      },
+      minCharacters: 1,
+      maxResults: 10,
+      searchDelay: 120,
+      showNoResults: false,
+      transition: 'fade'
+    });
+  });
+</script>
+
+<a class="item git-nav-user__login-item" href="/login">登录
+</a><a class="item git-nav-user__register-item" href="/signup">注册
+</a><script>
+  $('.destroy-user-session').on('click', function() {
+    $.cookie('access_token', null, { path: '/' });
+  })
+</script>
+
+</div>
+</div>
+</div>
+</header>
+<script>
+  Gitee.initNavbar()
+  Gitee.initRepoRemoteWay()
+</script>
+
+<!--[if lt IE 10]>
+<script>
+  window.location.href = "/incompatible.html"
+</script>
+<![endif]-->
+
+<div class='fixed-notice-infos'>
+<div class='all-messages'>
+<div class='ui info message' id='git-bulletin'>
+<a href=https://blog.gitee.com/2020/04/07/gitee-go/ target='_blank'>Gitee 企业版上线 DevOps 工具「Gitee Go」</a>
+<i class='icon remove' id='remove-bulletin'></i>
+</div>
+</div>
+<div class='ui container'>
+<div class='flash-messages' id='messages-container'></div>
+</div>
+<script>
+  (function() {
+    $(function() {
+      var $error_box, alertTip, notify_content, notify_options, template;
+      template = '<div data-notify="container" class="ui {0} message" role="alert">' + '<i data-notify="dismiss" class="close icon"></i>' + '<span data-notify="message">{2}</span>' + '</div>';
+      notify_content = null;
+      notify_options = {};
+      alertTip = '';
+      $error_box = $(".flash_error.flash_error_box");
+      if (notify_options.type === 'error' && $error_box.length > 0 && !$.isEmptyObject(notify_content.message)) {
+        if (notify_content.message === 'captcha_fail') {
+          alertTip = "验证码不正确";
+        } else if (notify_content.message === 'captcha_expired') {
+          alertTip = "验证码已过期，请点击刷新";
+        } else if (notify_content.message === 'not_found_in_database') {
+          alertTip = "帐号或者密码错误";
+        } else if (notify_content.message === 'not_found_and_show_captcha') {
+          alertTip = "帐号或者密码错误";
+        } else if (notify_content.message === 'phone_captcha_fail') {
+          alertTip = "手机验证码不通过";
+        } else {
+          alertTip = notify_content.message;
+        }
+        return $error_box.html(alertTip).show();
+      } else if (notify_content) {
+        if ("index" === 'third_party_binding') {
+          return $('#third_party_binding-message').html(notify_content.message).addClass('ui message red');
+        }
+        notify_options.delay = 3000;
+        notify_options.template = template;
+        notify_options.offset = {
+          x: 10,
+          y: 30
+        };
+        notify_options.element = '#messages-container';
+        return $.notify(notify_content, notify_options);
+      }
+    });
+  
+  }).call(this);
+</script>
+
+</div>
+<script>
+  (function() {
+    $(function() {
+      var setCookie;
+      setCookie = function(name, value) {
+        $.cookie(name, value, {
+          path: '/',
+          expires: 365
+        });
+      };
+      $('#remove-bulletin, #remove-bulletin-dashboard').on('click', function() {
+        setCookie('remove_bulletin', "gitee-maintain-1586321954");
+        $('#git-bulletin').hide();
+      });
+      $('#remove-member-bulletin').on('click', function() {
+        setCookie('remove_member_bulletin', "gitee_member_bulletin");
+        $(this).parent().hide();
+      });
+      return $('#remove-gift-bulletin').on('click', function() {
+        setCookie('remove_gift_bulletin', "gitee-gift-bulletin");
+        $(this).parent().hide();
+      });
+    });
+  
+  }).call(this);
+</script>
+<script>
+  function closeMessageBanner(pthis, type, val) {
+    var json = {}
+  
+    val = typeof val === 'undefined' ? null : val
+    $(pthis).parent().remove()
+    if (type === 'out_of_enterprise_member') {
+      json = {type: type, data: val}
+    } else if (type === 'enterprise_overdue') {
+      json = {type: type, data: val}
+    }
+    $.post('/profile/close_flash_tip', json)
+  }
+</script>
+
+<div class='site-content'>
+<div class='git-project-header'>
+<div class='fixed-notice-infos'>
+<div class='ui info icon floating message green' id='fetch-ok' style='display: none'>
+<div class='content'>
+<div class='header status-title'>
+<i class='info icon status-icon'></i>
+代码拉取完成，页面将自动刷新
+</div>
+</div>
+</div>
+<div class='ui info icon floating message error' id='fetch-error' style='display: none'>
+<div class='content'>
+<div class='header status-title'>
+<i class='info icon status-icon'></i>
+<span class='error_msg'></span>
+</div>
+</div>
+</div>
+</div>
+<div class='ui container'>
+
+<div class='git-project-header-details'>
+<div class='git-project-header-container'>
+<div class='git-project-header-actions'>
+<div class='ui tiny modal project-donate-modal' id='project-donate-modal'>
+<i class='iconfont icon-close close'></i>
+<div class='header'>捐赠</div>
+<div class='content'>
+捐赠前请先登录
+</div>
+<div class='actions'>
+<a class='ui blank button cancel'>取消</a>
+<a class='ui orange ok button' href='/login'>前往登录</a>
+</div>
+</div>
+<div class='ui small modal wepay-qrcode'>
+<i class='iconfont icon-close close'></i>
+<div class='header'>
+扫描微信二维码支付
+<span class='wepay-cash'></span>
+</div>
+<div class='content weqcode-center'>
+<img id='wepay-qrcode' src=''>
+</div>
+<div class='actions'>
+<div class='ui cancel blank button'>取消</div>
+<div class='ui ok orange button'>
+支付完成
+</div>
+</div>
+</div>
+<div class='ui mini modal' id='confirm-alipay-modal'>
+<div class='header'>支付提示</div>
+<div class='content'>
+将跳转至支付宝完成支付
+</div>
+<div class='actions'>
+<div class='ui approve orange button'>
+确定
+</div>
+<div class='ui blank cancel button'>
+取消
+</div>
+</div>
+</div>
+
+<span class='ui basic buttons watch-container'>
+<a class="ui button watch" href="/login" title="你必须登录后才可以watch一个仓库"><i class='iconfont icon-watch'></i>
+Watch
+</a><a class="ui button action-social-count" href="/toumingyu/obs-studio/watchers" title="1">1
+</a></span>
+<span class='ui basic buttons star-container'>
+<a class="ui button star" href="/login" title="你必须登录后才可以star一个仓库"><i class='iconfont icon-star'></i>
+Star
+</a><a class="ui button action-social-count" href="/toumingyu/obs-studio/stargazers" title="0">0
+</a></span>
+<span class='ui basic buttons fork-container' title='无权 Fork 此仓库'>
+<a class="ui button fork" href="/login" title="你必须登录后才可以fork一个仓库"><i class='iconfont icon-fork'></i>
+Fork
+</a><a class="ui button action-social-count disabled-style" href="/toumingyu/obs-studio/members" title="0">0
+</a></span>
+</div>
+<h2 class='git-project-title'>
+<span class="project-title"><i class="project-icon iconfont icon-project-public" title="这是一个公开仓库"></i> <a class="author" href="/toumingyu" title="toumingyu">toumingyu</a> / <a class="repository" href="/toumingyu/obs-studio" style="padding-bottom: 0px" target="" title="obs-studio">obs-studio</a></span><span class="project-badges"><a class="ui small license label" href="/toumingyu/obs-studio/blob/master/COPYING" title="开源许可协议">GPL-2.0</a></span>
+<input id="project_title" name="project_title" type="hidden" value="toumingyu/obs-studio" />
+</h2>
+</div>
+</div>
+</div>
+<div class='row' id='import-result-message' style='padding-top: 0px; display: none'>
+<div class='sixteen wide column'>
+<div class='ui icon yellow message status-color'>
+<i class='info icon status-icon' style='width:60px;padding-right:12px;'></i>
+<i class='close icon'></i>
+<div class='header status-title'>
+同步状态
+</div>
+<span class='status-message'></span>
+</div>
+</div>
+</div>
+<script>
+  var title_import_url = "https://github.com/obsproject/obs-studio.git";
+  var title_post_url = "/toumingyu/obs-studio/update_import";
+  var title_fork_url = "/toumingyu/obs-studio/sync_fork";
+  var title_project_path = "obs-studio";
+  var title_p_name = "obs-studio";
+  var title_p_id= "8063401";
+  var title_description = "";
+  var title_form_authenticity_token = "YNSXbcXwOhTidrzaLh9WCz7/aJfOYRXJfgINr6WWMww=";
+  var watch_type = "unwatch";
+  
+  $('.metrics-radar').dropdown({ action: 'nothing' });
+  $('.js-project-watch').dropdown('set selected', watch_type);
+  $('.checkbox.sync-wiki').checkbox();
+</script>
+<style>
+  i.loading {
+    -webkit-animation: icon-loading 1.2s linear infinite;
+    animation: icon-loading 1.2s linear infinite;
+  }
+  .qrcode_cs {
+    float: left;
+  }
+  .check-sync-wiki {
+    float: left;
+    height: 28px;
+    line-height: 28px;
+  }
+  .sync-wiki-warn {
+    color: #e28560;
+  }
+</style>
+
+<div class='git-project-nav'>
+<div class='ui container'>
+<div class='ui secondary pointing menu'>
+<a class="item " href="/toumingyu/obs-studio"><i class='iconfont icon-code'></i>
+代码
+</a><a class="item " href="/toumingyu/obs-studio/issues"><i class='iconfont icon-issue'></i>
+Issues
+<span class='ui mini circular label'>
+0
+</span>
+</a><a class="item " href="/toumingyu/obs-studio/pulls"><i class='iconfont icon-pull-request'></i>
+Pull Requests
+<span class='ui mini circular label'>
+0
+</span>
+</a><a class="item " href="/toumingyu/obs-studio/attach_files"><i class='iconfont icon-annex'></i>
+附件
+<span class='ui mini circular label'>0</span>
+</a><a class="item " href="/toumingyu/obs-studio/wikis"><i class='iconfont icon-wiki'></i>
+Wiki
+<span class='ui mini circular label'>
+35
+</span>
+</a><a class="item  active" href="/toumingyu/obs-studio/graph/master"><i class='iconfont icon-statistics'></i>
+统计
+</a><div class='item project-devops-item'>
+<div class='ui pointing top right dropdown project-devops-dropdown'>
+<div class='text'>
+<i class='iconfont icon-devops'></i>
+DevOps
+</div>
+<i class='dropdown icon'></i>
+<div class='menu' style='display:none'>
+<a class="item" href="https://gitee.com/help/articles/4285" target="_blank"><img alt="Baidu efficiency cloud" src="https://assets.gitee.com/assets/baidu_efficiency_cloud-81a98c2eb67fac83b1453ca3d2feb326.svg" />
+<div class='item-title'>
+百度效率云
+</div>
+</a><a class="item" href="https://gitee.com/help/articles/4193" target="_blank"><img alt="Jenkins for gitee" src="https://assets.gitee.com/assets/jenkins_for_gitee-554ec65c490d0f1f18de632c48acc4e7.png" />
+<div class='item-title'>
+Jenkins for Gitee
+</div>
+</a><a class="item" href="/toumingyu/obs-studio/paas/huaweicloud_cse"><img alt="Hauweiwfw" src="https://assets.gitee.com/assets/hauweiwfw-6d23ceba77e4f4b8c4498f3f5dc2fd99.png" />
+<div class='item-title'>
+华为微服务平台
+</div>
+</a><a class="item" href="/toumingyu/obs-studio/paas/select_platform"><img alt="Mopaas mini" src="https://assets.gitee.com/assets/mopaas_mini-e0279e635080d94a1a1d7a386c86ac5f.png" />
+<div class='item-title'>
+MoPaaS V3
+</div>
+</a></div>
+</div>
+</div>
+<div class='item'>
+<div class='ui pointing top right dropdown git-project-service'>
+<div class='text'>
+<i class='iconfont icon-service'></i>
+服务
+</div>
+<i class='dropdown icon'></i>
+<div class='menu' style='display:none'>
+<a class="item" href="/toumingyu/obs-studio/pages"><img alt="Logo en" src="/static/images/logo-en.svg" />
+<div class='item-title'>
+Gitee Pages
+</div>
+</a><a class="item" href="/toumingyu/obs-studio/javadoc"><img alt="Maven" src="https://assets.gitee.com/assets/maven-bd58aee84f266d64d4b8ce5b006a9fcf.png" />
+<div class='item-title'>
+JavaDoc
+</div>
+</a><a class="item" href="/toumingyu/obs-studio/phpdoc"><img alt="Phpdoc" src="https://assets.gitee.com/assets/phpdoc-a99f87c2feaa2fd99e5065377a39487e.png" />
+<div class='item-title'>
+PHPDoc
+</div>
+</a><a class="item" href="/toumingyu/obs-studio/quality_analyses?platform=sonar_qube"><img alt="Sonar mini" src="https://assets.gitee.com/assets/sonar_mini-5e1b54bb9f6c951d97fb778ef623afea.png" />
+<div class='item-title'>
+质量分析
+</div>
+</a><a class="item" href="/toumingyu/obs-studio/quality_analyses?platform=codesafe"><img alt="Codesafe mini" src="https://assets.gitee.com/assets/codesafe_mini-accbe1e555e9864c552620240d10e4de.png" width="100%" />
+<div class='item-title'>
+奇安信代码卫士
+</div>
+</a><button class='ui orange basic button quit-button' id='quiting-button'>
+我知道了，不再自动展开
+</button>
+</div>
+</div>
+</div>
+<div class='item right mr-0 pr-0'>
+
+</div>
+</div>
+</div>
+</div>
+<script>
+  $('.git-project-nav .ui.dropdown').dropdown({ action: 'nothing' });
+</script>
+<style>
+  .git-project-nav i.checkmark.icon {
+    color: green;
+  }
+  #quiting-button {
+    display: none;
+  }
+  
+  .git-project-nav .dropdown .menu.hidden:after {
+    visibility: hidden !important;
+  }
+</style>
+<script>
+  isSignIn = false
+  isClickGuide = false
+  $('#git-versions.dropdown').dropdown();
+  $.ajax({
+    url:"/toumingyu/obs-studio/access/add_access_log",
+    type:"GET"
+  });
+  $('#quiting-button').on('click',function() {
+    $('.git-project-service').click();
+    if (isSignIn) {
+      $.post("/projects/set_service_guide")
+    }
+    $.cookie("Serve_State", true, { expires: 3650, path: '/'})
+    $('#quiting-button').hide();
+  });
+  if (!(isClickGuide || $.cookie("Serve_State") == 'true')) {
+    $('.git-project-service').click()
+    $('#quiting-button').show()
+  }
+</script>
+
+</div>
+<div class='ui container'>
+<div id='git-tags-container'>
+
+<div class='ui fluid text menu project-statistics-menu' id='project-item-menu'>
+<div class='item'>
+<a href='/toumingyu/obs-studio/graph/master'>
+仓库网络图
+</a>
+</div>
+<div class='active item'>
+<a href='/toumingyu/obs-studio/releases'>
+发行版
+</a>
+</div>
+<div class='item'>
+<a href='/toumingyu/obs-studio/tags'>
+标签
+</a>
+</div>
+<div class='item'>
+<a href='/toumingyu/obs-studio/commits/master'>
+提交
+</a>
+</div>
+</div>
+
+<div class='releases-tags-wrap' id='releases-index'>
+<div class='releases-tag-content'>
+<div class='releases-timeline'>
+<div class='release-tag-item'>
+<div class='release-meta'>
+<div class='tag-name'>
+<a href="/toumingyu/obs-studio/tree/24.0.6" target="_blank"><i class='iconfont icon-tag'></i>
+<span>
+24.0.6
+</span>
+</a></div>
+<div class='commit-info'>
+<a href="/toumingyu/obs-studio/commit/6594d0fb15964319ee787ea3a827d004bf9577dd"><span class='octicon octicon-git-commit'></span>
+6594d0f
+</a></div>
+<div class='commit-time'>
+2019-12-18 04:16
+</div>
+</div>
+<div class='release-body'>
+<a href="/toumingyu/obs-studio/tree/24.0.6"><b>24.0.6</b>
+<i class='icon ellipsis horizontal tag-popup-msg' data-content='libobs: Update version to 24.0.6'></i>
+</a><div class='tag-meta'>
+<span title="OBS Studio 24.0.6&#x000A;&#x000A;25.0.6 Hotfix Changes&#x000A;---------------------&#x000A;* Fixed a crash with macOS Catalina&#x000A;* Fixed a failure to start up when using custom themes on macOS with 24.0.5&#x000A;&#x000A;24.0.5 Hotfix Changes&#x000A;---------------------&#x000A;* Fixed macOS Catalina issues&#x000A;* Fixed macOS Python scripting support&#x000A;* Fixed a bug where audio bitrate would not be properly set to the specified value in simple output mode&#x000A;* Fixed a bug where videos on loop could sometimes get frozen when switching scenes&#x000A;* Fixed a bug with Linux Display Capture where the crop value would shift the cursor's captured position incorrectly&#x000A;* Fixed an issue where if the video drivers crashed on Windows for whatever reason, OBS would not recover from that properly and also crash (yes you heard that correctly)&#x000A;* Fixed an issue where when connecting to your Twitch account fails because of Twitch's two-factor authentication requirement, you would not be able to change to another Twitch account until authentication was fixed and the account was reconnected&#x000A;* Fixed an issue where when connecting your Twitch account for the first time, the panels would not open up in dark mode&#x000A;* Fixed an issue where preview projector stopped working when toggling studio mode&#x000A;* Fixed an issue where multiple 0x0 windows would appear on Linux Window Capture&#x000A;* Fixed an issue where certain windows would not be listed with Linux Window Capture&#x000A;* Fixed a crash with the browser source that some users have been having since 24 was released&#x000A;* Fixed a few other rare crashes&#x000A;* You can now use Twitch dashboard panel URLs as custom browser docks&#x000A;* Added some additional graphics and audio diagnostic logging">
+<i class='file text outline icon'></i>
+OBS Studio 24.0.6
+
+25.0.6 Hotfix Chan...
+</span>
+<span>
+<a class="download-archive" data-format="zip" data-ref="24.0.6" data-sha="6594d0fb15964319ee787ea3a827d004bf9577dd" href="/toumingyu/obs-studio/repository/archive/24.0.6?format=zip"><i class='file archive outline icon'></i>
+zip
+</a></span>
+<span>
+<a class="download-archive" data-format="tar.gz" data-ref="24.0.6" data-sha="6594d0fb15964319ee787ea3a827d004bf9577dd" href="/toumingyu/obs-studio/repository/archive/24.0.6?format=tar.gz"><i class='file archive outline icon'></i>
+tar.gz
+</a></span>
+</div>
+</div>
+</div>
+<div class='release-tag-item'>
+<div class='release-meta'>
+<div class='tag-name'>
+<a href="/toumingyu/obs-studio/tree/24.0.5" target="_blank"><i class='iconfont icon-tag'></i>
+<span>
+24.0.5
+</span>
+</a></div>
+<div class='commit-info'>
+<a href="/toumingyu/obs-studio/commit/99638ba69782bdb10531a305093bbd25e5d3baef"><span class='octicon octicon-git-commit'></span>
+99638ba
+</a></div>
+<div class='commit-time'>
+2019-12-10 16:06
+</div>
+</div>
+<div class='release-body'>
+<a href="/toumingyu/obs-studio/tree/24.0.5"><b>24.0.5</b>
+<i class='icon ellipsis horizontal tag-popup-msg' data-content='libobs: Update version to 24.0.5'></i>
+</a><div class='tag-meta'>
+<span title="OBS Studio 24.0.5&#x000A;&#x000A;24.0.5 Hotfix Changes&#x000A;---------------------&#x000A;* Fixed macOS Catalina issues&#x000A;* Fixed macOS Python scripting support&#x000A;* Fixed a bug where audio bitrate would not be properly set to the specified value in simple output mode&#x000A;* Fixed a bug where videos on loop could sometimes get frozen when switching scenes&#x000A;* Fixed a bug with Linux Display Capture where the crop value would shift the cursor's captured position incorrectly&#x000A;* Fixed an issue where if the video drivers crashed on Windows for whatever reason, OBS would not recover from that properly and also crash (yes you heard that correctly)&#x000A;* Fixed an issue where when connecting to your Twitch account fails because of Twitch's two-factor authentication requirement, you would not be able to change to another Twitch account until authentication was fixed and the account was reconnected&#x000A;* Fixed an issue where when connecting your Twitch account for the first time, the panels would not open up in dark mode&#x000A;* Fixed an issue where preview projector stopped working when toggling studio mode&#x000A;* Fixed an issue where multiple 0x0 windows would appear on Linux Window Capture&#x000A;* Fixed an issue where certain windows would not be listed with Linux Window Capture&#x000A;* Fixed a few rare crashes&#x000A;* You can now use Twitch dashboard panel URLs as custom browser docks&#x000A;* Added some additional graphics and audio diagnostic logging">
+<i class='file text outline icon'></i>
+OBS Studio 24.0.5
+
+24.0.5 Hotfix Chan...
+</span>
+<span>
+<a class="download-archive" data-format="zip" data-ref="24.0.5" data-sha="99638ba69782bdb10531a305093bbd25e5d3baef" href="/toumingyu/obs-studio/repository/archive/24.0.5?format=zip"><i class='file archive outline icon'></i>
+zip
+</a></span>
+<span>
+<a class="download-archive" data-format="tar.gz" data-ref="24.0.5" data-sha="99638ba69782bdb10531a305093bbd25e5d3baef" href="/toumingyu/obs-studio/repository/archive/24.0.5?format=tar.gz"><i class='file archive outline icon'></i>
+tar.gz
+</a></span>
+</div>
+</div>
+</div>
+<div class='release-tag-item'>
+<div class='release-meta'>
+<div class='tag-name'>
+<a href="/toumingyu/obs-studio/tree/24.0.4" target="_blank"><i class='iconfont icon-tag'></i>
+<span>
+24.0.4
+</span>
+</a></div>
+<div class='commit-info'>
+<a href="/toumingyu/obs-studio/commit/22bddd0270bfccc7c37c5423e632903c641b73b0"><span class='octicon octicon-git-commit'></span>
+22bddd0
+</a></div>
+<div class='commit-time'>
+2019-11-13 09:32
+</div>
+</div>
+<div class='release-body'>
+<a href="/toumingyu/obs-studio/tree/24.0.4"><b>24.0.4</b>
+<i class='icon ellipsis horizontal tag-popup-msg' data-content='Merge pull request #2010 from wanhongqing123/master'></i>
+</a><div class='tag-meta'>
+<span title="OBS Studio 24.0.4&#x000A;&#x000A;24.0.4 Hotfix Changes&#x000A;---------------------&#x000A;* Fixed macOS Catalina issues&#x000A;* Fixed macOS Python scripting support&#x000A;* Fixed a bug where audio bitrate would not be properly set to the specified value in simple output mode&#x000A;* Fixed a bug where videos on loop could sometimes get frozen when switching scenes&#x000A;* Fixed a bug with Linux Display Capture where the crop value would shift the cursor's captured position incorrectly&#x000A;* Fixed an issue where if the video drivers crashed on Windows for whatever reason, OBS would not recover from that properly and also crash (yes you heard that correctly)&#x000A;* Fixed an issue where when connecting to your Twitch account fails because of Twitch's two-factor authentication requirement, you would not be able to change to another Twitch account until authentication was fixed and the account was reconnected&#x000A;* Fixed an issue where when connecting your Twitch account for the first time, the panels would not open up in dark mode&#x000A;* Fixed an issue where preview projector stopped working when toggling studio mode&#x000A;* Fixed an issue where multiple 0x0 windows would appear on Linux Window Capture&#x000A;* Fixed an issue where certain windows would not be listed with Linux Window Capture&#x000A;* Fixed a few rare crashes&#x000A;* You can now use Twitch dashboard panel URLs as custom browser docks&#x000A;* Added some additional graphics and audio diagnostic logging">
+<i class='file text outline icon'></i>
+OBS Studio 24.0.4
+
+24.0.4 Hotfix Chan...
+</span>
+<span>
+<a class="download-archive" data-format="zip" data-ref="24.0.4" data-sha="22bddd0270bfccc7c37c5423e632903c641b73b0" href="/toumingyu/obs-studio/repository/archive/24.0.4?format=zip"><i class='file archive outline icon'></i>
+zip
+</a></span>
+<span>
+<a class="download-archive" data-format="tar.gz" data-ref="24.0.4" data-sha="22bddd0270bfccc7c37c5423e632903c641b73b0" href="/toumingyu/obs-studio/repository/archive/24.0.4?format=tar.gz"><i class='file archive outline icon'></i>
+tar.gz
+</a></span>
+</div>
+</div>
+</div>
+<div class='release-tag-item'>
+<div class='release-meta'>
+<div class='tag-name'>
+<a href="/toumingyu/obs-studio/tree/24.0.3" target="_blank"><i class='iconfont icon-tag'></i>
+<span>
+24.0.3
+</span>
+</a></div>
+<div class='commit-info'>
+<a href="/toumingyu/obs-studio/commit/d88a5a5a60bcdcbdde6d5dc54dc352ae8d431070"><span class='octicon octicon-git-commit'></span>
+d88a5a5
+</a></div>
+<div class='commit-time'>
+2019-10-12 14:42
+</div>
+</div>
+<div class='release-body'>
+<a href="/toumingyu/obs-studio/tree/24.0.3"><b>24.0.3</b>
+<i class='icon ellipsis horizontal tag-popup-msg' data-content='obs-browser: Remove "monitor by default" flag'></i>
+</a><div class='tag-meta'>
+<span title='OBS Studio 24.0.3&#x000A;&#x000A;24.0.3 Hotfix&#x000A;-------------&#x000A;- Fixed a startup crash on the 32bit version of OBS on Windows&#x000A;- Fixed an issue where audio monitoring on Windows would have a bit of unintended latency introduced by 24.0.2&#x000A;&#x000A;24.0.2 Changes&#x000A;--------------&#x000A;- Hardware accelerated decoding on the media source is now disabled by default rather than enabled by default.  Some users use a ridiculous number of media sources, and turning on hardware accelerated decoding for every single one of them could cause some stability issues.&#x000A;- When running OBS as administrator, games will now be much less likely to cause lag to the video of OBS (we will eventually get this improvement working without requiring administrator, currently this does not work unless OBS is running as administrator)&#x000A;- Fixed an issue where media keys on your keyboard could trigger video/audio to stop/start playing in browser sources&#x000A;- Fixed an issue where part of the OBS output would be green when using OBS from a VM&#x000A;- Fixed an issue where stingers could sometimes cut off prematurely before they were finished&#x000A;- Fixed a freeze that could happen when using NVENC and changing the bitrate while in use while lookahead was enabled&#x000A;- Fixed a bug where OBS could sometimes stop recording due to lack of disk space despite having plenty of disk space&#x000A;- Improved the playback accuracy of media sources and stingers (this was the same issue that caused stingers to sometimes play back a bit erratically)'>
+<i class='file text outline icon'></i>
+OBS Studio 24.0.3
+
+24.0.3 Hotfix
+----...
+</span>
+<span>
+<a class="download-archive" data-format="zip" data-ref="24.0.3" data-sha="d88a5a5a60bcdcbdde6d5dc54dc352ae8d431070" href="/toumingyu/obs-studio/repository/archive/24.0.3?format=zip"><i class='file archive outline icon'></i>
+zip
+</a></span>
+<span>
+<a class="download-archive" data-format="tar.gz" data-ref="24.0.3" data-sha="d88a5a5a60bcdcbdde6d5dc54dc352ae8d431070" href="/toumingyu/obs-studio/repository/archive/24.0.3?format=tar.gz"><i class='file archive outline icon'></i>
+tar.gz
+</a></span>
+</div>
+</div>
+</div>
+<div class='release-tag-item'>
+<div class='release-meta'>
+<div class='tag-name'>
+<a href="/toumingyu/obs-studio/tree/24.0.2" target="_blank"><i class='iconfont icon-tag'></i>
+<span>
+24.0.2
+</span>
+</a></div>
+<div class='commit-info'>
+<a href="/toumingyu/obs-studio/commit/80a1fee70fd68b4b6389a6ec990522e78e82820a"><span class='octicon octicon-git-commit'></span>
+80a1fee
+</a></div>
+<div class='commit-time'>
+2019-10-12 03:45
+</div>
+</div>
+<div class='release-body'>
+<a href="/toumingyu/obs-studio/tree/24.0.2"><b>24.0.2</b>
+<i class='icon ellipsis horizontal tag-popup-msg' data-content='obs-browser: Only disable NetworkService on macOS'></i>
+</a><div class='tag-meta'>
+<span title='OBS Studio 24.0.2&#x000A;&#x000A;Changes&#x000A;-------&#x000A;- Hardware accelerated decoding on the media source is now disabled by default rather than enabled by default.  Some users use a ridiculous number of media sources, and turning on hardware accelerated decoding for every single one of them could cause some stability issues&#x000A;- Fixed an issue where certain games would cause OBS to lag.  Currently, this will only work when OBS is running as administrator.&#x000A;- Fixed an issue where media keys on your keyboard could trigger video/audio to stop/start playing in browser sources&#x000A;- Fixed an issue where part of the OBS output would be green when using OBS from a VM&#x000A;- Fixed an issue where stingers would cut off prematurely before they were finished&#x000A;- Fixed a freeze that could happen when using NVENC and changing the bitrate at the same time&#x000A;- Fixed a bug where OBS would stop recording prematurely (this bug was due to a miscalculation in the new feature that automatically stops recording when disk space is 50 megabytes or less)&#x000A;- Improved the playback accuracy of media sources and stingers (this was the same issue that caused stingers to sometimes play back a bit erratically)'>
+<i class='file text outline icon'></i>
+OBS Studio 24.0.2
+
+Changes
+-------
+- ...
+</span>
+<span>
+<a class="download-archive" data-format="zip" data-ref="24.0.2" data-sha="80a1fee70fd68b4b6389a6ec990522e78e82820a" href="/toumingyu/obs-studio/repository/archive/24.0.2?format=zip"><i class='file archive outline icon'></i>
+zip
+</a></span>
+<span>
+<a class="download-archive" data-format="tar.gz" data-ref="24.0.2" data-sha="80a1fee70fd68b4b6389a6ec990522e78e82820a" href="/toumingyu/obs-studio/repository/archive/24.0.2?format=tar.gz"><i class='file archive outline icon'></i>
+tar.gz
+</a></span>
+</div>
+</div>
+</div>
+<div class='release-tag-item'>
+<div class='release-meta'>
+<div class='tag-name'>
+<a href="/toumingyu/obs-studio/tree/24.0.1" target="_blank"><i class='iconfont icon-tag'></i>
+<span>
+24.0.1
+</span>
+</a></div>
+<div class='commit-info'>
+<a href="/toumingyu/obs-studio/commit/94570478b7d1f8c097a0bf8d8dabfb5613e4ab92"><span class='octicon octicon-git-commit'></span>
+9457047
+</a></div>
+<div class='commit-time'>
+2019-09-20 23:14
+</div>
+</div>
+<div class='release-body'>
+<a href="/toumingyu/obs-studio/tree/24.0.1"><b>24.0.1</b>
+<i class='icon ellipsis horizontal tag-popup-msg' data-content='obs-browser: Fix a deadlock'></i>
+</a><div class='tag-meta'>
+<span title='OBS Studio 24.0.1&#x000A;&#x000A;24.0.1 Hotfix&#x000A;-------------&#x000A;- Browser sources will now have their pre-24.0 audio behavior by default; to use OBS to control the browser source audio, users must now use the "Control Audio via OBS" option in the browser source properties.  This change was made as a safety precaution because it changed user configurations compared with how the browser audio used to function, which confused some users.&#x000A;- Fixed an issue where certain cameras (particularly C920 cameras) would output with a lot of delay depending on the drivers installed&#x000A;- Fixed a crash on startup&#x000A;- Fixed a crash that would happen when closing the Mixer chat window&#x000A;- Fixed a deadlock that could occur when configuring multiple browser docks in the custom browser docks window&#x000A;&#x000A;24.0 New Features&#x000A;-----------------&#x000A;- Added the ability to pause while recording to allow seamless on-the-fly removal of video segments.  This can only be used when not sharing an encoder with the stream.  [Jim]&#x000A;- Added an option to automatically adjust bitrate when congestion occurs to advanced settings, which is an alternative to dropping frames (available in advanced settings).  Note that this currently only works with RTMP, and severe congestion may cause increased delay to viewers.  [Jim/pkv]&#x000A;- Added the ability to select multiple sources on the preview by box selection [Dillon]&#x000A;- Added the ability to create custom browser docks in the View -&gt; Docks menu.  This allows you to open extra dockable webpages whenever OBS opens [Jim]&#x000A;- Browser sources can now have their volume adjusted via the audio mixer, or have filters applied to them.  Additionally, you can now change whether the browser source outputs to speakers or to stream only via the audio monitoring settings in advanced audio properties.  [Osiris/pkv/Jim]&#x000A;- Added a script to pause recording when a specific scene is active [cg2121]&#x000A;- Added a "Hotkey Focus Behavior" option to advanced settings, which allows you to set whether hotkeys are disabled depending on whether you have the main window in focus or not [jb-alvarado/Jim]&#x000A;- Added an option to general settings to allow users to confirm when clicking the "Stop Recording" button [glikely]&#x000A;- Added channels widget for restream.io service integration [SoftwareArchitector]&#x000A;- Added the "Area" shader as a downscale shader in video settings [jpark37]&#x000A;- Added an "Enable Preview" button to the main window when the preview is disabled [cg2121]&#x000A;- Added (or rather fixed) hardware acceleration support for decoding media files when using the media source where applicable [Jim]&#x000A;&#x000A;24.0 Tweaks/Fixes&#x000A;-----------------&#x000A;- Updated all dependencies on Windows (such as FFmpeg, x264, CEF) to their latest versions [Jim]&#x000A;- Made a number of optimizations and performance improvements [jpark37]&#x000A;- Made a number of performance improvements to QSV [brittneysclark]&#x000A;- Changed default recording format to mkv instead of flv [WizardCM]&#x000A;- Recording now automatically stop if there is less than 50 megabytes left of disk space available [cg2121]&#x000A;- Fixed a number of issues with Linux window capture [kkartaltepe]&#x000A;- Fixed the tray icon showing up on startup even when it was turned off [Jim]&#x000A;- Fixed a bug where encoders could lock up when an encode call fails [Jim]&#x000A;- Fixed an issue where projectors would have a gray background rather than a black background [Jim]&#x000A;- Fixed a bug where secondary Twitch/Mixer browser panels would stop appearing [Jim]&#x000A;- Fixed a freeze that could happen under rare circumstances when shutting down [Jim]&#x000A;- If no tracks are selected when recording in advanced output mode, it will now default to the same track being used for streaming [cg2121]'>
+<i class='file text outline icon'></i>
+OBS Studio 24.0.1
+
+24.0.1 Hotfix
+----...
+</span>
+<span>
+<a class="download-archive" data-format="zip" data-ref="24.0.1" data-sha="94570478b7d1f8c097a0bf8d8dabfb5613e4ab92" href="/toumingyu/obs-studio/repository/archive/24.0.1?format=zip"><i class='file archive outline icon'></i>
+zip
+</a></span>
+<span>
+<a class="download-archive" data-format="tar.gz" data-ref="24.0.1" data-sha="94570478b7d1f8c097a0bf8d8dabfb5613e4ab92" href="/toumingyu/obs-studio/repository/archive/24.0.1?format=tar.gz"><i class='file archive outline icon'></i>
+tar.gz
+</a></span>
+</div>
+</div>
+</div>
+<div class='release-tag-item'>
+<div class='release-meta'>
+<div class='tag-name'>
+<a href="/toumingyu/obs-studio/tree/24.0.0" target="_blank"><i class='iconfont icon-tag'></i>
+<span>
+24.0.0
+</span>
+</a></div>
+<div class='commit-info'>
+<a href="/toumingyu/obs-studio/commit/5d95cfc3614d6d720d204be1a14ca90486e64498"><span class='octicon octicon-git-commit'></span>
+5d95cfc
+</a></div>
+<div class='commit-time'>
+2019-09-18 05:29
+</div>
+</div>
+<div class='release-body'>
+<a href="/toumingyu/obs-studio/tree/24.0.0"><b>24.0.0</b>
+<i class='icon ellipsis horizontal tag-popup-msg' data-content='obs-browser: Update translations from crowdin'></i>
+</a><div class='tag-meta'>
+<span title='OBS Studio 24.0&#x000A;&#x000A;New Features&#x000A;------------&#x000A;- Added the ability to pause while recording to allow seamless on-the-fly removal of video segments.  This can only be used when not sharing an encoder with the stream.  [Jim]&#x000A;- Added an option to automatically adjust bitrate when congestion occurs to advanced settings, which is an alternative to dropping frames (available in advanced settings).  Note that this currently only works with RTMP, and severe congestion may cause increased delay to viewers.  [Jim/pkv]&#x000A;- Added the ability to select multiple sources on the preview by box selection [Dillon]&#x000A;- Added the ability to create custom browser docks in the View -&gt; Docks menu.  This allows you to open extra dockable webpages whenever OBS opens [Jim]&#x000A;- Browser sources can now have their volume adjusted via the audio mixer, or have filters applied to them.  Additionally, you can now change whether the browser source outputs to speakers or to stream only via the audio monitoring settings in advanced audio properties.  [Osiris/pkv/Jim]&#x000A;- Added a script to pause recording when a specific scene is active [cg2121]&#x000A;- Added a "Hotkey Focus Behavior" option to advanced settings, which allows you to set whether hotkeys are disabled depending on whether you have the main window in focus or not [jb-alvarado/Jim]&#x000A;- Added an option to general settings to allow users to confirm when clicking the "Stop Recording" button [glikely]&#x000A;- Added channels widget for restream.io service integration [SoftwareArchitector]&#x000A;- Added the "Area" shader as a downscale shader in video settings [jpark37]&#x000A;- Added an "Enable Preview" button to the main window when the preview is disabled [cg2121]&#x000A;- Added (or rather fixed) hardware acceleration support for decoding media files when using the media source where applicable [Jim]&#x000A;&#x000A;Tweaks/Fixes&#x000A;------------&#x000A;- Updated all dependencies on Windows (such as FFmpeg, x264, CEF) to their latest versions [Jim]&#x000A;- Made a number of optimizations and performance improvements [jpark37]&#x000A;- Made a number of performance improvements to QSV [brittneysclark]&#x000A;- Changed default recording format to mkv instead of flv [WizardCM]&#x000A;- Recording now automatically stop if there is less than 50 megabytes left of disk space available [cg2121]&#x000A;- Fixed a number of issues with Linux window capture [kkartaltepe]&#x000A;- Fixed the tray icon showing up on startup even when it was turned off [Jim]&#x000A;- Fixed a bug where encoders could lock up when an encode call fails [Jim]&#x000A;- Fixed an issue where projectors would have a gray background rather than a black background [Jim]&#x000A;- Fixed a bug where secondary Twitch/Mixer browser panels would stop appearing [Jim]&#x000A;- Fixed a freeze that could happen under rare circumstances when shutting down [Jim]&#x000A;- If no tracks are selected when recording in advanced output mode, it will now default to the same track being used for streaming [cg2121]'>
+<i class='file text outline icon'></i>
+OBS Studio 24.0
+
+New Features
+-------...
+</span>
+<span>
+<a class="download-archive" data-format="zip" data-ref="24.0.0" data-sha="5d95cfc3614d6d720d204be1a14ca90486e64498" href="/toumingyu/obs-studio/repository/archive/24.0.0?format=zip"><i class='file archive outline icon'></i>
+zip
+</a></span>
+<span>
+<a class="download-archive" data-format="tar.gz" data-ref="24.0.0" data-sha="5d95cfc3614d6d720d204be1a14ca90486e64498" href="/toumingyu/obs-studio/repository/archive/24.0.0?format=tar.gz"><i class='file archive outline icon'></i>
+tar.gz
+</a></span>
+</div>
+</div>
+</div>
+<div class='release-tag-item'>
+<div class='release-meta'>
+<div class='tag-name'>
+<a href="/toumingyu/obs-studio/tree/24.0.0-rc5" target="_blank"><i class='iconfont icon-tag'></i>
+<span>
+24.0.0-rc5
+</span>
+</a></div>
+<div class='commit-info'>
+<a href="/toumingyu/obs-studio/commit/333fcb3664f0390ac1cd9f2b59e3ce1ca1369361"><span class='octicon octicon-git-commit'></span>
+333fcb3
+</a></div>
+<div class='commit-time'>
+2019-09-11 03:05
+</div>
+</div>
+<div class='release-body'>
+<a href="/toumingyu/obs-studio/tree/24.0.0-rc5"><b>24.0.0-rc5</b>
+<i class='icon ellipsis horizontal tag-popup-msg' data-content='obs-browser: Fix minor bug when using older CEF versions'></i>
+</a><div class='tag-meta'>
+<span title='OBS Studio 24.0 Release Candidate 5&#x000A;&#x000A;Release Candidate 5 Fixes&#x000A;-------------------------&#x000A;* Added various improvements and fixes for those who use screen readers with OBS&#x000A;* Fixed audio cutting in/out when using NVENC with the lookahead setting enabled while using dynamic bitrate&#x000A;* Fixed a bug where color sources had their default size suddenly change&#x000A;* Fixed a bug where using large local media files wouldn&#x0027;t play back correctly with the browser source&#x000A;* Fixed a bug where sites such as Twitch wouldn&#x0027;t play back correctly when used as custom browser panels&#x000A;&#x000A;Release Candidate 4 Fixes&#x000A;-------------------------&#x000A;* Fixed a browser panel crash on startup&#x000A;&#x000A;Release Candidate 3 Fixes&#x000A;-------------------------&#x000A;* Fixed a bug where browser widgets/docks would not shut down properly&#x000A;* Fixed an issue where if you had a lot of browsers in a scene at once, the browsers would stop rendering when you switch away and back to the scene they were in&#x000A;* Fixed a crash either on shutdown or when switching profiles that could occur when you had Twitch/Restream/Mixer integration browser widgets in use&#x000A;* Fixed a bug with the media source where it would not loop properly or would hiccup when hardware accelerated decoding was enabled&#x000A;* Fixed a bug with the media source where certain hardware decoders would output corrupted video&#x000A;* Fixed a bug where pause would desynchronize audio/video the more often it was used&#x000A;* Fixed a bug where pausing could cause a crash or freeze when pausing/unpausing over and over too quickly&#x000A;* Browser docks now fully shutdown when hidden (prevents playback of any video/audio that may have been playing by browser)&#x000A;* Added an option to browser sources, "Reroute audio through OBS", which is enabled by default.  This allows the user to turn off the new browser audio handling if they need to for whatever reason (usually only useful when you need to monitor with a different device than what OBS is set to monitor with)&#x000A;&#x000A;Release Candidate 2 Fixes&#x000A;-------------------------&#x000A;* Fixed a bug where browser source audio would cut out with certain stream notifications&#x000A;* Fixed a bug where browser sources would sometimes stop rendering&#x000A;* Fixed an issue where x264 would spam the log every time the bitrate changed when dynamic bitrate was activated&#x000A;* Fixed a crash that could sometimes happen when hardware-accelerated decoding is enabled with the media source&#x000A;* Fixed a memory leak when hardware-accelerated decoding is enabled with the media source&#x000A;* Fixed a bug where the program could freeze on startup&#x000A;* Fixed a bug with QSV encoder where Ivy/Sandy Bridge chips would not encode correctly&#x000A;* Hardware-accelerated decoding should now work on webm files that do not have an alpha channel.&#x000A;&#x000A;New Features&#x000A;------------&#x000A;- Added the ability to pause while recording to allow seamless on-the-fly removal of video segments.  This can only be used when not sharing an encoder with the stream.  [Jim]&#x000A;- Added an option to automatically adjust bitrate when congestion occurs to advanced settings, which is an alternative to dropping frames (available in advanced settings).  Note that this currently only works with RTMP, and severe congestion may cause increased delay to viewers.  [Jim/pkv]&#x000A;- Added the ability to select multiple sources on the preview by box selection [Dillon]&#x000A;- Added the ability to create custom browser docks in the View -&gt; Docks menu.  This allows you to open extra dockable webpages whenever OBS opens [Jim]&#x000A;- Browser sources can now have their volume adjusted via the audio mixer, or have filters applied to them.  Additionally, you can now change whether the browser source outputs to speakers or to stream only via the audio monitoring settings in advanced audio properties.  [Osiris/pkv/Jim]&#x000A;- Added a script to pause recording when a specific scene is active [cg2121]&#x000A;- Added a "Hotkey Focus Behavior" option to advanced settings, which allows you to set whether hotkeys are disabled depending on whether you have the main window in focus or not [jb-alvarado/Jim]&#x000A;- Added an option to general settings to allow users to confirm when clicking the "Stop Recording" button [glikely]&#x000A;- Added channels widget for restream.io service integration [SoftwareArchitector]&#x000A;- Added the "Area" shader as a downscale shader in video settings [jpark37]&#x000A;- Added an "Enable Preview" button to the main window when the preview is disabled [cg2121]&#x000A;- Added (or rather fixed) hardware acceleration support for decoding media files when using the media source where applicable [Jim]&#x000A;&#x000A;Tweaks/Fixes&#x000A;------------&#x000A;- Updated all dependencies on Windows (such as FFmpeg, x264, CEF) to their latest versions [Jim]&#x000A;- Made a number of optimizations and performance improvements [jpark37]&#x000A;- Made a number of performance improvements to QSV [brittneysclark]&#x000A;- Changed default recording format to mkv instead of flv [WizardCM]&#x000A;- Recording now automatically stop if there is less than 50 megabytes left of disk space available [cg2121]&#x000A;- Fixed a number of issues with Linux window capture [kkartaltepe]&#x000A;- Fixed the tray icon showing up on startup even when it was turned off [Jim]&#x000A;- Fixed a bug where encoders could lock up when an encode call fails [Jim]&#x000A;- Fixed an issue where projectors would have a gray background rather than a black background [Jim]&#x000A;- Fixed a bug where secondary Twitch/Mixer browser panels would stop appearing [Jim]&#x000A;- Fixed a freeze that could happen under rare circumstances when shutting down [Jim]&#x000A;- If no tracks are selected when recording in advanced output mode, it will now default to the same track being used for streaming [cg2121]'>
+<i class='file text outline icon'></i>
+OBS Studio 24.0 Release Candidate 5
+
+...
+</span>
+<span>
+<a class="download-archive" data-format="zip" data-ref="24.0.0-rc5" data-sha="333fcb3664f0390ac1cd9f2b59e3ce1ca1369361" href="/toumingyu/obs-studio/repository/archive/24.0.0-rc5?format=zip"><i class='file archive outline icon'></i>
+zip
+</a></span>
+<span>
+<a class="download-archive" data-format="tar.gz" data-ref="24.0.0-rc5" data-sha="333fcb3664f0390ac1cd9f2b59e3ce1ca1369361" href="/toumingyu/obs-studio/repository/archive/24.0.0-rc5?format=tar.gz"><i class='file archive outline icon'></i>
+tar.gz
+</a></span>
+</div>
+</div>
+</div>
+<div class='release-tag-item'>
+<div class='release-meta'>
+<div class='tag-name'>
+<a href="/toumingyu/obs-studio/tree/24.0.0-rc4" target="_blank"><i class='iconfont icon-tag'></i>
+<span>
+24.0.0-rc4
+</span>
+</a></div>
+<div class='commit-info'>
+<a href="/toumingyu/obs-studio/commit/fe1a3718ea810e8402228983be387e49d19e301f"><span class='octicon octicon-git-commit'></span>
+fe1a371
+</a></div>
+<div class='commit-time'>
+2019-09-05 12:19
+</div>
+</div>
+<div class='release-body'>
+<a href="/toumingyu/obs-studio/tree/24.0.0-rc4"><b>24.0.0-rc4</b>
+<i class='icon ellipsis horizontal tag-popup-msg' data-content='obs-browser: Fix browser panel crash'></i>
+</a><div class='tag-meta'>
+<span title='OBS Studio 24.0 Release Candidate 4&#x000A;&#x000A;Release Candidate 4 Fixes&#x000A;-------------------------&#x000A;* Fixed a browser panel crash on startup&#x000A;&#x000A;Release Candidate 3 Fixes&#x000A;-------------------------&#x000A;* Fixed a bug where browser widgets/docks would not shut down properly&#x000A;* Fixed an issue where if you had a lot of browsers in a scene at once, the browsers would stop rendering when you switch away and back to the scene they were in&#x000A;* Fixed a crash either on shutdown or when switching profiles that could occur when you had Twitch/Restream/Mixer integration browser widgets in use&#x000A;* Fixed a bug with the media source where it would not loop properly or would hiccup when hardware accelerated decoding was enabled&#x000A;* Fixed a bug with the media source where certain hardware decoders would output corrupted video&#x000A;* Fixed a bug where pause would desynchronize audio/video the more often it was used&#x000A;* Fixed a bug where pausing could cause a crash or freeze when pausing/unpausing over and over too quickly&#x000A;* Browser docks now fully shutdown when hidden (prevents playback of any video/audio that may have been playing by browser)&#x000A;* Added an option to browser sources, "Reroute audio through OBS", which is enabled by default.  This allows the user to turn off the new browser audio handling if they need to for whatever reason (usually only useful when you need to monitor with a different device than what OBS is set to monitor with)&#x000A;&#x000A;Release Candidate 2 Fixes&#x000A;-------------------------&#x000A;* Fixed a bug where browser source audio would cut out with certain stream notifications&#x000A;* Fixed a bug where browser sources would sometimes stop rendering&#x000A;* Fixed an issue where x264 would spam the log every time the bitrate changed when dynamic bitrate was activated&#x000A;* Fixed a crash that could sometimes happen when hardware-accelerated decoding is enabled with the media source&#x000A;* Fixed a memory leak when hardware-accelerated decoding is enabled with the media source&#x000A;* Fixed a bug where the program could freeze on startup&#x000A;* Fixed a bug with QSV encoder where Ivy/Sandy Bridge chips would not encode correctly&#x000A;* Hardware-accelerated decoding should now work on webm files that do not have an alpha channel.&#x000A;&#x000A;New Features&#x000A;------------&#x000A;- Added the ability to pause while recording to allow seamless on-the-fly removal of video segments.  This can only be used when not sharing an encoder with the stream.  [Jim]&#x000A;- Added an option to automatically adjust bitrate when congestion occurs to advanced settings, which is an alternative to dropping frames (available in advanced settings).  Note that this currently only works with RTMP, and severe congestion may cause increased delay to viewers.  [Jim/pkv]&#x000A;- Added the ability to select multiple sources on the preview by box selection [Dillon]&#x000A;- Added the ability to create custom browser docks in the View -&gt; Docks menu.  This allows you to open extra dockable webpages whenever OBS opens [Jim]&#x000A;- Browser sources can now have their volume adjusted via the audio mixer, or have filters applied to them.  Additionally, you can now change whether the browser source outputs to speakers or to stream only via the audio monitoring settings in advanced audio properties.  [Osiris/pkv/Jim]&#x000A;- Added a script to pause recording when a specific scene is active [cg2121]&#x000A;- Added a "Hotkey Focus Behavior" option to advanced settings, which allows you to set whether hotkeys are disabled depending on whether you have the main window in focus or not [jb-alvarado/Jim]&#x000A;- Added an option to general settings to allow users to confirm when clicking the "Stop Recording" button [glikely]&#x000A;- Added channels widget for restream.io service integration [SoftwareArchitector]&#x000A;- Added the "Area" shader as a downscale shader in video settings [jpark37]&#x000A;- Added an "Enable Preview" button to the main window when the preview is disabled [cg2121]&#x000A;- Added (or rather fixed) hardware acceleration support for decoding media files when using the media source where applicable [Jim]&#x000A;&#x000A;Tweaks/Fixes&#x000A;------------&#x000A;- Updated all dependencies on Windows (such as FFmpeg, x264, CEF) to their latest versions [Jim]&#x000A;- Made a number of optimizations and performance improvements [jpark37]&#x000A;- Made a number of performance improvements to QSV [brittneysclark]&#x000A;- Changed default recording format to mkv instead of flv [WizardCM]&#x000A;- Recording now automatically stop if there is less than 50 megabytes left of disk space available [cg2121]&#x000A;- Fixed a number of issues with Linux window capture [kkartaltepe]&#x000A;- Fixed the tray icon showing up on startup even when it was turned off [Jim]&#x000A;- Fixed a bug where encoders could lock up when an encode call fails [Jim]&#x000A;- Fixed an issue where projectors would have a gray background rather than a black background [Jim]&#x000A;- Fixed a bug where secondary Twitch/Mixer browser panels would stop appearing [Jim]&#x000A;- Fixed a freeze that could happen under rare circumstances when shutting down [Jim]&#x000A;- If no tracks are selected when recording in advanced output mode, it will now default to the same track being used for streaming [cg2121]'>
+<i class='file text outline icon'></i>
+OBS Studio 24.0 Release Candidate 4
+
+...
+</span>
+<span>
+<a class="download-archive" data-format="zip" data-ref="24.0.0-rc4" data-sha="fe1a3718ea810e8402228983be387e49d19e301f" href="/toumingyu/obs-studio/repository/archive/24.0.0-rc4?format=zip"><i class='file archive outline icon'></i>
+zip
+</a></span>
+<span>
+<a class="download-archive" data-format="tar.gz" data-ref="24.0.0-rc4" data-sha="fe1a3718ea810e8402228983be387e49d19e301f" href="/toumingyu/obs-studio/repository/archive/24.0.0-rc4?format=tar.gz"><i class='file archive outline icon'></i>
+tar.gz
+</a></span>
+</div>
+</div>
+</div>
+<div class='release-tag-item'>
+<div class='release-meta'>
+<div class='tag-name'>
+<a href="/toumingyu/obs-studio/tree/24.0.0-rc3" target="_blank"><i class='iconfont icon-tag'></i>
+<span>
+24.0.0-rc3
+</span>
+</a></div>
+<div class='commit-info'>
+<a href="/toumingyu/obs-studio/commit/65eac02cda6de8763888e4a4361717ef190f9dbf"><span class='octicon octicon-git-commit'></span>
+65eac02
+</a></div>
+<div class='commit-time'>
+2019-09-04 10:11
+</div>
+</div>
+<div class='release-body'>
+<a href="/toumingyu/obs-studio/tree/24.0.0-rc3"><b>24.0.0-rc3</b>
+<i class='icon ellipsis horizontal tag-popup-msg' data-content='UI: Shut down browsers when browser docks hidden'></i>
+</a><div class='tag-meta'>
+<span title='OBS Studio 24.0 Release Candidate 3&#x000A;&#x000A;Release Candidate 3 Fixes&#x000A;-------------------------&#x000A;* Fixed a bug where browser widgets/docks would not shut down properly&#x000A;* Fixed an issue where if you had a lot of browsers in a scene at once, the browsers would stop rendering when you switch away and back to the scene they were in&#x000A;* Fixed a crash either on shutdown or when switching profiles that could occur when you had Twitch/Restream/Mixer integration browser widgets in use&#x000A;* Fixed a bug with the media source where it would not loop properly or would hiccup when hardware accelerated decoding was enabled&#x000A;* Fixed a bug with the media source where certain hardware decoders would output corrupted video&#x000A;* Fixed a bug where pause would desynchronize audio/video the more often it was used&#x000A;* Fixed a bug where pausing could cause a crash or freeze when pausing/unpausing over and over too quickly&#x000A;* Browser docks now fully shutdown when hidden (prevents playback of any video/audio that may have been playing by browser)&#x000A;* Added an option to browser sources, "Reroute audio through OBS", which is enabled by default.  This allows the user to turn off the new browser audio handling if they need to for whatever reason (usually only useful when you need to monitor with a different device than what OBS is set to monitor with)&#x000A;&#x000A;Release Candidate 2 Fixes&#x000A;-------------------------&#x000A;* Fixed a bug where browser source audio would cut out with certain stream notifications&#x000A;* Fixed a bug where browser sources would sometimes stop rendering&#x000A;* Fixed an issue where x264 would spam the log every time the bitrate changed when dynamic bitrate was activated&#x000A;* Fixed a crash that could sometimes happen when hardware-accelerated decoding is enabled with the media source&#x000A;* Fixed a memory leak when hardware-accelerated decoding is enabled with the media source&#x000A;* Fixed a bug where the program could freeze on startup&#x000A;* Fixed a bug with QSV encoder where Ivy/Sandy Bridge chips would not encode correctly&#x000A;* Hardware-accelerated decoding should now work on webm files that do not have an alpha channel.&#x000A;&#x000A;New Features&#x000A;------------&#x000A;- Added the ability to pause while recording to allow seamless on-the-fly removal of video segments.  This can only be used when not sharing an encoder with the stream.  [Jim]&#x000A;- Added an option to automatically adjust bitrate when congestion occurs to advanced settings, which is an alternative to dropping frames (available in advanced settings).  Note that this currently only works with RTMP, and severe congestion may cause increased delay to viewers.  [Jim/pkv]&#x000A;- Added the ability to select multiple sources on the preview by box selection [Dillon]&#x000A;- Added the ability to create custom browser docks in the View -&gt; Docks menu.  This allows you to open extra dockable webpages whenever OBS opens [Jim]&#x000A;- Browser sources can now have their volume adjusted via the audio mixer, or have filters applied to them.  Additionally, you can now change whether the browser source outputs to speakers or to stream only via the audio monitoring settings in advanced audio properties.  [Osiris/pkv/Jim]&#x000A;- Added a script to pause recording when a specific scene is active [cg2121]&#x000A;- Added a "Hotkey Focus Behavior" option to advanced settings, which allows you to set whether hotkeys are disabled depending on whether you have the main window in focus or not [jb-alvarado/Jim]&#x000A;- Added an option to general settings to allow users to confirm when clicking the "Stop Recording" button [glikely]&#x000A;- Added channels widget for restream.io service integration [SoftwareArchitector]&#x000A;- Added the "Area" shader as a downscale shader in video settings [jpark37]&#x000A;- Added an "Enable Preview" button to the main window when the preview is disabled [cg2121]&#x000A;- Added (or rather fixed) hardware acceleration support for decoding media files when using the media source where applicable [Jim]&#x000A;&#x000A;Tweaks/Fixes&#x000A;------------&#x000A;- Updated all dependencies on Windows (such as FFmpeg, x264, CEF) to their latest versions [Jim]&#x000A;- Made a number of optimizations and performance improvements [jpark37]&#x000A;- Made a number of performance improvements to QSV [brittneysclark]&#x000A;- Changed default recording format to mkv instead of flv [WizardCM]&#x000A;- Recording now automatically stop if there is less than 50 megabytes left of disk space available [cg2121]&#x000A;- Fixed a number of issues with Linux window capture [kkartaltepe]&#x000A;- Fixed the tray icon showing up on startup even when it was turned off [Jim]&#x000A;- Fixed a bug where encoders could lock up when an encode call fails [Jim]&#x000A;- Fixed an issue where projectors would have a gray background rather than a black background [Jim]&#x000A;- Fixed a bug where secondary Twitch/Mixer browser panels would stop appearing [Jim]&#x000A;- Fixed a freeze that could happen under rare circumstances when shutting down [Jim]&#x000A;- If no tracks are selected when recording in advanced output mode, it will now default to the same track being used for streaming [cg2121]'>
+<i class='file text outline icon'></i>
+OBS Studio 24.0 Release Candidate 3
+
+...
+</span>
+<span>
+<a class="download-archive" data-format="zip" data-ref="24.0.0-rc3" data-sha="65eac02cda6de8763888e4a4361717ef190f9dbf" href="/toumingyu/obs-studio/repository/archive/24.0.0-rc3?format=zip"><i class='file archive outline icon'></i>
+zip
+</a></span>
+<span>
+<a class="download-archive" data-format="tar.gz" data-ref="24.0.0-rc3" data-sha="65eac02cda6de8763888e4a4361717ef190f9dbf" href="/toumingyu/obs-studio/repository/archive/24.0.0-rc3?format=tar.gz"><i class='file archive outline icon'></i>
+tar.gz
+</a></span>
+</div>
+</div>
+</div>
+<div class='release-tag-item'>
+<div class='release-meta'>
+<div class='tag-name'>
+<a href="/toumingyu/obs-studio/tree/24.0.0-rc2" target="_blank"><i class='iconfont icon-tag'></i>
+<span>
+24.0.0-rc2
+</span>
+</a></div>
+<div class='commit-info'>
+<a href="/toumingyu/obs-studio/commit/6943d9a973aa3dc935b39f99d06f4540ea79da61"><span class='octicon octicon-git-commit'></span>
+6943d9a
+</a></div>
+<div class='commit-time'>
+2019-08-28 23:47
+</div>
+</div>
+<div class='release-body'>
+<a href="/toumingyu/obs-studio/tree/24.0.0-rc2"><b>24.0.0-rc2</b>
+<i class='icon ellipsis horizontal tag-popup-msg' data-content='Merge pull request #2047 from jpark37/scale-weights'></i>
+</a><div class='tag-meta'>
+<span title='OBS Studio 24.0 Release Candidate 2&#x000A;&#x000A;Release Candidate 2 Fixes&#x000A;-------------------------&#x000A;* Fixed a bug where browser source audio would cut out with certain stream notifications&#x000A;* Fixed a bug where browser sources would sometimes stop rendering&#x000A;* Fixed an issue where x264 would spam the log every time the bitrate changed when dynamic bitrate was activated&#x000A;* Fixed a crash that could sometimes happen when hardware-accelerated decoding is enabled with the media source&#x000A;* Fixed a memory leak when hardware-accelerated decoding is enabled with the media source&#x000A;* Fixed a bug where the program could freeze on startup&#x000A;* Fixed a bug with QSV encoder where Ivy/Sandy Bridge chips would not encode correctly&#x000A;* Hardware-accelerated decoding should now work on webm files that do not have an alpha channel.&#x000A;&#x000A;New Features&#x000A;------------&#x000A;- Added the ability to pause while recording to allow seamless on-the-fly removal of video segments.  This can only be used when not sharing an encoder with the stream.  [Jim]&#x000A;- Added an option to automatically adjust bitrate when congestion occurs to advanced settings, which is an alternative to dropping frames (available in advanced settings).  Note that this currently only works with RTMP, and severe congestion may cause increased delay to viewers.  [Jim/pkv]&#x000A;- Added the ability to select multiple sources on the preview by box selection [Dillon]&#x000A;- Added the ability to create custom browser docks in the View -&gt; Docks menu.  This allows you to open extra dockable webpages whenever OBS opens [Jim]&#x000A;- Browser sources can now have their volume adjusted via the audio mixer, or have filters applied to them.  Additionally, you can now change whether the browser source outputs to speakers or to stream only via the audio monitoring settings in advanced audio properties.  [Osiris/pkv/Jim]&#x000A;- Added a script to pause recording when a specific scene is active [cg2121]&#x000A;- Added a "Hotkey Focus Behavior" option to advanced settings, which allows you to set whether hotkeys are disabled depending on whether you have the main window in focus or not [jb-alvarado/Jim]&#x000A;- Added an option to general settings to allow users to confirm when clicking the "Stop Recording" button [glikely]&#x000A;- Added channels widget for restream.io service integration [SoftwareArchitector]&#x000A;- Added the "Area" shader as a downscale shader in video settings [jpark37]&#x000A;- Added an "Enable Preview" button to the main window when the preview is disabled [cg2121]&#x000A;- Added (or rather fixed) hardware acceleration support for decoding media files when using the media source where applicable [Jim]&#x000A;&#x000A;Tweaks/Fixes&#x000A;------------&#x000A;- Updated all dependencies on Windows (such as FFmpeg, x264, CEF) to their latest versions [Jim]&#x000A;- Made a number of optimizations and performance improvements [jpark37]&#x000A;- Made a number of performance improvements to QSV [brittneysclark]&#x000A;- Changed default recording format to mkv instead of flv [WizardCM]&#x000A;- Recording now automatically stop if there is less than 50 megabytes left of disk space available [cg2121]&#x000A;- Fixed a number of issues with Linux window capture [kkartaltepe]&#x000A;- Fixed the tray icon showing up on startup even when it was turned off [Jim]&#x000A;- Fixed a bug where encoders could lock up when an encode call fails [Jim]&#x000A;- Fixed an issue where projectors would have a gray background rather than a black background [Jim]&#x000A;- Fixed a bug where secondary Twitch/Mixer browser panels would stop appearing [Jim]&#x000A;- Fixed a freeze that could happen under rare circumstances when shutting down [Jim]&#x000A;- If no tracks are selected when recording in advanced output mode, it will now default to the same track being used for streaming [cg2121]'>
+<i class='file text outline icon'></i>
+OBS Studio 24.0 Release Candidate 2
+
+...
+</span>
+<span>
+<a class="download-archive" data-format="zip" data-ref="24.0.0-rc2" data-sha="6943d9a973aa3dc935b39f99d06f4540ea79da61" href="/toumingyu/obs-studio/repository/archive/24.0.0-rc2?format=zip"><i class='file archive outline icon'></i>
+zip
+</a></span>
+<span>
+<a class="download-archive" data-format="tar.gz" data-ref="24.0.0-rc2" data-sha="6943d9a973aa3dc935b39f99d06f4540ea79da61" href="/toumingyu/obs-studio/repository/archive/24.0.0-rc2?format=tar.gz"><i class='file archive outline icon'></i>
+tar.gz
+</a></span>
+</div>
+</div>
+</div>
+<div class='release-tag-item'>
+<div class='release-meta'>
+<div class='tag-name'>
+<a href="/toumingyu/obs-studio/tree/24.0.0-rc1" target="_blank"><i class='iconfont icon-tag'></i>
+<span>
+24.0.0-rc1
+</span>
+</a></div>
+<div class='commit-info'>
+<a href="/toumingyu/obs-studio/commit/bc787c5e949379bebbff164b6f47ec0c0bf34f45"><span class='octicon octicon-git-commit'></span>
+bc787c5
+</a></div>
+<div class='commit-time'>
+2019-08-19 15:03
+</div>
+</div>
+<div class='release-body'>
+<a href="/toumingyu/obs-studio/tree/24.0.0-rc1"><b>24.0.0-rc1</b>
+<i class='icon ellipsis horizontal tag-popup-msg' data-content='Merge pull request #2039 from Vainock/master'></i>
+</a><div class='tag-meta'>
+<span title='OBS Studio 24.0.0-rc1&#x000A;&#x000A;New Features&#x000A;------------&#x000A;- Added the ability to pause while recording to allow seamless on-the-fly removal of segments of video while recording.  This can only be used when not sharing an encoder with the stream.  [Jim]&#x000A;- Added an option to automatically adjust bitrate when congestion occurs to advanced settings, which is an alternative to dropping frames (available in advanced settings).  Note that this currently only works with RTMP, and severe congestion may cause increased delay to viewers.  [Jim/pkv]&#x000A;- Added the ability to select multiple sources on the preview by box selection [Dillon]&#x000A;- Added the ability to create custom browser docks in the View -&gt; Docks menu.  This allows you to open extra dockable webpages whenever OBS opens [Jim]&#x000A;- Browser sources can now have their volume adjusted via the audio mixer, or have filters applied to them.  Additionally, you can now change whether the browser source outputs to speakers or to stream only via the audio monitoring settings in advanced audio properties.  [Osiris/pkv/Jim]&#x000A;- Added a script to pause recording when a specific scene is active [cg2121]&#x000A;- Added a "Hotkey Focus Behavior" option to advanced settings, which allows you to set whether hotkeys are disabled depending on whether you have the main window in focus or not [jb-alvarado/Jim]&#x000A;- Added an option to general settings to allow users to confirm when clicking the "Stop Recording" button [glikely]&#x000A;- Added channels widget for restream.io service integration [SoftwareArchitector]&#x000A;- Added the "Area" shader as a downscale shader in video settings [jpark37]&#x000A;- Added an "Enable Preview" button to the main window when the preview is disabled [cg2121]&#x000A;- Added (or rather fixed) hardware acceleration support for decoding media files when using the media source where applicable [Jim]&#x000A;&#x000A;Tweaks/Fixes&#x000A;------------&#x000A;- Updated all dependencies on Windows (such as FFmpeg, x264, CEF) to their latest versions [Jim]&#x000A;- Made a number of optimizations and performance improvements [jpark37]&#x000A;- Made a number of performance improvements to QSV [brittneysclark]&#x000A;- Changed default recording format to mkv instead of flv [WizardCM]&#x000A;- Recording now automatically stop if there is less than 50 megabytes left of disk space available [cg2121]&#x000A;- Fixed a number of issues with Linux window capture [kkartaltepe]&#x000A;- Fixed the tray icon showing up on startup even when it was turned off [Jim]&#x000A;- Fixed a bug where encoders could lock up when an encode call fails [Jim]&#x000A;- Fixed an issue where projectors would have a gray background rather than a black background [Jim]&#x000A;- Fixed a bug where secondary Twitch/Mixer browser panels would stop appearing [Jim]&#x000A;- Fixed a freeze that could happen under rare circumstances when shutting down [Jim]&#x000A;- If no tracks are selected when recording in advanced output mode, it will now default to the same track being used for streaming [cg2121]'>
+<i class='file text outline icon'></i>
+OBS Studio 24.0.0-rc1
+
+New Features
+-...
+</span>
+<span>
+<a class="download-archive" data-format="zip" data-ref="24.0.0-rc1" data-sha="bc787c5e949379bebbff164b6f47ec0c0bf34f45" href="/toumingyu/obs-studio/repository/archive/24.0.0-rc1?format=zip"><i class='file archive outline icon'></i>
+zip
+</a></span>
+<span>
+<a class="download-archive" data-format="tar.gz" data-ref="24.0.0-rc1" data-sha="bc787c5e949379bebbff164b6f47ec0c0bf34f45" href="/toumingyu/obs-studio/repository/archive/24.0.0-rc1?format=tar.gz"><i class='file archive outline icon'></i>
+tar.gz
+</a></span>
+</div>
+</div>
+</div>
+<div class='release-tag-item'>
+<div class='release-meta'>
+<div class='tag-name'>
+<a href="/toumingyu/obs-studio/tree/23.2.1" target="_blank"><i class='iconfont icon-tag'></i>
+<span>
+23.2.1
+</span>
+</a></div>
+<div class='commit-info'>
+<a href="/toumingyu/obs-studio/commit/02e523c125e20291adc6118419a5c9e78115e75c"><span class='octicon octicon-git-commit'></span>
+02e523c
+</a></div>
+<div class='commit-time'>
+2019-06-14 13:28
+</div>
+</div>
+<div class='release-body'>
+<a href="/toumingyu/obs-studio/tree/23.2.1"><b>23.2.1</b>
+<i class='icon ellipsis horizontal tag-popup-msg' data-content='libobs: Update version to 23.2.1'></i>
+</a><div class='tag-meta'>
+<span title='OBS Studio 23.2.1&#x000A;&#x000A;23.2.1 Hotfix Changes&#x000A;---------------------&#x000A;&#x000A;- Fixed a crash that could happen with the popular third-party obs-ndi plugin&#x000A;- Fixed the tray icon being shown even when the tray icon was disabled in settings&#x000A;- Fixed a display bug with sources when a custom color was applied to the list item in the sources list box&#x000A;- Fixed a bug where background-removing cameras would have a hall of mirrors effect&#x000A;&#x000A;23.2 New Features/Improvements&#x000A;------------------------------&#x000A;&#x000A;- Made a number of major internal improvements to the macOS browser source, eliminating many mac-related crashes that it would cause when browser sources were in use on macOS.  This also fixes the issue of the program having an initial startup delay where the everything appeared blank.  (Author note: I managed to get browser panels functioning, but they still have some issues, so service integration is still not yet available on macOS)&#x000A;- Added the ability to preview transitions in the properties of a transition via a new Preview button&#x000A;- Added an estimate to remaining available recording time according to available disk space&#x000A;- Added luma key video effect filter&#x000A;- Added the ability to set the exact desired dB volume value of sources in the advanced audio properties, replacing the percentage value&#x000A;- Added the ability to center items vertically/horizontally in the transform menus&#x000A;- Added a hotkey to toggle the preview&#x000A;- Added the ability to output the preview rather than program to a decklink device when in studio mode&#x000A;- Added the ability to copy and paste filters to/from scenes in addition to sources&#x000A;- Added the ability to manually set the network buffer size to the Media source when used in URL mode&#x000A;- Added the top patrons list to the about dialog in the help menu&#x000A;- The sources list box in the bottom-center of the main window now displays a message when there are no sources in the current scene, making it easier for first-time users to understand that they need to add sources&#x000A;&#x000A;23.2 Bug Fixes/Tweaks&#x000A;---------------------&#x000A;&#x000A;- Fixed an issue on Linux where the program would not be able to capture some monitors&#x000A;- Fixed a bug where the "test bandwidth" option wouldn&#x0027;t reset properly until the program was restarted&#x000A;- Fixed a bug where the program would freeze up when an encoder error occurs in the middle of a recording or stream (it now shows an error and should now safely recover)&#x000A;- Fixed a bug where the selection lines of rotated items would incorrectly scale&#x000A;- Fixed a bug where audio would no longer work when certain types of audio devices are unplugged and plugged back in again&#x000A;- Fixed a bug where you could not press escape to cancel when renaming a scene&#x000A;- Fixed a bug where opacity on the mask/blend filter would not work under certain circumstances&#x000A;- Fixed a bug where fractional framerate recordings (59.94, 29.97) recorded with the new version of NVENC would have incorrect DTS timestamps in the recording file&#x000A;- Fixed an issue with VAAPI encoder on Linux where CBR would not always output at a constant bitrate&#x000A;- Fixed an issue where cookies would not properly be saved for browser panels (Twitch Chat/etc) when shutting down the program&#x000A;- Fixed some crashes that could happen when using QSV&#x000A;- Fixed a few rare crashes&#x000A;- Fixed a few rare/minor memory leaks&#x000A;- Recording errors should now gives more detailed errors when they occur&#x000A;- Replaced most icons with SVG icons, making icons look better and more consistent across different DPI scalings&#x000A;- Made the mouse wheel scroll the list of properties instead of scrolling individual property values in properties windows&#x000A;- Made the mouse wheel scroll the list of mixer items instead of scrolling individual mixer values&#x000A;- Moved audio monitoring device from advanced settings to audio settings&#x000A;- Improved logging when recording errors occur&#x000A;- Added a warning popup message box to Twitch authentication if the account is not set up for two-factor authentication (which is now required to stream on Twitch)&#x000A;- Removed the 5 item limit when dragging and dropping files in to OBS&#x000A;- Buttons in the Hotkeys list are now icons rather than text&#x000A;- Changed all opacity spin boxes in filters to sliders&#x000A;- Changed the default size of the color source to the same size as the canvas&#x000A;- Made the Dark theme a bit more consistent across operating systems&#x000A;- Scene item group details are now included in the log file&#x000A;- The stats dock no longer updates when it&#x0027;s not visible&#x000A;- When first renaming a source or scene, the existing text is now automatically selected&#x000A;- The Dark theme has now been renamed to "Dark (Default)", and the "Default" theme has now been renamed to the "System" theme&#x000A;- The cursor is no longer hidden in multiview projectors'>
+<i class='file text outline icon'></i>
+OBS Studio 23.2.1
+
+23.2.1 Hotfix Chan...
+</span>
+<span>
+<a class="download-archive" data-format="zip" data-ref="23.2.1" data-sha="02e523c125e20291adc6118419a5c9e78115e75c" href="/toumingyu/obs-studio/repository/archive/23.2.1?format=zip"><i class='file archive outline icon'></i>
+zip
+</a></span>
+<span>
+<a class="download-archive" data-format="tar.gz" data-ref="23.2.1" data-sha="02e523c125e20291adc6118419a5c9e78115e75c" href="/toumingyu/obs-studio/repository/archive/23.2.1?format=tar.gz"><i class='file archive outline icon'></i>
+tar.gz
+</a></span>
+</div>
+</div>
+</div>
+<div class='release-tag-item'>
+<div class='release-meta'>
+<div class='tag-name'>
+<a href="/toumingyu/obs-studio/tree/23.2.0" target="_blank"><i class='iconfont icon-tag'></i>
+<span>
+23.2.0
+</span>
+</a></div>
+<div class='commit-info'>
+<a href="/toumingyu/obs-studio/commit/0d4d7f617c3f9a51ae04057ab78c4c7e4c78034b"><span class='octicon octicon-git-commit'></span>
+0d4d7f6
+</a></div>
+<div class='commit-time'>
+2019-06-11 13:10
+</div>
+</div>
+<div class='release-body'>
+<a href="/toumingyu/obs-studio/tree/23.2.0"><b>23.2.0</b>
+<i class='icon ellipsis horizontal tag-popup-msg' data-content='libobs: Update version to 23.2.0'></i>
+</a><div class='tag-meta'>
+<span title='OBS Studio 23.2&#x000A;&#x000A;New Features/Improvements&#x000A;-------------------------&#x000A;&#x000A;- Made a number of major internal improvements to the macOS browser source, eliminating many mac-related crashes that it would cause when browser sources were in use on macOS.  This also fixes the issue of the program having an initial startup delay where the everything appeared blank.  (Author note: I managed to get browser panels functioning, but they still have some issues, so service integration is still not yet available on macOS)&#x000A;- Added the ability to preview transitions in the properties of a transition via a new Preview button&#x000A;- Added an estimate to remaining available recording time according to available disk space&#x000A;- Added luma key video effect filter&#x000A;- Added the ability to set the exact desired dB volume value of sources in the advanced audio properties, replacing the percentage value&#x000A;- Added the ability to center items vertically/horizontally in the transform menus&#x000A;- Added a hotkey to toggle the preview&#x000A;- Added the ability to output the preview rather than program to a decklink device when in studio mode&#x000A;- Added the ability to copy and paste filters to/from scenes in addition to sources&#x000A;- Added the ability to manually set the network buffer size to the Media source when used in URL mode&#x000A;- Added the top patrons list to the about dialog in the help menu&#x000A;- The sources list box in the bottom-center of the main window now displays a message when there are no sources in the current scene, making it easier for first-time users to understand that they need to add sources&#x000A;&#x000A;Bug Fixes/Tweaks&#x000A;----------------&#x000A;&#x000A;- Fixed an issue on Linux where the program would not be able to capture some monitors&#x000A;- Fixed a bug where the "test bandwidth" option wouldn&#x0027;t reset properly until the program was restarted&#x000A;- Fixed a bug where the program would freeze up when an encoder error occurs in the middle of a recording or stream (it now shows an error and should now safely recover)&#x000A;- Fixed a bug where the selection lines of rotated items would incorrectly scale&#x000A;- Fixed a bug where audio would no longer work when certain types of audio devices are unplugged and plugged back in again&#x000A;- Fixed a bug where you could not press escape to cancel when renaming a scene&#x000A;- Fixed a bug where opacity on the mask/blend filter would not work under certain circumstances&#x000A;- Fixed a bug where fractional framerate recordings (59.94, 29.97) recorded with the new version of NVENC would have incorrect DTS timestamps in the recording file&#x000A;- Fixed an issue with VAAPI encoder on Linux where CBR would not always output at a constant bitrate&#x000A;- Fixed an issue where cookies would not properly be saved for browser panels (Twitch Chat/etc) when shutting down the program&#x000A;- Fixed some crashes that could happen when using QSV&#x000A;- Fixed a few rare crashes&#x000A;- Fixed a few rare/minor memory leaks&#x000A;- Recording errors should now gives more detailed errors when they occur&#x000A;- Replaced most icons with SVG icons, making icons look better and more consistent across different DPI scalings&#x000A;- Made the mouse wheel scroll the list of properties instead of scrolling individual property values in properties windows&#x000A;- Made the mouse wheel scroll the list of mixer items instead of scrolling individual mixer values&#x000A;- Moved audio monitoring device from advanced settings to audio settings&#x000A;- Improved logging when recording errors occur&#x000A;- Added a warning popup message box to Twitch authentication if account is not set up for two-factor authentication (which now required to stream on Twitch)&#x000A;- Removed the 5 item limit when dragging and dropping files in to OBS&#x000A;- Buttons in the Hotkeys list are now icons rather than text&#x000A;- Changed all opacity spin boxes in filters to sliders&#x000A;- Changed the default size of the color source to the same size as the canvas&#x000A;- Made the Dark theme a bit more consistent across operating systems&#x000A;- Scene item group details are now included in the log file&#x000A;- The stats dock no longer updates when it&#x0027;s not visible&#x000A;- When first renaming a source or scene, the existing text is now automatically selected&#x000A;- The Dark theme has now been renamed to "Dark (Default)", and the "Default" theme has now been renamed to the "System" theme&#x000A;- The cursor is no longer hidden in multiview projectors'>
+<i class='file text outline icon'></i>
+OBS Studio 23.2
+
+New Features/Improve...
+</span>
+<span>
+<a class="download-archive" data-format="zip" data-ref="23.2.0" data-sha="0d4d7f617c3f9a51ae04057ab78c4c7e4c78034b" href="/toumingyu/obs-studio/repository/archive/23.2.0?format=zip"><i class='file archive outline icon'></i>
+zip
+</a></span>
+<span>
+<a class="download-archive" data-format="tar.gz" data-ref="23.2.0" data-sha="0d4d7f617c3f9a51ae04057ab78c4c7e4c78034b" href="/toumingyu/obs-studio/repository/archive/23.2.0?format=tar.gz"><i class='file archive outline icon'></i>
+tar.gz
+</a></span>
+</div>
+</div>
+</div>
+<div class='release-tag-item'>
+<div class='release-meta'>
+<div class='tag-name'>
+<a href="/toumingyu/obs-studio/tree/23.2.0-rc1" target="_blank"><i class='iconfont icon-tag'></i>
+<span>
+23.2.0-rc1
+</span>
+</a></div>
+<div class='commit-info'>
+<a href="/toumingyu/obs-studio/commit/2d1d9166957c22f5fbb3098a67207aeec3333a01"><span class='octicon octicon-git-commit'></span>
+2d1d916
+</a></div>
+<div class='commit-time'>
+2019-05-19 14:19
+</div>
+</div>
+<div class='release-body'>
+<a href="/toumingyu/obs-studio/tree/23.2.0-rc1"><b>23.2.0-rc1</b>
+<i class='icon ellipsis horizontal tag-popup-msg' data-content='Merge pull request #1885 from jpark37/minor-cleanup'></i>
+</a><div class='tag-meta'>
+<span title='Merge pull request #1885 from jpark37/minor-cleanup&#x000A;&#x000A;Minor cleanup'>
+<i class='file text outline icon'></i>
+Merge pull request #1885 from jpark37...
+</span>
+<span>
+<a class="download-archive" data-format="zip" data-ref="23.2.0-rc1" data-sha="2d1d9166957c22f5fbb3098a67207aeec3333a01" href="/toumingyu/obs-studio/repository/archive/23.2.0-rc1?format=zip"><i class='file archive outline icon'></i>
+zip
+</a></span>
+<span>
+<a class="download-archive" data-format="tar.gz" data-ref="23.2.0-rc1" data-sha="2d1d9166957c22f5fbb3098a67207aeec3333a01" href="/toumingyu/obs-studio/repository/archive/23.2.0-rc1?format=tar.gz"><i class='file archive outline icon'></i>
+tar.gz
+</a></span>
+</div>
+</div>
+</div>
+<div class='release-tag-item'>
+<div class='release-meta'>
+<div class='tag-name'>
+<a href="/toumingyu/obs-studio/tree/23.1.0" target="_blank"><i class='iconfont icon-tag'></i>
+<span>
+23.1.0
+</span>
+</a></div>
+<div class='commit-info'>
+<a href="/toumingyu/obs-studio/commit/6550c0dfaaf3b02da6c58bcdde7735682daf2dce"><span class='octicon octicon-git-commit'></span>
+6550c0d
+</a></div>
+<div class='commit-time'>
+2019-04-05 22:36
+</div>
+</div>
+<div class='release-body'>
+<a href="/toumingyu/obs-studio/tree/23.1.0"><b>23.1.0</b>
+<i class='icon ellipsis horizontal tag-popup-msg' data-content='obs-ffmpeg: Remove "A" variants from NVENC blacklist'></i>
+</a><div class='tag-meta'>
+<span title='OBS Studio 23.1&#x000A;&#x000A;New Features/Improvements&#x000A;-------------------------&#x000A;&#x000A;- Added optional Twitch activity feed panel when account is connected to OBS (hidden by default)&#x000A;- Added Restream.io account integration&#x000A;- Added option to select color range to Linux video device source&#x000A;- Added ability to copy and paste filters from the mixer&#x000A;- Added preview/program labels to studio mode&#x000A;- Added new settings icons&#x000A;- Added a checkbox for bandwidth test mode in settings when using Twitch account integration&#x000A;- Added 25/50 PAL framerate values in video settings&#x000A;- Added "Area" scale filtering for sources as an alternative to point scaling.  May preserve more detail on retro games&#x000A;- Added the ability to select video / audio connectors on the Decklink source from inside OBS&#x000A;- Added the ability to swap Front Center and Low frequency effects channel on the Decklink source&#x000A;- Improved the attack/release processing of the expander audio filter&#x000A;&#x000A;Bug Fixes/Tweaks&#x000A;----------------&#x000A;&#x000A;- Reverted 23.0 changes to slideshow, and instead introduced a 250 megabyte memory limit to image slideshow so people can&#x0027;t accidentally exhaust their memory by loading countless images from a folder.  This fixes an issue where large image counts would cause increased CPU usage and rendering lag when transitioning images, or when switching scenes in some cases.&#x000A;- Removed the close buttons from primary docks (scenes, sources, transitions, mixer, controls).  These docks can still be hidden, but now must be explicitly hidden with the view menu instead.  This change does not apply to secondary docks, such as chat, stream information, or stats.&#x000A;- On Linux, the tray now uses icons from the system theme&#x000A;- Fixed a bug when upmixing from mono to stereo would cause the volume to be quieter&#x000A;- Fixed a bug where NVENC wouldn&#x0027;t show up for the NVIDIA Quadro P5000&#x000A;- Fixed another case where the last frame of an NVENC stream/recording could show up as the first frame in a subsequent stream/recording in the same running session&#x000A;- Fixed another case where output could be green for certain devices&#x000A;- Fixed a crash that could happen if you clicked settings too quickly after starting up with streaming account integration, or if you exit the program too quickly'>
+<i class='file text outline icon'></i>
+OBS Studio 23.1
+
+New Features/Improve...
+</span>
+<span>
+<a class="download-archive" data-format="zip" data-ref="23.1.0" data-sha="6550c0dfaaf3b02da6c58bcdde7735682daf2dce" href="/toumingyu/obs-studio/repository/archive/23.1.0?format=zip"><i class='file archive outline icon'></i>
+zip
+</a></span>
+<span>
+<a class="download-archive" data-format="tar.gz" data-ref="23.1.0" data-sha="6550c0dfaaf3b02da6c58bcdde7735682daf2dce" href="/toumingyu/obs-studio/repository/archive/23.1.0?format=tar.gz"><i class='file archive outline icon'></i>
+tar.gz
+</a></span>
+</div>
+</div>
+</div>
+<div class='release-tag-item'>
+<div class='release-meta'>
+<div class='tag-name'>
+<a href="/toumingyu/obs-studio/tree/23.1.0-rc1" target="_blank"><i class='iconfont icon-tag'></i>
+<span>
+23.1.0-rc1
+</span>
+</a></div>
+<div class='commit-info'>
+<a href="/toumingyu/obs-studio/commit/eb672d77253a327978f6bad6b8b08721439fbb88"><span class='octicon octicon-git-commit'></span>
+eb672d7
+</a></div>
+<div class='commit-time'>
+2019-03-29 07:45
+</div>
+</div>
+<div class='release-body'>
+<a href="/toumingyu/obs-studio/tree/23.1.0-rc1"><b>23.1.0-rc1</b>
+<i class='icon ellipsis horizontal tag-popup-msg' data-content='UI: Fix act. feed version hide check to &lt;= 23.0.2'></i>
+</a><div class='tag-meta'>
+<span title="OBS Studio 23.1 Release Candidate 1&#x000A;&#x000A;Changes/Fixes&#x000A;-------------&#x000A;&#x000A;- Added Restream.io account integration&#x000A;- Added option to select color range to Linux video device source&#x000A;- Added ability to copy and paste filters from the mixer&#x000A;- Added preview/program labels&#x000A;- Added new settings icons&#x000A;- Added optional Twitch activity feed panel when account is connected to OBS (hidden by default, may not be fully rolled out yet to all Twitch users)&#x000A;- Added a checkbox for bandwidth test mode in settings when using Twitch account integration&#x000A;- Added 25/50 PAL framerate values in video settings&#x000A;- Improved the attack/release processing of the expander filter&#x000A;- Reverted 23.0 changes to slideshow, and instead introduced a 250 megabyte memory limit to image slideshow so people can't accidentally exhaust their memory by loading countless images from a folder.  This revert fixes an issue where large image counts would cause rendering lag when switching images.&#x000A;- On Linux, the tray now uses icons from the system theme&#x000A;- Fixed a bug when upmixing from mono to stereo would cause the volume to be quieter&#x000A;- Fixed a bug where NVENC wouldn't show up for the NVIDIA Quadro P5000&#x000A;- Fixed another case where the last frame of an NVENC stream/recording could show up as the first frame in a subsequent stream/recording in the same running session&#x000A;- Fixed another case where output could be green for certain devices&#x000A;- Fixed a crash that could happen if you clicked settings too quickly after starting up with streaming account integration, or if you exit the program too quickly">
+<i class='file text outline icon'></i>
+OBS Studio 23.1 Release Candidate 1
+
+...
+</span>
+<span>
+<a class="download-archive" data-format="zip" data-ref="23.1.0-rc1" data-sha="eb672d77253a327978f6bad6b8b08721439fbb88" href="/toumingyu/obs-studio/repository/archive/23.1.0-rc1?format=zip"><i class='file archive outline icon'></i>
+zip
+</a></span>
+<span>
+<a class="download-archive" data-format="tar.gz" data-ref="23.1.0-rc1" data-sha="eb672d77253a327978f6bad6b8b08721439fbb88" href="/toumingyu/obs-studio/repository/archive/23.1.0-rc1?format=tar.gz"><i class='file archive outline icon'></i>
+tar.gz
+</a></span>
+</div>
+</div>
+</div>
+<div class='release-tag-item'>
+<div class='release-meta'>
+<div class='tag-name'>
+<a href="/toumingyu/obs-studio/tree/23.0.2" target="_blank"><i class='iconfont icon-tag'></i>
+<span>
+23.0.2
+</span>
+</a></div>
+<div class='commit-info'>
+<a href="/toumingyu/obs-studio/commit/3d63907976bcfb67ac0588185c7fef295d280d36"><span class='octicon octicon-git-commit'></span>
+3d63907
+</a></div>
+<div class='commit-time'>
+2019-03-07 07:36
+</div>
+</div>
+<div class='release-body'>
+<a href="/toumingyu/obs-studio/tree/23.0.2"><b>23.0.2</b>
+<i class='icon ellipsis horizontal tag-popup-msg' data-content='UI: Fix "What&#x0027;s New" showing again each patch version'></i>
+</a><div class='tag-meta'>
+<span title='OBS Studio 23.0.2 (Hotfix)&#x000A;&#x000A;23.0.2 Hotfix Changes&#x000A;---------------------&#x000A;&#x000A;* Added a warning when closing dock windows&#x000A;* Fixed a bug where if the video drivers crashed for whatever reason, OBS output would turn green&#x000A;* Fixed a bug where the last frame of the previous stream/recording could show up as the first frame of the next stream/recording if on the same running session&#x000A;* Fixed QSV not functioning correctly for some users&#x000A;* Fixed an issue where Python scripting stopped working for 23.0.1&#x000A;* Fixed a memory leak when reloading scripts&#x000A;* Fixed a bug where your profile could reset if you started the program for the first time, changed the language, and then restarted the program&#x000A;* Made a workaround for a system issue where certain older video cards and graphics drivers would show green video with banding artifacts&#x000A;&#x000A;23.0.1 Hotfix Changes&#x000A;---------------------&#x000A;&#x000A;* Fixed a program freeze that could happen when the Logitech G HUB plugin is installed&#x000A;* Fixed a bug where if Mixer auth fails, it could reload the login dialog numerous times&#x000A;* Fixed a bug where users with very old graphics adapters would have green video output&#x000A;* Fixed a bug where a browser widget could start up blank when high-DPI scaling is enabled&#x000A;* Auto-remux no longer deletes the old file, just as a safety precaution&#x000A;&#x000A;23.0.0 Service Integration (Windows)&#x000A;------------------------------------&#x000A;&#x000A;* Added the ability to optionally connect your account to Twitch or Mixer from within OBS (with more services in the works).  When your account is connected, you do not have to enter in a stream key, and gain access to special features related to that service, such as a chat panel or stream configuration/statistics panels.&#x000A;* Twitch integration: Added Twitch chat panel (with BTTV/FFZ support), the Twitch "Stream Information" dashboard panel allowing you to change your stream title/game/etc from within OBS, and the Twitch "Stream Stats" dashboard panel which shows statistics such as viewer count (Stream Stats is hidden by default, you can unhide it in the View menu -&gt; Docks submenu).&#x000A;* Mixer integration: Added Mixer chat panel&#x000A;* Panels such as chat panels used with services are dockable; you can dock/undock the windows to customize how you want them to be placed when using OBS.&#x000A;* YouTube, Facebook, and more services are still in the works; more to come soon.&#x000A;* Service integration is currently only available on Windows for now, though Linux and Mac support is planned for a later date.&#x000A;&#x000A;23.0.0 NVENC and Encoding Improvements (Windows)&#x000A;------------------------------------------------&#x000A;&#x000A;* A new implementation of NVENC has been added which has improved performance, reducing system and resource impact.  To enable, go to Settings, Output Tab, and in Encoder select Hardware (NVENC) New.  Note that the new implementation is not available on Windows 7 due to limitations in the operating system; the old implementation will be used instead in that case.&#x000A;* Added new features to the new NVENC implementation:&#x000A;&#x000A;  - Psycho-visual Tuning:  Enables encoder settings that optimize the use of bitrate for increased perceived visual quality, especially in situations with high motion, at the cost of increased GPU utilization.  This increases subjective image quality.  Qualitative measurements like PSNR may score lower but video may appear better to human viewers.&#x000A;  - Look-ahead:  Enables dynamic B-frames.  If disabled, the encoder will always use the number of B-frames specified in the &#x0027;Max B-frames&#x0027; setting.  If enabled, it will increase visual quality by only using however many B-frames are necessary, up to the maximum, at the cost of increased GPU utilization.&#x000A;&#x000A;23.0.0 General Changes&#x000A;----------------------&#x000A;&#x000A;* Added a Limiter audio filter.&#x000A;* Added an Expander audio filter.&#x000A;* Added VAAPI video encoder on Linux.&#x000A;* Added batch remuxing support to the Remux Recordings dialog.&#x000A;* Added an option to automatically remux recordings to MP4 in Advanced settings.&#x000A;* Added a Decklink output tool to the tools menu.  This allows you to output OBS to a Decklink device.&#x000A;* Added an optional Stats dock.  This dock is disabled by default; you can enable this dock in the View menu -&gt; Docks submenu.&#x000A;* Added multi-track audio support to FFmpeg output in advanced output settings.&#x000A;* Added an About dialog to the Help menu.&#x000A;* Added a filter (search) option to the Hotkeys section of the settings window.&#x000A;* Added a fourth Mic/Auxiliary audio option in Audio settings.&#x000A;* Added stereo balancing (panning) to the Advanced Audio Properties dialog.&#x000A;* Added an option to change the OBS base/output resolution to the size of a source in the right-click context menu of the source.  Only works when no outputs are active.&#x000A;* Added a "deactivate when not showing" option to the Decklink source.&#x000A;* Added an Invert Polarity audio filter.&#x000A;* Added an F2 shortcut to rename sources or scenes when selected.&#x000A;* Added VLC source support to the Instant Replay script.&#x000A;* Added a "What&#x0027;s New" dialog that may pop up on startup in the case of announcements or important news&#x000A;* Fixed a bug where screen reader tools for the visually impaired would not read out the items in the source list box in the main window when selected.&#x000A;* Fixed a bug where fullscreen projectors would always be on top despite that setting being unchecked.&#x000A;* Fixed an issue on windows where window capture would use an abnormal amount of CPU usage when its target window was not available&#x000A;* Fixed a number of race conditions and minor memory leaks, improving overall program stability.&#x000A;* When your mouse cursor is hovering over a source in the preview or in the source list, a light rectangle will show up around it indicating that it can be selected.&#x000A;* When a source is dragged outside of the preview area, there is a new visualization for the unseen area of that source while selected.&#x000A;* Simplified and improved the user experience of the "Stream" page of both the settings and auto-configuration windows.&#x000A;* The source selection rectangle has been improved.&#x000A;* The slideshow source now only loads a maximum of 15 images at a time, and dynamically loads images beyond that count as they cycle.  This was done to prevent people who put countless files in the slideshow source from running out of memory.&#x000A;* When in studio mode, you can no longer transition if you&#x0027;re already in the middle of a transition.&#x000A;* Removed a number of internal/uncapturable Microsoft program windows from the game/window capture window lists.&#x000A;* Increased the Instant Replay script retry interval.&#x000A;* Docks are now unlocked by default.  You can lock/unlock docks in the View menu -&gt; Docks submenu.'>
+<i class='file text outline icon'></i>
+OBS Studio 23.0.2 (Hotfix)
+
+23.0.2 Ho...
+</span>
+<span>
+<a class="download-archive" data-format="zip" data-ref="23.0.2" data-sha="3d63907976bcfb67ac0588185c7fef295d280d36" href="/toumingyu/obs-studio/repository/archive/23.0.2?format=zip"><i class='file archive outline icon'></i>
+zip
+</a></span>
+<span>
+<a class="download-archive" data-format="tar.gz" data-ref="23.0.2" data-sha="3d63907976bcfb67ac0588185c7fef295d280d36" href="/toumingyu/obs-studio/repository/archive/23.0.2?format=tar.gz"><i class='file archive outline icon'></i>
+tar.gz
+</a></span>
+</div>
+</div>
+</div>
+<div class='release-tag-item'>
+<div class='release-meta'>
+<div class='tag-name'>
+<a href="/toumingyu/obs-studio/tree/23.0.1" target="_blank"><i class='iconfont icon-tag'></i>
+<span>
+23.0.1
+</span>
+</a></div>
+<div class='commit-info'>
+<a href="/toumingyu/obs-studio/commit/f2d7f5b2e713266138df656121da35ff89407991"><span class='octicon octicon-git-commit'></span>
+f2d7f5b
+</a></div>
+<div class='commit-time'>
+2019-02-27 05:51
+</div>
+</div>
+<div class='release-body'>
+<a href="/toumingyu/obs-studio/tree/23.0.1"><b>23.0.1</b>
+<i class='icon ellipsis horizontal tag-popup-msg' data-content='obs-browser: Fix widgets being initially blank on high-DPI'></i>
+</a><div class='tag-meta'>
+<span title='OBS Studio 23.0.1 (Hotfix)&#x000A;&#x000A;23.0.1 Hotfix Changes&#x000A;---------------------&#x000A;&#x000A;* Fixed a hard lock with users who have the Logitech G HUB plugin installed&#x000A;* Fixed a bug where if Mixer auth fails, it could reload the login dialog numerous times&#x000A;* Fixed a bug where users with very old graphics adapters would have green video output&#x000A;* Fixed a bug where a browser widget would start up blank on high-DPI display setups&#x000A;* Auto-remux no longer deletes the old file, just as a safety precaution&#x000A;&#x000A;23.0.0 Service Integration (Windows)&#x000A;------------------------------------&#x000A;&#x000A;* Added the ability to optionally connect your account to Twitch or Mixer from within OBS (with more services in the works).  When your account is connected, you do not have to enter in a stream key, and gain access to special features related to that service, such as a chat panel or stream configuration/statistics panels.&#x000A;* Twitch integration: Added Twitch chat panel (with BTTV/FFZ support), the Twitch "Stream Information" dashboard panel allowing you to change your stream title/game/etc from within OBS, and the Twitch "Stream Stats" dashboard panel which shows statistics such as viewer count (Stream Stats is hidden by default, you can unhide it in the View menu -&gt; Docks submenu).&#x000A;* Mixer integration: Added Mixer chat panel&#x000A;* Panels such as chat panels used with services are dockable; you can dock/undock the windows to customize how you want them to be placed when using OBS.&#x000A;* YouTube, Facebook, and more services are still in the works; more to come soon.&#x000A;* Service integration is currently only available on Windows for now, though Linux and Mac support is planned for a later date.&#x000A;&#x000A;23.0.0 NVENC and Encoding Improvements (Windows)&#x000A;-----------------------------------------&#x000A;&#x000A;* A new implementation of NVENC has been added which has improved performance, reducing system and resource impact.  To enable, go to Settings, Output Tab, and in Encoder select Hardware (NVENC) New.  Note that the new implementation is not available on Windows 7 due to limitations in the operating system; the old implementation will be used instead in that case.&#x000A;* Added new features to the new NVENC implementation:&#x000A;&#x000A;  - Psycho-visual Tuning:  Enables encoder settings that optimize the use of bitrate for increased perceived visual quality, especially in situations with high motion, at the cost of increased GPU utilization.  This increases subjective image quality.  Qualitative measurements like PSNR may score lower but video may appear better to human viewers.&#x000A;  - Look-ahead:  Enables dynamic B-frames.  If disabled, the encoder will always use the number of B-frames specified in the &#x0027;Max B-frames&#x0027; setting.  If enabled, it will increase visual quality by only using however many B-frames are necessary, up to the maximum, at the cost of increased GPU utilization.&#x000A;&#x000A;23.0.0 General Changes&#x000A;----------------------&#x000A;&#x000A;* Added a Limiter audio filter.&#x000A;* Added an Expander audio filter.&#x000A;* Added VAAPI video encoder on Linux.&#x000A;* Added batch remuxing support to the Remux Recordings dialog.&#x000A;* Added an option to automatically remux recordings to MP4 in Advanced settings.&#x000A;* Added a Decklink output tool to the tools menu.  This allows you to output OBS to a Decklink device.&#x000A;* Added an optional Stats dock.  This dock is disabled by default; you can enable this dock in the View menu -&gt; Docks submenu.&#x000A;* Added multi-track audio support to FFmpeg output in advanced output settings.&#x000A;* Added an About dialog to the Help menu.&#x000A;* Added a filter (search) option to the Hotkeys section of the settings window.&#x000A;* Added a fourth Mic/Auxiliary audio option in Audio settings.&#x000A;* Added stereo balancing (panning) to the Advanced Audio Properties dialog.&#x000A;* Added an option to change the OBS base/output resolution to the size of a source in the right-click context menu of the source.  Only works when no outputs are active.&#x000A;* Added a "deactivate when not showing" option to the Decklink source.&#x000A;* Added an Invert Polarity audio filter.&#x000A;* Added an F2 shortcut to rename sources or scenes when selected.&#x000A;* Added VLC source support to the Instant Replay script.&#x000A;* Added a "What&#x0027;s New" dialog that may pop up on startup in the case of announcements or important news&#x000A;* Fixed a bug where screen reader tools for the visually impaired would not read out the items in the source list box in the main window when selected.&#x000A;* Fixed a bug where fullscreen projectors would always be on top despite that setting being unchecked.&#x000A;* Fixed an issue on windows where window capture would use an abnormal amount of CPU usage when its target window was not available&#x000A;* Fixed a number of race conditions and minor memory leaks, improving overall program stability.&#x000A;* When your mouse cursor is hovering over a source in the preview or in the source list, a light rectangle will show up around it indicating that it can be selected.&#x000A;* When a source is dragged outside of the preview area, there is a new visualization for the unseen area of that source while selected.&#x000A;* Simplified and improved the user experience of the "Stream" page of both the settings and auto-configuration windows.&#x000A;* The source selection rectangle has been improved.&#x000A;* The slideshow source now only loads a maximum of 15 images at a time, and dynamically loads images beyond that count as they cycle.  This was done to prevent people who put countless files in the slideshow source from running out of memory.&#x000A;* When in studio mode, you can no longer transition if you&#x0027;re already in the middle of a transition.&#x000A;* Removed a number of internal/uncapturable Microsoft program windows from the game/window capture window lists.&#x000A;* Increased the Instant Replay script retry interval.&#x000A;* Docks are now unlocked by default.  You can lock/unlock docks in the View menu -&gt; Docks submenu.'>
+<i class='file text outline icon'></i>
+OBS Studio 23.0.1 (Hotfix)
+
+23.0.1 Ho...
+</span>
+<span>
+<a class="download-archive" data-format="zip" data-ref="23.0.1" data-sha="f2d7f5b2e713266138df656121da35ff89407991" href="/toumingyu/obs-studio/repository/archive/23.0.1?format=zip"><i class='file archive outline icon'></i>
+zip
+</a></span>
+<span>
+<a class="download-archive" data-format="tar.gz" data-ref="23.0.1" data-sha="f2d7f5b2e713266138df656121da35ff89407991" href="/toumingyu/obs-studio/repository/archive/23.0.1?format=tar.gz"><i class='file archive outline icon'></i>
+tar.gz
+</a></span>
+</div>
+</div>
+</div>
+<div class='release-tag-item'>
+<div class='release-meta'>
+<div class='tag-name'>
+<a href="/toumingyu/obs-studio/tree/23.0.0" target="_blank"><i class='iconfont icon-tag'></i>
+<span>
+23.0.0
+</span>
+</a></div>
+<div class='commit-info'>
+<a href="/toumingyu/obs-studio/commit/8181f776093bde3d078709e4b5d50cba50cad92c"><span class='octicon octicon-git-commit'></span>
+8181f77
+</a></div>
+<div class='commit-time'>
+2019-02-26 04:16
+</div>
+</div>
+<div class='release-body'>
+<a href="/toumingyu/obs-studio/tree/23.0.0"><b>23.0.0</b>
+<i class='icon ellipsis horizontal tag-popup-msg' data-content='UI: Rename a bunch of bad file names'></i>
+</a><div class='tag-meta'>
+<span title='OBS Studio 23.0&#x000A;&#x000A;Service Integration (Windows)&#x000A;-----------------------------&#x000A;&#x000A;* Added the ability to optionally connect your account to Twitch or Mixer from within OBS (with more services in the works).  When your account is connected, you do not have to enter in a stream key, and gain access to special features related to that service, such as a chat panel or stream configuration/statistics panels.&#x000A;* Twitch integration: Added Twitch chat panel (with BTTV/FFZ support), the Twitch "Stream Information" dashboard panel allowing you to change your stream title/game/etc from within OBS, and the Twitch "Stream Stats" dashboard panel which shows statistics such as viewer count (Stream Stats is hidden by default, you can unhide it in the View menu -&gt; Docks submenu).&#x000A;* Mixer integration: Added Mixer chat panel&#x000A;* Panels such as chat panels used with services are dockable; you can dock/undock the windows to customize how you want them to be placed when using OBS.&#x000A;* YouTube, Facebook, and more services are still in the works; more to come soon.&#x000A;* Service integration is currently only available on Windows for now, though Linux and Mac support is planned for a later date.&#x000A;&#x000A;NVENC and Encoding Improvements (Windows)&#x000A;-----------------------------------------&#x000A;&#x000A;* A new implementation of NVENC has been added which has improved performance, reducing system and resource impact.  To enable, go to Settings, Output Tab, and in Encoder select Hardware (NVENC) New.  Note that the new implementation is not available on Windows 7 due to limitations in the operating system; the old implementation will be used instead in that case.&#x000A;* Added new features to the new NVENC implementation:&#x000A;&#x000A;  - Psycho-visual Tuning:  Enables encoder settings that optimize the use of bitrate for increased perceived visual quality, especially in situations with high motion, at the cost of increased GPU utilization.  This increases subjective image quality.  Qualitative measurements like PSNR may score lower but video may appear better to human viewers.&#x000A;  - Look-ahead:  Enables dynamic B-frames.  If disabled, the encoder will always use the number of B-frames specified in the &#x0027;Max B-frames&#x0027; setting.  If enabled, it will increase visual quality by only using however many B-frames are necessary, up to the maximum, at the cost of increased GPU utilization.&#x000A;&#x000A;General Changes&#x000A;---------------&#x000A;&#x000A;* Added a Limiter audio filter.&#x000A;* Added an Expander audio filter.&#x000A;* Added VAAPI video encoder on Linux.&#x000A;* Added batch remuxing support to the Remux Recordings dialog.&#x000A;* Added an option to automatically remux recordings to MP4 in Advanced settings.&#x000A;* Added a Decklink output tool to the tools menu.  This allows you to output OBS to a Decklink device.&#x000A;* Added an optional Stats dock.  This dock is disabled by default; you can enable this dock in the View menu -&gt; Docks submenu.&#x000A;* Added multi-track audio support to FFmpeg output in advanced output settings.&#x000A;* Added an About dialog to the Help menu.&#x000A;* Added a filter (search) option to the Hotkeys section of the settings window.&#x000A;* Added a fourth Mic/Auxiliary audio option in Audio settings.&#x000A;* Added stereo balancing (panning) to the Advanced Audio Properties dialog.&#x000A;* Added an option to change the OBS base/output resolution to the size of a source in the right-click context menu of the source.  Only works when no outputs are active.&#x000A;* Added a "deactivate when not showing" option to the Decklink source.&#x000A;* Added an Invert Polarity audio filter.&#x000A;* Added an F2 shortcut to rename sources or scenes when selected.&#x000A;* Added VLC source support to the Instant Replay script.&#x000A;* Added a "What&#x0027;s New" dialog that may pop up on startup in the case of announcements or important news&#x000A;* Fixed a bug where screen reader tools for the visually impaired would not read out the items in the source list box in the main window when selected.&#x000A;* Fixed a bug where fullscreen projectors would always be on top despite that setting being unchecked.&#x000A;* Fixed an issue on windows where window capture would use an abnormal amount of CPU usage when its target window was not available&#x000A;* Fixed a number of race conditions and minor memory leaks, improving overall program stability.&#x000A;* When your mouse cursor is hovering over a source in the preview or in the source list, a light rectangle will show up around it indicating that it can be selected.&#x000A;* When a source is dragged outside of the preview area, there is a new visualization for the unseen area of that source while selected.&#x000A;* Simplified and improved the user experience of the "Stream" page of both the settings and auto-configuration windows.&#x000A;* The source selection rectangle has been improved.&#x000A;* The slideshow source now only loads a maximum of 15 images at a time, and dynamically loads images beyond that count as they cycle.  This was done to prevent people who put countless files in the slideshow source from running out of memory.&#x000A;* When in studio mode, you can no longer transition if you&#x0027;re already in the middle of a transition.&#x000A;* Removed a number of internal/uncapturable Microsoft program windows from the game/window capture window lists.&#x000A;* Increased the Instant Replay script retry interval.&#x000A;* Docks are now unlocked by default.  You can lock/unlock docks in the View menu -&gt; Docks submenu.'>
+<i class='file text outline icon'></i>
+OBS Studio 23.0
+
+Service Integration ...
+</span>
+<span>
+<a class="download-archive" data-format="zip" data-ref="23.0.0" data-sha="8181f776093bde3d078709e4b5d50cba50cad92c" href="/toumingyu/obs-studio/repository/archive/23.0.0?format=zip"><i class='file archive outline icon'></i>
+zip
+</a></span>
+<span>
+<a class="download-archive" data-format="tar.gz" data-ref="23.0.0" data-sha="8181f776093bde3d078709e4b5d50cba50cad92c" href="/toumingyu/obs-studio/repository/archive/23.0.0?format=tar.gz"><i class='file archive outline icon'></i>
+tar.gz
+</a></span>
+</div>
+</div>
+</div>
+</div>
+<div class='ui mini modal project-archive-modal'>
+<i class='iconfont icon-close close'></i>
+<div class='header'>
+<span class='title'>下载</span>
+<span class='name'></span>
+</div>
+<div class='content ui custom form'>
+<div class='ui message form-message error'></div>
+<div class='field'>
+请输入验证码，防止盗链导致资源被占用
+</div>
+<div class='field captcha'>
+<div class='input wrapper'>
+<div class='ui input input-content'>
+<input autocomplete="off" id="captcha" name="captcha" placeholder="验证码" type="text" value="" />
+<img class='captcha_img' height='37'>
+</div>
+<div class='ui small error text message'></div>
+</div>
+</div>
+</div>
+<div class='actions'>
+<button class='ui button blank cancel'>取消</button>
+<button class='ui button orange download-btn disabled'>下载</button>
+</div>
+</div>
+<script>
+  $(function() {
+    var $mountedElem  = $('.download-archive'),
+        $archiveModal = $('.project-archive-modal'),
+        $archiveName  = $archiveModal.find('.header .name'),
+        $downloadBtn  = $archiveModal.find('.download-btn'),
+        $captchaInput = $archiveModal.find('#captcha'),
+        $captchaImg   = $archiveModal.find('.captcha_img'),
+        $message      = $archiveModal.find('.form-message'),
+        isLogin       = false,
+        loginUrl      = '/login',
+        archiveUrl    = null,
+        ref           = null,
+        sha           = null,
+        captcha       = null,
+        format        = 'zip',
+        delayTimers   = {}
+  
+    // 下载文件
+    $downloadBtn.on('click', function() {
+      captcha = $captchaInput.val()
+      downloadArchive()
+      return false
+    })
+  
+    function downloadArchive() {
+      $.ajax({
+        type: 'POST',
+        url: '/toumingyu/obs-studio/repository/download',
+        data: { sha: sha, format: format, captcha: captcha },
+        beforeSend: function() {
+          $downloadBtn.addClass('loading')
+          $message.removeClass('info error').hide()
+        },
+        success: function(data) {
+          $downloadBtn.removeClass('loading')
+          if (data.code == 200) {
+            location.href = archiveUrl + '&captcha=' + captcha
+            $archiveModal.modal('hide')
+          } else if (data.code == 201) {
+            delayTimers['checkArchive'] = setInterval(checkArchive, 3000)
+            $downloadBtn.addClass('disabled')
+            $message.addClass('info').text(data.msg).show()
+            $captchaImg.trigger('click')
+          } else if (data.code == 401) {
+            $message.addClass('error').text(data.msg).show()
+          }
+        }
+      })
+    }
+  
+    function checkArchive() {
+      $.get('/toumingyu/obs-studio/repository/check_archive', { sha: sha, format: format }, function(data) {
+        if (data.code == 200) {
+          location.href = archiveUrl + '&captcha=' + captcha
+          clearInterval(delayTimers['checkArchive'])
+          $archiveModal.modal('hide')
+        } else if (data.code == 401) {
+          $message.removeClass('info').addClass('error').text(data.msg)
+          clearInterval(delayTimers['checkArchive'])
+        }
+      })
+    }
+  
+    // 检验验证码
+    $captchaInput.on('keyup', function() {
+      delayRun('captcha', checkCaptcha)
+    })
+  
+    $captchaImg.on('click', function() {
+      $captchaInput.val('')
+      $captchaInput.closest('.field').removeClass('error')
+      $downloadBtn.addClass('disabled')
+    })
+  
+    function checkCaptcha() {
+      var $field  = $captchaInput.closest('.field')
+          captcha = $captchaInput.val()
+  
+      if (captcha.length < 6) {
+        $downloadBtn.addClass('disabled')
+        $field.removeClass('error')
+        return
+      }
+  
+      $.ajax({
+        type: 'POST',
+        url: '/check',
+        data: { do: 'captcha', val: captcha },
+        success: function(data) {
+          if (data == 1) {
+            $field.removeClass('error')
+            $downloadBtn.removeClass('disabled')
+          } else {
+            $field.addClass('error')
+            $field.find('.message').text(data)
+            $downloadBtn.addClass('disabled')
+          }
+        }
+      })
+    }
+  
+    function stopDelayRun(task) {
+      if (delayTimers[task]) {
+        clearTimeout(delayTimers[task])
+        delayTimers[task] = null
+      }
+    }
+  
+    function delayRun(task, callback) {
+      stopDelayRun(task)
+      delayTimers[task] = setTimeout(callback, 1000)
+    }
+  })
+</script>
+
+<script>
+  (function() {
+    $('.edit-releases-btn').popup({
+      position: 'bottom center'
+    });
+  
+    $('.remove-the-release').popup({
+      position: 'bottom center'
+    });
+  
+  }).call(this);
+</script>
+
+</div>
+</div>
+
+</div>
+<footer class='ui grid page'>
+<div class='column center aligned'>
+<div class='column center aligned'>
+<div class='ui tiny pagination menu' id='git-discover-page'>
+
+<a class="item active" href="/toumingyu/obs-studio/releases">1</a>
+
+<a class="item" href="/toumingyu/obs-studio/releases?page=2" rel="next">2</a>
+
+<a class="item" href="/toumingyu/obs-studio/releases?page=3">3</a>
+
+<div class='disabled item'>
+...
+</div>
+
+<a class="item" href="/toumingyu/obs-studio/releases?page=5">5</a>
+
+<a class="item" href="/toumingyu/obs-studio/releases?page=6">6</a>
+
+<a class="icon item" href="/toumingyu/obs-studio/releases?page=2" rel="next"><i class='fa fa-angle-right'></i>
+</a>
+</div>
+</div>
+
+</div>
+</footer>
+<script>
+  $(function() {
+    $('#new-tag').popup({
+      popup: $('#tags_view'),
+      position: 'bottom right',
+      on: 'click'
+    });
+  
+    $('.tag-popup-msg').popup({
+      position:'right center',
+      title: "最后提交信息为："
+    });
+  
+    $('#refs').click(function() {
+      $(this).select();
+    });
+  
+    $('.spread').on('click', function() {
+      var prev = $(this).prev();
+      var text = prev.text();
+      prev.text(prev.attr('src_text')).attr('src_text', text);
+      text = $(this).text();
+      $(this).text($(this).attr('src_text')).attr('src_text', text);
+    });
+  })
+</script>
+
+
+</div>
+<script>
+  (function() {
+    var donateModal;
+  
+    Gitee.modalHelper = new GiteeModalHelper({
+      alertText: '提示',
+      okText: '确定'
+    });
+  
+    donateModal = new ProjectDonateModal({
+      el: '#project-donate-modal',
+      alipayUrl: '/toumingyu/obs-studio/alipay',
+      wepayUrl: '/toumingyu/obs-studio/wepay',
+      nameIsBlank: '名称不能为空',
+      nameTooLong: '名称过长（最多为 36 个字符）',
+      modalHelper: Gitee.modalHelper
+    });
+  
+    if ("" === 'true') {
+      donateModal.show();
+    }
+  
+    $('#project-donate').on('click', function() {
+      return donateModal.show();
+    });
+  
+  }).call(this);
+</script>
+<script>
+  Tree.initHighlightTheme('white')
+</script>
+
+
+</div>
+<div class='gitee-project-extension'>
+<div class='extension public'>1</div>
+<div class='extension https'>https://gitee.com/toumingyu/obs-studio.git</div>
+<div class='extension ssh'>git@gitee.com:toumingyu/obs-studio.git</div>
+<div class='extension namespace'>toumingyu</div>
+<div class='extension repo'>obs-studio</div>
+<div class='extension name'>obs-studio</div>
+<div class='extension branch'></div>
+</div>
+
+<script>
+  $(function() {
+    GitLab.GfmAutoComplete.dataSource = "/toumingyu/obs-studio/autocomplete_sources"
+    GitLab.GfmAutoComplete.Emoji.assetBase = '/assets/emoji'
+    GitLab.GfmAutoComplete.setup();
+  });
+</script>
+
+<footer id='git-footer-main'>
+<div class='ui container'>
+<div class='ui two column grid '>
+<div class='nine wide column git-footer-left'>
+<p><a href="https://gitee.com/" target="_blank">© Gitee.com</a></p>
+<div class='ui four column grid' id='footer-left'>
+<div class='column'>
+<div class='ui link list'>
+<div class='item'>
+<a class="item" href="/about_us">关于我们</a>
+</div>
+<div class='item'>
+<a class="item" href="/terms">使用条款</a>
+</div>
+<div class='item'>
+<a class="item" href="/oschina/git-osc/issues">意见建议</a>
+</div>
+<div class='item'>
+<a class="item" href="/links.html">合作伙伴</a>
+</div>
+</div>
+</div>
+<div class='column'>
+<div class='ui link list'>
+<div class='item'>
+<a class="item" href="/all-about-git">Git 大全</a>
+</div>
+<div class='item'>
+<a class="item" href="https://oschina.gitee.io/learn-git-branching/">Git 命令学习</a>
+</div>
+<div class='item'>
+<a class="item" href="https://copycat.gitee.com/">代码克隆检测</a>
+</div>
+<div class='item'>
+<a class="item" href="/appclient">APP与插件下载</a>
+</div>
+</div>
+</div>
+<div class='column'>
+<div class='ui link list'>
+<div class='item'>
+<a class="item" href="/gitee-stars">码云封面人物</a>
+</div>
+<div class='item'>
+<a class="item" href="/gvp">GVP项目</a>
+</div>
+<div class='item'>
+<a class="item" href="https://blog.gitee.com/">码云博客</a>
+</div>
+<div class='item'>
+<a class="item" href="/enterprises#nonprofit-plan">Gitee 公益计划</a>
+</div>
+</div>
+</div>
+<div class='column'>
+<div class='ui link list'>
+<div class='item'>
+<a class="item" href="/api/v5/swagger">OpenAPI</a>
+</div>
+<div class='item'>
+<a class="item" href="/help">帮助文档</a>
+</div>
+<div class='item'>
+<a class="item" href="/self_services">在线自助服务</a>
+</div>
+<div class='item'>
+<a class="item" href="/git-osc">更新日志</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class='seven wide column right aligned followus git-footer-right'>
+<div class='qrcode weixin'>
+<img alt="Qrcode weixin" src="https://assets.gitee.com/assets/qrcode-weixin-9e7cfb27165143d2b8e8b268a52ea822.jpg" />
+<p class='weixin-text'>微信服务号</p>
+</div>
+<div class='phone-and-qq column'>
+<div class='ui list official-support-container'>
+<div class='item'>
+<a class="icon-popup" href="//shang.qq.com/wpa/qunwpa?idkey=df785aa7af71f7d74149ab062742d761b845464350ecba25eb440357a3e573b7" title="点击加入码云官方群"><i class='iconfont icon-logo-qq'></i>
+<span>官方技术交流QQ群：1050025484</span>
+</a></div>
+<div class='item mail-and-zhihu'>
+<a href="mailto: git@oschina.cn"><i class='iconfont icon-ic-mail'></i>
+<span id='git-footer-email'>git#oschina.cn</span>
+</a><a href="https://www.zhihu.com/org/ma-yun-osc/ " target="_blank"><i class='iconfont icon-zhihu'></i>
+<span>码云Gitee</span>
+</a></div>
+<div class='item'>企业版售前及售后使用咨询：400-606-0201</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class='bottombar'>
+<div class='ui container'>
+<div class='ui grid'>
+<div class='seven wide column partner'>
+<div class='copyright'>
+<a href="http://www.beian.miit.gov.cn/">粤ICP备12009483号</a>
+深圳市奥思网络科技有限公司版权所有
+</div>
+</div>
+<div class='nine wide column right aligned'>
+<i class='icon world'></i>
+<a href="/language/zh-CN">简 体</a>
+/
+<a href="/language/zh-TW">繁 體</a>
+/
+<a href="/language/en">English</a>
+</div>
+</div>
+</div>
+</div>
+</footer>
+<script>
+  var officialEmail = $('#git-footer-email').text()
+  $('#git-footer-main .icon-popup').popup({ position: 'bottom center' })
+  $('#git-footer-email').text(officialEmail.replace('#', '@'))
+</script>
+
+
+<div class='side-toolbar'>
+<div class='button toolbar-help'>
+<i class='iconfont icon-help'></i>
+</div>
+<div class='ui popup left center dark'>点此查找更多帮助</div>
+<div class='toolbar-help-dialog'>
+<div class='toolbar-dialog-header'>
+<h3 class='toolbar-dialog-title'>搜索帮助</h3>
+<form accept-charset="UTF-8" action="/help/load_keywords_data" class="toolbar-help-search-form" method="get"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /></div>
+<div class='ui icon input fluid toolbar-help-search'>
+<input name='keywords' placeholder='请输入产品名称或问题' type='text'>
+<i class='icon search'></i>
+</div>
+</form>
+
+<i class='iconfont icon-close toolbar-dialog-close-icon'></i>
+</div>
+<div class='toolbar-dialog-content'>
+<div class='toolbar-help-hot-search'>
+<div class='toolbar-roll'>
+<a class="init active" href="https://oschina.gitee.io/learn-git-branching/?utm_source==gitee-help-widget" title="Git 命令在线学习"><i class='Blue icon icon-command iconfont'></i>
+<span>Git 命令在线学习</span>
+</a><a class="init " href="https://gitee.com/help/articles/4261?utm_source==gitee-help-widget" title="如何在码云上导入 GitHub 仓库"><i class='icon icon-clipboard iconfont orange'></i>
+<span>如何在码云上导入 GitHub 仓库</span>
+</a></div>
+<div class='toolbar-list'>
+<div class='toolbar-list-item'>
+<a href="/help/articles/4114">Git 仓库基础操作</a>
+</div>
+<div class='toolbar-list-item'>
+<a href="/help/articles/4166">企业版和社区版功能对比</a>
+</div>
+<div class='toolbar-list-item'>
+<a href="/help/articles/4191">SSH 公钥设置</a>
+</div>
+<div class='toolbar-list-item'>
+<a href="/help/articles/4194">如何处理代码冲突</a>
+</div>
+<div class='toolbar-list-item'>
+<a href="/help/articles/4232">仓库体积过大，如何减小？</a>
+</div>
+<div class='toolbar-list-item'>
+<a href="/help/articles/4279">如何找回被删除的仓库数据</a>
+</div>
+<div class='toolbar-list-item'>
+<a href="/help/articles/4283">码云使用容量说明</a>
+</div>
+<div class='toolbar-list-item'>
+<a href="/help/articles/4284">GitHub仓库快速导入Gitee及同步更新</a>
+</div>
+</div>
+</div>
+<div class='toolbar-help-search-reseult'>
+<div class='toolbar-help-flex-column'>
+<div class='ui centered inline loader toolbar-help-loader'></div>
+<div class='toolbar-list'></div>
+<div class='toolbar-help-link-to-help'>
+<a href="" target="_blank">查看更多搜索结果</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script>
+  var opt = { position: 'left center' };
+  var $helpSideToolbar = $(".button.toolbar-help");
+  var $toolbarRoll = $('.toolbar-roll');
+  
+  $(function() {
+    if (false) {
+      $helpSideToolbar.popup(opt);
+    } else {
+      $helpSideToolbar.popup('show', opt);
+      setTimeout(function() {
+        $helpSideToolbar.popup('hide', opt);
+      }, 3000);
+    }
+  
+    if ($toolbarRoll.length) {
+      setInterval(function() {
+        var $nextActiveLink = $toolbarRoll.find('a.active').next();
+        if (!$nextActiveLink.length) {
+          $nextActiveLink = $toolbarRoll.find('a:first-child');
+        }
+        $nextActiveLink.attr('class', 'active').siblings().removeClass('active init');
+      }, 5000);
+    }
+  })
+</script>
+
+<div class='button share-link'>
+<i class='iconfont icon-share'></i>
+</div>
+<div class='ui popup dark'>
+<div class='header'>
+分享到
+</div>
+<div class='bdsharebuttonbox' style='display: flex'>
+<a class='iconfont icon-home-service-wechat' data-cmd='weixin' title='分享到微信'></a>
+<a class='iconfont icon-weibo' data-cmd='tsina' title='分享到新浪微博'></a>
+<a class='iconfont icon-qq' data-cmd='sqq' title='分享到QQ好友'></a>
+<a class='iconfont icon-qzone' data-cmd='qzone' title='分享到QQ空间'></a>
+</div>
+</div>
+<div class='popup button' id='home-comment'>
+<i class='iconfont icon-comment'></i>
+</div>
+<div class='ui popup dark'>评论</div>
+<div class='toolbar-appeal popup button'>
+<i class='iconfont icon-report'></i>
+</div>
+<div class='ui popup dark'>
+仓库举报
+</div>
+<script>
+  $('.toolbar-appeal').popup({ position: 'left center' });
+</script>
+
+<div class='button gotop popup' id='gotop'>
+<i class='iconfont icon-top'></i>
+</div>
+<div class='ui popup dark'>回到顶部</div>
+</div>
+<div class='form modal normal-modal tiny ui' id='unlanding-complaint-modal'>
+<i class='iconfont icon-close close'></i>
+<div class='header'>
+登录提示
+</div>
+<div class='container actions'>
+<div class='content'>
+该操作需登录码云帐号，请先登录后再操作。
+</div>
+<div class='ui orange icon large button ok'>
+立即登录
+</div>
+<div class='ui button blank cancel'>
+没有帐号，去注册
+</div>
+</div>
+</div>
+<script>
+  var $elm = $('.toolbar-appeal');
+  
+  $elm.on('click', function() {
+    var modals = $("#unlanding-complaint-modal.normal-modal");
+    if (modals.length > 1) {
+      modals.eq(0).modal('show');
+    } else {
+      modals.modal('show');
+    }
+  })
+  $("#unlanding-complaint-modal.normal-modal").modal({
+    onDeny: function() {
+      window.location.href = "/signup?from=";
+    },
+    onApprove: function() {
+      window.location.href = "/login?from=";
+    }
+  })
+</script>
+
+<style>
+  .side-toolbar .bdsharebuttonbox a {
+    font-size: 24px;
+    color: white !important;
+    opacity: 0.9;
+    margin: 6px 6px 0px 6px;
+    background-image: none;
+    text-indent: 0;
+    height: auto;
+    width: auto;
+  }
+</style>
+<script>
+  (function() {
+    $('#project-user-message').popup({
+      position: 'left center'
+    });
+  
+  }).call(this);
+</script>
+<script>
+  Gitee.initSideToolbar({
+    hasComment: true,
+    commentUrl: '/toumingyu/obs-studio#tree_comm_title'
+  })
+</script>
+<script>
+  window._bd_share_config = {
+    "common": {
+      "bdSnsKey": {},
+      "bdText": document.title,
+      "bdMini": "1",
+      "bdMiniList": ["bdxc","tqf","douban","bdhome","sqq","thx","ibaidu","meilishuo","mogujie","diandian","huaban","duitang","hx","fx","youdao","sdo","qingbiji","people","xinhua","mail","isohu","yaolan","wealink","ty","iguba","fbook","twi","linkedin","h163","evernotecn","copy","print"],
+      "bdPic": "",
+      "bdStyle": "1",
+      "bdSize": "32"
+    },
+    "share": {}
+  }
+</script>
+<script src="/bd_share/static/api/js/share.js"></script>
+
+
+
+
+
+<script>
+  (function() {
+    this.__gac = {
+      domain: 'www.oschina.net'
+    };
+  
+  }).call(this);
+</script>
+<script defer src='//www.oschina.net/public/javascripts/cjl/ga.js?t=20160926' type='text/javascript'></script>
+
+</body>
+</html>
