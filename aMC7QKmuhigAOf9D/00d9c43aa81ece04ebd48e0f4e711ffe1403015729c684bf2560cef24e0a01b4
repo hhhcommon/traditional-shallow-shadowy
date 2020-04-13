@@ -1,0 +1,881 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="Content-Language" content="zh-CN">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <meta name="referrer" content="always"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0"/>
+    <title>LyricsX首页、文档和下载 - 支持 iTunes 和 Spotify 的 Mac 歌词工具 - OSCHINA</title>
+            <meta name="keywords" content="LyricsX,LyricsX是什么,LyricsX下载,LyricsX论坛,LyricsX汉化,Swift,OS X,多媒体工具"/>
+                <meta name="description" content="LyricsX，一款功能完备的歌词工具，显示歌词的免费应用，支持 iTunes、Spotify 和 Vox，自动匹配和下载歌词，在桌面和菜单栏显示歌词。歌词源支持网易云音乐、QQ 音乐、虾米、酷狗等。"/>
+        <link rel="stylesheet" type="text/css" href="https://static.oschina.net/new-osc/js/utils/semantic-ui/semantic.min.css?t=1585130052000"/>
+                <link type="text/css" rel="stylesheet" href="https://static.oschina.net/new-osc/dist/css/web.7d559ab4.css">        <script type="text/javascript">window.__STATIC_DOMAIN = "https://static.oschina.net";</script>
+    <script src="https://static.oschina.net/new-osc/js/utils/jquery.min.js"></script>
+    <link rel="shortcut icon" type="image/x-icon" href="https://static.oschina.net/new-osc/img/favicon.ico"/>
+    <link rel="alternate" type="application/rss+xml" title="最新开源项目" href="https://www.oschina.net/project/rss"/>
+    <link rel="alternate" type="application/rss+xml" title="最新开源资讯" href="https://www.oschina.net/news/rss"/>
+    <link rel="alternate" type="application/rss+xml" title="最新问题列表" href="https://www.oschina.net/question/rss"/>
+    <link rel="alternate" type="application/rss+xml" title="最新翻译列表" href="https://www.oschina.net/translate/rss"/>
+    <link rel="alternate" type="application/rss+xml" title="最新博客列表" href="https://www.oschina.net/blog/rss"/>
+    <link rel="alternate" type="application/rss+xml" title="推荐博客列表" href="https://www.oschina.net/blog/rss?show=more"/>
+    <link rel="alternate" type="application/rss+xml" title="推荐软件列表" href="https://www.oschina.net/project/rss?show=recomms"/>
+    <link rel="alternate" type="application/rss+xml" title="最新代码分享列表" href="https://www.oschina.net/code/rss"/>
+    <link rel="alternate" type="application/rss+xml" title="OSCHINA - 源码列表" href="https://www.oschina.net/code/source_rss"/>
+
+            </head>
+<body>
+        <val data-name="site_url" data-value="https://www.oschina.net"></val>      <val data-name="space_user_url" data-value=""></val>      <val data-name="g_user_url" data-value=""></val>      <val data-name="api_prefix" data-value=""></val>      <val data-name="g_user_code" data-value=""></val>     <val data-name="g_user_id" data-value=""></val>     <val data-name="g_user_name" data-value=""></val>     <val data-name="g_user_small_portrait" data-value="https://www.oschina.net/new-osc/img/portrait.gif"></val>     <val data-name="g_user_large_portrait" data-value="https://www.oschina.net/new-osc/img/portrait.gif"></val>     <val data-name="g_user" data-value=""></val>     <val data-name="g_user_osc_staff" data-value="false"></val>     <val data-name="login_page" data-value="https://www.oschina.net/home/login?goto_page=https%3A%2F%2Fwww.oschina.net%2Fp%2Flyricsx"></val> 
+                <val data-name="weixinAppId" data-value="wx880def15e694b905"></val>
+        <val data-name="weixinTimestamp" data-value="1586765978120"></val>
+        <val data-name="weixinNonceStr" data-value="fd690aaf-e8b0-4e2b-9c20-b80e087a904b"></val>
+        <val data-name="weixinSignature" data-value="032359ebbcbcc9aee7bdb182a319810fc1fc7c10"></val>
+        <val data-name="weixinShareUrl" data-value="https://www.oschina.net/p/lyricsx"></val>                             
+                <val data-name="is_detail_page" data-value="true"></val>
+
+        
+        <div class="ui left inverted sidebar vertical menu" id="mobileNavSidebar">
+        <a href="https://www.oschina.net" class="item">首页</a>
+        <a href="https://www.oschina.net/project" class="item project active">开源软件</a>
+        <a href="https://www.oschina.net/question" class="item question"">问答</a>
+        <a href="https://www.oschina.net/tweets" class="item tweet">动弹</a>
+        <a href="https://www.oschina.net/blog" class="item blog">博客</a>
+        <a href="https://www.oschina.net/translate" class="item translate">翻译</a>
+        <a href="https://www.oschina.net/news" class="item news">资讯</a>
+        <a href="https://gitee.com/?utm_source=oschina&utm_medium=link-index&utm_campaign=home" class="item gitee" target="_blank">码云</a>
+        <a href="https://zb.oschina.net/projects/list.html" class="item" target="_blank">众包</a>
+        <a href="https://www.oschina.net/event" class="item">活动</a>
+        <a href="https://www.oschina.net/columns" class="item">专区</a>
+        <a href="https://www.oschina.net/event/ych" class="item meetup">源创会</a>
+        <a href="https://job.oschina.net/" class="item" target="_blank">求职/招聘</a>
+        <a href="https://www.oschina.net/question/topic/masteronline" class="item">高手问答</a>
+        <a href="https://www.oschina.net/question/topic/osc-interview" class="item">开源访谈</a>
+        <a href="https://my.oschina.net/editorial-story" class="item">周刊</a>
+        <a href="https://www.oschina.net/company" class="item">公司开源导航页</a>
+    </div>
+        <div class="ui right inverted sidebar vertical menu" id="mobileUserSidebar">
+                    <a class="item" href="https://www.oschina.net/home/login?goto_page=https%3A%2F%2Fwww.oschina.net%2Fp%2Flyricsx">登录</a>
+            <a class="item" href="https://www.oschina.net/home/reg?goto_page=https%3A%2F%2Fwww.oschina.net%2Fp%2Flyricsx">注册</a>
+            </div>
+
+        <div class="pusher  mobile-disabled-fixed-menu  ">
+                <div class="ui secondary inverted fixed menu" id="headerNavMenu">
+            <a class="item logo" href="https://www.oschina.net" title="OSCHINA"><img src="https://static.oschina.net/new-osc/img/logo_new.svg" alt="OSCHINA"></a>
+                                                <form action="https://www.oschina.net/search" class="item search-item">
+                <div class="ui icon input">
+                    <input type="hidden" name="scope" value="project">
+                    <input placeholder="大家都在搜...." id="keyword" name="q" size="24" value="" type="text"/>
+                    <i class="search link icon"></i>
+                </div>
+                <div class="results"></div>
+            </form>
+            <div class="item download-item">
+                <a class="ui primary button" id="btnDownloadApp" href="https://www.oschina.net/app" target="_blank">下载APP</a>
+            </div>
+            <div class="ui popup top left transition hidden" id="btnDownloadAppContent">
+                <h3 class="header">OSCHINA App —— <br/>关注技术领域的头条文章</h3>
+                <p>聚合全网技术文章，根据你的阅读喜好进行个性推荐</p>
+                <img width="200" src='https://static.oschina.net/new-osc/img/osc_app_download_qrcode.png?t=1451964198000' alt="下载APP"/>
+            </div>
+            <div class="ui secondary text menu" id="menuList">
+                <a href="https://www.oschina.net/project" class="item project active">开源软件</a>
+                <a href="https://www.oschina.net/question" class="item question">问答</a>
+                <a href="https://www.oschina.net/tweets" class="item tweet">动弹</a>
+                <a href="https://www.oschina.net/blog" class="item blog">博客</a>
+                <a href="https://www.oschina.net/translate" class="item translate">翻译</a>
+                <a href="https://www.oschina.net/news" class="item news">资讯</a>
+                <a href="https://gitee.com/?utm_source=oschina&utm_medium=link-index&utm_campaign=home" class="item gitee" target="_blank">码云<span class="floating ui red label giteetip">代码托管</span></a>
+                <a href="https://zb.oschina.net/projects/list.html" class="item" target="_blank">众包</a>
+                <a href="https://www.oschina.net/event" class="item event">活动</a>
+                <a href="https://www.oschina.net/columns" class="item column">专区</a>
+            </div>
+            <div class="ui dropdown item" id="moreMenu">
+                更多 <i class="dropdown icon"></i>
+                <div class="menu">
+                    <a href="https://www.oschina.net/event/ych" class="item meetup"><i class="world icon"></i>源创会</a>
+                    <a href="https://job.oschina.net/" class="item" target="_blank"><i class="address card outline icon"></i>求职/招聘</a>
+                    <a href="https://www.oschina.net/question/topic/masteronline" class="item"><i class="spy icon"></i>高手问答</a>
+                    <a href="https://www.oschina.net/question/topic/osc-interview" class="item"><i class="coffee icon"></i>开源访谈</a>
+                    <a href="https://my.oschina.net/editorial-story" class="item"><i class="calendar outline icon"></i>周刊</a>
+                    <a href="https://www.oschina.net/company" class="item"><i class="building outline icon"></i>公司开源导航页</a>
+                </div>
+            </div>
+            <div class="right menu">
+                                    <a class="item" href="https://www.oschina.net/home/login?goto_page=https%3A%2F%2Fwww.oschina.net%2Fp%2Flyricsx">登录</a>
+                    <a class="item" href="https://www.oschina.net/home/reg?goto_page=https%3A%2F%2Fwww.oschina.net%2Fp%2Flyricsx">注册</a>
+                            </div>
+        </div>
+                <div class="ui secondary inverted fixed menu" id="mobileHeaderNavMenu">
+            <a class="icon item toggle-mobile-nav-sidebar">
+                <i class="large content icon"></i>
+            </a>
+            <div class="logo back-to-top-toggle"><img src="https://static.oschina.net/new-osc/img/logo_new.svg" alt="OSCHINA"></div>
+            <a class="icon item toggle-mobile-user-sidebar">
+                                    <i class="large user outline icon"></i>
+                            </a>
+        </div>
+                        <div id="mainScreen" class="grey">
+            <div class="ui container">
+                
+
+
+
+        
+           
+
+
+
+
+
+
+
+<x-foo-define data-define="web-project-detail"></x-foo-define> 
+<val data-name="objType" data-value="1"></val> <val data-name="objId" data-value="46171"></val> 
+<val data-name="fetchCommentsUrl" data-value="?type=comments"></val>    <val data-name="publishCommentUrl" data-value="/project/comment"></val> <val data-name="replyCommentUrl" data-value="/project/comment"></val>   <val data-name="deleteCommentUrl" data-value="/project/delete"></val>   
+<val data-name="weixinShareTitle" data-value="支持 iTunes 和 Spotify 的 Mac 歌词工具 LyricsX"></val> <val data-name="weixinShareImgUrl" data-value="https://static.oschina.net/uploads/space/2017/0606/104418_CPLl_2733728.png"></val> 
+
+
+<div class="ui internally grid web-project-common web-project-detail" id="projectDetail">
+    <div class="full-header-bg"></div>
+    <div class="row header-row">
+        <div class="sixteen wide column">
+                        
+<div class="project-panel-header">
+        <div class="header-logo">
+        <a href="https://www.oschina.net/project"><img src="https://static.oschina.net/new-osc/img/project-header-logo.svg" alt="开源软件"></a>
+    </div>
+    <div class="scroll-tab hidden-scroll">
+        <div class="header-menu ui secondary big menu">
+            <a class="item " href="https://www.oschina.net/project">软件首页</a>
+            <a class="item " href="https://www.oschina.net/project/tags">软件分类</a>
+            <a class="item " href="https://www.oschina.net/project/zh">国产开源</a>
+            <a class="item " href="https://www.oschina.net/company">开源公司</a>
+            <a class="item" href="https://www.oschina.net/news/project">软件资讯</a>
+        </div>
+    </div>
+        <div class="header-extra mb-hide">
+        <div class="extra-info">
+            <a class="ui button green small" href="https://www.oschina.net/home/go?page=admin%2Fnew-project" target="_blank"><i class="icon plus"></i> 投递软件</a>
+        </div>
+    </div>
+</div>        </div>
+    </div>
+    <div class="row">
+                <div class="eleven wide computer sixteen wide tablet column project-main">
+            <div class="article-detail">
+                                <div class="detail-header">
+                                                            <div class="info-wrap">
+                                                <h1 class="header">
+                                                            <span class="project-title">支持 iTunes 和 Spotify 的 Mac 歌词工具</span>
+                                                        <span class="project-name">LyricsX</span>
+                                                                                </h1>
+                                                                            <div class="tags">
+                                                                    <a class="ui horizontal blue label" href="/project/tag/96/multimedia" title="多媒体工具 下所有软件">多媒体工具</a>
+                                                            </div>
+                                                                        <div class="info-list">
+                            <div class="box">
+                                <div class="info-item">
+                                    <label>授权协议:</label>
+                                    <span><a href='http://www.oschina.net/question/12_2826' target='_blank'>GPL</a></span>
+                                </div>
+                                                                    <div class="info-item">
+                                        <label>开发语言:</label>
+                                        <span>
+                                                                                                    <a href="/project/lang/436/swift">Swift</a>
+                                                                                                                                        </span>
+                                    </div>
+                                                                <div class="info-item">
+                                    <label>操作系统:</label>
+                                    <span>OS X</span>
+                                </div>
+                            </div>
+                            <div class="box">
+                                                                <div class="info-item">
+                                    <label>收录时间:</label>
+                                    <span>2017-10-19</span>
+                                </div>
+                                                                                                    <div class="info-item">
+                                        <label>提 交 者:</label>
+                                        <span><a href="https://my.oschina.net/u/3703517" class="normal" target="_blank">周其</a></span>
+                                    </div>
+                                                            </div>
+                        </div>
+                        <div class="extra">
+                            <div class="ui horizontal large list meta-wrap">
+                                                                <div class="item collect-btn "
+                                     data-id="46171"
+                                     data-user-id=""                                      data-obj-type="1" data-max="99" data-tag-required
+                                     data-current-user-id=""
+                                     data-recommend-tags="Swift,OS X,多媒体工具"
+                                     title="收藏"><div class="ui basic image label"><i class="star outline icon yellow"></i>收藏<span data-collect-count data-id="46171" data-obj-type="1" class="detail">0</span></div></div>
+                                                                <div class="item comment-count"><a href="#comments" class="normal basic image label ui" title="评论"><i class="blue comment icon outline"></i>评论<span data-article-reply-count class="detail">0</span></a></div>
+                                                                
+                                                                
+                                                                <div class="item share ui dropdown bdsharebuttonbox  dropdown-share" data-tag="share-project">
+                                    <a class="normal basic button orange ui" title="分享"><i class="share alternate icon"></i>分享</a>
+                                    <div class="menu">
+                                        <a class="item" data-cmd="tsina" data-value="weibo"><i class="weibo icon"></i>微博</a>
+                                        <a class="item" data-cmd="sqq" data-value="qq"><i class="qq icon"></i>QQ</a>
+                                        <a class="item" data-cmd="weixin" data-value="wechat"><i class="weixin icon"></i>微信</a>
+                                    </div>
+                                </div>
+
+                                                                                            </div>
+                        </div>
+                                                
+                    </div>
+                </div>
+            </div>
+
+                        
+
+
+  
+    
+
+
+
+
+<div class="project-detail-container">
+        <div class="project-detail-tab-wrap ui sticky">
+        <div class="ui tabular menu project-detail-tab scroll-tab hidden-scroll">
+            <a class="item  active " data-tab="projectIntro">软件介绍</a>
+            <a class="item " data-tab="newsList">资讯 (0)</a>
+            <a class="item " data-tab="questionList">问答 (0)</a>
+            <a class="item " data-tab="blogList">博客 (0)</a>
+            <div class="right menu small mb-hide">
+                <div class="item">
+                    <a class="ui button basic green mini" href="https://www.oschina.net/question/ask?tag=lyricsx" target="_blank"><i class="alternate pencil icon"></i>我要提问</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="ui basic segment  active  tab article-intro" data-tab="projectIntro">
+                
+<div class="article-detail">
+                                        <div class="ad-wrap" style="max-height: 90px; margin-bottom: 20px;">
+            <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- 开源项目详情内容顶部 -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:728px;height:90px"
+     data-ad-client="ca-pub-7090564139599510"
+     data-ad-slot="5115512308"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+            </div>
+                
+    <div class="content project-body">
+        
+                                        <p class="ad-wrap">
+            <a data-traceid="news_detail_above_text_link_1" data-tracepid="news_detail_above_text_link" style="color:#A00; font-weight:bold;" href="https://www.oschina.net/action/visit/ad?id=1111" target="_blank">疫情之下，程序员如何转型？共享数字化转型加速度，就在微软在线技术峰会>>> <img src="https://www.oschina.net/img/hot3.png" align="absmiddle" style="max-height: 32px;max-width: 32px;margin-top: -4px;"></a>
+            </p>
+            
+        <p>LyricsX，一款功能完备的歌词工具，显示歌词的免费应用，支持 iTunes、Spotify 和 Vox，自动匹配和下载歌词，在桌面和菜单栏显示歌词。歌词源支持网易云音乐、QQ 音乐、虾米、酷狗等。</p><p><img src="https://static.oschina.net/uploads/space/2017/1019/165644_IyXF_3703517.png"></p>
+    </div>
+
+                                        <div class="ad-wrap" style="max-height: 90px; margin: 24px 0">
+            <div name="www_project_detail_content_button"  data-trace-id="www_project_detail_content_button_ad"
+                 data-trace-ident="www_project_detail_content_button" >
+                <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- 软件详情内容底部 -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:728px;height:90px"
+     data-ad-client="ca-pub-7090564139599510"
+     data-ad-slot="8380448823"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+            </div>
+            </div>
+                
+                <div class="git-widget-wrap">
+                        <div class="widget">
+                <div class='gitee-widget'>
+                    <script type="text/javascript" defer="defer">
+                        var genGitIdent = function (ident) {
+                            var id = [];
+                            ident.split('/').forEach(function (item, index) {
+                                if (index <= 2)
+                                    id.push(item.replace('.git', '').replace(':', '/'));
+                            });
+                            return id.join('/') + "/widget_preview";
+                        };
+                        var url = [
+                        "https://github.com/ddddxxx/LyricsX",
+                        "",
+                        "http://git.oschina.net/mirrors/LyricsX",
+                        "https://github.com/ddddxxx/LyricsX",
+                        "https://github.com/ddddxxx/LyricsX/blob/master/README.md"
+                        ];
+                        var found = false;
+                        for (var i in url) {
+                            var ident = url[+i].split('git.oschina.net');
+                            if (ident.length == 2 && !found) {
+                                var prv = genGitIdent(ident[1]);
+                                if (prv && prv.length > 0) {
+                                    document.getElementsByClassName("gitee-widget")[0].innerHTML = "";
+                                    document.write('<script src="//git.oschina.net' + prv + '" type="text\/javascript"><\/script>');
+                                    found = true;
+                                }
+                            }
+                        }
+                        if (!found) {
+                            for (var i in url) {
+                                var ident = url[+i].split('gitee.com');
+                                if (ident.length == 2 && !found) {
+                                    var prv = genGitIdent(ident[1]);
+                                    if (prv && prv.length > 0) {
+                                        document.getElementsByClassName("gitee-widget")[0].innerHTML = "";
+                                        document.write('<script src="//gitee.com' + prv + '" type="text\/javascript"><\/script>');
+                                        found = true;
+                                    }
+                                }
+                            }
+                        }
+                    </script>
+                </div>
+            </div>
+                        <div class="project-radar">
+                <div class="radar-wrap"
+                     project-radar
+                     data-project-id="46171"
+                     data-project-name="LyricsX"
+                     data-container=".project-radar">
+                    <div class="radar-header">
+                        <div class="gitee-exponent"><span class="title"></span> 的码云指数为 <span class="score"></span></div>
+                        <div class="total-percent">超过 <span class="percent"></span> 的项目</div>
+                    </div>
+                    <div class="radar-pic">
+                        <div class="radar-map"></div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    
+        <div class="ui basic center aligned segment related-links">
+                                    <a href="https://www.oschina.net/home/login?goto_page=https%3A%2F%2Fwww.oschina.net%2Fp%2Flyricsx" class="ui green button project-website" title="LyricsX 网站"><i class="icon home"></i>软件首页</a>
+                                                        <a href="https://www.oschina.net/home/login?goto_page=https%3A%2F%2Fwww.oschina.net%2Fp%2Flyricsx" class="ui green button project-document" title="LyricsX 文档"><i class="icon alternate file outline"></i>软件文档</a>
+                                                                            <a href="https://www.oschina.net/home/login?goto_page=https%3A%2F%2Fwww.oschina.net%2Fp%2Flyricsx" class="ui green button project-download" title="LyricsX 下载"><i class="icon download"></i>官方下载</a>
+                                                        <a href="https://www.oschina.net/home/login?goto_page=https%3A%2F%2Fwww.oschina.net%2Fp%2Flyricsx" class="ui green button project-quick-download" title=" 下载"><i class="icon rocket"></i>极速下载</a>
+                                        </div>
+</div>
+
+<div class="ui threaded comments" id="commentsContainer">
+        <div class="ui inverted dimmer comments-loader">
+        <div class="ui text loader">加载中</div>
+    </div>
+
+        <div class="comments-wrap">
+                                                                                                                    
+
+                                       
+<h3 id="comments" data-offset="-85" class="ui header">评论(<span>0</span>)</h3>
+
+    <div class="ui center aligned basic segment empty-tips">
+        <img src="https://static.oschina.net/new-osc/img/empty.png"/>
+        <h4 class="ui sub header grey">暂无评论</h4>
+    </div>
+    </div>
+
+        <div id="commentForm">
+                <form class="ui reply form comment-form" :class="{loading: commentPublishLoading}">
+            <div class="field">
+            <textarea rows="4" placeholder="在这里发表你对此文的观点"
+                      v-model.trim="commentContent" :maxlength="commentMaxLength"
+                      ref="commentTextarea" class="disabled-resize" :disabled="commentPublishLoading"
+                      @keydown="commentContentOnKeyDown"></textarea>
+            </div>
+            <div class="field foot-bar">
+                <div class="ui horizontal link list toolbox">
+                    <a class="item" data-popup="toolbox-emoji" ref="showEmojiBox"><i class="smile icon"></i>插入表情</a>
+                                        <div class="ui popup bottom left transition hidden toolbox-popup toolbox-emoji">
+                        <div class="emoji-wrapper">
+                            <div class="ui secondary pointing menu">
+                                <a v-for="(emoji, index) in emojiList"
+                                   class="item" :class="{active: curEmojiType === emoji.type}"
+                                   @click="curEmojiType = emoji.type">{{ emoji.type }}</a>
+                            </div>
+                            <div class="emoji-list">
+                                <div class="ui ten column padded grid">
+                                    <div class="column" v-for="emojiItem in curEmojiItems">
+                                        <div class="emoji-item" :title="emojiItem" :data-emoji="emojiItem" @click="insertEmoji(emojiItem)"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="item" @click="insertProject"><i class="hashtag icon"></i>插入软件</a>
+                </div>
+                <div class="count" v-text="commentCountText"></div>
+                <div class="ui primary labeled icon button right floated" :class="{disabled: commentContentIsEmpty}"
+                     @click="publishComment" :disabled="commentPublishLoading">
+                    <i class="icon edit"></i> 发表评论
+                </div>
+            </div>
+        </form>
+
+        <div class="ui mini message hidden" :class="tipMessage.className"
+             :style="{display: tipMessage.show ? 'block' : 'none'}"><i class="icon info"></i> <span v-html="tipMessage.content"></div>
+    </div>
+</div>
+
+<div class="ui mini delete-comment modal">
+    <div class="header">删除一条评论</div>
+    <div class="content">
+        <p>评论删除后，数据将无法恢复</p>
+    </div>
+    <div class="actions">
+        <div class="ui positive button">取消</div>
+        <div class="ui negative button">确定</div>
+    </div>
+</div>
+
+    </div>
+    <div class="ui basic segment  tab article-list" data-tab="newsList" id="newsList">
+                
+                     
+ 
+
+    <div class="ui center aligned basic segment">
+        <img src="https://static.oschina.net/new-osc/img/empty.png"/>
+        <h4 class="ui sub header grey">暂无资讯</h4>
+    </div>
+    </div>
+    <div class="ui basic segment  tab article-list" data-tab="questionList" id="questionList">
+                
+                     
+
+
+ 
+
+    <div class="ui center aligned basic segment">
+        <img src="https://static.oschina.net/new-osc/img/empty.png"/>
+        <h4 class="ui sub header grey">暂无问答</h4>
+    </div>
+    </div>
+    <div class="ui basic segment  tab article-list" data-tab="blogList" id="blogList">
+                
+                     
+ 
+
+    <div class="ui center aligned basic segment">
+        <img src="https://static.oschina.net/new-osc/img/empty.png"/>
+        <h4 class="ui sub header grey">暂无博客</h4>
+    </div>
+    </div>
+    
+</div>
+
+<script type="text/javascript">
+    var websocket = null;
+    //判断当前浏览器是否支持WebSocket
+    if ('WebSocket' in window) {
+        websocket = new WebSocket("wss://my.oschina.net/timing/timing//46171/1");
+            //连接成功建立
+        websocket.onopen = function () {
+        };
+        //接收到消息
+        websocket.onmessage = function (event) {
+        };
+        //连接发生错误
+        websocket.onerror = function () {
+        };
+        //连接关闭
+        websocket.onclose = function () {
+        };
+        //监听窗口关闭事件，当窗口关闭时，主动去关闭websocket连接，防止连接还没断开就关闭窗口，server端会抛异常。
+        window.onbeforeunload = function () {
+        };
+    }
+
+    //关闭WebSocket连接
+    function closeWebSocket() {
+        websocket.close();
+    }
+
+</script>
+        </div>
+
+                <div class="five wide computer sixteen wide tablet column sidebar project-sidebar">
+            
+                <div class="section author-card">
+            <div class="author-main-info">
+                <div class="author-header">软件作者</div>
+                <div class="author-content">
+                    <div class="author-empty">
+                        <p class="text">本软件还没有认证的作者</p>
+                    </div>
+                    <div class="author-toolbar">
+                        <div class="ui horizontal list">
+                            <div class="item">
+                                                                                                <a class="ui green basic button small" href="https://www.oschina.net/p/lyricsx/author-authentication" target="_blank">认证为作者</a>
+                            </div>
+                            <div class="item">
+                                <a class="ui green basic button small invite-author-auth-btn">邀请作者认证</a>
+                            </div>
+                        </div>
+                    </div>
+
+                                        <div class="ui popup bottom right transition hidden invite-author-auth-popup">
+                        <div class="invite-author-auth-box">
+                            <p>此软件还没有被作者认证，快来邀请作者认证吧！</p>
+                            <div class="content-wrap">
+                                <div class="sub-title">成功邀请奖励：</div>
+                                <div class="medal-wrap">
+                                    <div class="medal-icon"><img src="https://oscimg.oschina.net/oscnet/83c914a8d261e1104cf6b48411773642124.jpg" alt="开源伯乐勋章"></div>
+                                    <div class="medal-name">开源伯乐勋章</div>
+                                    
+                                </div>
+                            </div>
+                            <div class="content-wrap">
+                                <div class="sub-title">专属邀请文案：</div>
+                                <div class="copy-wrap">
+                                                                                                            <div class="copy-content">你的软件 “LyricsX” 被开源中国社区收录啦，快点击 <a href="https://www.oschina.net/p/lyricsx">https://www.oschina.net/p/lyricsx</a> 认证为软件作者吧！</div>
+                                    <div class="ui green button small fluid copy-btn" data-clipboard-target=".copy-content">复制邀请文案</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        
+
+                                        <div class="ad-wrap">
+            <a name="www_project_right_1"
+                data-trace-id="www_project_right_1_ad"
+                                  data-trace-ident="www_project_right_1"   href="https://www.oschina.net/action/visit/ad?id=1145"
+                                  target="_blank" title="华为鲲鹏">
+                <img src="https://static.oschina.net/uploads/cooperation/www_project_right_1_PRxQY.jpg" width="300" height="250">
+            </a>
+                        </div>
+                
+                <div class="section articles-list articles-projects-list">
+            <div class="ui list">
+                <div class="item">
+                                                                <div class="ui right floated content">
+                            <a href="/project/tag/96/multimedia">更多</a>
+                        </div>
+                                        <h4 class="ui header">同类软件</h4>
+                </div>
+            </div>
+            <div class="ui items">
+                                                            <div class="item">
+                            <div class="content">
+                                                                <a class="header" href="https://www.oschina.net/p/musicfx" title="MusicFx 桌面音乐播放器">
+                                    <span class="project-name">MusicFx</span> <span class="project-title"> - 桌面音乐播放器</span></a>
+                                <div class="extra">
+                                    <div class="ui horizontal list">
+                                        <div class="item">收藏 2</div>
+                                        <div class="item"><a href="https://www.oschina.net/p/musicfx#comments" target="_blank">评论 0</a></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                                                                                <div class="item">
+                            <div class="content">
+                                                                <a class="header" href="https://www.oschina.net/p/obs-studio" title="OBS Studio 实时流媒体和屏幕录制软件">
+                                    <span class="project-name">OBS Studio</span> <span class="project-title"> - 实时流媒体和屏幕录制软件</span></a>
+                                <div class="extra">
+                                    <div class="ui horizontal list">
+                                        <div class="item">收藏 50</div>
+                                        <div class="item"><a href="https://www.oschina.net/p/obs-studio#comments" target="_blank">评论 2</a></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                                                                                <div class="item">
+                            <div class="content">
+                                                                <a class="header" href="https://www.oschina.net/p/xplay" title="xplay 专为树莓派(Raspberry Pi)与Windows系统设计的多媒体播放器">
+                                    <span class="project-name">xplay</span> <span class="project-title"> - 专为树莓派(Raspberry Pi)与Windows系统设计的多媒体播放器</span></a>
+                                <div class="extra">
+                                    <div class="ui horizontal list">
+                                        <div class="item">收藏 49</div>
+                                        <div class="item"><a href="https://www.oschina.net/p/xplay#comments" target="_blank">评论 12</a></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                                                                                <div class="item">
+                            <div class="content">
+                                                                <a class="header" href="https://www.oschina.net/p/electron-player" title="electron-player 基于 electron-vue 的音视频播放器">
+                                    <span class="project-name">electron-player</span> <span class="project-title"> - 基于 electron-vue 的音视频播放器</span></a>
+                                <div class="extra">
+                                    <div class="ui horizontal list">
+                                        <div class="item">收藏 60</div>
+                                        <div class="item"><a href="https://www.oschina.net/p/electron-player#comments" target="_blank">评论 11</a></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                                                                                <div class="item">
+                            <div class="content">
+                                                                <a class="header" href="https://www.oschina.net/p/m4b-tool" title="m4b-tool 有声读物文件合并分割工具">
+                                    <span class="project-name">m4b-tool</span> <span class="project-title"> - 有声读物文件合并分割工具</span></a>
+                                <div class="extra">
+                                    <div class="ui horizontal list">
+                                        <div class="item">收藏 6</div>
+                                        <div class="item"><a href="https://www.oschina.net/p/m4b-tool#comments" target="_blank">评论 0</a></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                                                                                <div class="item">
+                            <div class="content">
+                                                                <a class="header" href="https://www.oschina.net/p/tbs-android" title="土拨鼠影音 安卓 IPTV 视频播放器">
+                                    <span class="project-name">土拨鼠影音</span> <span class="project-title"> - 安卓 IPTV 视频播放器</span></a>
+                                <div class="extra">
+                                    <div class="ui horizontal list">
+                                        <div class="item">收藏 5</div>
+                                        <div class="item"><a href="https://www.oschina.net/p/tbs-android#comments" target="_blank">评论 0</a></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                                                                                <div class="item">
+                            <div class="content">
+                                                                <a class="header" href="https://www.oschina.net/p/youtube-dlg" title="youtube-dlG youtube-dl 媒体下载器">
+                                    <span class="project-name">youtube-dlG</span> <span class="project-title"> - youtube-dl 媒体下载器</span></a>
+                                <div class="extra">
+                                    <div class="ui horizontal list">
+                                        <div class="item">收藏 8</div>
+                                        <div class="item"><a href="https://www.oschina.net/p/youtube-dlg#comments" target="_blank">评论 0</a></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                                                                                <div class="item">
+                            <div class="content">
+                                                                <a class="header" href="https://www.oschina.net/p/mob" title="Mob 喜马拉雅 FM 桌面客户端">
+                                    <span class="project-name">Mob</span> <span class="project-title"> - 喜马拉雅 FM 桌面客户端</span></a>
+                                <div class="extra">
+                                    <div class="ui horizontal list">
+                                        <div class="item">收藏 8</div>
+                                        <div class="item"><a href="https://www.oschina.net/p/mob#comments" target="_blank">评论 0</a></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                                                                                <div class="item">
+                            <div class="content">
+                                                                <a class="header" href="https://www.oschina.net/p/subsync" title="subsync 自动同步字幕和视频画面">
+                                    <span class="project-name">subsync</span> <span class="project-title"> - 自动同步字幕和视频画面</span></a>
+                                <div class="extra">
+                                    <div class="ui horizontal list">
+                                        <div class="item">收藏 33</div>
+                                        <div class="item"><a href="https://www.oschina.net/p/subsync#comments" target="_blank">评论 5</a></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                                                                                <div class="item">
+                            <div class="content">
+                                                                <a class="header" href="https://www.oschina.net/p/peertube-android" title="peertube-android PeerTube android 客户端">
+                                    <span class="project-name">peertube-android</span> <span class="project-title"> - PeerTube android 客户端</span></a>
+                                <div class="extra">
+                                    <div class="ui horizontal list">
+                                        <div class="item">收藏 5</div>
+                                        <div class="item"><a href="https://www.oschina.net/p/peertube-android#comments" target="_blank">评论 1</a></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                                                </div>
+        </div>
+    
+                                        <div class="ad-wrap">
+            <div name="www_project_right_2"  data-trace-id="www_project_right_2_ad"
+                 data-trace-ident="www_project_right_2" >
+                <center><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- 自适应300*250 -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7090564139599510"
+     data-ad-slot="7073071744"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script></center>
+            </div>
+            </div>
+                        </div>
+    </div>
+</div>
+
+<script>
+    // 百度分享
+    window._bd_share_config = {
+        common : {
+            bdText : '支持 iTunes 和 Spotify 的 Mac 歌词工具 - OSCHINA',
+            bdDesc : 'LyricsX，一款功能完备的歌词工具，显示歌词的免费应用，支持 iTunes、Spotify 和 Vox，自动匹配和下载歌词，在桌面和菜单栏显示歌词。歌词源支持网易云音乐、QQ 音乐、虾米、酷狗等。',
+            bdUrl  : 'https://www.oschina.net/p/lyricsx',
+            bdPic  : ''
+        },
+        share : [{
+            bdSize : 16
+        }]
+    };
+    with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='https://static.oschina.net/new-osc/js/utils/plugins/bdshare_api/share.js?v='+~(-new Date()/36e5)];
+</script>
+                        <div name="detail_show_footer"  data-trace-id="detail_show"
+                 data-trace-ident="detail_show_footer" >
+                <style>
+    .float-adbox {display:none;position:fixed;left:15px;bottom:15px;z-index: 10001;}
+    .float-adbox .float-people {width: 180px;}
+    .float-adbox .close-left {position:absolute;top:-10px;right:-10px;cursor:pointer;}
+</style>
+<div class="float-adbox">
+    <a href="https://www.oschina.net/project/2020/q1_projects?from=osc-widget" target="_blank">
+        <img alt="gitee-ent" class="float-people" src="https://oscimg.oschina.net/oscnet/up-ce7c40e0facbdf94ca731ba60a0763d1cd9.png" />
+        <img alt="close" class="close-left" src="https://oscimg.oschina.net/oscnet/up-1ffc2b9e00a01b2f9c93c2f30fa158b6317.png" />
+    </a>
+</div>
+<script src="https://www.oschina.net/uploads/js.cookie.min.js"></script>
+<script>
+    (function () {
+        function loadScript(src, callback) {
+            var script = document.createElement('script'),
+                head = document.getElementsByTagName('head')[0];
+            script.type = 'text/javascript';
+            script.charset = 'UTF-8';
+            script.src = src;
+            if (script.addEventListener) {
+                script.addEventListener('load', function () {
+                    callback();
+                }, false);
+            } else if (script.attachEvent) {
+                script.attachEvent('onreadystatechange', function () {
+                    var target = window.event.srcElement;
+                    if (target.readyState == 'loaded') {
+                        callback();
+                    }
+                });
+            }
+            head.appendChild(script);
+        }
+        function loadAd() {
+            var leftPeople = $('.float-adbox');
+            var cookieName = 'project-2020-q1-0407';
+            var isVisit = Cookies.get(cookieName);
+            if (isVisit == 1) {
+                leftPeople.hide();
+            } else {
+                leftPeople.show();
+            }
+            $('.close-left').on('click', function (e) {
+                e.preventDefault();
+                Cookies.set(cookieName, 1, { expires: 90, path: '/' });
+                leftPeople.slideUp();
+            });
+        }
+        if (window.jQuery) {
+            loadAd();
+        } else {
+            loadScript('https://www.oschina.net/public/bower_components/jquery/dist/jquery.min.js', function () {
+                loadAd();
+            });
+        }
+    })();
+</script>
+
+            </div>
+            
+<script type="text/javascript" src="https://www.oschina.net/view/project?id=46171"></script>
+    
+
+            </div>
+        </div>
+
+                <div id="footer" class="ui vertical footer segment mb-hide">
+    <div class="ui container">
+        <div class="ui grid">
+            <div class="eight wide mobile four wide tablet four wide computer column">
+                <h4 class="ui header">OSCHINA 社区</h4>
+                <div class="ui link list">
+                    <a class="item" href="https://www.oschina.net/home/aboutosc" target="_blank">关于我们</a>
+                    <a class="item" href="https://www.oschina.net/home/aboutosc" target="_blank">联系我们</a>
+                    <a class="item" href="https://www.oschina.net/home/aboutosc#partners#" target="_blank">合作伙伴</a>
+                    <a class="item" href="https://www.oschina.net/openapi" target="_blank">Open API</a>
+                </div>
+            </div>
+            <div class="eight wide mobile four wide tablet four wide computer column">
+                <h4 class="ui header">在线工具</h4>
+                <div class="ui link list">
+                    <a class="item" href="https://gitee.com/?utm_source=oschina&utm_medium=link-bottom&utm_campaign=home" target="_blank">码云 Gitee.com</a>
+                    <a class="item" href="https://gitee.com/enterprises?utm_source=oschina&utm_medium=link-bottom&utm_campaign=enterprises" target="_blank">企业研发管理</a>
+                    <a class="item" href="https://copycat.gitee.com/?utm_source=oschina&utm_medium=link-bottom&utm_campaign=copycat" target="_blank">CopyCat-代码克隆检测</a>
+                    <a class="item" href="https://tool.oschina.net" target="_blank">实用在线工具</a>
+                </div>
+            </div>
+            <div class="center aligned eight wide mobile two wide tablet two wide computer column">
+                <h4 class="ui header">微信公众号</h4>
+                <img src="https://static.oschina.net/new-osc/img/wechat_qrcode.jpg?t=1484694603000" alt="微信公众号"/>
+            </div>
+            <div class="center aligned eight wide mobile six wide tablet six wide computer column">
+                <h3 class="ui header">OSCHINA APP</h3>
+                <p>聚合全网技术文章，根据你的阅读喜好进行个性推荐</p>
+                <a href="https://www.oschina.net/app" target="_blank" class="ui large primary button">下载 APP</a>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="copyright">
+    <div class="ui container">
+        <div class="ui clearing basic segment">
+            <div class="ui left floated horizontal link list">
+                <div class="item">©OSCHINA(OSChina.NET)</div>
+                <div class="item mb-hide">工信部</div>
+                <a class="item mb-hide" href="http://www.copu.org.cn/" target="_blank" title="开源软件推进联盟">开源软件推进联盟</a>
+                <div class="item mb-hide">指定官方社区</div>
+            </div>
+            <div class="ui right floated horizontal link list">
+                <div class="item mb-hide">深圳市奥思网络科技有限公司版权所有</div>
+                <a href="http://beian.miit.gov.cn/" target="_blank" class="item">粤ICP备12009483号</a>
+            </div>
+        </div>
+    </div>
+</div>    </div>
+                                                        <div class="back-to-top back-to-top-toggle">
+        <div class="icon"><img src="https://static.oschina.net/new-osc/img/icon/back-to-top.svg" alt="返回顶部"></div>
+        <div class="text">顶部</div>
+    </div>
+
+        <script src="https://static.oschina.net/new-osc/js/utils/semantic-ui/semantic.min.js?t=1585130052000"></script>
+    <script src="https://static.oschina.net/new-osc/js/utils/vue.min.js?t=1585130052000"></script>
+    <script src="https://static.oschina.net/new-osc/js/utils/jweixin-1.2.0.js"></script>
+                <script type="text/javascript" src="https://static.oschina.net/new-osc/dist/js/web.303c8cd2.js"></script>                
+<script>
+    (function(){
+        var bp = document.createElement('script');
+        var curProtocol = window.location.protocol.split(':')[0];
+        if (curProtocol === 'https'){
+            bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+        }
+        else{
+            bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+        }
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(bp, s);
+    })();
+</script>
+<script>
+    var _hmt = _hmt || [];
+    (function() {
+        var hm = document.createElement("script");
+        hm.src = "https://hm.baidu.com/hm.js?a411c4d1664dd70048ee98afe7b28f0b";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(hm, s);
+    })();
+</script>
+                
+
+    
+            </body>
+</html>
+<!-- Generated by oschina (init:2[ms],page:322[ms],ip:112.10.171.20) //-->
