@@ -1,0 +1,2244 @@
+<!DOCTYPE html>
+<html lang='zh-CN'>
+<head>
+<title>CSS - 开源软件 - 码云 Gitee.com</title>
+<link href="https://assets.gitee.com/assets/favicon-9007bd527d8a7851c8330e783151df58.ico" rel="shortcut icon" type="image/vnd.microsoft.icon" />
+<meta charset='utf-8'>
+<meta content='always' name='referrer'>
+<meta content='码云' property='og:site_name'>
+<meta content='Object' property='og:type'>
+<meta content='http://gitee.com/explore/starred?lang=CSS' property='og:url'>
+<meta content='https://gitee.com/static/images/logo_themecolor.png' itemprop='image' property='og:image'>
+<meta content='CSS - 开源软件 - 码云 Gitee.com' itemprop='name' property='og:title'>
+<meta content='码云(gitee.com)是 OSCHINA.NET 推出的代码托管平台，支持 Git 和 SVN，提供免费的私有仓库托管。目前已有超过 500 万的开发者选择码云。' property='og:description'>
+<meta content=' CSS, 开源软件' name='Keywords'>
+<meta content='分类的列表页为您提供多种开源的分类的工具，其中包括等多种分类的工具' itemprop='description' name='Description'>
+
+<meta content="IE=edge" http-equiv="X-UA-Compatible" />
+<meta content="authenticity_token" name="csrf-param" />
+<meta content="PeMCmPOG2FJsKVjUac30mupjB3sQNHN4ZDh9rSgc+kM=" name="csrf-token" />
+
+<link href="https://assets.gitee.com/assets/application-4353e40c527157901930256fb2cba2d4.css" media="screen" rel="stylesheet" />
+<script>
+//<![CDATA[
+window.gon = {};gon.locale="zh-CN";gon.sentry_dsn=null;gon.baidu_register_hm_push=null;gon.info={"controller_path":"explores","action_name":"show","current_user":false};gon.tour_env={"current_user":null,"action_name":"show","original_url":"http://gitee.com/explore/starred?lang=CSS","controller_path":"explores"};
+//]]>
+</script>
+<script src="https://assets.gitee.com/assets/static/sentry-5.1.0-109ee3d8895a239331efcf947ba7f5d8.js"></script>
+<script src="https://assets.gitee.com/assets/application-25134bf44f1dbb308bb450bdb036a1cc.js"></script>
+<script src="https://assets.gitee.com/assets/lib/jquery.timeago.zh-CN-9c36ca7c4899a28168320613879d208a.js"></script>
+
+
+<script src="//res.wx.qq.com/open/js/jweixin-1.2.0.js"></script>
+<script>
+  var title = document.title.replace(/( - Gitee| - 码云)$/, '')
+      imgUrl = '';
+  
+  document.addEventListener('DOMContentLoaded', function(event) {
+    var imgUrlEl = document.querySelector('.readme-box .markdown-body > img, .readme-box .markdown-body :not(a) > img');
+    imgUrl = imgUrlEl && imgUrlEl.getAttribute('src');
+  
+    if (!imgUrl) {
+      imgUrlEl = document.querySelector('meta[itemprop=image]');
+      imgUrl = imgUrlEl && imgUrlEl.getAttribute('content'); 
+      imgUrl = imgUrl || "https://gitee.com/static/images/logo_themecolor.png";
+    }
+  
+    wx.config({
+      debug: false,
+      appId: "wxff219d611a159737",
+      timestamp: "1586763967",
+      nonceStr: "8c9a2255de193982c26fbe30b6c9a8d8",
+      signature: "f005bf661e667bbfc534e6e09e56f10cd0da424b",
+      jsApiList: [
+        'onMenuShareTimeline',
+        'onMenuShareAppMessage'
+      ]
+    });
+  
+    wx.ready(function () {
+      wx.onMenuShareTimeline({
+        title: title, // 分享标题
+        link: "https://gitee.com/explore/starred?lang=CSS", // 分享链接，该链接域名或路径必须与当前页面对应的公众号JS安全域名一致
+        imgUrl: imgUrl // 分享图标
+      });
+      wx.onMenuShareAppMessage({
+        title: title, // 分享标题
+        link: "https://gitee.com/explore/starred?lang=CSS", // 分享链接，该链接域名或路径必须与当前页面对应的公众号JS安全域名一致
+        desc: document.querySelector('meta[name=Description]').getAttribute('content'),
+        imgUrl: imgUrl // 分享图标
+      });
+    });
+    wx.error(function(res){
+      console.error('err', res)
+    });
+  })
+</script>
+
+<script type='text/x-mathjax-config'>
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    displayMath: [["$$","$$"],["\\[","\\]"]],
+    processEscapes: true,
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
+    ignoreClass: "container|files",
+    processClass: "markdown-body"
+  }
+});
+</script>
+<script src="https://assets.gitee.com/uploads/resources/MathJax-2.7.2/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+<script>
+  (function () {
+    var messages = {
+      'zh-CN': {
+        addResult: '增加 <b>{term}</b>',
+        count: '已选择 {count}',
+        maxSelections: '最多 {maxCount} 个选择',
+        noResults: '未找到结果',
+        serverError: '连接服务器时发生错误'
+      },
+      'zh-TW': {
+        addResult: '增加 <b>{term}</b>',
+        count: '已選擇 {count}',
+        maxSelections: '最多 {maxCount} 個選擇',
+        noResults: '未找到結果',
+        serverError: '連接服務器時發生錯誤'
+      }
+    }
+  
+    if (messages[gon.locale]) {
+      $.fn.dropdown.settings.message = messages[gon.locale]
+    }
+  }());
+</script>
+
+<!--[if lt IE 10]>
+<script>
+    window.location.href = "/incompatible.html";
+</script>
+<![endif]-->
+</head>
+
+<link href="https://gitee.com/explore/starred.atom" rel="alternate" title="Gitee Recommened Projects" type="application/atom+xml" />
+<script src="https://assets.gitee.com/assets/explore/app-4e837fe54d4d35b570bf6148a01b1247.js"></script>
+<link href="https://assets.gitee.com/assets/explore/application-8378379951d9b0b5115787e25ecfca6e.css" media="screen" rel="stylesheet" />
+<body class='large ui_basic' id='explores-show'>
+<header class='common-header fixed large noborder' id='git-header-nav'>
+<div class='ui container'>
+<div class='ui menu header-menu'>
+<div class='git-nav-expand-bar'>
+<i class='iconfont icon-mode-table'></i>
+</div>
+<div class='gitee-nav__sidebar'>
+<div class='gitee-nav__sidebar-container'>
+<div class='gitee-nav__sidebar-top'>
+<div class='gitee-nav__avatar-box'></div>
+<div class='gitee-nav__buttons-box'>
+<a class="ui button small fluid orange" href="/login">登录</a>
+<a class="ui button small fluid basic is-register" href="/signup">注册</a>
+</div>
+</div>
+<div class='gitee-nav__sidebar-middle'>
+<div class='gitee-nav__sidebar-list'>
+<ul>
+<li class='gitee-nav__sidebar-item'>
+<a href="/explore"><i class='iconfont icon-ic-discover'></i>
+<span class='gitee-nav__sidebar-name'>开源软件</span>
+</a></li>
+<li class='gitee-nav__sidebar-item'>
+<a href="/enterprises"><i class='iconfont icon-ic-enterprise'></i>
+<span class='gitee-nav__sidebar-name'>企业版</span>
+</a></li>
+<li class='gitee-nav__sidebar-item'>
+<a href="/education"><i class='iconfont icon-ic-education'></i>
+<span class='gitee-nav__sidebar-name'>高校版</span>
+</a></li>
+<li class='gitee-nav__sidebar-item split-line'></li>
+<li class='gitee-nav__sidebar-item'>
+<a href="/search"><i class='iconfont icon-ic-search'></i>
+<span class='gitee-nav__sidebar-name'>搜索</span>
+</a></li>
+<li class='gitee-nav__sidebar-item'>
+<a href="/help"><i class='iconfont icon-help-circle'></i>
+<span class='gitee-nav__sidebar-name'>帮助中心</span>
+</a></li>
+<li class='gitee-nav__sidebar-item'>
+<a href="/terms"><i class='iconfont icon-file'></i>
+<span class='gitee-nav__sidebar-name'>使用条款</span>
+</a></li>
+<li class='gitee-nav__sidebar-item'>
+<a href="/about_us"><i class='iconfont icon-issuepx'></i>
+<span class='gitee-nav__sidebar-name'>关于我们</span>
+</a></li>
+</ul>
+</div>
+</div>
+<div class='gitee-nav__sidebar-bottom'>
+<div class='gitee-nav__sidebar-close-button'>
+<i class='fa fa-angle-double-left'></i>
+</div>
+</div>
+</div>
+</div>
+
+<div class='item gitosc-logo'>
+<a href="/"><img alt='码云 Gitee — 基于 Git 的代码托管和研发协作平台' class='ui inline image' height='28' src='/static/images/logo.svg?t=158106664' title='码云 Gitee — 基于 Git 的代码托管和研发协作平台' width='95'>
+<img alt='码云 Gitee — 基于 Git 的代码托管和研发协作平台' class='ui inline black image' height='28' src='/static/images/logo-black.svg?t=158106664' title='码云 Gitee — 基于 Git 的代码托管和研发协作平台' width='95'>
+</a></div>
+<a class="item state-active" href="/explore" title="开源软件">开源软件
+</a><a class="item " href="/enterprises" title="企业版">企业版
+<sup class='ui red label'>
+特惠
+</sup>
+</a><a class="item " href="/education" title="高校版">高校版
+</a><a class="item" href="https://blog.gitee.com/" id="gitee-blog" target="_blank" title="博客">博客
+</a><div class='center responsive-logo'>
+<a href="/"><img alt='码云 Gitee — 基于 Git 的代码托管和研发协作平台' class='ui inline image' height='24' src='/static/images/logo.svg?t=158106664' title='码云 Gitee — 基于 Git 的代码托管和研发协作平台' width='85'>
+<img alt='码云 Gitee — 基于 Git 的代码托管和研发协作平台' class='ui inline black image' height='24' src='/static/images/logo-black.svg?t=158106664' title='码云 Gitee — 基于 Git 的代码托管和研发协作平台' width='85'>
+</a></div>
+<div class='right menu userbar' id='git-nav-user-bar'>
+<form accept-charset="UTF-8" action="/search" class="ui item" data-text-filter="搜索格式不正确" data-text-require="搜索关键字不能少于1个" id="navbar-search-form" method="get"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /></div>
+<input id="navbar-search-type" name="type" type="hidden" />
+<input id="fork_filter" name="fork_filter" type="hidden" value="on" />
+<div class='ui search'>
+<input class="prompt" id="navbar-search-input" name="q" placeholder="搜索项目" type="text" value="" />
+</div>
+</form>
+
+<script>
+  var can_search_in_repo = 0,
+      repo = "",
+      reponame = "";
+  
+  $(function() {
+    var $search = $('#navbar-search-form .ui.search');
+    $search.search({
+      apiSettings: {
+        url: '/search/relative_project?q={query}',
+        onResponse: function (res) {
+          if (res && res.status === 200 && res.data) {
+            var query = $search.search('get value');
+  
+            res.data.map(function (item) {
+              item.path_ns = '/' + item.path_ns;
+              item.icon = 'iconfont icon-project-public';
+            });
+            res.data.unshift({
+              name_ns: "在全站搜索 <b class='hl'>" + query +"</b> 相关项目",
+              path_ns: '/search?fork_filter=on&q=' + query,
+              icon: 'iconfont icon-search'
+            });
+            if(can_search_in_repo == 1) {
+              res.data.unshift({
+                name_ns: "在当前仓库搜索 <b class='hl'>" + query +"</b> 相关代码",
+                path_ns: '/search?type=code&q=' + query + '&repo=' + repo + '&reponame=' + reponame,
+                icon: 'iconfont icon-search'
+              });
+            }
+            return res;
+          } else {
+            return { data: [] };
+          }
+        }
+      },
+      fields: {
+        results: 'data',
+        description: 'name_ns',
+        url: 'path_ns',
+        icon: 'icon'
+      },
+      minCharacters: 1,
+      maxResults: 10,
+      searchDelay: 120,
+      showNoResults: false,
+      transition: 'fade'
+    });
+  });
+</script>
+
+<a class="item git-nav-user__login-item" href="/login">登录
+</a><a class="item git-nav-user__register-item" href="/signup">注册
+</a><script>
+  $('.destroy-user-session').on('click', function() {
+    $.cookie('access_token', null, { path: '/' });
+  })
+</script>
+
+</div>
+</div>
+</div>
+</header>
+<script>
+  Gitee.initNavbar()
+  Gitee.initRepoRemoteWay()
+</script>
+
+<div class='site-content'>
+<div class='fixed-notice-infos'>
+<div class='all-messages'>
+<div class='ui info message' id='git-bulletin'>
+<a href=https://blog.gitee.com/2020/04/07/gitee-go/ target='_blank'>Gitee 企业版上线 DevOps 工具「Gitee Go」</a>
+<i class='icon remove' id='remove-bulletin'></i>
+</div>
+</div>
+<div class='ui container'>
+<div class='flash-messages' id='messages-container'></div>
+</div>
+<script>
+  (function() {
+    $(function() {
+      var $error_box, alertTip, notify_content, notify_options, template;
+      template = '<div data-notify="container" class="ui {0} message" role="alert">' + '<i data-notify="dismiss" class="close icon"></i>' + '<span data-notify="message">{2}</span>' + '</div>';
+      notify_content = null;
+      notify_options = {};
+      alertTip = '';
+      $error_box = $(".flash_error.flash_error_box");
+      if (notify_options.type === 'error' && $error_box.length > 0 && !$.isEmptyObject(notify_content.message)) {
+        if (notify_content.message === 'captcha_fail') {
+          alertTip = "验证码不正确";
+        } else if (notify_content.message === 'captcha_expired') {
+          alertTip = "验证码已过期，请点击刷新";
+        } else if (notify_content.message === 'not_found_in_database') {
+          alertTip = "帐号或者密码错误";
+        } else if (notify_content.message === 'not_found_and_show_captcha') {
+          alertTip = "帐号或者密码错误";
+        } else if (notify_content.message === 'phone_captcha_fail') {
+          alertTip = "手机验证码不通过";
+        } else {
+          alertTip = notify_content.message;
+        }
+        return $error_box.html(alertTip).show();
+      } else if (notify_content) {
+        if ("show" === 'third_party_binding') {
+          return $('#third_party_binding-message').html(notify_content.message).addClass('ui message red');
+        }
+        notify_options.delay = 3000;
+        notify_options.template = template;
+        notify_options.offset = {
+          x: 10,
+          y: 30
+        };
+        notify_options.element = '#messages-container';
+        return $.notify(notify_content, notify_options);
+      }
+    });
+  
+  }).call(this);
+</script>
+
+</div>
+<script>
+  (function() {
+    $(function() {
+      var setCookie;
+      setCookie = function(name, value) {
+        $.cookie(name, value, {
+          path: '/',
+          expires: 365
+        });
+      };
+      $('#remove-bulletin, #remove-bulletin-dashboard').on('click', function() {
+        setCookie('remove_bulletin', "gitee-maintain-1586321954");
+        $('#git-bulletin').hide();
+      });
+      $('#remove-member-bulletin').on('click', function() {
+        setCookie('remove_member_bulletin', "gitee_member_bulletin");
+        $(this).parent().hide();
+      });
+      return $('#remove-gift-bulletin').on('click', function() {
+        setCookie('remove_gift_bulletin', "gitee-gift-bulletin");
+        $(this).parent().hide();
+      });
+    });
+  
+  }).call(this);
+</script>
+<script>
+  function closeMessageBanner(pthis, type, val) {
+    var json = {}
+  
+    val = typeof val === 'undefined' ? null : val
+    $(pthis).parent().remove()
+    if (type === 'out_of_enterprise_member') {
+      json = {type: type, data: val}
+    } else if (type === 'enterprise_overdue') {
+      json = {type: type, data: val}
+    }
+    $.post('/profile/close_flash_tip', json)
+  }
+</script>
+
+<div class='explore__container'>
+<div class='explore-recommend'>
+<div class='ui container'>
+<div class='ui grid'>
+<div class='three wide column'>
+<div class='explore-categories'>
+<div class='explore-categories__container'>
+<ul>
+<li class='explore-categories__item'>
+<a href="/explore/all?lang=CSS"><b>
+<i class='explore-categories__item-icon iconfont icon-tag-all'></i>
+全部推荐项目
+</b>
+</a></li>
+<li class='explore-categories__item'>
+<a href="/explore/program-develop?lang=CSS"><i class='explore-categories__item-icon icon-tag-program iconfont'></i>
+程序开发
+</a><div class='ui popup explore-categories__second'>
+<table>
+<tbody>
+<tr>
+<td>
+<a class="" href="/explore/segment?lang=CSS">中英文分词</a>
+</td>
+<td>
+<a class="" href="/explore/payment-dev?lang=CSS">支付开发包</a>
+</td>
+<td>
+<a class="" href="/explore/security-dev?lang=CSS">安全开发相关</a>
+</td>
+<td>
+<a class="" href="/explore/utils?lang=CSS">常用工具包</a>
+</td>
+</tr>
+<tr>
+<td>
+<a class="" href="/explore/excel-utils?lang=CSS">Excel工具包</a>
+</td>
+<td>
+<a class="" href="/explore/barcode?lang=CSS">条形码/二维码</a>
+</td>
+<td>
+<a class="" href="/explore/template-engine?lang=CSS">模板引擎</a>
+</td>
+<td>
+<a class="" href="/explore/desktop-ui?lang=CSS">桌面UI组件/框架</a>
+</td>
+</tr>
+<tr>
+<td>
+<a class="" href="/explore/web-dev-toolkits?lang=CSS">网络开发包</a>
+</td>
+<td>
+<a class="" href="/explore/tts?lang=CSS">语音处理</a>
+</td>
+<td>
+<a class="" href="/explore/networklib?lang=CSS">网络工具</a>
+</td>
+<td>
+<a class="" href="/explore/web-service?lang=CSS">网络服务</a>
+</td>
+</tr>
+<tr>
+<td>
+<a class="" href="/explore/data-mining?lang=CSS">数据挖掘</a>
+</td>
+<td>
+<a class="" href="/explore/task-schedule?lang=CSS">作业/任务调度</a>
+</td>
+<td>
+<a class="" href="/explore/scripting-language?lang=CSS">编程语言/脚本语言</a>
+</td>
+<td>
+<a class="" href="/explore/cache-modules?lang=CSS">缓存组件</a>
+</td>
+</tr>
+<tr>
+<td>
+<a class="" href="/explore/markdown-utils?lang=CSS">Markdown开发包</a>
+</td>
+<td>
+<a class="" href="/explore/search-engine?lang=CSS">搜索引擎</a>
+</td>
+<td>
+<a class="" href="/explore/microservice?lang=CSS">微服务</a>
+</td>
+<td>
+<a class="" href="/explore/workflow?lang=CSS">工作流</a>
+</td>
+</tr>
+<tr>
+<td>
+<a class="" href="/explore/charting-components?lang=CSS">图表组件</a>
+</td>
+<td>
+<a class="" href="/explore/authority-management?lang=CSS">权限管理</a>
+</td>
+<td>
+<a class="" href="/explore/reporting-tools?lang=CSS">报表工具</a>
+</td>
+<td>
+<a class="" href="/explore/code-generator?lang=CSS">代码生成器</a>
+</td>
+</tr>
+<tr>
+<td>
+<a class="" href="/explore/ioc-framework?lang=CSS">IoC/AOP框架</a>
+</td>
+<td>
+<a class="" href="/explore/image-processing?lang=CSS">图像处理</a>
+</td>
+<td>
+<a class="" href="/explore/rule-engine?lang=CSS">规则引擎</a>
+</td>
+<td>
+<a class="" href="/explore/json-tools?lang=CSS">JSON工具</a>
+</td>
+</tr>
+<tr>
+<td>
+<a class="" href="/explore/logging?lang=CSS">日志工具包</a>
+</td>
+<td>
+<a class="" href="/explore/spring-boot-ext?lang=CSS">Spring Boot 扩展</a>
+</td>
+<td>
+<a class="" href="/explore/captcha?lang=CSS">验证码</a>
+</td>
+<td>
+<a class="" href="/explore/mathlibs?lang=CSS">算法/数学计算</a>
+</td>
+</tr>
+<tr>
+<td>
+<a class="" href="/explore/node-plugins?lang=CSS">Node 扩展</a>
+</td>
+<td>
+<a class="" href="/explore/process-engine?lang=CSS">流程引擎/工具</a>
+</td>
+<td>
+<a class="" href="/explore/animation?lang=CSS">动画开发</a>
+</td>
+<td>
+<a class="" href="/explore/mobile-communication?lang=CSS">移动通信</a>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class='explore-categories__item'>
+<a href="/explore/Artificial-Intelligence?lang=CSS"><i class='explore-categories__item-icon icon-tag-ai iconfont'></i>
+人工智能
+</a><div class='ui popup explore-categories__second'>
+<table>
+<tbody>
+<tr>
+<td>
+<a class="" href="/explore/ai?lang=CSS">AI-人工智能</a>
+</td>
+<td>
+<a class="" href="/explore/vrar?lang=CSS">VR/AR</a>
+</td>
+</tr>
+<tr>
+<td>
+<a class="" href="/explore/machine-learning?lang=CSS">机器学习/深度学习</a>
+</td>
+<td>
+<a class="" href="/explore/cv?lang=CSS">计算机视觉/人脸识别</a>
+</td>
+</tr>
+<tr>
+<td>
+<a class="" href="/explore/smart-home?lang=CSS">智能家居</a>
+</td>
+<td>
+<a class="" href="/explore/auto-driving?lang=CSS">自动驾驶/无人机</a>
+</td>
+</tr>
+<tr>
+<td>
+<a class="" href="/explore/robot?lang=CSS">机器人</a>
+</td>
+<td>
+<a class="" href="/explore/nature-language?lang=CSS">自然语言处理</a>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class='explore-categories__item'>
+<a href="/explore/blockchain-bitcoin?lang=CSS"><i class='explore-categories__item-icon icon-tag-blockchain iconfont'></i>
+区块链/比特币
+</a></li>
+<li class='explore-categories__item'>
+<a href="/explore/wechat-devel?lang=CSS"><i class='explore-categories__item-icon icon-tag-wechat iconfont'></i>
+微信开发
+</a><div class='ui popup explore-categories__second'>
+<table>
+<tbody>
+<tr>
+<td>
+<a class="" href="/explore/weixin-dev?lang=CSS">微信开发包</a>
+</td>
+<td>
+<a class="" href="/explore/weixin-lapp?lang=CSS">微信小程序/小游戏</a>
+</td>
+</tr>
+<tr>
+<td>
+<a class="" href="/explore/weixin-app?lang=CSS">微信应用</a>
+</td>
+<td>
+<a class="" href="/explore/weixin-game?lang=CSS">微信小游戏</a>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class='explore-categories__item'>
+<a href="/explore/enterprise-app?lang=CSS"><i class='explore-categories__item-icon icon-tag-enterprise iconfont'></i>
+企业应用
+</a><div class='ui popup explore-categories__second'>
+<table>
+<tbody>
+<tr>
+<td>
+<a class="" href="/explore/gis?lang=CSS">GIS/地图/导航/定位</a>
+</td>
+<td>
+<a class="" href="/explore/project-management?lang=CSS">任务/项目管理</a>
+</td>
+</tr>
+<tr>
+<td>
+<a class="" href="/explore/erp?lang=CSS">企业应用系统</a>
+</td>
+<td>
+<a class="" href="/explore/bi?lang=CSS">BI-商业智能</a>
+</td>
+</tr>
+<tr>
+<td>
+<a class="" href="/explore/stocks?lang=CSS">金融/股票证券</a>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class='explore-categories__item'>
+<a href="/explore/build-web-system?lang=CSS"><i class='explore-categories__item-icon icon-tag-cms iconfont'></i>
+建站系统
+</a><div class='ui popup explore-categories__second'>
+<table>
+<tbody>
+<tr>
+<td>
+<a class="" href="/explore/cms?lang=CSS">CMS建站系统</a>
+</td>
+<td>
+<a class="" href="/explore/ecommerce?lang=CSS">新零售/网店/商城</a>
+</td>
+</tr>
+<tr>
+<td>
+<a class="" href="/explore/bbs?lang=CSS">BBS论坛/问答</a>
+</td>
+<td>
+<a class="" href="/explore/blog?lang=CSS">博客系统</a>
+</td>
+</tr>
+<tr>
+<td>
+<a class="" href="/explore/survey?lang=CSS">问卷调查/表单系统</a>
+</td>
+<td>
+<a class="" href="/explore/sns?lang=CSS">SNS社交系统</a>
+</td>
+</tr>
+<tr>
+<td>
+<a class="" href="/explore/instructional?lang=CSS">教学管理</a>
+</td>
+<td>
+<a class="" href="/explore/gallery?lang=CSS">相册/画廊/照片</a>
+</td>
+</tr>
+<tr>
+<td>
+<a class="" href="/explore/rss?lang=CSS">RSS/Atom工具</a>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class='explore-categories__item'>
+<a href="/explore/web-app-develop?lang=CSS"><i class='explore-categories__item-icon icon-tag-web iconfont'></i>
+WEB应用开发
+</a><div class='ui popup explore-categories__second'>
+<table>
+<tbody>
+<tr>
+<td>
+<a class="" href="/explore/webframework?lang=CSS">Web开发框架</a>
+</td>
+<td>
+<a class="" href="/explore/jquery-plugins?lang=CSS">jQuery插件</a>
+</td>
+</tr>
+<tr>
+<td>
+<a class="" href="/explore/webui?lang=CSS">WebUI组件/框架</a>
+</td>
+<td>
+<a class="" href="/explore/javascript-toolkits?lang=CSS">JavaScript工具包</a>
+</td>
+</tr>
+<tr>
+<td>
+<a class="" href="/explore/restful?lang=CSS">RESTful项目</a>
+</td>
+<td>
+<a class="" href="/explore/backend?lang=CSS">后台管理框架</a>
+</td>
+</tr>
+<tr>
+<td>
+<a class="" href="/explore/site-theme?lang=CSS">网站主题</a>
+</td>
+<td>
+<a class="" href="/explore/vue-extensions?lang=CSS">Vue扩展组件</a>
+</td>
+</tr>
+<tr>
+<td>
+<a class="" href="/explore/spider?lang=CSS">Web爬虫</a>
+</td>
+<td>
+<a class="" href="/explore/oauth-dev?lang=CSS">OAuth/单点登录/统一认证</a>
+</td>
+</tr>
+<tr>
+<td>
+<a class="" href="/explore/angular-extensions?lang=CSS">Angular扩展</a>
+</td>
+<td>
+<a class="" href="/explore/bootstrap-plugins?lang=CSS">Bootstrap扩展插件</a>
+</td>
+</tr>
+<tr>
+<td>
+<a class="" href="/explore/react-extensions?lang=CSS">React 组件</a>
+</td>
+<td>
+<a class="" href="/explore/rpc?lang=CSS">RPC开发框架</a>
+</td>
+</tr>
+<tr>
+<td>
+<a class="" href="/explore/api-gateway?lang=CSS">API 网关</a>
+</td>
+<td>
+<a class="" href="/explore/short-url?lang=CSS">短网址</a>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class='explore-categories__item'>
+<a href="/explore/application-tools?lang=CSS"><i class='explore-categories__item-icon icon-tag-app iconfont'></i>
+应用工具
+</a><div class='ui popup explore-categories__second'>
+<table>
+<tbody>
+<tr>
+<td>
+<a class="" href="/explore/filemanager?lang=CSS">文件管理工具</a>
+</td>
+<td>
+<a class="" href="/explore/multimedia?lang=CSS">多媒体</a>
+</td>
+</tr>
+<tr>
+<td>
+<a class="" href="/explore/text-editor?lang=CSS">文本编辑</a>
+</td>
+<td>
+<a class="" href="/explore/im?lang=CSS">IM即时通讯/聊天</a>
+</td>
+</tr>
+<tr>
+<td>
+<a class="" href="/explore/application-software?lang=CSS">应用软件</a>
+</td>
+<td>
+<a class="" href="/explore/vsc-plugins?lang=CSS">Visual Studio Code 扩展</a>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class='explore-categories__item'>
+<a href="/explore/mobile-develop?lang=CSS"><i class='explore-categories__item-icon icon-tag-mobile iconfont'></i>
+手机/移动开发
+</a><div class='ui popup explore-categories__second'>
+<table>
+<tbody>
+<tr>
+<td>
+<a class="" href="/explore/android-modules?lang=CSS">Android组件/项目</a>
+</td>
+<td>
+<a class="" href="/explore/ios-modules?lang=CSS">iOS组件</a>
+</td>
+</tr>
+<tr>
+<td>
+<a class="" href="/explore/mobile-app?lang=CSS">移动App</a>
+</td>
+<td>
+<a class="" href="/explore/alipay?lang=CSS">支付宝小程序</a>
+</td>
+</tr>
+<tr>
+<td>
+<a class="" href="/explore/baidu-app?lang=CSS">百度小程序</a>
+</td>
+<td>
+<a class="" href="/explore/phonegap-cordova-plugins?lang=CSS">PhoneGap/Cordova 插件</a>
+</td>
+</tr>
+<tr>
+<td>
+<a class="" href="/explore/cross-platform-mobiledev?lang=CSS">跨平台移动开发</a>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class='explore-categories__item'>
+<a href="/explore/manage-monitor?lang=CSS"><i class='explore-categories__item-icon icon-tag-manage iconfont'></i>
+DevOps/运维/网管
+</a><div class='ui popup explore-categories__second'>
+<table>
+<tbody>
+<tr>
+<td>
+<a class="" href="/explore/devops?lang=CSS">DevOps运维开发</a>
+</td>
+<td>
+<a class="" href="/explore/nms?lang=CSS">网管工具</a>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class='explore-categories__item'>
+<a href="/explore/develop-tools?lang=CSS"><i class='explore-categories__item-icon icon-tag-devtool iconfont'></i>
+开发工具
+</a><div class='ui popup explore-categories__second'>
+<table>
+<tbody>
+<tr>
+<td>
+<a class="" href="/explore/vcs?lang=CSS">版本管理系统</a>
+</td>
+<td>
+<a class="" href="/explore/devtools?lang=CSS">开发/调试</a>
+</td>
+</tr>
+<tr>
+<td>
+<a class="" href="/explore/doc-tools?lang=CSS">Wiki/文档工具</a>
+</td>
+<td>
+<a class="" href="/explore/ci?lang=CSS">编译/构建/部署</a>
+</td>
+</tr>
+<tr>
+<td>
+<a class="" href="/explore/maven-plugin?lang=CSS">Maven 插件</a>
+</td>
+<td>
+<a class="" href="/explore/idea-plugins?lang=CSS">IDEA 插件</a>
+</td>
+</tr>
+<tr>
+<td>
+<a class="" href="/explore/gulp-extend?lang=CSS">Gulp 扩展</a>
+</td>
+<td>
+<a class="" href="/explore/testing?lang=CSS">测试工具</a>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class='explore-categories__item'>
+<a href="/explore/server-app?lang=CSS"><i class='explore-categories__item-icon icon-tag-server iconfont'></i>
+服务器应用
+</a><div class='ui popup explore-categories__second'>
+<table>
+<tbody>
+<tr>
+<td>
+<a class="" href="/explore/distributed-service?lang=CSS">分布式服务/框架</a>
+</td>
+<td>
+<a class="" href="/explore/message-server?lang=CSS">消息服务器/消息队列</a>
+</td>
+</tr>
+<tr>
+<td>
+<a class="" href="/explore/docker-related?lang=CSS">Docker相关</a>
+</td>
+<td>
+<a class="" href="/explore/containers?lang=CSS">容器/虚拟机</a>
+</td>
+</tr>
+<tr>
+<td>
+<a class="" href="/explore/nginx-modules?lang=CSS">Nginx扩展模块</a>
+</td>
+<td>
+<a class="" href="/explore/big-data?lang=CSS">大数据</a>
+</td>
+</tr>
+<tr>
+<td>
+<a class="" href="/explore/cloud?lang=CSS">云计算</a>
+</td>
+<td>
+<a class="" href="/explore/lamp?lang=CSS">一键安装包</a>
+</td>
+</tr>
+<tr>
+<td>
+<a class="" href="/explore/openresty-extensions?lang=CSS">OpenResty 扩展</a>
+</td>
+<td>
+<a class="" href="/explore/system-optimization?lang=CSS">系统性能优化</a>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class='explore-categories__item'>
+<a href="/explore/database-related?lang=CSS"><i class='explore-categories__item-icon icon-tag-database iconfont'></i>
+数据库相关
+</a><div class='ui popup explore-categories__second'>
+<table>
+<tbody>
+<tr>
+<td>
+<a class="" href="/explore/database-dev?lang=CSS">数据库开发包</a>
+</td>
+<td>
+<a class="" href="/explore/database-service?lang=CSS">数据库服务</a>
+</td>
+</tr>
+<tr>
+<td>
+<a class="" href="/explore/dbmanager?lang=CSS">数据库管理/监控</a>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class='explore-categories__item'>
+<a href="/explore/game-and-entertainment?lang=CSS"><i class='explore-categories__item-icon icon-tag-game iconfont'></i>
+游戏/娱乐
+</a><div class='ui popup explore-categories__second'>
+<table>
+<tbody>
+<tr>
+<td>
+<a class="" href="/explore/games?lang=CSS">游戏</a>
+</td>
+<td>
+<a class="" href="/explore/game-dev?lang=CSS">游戏开发</a>
+</td>
+</tr>
+<tr>
+<td>
+<a class="" href="/explore/3d-engine?lang=CSS">3D引擎</a>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class='explore-categories__item'>
+<a href="/explore/plugin-and-extension?lang=CSS"><i class='explore-categories__item-icon icon-tag-plugin iconfont'></i>
+插件和扩展
+</a><div class='ui popup explore-categories__second'>
+<table>
+<tbody>
+<tr>
+<td>
+<a class="" href="/explore/chrome-plugins?lang=CSS">Chrome扩展</a>
+</td>
+<td>
+<a class="" href="/explore/wordpress-plugins?lang=CSS">WordPress 扩展</a>
+</td>
+</tr>
+<tr>
+<td>
+<a class="" href="/explore/eclipse-plugins?lang=CSS">Eclipse插件</a>
+</td>
+<td>
+<a class="" href="/explore/firefox-addons?lang=CSS">Firefox扩展</a>
+</td>
+</tr>
+<tr>
+<td>
+<a class="" href="/explore/safari-plugins?lang=CSS">Safari 插件</a>
+</td>
+<td>
+<a class="" href="/explore/jenkins-plugins?lang=CSS">Jenkins 插件</a>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class='explore-categories__item'>
+<a href="/explore/other-open-source?lang=CSS"><i class='explore-categories__item-icon icon-tag-misc iconfont'></i>
+其他开源
+</a><div class='ui popup explore-categories__second'>
+<table>
+<tbody>
+<tr>
+<td>
+<a class="" href="/explore/education?lang=CSS">教学管理</a>
+</td>
+<td>
+<a class="" href="/explore/simulated-projects?lang=CSS">高仿项目</a>
+</td>
+</tr>
+<tr>
+<td>
+<a class="" href="/explore/hardware?lang=CSS">硬件相关项目</a>
+</td>
+<td>
+<a class="" href="/explore/ebooks-manual?lang=CSS">图书/手册/教程</a>
+</td>
+</tr>
+<tr>
+<td>
+<a class="" href="/explore/acm?lang=CSS">ACM/OJ 项目</a>
+</td>
+<td>
+<a class="" href="/explore/os?lang=CSS">操作系统</a>
+</td>
+</tr>
+<tr>
+<td>
+<a class="" href="/explore/iot?lang=CSS">物联网/边缘计算</a>
+</td>
+<td>
+<a class="" href="/explore/sample-code?lang=CSS">教程配套代码</a>
+</td>
+</tr>
+<tr>
+<td>
+<a class="" href="/explore/vehicle?lang=CSS">车载应用</a>
+</td>
+<td>
+<a class="" href="/explore/risc-v?lang=CSS">RISC-V 开发</a>
+</td>
+</tr>
+<tr>
+<td>
+<a class="" href="/explore/bio-medical?lang=CSS">生物/医疗/健康</a>
+</td>
+<td>
+<a class="" href="/explore/tcb-hackthon?lang=CSS">2020公益黑客马拉松</a>
+</td>
+</tr>
+<tr>
+<td>
+<a class="" href="/explore/2019-ncov?lang=CSS">新冠病毒相关开源</a>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<script>
+  $('.explore-categories__item').has('.popup').find('> a')
+    .popup({
+      inline     : true,
+      hoverable  : true,
+      position   : 'right center',
+    })
+</script>
+
+</div>
+<div class='nine wide column'>
+<div class='explore-projects__detail-list'>
+<div class='explore-project__selection'>
+<div class='explore-project__selection-container'>
+<div class='ui breadcrumb'>
+<div class='section'>全部推荐项目</div>
+</div>
+<div class='actions'>
+<div class='ui floating scrolling dropdown gradient button'>
+<div class='text'>开源许可</div>
+<i class='icon dropdown'></i>
+<div class='menu'>
+<a class="item" href="/explore/starred?lang=CSS&amp;license=MulanPSL-1.0">MulanPSL-1.0</a>
+<a class="item" href="/explore/starred?lang=CSS&amp;license=0BSD">0BSD</a>
+<a class="item" href="/explore/starred?lang=CSS&amp;license=AFL-3.0">AFL-3.0</a>
+<a class="item" href="/explore/starred?lang=CSS&amp;license=AGPL-3.0">AGPL-3.0</a>
+<a class="item" href="/explore/starred?lang=CSS&amp;license=Apache-2.0">Apache-2.0</a>
+<a class="item" href="/explore/starred?lang=CSS&amp;license=Artistic-2.0">Artistic-2.0</a>
+<a class="item" href="/explore/starred?lang=CSS&amp;license=BSD-2-Clause">BSD-2-Clause</a>
+<a class="item" href="/explore/starred?lang=CSS&amp;license=BSD-3-Clause">BSD-3-Clause</a>
+<a class="item" href="/explore/starred?lang=CSS&amp;license=BSD-3-Clause-Clear">BSD-3-Clause-Clear</a>
+<a class="item" href="/explore/starred?lang=CSS&amp;license=BSL-1.0">BSL-1.0</a>
+<a class="item" href="/explore/starred?lang=CSS&amp;license=CC-BY-4.0">CC-BY-4.0</a>
+<a class="item" href="/explore/starred?lang=CSS&amp;license=CC-BY-SA-4.0">CC-BY-SA-4.0</a>
+<a class="item" href="/explore/starred?lang=CSS&amp;license=CC0-1.0">CC0-1.0</a>
+<a class="item" href="/explore/starred?lang=CSS&amp;license=ECL-2.0">ECL-2.0</a>
+<a class="item" href="/explore/starred?lang=CSS&amp;license=EPL-1.0">EPL-1.0</a>
+<a class="item" href="/explore/starred?lang=CSS&amp;license=EPL-2.0">EPL-2.0</a>
+<a class="item" href="/explore/starred?lang=CSS&amp;license=EUPL-1.1">EUPL-1.1</a>
+<a class="item" href="/explore/starred?lang=CSS&amp;license=EUPL-1.2">EUPL-1.2</a>
+<a class="item" href="/explore/starred?lang=CSS&amp;license=GPL-2.0">GPL-2.0</a>
+<a class="item" href="/explore/starred?lang=CSS&amp;license=GPL-3.0">GPL-3.0</a>
+<a class="item" href="/explore/starred?lang=CSS&amp;license=ISC">ISC</a>
+<a class="item" href="/explore/starred?lang=CSS&amp;license=LGPL-2.1">LGPL-2.1</a>
+<a class="item" href="/explore/starred?lang=CSS&amp;license=LGPL-3.0">LGPL-3.0</a>
+<a class="item" href="/explore/starred?lang=CSS&amp;license=LPPL-1.3c">LPPL-1.3c</a>
+<a class="item" href="/explore/starred?lang=CSS&amp;license=MIT">MIT</a>
+<a class="item" href="/explore/starred?lang=CSS&amp;license=MPL-2.0">MPL-2.0</a>
+<a class="item" href="/explore/starred?lang=CSS&amp;license=MS-PL">MS-PL</a>
+<a class="item" href="/explore/starred?lang=CSS&amp;license=MS-RL">MS-RL</a>
+<a class="item" href="/explore/starred?lang=CSS&amp;license=MulanPSL-2.0">MulanPSL-2.0</a>
+<a class="item" href="/explore/starred?lang=CSS&amp;license=NCSA">NCSA</a>
+<a class="item" href="/explore/starred?lang=CSS&amp;license=OFL-1.1">OFL-1.1</a>
+<a class="item" href="/explore/starred?lang=CSS&amp;license=OSL-3.0">OSL-3.0</a>
+<a class="item" href="/explore/starred?lang=CSS&amp;license=PostgreSQL">PostgreSQL</a>
+<a class="item" href="/explore/starred?lang=CSS&amp;license=UPL-1.0">UPL-1.0</a>
+<a class="item" href="/explore/starred?lang=CSS&amp;license=Unlicense">Unlicense</a>
+<a class="item" href="/explore/starred?lang=CSS&amp;license=WTFPL">WTFPL</a>
+<a class="item" href="/explore/starred?lang=CSS&amp;license=Zlib">Zlib</a>
+</div>
+</div>
+<div class='ui floating scrolling dropdown gradient button'>
+<div class='text'>Starred</div>
+<i class='icon dropdown'></i>
+<div class='menu'>
+<a class="item" href="/explore/starred?lang=CSS&amp;order=starred">Starred</a>
+<a class="item" href="/explore/starred?lang=CSS&amp;order=recommend">最新推荐</a>
+<a class="item" href="/explore/starred?lang=CSS&amp;order=latest">最近更新</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script>
+  $(function () {
+    $('.explore-project__selection .dropdown').dropdown()
+  })
+</script>
+
+<div class='ui divider'></div>
+<div class='ui relaxed divided items explore-repo__list'>
+<div class='item'>
+<a class="project-creator-link ui avatar image pull-left" href="/theseason5"><img alt="58433 theseason5 1578915792" src="https://portrait.gitee.com/uploads/avatars/user/19/58433_theseason5_1578915792.jpg!avatar60" />
+</a><div class='content'>
+<div class='project-title'>
+<div class='title-left'>
+<h3>
+<a class="title project-namespace-path" href="/theseason5/theme" target="_blank" title="第五季/theme">第五季/theme</a>
+</h3>
+<i class='iconfont icon-recommended js-popup-default' data-position='right center' title='码云推荐项目'></i>
+
+<span class='project-meta'>
+<a class="ui small label lang-label is-lang" href="/explore/starred?lang=CSS">CSS</a>
+<a class="ui small label lang-label" href="/explore/backend?lang=CSS">后台管理框架</a>
+</span>
+</div>
+<div class='explore-project__meta-social pull-right'>
+<a class="section" href="/theseason5/theme/watchers" title="关注数"><i class='iconfont icon-watch'></i>
+<span>566</span>
+</a><a class="section" href="/theseason5/theme/stargazers" title="收藏数"><i class='iconfont icon-star'></i>
+<span>1.1K</span>
+</a><a class="section" href="/theseason5/theme/members" title="Fork 数"><i class='iconfont icon-fork'></i>
+<span>272</span>
+</a></div>
+
+</div>
+<div class='project-desc'>各种后台管理模板</div>
+<div class='project-latest'>
+<span class='text-muted' title='2016-02-02 15:57:33 +0800'>
+4年前
+</span>
+<span class='text-muted'>
+<a href="/theseason5/theme/issues"><i class='iconfont icon-issue'></i>
+2 issues
+</a></span>
+</div>
+</div>
+</div>
+<div class='item'>
+<a class="project-creator-link ui avatar image pull-left" href="/shuzheng"><img alt="406748 shuzheng 1578922919" src="https://portrait.gitee.com/uploads/avatars/user/135/406748_shuzheng_1578922919.png!avatar60" />
+</a><div class='content'>
+<div class='project-title'>
+<div class='title-left'>
+<h3>
+<a class="title project-namespace-path" href="/shuzheng/zhengAdmin" target="_blank" title="张恕征/zhengAdmin">张恕征/zhengAdmin</a>
+</h3>
+<i class='iconfont icon-recommended js-popup-default' data-position='right center' title='码云推荐项目'></i>
+
+<span class='project-meta'>
+<a class="ui small label lang-label is-lang" href="/explore/starred?lang=CSS">CSS</a>
+<a class="ui small label lang-label" href="/explore/backend?lang=CSS">后台管理框架</a>
+<a class="ui small label lang-label" href="/explore/starred?lang=CSS&amp;license=MIT">MIT</a>
+</span>
+</div>
+<div class='explore-project__meta-social pull-right'>
+<a class="section" href="/shuzheng/zhengAdmin/watchers" title="关注数"><i class='iconfont icon-watch'></i>
+<span>208</span>
+</a><a class="section" href="/shuzheng/zhengAdmin/stargazers" title="收藏数"><i class='iconfont icon-star'></i>
+<span>472</span>
+</a><a class="section" href="/shuzheng/zhengAdmin/members" title="Fork 数"><i class='iconfont icon-fork'></i>
+<span>194</span>
+</a></div>
+
+</div>
+<div class='project-desc'>基于bootstrap实现的响应式Material Design风格的通用后台管理系统</div>
+<div class='project-latest'>
+<span class='text-muted' title='2018-11-21 18:06:10 +0800'>
+1年多前
+</span>
+<span class='text-muted'>
+</span>
+</div>
+</div>
+</div>
+<div class='item'>
+<a class="project-creator-link ui avatar image pull-left" href="/zdhxiong"><img alt="283 zdhxiong 1578913764" src="https://portrait.gitee.com/uploads/avatars/user/0/283_zdhxiong_1578913764.png!avatar60" />
+</a><div class='content'>
+<div class='project-title'>
+<div class='title-left'>
+<h3>
+<a class="title project-namespace-path" href="/zdhxiong/mdui" target="_blank" title="zdhxiong/mdui">zdhxiong/mdui</a>
+</h3>
+<a class="ui small label git-project-gvp-badge gvp-label js-popup-default" data-position="right center" href="/gvp" target="_blank" title="GVP - 码云最有价值开源项目">GVP</a>
+
+<span class='project-meta'>
+<a class="ui small label lang-label is-lang" href="/explore/starred?lang=CSS">CSS</a>
+<a class="ui small label lang-label" href="/explore/webui?lang=CSS">WebUI组件/框架</a>
+<a class="ui small label lang-label" href="/explore/starred?lang=CSS&amp;license=MIT">MIT</a>
+</span>
+</div>
+<div class='explore-project__meta-social pull-right'>
+<a class="section" href="/zdhxiong/mdui/watchers" title="关注数"><i class='iconfont icon-watch'></i>
+<span>120</span>
+</a><a class="section" href="/zdhxiong/mdui/stargazers" title="收藏数"><i class='iconfont icon-star'></i>
+<span>458</span>
+</a><a class="section" href="/zdhxiong/mdui/members" title="Fork 数"><i class='iconfont icon-fork'></i>
+<span>84</span>
+</a></div>
+
+</div>
+<div class='project-desc'>MDUI 是一个基于 Material Design 的前端框架。</div>
+<div class='project-latest'>
+<span class='text-muted' title='2018-10-29 18:25:10 +0800'>
+1年多前
+</span>
+<span class='text-muted'>
+<a href="/zdhxiong/mdui/issues"><i class='iconfont icon-issue'></i>
+1 issue
+</a></span>
+</div>
+</div>
+</div>
+<div class='item'>
+<a class="project-creator-link ui avatar image pull-left" href="/amazeui"><img alt="108015 amazeui 1578917848" src="https://portrait.gitee.com/uploads/avatars/user/36/108015_amazeui_1578917848.png!avatar60" />
+</a><div class='content'>
+<div class='project-title'>
+<div class='title-left'>
+<h3>
+<a class="title project-namespace-path" href="/amazeui/amazeui" target="_blank" title="AllMobilize/amazeui">AllMobilize/amazeui</a>
+</h3>
+<i class='iconfont icon-recommended js-popup-default' data-position='right center' title='码云推荐项目'></i>
+
+<span class='project-meta'>
+<a class="ui small label lang-label is-lang" href="/explore/starred?lang=CSS">CSS</a>
+<a class="ui small label lang-label" href="/explore/webui?lang=CSS">WebUI组件/框架</a>
+</span>
+</div>
+<div class='explore-project__meta-social pull-right'>
+<a class="section" href="/amazeui/amazeui/watchers" title="关注数"><i class='iconfont icon-watch'></i>
+<span>150</span>
+</a><a class="section" href="/amazeui/amazeui/stargazers" title="收藏数"><i class='iconfont icon-star'></i>
+<span>385</span>
+</a><a class="section" href="/amazeui/amazeui/members" title="Fork 数"><i class='iconfont icon-fork'></i>
+<span>127</span>
+</a></div>
+
+</div>
+<div class='project-desc'>Amaze UI，中国首个开源 HTML5 跨屏前端框架。（只做代码同步，Issue/PR 请到 GitHub）</div>
+<div class='project-latest'>
+<span class='text-muted' title='2019-07-02 00:48:44 +0800'>
+10个月前
+</span>
+<span class='text-muted'>
+</span>
+</div>
+</div>
+</div>
+<div class='item'>
+<a class="project-creator-link ui avatar image pull-left" href="/monksoul"><img alt="974299 monksoul 1578937227" src="https://portrait.gitee.com/uploads/avatars/user/324/974299_monksoul_1578937227.png!avatar60" />
+</a><div class='content'>
+<div class='project-title'>
+<div class='title-left'>
+<h3>
+<a class="title project-namespace-path" href="/monksoul/Hui" target="_blank" title="百小僧/Hui">百小僧/Hui</a>
+</h3>
+<i class='iconfont icon-recommended js-popup-default' data-position='right center' title='码云推荐项目'></i>
+
+<span class='project-meta'>
+<a class="ui small label lang-label is-lang" href="/explore/starred?lang=CSS">CSS</a>
+<a class="ui small label lang-label" href="/explore/webui?lang=CSS">WebUI组件/框架</a>
+<a class="ui small label lang-label" href="/explore/starred?lang=CSS&amp;license=MIT">MIT</a>
+</span>
+</div>
+<div class='explore-project__meta-social pull-right'>
+<a class="section" href="/monksoul/Hui/watchers" title="关注数"><i class='iconfont icon-watch'></i>
+<span>179</span>
+</a><a class="section" href="/monksoul/Hui/stargazers" title="收藏数"><i class='iconfont icon-star'></i>
+<span>330</span>
+</a><a class="section" href="/monksoul/Hui/members" title="Fork 数"><i class='iconfont icon-fork'></i>
+<span>98</span>
+</a></div>
+
+</div>
+<div class='project-desc'>Hui是一款与众不同，却包罗万象的移动UI框架。</div>
+<div class='project-latest'>
+<span class='text-muted' title='2019-05-22 01:03:41 +0800'>
+11个月前
+</span>
+<span class='text-muted'>
+<a href="/monksoul/Hui/issues"><i class='iconfont icon-issue'></i>
+3 issues
+</a></span>
+</div>
+</div>
+</div>
+<div class='item'>
+<a class="project-creator-link ui avatar image pull-left" href="/muse"><img alt="689 muse 1578913854" src="https://portrait.gitee.com/uploads/avatars/user/0/689_muse_1578913854.jpg!avatar60" />
+</a><div class='content'>
+<div class='project-title'>
+<div class='title-left'>
+<h3>
+<a class="title project-namespace-path" href="/muse/museui" target="_blank" title="缪斯的情人/MuseUI">缪斯的情人/MuseUI</a>
+</h3>
+<i class='iconfont icon-recommended js-popup-default' data-position='right center' title='码云推荐项目'></i>
+
+<span class='project-meta'>
+<a class="ui small label lang-label is-lang" href="/explore/starred?lang=CSS">CSS</a>
+<a class="ui small label lang-label" href="/explore/webui?lang=CSS">WebUI组件/框架</a>
+</span>
+</div>
+<div class='explore-project__meta-social pull-right'>
+<a class="section" href="/muse/museui/watchers" title="关注数"><i class='iconfont icon-watch'></i>
+<span>136</span>
+</a><a class="section" href="/muse/museui/stargazers" title="收藏数"><i class='iconfont icon-star'></i>
+<span>290</span>
+</a><a class="section" href="/muse/museui/members" title="Fork 数"><i class='iconfont icon-fork'></i>
+<span>156</span>
+</a></div>
+
+</div>
+<div class='project-desc'>一款基于bootstrap风格，兼容于主流浏览器（包括IE6）的后端UI开发组件</div>
+<div class='project-latest'>
+<span class='text-muted' title='2013-11-08 21:33:26 +0800'>
+6年多前
+</span>
+<span class='text-muted'>
+<a href="/muse/museui/issues"><i class='iconfont icon-issue'></i>
+7 issues
+</a></span>
+</div>
+</div>
+</div>
+<div class='item'>
+<a class="project-creator-link ui avatar image pull-left" href="/yingjienet"><img alt="411697 yingjienet 1578989342" src="https://portrait.gitee.com/uploads/avatars/namespace/137/411697_yingjienet_1578989342.png" />
+</a><div class='content'>
+<div class='project-title'>
+<div class='title-left'>
+<h3>
+<a class="title project-namespace-path" href="/yingjienet/h-ui" target="_blank" title="北京颖杰联创科技有限公司/h-ui">北京颖杰联创科技有限公司/h-ui</a>
+</h3>
+<i class='iconfont icon-recommended js-popup-default' data-position='right center' title='码云推荐项目'></i>
+
+<span class='project-meta'>
+<a class="ui small label lang-label is-lang" href="/explore/starred?lang=CSS">CSS</a>
+<a class="ui small label lang-label" href="/explore/webui?lang=CSS">WebUI组件/框架</a>
+<a class="ui small label lang-label" href="/explore/starred?lang=CSS&amp;license=MIT">MIT</a>
+</span>
+</div>
+<div class='explore-project__meta-social pull-right'>
+<a class="section" href="/yingjienet/h-ui/watchers" title="关注数"><i class='iconfont icon-watch'></i>
+<span>57</span>
+</a><a class="section" href="/yingjienet/h-ui/stargazers" title="收藏数"><i class='iconfont icon-star'></i>
+<span>158</span>
+</a><a class="section" href="/yingjienet/h-ui/members" title="Fork 数"><i class='iconfont icon-fork'></i>
+<span>29</span>
+</a></div>
+
+</div>
+<div class='project-desc'>h-ui前端框架</div>
+<div class='project-latest'>
+<span class='text-muted' title='2019-02-14 11:45:11 +0800'>
+1年前
+</span>
+<span class='text-muted'>
+<a class="release-tag" href="/yingjienet/h-ui/releases/v3.1.3" title="v3.1.3"><i class='iconfont icon-release'></i>
+v3.1.3
+</a>更新于
+<span title='2017-06-20 06:04:33 +0800'>
+6月20日
+</span>
+</span>
+<span class='text-muted'>
+<a href="/yingjienet/h-ui/issues"><i class='iconfont icon-issue'></i>
+1 issue
+</a></span>
+</div>
+</div>
+</div>
+<div class='item'>
+<a class="project-creator-link ui avatar image pull-left" href="/zmeyr"><img alt="48 zmeyr 1578913714" src="https://portrait.gitee.com/uploads/avatars/user/0/48_zmeyr_1578913714.png!avatar60" />
+</a><div class='content'>
+<div class='project-title'>
+<div class='title-left'>
+<h3>
+<a class="title project-namespace-path" href="/zmeyr/portnine-free-bootstrap-theme" target="_blank" title="zmeyr/portnine Free Bootstrap Theme">zmeyr/portnine Free Bootstrap Theme</a>
+</h3>
+
+<span class='project-meta'>
+<a class="ui small label lang-label is-lang" href="/explore/starred?lang=CSS">CSS</a>
+</span>
+</div>
+<div class='explore-project__meta-social pull-right'>
+<a class="section" href="/zmeyr/portnine-free-bootstrap-theme/watchers" title="关注数"><i class='iconfont icon-watch'></i>
+<span>41</span>
+</a><a class="section" href="/zmeyr/portnine-free-bootstrap-theme/stargazers" title="收藏数"><i class='iconfont icon-star'></i>
+<span>129</span>
+</a><a class="section" href="/zmeyr/portnine-free-bootstrap-theme/members" title="Fork 数"><i class='iconfont icon-fork'></i>
+<span>92</span>
+</a></div>
+
+</div>
+<div class='project-desc'>三个免费bootstrap主题后台模版+MetroNic_v1.5.4_Bootstrap3.0的3个后台模版和2个前台模版下载地址[下载地址见readme底部]</div>
+<div class='project-latest'>
+<span class='text-muted' title='2014-08-18 16:37:32 +0800'>
+5年多前
+</span>
+<span class='text-muted'>
+</span>
+</div>
+</div>
+</div>
+<div class='item'>
+<a class="project-creator-link ui avatar image pull-left" href="/xulongchang"><img alt="75933 xulongchang 1578916445" src="https://portrait.gitee.com/uploads/avatars/user/25/75933_xulongchang_1578916445.jpg!avatar60" />
+</a><div class='content'>
+<div class='project-title'>
+<div class='title-left'>
+<h3>
+<a class="title project-namespace-path" href="/xulongchang/animate.css" target="_blank" title="xulongchang/animate.css">xulongchang/animate.css</a>
+</h3>
+<i class='iconfont icon-recommended js-popup-default' data-position='right center' title='码云推荐项目'></i>
+
+<span class='project-meta'>
+<a class="ui small label lang-label is-lang" href="/explore/starred?lang=CSS">CSS</a>
+<a class="ui small label lang-label" href="/explore/webui?lang=CSS">WebUI组件/框架</a>
+<a class="ui small label lang-label" href="/explore/animation?lang=CSS">动画开发</a>
+</span>
+</div>
+<div class='explore-project__meta-social pull-right'>
+<a class="section" href="/xulongchang/animate.css/watchers" title="关注数"><i class='iconfont icon-watch'></i>
+<span>31</span>
+</a><a class="section" href="/xulongchang/animate.css/stargazers" title="收藏数"><i class='iconfont icon-star'></i>
+<span>112</span>
+</a><a class="section" href="/xulongchang/animate.css/members" title="Fork 数"><i class='iconfont icon-fork'></i>
+<span>19</span>
+</a></div>
+
+</div>
+<div class='project-desc'>更方便更快速更易用的css animate</div>
+<div class='project-latest'>
+<span class='text-muted' title='2018-02-26 16:36:07 +0800'>
+2年前
+</span>
+<span class='text-muted'>
+<a href="/xulongchang/animate.css/issues"><i class='iconfont icon-issue'></i>
+1 issue
+</a></span>
+</div>
+</div>
+</div>
+<div class='item'>
+<a class="project-creator-link ui avatar image pull-left" href="/pintuer"><img avatar="拼图-pintuer" />
+</a><div class='content'>
+<div class='project-title'>
+<div class='title-left'>
+<h3>
+<a class="title project-namespace-path" href="/pintuer/pintuer" target="_blank" title="拼图/pintuer">拼图/pintuer</a>
+</h3>
+<i class='iconfont icon-recommended js-popup-default' data-position='right center' title='码云推荐项目'></i>
+
+<span class='project-meta'>
+<a class="ui small label lang-label is-lang" href="/explore/starred?lang=CSS">CSS</a>
+<a class="ui small label lang-label" href="/explore/webui?lang=CSS">WebUI组件/框架</a>
+<a class="ui small label lang-label" href="/explore/starred?lang=CSS&amp;license=Apache-2.0">Apache-2.0</a>
+</span>
+</div>
+<div class='explore-project__meta-social pull-right'>
+<a class="section" href="/pintuer/pintuer/watchers" title="关注数"><i class='iconfont icon-watch'></i>
+<span>43</span>
+</a><a class="section" href="/pintuer/pintuer/stargazers" title="收藏数"><i class='iconfont icon-star'></i>
+<span>107</span>
+</a><a class="section" href="/pintuer/pintuer/members" title="Fork 数"><i class='iconfont icon-fork'></i>
+<span>28</span>
+</a></div>
+
+</div>
+<div class='project-desc'>国内优秀的HTML、CSS、JS跨屏响应式前端框架，自动适应电脑、平板、手机等设备，让前端开发更简单、快速、便捷。</div>
+<div class='project-latest'>
+<span class='text-muted' title='2014-08-28 20:51:01 +0800'>
+5年多前
+</span>
+<span class='text-muted'>
+<a href="/pintuer/pintuer/issues"><i class='iconfont icon-issue'></i>
+3 issues
+</a></span>
+</div>
+</div>
+</div>
+<div class='item'>
+<a class="project-creator-link ui avatar image pull-left" href="/vusui"><img alt="1184443 vusui 1578945433" src="https://portrait.gitee.com/uploads/avatars/user/394/1184443_vusui_1578945433.png!avatar60" />
+</a><div class='content'>
+<div class='project-title'>
+<div class='title-left'>
+<h3>
+<a class="title project-namespace-path" href="/vusui/vusui1" target="_blank" title="vusui/vusui1">vusui/vusui1</a>
+</h3>
+<i class='iconfont icon-recommended js-popup-default' data-position='right center' title='码云推荐项目'></i>
+
+<span class='project-meta'>
+<a class="ui small label lang-label is-lang" href="/explore/starred?lang=CSS">CSS</a>
+<a class="ui small label lang-label" href="/explore/webui?lang=CSS">WebUI组件/框架</a>
+<a class="ui small label lang-label" href="/explore/starred?lang=CSS&amp;license=MIT">MIT</a>
+</span>
+</div>
+<div class='explore-project__meta-social pull-right'>
+<a class="section" href="/vusui/vusui1/watchers" title="关注数"><i class='iconfont icon-watch'></i>
+<span>33</span>
+</a><a class="section" href="/vusui/vusui1/stargazers" title="收藏数"><i class='iconfont icon-star'></i>
+<span>86</span>
+</a><a class="section" href="/vusui/vusui1/members" title="Fork 数"><i class='iconfont icon-fork'></i>
+<span>18</span>
+</a></div>
+
+</div>
+<div class='project-desc'>VusUI是汲取了很多优秀的前端开发框架来整合而产生的。她是一个跨屏响应式前端CSS/HTML框架。</div>
+<div class='project-latest'>
+<span class='text-muted' title='2018-05-03 09:31:16 +0800'>
+接近2年前
+</span>
+<span class='text-muted'>
+</span>
+</div>
+</div>
+</div>
+<div class='item'>
+<a class="project-creator-link ui avatar image pull-left" href="/muse"><img alt="689 muse 1578913854" src="https://portrait.gitee.com/uploads/avatars/user/0/689_muse_1578913854.jpg!avatar60" />
+</a><div class='content'>
+<div class='project-title'>
+<div class='title-left'>
+<h3>
+<a class="title project-namespace-path" href="/muse/puerh" target="_blank" title="缪斯的情人/Puerh">缪斯的情人/Puerh</a>
+</h3>
+<i class='iconfont icon-recommended js-popup-default' data-position='right center' title='码云推荐项目'></i>
+
+<span class='project-meta'>
+<a class="ui small label lang-label is-lang" href="/explore/starred?lang=CSS">CSS</a>
+<a class="ui small label lang-label" href="/explore/webui?lang=CSS">WebUI组件/框架</a>
+</span>
+</div>
+<div class='explore-project__meta-social pull-right'>
+<a class="section" href="/muse/puerh/watchers" title="关注数"><i class='iconfont icon-watch'></i>
+<span>28</span>
+</a><a class="section" href="/muse/puerh/stargazers" title="收藏数"><i class='iconfont icon-star'></i>
+<span>85</span>
+</a><a class="section" href="/muse/puerh/members" title="Fork 数"><i class='iconfont icon-fork'></i>
+<span>49</span>
+</a></div>
+
+</div>
+<div class='project-desc'>百姓网前端UI库</div>
+<div class='project-latest'>
+<span class='text-muted' title='2013-06-03 17:46:05 +0800'>
+接近7年前
+</span>
+<span class='text-muted'>
+</span>
+</div>
+</div>
+</div>
+<div class='item'>
+<a class="project-creator-link ui avatar image pull-left" href="/seconds-of-code"><img avatar="30秒学代码-seconds-of-code" />
+</a><div class='content'>
+<div class='project-title'>
+<div class='title-left'>
+<h3>
+<a class="title project-namespace-path" href="/seconds-of-code/30-seconds-of-css" target="_blank" title="30秒学代码/30-seconds-of-css">30秒学代码/30-seconds-of-css</a>
+</h3>
+<i class='iconfont icon-recommended js-popup-default' data-position='right center' title='码云推荐项目'></i>
+
+<span class='project-meta'>
+<a class="ui small label lang-label is-lang" href="/explore/starred?lang=CSS">CSS</a>
+<a class="ui small label lang-label" href="/explore/sample-code?lang=CSS">教程配套代码</a>
+<a class="ui small label lang-label" href="/explore/starred?lang=CSS&amp;license=CC0-1.0">CC0-1.0</a>
+</span>
+</div>
+<div class='explore-project__meta-social pull-right'>
+<a class="section" href="/seconds-of-code/30-seconds-of-css/watchers" title="关注数"><i class='iconfont icon-watch'></i>
+<span>35</span>
+</a><a class="section" href="/seconds-of-code/30-seconds-of-css/stargazers" title="收藏数"><i class='iconfont icon-star'></i>
+<span>70</span>
+</a><a class="section" href="/seconds-of-code/30-seconds-of-css/members" title="Fork 数"><i class='iconfont icon-fork'></i>
+<span>8</span>
+</a></div>
+
+</div>
+<div class='project-desc'>本仓库收集一些精选的 CSS 代码片段，这些代码你可以在 30 秒之内学习并理解</div>
+<div class='project-latest'>
+<span class='text-muted' title='2018-10-06 15:16:59 +0800'>
+1年多前
+</span>
+<span class='text-muted'>
+</span>
+</div>
+</div>
+</div>
+<div class='item'>
+<a class="project-creator-link ui avatar image pull-left" href="/fornane"><img alt="4558 fornane 1578914265" src="https://portrait.gitee.com/uploads/avatars/user/1/4558_fornane_1578914265.jpg!avatar60" />
+</a><div class='content'>
+<div class='project-title'>
+<div class='title-left'>
+<h3>
+<a class="title project-namespace-path" href="/fornane/talk2me-im" target="_blank" title="fornane/talk2me-IM">fornane/talk2me-IM</a>
+</h3>
+<i class='iconfont icon-recommended js-popup-default' data-position='right center' title='码云推荐项目'></i>
+
+<span class='project-meta'>
+<a class="ui small label lang-label is-lang" href="/explore/starred?lang=CSS">CSS</a>
+<a class="ui small label lang-label" href="/explore/im?lang=CSS">IM即时通讯/聊天</a>
+</span>
+</div>
+<div class='explore-project__meta-social pull-right'>
+<a class="section" href="/fornane/talk2me-im/watchers" title="关注数"><i class='iconfont icon-watch'></i>
+<span>27</span>
+</a><a class="section" href="/fornane/talk2me-im/stargazers" title="收藏数"><i class='iconfont icon-star'></i>
+<span>70</span>
+</a><a class="section" href="/fornane/talk2me-im/members" title="Fork 数"><i class='iconfont icon-fork'></i>
+<span>34</span>
+</a></div>
+
+</div>
+<div class='project-desc'>基于node.js+mongodb的在线即时聊天系统：
+
+主要中间件：
+
+展现层：
+1.bootstrap
+2.jquery
+
+通信层：
+socket.io
+
+逻辑及持久层：
+1.node.js
+2.node-mongodb-native
+
+数据库系统：mongodb
+</div>
+<div class='project-latest'>
+<span class='text-muted' title='2014-04-29 13:40:04 +0800'>
+接近6年前
+</span>
+<span class='text-muted'>
+</span>
+</div>
+</div>
+</div>
+<div class='item'>
+<a class="project-creator-link ui avatar image pull-left" href="/liulangnan"><img alt="460205 liulangnan 1578924536" src="https://portrait.gitee.com/uploads/avatars/user/153/460205_liulangnan_1578924536.png!avatar60" />
+</a><div class='content'>
+<div class='project-title'>
+<div class='title-left'>
+<h3>
+<a class="title project-namespace-path" href="/liulangnan/aui" target="_blank" title="流浪男/aui">流浪男/aui</a>
+</h3>
+<i class='iconfont icon-recommended js-popup-default' data-position='right center' title='码云推荐项目'></i>
+
+<span class='project-meta'>
+<a class="ui small label lang-label is-lang" href="/explore/starred?lang=CSS">CSS</a>
+<a class="ui small label lang-label" href="/explore/webui?lang=CSS">WebUI组件/框架</a>
+<a class="ui small label lang-label" href="/explore/starred?lang=CSS&amp;license=MIT">MIT</a>
+</span>
+</div>
+<div class='explore-project__meta-social pull-right'>
+<a class="section" href="/liulangnan/aui/watchers" title="关注数"><i class='iconfont icon-watch'></i>
+<span>27</span>
+</a><a class="section" href="/liulangnan/aui/stargazers" title="收藏数"><i class='iconfont icon-star'></i>
+<span>68</span>
+</a><a class="section" href="/liulangnan/aui/members" title="Fork 数"><i class='iconfont icon-fork'></i>
+<span>10</span>
+</a></div>
+
+</div>
+<div class='project-desc'>移动端UI快速布局解决方案，一个靠谱的高性能移动前端框架</div>
+<div class='project-latest'>
+<span class='text-muted' title='2016-04-21 20:47:32 +0800'>
+接近4年前
+</span>
+<span class='text-muted'>
+</span>
+</div>
+</div>
+</div>
+</div>
+
+<div class='column center aligned'>
+<div class='ui tiny pagination menu' id='git-discover-page'>
+
+<a class="item active" href="/explore/starred?lang=CSS">1</a>
+
+<a class="item" href="/explore/starred?lang=CSS&amp;page=2" rel="next">2</a>
+
+<a class="item" href="/explore/starred?lang=CSS&amp;page=3">3</a>
+
+<div class='disabled item'>
+...
+</div>
+
+<a class="item" href="/explore/starred?lang=CSS&amp;page=99">99</a>
+
+<a class="item" href="/explore/starred?lang=CSS&amp;page=100">100</a>
+
+<a class="icon item" href="/explore/starred?lang=CSS&amp;page=2" rel="next"><i class='fa fa-angle-right'></i>
+</a>
+</div>
+</div>
+
+</div>
+</div>
+<div class='four wide column'>
+<div class='explore-languagues'>
+<div class='explore-languagues__container'>
+<div class='ui secondary vertical menu'>
+<a class="item " href="/explore/starred"><span>全部语言</span>
+<span class='pull-right'>1.7M</span>
+</a><a class="item " href="/explore/starred?lang=Java"><span>Java</span>
+<span class='pull-right'>269.4K</span>
+</a><a class="item " href="/explore/starred?lang=JavaScript"><span>JavaScript</span>
+<span class='pull-right'>97.2K</span>
+</a><a class="item " href="/explore/starred?lang=Go"><span>Go</span>
+<span class='pull-right'>78.6K</span>
+</a><a class="item " href="/explore/starred?lang=Python"><span>Python</span>
+<span class='pull-right'>71.9K</span>
+</a><a class="item " href="/explore/starred?lang=PHP"><span>PHP</span>
+<span class='pull-right'>58.4K</span>
+</a><a class="item " href="/explore/starred?lang=Objective-C"><span>Objective-C</span>
+<span class='pull-right'>33.4K</span>
+</a><a class="item " href="/explore/starred?lang=Html"><span>HTML</span>
+<span class='pull-right'>29.5K</span>
+</a><a class="item " href="/explore/starred?lang=csharp"><span>C#</span>
+<span class='pull-right'>29.3K</span>
+</a><a class="item " href="/explore/starred?lang=Android"><span>Android</span>
+<span class='pull-right'>29.2K</span>
+</a></div>
+<div class='ui secondary vertical menu hide explore-languagues__detail-menu'>
+<a class="item " href="/explore/starred?lang=cpp"><span>C++</span>
+<span class='pull-right'>25.6K</span>
+</a><a class="item " href="/explore/starred?lang=C"><span>C</span>
+<span class='pull-right'>22.7K</span>
+</a><a class="item " href="/explore/starred?lang=Ruby"><span>Ruby</span>
+<span class='pull-right'>16.4K</span>
+</a><a class="item " href="/explore/starred?lang=NodeJS"><span>NodeJS</span>
+<span class='pull-right'>9.7K</span>
+</a><a class="item " href="/explore/starred?lang=Swift"><span>Swift</span>
+<span class='pull-right'>8.2K</span>
+</a><a class="item " href="/explore/starred?lang=html-css"><span>HTML/CSS</span>
+<span class='pull-right'>5.7K</span>
+</a><a class="item " href="/explore/starred?lang=others"><span>其他</span>
+<span class='pull-right'>5.6K</span>
+</a><a class="item active" href="/explore/starred?lang=CSS"><span>CSS</span>
+<span class='pull-right'>5.4K</span>
+</a><a class="item " href="/explore/starred?lang=Shell"><span>Shell</span>
+<span class='pull-right'>4.7K</span>
+</a><a class="item " href="/explore/starred?lang=TypeScript"><span>TypeScript</span>
+<span class='pull-right'>4K</span>
+</a><a class="item " href="/explore/starred?lang=weixin"><span>微信</span>
+<span class='pull-right'>2.2K</span>
+</a><a class="item " href="/explore/starred?lang=Dart"><span>Dart</span>
+<span class='pull-right'>1.7K</span>
+</a><a class="item " href="/explore/starred?lang=Kotlin"><span>Kotlin</span>
+<span class='pull-right'>1.4K</span>
+</a><a class="item " href="/explore/starred?lang=c-cpp"><span>C/C++</span>
+<span class='pull-right'>1.4K</span>
+</a><a class="item " href="/explore/starred?lang=Scala"><span>Scala</span>
+<span class='pull-right'>1.3K</span>
+</a><a class="item " href="/explore/starred?lang=Lua"><span>Lua</span>
+<span class='pull-right'>1.3K</span>
+</a><a class="item " href="/explore/starred?lang=Matlab"><span>Matlab</span>
+<span class='pull-right'>1.3K</span>
+</a><a class="item " href="/explore/starred?lang=Docker"><span>Docker</span>
+<span class='pull-right'>824</span>
+</a><a class="item " href="/explore/starred?lang=Rust"><span>Rust</span>
+<span class='pull-right'>558</span>
+</a><a class="item " href="/explore/starred?lang=Visual+Basic"><span>Visual Basic</span>
+<span class='pull-right'>444</span>
+</a></div>
+<a class='show-more'>更多语言</a>
+</div>
+</div>
+<script>
+  $(function () {
+    var $detailMenu = $('.explore-languagues__detail-menu')
+    var $showBtn = $('.explore-languagues .show-more')
+  
+    $showBtn.on('click', function () {
+      if ($detailMenu.hasClass('hide')) {
+        $detailMenu.removeClass('hide')
+        $showBtn.text('收起')
+      } else {
+        $detailMenu.addClass('hide')
+        $showBtn.text('更多语言')
+      }
+    })
+  
+    if ($detailMenu.has('.active').length) {
+      $showBtn.trigger('click')
+    }
+  })
+</script>
+
+<div class='explore-trending-projects__container'>
+<div class='ui pointing secondary menu'>
+<div class='item active' data-tab='daily-trending'>今日热门</div>
+<div class='item' data-tab='weekly-trending'>本周热门</div>
+</div>
+<div class='ui tab active' data-tab='daily-trending'>
+<div class='explore-trending-projects__list'>
+<div class='explore-trending-projects__list-item'>
+<div class='title'>
+<a href="/theseason5/theme" target="_blank" title="第五季/theme">第五季/theme</a>
+</div>
+<div class='description'>各种后台管理模板</div>
+</div>
+<div class='explore-trending-projects__list-item'>
+<div class='title'>
+<a href="/edata-code/SimpleCnblogTheme" target="_blank" title="edata/SimpleCnblogTheme">edata/SimpleCnblogTheme</a>
+</div>
+<div class='description'>简约博客园主题(Cnblog Theme)</div>
+</div>
+<div class='explore-trending-projects__list-item'>
+<div class='title'>
+<a href="/brose/qjdxds2014" target="_blank" title="brose/qjdxds2014">brose/qjdxds2014</a>
+</div>
+<div class='description'>2014曲江导游大赛答题系统</div>
+</div>
+<div class='explore-trending-projects__list-item'>
+<div class='title'>
+<a href="/zdhxiong/mdui" target="_blank" title="zdhxiong/mdui">zdhxiong/mdui</a>
+</div>
+<div class='description'>MDUI 是一个基于 Material Design 的前端框架。</div>
+</div>
+</div>
+</div>
+<div class='ui tab' data-tab='weekly-trending'>
+<div class='explore-trending-projects__list'>
+<div class='explore-trending-projects__list-item'>
+<div class='title'>
+<a href="/sunhaogogo/brand_website" target="_blank" title="孙豪GOGO/品牌网站">孙豪GOGO/品牌网站</a>
+</div>
+<div class='description'>包含品牌网站30个左右。
+网站自适应响应式，移动端手机端。
+pc端主要用到了媒体查询+div布局
+移动端主要采用rem+flex布局</div>
+</div>
+<div class='explore-trending-projects__list-item'>
+<div class='title'>
+<a href="/CODESRA/zenbed" target="_blank" title="CODESRA/zenbed">CODESRA/zenbed</a>
+</div>
+<div class='description'>CSS框架</div>
+</div>
+<div class='explore-trending-projects__list-item'>
+<div class='title'>
+<a href="/amazeui/amazeui" target="_blank" title="AllMobilize/amazeui">AllMobilize/amazeui</a>
+</div>
+<div class='description'>Amaze UI，中国首个开源 HTML5 跨屏前端框架。（只做代码同步，Issue/PR 请到 GitHub）</div>
+</div>
+<div class='explore-trending-projects__list-item'>
+<div class='title'>
+<a href="/monksoul/Hui" target="_blank" title="百小僧/Hui">百小僧/Hui</a>
+</div>
+<div class='description'>Hui是一款与众不同，却包罗万象的移动UI框架。</div>
+</div>
+<div class='explore-trending-projects__list-item'>
+<div class='title'>
+<a href="/qietuwang/miqie" target="_blank" title="qietuwang/miqie">qietuwang/miqie</a>
+</div>
+<div class='description'>是由切图网针对webapp移动前端自主开发的一款html5/css3框架</div>
+</div>
+<div class='explore-trending-projects__list-item'>
+<div class='title'>
+<a href="/longwang225/longblogv20front_page" target="_blank" title="Sorrow/LongBlog v2.0 前端页面">Sorrow/LongBlog v2.0 前端页面</a>
+</div>
+<div class='description'>一个java程序员的个人博客，记录博主的学习,生活中的一些有趣的事，并分享Java方面技术和源码。</div>
+</div>
+<div class='explore-trending-projects__list-item'>
+<div class='title'>
+<a href="/theseason5/theme" target="_blank" title="第五季/theme">第五季/theme</a>
+</div>
+<div class='description'>各种后台管理模板</div>
+</div>
+<div class='explore-trending-projects__list-item'>
+<div class='title'>
+<a href="/joyceworks/joyce" target="_blank" title="joyceworks/joyce">joyceworks/joyce</a>
+</div>
+<div class='description'>A sample of JWT Login Authentication with Vue.js and Vuex</div>
+</div>
+<div class='explore-trending-projects__list-item'>
+<div class='title'>
+<a href="/mizirogi/OneIndex" target="_blank" title="mizirogi/OneIndex">mizirogi/OneIndex</a>
+</div>
+<div class='description'>A browser home page</div>
+</div>
+<div class='explore-trending-projects__list-item'>
+<div class='title'>
+<a href="/edata-code/SimpleCnblogTheme" target="_blank" title="edata/SimpleCnblogTheme">edata/SimpleCnblogTheme</a>
+</div>
+<div class='description'>简约博客园主题(Cnblog Theme)</div>
+</div>
+</div>
+</div>
+</div>
+<script>
+  $(function () {
+    $('.explore-trending-projects__container .menu .item').tab()
+  })
+</script>
+
+</div>
+</div>
+</div>
+</div>
+</div>
+
+</div>
+<footer id='git-footer-main'>
+<div class='ui container'>
+<div class='ui two column grid '>
+<div class='nine wide column git-footer-left'>
+<p><a href="https://gitee.com/" target="_blank">© Gitee.com</a></p>
+<div class='ui four column grid' id='footer-left'>
+<div class='column'>
+<div class='ui link list'>
+<div class='item'>
+<a class="item" href="/about_us">关于我们</a>
+</div>
+<div class='item'>
+<a class="item" href="/terms">使用条款</a>
+</div>
+<div class='item'>
+<a class="item" href="/oschina/git-osc/issues">意见建议</a>
+</div>
+<div class='item'>
+<a class="item" href="/links.html">合作伙伴</a>
+</div>
+</div>
+</div>
+<div class='column'>
+<div class='ui link list'>
+<div class='item'>
+<a class="item" href="/all-about-git">Git 大全</a>
+</div>
+<div class='item'>
+<a class="item" href="https://oschina.gitee.io/learn-git-branching/">Git 命令学习</a>
+</div>
+<div class='item'>
+<a class="item" href="https://copycat.gitee.com/">代码克隆检测</a>
+</div>
+<div class='item'>
+<a class="item" href="/appclient">APP与插件下载</a>
+</div>
+</div>
+</div>
+<div class='column'>
+<div class='ui link list'>
+<div class='item'>
+<a class="item" href="/gitee-stars">码云封面人物</a>
+</div>
+<div class='item'>
+<a class="item" href="/gvp">GVP项目</a>
+</div>
+<div class='item'>
+<a class="item" href="https://blog.gitee.com/">码云博客</a>
+</div>
+<div class='item'>
+<a class="item" href="/enterprises#nonprofit-plan">Gitee 公益计划</a>
+</div>
+</div>
+</div>
+<div class='column'>
+<div class='ui link list'>
+<div class='item'>
+<a class="item" href="/api/v5/swagger">OpenAPI</a>
+</div>
+<div class='item'>
+<a class="item" href="/help">帮助文档</a>
+</div>
+<div class='item'>
+<a class="item" href="/self_services">在线自助服务</a>
+</div>
+<div class='item'>
+<a class="item" href="/git-osc">更新日志</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class='seven wide column right aligned followus git-footer-right'>
+<div class='qrcode weixin'>
+<img alt="Qrcode weixin" src="https://assets.gitee.com/assets/qrcode-weixin-9e7cfb27165143d2b8e8b268a52ea822.jpg" />
+<p class='weixin-text'>微信服务号</p>
+</div>
+<div class='phone-and-qq column'>
+<div class='ui list official-support-container'>
+<div class='item'>
+<a class="icon-popup" href="//shang.qq.com/wpa/qunwpa?idkey=df785aa7af71f7d74149ab062742d761b845464350ecba25eb440357a3e573b7" title="点击加入码云官方群"><i class='iconfont icon-logo-qq'></i>
+<span>官方技术交流QQ群：1050025484</span>
+</a></div>
+<div class='item mail-and-zhihu'>
+<a href="mailto: git@oschina.cn"><i class='iconfont icon-ic-mail'></i>
+<span id='git-footer-email'>git#oschina.cn</span>
+</a><a href="https://www.zhihu.com/org/ma-yun-osc/ " target="_blank"><i class='iconfont icon-zhihu'></i>
+<span>码云Gitee</span>
+</a></div>
+<div class='item'>企业版售前及售后使用咨询：400-606-0201</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class='bottombar'>
+<div class='ui container'>
+<div class='ui grid'>
+<div class='seven wide column partner'>
+<div class='copyright'>
+<a href="http://www.beian.miit.gov.cn/">粤ICP备12009483号</a>
+深圳市奥思网络科技有限公司版权所有
+</div>
+</div>
+<div class='nine wide column right aligned'>
+<i class='icon world'></i>
+<a href="/language/zh-CN">简 体</a>
+/
+<a href="/language/zh-TW">繁 體</a>
+/
+<a href="/language/en">English</a>
+</div>
+</div>
+</div>
+</div>
+</footer>
+<script>
+  var officialEmail = $('#git-footer-email').text()
+  $('#git-footer-main .icon-popup').popup({ position: 'bottom center' })
+  $('#git-footer-email').text(officialEmail.replace('#', '@'))
+</script>
+
+
+<div class='side-toolbar'>
+<div class='button toolbar-help'>
+<i class='iconfont icon-help'></i>
+</div>
+<div class='ui popup left center dark'>点此查找更多帮助</div>
+<div class='toolbar-help-dialog'>
+<div class='toolbar-dialog-header'>
+<h3 class='toolbar-dialog-title'>搜索帮助</h3>
+<form accept-charset="UTF-8" action="/help/load_keywords_data" class="toolbar-help-search-form" method="get"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /></div>
+<div class='ui icon input fluid toolbar-help-search'>
+<input name='keywords' placeholder='请输入产品名称或问题' type='text'>
+<i class='icon search'></i>
+</div>
+</form>
+
+<i class='iconfont icon-close toolbar-dialog-close-icon'></i>
+</div>
+<div class='toolbar-dialog-content'>
+<div class='toolbar-help-hot-search'>
+<div class='toolbar-roll'>
+<a class="init active" href="https://oschina.gitee.io/learn-git-branching/?utm_source==gitee-help-widget" title="Git 命令在线学习"><i class='Blue icon icon-command iconfont'></i>
+<span>Git 命令在线学习</span>
+</a><a class="init " href="https://gitee.com/help/articles/4261?utm_source==gitee-help-widget" title="如何在码云上导入 GitHub 仓库"><i class='icon icon-clipboard iconfont orange'></i>
+<span>如何在码云上导入 GitHub 仓库</span>
+</a></div>
+<div class='toolbar-list'>
+<div class='toolbar-list-item'>
+<a href="/help/articles/4114">Git 仓库基础操作</a>
+</div>
+<div class='toolbar-list-item'>
+<a href="/help/articles/4166">企业版和社区版功能对比</a>
+</div>
+<div class='toolbar-list-item'>
+<a href="/help/articles/4191">SSH 公钥设置</a>
+</div>
+<div class='toolbar-list-item'>
+<a href="/help/articles/4194">如何处理代码冲突</a>
+</div>
+<div class='toolbar-list-item'>
+<a href="/help/articles/4232">仓库体积过大，如何减小？</a>
+</div>
+<div class='toolbar-list-item'>
+<a href="/help/articles/4279">如何找回被删除的仓库数据</a>
+</div>
+<div class='toolbar-list-item'>
+<a href="/help/articles/4283">码云使用容量说明</a>
+</div>
+<div class='toolbar-list-item'>
+<a href="/help/articles/4284">GitHub仓库快速导入Gitee及同步更新</a>
+</div>
+</div>
+</div>
+<div class='toolbar-help-search-reseult'>
+<div class='toolbar-help-flex-column'>
+<div class='ui centered inline loader toolbar-help-loader'></div>
+<div class='toolbar-list'></div>
+<div class='toolbar-help-link-to-help'>
+<a href="" target="_blank">查看更多搜索结果</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script>
+  var opt = { position: 'left center' };
+  var $helpSideToolbar = $(".button.toolbar-help");
+  var $toolbarRoll = $('.toolbar-roll');
+  
+  $(function() {
+    if (false) {
+      $helpSideToolbar.popup(opt);
+    } else {
+      $helpSideToolbar.popup('show', opt);
+      setTimeout(function() {
+        $helpSideToolbar.popup('hide', opt);
+      }, 3000);
+    }
+  
+    if ($toolbarRoll.length) {
+      setInterval(function() {
+        var $nextActiveLink = $toolbarRoll.find('a.active').next();
+        if (!$nextActiveLink.length) {
+          $nextActiveLink = $toolbarRoll.find('a:first-child');
+        }
+        $nextActiveLink.attr('class', 'active').siblings().removeClass('active init');
+      }, 5000);
+    }
+  })
+</script>
+
+<div class='button share-link'>
+<i class='iconfont icon-share'></i>
+</div>
+<div class='ui popup dark'>
+<div class='header'>
+分享到
+</div>
+<div class='bdsharebuttonbox' style='display: flex'>
+<a class='iconfont icon-home-service-wechat' data-cmd='weixin' title='分享到微信'></a>
+<a class='iconfont icon-weibo' data-cmd='tsina' title='分享到新浪微博'></a>
+<a class='iconfont icon-qq' data-cmd='sqq' title='分享到QQ好友'></a>
+<a class='iconfont icon-qzone' data-cmd='qzone' title='分享到QQ空间'></a>
+</div>
+</div>
+<div class='button gotop popup' id='gotop'>
+<i class='iconfont icon-top'></i>
+</div>
+<div class='ui popup dark'>回到顶部</div>
+</div>
+<style>
+  .side-toolbar .bdsharebuttonbox a {
+    font-size: 24px;
+    color: white !important;
+    opacity: 0.9;
+    margin: 6px 6px 0px 6px;
+    background-image: none;
+    text-indent: 0;
+    height: auto;
+    width: auto;
+  }
+</style>
+<script>
+  (function() {
+    $('#project-user-message').popup({
+      position: 'left center'
+    });
+  
+  }).call(this);
+</script>
+<script>
+  Gitee.initSideToolbar({})
+</script>
+<script>
+  window._bd_share_config = {
+    "common": {
+      "bdSnsKey": {},
+      "bdText": document.title,
+      "bdMini": "1",
+      "bdMiniList": ["bdxc","tqf","douban","bdhome","sqq","thx","ibaidu","meilishuo","mogujie","diandian","huaban","duitang","hx","fx","youdao","sdo","qingbiji","people","xinhua","mail","isohu","yaolan","wealink","ty","iguba","fbook","twi","linkedin","h163","evernotecn","copy","print"],
+      "bdPic": "",
+      "bdStyle": "1",
+      "bdSize": "32"
+    },
+    "share": {}
+  }
+</script>
+<script src="/bd_share/static/api/js/share.js"></script>
+
+
+
+
+
+<script>
+  (function() {
+    this.__gac = {
+      domain: 'www.oschina.net'
+    };
+  
+  }).call(this);
+</script>
+<script defer src='//www.oschina.net/public/javascripts/cjl/ga.js?t=20160926' type='text/javascript'></script>
+
+</body>
+</html>
