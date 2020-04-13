@@ -1,0 +1,3761 @@
+<!DOCTYPE html>
+<html lang='zh-CN'>
+<link href="https://assets.gitee.com/assets/help_center/application-fc88822e0b30521ef9b87eadaf37469a.css" media="screen" rel="stylesheet" />
+<head>
+<title>企业版和社区版功能对比 - 码云 Gitee.com</title>
+<link href="https://assets.gitee.com/assets/favicon-9007bd527d8a7851c8330e783151df58.ico" rel="shortcut icon" type="image/vnd.microsoft.icon" />
+<meta charset='utf-8'>
+<meta content='always' name='referrer'>
+<meta content='码云' property='og:site_name'>
+<meta content='Object' property='og:type'>
+<meta content='http://gitee.com/help/articles/4166' property='og:url'>
+<meta content='https://gitee.com/static/images/logo_themecolor.png' itemprop='image' property='og:image'>
+<meta content='企业版和社区版功能对比 - 码云 Gitee.com' itemprop='name' property='og:title'>
+<meta content='码云(gitee.com)是 OSCHINA.NET 推出的代码托管平台，支持 Git 和 SVN，提供免费的私有仓库托管。目前已有超过 500 万的开发者选择码云。' property='og:description'>
+<meta content='码云,代码托管,git,Git@OSC,gitee.com,开源,内源,项目管理,版本控制,开源代码,代码分享,项目协作,开源项目托管,免费代码托管,Git代码托管,Git托管服务' name='Keywords'>
+<meta content='码云(gitee.com)是 OSCHINA.NET 推出的代码托管平台，支持 Git 和 SVN，提供免费的私有仓库托管。目前已有超过 500 万的开发者选择码云。' itemprop='description' name='Description'>
+
+<meta content="IE=edge" http-equiv="X-UA-Compatible" />
+<meta content="authenticity_token" name="csrf-param" />
+<meta content="m2a1XCtEarOvVCJDFrsl43h2JeCNkJIzGiXMOQXsPMk=" name="csrf-token" />
+
+<link href="https://assets.gitee.com/assets/application-4353e40c527157901930256fb2cba2d4.css" media="screen" rel="stylesheet" />
+<script>
+//<![CDATA[
+window.gon = {};gon.locale="zh-CN";gon.sentry_dsn=null;gon.baidu_register_hm_push=null;gon.info={"controller_path":"help","action_name":"article","current_user":false};gon.tour_env={"current_user":null,"action_name":"article","original_url":"http://gitee.com/help/articles/4166","controller_path":"help"};
+//]]>
+</script>
+<script src="https://assets.gitee.com/assets/static/sentry-5.1.0-109ee3d8895a239331efcf947ba7f5d8.js"></script>
+<script src="https://assets.gitee.com/assets/application-25134bf44f1dbb308bb450bdb036a1cc.js"></script>
+<script src="https://assets.gitee.com/assets/lib/jquery.timeago.zh-CN-9c36ca7c4899a28168320613879d208a.js"></script>
+
+
+<script src="//res.wx.qq.com/open/js/jweixin-1.2.0.js"></script>
+<script>
+  var title = document.title.replace(/( - Gitee| - 码云)$/, '')
+      imgUrl = '';
+  
+  document.addEventListener('DOMContentLoaded', function(event) {
+    var imgUrlEl = document.querySelector('.readme-box .markdown-body > img, .readme-box .markdown-body :not(a) > img');
+    imgUrl = imgUrlEl && imgUrlEl.getAttribute('src');
+  
+    if (!imgUrl) {
+      imgUrlEl = document.querySelector('meta[itemprop=image]');
+      imgUrl = imgUrlEl && imgUrlEl.getAttribute('content'); 
+      imgUrl = imgUrl || "https://gitee.com/static/images/logo_themecolor.png";
+    }
+  
+    wx.config({
+      debug: false,
+      appId: "wxff219d611a159737",
+      timestamp: "1586737074",
+      nonceStr: "796ca8860fc1a95c92735474ec8aeccc",
+      signature: "14f16f7af318cb21b40a86a1e88add6dcf2dc91d",
+      jsApiList: [
+        'onMenuShareTimeline',
+        'onMenuShareAppMessage'
+      ]
+    });
+  
+    wx.ready(function () {
+      wx.onMenuShareTimeline({
+        title: title, // 分享标题
+        link: "https://gitee.com/help/articles/4166", // 分享链接，该链接域名或路径必须与当前页面对应的公众号JS安全域名一致
+        imgUrl: imgUrl // 分享图标
+      });
+      wx.onMenuShareAppMessage({
+        title: title, // 分享标题
+        link: "https://gitee.com/help/articles/4166", // 分享链接，该链接域名或路径必须与当前页面对应的公众号JS安全域名一致
+        desc: document.querySelector('meta[name=Description]').getAttribute('content'),
+        imgUrl: imgUrl // 分享图标
+      });
+    });
+    wx.error(function(res){
+      console.error('err', res)
+    });
+  })
+</script>
+
+<script type='text/x-mathjax-config'>
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    displayMath: [["$$","$$"],["\\[","\\]"]],
+    processEscapes: true,
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
+    ignoreClass: "container|files",
+    processClass: "markdown-body"
+  }
+});
+</script>
+<script src="https://assets.gitee.com/uploads/resources/MathJax-2.7.2/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+<script>
+  (function () {
+    var messages = {
+      'zh-CN': {
+        addResult: '增加 <b>{term}</b>',
+        count: '已选择 {count}',
+        maxSelections: '最多 {maxCount} 个选择',
+        noResults: '未找到结果',
+        serverError: '连接服务器时发生错误'
+      },
+      'zh-TW': {
+        addResult: '增加 <b>{term}</b>',
+        count: '已選擇 {count}',
+        maxSelections: '最多 {maxCount} 個選擇',
+        noResults: '未找到結果',
+        serverError: '連接服務器時發生錯誤'
+      }
+    }
+  
+    if (messages[gon.locale]) {
+      $.fn.dropdown.settings.message = messages[gon.locale]
+    }
+  }());
+</script>
+
+<!--[if lt IE 10]>
+<script>
+    window.location.href = "/incompatible.html";
+</script>
+<![endif]-->
+</head>
+
+<script src="https://assets.gitee.com/assets/help_center/app-5aa7b521312fb8238021864089268fa5.js"></script>
+<body class='ui_basic gitee-help-layout' id='help-article'>
+<header class='common-header fixed large noborder' id='git-header-nav'>
+<div class='ui container'>
+<div class='ui menu header-menu'>
+<div class='git-nav-expand-bar'>
+<i class='iconfont icon-mode-table'></i>
+</div>
+<div class='gitee-nav__sidebar'>
+<div class='gitee-nav__sidebar-container'>
+<div class='gitee-nav__sidebar-top'>
+<div class='gitee-nav__avatar-box'></div>
+<div class='gitee-nav__buttons-box'>
+<a class="ui button small fluid orange" href="/login">登录</a>
+<a class="ui button small fluid basic is-register" href="/signup">注册</a>
+</div>
+</div>
+<div class='gitee-nav__sidebar-middle'>
+<div class='gitee-nav__sidebar-list'>
+<ul>
+<li class='gitee-nav__sidebar-item'>
+<a href="/explore"><i class='iconfont icon-ic-discover'></i>
+<span class='gitee-nav__sidebar-name'>开源软件</span>
+</a></li>
+<li class='gitee-nav__sidebar-item'>
+<a href="/enterprises"><i class='iconfont icon-ic-enterprise'></i>
+<span class='gitee-nav__sidebar-name'>企业版</span>
+</a></li>
+<li class='gitee-nav__sidebar-item'>
+<a href="/education"><i class='iconfont icon-ic-education'></i>
+<span class='gitee-nav__sidebar-name'>高校版</span>
+</a></li>
+<li class='gitee-nav__sidebar-item split-line'></li>
+<li class='gitee-nav__sidebar-item'>
+<a href="/search"><i class='iconfont icon-ic-search'></i>
+<span class='gitee-nav__sidebar-name'>搜索</span>
+</a></li>
+<li class='gitee-nav__sidebar-item'>
+<a href="/help"><i class='iconfont icon-help-circle'></i>
+<span class='gitee-nav__sidebar-name'>帮助中心</span>
+</a></li>
+<li class='gitee-nav__sidebar-item'>
+<a href="/terms"><i class='iconfont icon-file'></i>
+<span class='gitee-nav__sidebar-name'>使用条款</span>
+</a></li>
+<li class='gitee-nav__sidebar-item'>
+<a href="/about_us"><i class='iconfont icon-issuepx'></i>
+<span class='gitee-nav__sidebar-name'>关于我们</span>
+</a></li>
+</ul>
+</div>
+</div>
+<div class='gitee-nav__sidebar-bottom'>
+<div class='gitee-nav__sidebar-close-button'>
+<i class='fa fa-angle-double-left'></i>
+</div>
+</div>
+</div>
+</div>
+
+<div class='item gitosc-logo'>
+<a href="/"><img alt='码云 Gitee — 基于 Git 的代码托管和研发协作平台' class='ui inline image' height='28' src='/static/images/logo.svg?t=158106664' title='码云 Gitee — 基于 Git 的代码托管和研发协作平台' width='95'>
+<img alt='码云 Gitee — 基于 Git 的代码托管和研发协作平台' class='ui inline black image' height='28' src='/static/images/logo-black.svg?t=158106664' title='码云 Gitee — 基于 Git 的代码托管和研发协作平台' width='95'>
+</a></div>
+<a class="item " href="/explore" title="开源软件">开源软件
+</a><a class="item " href="/enterprises" title="企业版">企业版
+<sup class='ui red label'>
+特惠
+</sup>
+</a><a class="item " href="/education" title="高校版">高校版
+</a><a class="item" href="https://blog.gitee.com/" id="gitee-blog" target="_blank" title="博客">博客
+</a><div class='center responsive-logo'>
+<a href="/"><img alt='码云 Gitee — 基于 Git 的代码托管和研发协作平台' class='ui inline image' height='24' src='/static/images/logo.svg?t=158106664' title='码云 Gitee — 基于 Git 的代码托管和研发协作平台' width='85'>
+<img alt='码云 Gitee — 基于 Git 的代码托管和研发协作平台' class='ui inline black image' height='24' src='/static/images/logo-black.svg?t=158106664' title='码云 Gitee — 基于 Git 的代码托管和研发协作平台' width='85'>
+</a></div>
+<div class='right menu userbar' id='git-nav-user-bar'>
+<form accept-charset="UTF-8" action="/search" class="ui item" data-text-filter="搜索格式不正确" data-text-require="搜索关键字不能少于1个" id="navbar-search-form" method="get"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /></div>
+<input id="navbar-search-type" name="type" type="hidden" />
+<input id="fork_filter" name="fork_filter" type="hidden" value="on" />
+<div class='ui search'>
+<input class="prompt" id="navbar-search-input" name="q" placeholder="搜索项目" type="text" value="" />
+</div>
+</form>
+
+<script>
+  var can_search_in_repo = 0,
+      repo = "",
+      reponame = "";
+  
+  $(function() {
+    var $search = $('#navbar-search-form .ui.search');
+    $search.search({
+      apiSettings: {
+        url: '/search/relative_project?q={query}',
+        onResponse: function (res) {
+          if (res && res.status === 200 && res.data) {
+            var query = $search.search('get value');
+  
+            res.data.map(function (item) {
+              item.path_ns = '/' + item.path_ns;
+              item.icon = 'iconfont icon-project-public';
+            });
+            res.data.unshift({
+              name_ns: "在全站搜索 <b class='hl'>" + query +"</b> 相关项目",
+              path_ns: '/search?fork_filter=on&q=' + query,
+              icon: 'iconfont icon-search'
+            });
+            if(can_search_in_repo == 1) {
+              res.data.unshift({
+                name_ns: "在当前仓库搜索 <b class='hl'>" + query +"</b> 相关代码",
+                path_ns: '/search?type=code&q=' + query + '&repo=' + repo + '&reponame=' + reponame,
+                icon: 'iconfont icon-search'
+              });
+            }
+            return res;
+          } else {
+            return { data: [] };
+          }
+        }
+      },
+      fields: {
+        results: 'data',
+        description: 'name_ns',
+        url: 'path_ns',
+        icon: 'icon'
+      },
+      minCharacters: 1,
+      maxResults: 10,
+      searchDelay: 120,
+      showNoResults: false,
+      transition: 'fade'
+    });
+  });
+</script>
+
+<a class="item git-nav-user__login-item" href="/login">登录
+</a><a class="item git-nav-user__register-item" href="/signup">注册
+</a><script>
+  $('.destroy-user-session').on('click', function() {
+    $.cookie('access_token', null, { path: '/' });
+  })
+</script>
+
+</div>
+</div>
+</div>
+</header>
+<script>
+  Gitee.initNavbar()
+  Gitee.initRepoRemoteWay()
+</script>
+
+<div class='fixed-notice-infos'>
+<div class='all-messages'>
+<div class='ui info message' id='git-bulletin'>
+<a href=https://blog.gitee.com/2020/04/07/gitee-go/ target='_blank'>Gitee 企业版上线 DevOps 工具「Gitee Go」</a>
+<i class='icon remove' id='remove-bulletin'></i>
+</div>
+</div>
+<div class='ui container'>
+<div class='flash-messages' id='messages-container'></div>
+</div>
+<script>
+  (function() {
+    $(function() {
+      var $error_box, alertTip, notify_content, notify_options, template;
+      template = '<div data-notify="container" class="ui {0} message" role="alert">' + '<i data-notify="dismiss" class="close icon"></i>' + '<span data-notify="message">{2}</span>' + '</div>';
+      notify_content = null;
+      notify_options = {};
+      alertTip = '';
+      $error_box = $(".flash_error.flash_error_box");
+      if (notify_options.type === 'error' && $error_box.length > 0 && !$.isEmptyObject(notify_content.message)) {
+        if (notify_content.message === 'captcha_fail') {
+          alertTip = "验证码不正确";
+        } else if (notify_content.message === 'captcha_expired') {
+          alertTip = "验证码已过期，请点击刷新";
+        } else if (notify_content.message === 'not_found_in_database') {
+          alertTip = "帐号或者密码错误";
+        } else if (notify_content.message === 'not_found_and_show_captcha') {
+          alertTip = "帐号或者密码错误";
+        } else if (notify_content.message === 'phone_captcha_fail') {
+          alertTip = "手机验证码不通过";
+        } else {
+          alertTip = notify_content.message;
+        }
+        return $error_box.html(alertTip).show();
+      } else if (notify_content) {
+        if ("article" === 'third_party_binding') {
+          return $('#third_party_binding-message').html(notify_content.message).addClass('ui message red');
+        }
+        notify_options.delay = 3000;
+        notify_options.template = template;
+        notify_options.offset = {
+          x: 10,
+          y: 30
+        };
+        notify_options.element = '#messages-container';
+        return $.notify(notify_content, notify_options);
+      }
+    });
+  
+  }).call(this);
+</script>
+
+</div>
+<script>
+  (function() {
+    $(function() {
+      var setCookie;
+      setCookie = function(name, value) {
+        $.cookie(name, value, {
+          path: '/',
+          expires: 365
+        });
+      };
+      $('#remove-bulletin, #remove-bulletin-dashboard').on('click', function() {
+        setCookie('remove_bulletin', "gitee-maintain-1586321954");
+        $('#git-bulletin').hide();
+      });
+      $('#remove-member-bulletin').on('click', function() {
+        setCookie('remove_member_bulletin', "gitee_member_bulletin");
+        $(this).parent().hide();
+      });
+      return $('#remove-gift-bulletin').on('click', function() {
+        setCookie('remove_gift_bulletin', "gitee-gift-bulletin");
+        $(this).parent().hide();
+      });
+    });
+  
+  }).call(this);
+</script>
+<script>
+  function closeMessageBanner(pthis, type, val) {
+    var json = {}
+  
+    val = typeof val === 'undefined' ? null : val
+    $(pthis).parent().remove()
+    if (type === 'out_of_enterprise_member') {
+      json = {type: type, data: val}
+    } else if (type === 'enterprise_overdue') {
+      json = {type: type, data: val}
+    }
+    $.post('/profile/close_flash_tip', json)
+  }
+</script>
+
+<div class='pc-help-center-categories'>
+<div class='support-search-container'>
+<div class='title'>
+<a href='/help'>
+码云帮助中心
+</a>
+</div>
+<div class='search-container-wrap'>
+<div class='pc-help-center-search-wrap'>
+<form accept-charset="UTF-8" action="/help/search" autocomplete="off" data-text-require="搜索关键字不能少于1个" id="search-center-form" method="get"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /></div>
+<div class='ui input search-container'>
+<i class='iconfont icon-search'></i>
+<input id="search-doc" name="keywords" placeholder="请输入要搜索的问题，如“SSH公钥”" type="text" />
+</div>
+<div class='search-list'>
+<ul></ul>
+</div>
+</form>
+
+</div>
+<script>
+  Gitee.initSupportSearch();
+  var searchTimer;
+  $("#search-doc").bind("input propertychange",function() {
+    var initialValue = $('#search-doc').val().trim();
+    if (initialValue.length < 1) {
+      $('.search-list ul a').remove();
+      return;
+    }
+    clearTimeout(searchTimer);
+    searchTimer = setTimeout(function() {
+      $.get( "/help/load_keywords_data", {id: initialValue, per: 10}).done(function (data) {
+        var results = data.data;
+        $('.search-list ul a').remove();
+        for(var i = 0; i < results.length; i++) {
+          var searchResultContent = initResultList(results[i]);
+          var lastValue = $('#search-doc').val().trim();
+          if (lastValue.length > 0) {
+            $('.search-list ul').append(searchResultContent);
+          }
+        }
+      });
+    }, 1000)
+  })
+  
+  $('#search-center-form .icon-search').click(function() {
+    $('#search-center-form').submit();
+  })
+  
+  function highlighted(text) {
+    return text.replace(new RegExp($('#search-doc').val().trim(), 'gi'), '<span class="highlighted" style="color: red">$&</span>');
+  }
+  
+  function initResultList(result) {
+    var html = '';
+    html+='<a href=/help/articles/' + result.id + '><li>' + highlighted(result.title) + '</li></a>'
+    return html;
+  }
+</script>
+
+</div>
+</div>
+<div class='category-detail'>
+<div class='left-panel'>
+<a class="fluid ui basic orange button" href="/help/collected_article"><i class='icon iconfont icon-star-solid'></i>
+我的收藏
+</a><ul class='category-content'>
+<li class='item first-category'>
+<div class='first-category-content is-category category-content-0 '>
+<div class='child-cagetory model-name' data-id='45' data-parent='45'>
+<a href='/help/categories/45'>
+<span class=''>
+常见问题
+</span>
+</a>
+</div>
+</div>
+<ul class='child-tree child-wrap hide'>
+<li class='item '>
+<div class='  category-content-1 '>
+<div class='model-name' data-id='4284' data-parent='45'>
+<a href='/help/articles/4284'>
+<i class='icon-file iconfont'></i>
+<span class=''>
+GitHub仓库快速导入Gitee及同步更新
+</span>
+</a>
+</div>
+</div>
+</li>
+
+<li class='item '>
+<div class='  category-content-1 '>
+<div class='model-name' data-id='4283' data-parent='45'>
+<a href='/help/articles/4283'>
+<i class='icon-file iconfont'></i>
+<span class=''>
+码云使用容量说明
+</span>
+</a>
+</div>
+</div>
+</li>
+
+<li class='item '>
+<div class='  category-content-1 '>
+<div class='model-name' data-id='4243' data-parent='45'>
+<a href='/help/articles/4243'>
+<i class='icon-file iconfont'></i>
+<span class=''>
+如何举报码云上的仓库侵权
+</span>
+</a>
+</div>
+</div>
+</li>
+
+<li class='item '>
+<div class='  category-content-1 '>
+<div class='model-name' data-id='4200' data-parent='45'>
+<a href='/help/articles/4200'>
+<i class='icon-file iconfont'></i>
+<span class=''>
+为什么我收不到激活/通知/重置密码等邮件
+</span>
+</a>
+</div>
+</div>
+</li>
+
+<li class='item '>
+<div class='  category-content-1 '>
+<div class='model-name' data-id='4201' data-parent='45'>
+<a href='/help/articles/4201'>
+<i class='icon-file iconfont'></i>
+<span class=''>
+项目被屏蔽后如何处理？ 
+</span>
+</a>
+</div>
+</div>
+</li>
+
+<li class='item '>
+<div class='  category-content-1 '>
+<div class='model-name' data-id='4244' data-parent='45'>
+<a href='/help/articles/4244'>
+<i class='icon-file iconfont'></i>
+<span class=''>
+号码停用/遗失/注销，无法接收验证码/更换手机号码怎么办？
+</span>
+</a>
+</div>
+</div>
+</li>
+
+<li class='item '>
+<div class='  category-content-1 '>
+<div class='model-name' data-id='4287' data-parent='45'>
+<a href='/help/articles/4287'>
+<i class='icon-file iconfont'></i>
+<span class=''>
+如何解绑手机号？
+</span>
+</a>
+</div>
+</div>
+</li>
+
+<li class='item '>
+<div class='  category-content-1 '>
+<div class='model-name' data-id='4205' data-parent='45'>
+<a href='/help/articles/4205'>
+<i class='icon-file iconfont'></i>
+<span class=''>
+Git 操作常见问题
+</span>
+</a>
+</div>
+</div>
+</li>
+
+<li class='item '>
+<div class='  category-content-1 '>
+<div class='model-name' data-id='4298' data-parent='45'>
+<a href='/help/articles/4298'>
+<i class='icon-file iconfont'></i>
+<span class=''>
+Https推送代码报错：“remote : Incorrect username or password(acess token)”
+</span>
+</a>
+</div>
+</div>
+</li>
+
+<li class='item '>
+<div class='  category-content-1 '>
+<div class='model-name' data-id='4286' data-parent='45'>
+<a href='/help/articles/4286'>
+<i class='icon-file iconfont'></i>
+<span class=''>
+个人账户常见问题
+</span>
+</a>
+</div>
+</div>
+</li>
+
+<li class='item '>
+<div class='  category-content-1 '>
+<div class='model-name' data-id='4204' data-parent='45'>
+<a href='/help/articles/4204'>
+<i class='icon-file iconfont'></i>
+<span class=''>
+企业账户常见问题
+</span>
+</a>
+</div>
+</div>
+</li>
+
+<li class='item '>
+<div class='  category-content-1 '>
+<div class='model-name' data-id='4203' data-parent='45'>
+<a href='/help/articles/4203'>
+<i class='icon-file iconfont'></i>
+<span class=''>
+企业版套餐常见问题
+</span>
+</a>
+</div>
+</div>
+</li>
+
+</ul>
+</li>
+
+<li class='item first-category'>
+<div class='first-category-content is-category category-content-0 '>
+<div class='child-cagetory model-name' data-id='19' data-parent='19'>
+<a href='/help/categories/19'>
+<span class=''>
+快速开始
+</span>
+</a>
+</div>
+</div>
+<ul class='child-tree child-wrap hide'>
+<li class='item '>
+<div class='  category-content-1 '>
+<div class='model-name' data-id='4105' data-parent='19'>
+<a href='/help/articles/4105'>
+<i class='icon-file iconfont'></i>
+<span class=''>
+什么是码云
+</span>
+</a>
+</div>
+</div>
+</li>
+
+<li class='item '>
+<div class='  category-content-1 '>
+<div class='model-name' data-id='4113' data-parent='19'>
+<a href='/help/articles/4113'>
+<i class='icon-file iconfont'></i>
+<span class=''>
+注册码云账号
+</span>
+</a>
+</div>
+</div>
+</li>
+
+<li class='item '>
+<div class='  category-content-1 '>
+<div class='model-name' data-id='4120' data-parent='19'>
+<a href='/help/articles/4120'>
+<i class='icon-file iconfont'></i>
+<span class=''>
+创建你的第一个仓库
+</span>
+</a>
+</div>
+</div>
+</li>
+
+<li class='item '>
+<div class='  category-content-1 '>
+<div class='model-name' data-id='4122' data-parent='19'>
+<a href='/help/articles/4122'>
+<i class='icon-file iconfont'></i>
+<span class=''>
+提交第一行代码
+</span>
+</a>
+</div>
+</div>
+</li>
+
+<li class='item '>
+<div class='  category-content-1 '>
+<div class='model-name' data-id='4121' data-parent='19'>
+<a href='/help/articles/4121'>
+<i class='icon-file iconfont'></i>
+<span class=''>
+如何搜索开源项目
+</span>
+</a>
+</div>
+</div>
+</li>
+
+<li class='item '>
+<div class='  category-content-1 '>
+<div class='model-name' data-id='4270' data-parent='19'>
+<a href='/help/articles/4270'>
+<i class='icon-file iconfont'></i>
+<span class=''>
+企业版视频教程
+</span>
+</a>
+</div>
+</div>
+</li>
+
+<li class='item '>
+<div class='  category-content-1 '>
+<div class='model-name' data-id='4241' data-parent='19'>
+<a href='/help/articles/4241'>
+<i class='icon-file iconfont'></i>
+<span class=''>
+高校版实训教程
+</span>
+</a>
+</div>
+</div>
+</li>
+
+<li class='item '>
+<div class='  category-content-1 '>
+<div class='model-name' data-id='4261' data-parent='19'>
+<a href='/help/articles/4261'>
+<i class='icon-file iconfont'></i>
+<span class=''>
+如何导入 GitHub 等第三方 Git 仓库
+</span>
+</a>
+</div>
+</div>
+</li>
+
+</ul>
+</li>
+
+<li class='item first-category'>
+<div class='first-category-content is-category category-content-0 '>
+<div class='child-cagetory model-name' data-id='21' data-parent='21'>
+<a href='/help/categories/21'>
+<span class=''>
+代码管理
+</span>
+</a>
+</div>
+</div>
+<ul class='child-tree child-wrap hide'>
+<li class='item '>
+<div class='  category-content-1 '>
+<div class='model-name' data-id='4256' data-parent='21'>
+<a href='/help/articles/4256'>
+<i class='icon-file iconfont'></i>
+<span class=''>
+Git 只读文件支持
+</span>
+</a>
+</div>
+</div>
+</li>
+
+<li class='item '>
+<div class='  category-content-1 '>
+<div class='model-name' data-id='4192' data-parent='21'>
+<a href='/help/articles/4192'>
+<i class='icon-file iconfont'></i>
+<span class=''>
+git clone / 下载代码
+</span>
+</a>
+</div>
+</div>
+</li>
+
+<li class='item '>
+<div class='  category-content-1 '>
+<div class='model-name' data-id='4238' data-parent='21'>
+<a href='/help/articles/4238'>
+<i class='icon-file iconfont'></i>
+<span class=''>
+通过 https / ssh 协议推拉代码
+</span>
+</a>
+</div>
+</div>
+</li>
+
+<li class='item '>
+<div class='  category-content-1 '>
+<div class='model-name' data-id='4279' data-parent='21'>
+<a href='/help/articles/4279'>
+<i class='icon-file iconfont'></i>
+<span class=''>
+如何找回被删除的仓库数据
+</span>
+</a>
+</div>
+</div>
+</li>
+
+<li class='item '>
+<div class='  category-content-1 '>
+<div class='model-name' data-id='4133' data-parent='21'>
+<a href='/help/articles/4133'>
+<i class='icon-file iconfont'></i>
+<span class=''>
+克隆 Pull Request
+</span>
+</a>
+</div>
+</div>
+</li>
+
+<li class='item '>
+<div class='  category-content-1 '>
+<div class='model-name' data-id='4131' data-parent='21'>
+<a href='/help/articles/4131'>
+<i class='icon-file iconfont'></i>
+<span class=''>
+码云SVN支持
+</span>
+</a>
+</div>
+</div>
+</li>
+
+<li class='item '>
+<div class='  category-content-1 '>
+<div class='model-name' data-id='4251' data-parent='21'>
+<a href='/help/articles/4251'>
+<i class='icon-file iconfont'></i>
+<span class=''>
+码云SVN增加SSH支持
+</span>
+</a>
+</div>
+</div>
+</li>
+
+<li class='item '>
+<div class='  category-content-1 '>
+<div class='model-name' data-id='4143' data-parent='21'>
+<a href='/help/articles/4143'>
+<i class='icon-file iconfont'></i>
+<span class=''>
+在线重命名或删除文件
+</span>
+</a>
+</div>
+</div>
+</li>
+
+<li class='item '>
+<div class='  category-content-1 '>
+<div class='model-name' data-id='4246' data-parent='21'>
+<a href='/help/articles/4246'>
+<i class='icon-file iconfont'></i>
+<span class=''>
+如何获取仓库转移码
+</span>
+</a>
+</div>
+</div>
+</li>
+
+<li class='item '>
+<div class='  category-content-1 '>
+<div class='model-name' data-id='4232' data-parent='21'>
+<a href='/help/articles/4232'>
+<i class='icon-file iconfont'></i>
+<span class=''>
+仓库体积过大，如何减小？
+</span>
+</a>
+</div>
+</div>
+</li>
+
+<li class='item '>
+<div class='  category-content-1 '>
+<div class='model-name' data-id='4235' data-parent='21'>
+<a href='/help/articles/4235'>
+<i class='icon-file iconfont'></i>
+<span class=''>
+Git LFS 操作指南
+</span>
+</a>
+</div>
+</div>
+</li>
+
+<li class='item '>
+<div class='  category-content-1 '>
+<div class='model-name' data-id='4239' data-parent='21'>
+<a href='/help/articles/4239'>
+<i class='icon-file iconfont'></i>
+<span class=''>
+如何设置保护分支？
+</span>
+</a>
+</div>
+</div>
+</li>
+
+<li class='item '>
+<div class='  category-content-1 '>
+<div class='model-name' data-id='4291' data-parent='21'>
+<a href='/help/articles/4291'>
+<i class='icon-file iconfont'></i>
+<span class=''>
+Gitee 轻量级 PR
+</span>
+</a>
+</div>
+</div>
+</li>
+
+<li class='item '>
+<div class='  category-content-1 '>
+<div class='model-name' data-id='4202' data-parent='21'>
+<a href='/help/articles/4202'>
+<i class='icon-file iconfont'></i>
+<span class=''>
+在小程序Web开发工具中使用Git做版本管理
+</span>
+</a>
+</div>
+</div>
+</li>
+
+</ul>
+</li>
+
+<li class='item first-category'>
+<div class='first-category-content is-category category-content-0 '>
+<div class='child-cagetory model-name' data-id='30' data-parent='30'>
+<a href='/help/categories/30'>
+<span class=''>
+仓库管理
+</span>
+</a>
+</div>
+</div>
+<ul class='child-tree child-wrap hide'>
+<li class='item '>
+<div class=' is-category category-content-1 '>
+<i class='caret icon right'></i>
+<div class='child-cagetory model-name' data-id='36' data-parent='30'>
+<a href='/help/categories/36'>
+<i class='icon-files iconfont'></i>
+<span class=''>
+基本设置
+</span>
+</a>
+</div>
+</div>
+<ul class='child-tree  hide'>
+<li class='item '>
+<div class='  category-content-2 '>
+<div class='model-name' data-id='4169' data-parent='30/36'>
+<a href='/help/articles/4169'>
+<i class='icon-file iconfont'></i>
+<span class=''>
+新建仓库
+</span>
+</a>
+</div>
+</div>
+</li>
+
+<li class='item '>
+<div class='  category-content-2 '>
+<div class='model-name' data-id='4170' data-parent='30/36'>
+<a href='/help/articles/4170'>
+<i class='icon-file iconfont'></i>
+<span class=''>
+查看/筛选仓库
+</span>
+</a>
+</div>
+</div>
+</li>
+
+<li class='item '>
+<div class='  category-content-2 '>
+<div class='model-name' data-id='4144' data-parent='30/36'>
+<a href='/help/articles/4144'>
+<i class='icon-file iconfont'></i>
+<span class=''>
+仓库转移
+</span>
+</a>
+</div>
+</div>
+</li>
+
+<li class='item '>
+<div class='  category-content-2 '>
+<div class='model-name' data-id='4146' data-parent='30/36'>
+<a href='/help/articles/4146'>
+<i class='icon-file iconfont'></i>
+<span class=''>
+为仓库添加LICENSE
+</span>
+</a>
+</div>
+</div>
+</li>
+
+<li class='item '>
+<div class='  category-content-2 '>
+<div class='model-name' data-id='4173' data-parent='30/36'>
+<a href='/help/articles/4173'>
+<i class='icon-file iconfont'></i>
+<span class=''>
+存储库GC
+</span>
+</a>
+</div>
+</div>
+</li>
+
+<li class='item '>
+<div class='  category-content-2 '>
+<div class='model-name' data-id='4172' data-parent='30/36'>
+<a href='/help/articles/4172'>
+<i class='icon-file iconfont'></i>
+<span class=''>
+删除仓库
+</span>
+</a>
+</div>
+</div>
+</li>
+
+</ul>
+</li>
+
+<li class='item '>
+<div class=' is-category category-content-1 '>
+<i class='caret icon right'></i>
+<div class='child-cagetory model-name' data-id='37' data-parent='30'>
+<a href='/help/categories/37'>
+<i class='icon-files iconfont'></i>
+<span class=''>
+仓库成员管理
+</span>
+</a>
+</div>
+</div>
+<ul class='child-tree  hide'>
+<li class='item '>
+<div class='  category-content-2 '>
+<div class='model-name' data-id='4140' data-parent='30/37'>
+<a href='/help/articles/4140'>
+<i class='icon-file iconfont'></i>
+<span class=''>
+仓库成员权限说明
+</span>
+</a>
+</div>
+</div>
+</li>
+
+<li class='item '>
+<div class='  category-content-2 '>
+<div class='model-name' data-id='4175' data-parent='30/37'>
+<a href='/help/articles/4175'>
+<i class='icon-file iconfont'></i>
+<span class=''>
+添加成员
+</span>
+</a>
+</div>
+</div>
+</li>
+
+<li class='item '>
+<div class='  category-content-2 '>
+<div class='model-name' data-id='4176' data-parent='30/37'>
+<a href='/help/articles/4176'>
+<i class='icon-file iconfont'></i>
+<span class=''>
+成员权限变更
+</span>
+</a>
+</div>
+</div>
+</li>
+
+<li class='item '>
+<div class='  category-content-2 '>
+<div class='model-name' data-id='4177' data-parent='30/37'>
+<a href='/help/articles/4177'>
+<i class='icon-file iconfont'></i>
+<span class=''>
+删除成员
+</span>
+</a>
+</div>
+</div>
+</li>
+
+</ul>
+</li>
+
+<li class='item '>
+<div class=' is-category category-content-1 '>
+<i class='caret icon right'></i>
+<div class='child-cagetory model-name' data-id='42' data-parent='30'>
+<a href='/help/categories/42'>
+<i class='icon-files iconfont'></i>
+<span class=''>
+开发协作
+</span>
+</a>
+</div>
+</div>
+<ul class='child-tree  hide'>
+<li class='item '>
+<div class='  category-content-2 '>
+<div class='model-name' data-id='4128' data-parent='30/42'>
+<a href='/help/articles/4128'>
+<i class='icon-file iconfont'></i>
+<span class=''>
+Fork + Pull 模式
+</span>
+</a>
+</div>
+</div>
+</li>
+
+<li class='item '>
+<div class='  category-content-2 '>
+<div class='model-name' data-id='4142' data-parent='30/42'>
+<a href='/help/articles/4142'>
+<i class='icon-file iconfont'></i>
+<span class=''>
+Pull Request 关联 Issue
+</span>
+</a>
+</div>
+</div>
+</li>
+
+<li class='item '>
+<div class='  category-content-2 '>
+<div class='model-name' data-id='4141' data-parent='30/42'>
+<a href='/help/articles/4141'>
+<i class='icon-file iconfont'></i>
+<span class=''>
+Commit 关联 Issue
+</span>
+</a>
+</div>
+</div>
+</li>
+
+<li class='item '>
+<div class='  category-content-2 '>
+<div class='model-name' data-id='4145' data-parent='30/42'>
+<a href='/help/articles/4145'>
+<i class='icon-file iconfont'></i>
+<span class=''>
+Issue 和 Pull Request 模板
+</span>
+</a>
+</div>
+</div>
+</li>
+
+</ul>
+</li>
+
+<li class='item '>
+<div class=' is-category category-content-1 '>
+<i class='caret icon right'></i>
+<div class='child-cagetory model-name' data-id='38' data-parent='30'>
+<a href='/help/categories/38'>
+<i class='icon-files iconfont'></i>
+<span class=''>
+公钥管理
+</span>
+</a>
+</div>
+</div>
+<ul class='child-tree  hide'>
+<li class='item '>
+<div class='  category-content-2 '>
+<div class='model-name' data-id='4180' data-parent='30/38'>
+<a href='/help/articles/4180'>
+<i class='icon-file iconfont'></i>
+<span class=''>
+公钥管理
+</span>
+</a>
+</div>
+</div>
+</li>
+
+<li class='item '>
+<div class='  category-content-2 '>
+<div class='model-name' data-id='4181' data-parent='30/38'>
+<a href='/help/articles/4181'>
+<i class='icon-file iconfont'></i>
+<span class=''>
+生成/添加SSH公钥
+</span>
+</a>
+</div>
+</div>
+</li>
+
+<li class='item '>
+<div class='  category-content-2 '>
+<div class='model-name' data-id='4229' data-parent='30/38'>
+<a href='/help/articles/4229'>
+<i class='icon-file iconfont'></i>
+<span class=''>
+Git配置多个SSH-Key
+</span>
+</a>
+</div>
+</div>
+</li>
+
+<li class='item '>
+<div class='  category-content-2 '>
+<div class='model-name' data-id='4248' data-parent='30/38'>
+<a href='/help/articles/4248'>
+<i class='icon-file iconfont'></i>
+<span class=''>
+如何在码云上使用 GPG
+</span>
+</a>
+</div>
+</div>
+</li>
+
+</ul>
+</li>
+
+<li class='item '>
+<div class=' is-category category-content-1 '>
+<i class='caret icon right'></i>
+<div class='child-cagetory model-name' data-id='40' data-parent='30'>
+<a href='/help/categories/40'>
+<i class='icon-files iconfont'></i>
+<span class=''>
+WebHooks
+</span>
+</a>
+</div>
+</div>
+<ul class='child-tree  hide'>
+<li class='item '>
+<div class='  category-content-2 '>
+<div class='model-name' data-id='4183' data-parent='30/40'>
+<a href='/help/articles/4183'>
+<i class='icon-file iconfont'></i>
+<span class=''>
+WebHooks简介
+</span>
+</a>
+</div>
+</div>
+</li>
+
+<li class='item '>
+<div class='  category-content-2 '>
+<div class='model-name' data-id='4184' data-parent='30/40'>
+<a href='/help/articles/4184'>
+<i class='icon-file iconfont'></i>
+<span class=''>
+添加WebHooks
+</span>
+</a>
+</div>
+</div>
+</li>
+
+<li class='item '>
+<div class='  category-content-2 '>
+<div class='model-name' data-id='4185' data-parent='30/40'>
+<a href='/help/articles/4185'>
+<i class='icon-file iconfont'></i>
+<span class=''>
+删除WebHook
+</span>
+</a>
+</div>
+</div>
+</li>
+
+<li class='item '>
+<div class='  category-content-2 '>
+<div class='model-name' data-id='4186' data-parent='30/40'>
+<a href='/help/articles/4186'>
+<i class='icon-file iconfont'></i>
+<span class=''>
+WebHook 推送数据格式说明
+</span>
+</a>
+</div>
+</div>
+</li>
+
+<li class='item '>
+<div class='  category-content-2 '>
+<div class='model-name' data-id='4290' data-parent='30/40'>
+<a href='/help/articles/4290'>
+<i class='icon-file iconfont'></i>
+<span class=''>
+WebHook 密钥验证和验证算法
+</span>
+</a>
+</div>
+</div>
+</li>
+
+<li class='item '>
+<div class='  category-content-2 '>
+<div class='model-name' data-id='4271' data-parent='30/40'>
+<a href='/help/articles/4271'>
+<i class='icon-file iconfont'></i>
+<span class=''>
+WebHook 推送数据类型说明
+</span>
+</a>
+</div>
+</div>
+</li>
+
+<li class='item '>
+<div class='  category-content-2 '>
+<div class='model-name' data-id='4135' data-parent='30/40'>
+<a href='/help/articles/4135'>
+<i class='icon-file iconfont'></i>
+<span class=''>
+WebHook 对钉钉的支持
+</span>
+</a>
+</div>
+</div>
+</li>
+
+<li class='item '>
+<div class='  category-content-2 '>
+<div class='model-name' data-id='4296' data-parent='30/40'>
+<a href='/help/articles/4296'>
+<i class='icon-file iconfont'></i>
+<span class=''>
+WebHook 对企业微信的支持
+</span>
+</a>
+</div>
+</div>
+</li>
+
+<li class='item '>
+<div class='  category-content-2 '>
+<div class='model-name' data-id='4297' data-parent='30/40'>
+<a href='/help/articles/4297'>
+<i class='icon-file iconfont'></i>
+<span class=''>
+WebHook 对飞书的支持
+</span>
+</a>
+</div>
+</div>
+</li>
+
+</ul>
+</li>
+
+</ul>
+</li>
+
+<li class='item first-category'>
+<div class='first-category-content is-category category-content-0 '>
+<div class='child-cagetory model-name' data-id='22' data-parent='22'>
+<a href='/help/categories/22'>
+<span class=''>
+账户管理
+</span>
+</a>
+</div>
+</div>
+<ul class='child-tree child-wrap hide'>
+<li class='item '>
+<div class='  category-content-1 '>
+<div class='model-name' data-id='4188' data-parent='22'>
+<a href='/help/articles/4188'>
+<i class='icon-file iconfont'></i>
+<span class=''>
+个人信息设置
+</span>
+</a>
+</div>
+</div>
+</li>
+
+<li class='item '>
+<div class='  category-content-1 '>
+<div class='model-name' data-id='4189' data-parent='22'>
+<a href='/help/articles/4189'>
+<i class='icon-file iconfont'></i>
+<span class=''>
+个人空间地址设置
+</span>
+</a>
+</div>
+</div>
+</li>
+
+<li class='item '>
+<div class='  category-content-1 '>
+<div class='model-name' data-id='4187' data-parent='22'>
+<a href='/help/articles/4187'>
+<i class='icon-file iconfont'></i>
+<span class=''>
+第三方账号绑定
+</span>
+</a>
+</div>
+</div>
+</li>
+
+<li class='item '>
+<div class='  category-content-1 '>
+<div class='model-name' data-id='4190' data-parent='22'>
+<a href='/help/articles/4190'>
+<i class='icon-file iconfont'></i>
+<span class=''>
+消息通知设置
+</span>
+</a>
+</div>
+</div>
+</li>
+
+<li class='item '>
+<div class='  category-content-1 '>
+<div class='model-name' data-id='4191' data-parent='22'>
+<a href='/help/articles/4191'>
+<i class='icon-file iconfont'></i>
+<span class=''>
+SSH 公钥设置
+</span>
+</a>
+</div>
+</div>
+</li>
+
+<li class='item '>
+<div class='  category-content-1 '>
+<div class='model-name' data-id='4129' data-parent='22'>
+<a href='/help/articles/4129'>
+<i class='icon-file iconfont'></i>
+<span class=''>
+「组织」功能介绍
+</span>
+</a>
+</div>
+</div>
+</li>
+
+<li class='item '>
+<div class='  category-content-1 '>
+<div class='model-name' data-id='4125' data-parent='22'>
+<a href='/help/articles/4125'>
+<i class='icon-file iconfont'></i>
+<span class=''>
+码云使用容量说明
+</span>
+</a>
+</div>
+</div>
+</li>
+
+<li class='item '>
+<div class='  category-content-1 '>
+<div class='model-name' data-id='4263' data-parent='22'>
+<a href='/help/articles/4263'>
+<i class='icon-file iconfont'></i>
+<span class=''>
+如何添加组织域名验证
+</span>
+</a>
+</div>
+</div>
+</li>
+
+<li class='item '>
+<div class='  category-content-1 '>
+<div class='model-name' data-id='4233' data-parent='22'>
+<a href='/help/articles/4233'>
+<i class='icon-file iconfont'></i>
+<span class=''>
+组织私有成员超额，如何处理？
+</span>
+</a>
+</div>
+</div>
+</li>
+
+<li class='item '>
+<div class='  category-content-1 '>
+<div class='model-name' data-id='4234' data-parent='22'>
+<a href='/help/articles/4234'>
+<i class='icon-file iconfont'></i>
+<span class=''>
+个人私有成员超过5人，怎么办？
+</span>
+</a>
+</div>
+</div>
+</li>
+
+</ul>
+</li>
+
+<li class='item first-category'>
+<div class='first-category-content is-category category-content-0 has-opened'>
+<div class='child-cagetory model-name' data-id='23' data-parent='23'>
+<a href='/help/categories/23'>
+<span class=''>
+企业版
+</span>
+</a>
+</div>
+</div>
+<ul class='child-tree child-wrap '>
+<li class='item '>
+<div class='  category-content-1 '>
+<div class='model-name' data-id='4147' data-parent='23'>
+<a href='/help/articles/4147'>
+<i class='icon-file iconfont'></i>
+<span class=''>
+为什么要购买企业版？
+</span>
+</a>
+</div>
+</div>
+</li>
+
+<li class='item '>
+<div class='  category-content-1 '>
+<div class='model-name' data-id='4167' data-parent='23'>
+<a href='/help/articles/4167'>
+<i class='icon-file iconfont'></i>
+<span class=''>
+企业版和社区版服务对比
+</span>
+</a>
+</div>
+</div>
+</li>
+
+<li class='item '>
+<div class='  category-content-1 '>
+<div class='model-name' data-id='4166' data-parent='23'>
+<a href='/help/articles/4166'>
+<i class='icon-file iconfont'></i>
+<span class='highlighted-tab'>
+企业版和社区版功能对比
+</span>
+</a>
+</div>
+</div>
+</li>
+
+<li class='item '>
+<div class='  category-content-1 '>
+<div class='model-name' data-id='4148' data-parent='23'>
+<a href='/help/articles/4148'>
+<i class='icon-file iconfont'></i>
+<span class=''>
+创建企业 VS 升级为企业
+</span>
+</a>
+</div>
+</div>
+</li>
+
+<li class='item '>
+<div class='  category-content-1 '>
+<div class='model-name' data-id='4207' data-parent='23'>
+<a href='/help/articles/4207'>
+<i class='icon-file iconfont'></i>
+<span class=''>
+个人账号升级为企业账户
+</span>
+</a>
+</div>
+</div>
+</li>
+
+<li class='item '>
+<div class='  category-content-1 '>
+<div class='model-name' data-id='4208' data-parent='23'>
+<a href='/help/articles/4208'>
+<i class='icon-file iconfont'></i>
+<span class=''>
+如何进入企业工作台界面？
+</span>
+</a>
+</div>
+</div>
+</li>
+
+<li class='item '>
+<div class='  category-content-1 '>
+<div class='model-name' data-id='4163' data-parent='23'>
+<a href='/help/articles/4163'>
+<i class='icon-file iconfont'></i>
+<span class=''>
+企业版仓库快照功能简介
+</span>
+</a>
+</div>
+</div>
+</li>
+
+<li class='item '>
+<div class='  category-content-1 '>
+<div class='model-name' data-id='4236' data-parent='23'>
+<a href='/help/articles/4236'>
+<i class='icon-file iconfont'></i>
+<span class=''>
+企业成员超额如何处理
+</span>
+</a>
+</div>
+</div>
+</li>
+
+<li class='item '>
+<div class=' is-category category-content-1 '>
+<i class='caret icon right'></i>
+<div class='child-cagetory model-name' data-id='64' data-parent='23'>
+<a href='/help/categories/64'>
+<i class='icon-files iconfont'></i>
+<span class=''>
+码云企业版视频教程
+</span>
+</a>
+</div>
+</div>
+<ul class='child-tree  hide'>
+<li class='item '>
+<div class='  category-content-2 '>
+<div class='model-name' data-id='4269' data-parent='23/64'>
+<a href='/help/articles/4269'>
+<i class='icon-file iconfont'></i>
+<span class=''>
+企业版视频教程概述
+</span>
+</a>
+</div>
+</div>
+</li>
+
+<li class='item '>
+<div class='  category-content-2 '>
+<div class='model-name' data-id='4265' data-parent='23/64'>
+<a href='/help/articles/4265'>
+<i class='icon-file iconfont'></i>
+<span class=''>
+1. 码云企业版简介
+</span>
+</a>
+</div>
+</div>
+</li>
+
+<li class='item '>
+<div class='  category-content-2 '>
+<div class='model-name' data-id='4266' data-parent='23/64'>
+<a href='/help/articles/4266'>
+<i class='icon-file iconfont'></i>
+<span class=''>
+2. 企业版敏捷开发流程
+</span>
+</a>
+</div>
+</div>
+</li>
+
+<li class='item '>
+<div class='  category-content-2 '>
+<div class='model-name' data-id='4267' data-parent='23/64'>
+<a href='/help/articles/4267'>
+<i class='icon-file iconfont'></i>
+<span class=''>
+3. 企业版成员权限管理
+</span>
+</a>
+</div>
+</div>
+</li>
+
+<li class='item '>
+<div class='  category-content-2 '>
+<div class='model-name' data-id='4268' data-parent='23/64'>
+<a href='/help/articles/4268'>
+<i class='icon-file iconfont'></i>
+<span class=''>
+4. 企业版代码安全管理
+</span>
+</a>
+</div>
+</div>
+</li>
+
+</ul>
+</li>
+
+<li class='item '>
+<div class=' is-category category-content-1 '>
+<i class='caret icon right'></i>
+<div class='child-cagetory model-name' data-id='63' data-parent='23'>
+<a href='/help/categories/63'>
+<i class='icon-files iconfont'></i>
+<span class=''>
+账号管理
+</span>
+</a>
+</div>
+</div>
+<ul class='child-tree  hide'>
+<li class='item '>
+<div class='  category-content-2 '>
+<div class='model-name' data-id='4149' data-parent='23/63'>
+<a href='/help/articles/4149'>
+<i class='icon-file iconfont'></i>
+<span class=''>
+转移组织至企业账号
+</span>
+</a>
+</div>
+</div>
+</li>
+
+<li class='item '>
+<div class='  category-content-2 '>
+<div class='model-name' data-id='4242' data-parent='23/63'>
+<a href='/help/articles/4242'>
+<i class='icon-file iconfont'></i>
+<span class=''>
+企业创建者离职了如何处理？
+</span>
+</a>
+</div>
+</div>
+</li>
+
+<li class='item '>
+<div class='  category-content-2 '>
+<div class='model-name' data-id='4262' data-parent='23/63'>
+<a href='/help/articles/4262'>
+<i class='icon-file iconfont'></i>
+<span class=''>
+如何退出企业账号？
+</span>
+</a>
+</div>
+</div>
+</li>
+
+</ul>
+</li>
+
+<li class='item '>
+<div class=' is-category category-content-1 '>
+<i class='caret icon right'></i>
+<div class='child-cagetory model-name' data-id='48' data-parent='23'>
+<a href='/help/categories/48'>
+<i class='icon-files iconfont'></i>
+<span class=''>
+成员管理
+</span>
+</a>
+</div>
+</div>
+<ul class='child-tree  hide'>
+<li class='item '>
+<div class='  category-content-2 '>
+<div class='model-name' data-id='4288' data-parent='23/48'>
+<a href='/help/articles/4288'>
+<i class='icon-file iconfont'></i>
+<span class=''>
+成员角色权限配置说明
+</span>
+</a>
+</div>
+</div>
+</li>
+
+<li class='item '>
+<div class=' is-category category-content-2 '>
+<i class='caret icon right'></i>
+<div class='child-cagetory model-name' data-id='49' data-parent='23/48'>
+<a href='/help/categories/49'>
+<i class='icon-files iconfont'></i>
+<span class=''>
+我是管理员
+</span>
+</a>
+</div>
+</div>
+<ul class='child-tree  hide'>
+<li class='item '>
+<div class='  category-content-3 '>
+<div class='model-name' data-id='4209' data-parent='23/48/49'>
+<a href='/help/articles/4209'>
+<i class='icon-file iconfont'></i>
+<span class=''>
+添加企业成员
+</span>
+</a>
+</div>
+</div>
+</li>
+
+<li class='item '>
+<div class='  category-content-3 '>
+<div class='model-name' data-id='4210' data-parent='23/48/49'>
+<a href='/help/articles/4210'>
+<i class='icon-file iconfont'></i>
+<span class=''>
+移除企业成员
+</span>
+</a>
+</div>
+</div>
+</li>
+
+<li class='item '>
+<div class='  category-content-3 '>
+<div class='model-name' data-id='4211' data-parent='23/48/49'>
+<a href='/help/articles/4211'>
+<i class='icon-file iconfont'></i>
+<span class=''>
+屏蔽企业成员
+</span>
+</a>
+</div>
+</div>
+</li>
+
+<li class='item '>
+<div class='  category-content-3 '>
+<div class='model-name' data-id='4212' data-parent='23/48/49'>
+<a href='/help/articles/4212'>
+<i class='icon-file iconfont'></i>
+<span class=''>
+重置成员密码
+</span>
+</a>
+</div>
+</div>
+</li>
+
+<li class='item '>
+<div class='  category-content-3 '>
+<div class='model-name' data-id='4213' data-parent='23/48/49'>
+<a href='/help/articles/4213'>
+<i class='icon-file iconfont'></i>
+<span class=''>
+创建团队
+</span>
+</a>
+</div>
+</div>
+</li>
+
+<li class='item '>
+<div class='  category-content-3 '>
+<div class='model-name' data-id='4214' data-parent='23/48/49'>
+<a href='/help/articles/4214'>
+<i class='icon-file iconfont'></i>
+<span class=''>
+删除团队
+</span>
+</a>
+</div>
+</div>
+</li>
+
+<li class='item '>
+<div class='  category-content-3 '>
+<div class='model-name' data-id='4215' data-parent='23/48/49'>
+<a href='/help/articles/4215'>
+<i class='icon-file iconfont'></i>
+<span class=''>
+转入团队
+</span>
+</a>
+</div>
+</div>
+</li>
+
+<li class='item '>
+<div class='  category-content-3 '>
+<div class='model-name' data-id='4158' data-parent='23/48/49'>
+<a href='/help/articles/4158'>
+<i class='icon-file iconfont'></i>
+<span class=''>
+外包团队管理
+</span>
+</a>
+</div>
+</div>
+</li>
+
+</ul>
+</li>
+
+<li class='item '>
+<div class=' is-category category-content-2 '>
+<i class='caret icon right'></i>
+<div class='child-cagetory model-name' data-id='50' data-parent='23/48'>
+<a href='/help/categories/50'>
+<i class='icon-files iconfont'></i>
+<span class=''>
+我是企业成员
+</span>
+</a>
+</div>
+</div>
+<ul class='child-tree  hide'>
+<li class='item '>
+<div class='  category-content-3 '>
+<div class='model-name' data-id='4216' data-parent='23/48/50'>
+<a href='/help/articles/4216'>
+<i class='icon-file iconfont'></i>
+<span class=''>
+被邀请用户如何开始使用
+</span>
+</a>
+</div>
+</div>
+</li>
+
+</ul>
+</li>
+
+</ul>
+</li>
+
+<li class='item '>
+<div class=' is-category category-content-1 '>
+<i class='caret icon right'></i>
+<div class='child-cagetory model-name' data-id='35' data-parent='23'>
+<a href='/help/categories/35'>
+<i class='icon-files iconfont'></i>
+<span class=''>
+仓库管理
+</span>
+</a>
+</div>
+</div>
+<ul class='child-tree  hide'>
+<li class='item '>
+<div class='  category-content-2 '>
+<div class='model-name' data-id='4295' data-parent='23/35'>
+<a href='/help/articles/4295'>
+<i class='icon-file iconfont'></i>
+<span class=''>
+设置保护分支
+</span>
+</a>
+</div>
+</div>
+</li>
+
+<li class='item '>
+<div class='  category-content-2 '>
+<div class='model-name' data-id='4155' data-parent='23/35'>
+<a href='/help/articles/4155'>
+<i class='icon-file iconfont'></i>
+<span class=''>
+导入企业仓库
+</span>
+</a>
+</div>
+</div>
+</li>
+
+<li class='item '>
+<div class='  category-content-2 '>
+<div class='model-name' data-id='4156' data-parent='23/35'>
+<a href='/help/articles/4156'>
+<i class='icon-file iconfont'></i>
+<span class=''>
+转移仓库至企业账号
+</span>
+</a>
+</div>
+</div>
+</li>
+
+<li class='item '>
+<div class='  category-content-2 '>
+<div class='model-name' data-id='4157' data-parent='23/35'>
+<a href='/help/articles/4157'>
+<i class='icon-file iconfont'></i>
+<span class=''>
+企业仓库权限说明
+</span>
+</a>
+</div>
+</div>
+</li>
+
+<li class='item '>
+<div class='  category-content-2 '>
+<div class='model-name' data-id='4159' data-parent='23/35'>
+<a href='/help/articles/4159'>
+<i class='icon-file iconfont'></i>
+<span class=''>
+企业仓库成员权限说明
+</span>
+</a>
+</div>
+</div>
+</li>
+
+</ul>
+</li>
+
+<li class='item '>
+<div class=' is-category category-content-1 '>
+<i class='caret icon right'></i>
+<div class='child-cagetory model-name' data-id='52' data-parent='23'>
+<a href='/help/categories/52'>
+<i class='icon-files iconfont'></i>
+<span class=''>
+任务管理
+</span>
+</a>
+</div>
+</div>
+<ul class='child-tree  hide'>
+<li class='item '>
+<div class='  category-content-2 '>
+<div class='model-name' data-id='4217' data-parent='23/52'>
+<a href='/help/articles/4217'>
+<i class='icon-file iconfont'></i>
+<span class=''>
+自定义任务类型与状态
+</span>
+</a>
+</div>
+</div>
+</li>
+
+<li class='item '>
+<div class='  category-content-2 '>
+<div class='model-name' data-id='4218' data-parent='23/52'>
+<a href='/help/articles/4218'>
+<i class='icon-file iconfont'></i>
+<span class=''>
+任务拆分与关联
+</span>
+</a>
+</div>
+</div>
+</li>
+
+<li class='item '>
+<div class='  category-content-2 '>
+<div class='model-name' data-id='4219' data-parent='23/52'>
+<a href='/help/articles/4219'>
+<i class='icon-file iconfont'></i>
+<span class=''>
+任务查看与编辑
+</span>
+</a>
+</div>
+</div>
+</li>
+
+</ul>
+</li>
+
+<li class='item '>
+<div class=' is-category category-content-1 '>
+<i class='caret icon right'></i>
+<div class='child-cagetory model-name' data-id='62' data-parent='23'>
+<a href='/help/categories/62'>
+<i class='icon-files iconfont'></i>
+<span class=''>
+项目管理
+</span>
+</a>
+</div>
+</div>
+<ul class='child-tree  hide'>
+<li class='item '>
+<div class='  category-content-2 '>
+<div class='model-name' data-id='4257' data-parent='23/62'>
+<a href='/help/articles/4257'>
+<i class='icon-file iconfont'></i>
+<span class=''>
+企业项目简介
+</span>
+</a>
+</div>
+</div>
+</li>
+
+<li class='item '>
+<div class='  category-content-2 '>
+<div class='model-name' data-id='4258' data-parent='23/62'>
+<a href='/help/articles/4258'>
+<i class='icon-file iconfont'></i>
+<span class=''>
+新建项目
+</span>
+</a>
+</div>
+</div>
+</li>
+
+<li class='item '>
+<div class='  category-content-2 '>
+<div class='model-name' data-id='4259' data-parent='23/62'>
+<a href='/help/articles/4259'>
+<i class='icon-file iconfont'></i>
+<span class=''>
+删除项目
+</span>
+</a>
+</div>
+</div>
+</li>
+
+<li class='item '>
+<div class='  category-content-2 '>
+<div class='model-name' data-id='4260' data-parent='23/62'>
+<a href='/help/articles/4260'>
+<i class='icon-file iconfont'></i>
+<span class=''>
+退出项目
+</span>
+</a>
+</div>
+</div>
+</li>
+
+</ul>
+</li>
+
+<li class='item '>
+<div class=' is-category category-content-1 '>
+<i class='caret icon right'></i>
+<div class='child-cagetory model-name' data-id='61' data-parent='23'>
+<a href='/help/categories/61'>
+<i class='icon-files iconfont'></i>
+<span class=''>
+文档协作
+</span>
+</a>
+</div>
+</div>
+<ul class='child-tree  hide'>
+<li class='item '>
+<div class='  category-content-2 '>
+<div class='model-name' data-id='4252' data-parent='23/61'>
+<a href='/help/articles/4252'>
+<i class='icon-file iconfont'></i>
+<span class=''>
+企业文档介绍
+</span>
+</a>
+</div>
+</div>
+</li>
+
+<li class='item '>
+<div class='  category-content-2 '>
+<div class='model-name' data-id='4253' data-parent='23/61'>
+<a href='/help/articles/4253'>
+<i class='icon-file iconfont'></i>
+<span class=''>
+企业文档视图
+</span>
+</a>
+</div>
+</div>
+</li>
+
+<li class='item '>
+<div class='  category-content-2 '>
+<div class='model-name' data-id='4254' data-parent='23/61'>
+<a href='/help/articles/4254'>
+<i class='icon-file iconfont'></i>
+<span class=''>
+文件共享
+</span>
+</a>
+</div>
+</div>
+</li>
+
+<li class='item '>
+<div class='  category-content-2 '>
+<div class='model-name' data-id='4255' data-parent='23/61'>
+<a href='/help/articles/4255'>
+<i class='icon-file iconfont'></i>
+<span class=''>
+文档权限管理
+</span>
+</a>
+</div>
+</div>
+</li>
+
+<li class='item '>
+<div class='  category-content-2 '>
+<div class='model-name' data-id='4130' data-parent='23/61'>
+<a href='/help/articles/4130'>
+<i class='icon-file iconfont'></i>
+<span class=''>
+Markdown 解析器变更
+</span>
+</a>
+</div>
+</div>
+</li>
+
+<li class='item '>
+<div class='  category-content-2 '>
+<div class='model-name' data-id='4273' data-parent='23/61'>
+<a href='/help/articles/4273'>
+<i class='icon-file iconfont'></i>
+<span class=''>
+支持Jupyter Notebook
+</span>
+</a>
+</div>
+</div>
+</li>
+
+</ul>
+</li>
+
+<li class='item '>
+<div class=' is-category category-content-1 '>
+<i class='caret icon right'></i>
+<div class='child-cagetory model-name' data-id='65' data-parent='23'>
+<a href='/help/categories/65'>
+<i class='icon-files iconfont'></i>
+<span class=''>
+信息通知
+</span>
+</a>
+</div>
+</div>
+<ul class='child-tree  hide'>
+<li class='item '>
+<div class='  category-content-2 '>
+<div class='model-name' data-id='4277' data-parent='23/65'>
+<a href='/help/articles/4277'>
+<i class='icon-file iconfont'></i>
+<span class=''>
+支持私信/邮件通知
+</span>
+</a>
+</div>
+</div>
+</li>
+
+<li class='item '>
+<div class='  category-content-2 '>
+<div class='model-name' data-id='4276' data-parent='23/65'>
+<a href='/help/articles/4276'>
+<i class='icon-file iconfont'></i>
+<span class=''>
+支持微信通知
+</span>
+</a>
+</div>
+</div>
+</li>
+
+<li class='item '>
+<div class='  category-content-2 '>
+<div class='model-name' data-id='4278' data-parent='23/65'>
+<a href='/help/articles/4278'>
+<i class='icon-file iconfont'></i>
+<span class=''>
+支持钉钉通知
+</span>
+</a>
+</div>
+</div>
+</li>
+
+</ul>
+</li>
+
+<li class='item '>
+<div class=' is-category category-content-1 '>
+<i class='caret icon right'></i>
+<div class='child-cagetory model-name' data-id='33' data-parent='23'>
+<a href='/help/categories/33'>
+<i class='icon-files iconfont'></i>
+<span class=''>
+功能和安全设置
+</span>
+</a>
+</div>
+</div>
+<ul class='child-tree  hide'>
+<li class='item '>
+<div class='  category-content-2 '>
+<div class='model-name' data-id='4150' data-parent='23/33'>
+<a href='/help/articles/4150'>
+<i class='icon-file iconfont'></i>
+<span class=''>
+设置企业信息
+</span>
+</a>
+</div>
+</div>
+</li>
+
+<li class='item '>
+<div class='  category-content-2 '>
+<div class='model-name' data-id='4152' data-parent='23/33'>
+<a href='/help/articles/4152'>
+<i class='icon-file iconfont'></i>
+<span class=''>
+账号安全设置
+</span>
+</a>
+</div>
+</div>
+</li>
+
+<li class='item '>
+<div class='  category-content-2 '>
+<div class='model-name' data-id='4275' data-parent='23/33'>
+<a href='/help/articles/4275'>
+<i class='icon-file iconfont'></i>
+<span class=''>
+禁止仓库强推
+</span>
+</a>
+</div>
+</div>
+</li>
+
+<li class='item '>
+<div class='  category-content-2 '>
+<div class='model-name' data-id='4274' data-parent='23/33'>
+<a href='/help/articles/4274'>
+<i class='icon-file iconfont'></i>
+<span class=''>
+IP 白名单设置
+</span>
+</a>
+</div>
+</div>
+</li>
+
+<li class='item '>
+<div class='  category-content-2 '>
+<div class='model-name' data-id='4165' data-parent='23/33'>
+<a href='/help/articles/4165'>
+<i class='icon-file iconfont'></i>
+<span class=''>
+代码推拉方式设置
+</span>
+</a>
+</div>
+</div>
+</li>
+
+<li class='item '>
+<div class='  category-content-2 '>
+<div class='model-name' data-id='4151' data-parent='23/33'>
+<a href='/help/articles/4151'>
+<i class='icon-file iconfont'></i>
+<span class=''>
+异常行为监控告警
+</span>
+</a>
+</div>
+</div>
+</li>
+
+</ul>
+</li>
+
+<li class='item '>
+<div class=' is-category category-content-1 '>
+<i class='caret icon right'></i>
+<div class='child-cagetory model-name' data-id='32' data-parent='23'>
+<a href='/help/categories/32'>
+<i class='icon-files iconfont'></i>
+<span class=''>
+付款、发票问题
+</span>
+</a>
+</div>
+</div>
+<ul class='child-tree  hide'>
+<li class='item '>
+<div class='  category-content-2 '>
+<div class='model-name' data-id='4160' data-parent='23/32'>
+<a href='/help/articles/4160'>
+<i class='icon-file iconfont'></i>
+<span class=''>
+企业账号付费说明
+</span>
+</a>
+</div>
+</div>
+</li>
+
+<li class='item '>
+<div class='  category-content-2 '>
+<div class='model-name' data-id='4272' data-parent='23/32'>
+<a href='/help/articles/4272'>
+<i class='icon-file iconfont'></i>
+<span class=''>
+发票申请注意事项
+</span>
+</a>
+</div>
+</div>
+</li>
+
+<li class='item '>
+<div class='  category-content-2 '>
+<div class='model-name' data-id='4161' data-parent='23/32'>
+<a href='/help/articles/4161'>
+<i class='icon-file iconfont'></i>
+<span class=''>
+企业账号开具发票
+</span>
+</a>
+</div>
+</div>
+</li>
+
+<li class='item '>
+<div class='  category-content-2 '>
+<div class='model-name' data-id='4162' data-parent='23/32'>
+<a href='/help/articles/4162'>
+<i class='icon-file iconfont'></i>
+<span class=''>
+查看发票快递信息
+</span>
+</a>
+</div>
+</div>
+</li>
+
+</ul>
+</li>
+
+<li class='item '>
+<div class=' is-category category-content-1 '>
+<i class='caret icon right'></i>
+<div class='child-cagetory model-name' data-id='31' data-parent='23'>
+<a href='/help/categories/31'>
+<i class='icon-files iconfont'></i>
+<span class=''>
+服务问题
+</span>
+</a>
+</div>
+</div>
+<ul class='child-tree  hide'>
+<li class='item '>
+<div class='  category-content-2 '>
+<div class='model-name' data-id='4164' data-parent='23/31'>
+<a href='/help/articles/4164'>
+<i class='icon-file iconfont'></i>
+<span class=''>
+合同到期，代码资产怎么处理?
+</span>
+</a>
+</div>
+</div>
+</li>
+
+<li class='item '>
+<div class='  category-content-2 '>
+<div class='model-name' data-id='4168' data-parent='23/31'>
+<a href='/help/articles/4168'>
+<i class='icon-file iconfont'></i>
+<span class=''>
+企业版赔付机制
+</span>
+</a>
+</div>
+</div>
+</li>
+
+</ul>
+</li>
+
+</ul>
+</li>
+
+<li class='item first-category'>
+<div class='first-category-content is-category category-content-0 '>
+<div class='child-cagetory model-name' data-id='24' data-parent='24'>
+<a href='/help/categories/24'>
+<span class=''>
+服务集成
+</span>
+</a>
+</div>
+</div>
+<ul class='child-tree child-wrap hide'>
+<li class='item '>
+<div class='  category-content-1 '>
+<div class='model-name' data-id='4294' data-parent='24'>
+<a href='/help/articles/4294'>
+<i class='icon-file iconfont'></i>
+<span class=''>
+Gitee Scan
+</span>
+</a>
+</div>
+</div>
+</li>
+
+<li class='item '>
+<div class='  category-content-1 '>
+<div class='model-name' data-id='4182' data-parent='24'>
+<a href='/help/articles/4182'>
+<i class='icon-file iconfont'></i>
+<span class=''>
+Sonar 质量分析
+</span>
+</a>
+</div>
+</div>
+</li>
+
+<li class='item '>
+<div class='  category-content-1 '>
+<div class='model-name' data-id='4249' data-parent='24'>
+<a href='/help/articles/4249'>
+<i class='icon-file iconfont'></i>
+<span class=''>
+GItee Android Build Online（APK在线构建）
+</span>
+</a>
+</div>
+</div>
+</li>
+
+<li class='item '>
+<div class=' is-category category-content-1 '>
+<i class='caret icon right'></i>
+<div class='child-cagetory model-name' data-id='66' data-parent='24'>
+<a href='/help/categories/66'>
+<i class='icon-files iconfont'></i>
+<span class=''>
+Gitee Go (Beta)
+</span>
+</a>
+</div>
+</div>
+<ul class='child-tree  hide'>
+<li class='item '>
+<div class='  category-content-2 '>
+<div class='model-name' data-id='4293' data-parent='24/66'>
+<a href='/help/articles/4293'>
+<i class='icon-file iconfont'></i>
+<span class=''>
+Gitee Go 快速入门
+</span>
+</a>
+</div>
+</div>
+</li>
+
+<li class='item '>
+<div class='  category-content-2 '>
+<div class='model-name' data-id='4292' data-parent='24/66'>
+<a href='/help/articles/4292'>
+<i class='icon-file iconfont'></i>
+<span class=''>
+YAML配置格式说明
+</span>
+</a>
+</div>
+</div>
+</li>
+
+</ul>
+</li>
+
+<li class='item '>
+<div class=' is-category category-content-1 '>
+<i class='caret icon right'></i>
+<div class='child-cagetory model-name' data-id='56' data-parent='24'>
+<a href='/help/categories/56'>
+<i class='icon-files iconfont'></i>
+<span class=''>
+静态页面托管
+</span>
+</a>
+</div>
+</div>
+<ul class='child-tree  hide'>
+<li class='item '>
+<div class='  category-content-2 '>
+<div class='model-name' data-id='4136' data-parent='24/56'>
+<a href='/help/articles/4136'>
+<i class='icon-file iconfont'></i>
+<span class=''>
+码云Pages
+</span>
+</a>
+</div>
+</div>
+</li>
+
+<li class='item '>
+<div class='  category-content-2 '>
+<div class='model-name' data-id='4228' data-parent='24/56'>
+<a href='/help/articles/4228'>
+<i class='icon-file iconfont'></i>
+<span class=''>
+码云Gitee Pages Pro 
+</span>
+</a>
+</div>
+</div>
+</li>
+
+<li class='item '>
+<div class='  category-content-2 '>
+<div class='model-name' data-id='4237' data-parent='24/56'>
+<a href='/help/articles/4237'>
+<i class='icon-file iconfont'></i>
+<span class=''>
+Pages 单页面应用支持
+</span>
+</a>
+</div>
+</div>
+</li>
+
+</ul>
+</li>
+
+<li class='item '>
+<div class=' is-category category-content-1 '>
+<i class='caret icon right'></i>
+<div class='child-cagetory model-name' data-id='53' data-parent='24'>
+<a href='/help/categories/53'>
+<i class='icon-files iconfont'></i>
+<span class=''>
+IDE 工具插件
+</span>
+</a>
+</div>
+</div>
+<ul class='child-tree  hide'>
+<li class='item '>
+<div class='  category-content-2 '>
+<div class='model-name' data-id='4115' data-parent='24/53'>
+<a href='/help/articles/4115'>
+<i class='icon-file iconfont'></i>
+<span class=''>
+插件概述
+</span>
+</a>
+</div>
+</div>
+</li>
+
+<li class='item '>
+<div class='  category-content-2 '>
+<div class='model-name' data-id='4116' data-parent='24/53'>
+<a href='/help/articles/4116'>
+<i class='icon-file iconfont'></i>
+<span class=''>
+Atom 插件
+</span>
+</a>
+</div>
+</div>
+</li>
+
+<li class='item '>
+<div class='  category-content-2 '>
+<div class='model-name' data-id='4117' data-parent='24/53'>
+<a href='/help/articles/4117'>
+<i class='icon-file iconfont'></i>
+<span class=''>
+IDEA 插件
+</span>
+</a>
+</div>
+</div>
+</li>
+
+<li class='item '>
+<div class='  category-content-2 '>
+<div class='model-name' data-id='4118' data-parent='24/53'>
+<a href='/help/articles/4118'>
+<i class='icon-file iconfont'></i>
+<span class=''>
+Visual Studio插件
+</span>
+</a>
+</div>
+</div>
+</li>
+
+<li class='item '>
+<div class='  category-content-2 '>
+<div class='model-name' data-id='4119' data-parent='24/53'>
+<a href='/help/articles/4119'>
+<i class='icon-file iconfont'></i>
+<span class=''>
+eclipse插件
+</span>
+</a>
+</div>
+</div>
+</li>
+
+<li class='item '>
+<div class='  category-content-2 '>
+<div class='model-name' data-id='4124' data-parent='24/53'>
+<a href='/help/articles/4124'>
+<i class='icon-file iconfont'></i>
+<span class=''>
+常用工具及插件教程
+</span>
+</a>
+</div>
+</div>
+</li>
+
+</ul>
+</li>
+
+<li class='item '>
+<div class=' is-category category-content-1 '>
+<i class='caret icon right'></i>
+<div class='child-cagetory model-name' data-id='57' data-parent='24'>
+<a href='/help/categories/57'>
+<i class='icon-files iconfont'></i>
+<span class=''>
+文档生成与托管
+</span>
+</a>
+</div>
+</div>
+<ul class='child-tree  hide'>
+<li class='item '>
+<div class='  category-content-2 '>
+<div class='model-name' data-id='4225' data-parent='24/57'>
+<a href='/help/articles/4225'>
+<i class='icon-file iconfont'></i>
+<span class=''>
+JavaDoc 服务
+</span>
+</a>
+</div>
+</div>
+</li>
+
+<li class='item '>
+<div class='  category-content-2 '>
+<div class='model-name' data-id='4226' data-parent='24/57'>
+<a href='/help/articles/4226'>
+<i class='icon-file iconfont'></i>
+<span class=''>
+PHPDoc 服务
+</span>
+</a>
+</div>
+</div>
+</li>
+
+</ul>
+</li>
+
+</ul>
+</li>
+
+<li class='item first-category'>
+<div class='first-category-content is-category category-content-0 '>
+<div class='child-cagetory model-name' data-id='58' data-parent='58'>
+<a href='/help/categories/58'>
+<span class=''>
+第三方服务集成
+</span>
+</a>
+</div>
+</div>
+<ul class='child-tree child-wrap hide'>
+<li class='item '>
+<div class='  category-content-1 '>
+<div class='model-name' data-id='4285' data-parent='58'>
+<a href='/help/articles/4285'>
+<i class='icon-file iconfont'></i>
+<span class=''>
+百度效率云
+</span>
+</a>
+</div>
+</div>
+</li>
+
+<li class='item '>
+<div class='  category-content-1 '>
+<div class='model-name' data-id='4193' data-parent='58'>
+<a href='/help/articles/4193'>
+<i class='icon-file iconfont'></i>
+<span class=''>
+Jenkins 插件
+</span>
+</a>
+</div>
+</div>
+</li>
+
+<li class='item '>
+<div class='  category-content-1 '>
+<div class='model-name' data-id='4220' data-parent='58'>
+<a href='/help/articles/4220'>
+<i class='icon-file iconfont'></i>
+<span class=''>
+阿里云 CodePipeline
+</span>
+</a>
+</div>
+</div>
+</li>
+
+<li class='item '>
+<div class='  category-content-1 '>
+<div class='model-name' data-id='4221' data-parent='58'>
+<a href='/help/articles/4221'>
+<i class='icon-file iconfont'></i>
+<span class=''>
+华为容器云
+</span>
+</a>
+</div>
+</div>
+</li>
+
+<li class='item '>
+<div class='  category-content-1 '>
+<div class='model-name' data-id='4222' data-parent='58'>
+<a href='/help/articles/4222'>
+<i class='icon-file iconfont'></i>
+<span class=''>
+华为微服务
+</span>
+</a>
+</div>
+</div>
+</li>
+
+<li class='item '>
+<div class='  category-content-1 '>
+<div class='model-name' data-id='4264' data-parent='58'>
+<a href='/help/articles/4264'>
+<i class='icon-file iconfont'></i>
+<span class=''>
+华为云 ContainerOps 服务
+</span>
+</a>
+</div>
+</div>
+</li>
+
+<li class='item '>
+<div class='  category-content-1 '>
+<div class='model-name' data-id='4223' data-parent='58'>
+<a href='/help/articles/4223'>
+<i class='icon-file iconfont'></i>
+<span class=''>
+Tencent Hub 
+</span>
+</a>
+</div>
+</div>
+</li>
+
+<li class='item '>
+<div class='  category-content-1 '>
+<div class='model-name' data-id='4227' data-parent='58'>
+<a href='/help/articles/4227'>
+<i class='icon-file iconfont'></i>
+<span class=''>
+MoPaaS 代码演示 
+</span>
+</a>
+</div>
+</div>
+</li>
+
+<li class='item '>
+<div class='  category-content-1 '>
+<div class='model-name' data-id='4224' data-parent='58'>
+<a href='/help/articles/4224'>
+<i class='icon-file iconfont'></i>
+<span class=''>
+360 源代码缺陷检测
+</span>
+</a>
+</div>
+</div>
+</li>
+
+<li class='item '>
+<div class='  category-content-1 '>
+<div class='model-name' data-id='4230' data-parent='58'>
+<a href='/help/articles/4230'>
+<i class='icon-file iconfont'></i>
+<span class=''>
+Gitee 如何使用 Azure PipeLine 构建项目
+</span>
+</a>
+</div>
+</div>
+</li>
+
+</ul>
+</li>
+
+<li class='item first-category'>
+<div class='first-category-content is-category category-content-0 '>
+<div class='child-cagetory model-name' data-id='27' data-parent='27'>
+<a href='/help/categories/27'>
+<span class=''>
+其他服务
+</span>
+</a>
+</div>
+</div>
+<ul class='child-tree child-wrap hide'>
+<li class='item '>
+<div class='  category-content-1 '>
+<div class='model-name' data-id='4126' data-parent='27'>
+<a href='/help/articles/4126'>
+<i class='icon-file iconfont'></i>
+<span class=''>
+CSDN CODE 项目整体迁移到码云平台
+</span>
+</a>
+</div>
+</div>
+</li>
+
+<li class='item '>
+<div class='  category-content-1 '>
+<div class='model-name' data-id='4250' data-parent='27'>
+<a href='/help/articles/4250'>
+<i class='icon-file iconfont'></i>
+<span class=''>
+开源项目打赏功能介绍
+</span>
+</a>
+</div>
+</div>
+</li>
+
+</ul>
+</li>
+
+<li class='item first-category'>
+<div class='first-category-content is-category category-content-0 '>
+<div class='child-cagetory model-name' data-id='43' data-parent='43'>
+<a href='/help/categories/43'>
+<span class=''>
+Git 知识大全
+</span>
+</a>
+</div>
+</div>
+<ul class='child-tree child-wrap hide'>
+<li class='item '>
+<div class='  category-content-1 '>
+<div class='model-name' data-id='4104' data-parent='43'>
+<a href='/help/articles/4104'>
+<i class='icon-file iconfont'></i>
+<span class=''>
+Git 是什么
+</span>
+</a>
+</div>
+</div>
+</li>
+
+<li class='item '>
+<div class='  category-content-1 '>
+<div class='model-name' data-id='4106' data-parent='43'>
+<a href='/help/articles/4106'>
+<i class='icon-file iconfont'></i>
+<span class=''>
+Git 的安装
+</span>
+</a>
+</div>
+</div>
+</li>
+
+<li class='item '>
+<div class='  category-content-1 '>
+<div class='model-name' data-id='4107' data-parent='43'>
+<a href='/help/articles/4107'>
+<i class='icon-file iconfont'></i>
+<span class=''>
+初次运行 Git 前的配置
+</span>
+</a>
+</div>
+</div>
+</li>
+
+<li class='item '>
+<div class='  category-content-1 '>
+<div class='model-name' data-id='4108' data-parent='43'>
+<a href='/help/articles/4108'>
+<i class='icon-file iconfont'></i>
+<span class=''>
+获取Git帮助
+</span>
+</a>
+</div>
+</div>
+</li>
+
+<li class='item '>
+<div class='  category-content-1 '>
+<div class='model-name' data-id='4109' data-parent='43'>
+<a href='/help/articles/4109'>
+<i class='icon-file iconfont'></i>
+<span class=''>
+取得项目的 Git 仓库
+</span>
+</a>
+</div>
+</div>
+</li>
+
+<li class='item '>
+<div class='  category-content-1 '>
+<div class='model-name' data-id='4111' data-parent='43'>
+<a href='/help/articles/4111'>
+<i class='icon-file iconfont'></i>
+<span class=''>
+如何通过 git clone 克隆仓库/项目
+</span>
+</a>
+</div>
+</div>
+</li>
+
+<li class='item '>
+<div class='  category-content-1 '>
+<div class='model-name' data-id='4114' data-parent='43'>
+<a href='/help/articles/4114'>
+<i class='icon-file iconfont'></i>
+<span class=''>
+Git 仓库基础操作
+</span>
+</a>
+</div>
+</div>
+</li>
+
+<li class='item '>
+<div class='  category-content-1 '>
+<div class='model-name' data-id='4110' data-parent='43'>
+<a href='/help/articles/4110'>
+<i class='icon-file iconfont'></i>
+<span class=''>
+Git的基本概念/常用命令及实例
+</span>
+</a>
+</div>
+</div>
+</li>
+
+<li class='item '>
+<div class='  category-content-1 '>
+<div class='model-name' data-id='4231' data-parent='43'>
+<a href='/help/articles/4231'>
+<i class='icon-file iconfont'></i>
+<span class=''>
+Git Commit message 编写指南
+</span>
+</a>
+</div>
+</div>
+</li>
+
+<li class='item '>
+<div class='  category-content-1 '>
+<div class='model-name' data-id='4194' data-parent='43'>
+<a href='/help/articles/4194'>
+<i class='icon-file iconfont'></i>
+<span class=''>
+如何处理代码冲突
+</span>
+</a>
+</div>
+</div>
+</li>
+
+<li class='item '>
+<div class='  category-content-1 '>
+<div class='model-name' data-id='4195' data-parent='43'>
+<a href='/help/articles/4195'>
+<i class='icon-file iconfont'></i>
+<span class=''>
+如何进行版本回退
+</span>
+</a>
+</div>
+</div>
+</li>
+
+<li class='item '>
+<div class='  category-content-1 '>
+<div class='model-name' data-id='4196' data-parent='43'>
+<a href='/help/articles/4196'>
+<i class='icon-file iconfont'></i>
+<span class=''>
+如何进行分支合并
+</span>
+</a>
+</div>
+</div>
+</li>
+
+<li class='item '>
+<div class='  category-content-1 '>
+<div class='model-name' data-id='4198' data-parent='43'>
+<a href='/help/articles/4198'>
+<i class='icon-file iconfont'></i>
+<span class=''>
+如何进行减少提交历史数量以及修改自己的commit中的邮箱
+</span>
+</a>
+</div>
+</div>
+</li>
+
+<li class='item '>
+<div class='  category-content-1 '>
+<div class='model-name' data-id='4197' data-parent='43'>
+<a href='/help/articles/4197'>
+<i class='icon-file iconfont'></i>
+<span class=''>
+如何从众多提交中保留个别提交
+</span>
+</a>
+</div>
+</div>
+</li>
+
+</ul>
+</li>
+
+</ul>
+<script>
+  $('.category-content-0 a').each(function() {
+    $(this).on('click', function(e) {
+      e.preventDefault();
+      var content = $(this).parent().parent().next();
+      if (content.is(':hidden')) {
+        content.slideDown();
+        $(this).parent().parent().addClass('has-opened');
+      } else {
+        content.slideUp();
+        $(this).parent().parent().removeClass('has-opened');
+      }
+    })
+  })
+  
+  $('.is-category .caret.icon').each(function() {
+    $(this).on('click', function() {
+      var child = $(this).parent().next();
+      if ($(this).hasClass('right')) {
+        $(this).removeClass('right');
+        $(this).addClass('down');
+      } else {
+        $(this).removeClass('down');
+        $(this).addClass('right');
+      }
+      if (child.is(':hidden')) {
+        child.slideDown();
+      } else {
+        child.slideUp();
+      }
+    })
+  })
+</script>
+
+</div>
+<div class='right-panel'>
+<div class='pc-help-center-article'>
+<div class='article-wrap'>
+<div class='article-categories'>
+<a href="/help">码云帮助中心</a>
+<div class='path'>
+<span class='oblique'>
+/
+</span>
+<a class="kind" href="/help/categories/23">企业版</a>
+</div>
+<span class='oblique'>
+/
+</span>
+<span class='detail'>
+帮助详情
+</span>
+</div>
+<h2 class='article-title'>
+企业版和社区版功能对比
+</h2>
+<div class='article-label'>
+<a href="/help/labels/57">功能对比</a>
+</div>
+<div class='article-data markdown-body'>
+<p>在社区版面向个人开发者免费的基础上，企业版提供了更多更强的功能和特性，解决项目研发管理和协作的痛点，提升效率。</p>
+<table>
+<th colspan="2">功能特性</th>
+<th>社区版</th>
+<th>企业版</th>
+<tr>
+<td rowspan="6">任务</td>
+<td>Issue／任务 关联分支</td>
+<td><img alt=":tw-2705:" class="emoji" height="14" src="https://gitee.com/assets/new-editor/bootstrap/markdown/emoji/img/emoji/twemoji/2705-0e1546b2dccb055ac90e6d15d4be3adf.png" style="vertical-align: middle" width="14"></td>
+<td><img alt=":tw-2705:" class="emoji" height="14" src="https://gitee.com/assets/new-editor/bootstrap/markdown/emoji/img/emoji/twemoji/2705-0e1546b2dccb055ac90e6d15d4be3adf.png" style="vertical-align: middle" width="14"></td>
+</tr>
+<tr>
+<td>里程碑</td>
+<td><img alt=":tw-2705:" class="emoji" height="14" src="https://gitee.com/assets/new-editor/bootstrap/markdown/emoji/img/emoji/twemoji/2705-0e1546b2dccb055ac90e6d15d4be3adf.png" style="vertical-align: middle" width="14"></td>
+<td><img alt=":tw-2705:" class="emoji" height="14" src="https://gitee.com/assets/new-editor/bootstrap/markdown/emoji/img/emoji/twemoji/2705-0e1546b2dccb055ac90e6d15d4be3adf.png" style="vertical-align: middle" width="14"></td>
+</tr>
+<tr>
+<td>看板管理</td>
+<td><img alt=":tw-2705:" class="emoji" height="14" src="https://gitee.com/assets/new-editor/bootstrap/markdown/emoji/img/emoji/twemoji/2705-0e1546b2dccb055ac90e6d15d4be3adf.png" style="vertical-align: middle" width="14"></td>
+<td><img alt=":tw-2705:" class="emoji" height="14" src="https://gitee.com/assets/new-editor/bootstrap/markdown/emoji/img/emoji/twemoji/2705-0e1546b2dccb055ac90e6d15d4be3adf.png" style="vertical-align: middle" width="14"></td>
+</tr>
+<tr>
+<td>自定义任务类型、状态、标签</td>
+<td><img alt=":tw-274c:" class="emoji" height="14" src="https://gitee.com/assets/new-editor/bootstrap/markdown/emoji/img/emoji/twemoji/274c-a7c89a1566925f04a86103d95df14f6b.png" style="vertical-align: middle" width="14"></td>
+<td><img alt=":tw-2705:" class="emoji" height="14" src="https://gitee.com/assets/new-editor/bootstrap/markdown/emoji/img/emoji/twemoji/2705-0e1546b2dccb055ac90e6d15d4be3adf.png" style="vertical-align: middle" width="14"></td>
+</tr>
+<tr>
+<td>多级子任务、关联任务</td>
+<td><img alt=":tw-274c:" class="emoji" height="14" src="https://gitee.com/assets/new-editor/bootstrap/markdown/emoji/img/emoji/twemoji/274c-a7c89a1566925f04a86103d95df14f6b.png" style="vertical-align: middle" width="14"></td>
+<td><img alt=":tw-2705:" class="emoji" height="14" src="https://gitee.com/assets/new-editor/bootstrap/markdown/emoji/img/emoji/twemoji/2705-0e1546b2dccb055ac90e6d15d4be3adf.png" style="vertical-align: middle" width="14"></td>
+</tr>
+<tr>
+<td>支持附件</td>
+<td><img alt=":tw-274c:" class="emoji" height="14" src="https://gitee.com/assets/new-editor/bootstrap/markdown/emoji/img/emoji/twemoji/274c-a7c89a1566925f04a86103d95df14f6b.png" style="vertical-align: middle" width="14"></td>
+<td><img alt=":tw-2705:" class="emoji" height="14" src="https://gitee.com/assets/new-editor/bootstrap/markdown/emoji/img/emoji/twemoji/2705-0e1546b2dccb055ac90e6d15d4be3adf.png" style="vertical-align: middle" width="14"></td>
+</tr>
+<tr>
+<td rowspan="6">代码</td>
+<td>分支保护</td>
+<td><img alt=":tw-2705:" class="emoji" height="14" src="https://gitee.com/assets/new-editor/bootstrap/markdown/emoji/img/emoji/twemoji/2705-0e1546b2dccb055ac90e6d15d4be3adf.png" style="vertical-align: middle" width="14"></td>
+<td><img alt=":tw-2705:" class="emoji" height="14" src="https://gitee.com/assets/new-editor/bootstrap/markdown/emoji/img/emoji/twemoji/2705-0e1546b2dccb055ac90e6d15d4be3adf.png" style="vertical-align: middle" width="14"></td>
+</tr>
+<tr>
+<td>Pull Requst 指定审查、测试</td>
+<td><img alt=":tw-2705:" class="emoji" height="14" src="https://gitee.com/assets/new-editor/bootstrap/markdown/emoji/img/emoji/twemoji/2705-0e1546b2dccb055ac90e6d15d4be3adf.png" style="vertical-align: middle" width="14"></td>
+<td><img alt=":tw-2705:" class="emoji" height="14" src="https://gitee.com/assets/new-editor/bootstrap/markdown/emoji/img/emoji/twemoji/2705-0e1546b2dccb055ac90e6d15d4be3adf.png" style="vertical-align: middle" width="14"></td>
+</tr>
+<tr>
+<td>Pull Requst 关联 Issue／任务</td>
+<td><img alt=":tw-2705:" class="emoji" height="14" src="https://gitee.com/assets/new-editor/bootstrap/markdown/emoji/img/emoji/twemoji/2705-0e1546b2dccb055ac90e6d15d4be3adf.png" style="vertical-align: middle" width="14"></td>
+<td><img alt=":tw-2705:" class="emoji" height="14" src="https://gitee.com/assets/new-editor/bootstrap/markdown/emoji/img/emoji/twemoji/2705-0e1546b2dccb055ac90e6d15d4be3adf.png" style="vertical-align: middle" width="14"></td>
+</tr>
+<tr>
+<td>Release（版本管理）</td>
+<td><img alt=":tw-2705:" class="emoji" height="14" src="https://gitee.com/assets/new-editor/bootstrap/markdown/emoji/img/emoji/twemoji/2705-0e1546b2dccb055ac90e6d15d4be3adf.png" style="vertical-align: middle" width="14"></td>
+<td><img alt=":tw-2705:" class="emoji" height="14" src="https://gitee.com/assets/new-editor/bootstrap/markdown/emoji/img/emoji/twemoji/2705-0e1546b2dccb055ac90e6d15d4be3adf.png" style="vertical-align: middle" width="14"></td>
+</tr>
+<tr>
+<td>WebHooks</td>
+<td><img alt=":tw-2705:" class="emoji" height="14" src="https://gitee.com/assets/new-editor/bootstrap/markdown/emoji/img/emoji/twemoji/2705-0e1546b2dccb055ac90e6d15d4be3adf.png" style="vertical-align: middle" width="14"></td>
+<td><img alt=":tw-2705:" class="emoji" height="14" src="https://gitee.com/assets/new-editor/bootstrap/markdown/emoji/img/emoji/twemoji/2705-0e1546b2dccb055ac90e6d15d4be3adf.png" style="vertical-align: middle" width="14"></td>
+</tr>
+<tr>
+<td>代码行统计</td>
+<td><img alt=":tw-274c:" class="emoji" height="14" src="https://gitee.com/assets/new-editor/bootstrap/markdown/emoji/img/emoji/twemoji/274c-a7c89a1566925f04a86103d95df14f6b.png" style="vertical-align: middle" width="14"></td>
+<td><img alt=":tw-2705:" class="emoji" height="14" src="https://gitee.com/assets/new-editor/bootstrap/markdown/emoji/img/emoji/twemoji/2705-0e1546b2dccb055ac90e6d15d4be3adf.png" style="vertical-align: middle" width="14"></td>
+</tr>
+<tr>
+<td rowspan="5">文档</td>
+<td>关联仓库</td>
+<td><img alt=":tw-2705:" class="emoji" height="14" src="https://gitee.com/assets/new-editor/bootstrap/markdown/emoji/img/emoji/twemoji/2705-0e1546b2dccb055ac90e6d15d4be3adf.png" style="vertical-align: middle" width="14"></td>
+<td><img alt=":tw-2705:" class="emoji" height="14" src="https://gitee.com/assets/new-editor/bootstrap/markdown/emoji/img/emoji/twemoji/2705-0e1546b2dccb055ac90e6d15d4be3adf.png" style="vertical-align: middle" width="14"></td>
+</tr>
+<tr>
+<td>多人实时协作</td>
+<td><img alt=":tw-2705:" class="emoji" height="14" src="https://gitee.com/assets/new-editor/bootstrap/markdown/emoji/img/emoji/twemoji/2705-0e1546b2dccb055ac90e6d15d4be3adf.png" style="vertical-align: middle" width="14"></td>
+<td><img alt=":tw-2705:" class="emoji" height="14" src="https://gitee.com/assets/new-editor/bootstrap/markdown/emoji/img/emoji/twemoji/2705-0e1546b2dccb055ac90e6d15d4be3adf.png" style="vertical-align: middle" width="14"></td>
+</tr>
+<tr>
+<td>无限章节</td>
+<td><img alt=":tw-2705:" class="emoji" height="14" src="https://gitee.com/assets/new-editor/bootstrap/markdown/emoji/img/emoji/twemoji/2705-0e1546b2dccb055ac90e6d15d4be3adf.png" style="vertical-align: middle" width="14"></td>
+<td><img alt=":tw-2705:" class="emoji" height="14" src="https://gitee.com/assets/new-editor/bootstrap/markdown/emoji/img/emoji/twemoji/2705-0e1546b2dccb055ac90e6d15d4be3adf.png" style="vertical-align: middle" width="14"></td>
+</tr>
+<tr>
+<td>常用格式导出</td>
+<td><img alt=":tw-2705:" class="emoji" height="14" src="https://gitee.com/assets/new-editor/bootstrap/markdown/emoji/img/emoji/twemoji/2705-0e1546b2dccb055ac90e6d15d4be3adf.png" style="vertical-align: middle" width="14"></td>
+<td><img alt=":tw-2705:" class="emoji" height="14" src="https://gitee.com/assets/new-editor/bootstrap/markdown/emoji/img/emoji/twemoji/2705-0e1546b2dccb055ac90e6d15d4be3adf.png" style="vertical-align: middle" width="14"></td>
+</tr>
+<tr>
+<td>权限控制</td>
+<td><img alt=":tw-274c:" class="emoji" height="14" src="https://gitee.com/assets/new-editor/bootstrap/markdown/emoji/img/emoji/twemoji/274c-a7c89a1566925f04a86103d95df14f6b.png" style="vertical-align: middle" width="14"></td>
+<td><img alt=":tw-2705:" class="emoji" height="14" src="https://gitee.com/assets/new-editor/bootstrap/markdown/emoji/img/emoji/twemoji/2705-0e1546b2dccb055ac90e6d15d4be3adf.png" style="vertical-align: middle" width="14"></td>
+</tr>
+<tr>
+<td rowspan="3">统计</td>
+<td>关键指标、重点仓库</td>
+<td><img alt=":tw-274c:" class="emoji" height="14" src="https://gitee.com/assets/new-editor/bootstrap/markdown/emoji/img/emoji/twemoji/274c-a7c89a1566925f04a86103d95df14f6b.png" style="vertical-align: middle" width="14"></td>
+<td><img alt=":tw-2705:" class="emoji" height="14" src="https://gitee.com/assets/new-editor/bootstrap/markdown/emoji/img/emoji/twemoji/2705-0e1546b2dccb055ac90e6d15d4be3adf.png" style="vertical-align: middle" width="14"></td>
+</tr>
+<tr>
+<td>仓库多维统计</td>
+<td><img alt=":tw-274c:" class="emoji" height="14" src="https://gitee.com/assets/new-editor/bootstrap/markdown/emoji/img/emoji/twemoji/274c-a7c89a1566925f04a86103d95df14f6b.png" style="vertical-align: middle" width="14"></td>
+<td><img alt=":tw-2705:" class="emoji" height="14" src="https://gitee.com/assets/new-editor/bootstrap/markdown/emoji/img/emoji/twemoji/2705-0e1546b2dccb055ac90e6d15d4be3adf.png" style="vertical-align: middle" width="14"></td>
+</tr>
+<tr>
+<td>成员贡献统计（含代码行）</td>
+<td><img alt=":tw-274c:" class="emoji" height="14" src="https://gitee.com/assets/new-editor/bootstrap/markdown/emoji/img/emoji/twemoji/274c-a7c89a1566925f04a86103d95df14f6b.png" style="vertical-align: middle" width="14"></td>
+<td><img alt=":tw-2705:" class="emoji" height="14" src="https://gitee.com/assets/new-editor/bootstrap/markdown/emoji/img/emoji/twemoji/2705-0e1546b2dccb055ac90e6d15d4be3adf.png" style="vertical-align: middle" width="14"></td>
+</tr>
+<tr>
+<td rowspan="7">安全</td>
+<td>细粒度权限控制</td>
+<td><img alt=":tw-2705:" class="emoji" height="14" src="https://gitee.com/assets/new-editor/bootstrap/markdown/emoji/img/emoji/twemoji/2705-0e1546b2dccb055ac90e6d15d4be3adf.png" style="vertical-align: middle" width="14"></td>
+<td><img alt=":tw-2705:" class="emoji" height="14" src="https://gitee.com/assets/new-editor/bootstrap/markdown/emoji/img/emoji/twemoji/2705-0e1546b2dccb055ac90e6d15d4be3adf.png" style="vertical-align: middle" width="14"></td>
+</tr>
+<tr>
+<td>仓库归属权</td>
+<td>个人</td>
+<td>企业</td>
+</tr>
+<tr>
+<td>详尽操作日志</td>
+<td><img alt=":tw-274c:" class="emoji" height="14" src="https://gitee.com/assets/new-editor/bootstrap/markdown/emoji/img/emoji/twemoji/274c-a7c89a1566925f04a86103d95df14f6b.png" style="vertical-align: middle" width="14"></td>
+<td><img alt=":tw-2705:" class="emoji" height="14" src="https://gitee.com/assets/new-editor/bootstrap/markdown/emoji/img/emoji/twemoji/2705-0e1546b2dccb055ac90e6d15d4be3adf.png" style="vertical-align: middle" width="14"></td>
+</tr>
+<tr>
+<td>关键行为监控告警</td>
+<td><img alt=":tw-274c:" class="emoji" height="14" src="https://gitee.com/assets/new-editor/bootstrap/markdown/emoji/img/emoji/twemoji/274c-a7c89a1566925f04a86103d95df14f6b.png" style="vertical-align: middle" width="14"></td>
+<td><img alt=":tw-2705:" class="emoji" height="14" src="https://gitee.com/assets/new-editor/bootstrap/markdown/emoji/img/emoji/twemoji/2705-0e1546b2dccb055ac90e6d15d4be3adf.png" style="vertical-align: middle" width="14"></td>
+</tr>
+<tr>
+<td>敏感操作二次验证</td>
+<td><img alt=":tw-274c:" class="emoji" height="14" src="https://gitee.com/assets/new-editor/bootstrap/markdown/emoji/img/emoji/twemoji/274c-a7c89a1566925f04a86103d95df14f6b.png" style="vertical-align: middle" width="14"></td>
+<td><img alt=":tw-2705:" class="emoji" height="14" src="https://gitee.com/assets/new-editor/bootstrap/markdown/emoji/img/emoji/twemoji/2705-0e1546b2dccb055ac90e6d15d4be3adf.png" style="vertical-align: middle" width="14"></td>
+</tr>
+<tr>
+<td>仓库自动备份</td>
+<td><img alt=":tw-274c:" class="emoji" height="14" src="https://gitee.com/assets/new-editor/bootstrap/markdown/emoji/img/emoji/twemoji/274c-a7c89a1566925f04a86103d95df14f6b.png" style="vertical-align: middle" width="14"></td>
+<td><img alt=":tw-2705:" class="emoji" height="14" src="https://gitee.com/assets/new-editor/bootstrap/markdown/emoji/img/emoji/twemoji/2705-0e1546b2dccb055ac90e6d15d4be3adf.png" style="vertical-align: middle" width="14"></td>
+</tr>
+<tr>
+<td>故障赔付</td>
+<td><img alt=":tw-274c:" class="emoji" height="14" src="https://gitee.com/assets/new-editor/bootstrap/markdown/emoji/img/emoji/twemoji/274c-a7c89a1566925f04a86103d95df14f6b.png" style="vertical-align: middle" width="14"></td>
+<td><img alt=":tw-2705:" class="emoji" height="14" src="https://gitee.com/assets/new-editor/bootstrap/markdown/emoji/img/emoji/twemoji/2705-0e1546b2dccb055ac90e6d15d4be3adf.png" style="vertical-align: middle" width="14"></td>
+</tr>
+<tr>
+<td rowspan="6">服务集成</td>
+<td>Open API</td>
+<td><img alt=":tw-2705:" class="emoji" height="14" src="https://gitee.com/assets/new-editor/bootstrap/markdown/emoji/img/emoji/twemoji/2705-0e1546b2dccb055ac90e6d15d4be3adf.png" style="vertical-align: middle" width="14"></td>
+<td><img alt=":tw-2705:" class="emoji" height="14" src="https://gitee.com/assets/new-editor/bootstrap/markdown/emoji/img/emoji/twemoji/2705-0e1546b2dccb055ac90e6d15d4be3adf.png" style="vertical-align: middle" width="14"></td>
+</tr>
+<tr>
+<td>Pages（静态页面）</td>
+<td><img alt=":tw-2705:" class="emoji" height="14" src="https://gitee.com/assets/new-editor/bootstrap/markdown/emoji/img/emoji/twemoji/2705-0e1546b2dccb055ac90e6d15d4be3adf.png" style="vertical-align: middle" width="14"></td>
+<td><img alt=":tw-2705:" class="emoji" height="14" src="https://gitee.com/assets/new-editor/bootstrap/markdown/emoji/img/emoji/twemoji/2705-0e1546b2dccb055ac90e6d15d4be3adf.png" style="vertical-align: middle" width="14"></td>
+</tr>
+<tr>
+<td>代码演示</td>
+<td><img alt=":tw-2705:" class="emoji" height="14" src="https://gitee.com/assets/new-editor/bootstrap/markdown/emoji/img/emoji/twemoji/2705-0e1546b2dccb055ac90e6d15d4be3adf.png" style="vertical-align: middle" width="14"></td>
+<td><img alt=":tw-2705:" class="emoji" height="14" src="https://gitee.com/assets/new-editor/bootstrap/markdown/emoji/img/emoji/twemoji/2705-0e1546b2dccb055ac90e6d15d4be3adf.png" style="vertical-align: middle" width="14"></td>
+</tr>
+<tr>
+<td>质量分析</td>
+<td><img alt=":tw-2705:" class="emoji" height="14" src="https://gitee.com/assets/new-editor/bootstrap/markdown/emoji/img/emoji/twemoji/2705-0e1546b2dccb055ac90e6d15d4be3adf.png" style="vertical-align: middle" width="14"></td>
+<td><img alt=":tw-2705:" class="emoji" height="14" src="https://gitee.com/assets/new-editor/bootstrap/markdown/emoji/img/emoji/twemoji/2705-0e1546b2dccb055ac90e6d15d4be3adf.png" style="vertical-align: middle" width="14"></td>
+</tr>
+<tr>
+<td>构建容器镜像</td>
+<td><img alt=":tw-2705:" class="emoji" height="14" src="https://gitee.com/assets/new-editor/bootstrap/markdown/emoji/img/emoji/twemoji/2705-0e1546b2dccb055ac90e6d15d4be3adf.png" style="vertical-align: middle" width="14"></td>
+<td><img alt=":tw-2705:" class="emoji" height="14" src="https://gitee.com/assets/new-editor/bootstrap/markdown/emoji/img/emoji/twemoji/2705-0e1546b2dccb055ac90e6d15d4be3adf.png" style="vertical-align: middle" width="14"></td>
+</tr>
+<tr>
+<td>持续集成</td>
+<td><img alt=":tw-274c:" class="emoji" height="14" src="https://gitee.com/assets/new-editor/bootstrap/markdown/emoji/img/emoji/twemoji/274c-a7c89a1566925f04a86103d95df14f6b.png" style="vertical-align: middle" width="14"></td>
+<td><img alt=":tw-2705:" class="emoji" height="14" src="https://gitee.com/assets/new-editor/bootstrap/markdown/emoji/img/emoji/twemoji/2705-0e1546b2dccb055ac90e6d15d4be3adf.png" style="vertical-align: middle" width="14"></td>
+</tr>   
+</table>
+</div>
+<div class='article-action'>
+<div class='ui divider'></div>
+<div class='operation'>
+以上内容对你是否有帮助？
+<button class='basic button green ui' id='article-action-useful'>
+<i class='icon iconfont icon-face-smile'></i>
+有帮助
+</button>
+<button class='basic button pink ui' id='article-action-useless'>
+<i class='icon iconfont icon-face-sad'></i>
+没帮助
+</button>
+<button class='basic button orange right ui' id='article-action-collect'>
+<i class='icon iconfont icon-star'></i>
+收藏
+</button>
+</div>
+<div class='ui divider'></div>
+</div>
+</div>
+<div id='article-tree-container'>
+<div class='article-tree-panel ui sticky'>
+<div class='ui basic button icon sidetool-btn' title='展开/收起目录'>
+<i class='list ul icon'></i>
+</div>
+<div id='article-tree'>
+<div class='ui rails'></div>
+</div>
+</div>
+</div>
+</div>
+<script>
+  $('#article-action-useful, #article-action-useless').click(function() {
+    $.ajax({
+      type: 'post',
+      url: "/help/judge_article",
+      data: {
+        article_id: "4166",
+        useful: this.id == 'article-action-useful' ? true : false
+      },
+      success: function(res) {
+        if (res.data === true) {
+          $('#article-action-useful').removeClass('basic secondary').addClass('green');
+          $('#article-action-useless').removeClass('pink').addClass('basic secondary');
+        } else {
+          $('#article-action-useless').removeClass('basic secondary').addClass('pink');
+          $('#article-action-useful').removeClass('green').addClass('basic secondary');
+        }
+      },
+      error: function(res) {
+        Flash.show(res.responseJSON.message);
+        if (res.status == 401)
+          window.location.href = "/login";
+      }
+    });
+  })
+  
+  $('#article-action-collect').click(function() {
+    $.ajax({
+      type: 'post',
+      url: "/help/collect_article",
+      data: { article_id: "4166" },
+      success: function(res) {
+        if(res.data === true)
+          $('#article-action-collect').removeClass('basic');
+        else
+          $('#article-action-collect').addClass('basic');
+      },
+      error: function(res) {
+        Flash.show(res.responseJSON.message);
+        if (res.status == 401)
+          window.location.href = "/login";
+      }
+    });
+  })
+</script>
+
+</div>
+</div>
+</div>
+
+
+<footer id='git-footer-main'>
+<div class='ui container'>
+<div class='ui two column grid '>
+<div class='nine wide column git-footer-left'>
+<p><a href="https://gitee.com/" target="_blank">© Gitee.com</a></p>
+<div class='ui four column grid' id='footer-left'>
+<div class='column'>
+<div class='ui link list'>
+<div class='item'>
+<a class="item" href="/about_us">关于我们</a>
+</div>
+<div class='item'>
+<a class="item" href="/terms">使用条款</a>
+</div>
+<div class='item'>
+<a class="item" href="/oschina/git-osc/issues">意见建议</a>
+</div>
+<div class='item'>
+<a class="item" href="/links.html">合作伙伴</a>
+</div>
+</div>
+</div>
+<div class='column'>
+<div class='ui link list'>
+<div class='item'>
+<a class="item" href="/all-about-git">Git 大全</a>
+</div>
+<div class='item'>
+<a class="item" href="https://oschina.gitee.io/learn-git-branching/">Git 命令学习</a>
+</div>
+<div class='item'>
+<a class="item" href="https://copycat.gitee.com/">代码克隆检测</a>
+</div>
+<div class='item'>
+<a class="item" href="/appclient">APP与插件下载</a>
+</div>
+</div>
+</div>
+<div class='column'>
+<div class='ui link list'>
+<div class='item'>
+<a class="item" href="/gitee-stars">码云封面人物</a>
+</div>
+<div class='item'>
+<a class="item" href="/gvp">GVP项目</a>
+</div>
+<div class='item'>
+<a class="item" href="https://blog.gitee.com/">码云博客</a>
+</div>
+<div class='item'>
+<a class="item" href="/enterprises#nonprofit-plan">Gitee 公益计划</a>
+</div>
+</div>
+</div>
+<div class='column'>
+<div class='ui link list'>
+<div class='item'>
+<a class="item" href="/api/v5/swagger">OpenAPI</a>
+</div>
+<div class='item'>
+<a class="item" href="/help">帮助文档</a>
+</div>
+<div class='item'>
+<a class="item" href="/self_services">在线自助服务</a>
+</div>
+<div class='item'>
+<a class="item" href="/git-osc">更新日志</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class='seven wide column right aligned followus git-footer-right'>
+<div class='qrcode weixin'>
+<img alt="Qrcode weixin" src="https://assets.gitee.com/assets/qrcode-weixin-9e7cfb27165143d2b8e8b268a52ea822.jpg" />
+<p class='weixin-text'>微信服务号</p>
+</div>
+<div class='phone-and-qq column'>
+<div class='ui list official-support-container'>
+<div class='item'>
+<a class="icon-popup" href="//shang.qq.com/wpa/qunwpa?idkey=df785aa7af71f7d74149ab062742d761b845464350ecba25eb440357a3e573b7" title="点击加入码云官方群"><i class='iconfont icon-logo-qq'></i>
+<span>官方技术交流QQ群：1050025484</span>
+</a></div>
+<div class='item mail-and-zhihu'>
+<a href="mailto: git@oschina.cn"><i class='iconfont icon-ic-mail'></i>
+<span id='git-footer-email'>git#oschina.cn</span>
+</a><a href="https://www.zhihu.com/org/ma-yun-osc/ " target="_blank"><i class='iconfont icon-zhihu'></i>
+<span>码云Gitee</span>
+</a></div>
+<div class='item'>企业版售前及售后使用咨询：400-606-0201</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class='bottombar'>
+<div class='ui container'>
+<div class='ui grid'>
+<div class='seven wide column partner'>
+<div class='copyright'>
+<a href="http://www.beian.miit.gov.cn/">粤ICP备12009483号</a>
+深圳市奥思网络科技有限公司版权所有
+</div>
+</div>
+<div class='nine wide column right aligned'>
+<i class='icon world'></i>
+<a href="/language/zh-CN">简 体</a>
+/
+<a href="/language/zh-TW">繁 體</a>
+/
+<a href="/language/en">English</a>
+</div>
+</div>
+</div>
+</div>
+</footer>
+<script>
+  var officialEmail = $('#git-footer-email').text()
+  $('#git-footer-main .icon-popup').popup({ position: 'bottom center' })
+  $('#git-footer-email').text(officialEmail.replace('#', '@'))
+</script>
+
+
+<div class='side-toolbar'>
+<div class='button toolbar-help'>
+<i class='iconfont icon-help'></i>
+</div>
+<div class='ui popup left center dark'>点此查找更多帮助</div>
+<div class='toolbar-help-dialog'>
+<div class='toolbar-dialog-header'>
+<h3 class='toolbar-dialog-title'>搜索帮助</h3>
+<form accept-charset="UTF-8" action="/help/load_keywords_data" class="toolbar-help-search-form" method="get"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /></div>
+<div class='ui icon input fluid toolbar-help-search'>
+<input name='keywords' placeholder='请输入产品名称或问题' type='text'>
+<i class='icon search'></i>
+</div>
+</form>
+
+<i class='iconfont icon-close toolbar-dialog-close-icon'></i>
+</div>
+<div class='toolbar-dialog-content'>
+<div class='toolbar-help-hot-search'>
+<div class='toolbar-roll'>
+<a class="init active" href="https://oschina.gitee.io/learn-git-branching/?utm_source==gitee-help-widget" title="Git 命令在线学习"><i class='Blue icon icon-command iconfont'></i>
+<span>Git 命令在线学习</span>
+</a><a class="init " href="https://gitee.com/help/articles/4261?utm_source==gitee-help-widget" title="如何在码云上导入 GitHub 仓库"><i class='icon icon-clipboard iconfont orange'></i>
+<span>如何在码云上导入 GitHub 仓库</span>
+</a></div>
+<div class='toolbar-list'>
+<div class='toolbar-list-item'>
+<a href="/help/articles/4114">Git 仓库基础操作</a>
+</div>
+<div class='toolbar-list-item'>
+<a href="/help/articles/4166">企业版和社区版功能对比</a>
+</div>
+<div class='toolbar-list-item'>
+<a href="/help/articles/4191">SSH 公钥设置</a>
+</div>
+<div class='toolbar-list-item'>
+<a href="/help/articles/4194">如何处理代码冲突</a>
+</div>
+<div class='toolbar-list-item'>
+<a href="/help/articles/4232">仓库体积过大，如何减小？</a>
+</div>
+<div class='toolbar-list-item'>
+<a href="/help/articles/4279">如何找回被删除的仓库数据</a>
+</div>
+<div class='toolbar-list-item'>
+<a href="/help/articles/4283">码云使用容量说明</a>
+</div>
+<div class='toolbar-list-item'>
+<a href="/help/articles/4284">GitHub仓库快速导入Gitee及同步更新</a>
+</div>
+</div>
+</div>
+<div class='toolbar-help-search-reseult'>
+<div class='toolbar-help-flex-column'>
+<div class='ui centered inline loader toolbar-help-loader'></div>
+<div class='toolbar-list'></div>
+<div class='toolbar-help-link-to-help'>
+<a href="" target="_blank">查看更多搜索结果</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script>
+  var opt = { position: 'left center' };
+  var $helpSideToolbar = $(".button.toolbar-help");
+  var $toolbarRoll = $('.toolbar-roll');
+  
+  $(function() {
+    if (false) {
+      $helpSideToolbar.popup(opt);
+    } else {
+      $helpSideToolbar.popup('show', opt);
+      setTimeout(function() {
+        $helpSideToolbar.popup('hide', opt);
+      }, 3000);
+    }
+  
+    if ($toolbarRoll.length) {
+      setInterval(function() {
+        var $nextActiveLink = $toolbarRoll.find('a.active').next();
+        if (!$nextActiveLink.length) {
+          $nextActiveLink = $toolbarRoll.find('a:first-child');
+        }
+        $nextActiveLink.attr('class', 'active').siblings().removeClass('active init');
+      }, 5000);
+    }
+  })
+</script>
+
+<div class='button share-link'>
+<i class='iconfont icon-share'></i>
+</div>
+<div class='ui popup dark'>
+<div class='header'>
+分享到
+</div>
+<div class='bdsharebuttonbox' style='display: flex'>
+<a class='iconfont icon-home-service-wechat' data-cmd='weixin' title='分享到微信'></a>
+<a class='iconfont icon-weibo' data-cmd='tsina' title='分享到新浪微博'></a>
+<a class='iconfont icon-qq' data-cmd='sqq' title='分享到QQ好友'></a>
+<a class='iconfont icon-qzone' data-cmd='qzone' title='分享到QQ空间'></a>
+</div>
+</div>
+<div class='button gotop popup' id='gotop'>
+<i class='iconfont icon-top'></i>
+</div>
+<div class='ui popup dark'>回到顶部</div>
+</div>
+<style>
+  .side-toolbar .bdsharebuttonbox a {
+    font-size: 24px;
+    color: white !important;
+    opacity: 0.9;
+    margin: 6px 6px 0px 6px;
+    background-image: none;
+    text-indent: 0;
+    height: auto;
+    width: auto;
+  }
+</style>
+<script>
+  (function() {
+    $('#project-user-message').popup({
+      position: 'left center'
+    });
+  
+  }).call(this);
+</script>
+<script>
+  Gitee.initSideToolbar({})
+</script>
+<script>
+  window._bd_share_config = {
+    "common": {
+      "bdSnsKey": {},
+      "bdText": document.title,
+      "bdMini": "1",
+      "bdMiniList": ["bdxc","tqf","douban","bdhome","sqq","thx","ibaidu","meilishuo","mogujie","diandian","huaban","duitang","hx","fx","youdao","sdo","qingbiji","people","xinhua","mail","isohu","yaolan","wealink","ty","iguba","fbook","twi","linkedin","h163","evernotecn","copy","print"],
+      "bdPic": "",
+      "bdStyle": "1",
+      "bdSize": "32"
+    },
+    "share": {}
+  }
+</script>
+<script src="/bd_share/static/api/js/share.js"></script>
+
+
+
+</body>
+</html>
