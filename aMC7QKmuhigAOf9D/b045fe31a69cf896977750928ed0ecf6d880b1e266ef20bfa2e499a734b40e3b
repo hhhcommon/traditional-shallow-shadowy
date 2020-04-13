@@ -1,0 +1,2132 @@
+<!DOCTYPE html>
+<html lang='zh-CN'>
+<head>
+<title>license.txt · luolonghao/kindeditor - 码云 Gitee.com</title>
+<link href="https://assets.gitee.com/assets/favicon-9007bd527d8a7851c8330e783151df58.ico" rel="shortcut icon" type="image/vnd.microsoft.icon" />
+<meta content='gitee.com/luolonghao/kindeditor git https://gitee.com/luolonghao/kindeditor.git' name='go-import'>
+<meta charset='utf-8'>
+<meta content='always' name='referrer'>
+<meta content='码云' property='og:site_name'>
+<meta content='Object' property='og:type'>
+<meta content='http://gitee.com/luolonghao/kindeditor/blob/master/license.txt' property='og:url'>
+<meta content='https://gitee.com/static/images/logo_themecolor.png' itemprop='image' property='og:image'>
+<meta content='license.txt · luolonghao/kindeditor - 码云 Gitee.com' itemprop='name' property='og:title'>
+<meta content='码云(gitee.com)是 OSCHINA.NET 推出的代码托管平台，支持 Git 和 SVN，提供免费的私有仓库托管。目前已有超过 500 万的开发者选择码云。' property='og:description'>
+<meta content='码云,代码托管,git,Git@OSC,gitee.com,开源,内源,项目管理,版本控制,开源代码,代码分享,项目协作,开源项目托管,免费代码托管,Git代码托管,Git托管服务' name='Keywords'>
+<meta content='富文本编辑器' itemprop='description' name='Description'>
+
+<meta content="IE=edge" http-equiv="X-UA-Compatible" />
+<meta content="authenticity_token" name="csrf-param" />
+<meta content="vdS8uMI0mOyqTAkFXgnQZ9fFKEnB/JmMVBTFWG2TZg0=" name="csrf-token" />
+
+<link href="https://assets.gitee.com/assets/application-4353e40c527157901930256fb2cba2d4.css" media="screen" rel="stylesheet" />
+<script>
+//<![CDATA[
+window.gon = {};gon.locale="zh-CN";gon.sentry_dsn=null;gon.baidu_register_hm_push=null;gon.info={"controller_path":"blob","action_name":"show","current_user":false};gon.tour_env={"current_user":null,"action_name":"show","original_url":"http://gitee.com/luolonghao/kindeditor/blob/master/license.txt","controller_path":"blob"};gon.http_clone="https://gitee.com/luolonghao/kindeditor.git";gon.user_project="luolonghao/kindeditor";gon.manage_branch="管理分支";gon.manage_tag="管理标签";gon.enterprise_id=0;gon.create_reaction_path="/luolonghao/kindeditor/reactions";gon.ref="master";
+//]]>
+</script>
+<script src="https://assets.gitee.com/assets/static/sentry-5.1.0-109ee3d8895a239331efcf947ba7f5d8.js"></script>
+<script src="https://assets.gitee.com/assets/application-25134bf44f1dbb308bb450bdb036a1cc.js"></script>
+<script src="https://assets.gitee.com/assets/lib/jquery.timeago.zh-CN-9c36ca7c4899a28168320613879d208a.js"></script>
+
+<link href="https://assets.gitee.com/assets/projects/application-c4d2b90e83d054a150b44a0e5a32f7c5.css" media="screen" rel="stylesheet" />
+<script src="https://assets.gitee.com/assets/projects/app-06d07e23f4df11285e052fe9499ae8ba.js"></script>
+
+<script src="//res.wx.qq.com/open/js/jweixin-1.2.0.js"></script>
+<script>
+  var title = document.title.replace(/( - Gitee| - 码云)$/, '')
+      imgUrl = '';
+  
+  document.addEventListener('DOMContentLoaded', function(event) {
+    var imgUrlEl = document.querySelector('.readme-box .markdown-body > img, .readme-box .markdown-body :not(a) > img');
+    imgUrl = imgUrlEl && imgUrlEl.getAttribute('src');
+  
+    if (!imgUrl) {
+      imgUrlEl = document.querySelector('meta[itemprop=image]');
+      imgUrl = imgUrlEl && imgUrlEl.getAttribute('content'); 
+      imgUrl = imgUrl || "https://gitee.com/static/images/logo_themecolor.png";
+    }
+  
+    wx.config({
+      debug: false,
+      appId: "wxff219d611a159737",
+      timestamp: "1586758241",
+      nonceStr: "770de421a70eccc399112d76f13c7223",
+      signature: "fd09de2d39cfd2e48f01ba32a1bfd500162f9712",
+      jsApiList: [
+        'onMenuShareTimeline',
+        'onMenuShareAppMessage'
+      ]
+    });
+  
+    wx.ready(function () {
+      wx.onMenuShareTimeline({
+        title: title, // 分享标题
+        link: "https://gitee.com/luolonghao/kindeditor/blob/master/license.txt", // 分享链接，该链接域名或路径必须与当前页面对应的公众号JS安全域名一致
+        imgUrl: imgUrl // 分享图标
+      });
+      wx.onMenuShareAppMessage({
+        title: title, // 分享标题
+        link: "https://gitee.com/luolonghao/kindeditor/blob/master/license.txt", // 分享链接，该链接域名或路径必须与当前页面对应的公众号JS安全域名一致
+        desc: document.querySelector('meta[name=Description]').getAttribute('content'),
+        imgUrl: imgUrl // 分享图标
+      });
+    });
+    wx.error(function(res){
+      console.error('err', res)
+    });
+  })
+</script>
+
+<script type='text/x-mathjax-config'>
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    displayMath: [["$$","$$"],["\\[","\\]"]],
+    processEscapes: true,
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
+    ignoreClass: "container|files",
+    processClass: "markdown-body"
+  }
+});
+</script>
+<script src="https://assets.gitee.com/uploads/resources/MathJax-2.7.2/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+<script>
+  (function () {
+    var messages = {
+      'zh-CN': {
+        addResult: '增加 <b>{term}</b>',
+        count: '已选择 {count}',
+        maxSelections: '最多 {maxCount} 个选择',
+        noResults: '未找到结果',
+        serverError: '连接服务器时发生错误'
+      },
+      'zh-TW': {
+        addResult: '增加 <b>{term}</b>',
+        count: '已選擇 {count}',
+        maxSelections: '最多 {maxCount} 個選擇',
+        noResults: '未找到結果',
+        serverError: '連接服務器時發生錯誤'
+      }
+    }
+  
+    if (messages[gon.locale]) {
+      $.fn.dropdown.settings.message = messages[gon.locale]
+    }
+  }());
+</script>
+
+<!--[if lt IE 10]>
+<script>
+    window.location.href = "/incompatible.html";
+</script>
+<![endif]-->
+</head>
+
+<body class='git-project lang-zh-CN'>
+<header class='common-header fixed noborder' id='git-header-nav'>
+<div class='ui container'>
+<div class='ui menu header-menu'>
+<div class='git-nav-expand-bar'>
+<i class='iconfont icon-mode-table'></i>
+</div>
+<div class='gitee-nav__sidebar'>
+<div class='gitee-nav__sidebar-container'>
+<div class='gitee-nav__sidebar-top'>
+<div class='gitee-nav__avatar-box'></div>
+<div class='gitee-nav__buttons-box'>
+<a class="ui button small fluid orange" href="/login">登录</a>
+<a class="ui button small fluid basic is-register" href="/signup">注册</a>
+</div>
+</div>
+<div class='gitee-nav__sidebar-middle'>
+<div class='gitee-nav__sidebar-list'>
+<ul>
+<li class='gitee-nav__sidebar-item'>
+<a href="/explore"><i class='iconfont icon-ic-discover'></i>
+<span class='gitee-nav__sidebar-name'>开源软件</span>
+</a></li>
+<li class='gitee-nav__sidebar-item'>
+<a href="/enterprises"><i class='iconfont icon-ic-enterprise'></i>
+<span class='gitee-nav__sidebar-name'>企业版</span>
+</a></li>
+<li class='gitee-nav__sidebar-item'>
+<a href="/education"><i class='iconfont icon-ic-education'></i>
+<span class='gitee-nav__sidebar-name'>高校版</span>
+</a></li>
+<li class='gitee-nav__sidebar-item split-line'></li>
+<li class='gitee-nav__sidebar-item'>
+<a href="/search"><i class='iconfont icon-ic-search'></i>
+<span class='gitee-nav__sidebar-name'>搜索</span>
+</a></li>
+<li class='gitee-nav__sidebar-item'>
+<a href="/help"><i class='iconfont icon-help-circle'></i>
+<span class='gitee-nav__sidebar-name'>帮助中心</span>
+</a></li>
+<li class='gitee-nav__sidebar-item'>
+<a href="/terms"><i class='iconfont icon-file'></i>
+<span class='gitee-nav__sidebar-name'>使用条款</span>
+</a></li>
+<li class='gitee-nav__sidebar-item'>
+<a href="/about_us"><i class='iconfont icon-issuepx'></i>
+<span class='gitee-nav__sidebar-name'>关于我们</span>
+</a></li>
+</ul>
+</div>
+</div>
+<div class='gitee-nav__sidebar-bottom'>
+<div class='gitee-nav__sidebar-close-button'>
+<i class='fa fa-angle-double-left'></i>
+</div>
+</div>
+</div>
+</div>
+
+<div class='item gitosc-logo'>
+<a href="/"><img alt='码云 Gitee — 基于 Git 的代码托管和研发协作平台' class='ui inline image' height='28' src='/static/images/logo.svg?t=158106664' title='码云 Gitee — 基于 Git 的代码托管和研发协作平台' width='95'>
+<img alt='码云 Gitee — 基于 Git 的代码托管和研发协作平台' class='ui inline black image' height='28' src='/static/images/logo-black.svg?t=158106664' title='码云 Gitee — 基于 Git 的代码托管和研发协作平台' width='95'>
+</a></div>
+<a class="item " href="/explore" title="开源软件">开源软件
+</a><a class="item " href="/enterprises" title="企业版">企业版
+<sup class='ui red label'>
+特惠
+</sup>
+</a><a class="item " href="/education" title="高校版">高校版
+</a><a class="item" href="https://blog.gitee.com/" id="gitee-blog" target="_blank" title="博客">博客
+</a><div class='center responsive-logo'>
+<a href="/"><img alt='码云 Gitee — 基于 Git 的代码托管和研发协作平台' class='ui inline image' height='24' src='/static/images/logo.svg?t=158106664' title='码云 Gitee — 基于 Git 的代码托管和研发协作平台' width='85'>
+<img alt='码云 Gitee — 基于 Git 的代码托管和研发协作平台' class='ui inline black image' height='24' src='/static/images/logo-black.svg?t=158106664' title='码云 Gitee — 基于 Git 的代码托管和研发协作平台' width='85'>
+</a></div>
+<div class='right menu userbar' id='git-nav-user-bar'>
+<form accept-charset="UTF-8" action="/search" class="ui item" data-text-filter="搜索格式不正确" data-text-require="搜索关键字不能少于1个" id="navbar-search-form" method="get"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /></div>
+<input id="navbar-search-type" name="type" type="hidden" />
+<input id="fork_filter" name="fork_filter" type="hidden" value="on" />
+<div class='ui search'>
+<input class="prompt" id="navbar-search-input" name="q" placeholder="搜索项目" type="text" value="" />
+</div>
+</form>
+
+<script>
+  var can_search_in_repo = 1,
+      repo = "VG1wbk1rNVhSVE5PYWs1dFlUYzJNMlk9YTc2M2Y=",
+      reponame = "luolonghao/kindeditor";
+  
+  $(function() {
+    var $search = $('#navbar-search-form .ui.search');
+    $search.search({
+      apiSettings: {
+        url: '/search/relative_project?q={query}',
+        onResponse: function (res) {
+          if (res && res.status === 200 && res.data) {
+            var query = $search.search('get value');
+  
+            res.data.map(function (item) {
+              item.path_ns = '/' + item.path_ns;
+              item.icon = 'iconfont icon-project-public';
+            });
+            res.data.unshift({
+              name_ns: "在全站搜索 <b class='hl'>" + query +"</b> 相关项目",
+              path_ns: '/search?fork_filter=on&q=' + query,
+              icon: 'iconfont icon-search'
+            });
+            if(can_search_in_repo == 1) {
+              res.data.unshift({
+                name_ns: "在当前仓库搜索 <b class='hl'>" + query +"</b> 相关代码",
+                path_ns: '/search?type=code&q=' + query + '&repo=' + repo + '&reponame=' + reponame,
+                icon: 'iconfont icon-search'
+              });
+            }
+            return res;
+          } else {
+            return { data: [] };
+          }
+        }
+      },
+      fields: {
+        results: 'data',
+        description: 'name_ns',
+        url: 'path_ns',
+        icon: 'icon'
+      },
+      minCharacters: 1,
+      maxResults: 10,
+      searchDelay: 120,
+      showNoResults: false,
+      transition: 'fade'
+    });
+  });
+</script>
+
+<a class="item git-nav-user__login-item" href="/login">登录
+</a><a class="item git-nav-user__register-item" href="/signup">注册
+</a><script>
+  $('.destroy-user-session').on('click', function() {
+    $.cookie('access_token', null, { path: '/' });
+  })
+</script>
+
+</div>
+</div>
+</div>
+</header>
+<script>
+  Gitee.initNavbar()
+  Gitee.initRepoRemoteWay()
+</script>
+
+<!--[if lt IE 10]>
+<script>
+  window.location.href = "/incompatible.html"
+</script>
+<![endif]-->
+
+<div class='fixed-notice-infos'>
+<div class='all-messages'>
+<div class='ui info message' id='git-bulletin'>
+<a href=https://blog.gitee.com/2020/04/07/gitee-go/ target='_blank'>Gitee 企业版上线 DevOps 工具「Gitee Go」</a>
+<i class='icon remove' id='remove-bulletin'></i>
+</div>
+</div>
+<div class='ui container'>
+<div class='flash-messages' id='messages-container'></div>
+</div>
+<script>
+  (function() {
+    $(function() {
+      var $error_box, alertTip, notify_content, notify_options, template;
+      template = '<div data-notify="container" class="ui {0} message" role="alert">' + '<i data-notify="dismiss" class="close icon"></i>' + '<span data-notify="message">{2}</span>' + '</div>';
+      notify_content = null;
+      notify_options = {};
+      alertTip = '';
+      $error_box = $(".flash_error.flash_error_box");
+      if (notify_options.type === 'error' && $error_box.length > 0 && !$.isEmptyObject(notify_content.message)) {
+        if (notify_content.message === 'captcha_fail') {
+          alertTip = "验证码不正确";
+        } else if (notify_content.message === 'captcha_expired') {
+          alertTip = "验证码已过期，请点击刷新";
+        } else if (notify_content.message === 'not_found_in_database') {
+          alertTip = "帐号或者密码错误";
+        } else if (notify_content.message === 'not_found_and_show_captcha') {
+          alertTip = "帐号或者密码错误";
+        } else if (notify_content.message === 'phone_captcha_fail') {
+          alertTip = "手机验证码不通过";
+        } else {
+          alertTip = notify_content.message;
+        }
+        return $error_box.html(alertTip).show();
+      } else if (notify_content) {
+        if ("show" === 'third_party_binding') {
+          return $('#third_party_binding-message').html(notify_content.message).addClass('ui message red');
+        }
+        notify_options.delay = 3000;
+        notify_options.template = template;
+        notify_options.offset = {
+          x: 10,
+          y: 30
+        };
+        notify_options.element = '#messages-container';
+        return $.notify(notify_content, notify_options);
+      }
+    });
+  
+  }).call(this);
+</script>
+
+</div>
+<script>
+  (function() {
+    $(function() {
+      var setCookie;
+      setCookie = function(name, value) {
+        $.cookie(name, value, {
+          path: '/',
+          expires: 365
+        });
+      };
+      $('#remove-bulletin, #remove-bulletin-dashboard').on('click', function() {
+        setCookie('remove_bulletin', "gitee-maintain-1586321954");
+        $('#git-bulletin').hide();
+      });
+      $('#remove-member-bulletin').on('click', function() {
+        setCookie('remove_member_bulletin', "gitee_member_bulletin");
+        $(this).parent().hide();
+      });
+      return $('#remove-gift-bulletin').on('click', function() {
+        setCookie('remove_gift_bulletin', "gitee-gift-bulletin");
+        $(this).parent().hide();
+      });
+    });
+  
+  }).call(this);
+</script>
+<script>
+  function closeMessageBanner(pthis, type, val) {
+    var json = {}
+  
+    val = typeof val === 'undefined' ? null : val
+    $(pthis).parent().remove()
+    if (type === 'out_of_enterprise_member') {
+      json = {type: type, data: val}
+    } else if (type === 'enterprise_overdue') {
+      json = {type: type, data: val}
+    }
+    $.post('/profile/close_flash_tip', json)
+  }
+</script>
+
+<div class='site-content'>
+<div class='git-project-header'>
+<div class='fixed-notice-infos'>
+<div class='ui info icon floating message green' id='fetch-ok' style='display: none'>
+<div class='content'>
+<div class='header status-title'>
+<i class='info icon status-icon'></i>
+代码拉取完成，页面将自动刷新
+</div>
+</div>
+</div>
+<div class='ui info icon floating message error' id='fetch-error' style='display: none'>
+<div class='content'>
+<div class='header status-title'>
+<i class='info icon status-icon'></i>
+<span class='error_msg'></span>
+</div>
+</div>
+</div>
+</div>
+<div class='ui container'>
+<div class='git-project-categories'>
+<a href="/explore">开源项目</a>
+<span class='symbol'>></span>
+<a href="/explore/application-tools">应用工具</a>
+<span class='symbol'>></span>
+<a href="/explore/text-editor">文本编辑</a>
+<span class='symbol and-symbol'>&</span>
+</div>
+
+<div class='git-project-header-details'>
+<div class='git-project-header-container'>
+<div class='git-project-header-actions'>
+<span class='basic ui buttons pointing top left dropdown metrics-radar'>
+<div class='ui button project-radar'>
+<i class='iconfont icon-radar'></i>
+指数
+</div>
+<div class='ui button action-social-count exponent-total-sorce'>
+0
+</div>
+<div class='menu radar'>
+<div class='item radar-menu'>
+<div class='hide' data-url='/luolonghao/kindeditor/project_radars' id='metrics-radar'>
+<div class='title'>
+<div class='fisrt-title'>
+<div class='project-name' title='kindeditor'>
+kindeditor
+</div>
+<div class='gitee-exponent'>
+<div class='text'></div>
+<div class='exponent-score'></div>
+</div>
+</div>
+<div class='total-percent'>
+<div class='percent-header'></div>
+<div class='percent-score'></div>
+<div class='percent-end'></div>
+</div>
+</div>
+<div class='wrap'></div>
+<div class='project-radar-list'>
+<div class='descript-contianer'>
+<div class='descript-title'>
+<p>代码活跃度</p>
+<p>社区活跃度</p>
+<p>团队健康</p>
+<p>流行趋势</p>
+<p>影响力</p>
+</div>
+<div class='descript'>
+<p>：与代码提交频次相关</p>
+<p>：与项目和用户的issue、pr互动相关</p>
+<p>：与团队成员人数和稳定度相关</p>
+<p>：与项目近期受关注度相关</p>
+<p>：与项目的star、下载量等社交指标相关</p>
+</div>
+</div>
+</div>
+<div class='finaltime'></div>
+</div>
+<script src="https://assets.gitee.com/assets/skill_radar/rep_app-301ecccea9b1eac212beffa1823bf8c7.js"></script>
+
+</div>
+</div>
+</span>
+<div class='ui tiny modal project-donate-modal' id='project-donate-modal'>
+<i class='iconfont icon-close close'></i>
+<div class='header'>捐赠</div>
+<div class='content'>
+捐赠前请先登录
+</div>
+<div class='actions'>
+<a class='ui blank button cancel'>取消</a>
+<a class='ui orange ok button' href='/login'>前往登录</a>
+</div>
+</div>
+<div class='ui small modal wepay-qrcode'>
+<i class='iconfont icon-close close'></i>
+<div class='header'>
+扫描微信二维码支付
+<span class='wepay-cash'></span>
+</div>
+<div class='content weqcode-center'>
+<img id='wepay-qrcode' src=''>
+</div>
+<div class='actions'>
+<div class='ui cancel blank button'>取消</div>
+<div class='ui ok orange button'>
+支付完成
+</div>
+</div>
+</div>
+<div class='ui mini modal' id='confirm-alipay-modal'>
+<div class='header'>支付提示</div>
+<div class='content'>
+将跳转至支付宝完成支付
+</div>
+<div class='actions'>
+<div class='ui approve orange button'>
+确定
+</div>
+<div class='ui blank cancel button'>
+取消
+</div>
+</div>
+</div>
+
+<span class='ui basic buttons watch-container'>
+<a class="ui button watch" href="/login" title="你必须登录后才可以watch一个仓库"><i class='iconfont icon-watch'></i>
+Watch
+</a><a class="ui button action-social-count" href="/luolonghao/kindeditor/watchers" title="76">76
+</a></span>
+<span class='ui basic buttons star-container'>
+<a class="ui button star" href="/login" title="你必须登录后才可以star一个仓库"><i class='iconfont icon-star'></i>
+Star
+</a><a class="ui button action-social-count" href="/luolonghao/kindeditor/stargazers" title="212">212
+</a></span>
+<span class='ui basic buttons fork-container' title='无权 Fork 此仓库'>
+<a class="ui button fork" href="/login" title="你必须登录后才可以fork一个仓库"><i class='iconfont icon-fork'></i>
+Fork
+</a><a class="ui button action-social-count disabled-style" href="/luolonghao/kindeditor/members" title="79">79
+</a></span>
+</div>
+<h2 class='git-project-title'>
+<span class="project-title"><i class="project-icon iconfont icon-project-public" title="这是一个公开仓库"></i> <a class="author" href="/luolonghao" title="luolonghao">luolonghao</a> / <a class="repository" href="/luolonghao/kindeditor" style="padding-bottom: 0px" target="" title="kindeditor">kindeditor</a></span><span class="project-badges"><a class="ui small label proj-language" href="/explore/all?lang=JavaScript" target="_blank" title="主要编程语言">JavaScript</a><a class="ui small license label" href="/luolonghao/kindeditor/blob/master/license.txt" title="开源许可协议">LGPL-2.1</a><a class="git-project-recommend-badge" href="/explore" title="已被推荐"><i class='iconfont icon-recommended'></i>
+</a></span>
+<input id="recomm_at" name="recomm_at" type="hidden" value="2013-11-23 18:33" />
+<input id="project_title" name="project_title" type="hidden" value="luolonghao/kindeditor" />
+</h2>
+</div>
+</div>
+</div>
+<div class='row' id='import-result-message' style='padding-top: 0px; display: none'>
+<div class='sixteen wide column'>
+<div class='ui icon yellow message status-color'>
+<i class='info icon status-icon' style='width:60px;padding-right:12px;'></i>
+<i class='close icon'></i>
+<div class='header status-title'>
+同步状态
+</div>
+<span class='status-message'></span>
+</div>
+</div>
+</div>
+<script>
+  var title_import_url = "false";
+  var title_post_url = "/luolonghao/kindeditor/update_import";
+  var title_fork_url = "/luolonghao/kindeditor/sync_fork";
+  var title_project_path = "kindeditor";
+  var title_p_name = "kindeditor";
+  var title_p_id= "6865";
+  var title_description = "富文本编辑器";
+  var title_form_authenticity_token = "vdS8uMI0mOyqTAkFXgnQZ9fFKEnB/JmMVBTFWG2TZg0=";
+  var watch_type = "unwatch";
+  
+  $('.metrics-radar').dropdown({ action: 'nothing' });
+  $('.js-project-watch').dropdown('set selected', watch_type);
+  $('.checkbox.sync-wiki').checkbox();
+</script>
+<style>
+  i.loading {
+    -webkit-animation: icon-loading 1.2s linear infinite;
+    animation: icon-loading 1.2s linear infinite;
+  }
+  .qrcode_cs {
+    float: left;
+  }
+  .check-sync-wiki {
+    float: left;
+    height: 28px;
+    line-height: 28px;
+  }
+  .sync-wiki-warn {
+    color: #e28560;
+  }
+</style>
+
+<div class='git-project-nav'>
+<div class='ui container'>
+<div class='ui secondary pointing menu'>
+<a class="item active" href="/luolonghao/kindeditor"><i class='iconfont icon-code'></i>
+代码
+</a><a class="item " href="/luolonghao/kindeditor/issues"><i class='iconfont icon-issue'></i>
+Issues
+<span class='ui mini circular label'>
+11
+</span>
+</a><a class="item " href="/luolonghao/kindeditor/pulls"><i class='iconfont icon-pull-request'></i>
+Pull Requests
+<span class='ui mini circular label'>
+0
+</span>
+</a><a class="item " href="/luolonghao/kindeditor/attach_files"><i class='iconfont icon-annex'></i>
+附件
+<span class='ui mini circular label'>0</span>
+</a><a class="item " href="/luolonghao/kindeditor/wikis"><i class='iconfont icon-wiki'></i>
+Wiki
+<span class='ui mini circular label'>
+1
+</span>
+</a><a class="item  " href="/luolonghao/kindeditor/graph/master"><i class='iconfont icon-statistics'></i>
+统计
+</a><div class='item project-devops-item'>
+<div class='ui pointing top right dropdown project-devops-dropdown'>
+<div class='text'>
+<i class='iconfont icon-devops'></i>
+DevOps
+</div>
+<i class='dropdown icon'></i>
+<div class='menu' style='display:none'>
+<a class="item" href="https://gitee.com/help/articles/4285" target="_blank"><img alt="Baidu efficiency cloud" src="https://assets.gitee.com/assets/baidu_efficiency_cloud-81a98c2eb67fac83b1453ca3d2feb326.svg" />
+<div class='item-title'>
+百度效率云
+</div>
+</a><a class="item" href="https://gitee.com/help/articles/4193" target="_blank"><img alt="Jenkins for gitee" src="https://assets.gitee.com/assets/jenkins_for_gitee-554ec65c490d0f1f18de632c48acc4e7.png" />
+<div class='item-title'>
+Jenkins for Gitee
+</div>
+</a><a class="item" href="/luolonghao/kindeditor/paas/huaweicloud_cse"><img alt="Hauweiwfw" src="https://assets.gitee.com/assets/hauweiwfw-6d23ceba77e4f4b8c4498f3f5dc2fd99.png" />
+<div class='item-title'>
+华为微服务平台
+</div>
+</a><a class="item" href="/luolonghao/kindeditor/paas/select_platform"><img alt="Mopaas mini" src="https://assets.gitee.com/assets/mopaas_mini-e0279e635080d94a1a1d7a386c86ac5f.png" />
+<div class='item-title'>
+MoPaaS V3
+</div>
+</a></div>
+</div>
+</div>
+<div class='item'>
+<div class='ui pointing top right dropdown git-project-service'>
+<div class='text'>
+<i class='iconfont icon-service'></i>
+服务
+</div>
+<i class='dropdown icon'></i>
+<div class='menu' style='display:none'>
+<a class="item" href="/luolonghao/kindeditor/pages"><img alt="Logo en" src="/static/images/logo-en.svg" />
+<div class='item-title'>
+Gitee Pages
+</div>
+</a><a class="item" href="/luolonghao/kindeditor/quality_analyses?platform=sonar_qube"><img alt="Sonar mini" src="https://assets.gitee.com/assets/sonar_mini-5e1b54bb9f6c951d97fb778ef623afea.png" />
+<div class='item-title'>
+质量分析
+</div>
+</a><a class="item" href="/luolonghao/kindeditor/quality_analyses?platform=codesafe"><img alt="Codesafe mini" src="https://assets.gitee.com/assets/codesafe_mini-accbe1e555e9864c552620240d10e4de.png" width="100%" />
+<div class='item-title'>
+奇安信代码卫士
+</div>
+</a><button class='ui orange basic button quit-button' id='quiting-button'>
+我知道了，不再自动展开
+</button>
+</div>
+</div>
+</div>
+<div class='item right mr-0 pr-0'>
+
+</div>
+</div>
+</div>
+</div>
+<script>
+  $('.git-project-nav .ui.dropdown').dropdown({ action: 'nothing' });
+</script>
+<style>
+  .git-project-nav i.checkmark.icon {
+    color: green;
+  }
+  #quiting-button {
+    display: none;
+  }
+  
+  .git-project-nav .dropdown .menu.hidden:after {
+    visibility: hidden !important;
+  }
+</style>
+<script>
+  isSignIn = false
+  isClickGuide = false
+  $('#git-versions.dropdown').dropdown();
+  $.ajax({
+    url:"/luolonghao/kindeditor/access/add_access_log",
+    type:"GET"
+  });
+  $('#quiting-button').on('click',function() {
+    $('.git-project-service').click();
+    if (isSignIn) {
+      $.post("/projects/set_service_guide")
+    }
+    $.cookie("Serve_State", true, { expires: 3650, path: '/'})
+    $('#quiting-button').hide();
+  });
+  if (!(isClickGuide || $.cookie("Serve_State") == 'true')) {
+    $('.git-project-service').click()
+    $('#quiting-button').show()
+  }
+</script>
+
+</div>
+<div class='ui container'>
+<div class='register-guide'>
+<div class='register-container'>
+<div class='regist'>
+加入 Gitee
+</div>
+<div class='description'>
+与超过 500 万 开发者一起发现、参与优秀开源项目，私有仓库也完全免费 ：）
+</div>
+<a class="ui orange button free-registion" href="/signup?from=project-guide">免费加入</a>
+<div class='login'>
+已有帐号？
+<a href="/login?from=project-guide">立即登录</a>
+</div>
+</div>
+</div>
+
+<div class='git-project-content-wrapper'>
+<div class='git-project-content' id='git-project-content'>
+<div class='row'>
+<div class='git-project-desc-wrapper'>
+<div class='git-project-desc'>
+<div class='project-introduce'>
+<span class='git-project-desc-text'>
+富文本编辑器
+</span>
+<a class='hide spread' href='javascript:void(0);'>
+展开
+<i class='caret down icon'></i>
+</a>
+<a class='retract hide' href='javascript:void(0);'>
+收起
+<i class='caret up icon'></i>
+</a>
+<p class='git-project-homepage'>
+</p>
+</div>
+</div>
+<div class='git-project-desc-edit flex'>
+<div class='sixty-percent ui small input'>
+<input name='project[description]' placeholder='描述' type='text' value='富文本编辑器'>
+</div>
+<div class='twenty-percent ui small input'>
+<input data-regex-value='(^$)|(^(http|https):\/\/(([0-9]|[1-9][0-9]|1[0-9]{2}|2[0-4][0-9]|25[0-5])\.){3}([0-9]|[1-9][0-9]|1[0-9]{2}|2[0-4][0-9]|25[0-5]).*)|(^(http|https):\/\/[a-zA-Z0-9]+([_\-\.]{1}[a-zA-Z0-9]+)*\.[a-zA-Z]{2,10}(:[0-9]{1,10})?(\/.*)?$)' name='project[homepage]' placeholder='主页(eg: https://gitee.com)' type='text' value=''>
+</div>
+<div class='zero-percent'>
+<button class='ui orange button btn-save'>
+保存更改
+</button>
+<button class='ui button btn-cancel-edit'>
+取消
+</button>
+</div>
+</div>
+<script>
+  $(function () {
+    new ProjectInfoEditor({
+      el: '.git-project-desc-wrapper',
+      homepage: "",
+      description: "富文本编辑器",
+      url: "/luolonghao/kindeditor/update_description",
+      modalHelper: Gitee.modalHelper
+    })
+  })
+  
+  if (false) {
+    gon.project_new_blob_path = "/luolonghao/kindeditor/new/master/license.txt"
+    bindShowModal({
+      el: $('.no-license .project-license__create'),
+      complete: function(data, modal) {
+        if (!data.haveNoChoice && !data.data) {
+          Flash.show('请选择一项开源许可证')
+        } else {
+          location.href = gon.project_new_blob_path + '?license=' + data.data
+        }
+      },
+      skip: function () {
+        location.href = gon.project_new_blob_path + '?license'
+      }
+    })
+  }
+  
+  $('i.help.circle.icon').popup({
+    popup: '.no-license .ui.popup',
+    position: 'right center'
+  })
+  
+  $('#remove-no-license-message').on('click', function(){
+    $.cookie("skip_repo_no_license_message_6865", 'hide', { expires: 365 })
+    $('#user-no-license-message').hide()
+    return
+  })
+</script>
+</div>
+
+</div>
+<div class='git-project-summary' id='git-project-summary'>
+<div class='summary-viewer'>
+<div class='viewer-wrapper'>
+<ul>
+<li>
+<a href="/luolonghao/kindeditor/commits/master"><i class='iconfont icon-commit'></i>
+<b>973</b>
+次提交
+</a></li>
+<li>
+<a href="/luolonghao/kindeditor/branches"><i class='iconfont icon-branches'></i>
+<b>1</b>
+个分支
+</a></li>
+<li>
+<a href="/luolonghao/kindeditor/tags"><i class='iconfont icon-tag'></i>
+<b>9</b>
+个标签
+</a></li>
+<li>
+<a href="/luolonghao/kindeditor/releases"><i class='iconfont icon-release'></i>
+<b>0</b>
+个发行版
+</a></li>
+<li>
+<a href="/luolonghao/kindeditor/contributors?ref=master"><i class='iconfont icon-collaborators'></i>
+<b class='contributor-count' data-url='/luolonghao/kindeditor/contributors_count?ref=master'></b>
+<span class='contributor-text'>
+正在获取贡献者
+</span>
+</a></li>
+</ul>
+<ul>
+</ul>
+</div>
+</div>
+<div class='summary-languages' title='点击查看语言占比'>
+</div>
+
+</div>
+<div class='git-project-bread' id='git-project-bread'>
+<div class='git-project-right-actions float-right'>
+<div class='d-inline-block' id='git-project-tree-actions'>
+<script>
+  $('.disabled-upload-readonly').popup({
+    content: "只读目录不允许上传文件",
+    className: {
+      popup: 'ui popup',
+    },
+    position: 'bottom center',
+  })
+  $('.disabled-create-folder').popup({
+    content: "只读目录不允许创建目录",
+    className: {
+      popup: 'ui popup',
+    },
+    position: 'bottom center',
+  })
+  $('.disabled-create-file').popup({
+    content: "只读目录不允许创建文件",
+    className: {
+      popup: 'ui popup',
+    },
+    position: 'bottom center',
+  })
+  $('.disabled-upload-readonly').click(() => {
+    return false
+  })
+  $('.disabled-create-folder').click(() => {
+    return false
+  })
+  $('.disabled-create-file').click(() => {
+    return false
+  })
+</script>
+<style>
+  .disabled-upload-readonly, .disabled-create-file, .disabled-create-folder {
+    background-color: #dcddde !important;
+    color: rgba(0, 0, 0, 0.4) !important;
+    opacity: 0.3 !important;
+    background-image: none !important;
+    -webkit-box-shadow: none !important;
+            box-shadow: none !important; }
+</style>
+
+</div>
+<div class='ui orange button' id='btn-dl-or-clone'>
+克隆/下载
+<i class='dropdown icon'></i>
+<div class='git-project-download-panel for-project ui bottom right popup'>
+<div class='ui small secondary pointing menu'>
+<a class='item active' data-text='' data-type='http' data-url='https://gitee.com/luolonghao/kindeditor.git'>HTTPS</a>
+<a class='item' data-text='' data-type='ssh' data-url='git@gitee.com:luolonghao/kindeditor.git'>SSH</a>
+<a class='item' data-text="该仓库未启用SVN访问，请仓库管理员前往&lt;a target='_blank' href=/luolonghao/kindeditor/settings&gt;【仓库设置】&lt;/a&gt;开启。" data-type='svn' data-url=''>SVN</a>
+<a class='item' data-text="该仓库未启用SVN访问，请仓库管理员前往&lt;a target='_blank' href=/luolonghao/kindeditor/settings&gt;【仓库设置】&lt;/a&gt;开启。" data-type='svn_ssh' data-url=''>SVN+SSH</a>
+</div>
+<div class='ui fluid right labeled small input download-url-panel'>
+<input id="project_clone_url" name="project_clone_url" onclick="focus();select()" readonly="readonly" type="text" value="https://gitee.com/luolonghao/kindeditor.git" />
+<div class='ui basic label'>
+<div class='ui small basic orange button' data-clipboard-target='#project_clone_url' id='btn-copy-clone-url'>
+复制
+</div>
+</div>
+</div>
+<div class='ui fluid right labeled warning-text forbid-warning-text'>
+
+</div>
+<hr>
+<a class="ui fluid download link button" href="javascript:void(0);"><i class='icon download'></i>
+下载ZIP
+</a><div class='download_repository_zip form modal tiny ui' id='unlanding-complaint-modal'>
+<i class='iconfont icon-close close'></i>
+<div class='header'>
+登录提示
+</div>
+<div class='container actions'>
+<div class='content'>
+该操作需登录码云帐号，请先登录后再操作。
+</div>
+<div class='ui orange icon large button ok'>
+立即登录
+</div>
+<div class='ui button blank cancel'>
+没有帐号，去注册
+</div>
+</div>
+</div>
+<script>
+  var $elm = $('.download');
+  
+  $elm.on('click', function() {
+    var modals = $("#unlanding-complaint-modal.download_repository_zip");
+    if (modals.length > 1) {
+      modals.eq(0).modal('show');
+    } else {
+      modals.modal('show');
+    }
+  })
+  $("#unlanding-complaint-modal.download_repository_zip").modal({
+    onDeny: function() {
+      window.location.href = "/signup?from=download_repository_zip";
+    },
+    onApprove: function() {
+      window.location.href = "/login?from=download_repository_zip";
+    }
+  })
+</script>
+
+<hr>
+<div class='ent-poster mt-1 toschina-content__hidden'>
+<h2>企业级软件开发协作工具</h2>
+<p>代码托管 项目管理 文档协作 完备安全策略</p>
+<a class="ui button orange" href="/enterprises?utm_source=g_download" target="_blank">了解更多</a>
+</div>
+</div>
+<script>
+  (function() {
+    var $btnCopy, $input, $item, $panel, clipboard, dataUrl, remoteWay;
+  
+    $input = $('#project_clone_url');
+  
+    remoteWay = '';
+  
+    clipboard = new Clipboard('#btn-copy-clone-url');
+  
+    $panel = $('.git-project-download-panel');
+  
+    $btnCopy = $('#btn-copy-clone-url');
+  
+    $panel.find('.menu > .item').on('click', function() {
+      var $item, dataUrl;
+      $item = $(this).addClass('active');
+      $item.siblings().removeClass('active');
+      dataUrl = $item.attr('data-url');
+      if (dataUrl) {
+        $panel.find('.download-url-panel').show();
+        $input.val(dataUrl);
+        $panel.find('.forbid-warning-text').html('');
+      } else {
+        $panel.find('.download-url-panel').hide();
+        $panel.find('.forbid-warning-text').html($item.attr('data-text') || '');
+      }
+      return $.cookie('remote_way', $item.attr('data-type'), {
+        expires: 365,
+        path: '/'
+      });
+    });
+  
+    $('body').on('click', '#btn-dl-or-clone', function(e) {
+      e.stopImmediatePropagation();
+      if ($(e.target)[0] === $panel[0] || $(e.target).closest($panel).length) {
+        return;
+      }
+      return $panel.transition('fade up');
+    });
+  
+    $('body').on('click', function() {
+      if ($panel.transition('is visible')) {
+        return $panel.transition('fade up');
+      }
+    });
+  
+    $item = $panel.find('.ui.menu .item').eq(0);
+  
+    $item.addClass('active').siblings().removeClass('active');
+  
+    dataUrl = $item.attr('data-url');
+  
+    if (dataUrl) {
+      $panel.find('.download-url-panel').show();
+      $input.val(dataUrl);
+      $panel.find('.forbid-warning-text').html('');
+    } else {
+      $panel.find('.download-url-panel').hide();
+      $panel.find('.forbid-warning-text').html($item.attr('data-text') || '');
+    }
+  
+    clipboard.on('success', function() {
+      $btnCopy.popup({
+        content: '已复制',
+        position: 'right center',
+        onHidden: function() {
+          return $btnCopy.popup('destroy');
+        }
+      });
+      return $btnCopy.popup('show');
+    });
+  
+    clipboard.on('error', function() {
+      $btnCopy.popup({
+        content: '复制失败，请手动复制',
+        position: 'right center',
+        onHidden: function() {
+          return $btnCopy.popup('destroy');
+        }
+      });
+      return $btnCopy.popup('show');
+    });
+  
+  }).call(this);
+</script>
+
+</div>
+</div>
+<div class='ui horizontal list'>
+<div class='item git-project-branch-item'>
+<input id="path" name="path" type="hidden" value="license.txt" />
+<div class='ui top left pointing dropdown gradient button dropdown-has-tabs' id='git-project-branch'>
+<input id="ref" name="ref" type="hidden" value="master" />
+<div class='default text'>
+master
+</div>
+<i class='dropdown icon'></i>
+<div class='menu'>
+<div class='ui left icon search input'>
+<i class='iconfont icon-search'></i>
+<input placeholder='搜索分支' type='text'>
+</div>
+<div class='tab-menu'>
+<div class='tab-menu-action' data-tab='branches'>
+<a class="ui link button" href="/luolonghao/kindeditor/branches">管理</a>
+</div>
+<div class='tab-menu-action' data-tab='tags'>
+<a class="ui link button" href="/luolonghao/kindeditor/tags">管理</a>
+</div>
+<div class='tab-menu-item' data-placeholder='搜索分支' data-tab='branches'>
+分支 (1)
+</div>
+<div class='tab-menu-item' data-placeholder='搜索标签' data-tab='tags'>
+标签 (9)
+</div>
+</div>
+<div class='tab scrolling menu' data-tab='branches'>
+<div class="item" data-value="master"><span>master</span></div>
+</div>
+<div class='tab scrolling menu' data-tab='tags'>
+<div class='item' data-value='v4.1.10'>v4.1.10</div>
+<div class='item' data-value='v4.1.9'>v4.1.9</div>
+<div class='item' data-value='v4.1.6'>v4.1.6</div>
+<div class='item' data-value='v4.1.5'>v4.1.5</div>
+<div class='item' data-value='v4.1.4'>v4.1.4</div>
+<div class='item' data-value='v4.1.3'>v4.1.3</div>
+<div class='item' data-value='v4.1.2'>v4.1.2</div>
+<div class='item' data-value='v4.1.1'>v4.1.1</div>
+<div class='item' data-value='v4.1'>v4.1</div>
+</div>
+</div>
+</div>
+<style>
+  .iconfont.icon-shieldlock {
+    color: #8c92a4;
+  }
+</style>
+
+<script>
+  $(function () {
+    Gitee.initTabsInDropdown($('#git-project-branch').dropdown({
+      fullTextSearch: true,
+      onChange: function (value, text) {
+        var path = $('#path').val();
+        var href = ['/luolonghao/kindeditor/tree', encodeURIComponent(value), path].join('/');
+        window.location.href = href;
+      }
+    }));
+    $('.protected-branch-popup').popup()
+  })
+</script>
+
+</div>
+<div class='item' id='git-project-root-actions'>
+<div class='repo-index repo-none-index' style='margin-left:0px;'>
+<div class='ui horizontal list repo-action-list'>
+<div class='item'>
+<div class='ui pointing right top dropdown gradient button' id='git-project-file'>
+<div class='text'>文件</div>
+<i class='dropdown icon'></i>
+<div class='menu'>
+<a class="item repo-action" href="/luolonghao/kindeditor/new/master/license.txt" id="new_file_bread" title="新建文件">新建文件
+</a><div class='disabled item'>上传文件</div>
+<a class='item repo-action' id='search-files'>
+搜索文件
+</a>
+</div>
+</div>
+</div>
+<div class='item toschina-content__hidden'>
+<a class="ui gradient button webide" href="/-/ide/project/luolonghao/kindeditor/edit/master" target="_blank">Web IDE</a>
+</div>
+<div class='item toschina-content__hidden'>
+<a class="ui gradient button repo-action" href="/luolonghao/kindeditor/widget"><i class='iconfont icon-widget icon-orange'></i>
+挂件
+</a></div>
+</div>
+<script>
+  $('#git-project-file').dropdown({ action: 'hide' });
+</script>
+</div>
+
+</div>
+<div class='item breadcrumb_path path-breadcrumb-contrainer' id='git-project-breadcrumb'>
+<div class='ui breadcrumb path project-path-breadcrumb' id='path-breadcrumb'>
+<a class="section repo-name" data-direction="back" href="/luolonghao/kindeditor/tree/master" style="font-weight: bold">kindeditor
+</a><div class='divider'>
+/
+</div>
+<strong>
+license.txt
+</strong>
+</div>
+
+
+</div>
+</div>
+</div>
+
+<style>
+  .ui.dropdown .menu > .header {
+    text-transform: none; }
+</style>
+<script>
+  $(document).ready(function () {
+    var $gitProjectSummary = $('#git-project-summary');
+    var $gitProjectLanguages = $gitProjectSummary.find('.summary-languages');
+    var $statsSwitcherWrapper = $gitProjectSummary.find('.viewer-wrapper');
+    var $contributorCount = $gitProjectSummary.find('.contributor-count');
+    var $contributorText = $gitProjectSummary.find('.contributor-text');
+    var contributorsCountUrl = $contributorCount.data('url');
+  
+    $gitProjectLanguages.on('click', function() {
+      $statsSwitcherWrapper.toggleClass('js-lang');
+    });
+  
+    $.ajax({
+      url: contributorsCountUrl,
+      method: 'GET',
+      success: function(data) {
+        if (data.status === 1) {
+          $contributorCount.text(data.contributors_count);
+          $contributorText.text('位贡献者')
+        } else {
+          $contributorText.text('获取失败')
+        }
+      }
+    });
+    var $tip = $('#apk-download-tip');
+    if (!$tip.length) {
+      return;
+    }
+    $tip.find('.btn-close').on('click', function () {
+      $tip.slideUp();
+    });
+  });
+  (function(){
+    function pathAutoRender() {
+      var $parent = $('#git-project-bread'),
+          $child = $('#git-project-bread').children('.ui.horizontal.list'),
+          mainWidth = 0;
+      $child.each(function (i,item) {
+        mainWidth += $(item).width()
+        });
+      $('.breadcrumb.path.fork-path').remove();
+      if (mainWidth > 995) {
+        $('#path-breadcrumb').hide();
+        $parent.append('<div class="ui breadcrumb path fork-path">' + $('#path-breadcrumb').html() + '<div/>')
+      } else {
+        $('#path-breadcrumb').show();
+      }
+    }
+    window.pathAutoRender = pathAutoRender;
+    pathAutoRender();
+  })();
+</script>
+
+<div class='row column tree-holder' id='tree-holder'>
+<div class='ui segment' id='license-content'>
+<div class='ui grid'>
+<div class='eight wide column'>
+<h4>
+<i class='balance scale icon'></i>
+<a href="https://www.gnu.org/licenses/lgpl-2.1.txt" rel="nofollow" target="_blank">GNU Lesser General Public License v2.1</a>
+</h4>
+<p>Primarily used for software libraries, the GNU LGPL requires that derived works be licensed under the same license, but works that only link to it do not fall under this restriction. There are two commonly used versions of the GNU LGPL.</p>
+</div>
+<div class='eight wide column'>
+<div class='ui three column grid'>
+<div class='column'>
+<h5>Permissions</h5>
+<ul class='list-none'>
+<li title='This software and derivatives may be used for commercial purposes.'>
+<i class='iconfont icon-msg-read permission'></i>
+Commercial use
+</li>
+<li title='This software may be modified.'>
+<i class='iconfont icon-msg-read permission'></i>
+Modification
+</li>
+<li title='This software may be distributed.'>
+<i class='iconfont icon-msg-read permission'></i>
+Distribution
+</li>
+<li title='This software may be used and modified in private.'>
+<i class='iconfont icon-msg-read permission'></i>
+Private use
+</li>
+</ul>
+</div>
+<div class='column'>
+<h5>Limitations</h5>
+<ul class='list-none'>
+<li title='This license includes a limitation of liability.'>
+<i class='iconfont icon-close limitation'></i>
+Liability
+</li>
+<li title='The license explicitly states that it does NOT provide any warranty.'>
+<i class='iconfont icon-close limitation'></i>
+Warranty
+</li>
+</ul>
+</div>
+<div class='column'>
+<h5>Conditions</h5>
+<ul class='list-none'>
+<li title='A copy of the license and copyright notice must be included with the software.'>
+<i class='iconfont icon-info condition'></i>
+License and copyright notice
+</li>
+<li title='Source code must be made available when the software is distributed.'>
+<i class='iconfont icon-info condition'></i>
+Disclose source
+</li>
+<li title='Changes made to the code must be documented.'>
+<i class='iconfont icon-info condition'></i>
+State changes
+</li>
+<li title='Modifications must be released under the same license when distributing the software. In some cases a similar or related license may be used, or this condition may not apply to works that use the software as a library.'>
+<i class='iconfont icon-info condition'></i>
+Same license (library)
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class='tree-content-holder' id='tree-content-holder'>
+<div class='file_holder'>
+<div class='file_title'>
+<div class='blob-header-title'>
+<div class='blob-description'>
+<i class="iconfont icon-file"></i>
+<span class='file_name' title='license.txt'>
+license.txt
+</span>
+<small>25.91 KB</small>
+</div>
+<div class='options'><div class='ui mini buttons basic'>
+<textarea id="blob_raw" name="blob_raw" style="display:none;">
+&#x0020;                 GNU LESSER GENERAL PUBLIC LICENSE&#x000A;                       Version 2.1, February 1999&#x000A;&#x000A; Copyright (C) 1991, 1999 Free Software Foundation, Inc.&#x000A; 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA&#x000A; Everyone is permitted to copy and distribute verbatim copies&#x000A; of this license document, but changing it is not allowed.&#x000A;&#x000A;[This is the first released version of the Lesser GPL.  It also counts&#x000A; as the successor of the GNU Library Public License, version 2, hence&#x000A; the version number 2.1.]&#x000A;&#x000A;                            Preamble&#x000A;&#x000A;  The licenses for most software are designed to take away your&#x000A;freedom to share and change it.  By contrast, the GNU General Public&#x000A;Licenses are intended to guarantee your freedom to share and change&#x000A;free software--to make sure the software is free for all its users.&#x000A;&#x000A;  This license, the Lesser General Public License, applies to some&#x000A;specially designated software packages--typically libraries--of the&#x000A;Free Software Foundation and other authors who decide to use it.  You&#x000A;can use it too, but we suggest you first think carefully about whether&#x000A;this license or the ordinary General Public License is the better&#x000A;strategy to use in any particular case, based on the explanations below.&#x000A;&#x000A;  When we speak of free software, we are referring to freedom of use,&#x000A;not price.  Our General Public Licenses are designed to make sure that&#x000A;you have the freedom to distribute copies of free software (and charge&#x000A;for this service if you wish); that you receive source code or can get&#x000A;it if you want it; that you can change the software and use pieces of&#x000A;it in new free programs; and that you are informed that you can do&#x000A;these things.&#x000A;&#x000A;  To protect your rights, we need to make restrictions that forbid&#x000A;distributors to deny you these rights or to ask you to surrender these&#x000A;rights.  These restrictions translate to certain responsibilities for&#x000A;you if you distribute copies of the library or if you modify it.&#x000A;&#x000A;  For example, if you distribute copies of the library, whether gratis&#x000A;or for a fee, you must give the recipients all the rights that we gave&#x000A;you.  You must make sure that they, too, receive or can get the source&#x000A;code.  If you link other code with the library, you must provide&#x000A;complete object files to the recipients, so that they can relink them&#x000A;with the library after making changes to the library and recompiling&#x000A;it.  And you must show them these terms so they know their rights.&#x000A;&#x000A;  We protect your rights with a two-step method: (1) we copyright the&#x000A;library, and (2) we offer you this license, which gives you legal&#x000A;permission to copy, distribute and/or modify the library.&#x000A;&#x000A;  To protect each distributor, we want to make it very clear that&#x000A;there is no warranty for the free library.  Also, if the library is&#x000A;modified by someone else and passed on, the recipients should know&#x000A;that what they have is not the original version, so that the original&#x000A;author&#39;s reputation will not be affected by problems that might be&#x000A;introduced by others.&#x000A;&#x000A;  Finally, software patents pose a constant threat to the existence of&#x000A;any free program.  We wish to make sure that a company cannot&#x000A;effectively restrict the users of a free program by obtaining a&#x000A;restrictive license from a patent holder.  Therefore, we insist that&#x000A;any patent license obtained for a version of the library must be&#x000A;consistent with the full freedom of use specified in this license.&#x000A;&#x000A;  Most GNU software, including some libraries, is covered by the&#x000A;ordinary GNU General Public License.  This license, the GNU Lesser&#x000A;General Public License, applies to certain designated libraries, and&#x000A;is quite different from the ordinary General Public License.  We use&#x000A;this license for certain libraries in order to permit linking those&#x000A;libraries into non-free programs.&#x000A;&#x000A;  When a program is linked with a library, whether statically or using&#x000A;a shared library, the combination of the two is legally speaking a&#x000A;combined work, a derivative of the original library.  The ordinary&#x000A;General Public License therefore permits such linking only if the&#x000A;entire combination fits its criteria of freedom.  The Lesser General&#x000A;Public License permits more lax criteria for linking other code with&#x000A;the library.&#x000A;&#x000A;  We call this license the &quot;Lesser&quot; General Public License because it&#x000A;does Less to protect the user&#39;s freedom than the ordinary General&#x000A;Public License.  It also provides other free software developers Less&#x000A;of an advantage over competing non-free programs.  These disadvantages&#x000A;are the reason we use the ordinary General Public License for many&#x000A;libraries.  However, the Lesser license provides advantages in certain&#x000A;special circumstances.&#x000A;&#x000A;  For example, on rare occasions, there may be a special need to&#x000A;encourage the widest possible use of a certain library, so that it becomes&#x000A;a de-facto standard.  To achieve this, non-free programs must be&#x000A;allowed to use the library.  A more frequent case is that a free&#x000A;library does the same job as widely used non-free libraries.  In this&#x000A;case, there is little to gain by limiting the free library to free&#x000A;software only, so we use the Lesser General Public License.&#x000A;&#x000A;  In other cases, permission to use a particular library in non-free&#x000A;programs enables a greater number of people to use a large body of&#x000A;free software.  For example, permission to use the GNU C Library in&#x000A;non-free programs enables many more people to use the whole GNU&#x000A;operating system, as well as its variant, the GNU/Linux operating&#x000A;system.&#x000A;&#x000A;  Although the Lesser General Public License is Less protective of the&#x000A;users&#39; freedom, it does ensure that the user of a program that is&#x000A;linked with the Library has the freedom and the wherewithal to run&#x000A;that program using a modified version of the Library.&#x000A;&#x000A;  The precise terms and conditions for copying, distribution and&#x000A;modification follow.  Pay close attention to the difference between a&#x000A;&quot;work based on the library&quot; and a &quot;work that uses the library&quot;.  The&#x000A;former contains code derived from the library, whereas the latter must&#x000A;be combined with the library in order to run.&#x000A;&#x000A;                  GNU LESSER GENERAL PUBLIC LICENSE&#x000A;   TERMS AND CONDITIONS FOR COPYING, DISTRIBUTION AND MODIFICATION&#x000A;&#x000A;  0. This License Agreement applies to any software library or other&#x000A;program which contains a notice placed by the copyright holder or&#x000A;other authorized party saying it may be distributed under the terms of&#x000A;this Lesser General Public License (also called &quot;this License&quot;).&#x000A;Each licensee is addressed as &quot;you&quot;.&#x000A;&#x000A;  A &quot;library&quot; means a collection of software functions and/or data&#x000A;prepared so as to be conveniently linked with application programs&#x000A;(which use some of those functions and data) to form executables.&#x000A;&#x000A;  The &quot;Library&quot;, below, refers to any such software library or work&#x000A;which has been distributed under these terms.  A &quot;work based on the&#x000A;Library&quot; means either the Library or any derivative work under&#x000A;copyright law: that is to say, a work containing the Library or a&#x000A;portion of it, either verbatim or with modifications and/or translated&#x000A;straightforwardly into another language.  (Hereinafter, translation is&#x000A;included without limitation in the term &quot;modification&quot;.)&#x000A;&#x000A;  &quot;Source code&quot; for a work means the preferred form of the work for&#x000A;making modifications to it.  For a library, complete source code means&#x000A;all the source code for all modules it contains, plus any associated&#x000A;interface definition files, plus the scripts used to control compilation&#x000A;and installation of the library.&#x000A;&#x000A;  Activities other than copying, distribution and modification are not&#x000A;covered by this License; they are outside its scope.  The act of&#x000A;running a program using the Library is not restricted, and output from&#x000A;such a program is covered only if its contents constitute a work based&#x000A;on the Library (independent of the use of the Library in a tool for&#x000A;writing it).  Whether that is true depends on what the Library does&#x000A;and what the program that uses the Library does.&#x000A;&#x000A;  1. You may copy and distribute verbatim copies of the Library&#39;s&#x000A;complete source code as you receive it, in any medium, provided that&#x000A;you conspicuously and appropriately publish on each copy an&#x000A;appropriate copyright notice and disclaimer of warranty; keep intact&#x000A;all the notices that refer to this License and to the absence of any&#x000A;warranty; and distribute a copy of this License along with the&#x000A;Library.&#x000A;&#x000A;  You may charge a fee for the physical act of transferring a copy,&#x000A;and you may at your option offer warranty protection in exchange for a&#x000A;fee.&#x000A;&#x000A;  2. You may modify your copy or copies of the Library or any portion&#x000A;of it, thus forming a work based on the Library, and copy and&#x000A;distribute such modifications or work under the terms of Section 1&#x000A;above, provided that you also meet all of these conditions:&#x000A;&#x000A;    a) The modified work must itself be a software library.&#x000A;&#x000A;    b) You must cause the files modified to carry prominent notices&#x000A;    stating that you changed the files and the date of any change.&#x000A;&#x000A;    c) You must cause the whole of the work to be licensed at no&#x000A;    charge to all third parties under the terms of this License.&#x000A;&#x000A;    d) If a facility in the modified Library refers to a function or a&#x000A;    table of data to be supplied by an application program that uses&#x000A;    the facility, other than as an argument passed when the facility&#x000A;    is invoked, then you must make a good faith effort to ensure that,&#x000A;    in the event an application does not supply such function or&#x000A;    table, the facility still operates, and performs whatever part of&#x000A;    its purpose remains meaningful.&#x000A;&#x000A;    (For example, a function in a library to compute square roots has&#x000A;    a purpose that is entirely well-defined independent of the&#x000A;    application.  Therefore, Subsection 2d requires that any&#x000A;    application-supplied function or table used by this function must&#x000A;    be optional: if the application does not supply it, the square&#x000A;    root function must still compute square roots.)&#x000A;&#x000A;These requirements apply to the modified work as a whole.  If&#x000A;identifiable sections of that work are not derived from the Library,&#x000A;and can be reasonably considered independent and separate works in&#x000A;themselves, then this License, and its terms, do not apply to those&#x000A;sections when you distribute them as separate works.  But when you&#x000A;distribute the same sections as part of a whole which is a work based&#x000A;on the Library, the distribution of the whole must be on the terms of&#x000A;this License, whose permissions for other licensees extend to the&#x000A;entire whole, and thus to each and every part regardless of who wrote&#x000A;it.&#x000A;&#x000A;Thus, it is not the intent of this section to claim rights or contest&#x000A;your rights to work written entirely by you; rather, the intent is to&#x000A;exercise the right to control the distribution of derivative or&#x000A;collective works based on the Library.&#x000A;&#x000A;In addition, mere aggregation of another work not based on the Library&#x000A;with the Library (or with a work based on the Library) on a volume of&#x000A;a storage or distribution medium does not bring the other work under&#x000A;the scope of this License.&#x000A;&#x000A;  3. You may opt to apply the terms of the ordinary GNU General Public&#x000A;License instead of this License to a given copy of the Library.  To do&#x000A;this, you must alter all the notices that refer to this License, so&#x000A;that they refer to the ordinary GNU General Public License, version 2,&#x000A;instead of to this License.  (If a newer version than version 2 of the&#x000A;ordinary GNU General Public License has appeared, then you can specify&#x000A;that version instead if you wish.)  Do not make any other change in&#x000A;these notices.&#x000A;&#x000A;  Once this change is made in a given copy, it is irreversible for&#x000A;that copy, so the ordinary GNU General Public License applies to all&#x000A;subsequent copies and derivative works made from that copy.&#x000A;&#x000A;  This option is useful when you wish to copy part of the code of&#x000A;the Library into a program that is not a library.&#x000A;&#x000A;  4. You may copy and distribute the Library (or a portion or&#x000A;derivative of it, under Section 2) in object code or executable form&#x000A;under the terms of Sections 1 and 2 above provided that you accompany&#x000A;it with the complete corresponding machine-readable source code, which&#x000A;must be distributed under the terms of Sections 1 and 2 above on a&#x000A;medium customarily used for software interchange.&#x000A;&#x000A;  If distribution of object code is made by offering access to copy&#x000A;from a designated place, then offering equivalent access to copy the&#x000A;source code from the same place satisfies the requirement to&#x000A;distribute the source code, even though third parties are not&#x000A;compelled to copy the source along with the object code.&#x000A;&#x000A;  5. A program that contains no derivative of any portion of the&#x000A;Library, but is designed to work with the Library by being compiled or&#x000A;linked with it, is called a &quot;work that uses the Library&quot;.  Such a&#x000A;work, in isolation, is not a derivative work of the Library, and&#x000A;therefore falls outside the scope of this License.&#x000A;&#x000A;  However, linking a &quot;work that uses the Library&quot; with the Library&#x000A;creates an executable that is a derivative of the Library (because it&#x000A;contains portions of the Library), rather than a &quot;work that uses the&#x000A;library&quot;.  The executable is therefore covered by this License.&#x000A;Section 6 states terms for distribution of such executables.&#x000A;&#x000A;  When a &quot;work that uses the Library&quot; uses material from a header file&#x000A;that is part of the Library, the object code for the work may be a&#x000A;derivative work of the Library even though the source code is not.&#x000A;Whether this is true is especially significant if the work can be&#x000A;linked without the Library, or if the work is itself a library.  The&#x000A;threshold for this to be true is not precisely defined by law.&#x000A;&#x000A;  If such an object file uses only numerical parameters, data&#x000A;structure layouts and accessors, and small macros and small inline&#x000A;functions (ten lines or less in length), then the use of the object&#x000A;file is unrestricted, regardless of whether it is legally a derivative&#x000A;work.  (Executables containing this object code plus portions of the&#x000A;Library will still fall under Section 6.)&#x000A;&#x000A;  Otherwise, if the work is a derivative of the Library, you may&#x000A;distribute the object code for the work under the terms of Section 6.&#x000A;Any executables containing that work also fall under Section 6,&#x000A;whether or not they are linked directly with the Library itself.&#x000A;&#x000A;  6. As an exception to the Sections above, you may also combine or&#x000A;link a &quot;work that uses the Library&quot; with the Library to produce a&#x000A;work containing portions of the Library, and distribute that work&#x000A;under terms of your choice, provided that the terms permit&#x000A;modification of the work for the customer&#39;s own use and reverse&#x000A;engineering for debugging such modifications.&#x000A;&#x000A;  You must give prominent notice with each copy of the work that the&#x000A;Library is used in it and that the Library and its use are covered by&#x000A;this License.  You must supply a copy of this License.  If the work&#x000A;during execution displays copyright notices, you must include the&#x000A;copyright notice for the Library among them, as well as a reference&#x000A;directing the user to the copy of this License.  Also, you must do one&#x000A;of these things:&#x000A;&#x000A;    a) Accompany the work with the complete corresponding&#x000A;    machine-readable source code for the Library including whatever&#x000A;    changes were used in the work (which must be distributed under&#x000A;    Sections 1 and 2 above); and, if the work is an executable linked&#x000A;    with the Library, with the complete machine-readable &quot;work that&#x000A;    uses the Library&quot;, as object code and/or source code, so that the&#x000A;    user can modify the Library and then relink to produce a modified&#x000A;    executable containing the modified Library.  (It is understood&#x000A;    that the user who changes the contents of definitions files in the&#x000A;    Library will not necessarily be able to recompile the application&#x000A;    to use the modified definitions.)&#x000A;&#x000A;    b) Use a suitable shared library mechanism for linking with the&#x000A;    Library.  A suitable mechanism is one that (1) uses at run time a&#x000A;    copy of the library already present on the user&#39;s computer system,&#x000A;    rather than copying library functions into the executable, and (2)&#x000A;    will operate properly with a modified version of the library, if&#x000A;    the user installs one, as long as the modified version is&#x000A;    interface-compatible with the version that the work was made with.&#x000A;&#x000A;    c) Accompany the work with a written offer, valid for at&#x000A;    least three years, to give the same user the materials&#x000A;    specified in Subsection 6a, above, for a charge no more&#x000A;    than the cost of performing this distribution.&#x000A;&#x000A;    d) If distribution of the work is made by offering access to copy&#x000A;    from a designated place, offer equivalent access to copy the above&#x000A;    specified materials from the same place.&#x000A;&#x000A;    e) Verify that the user has already received a copy of these&#x000A;    materials or that you have already sent this user a copy.&#x000A;&#x000A;  For an executable, the required form of the &quot;work that uses the&#x000A;Library&quot; must include any data and utility programs needed for&#x000A;reproducing the executable from it.  However, as a special exception,&#x000A;the materials to be distributed need not include anything that is&#x000A;normally distributed (in either source or binary form) with the major&#x000A;components (compiler, kernel, and so on) of the operating system on&#x000A;which the executable runs, unless that component itself accompanies&#x000A;the executable.&#x000A;&#x000A;  It may happen that this requirement contradicts the license&#x000A;restrictions of other proprietary libraries that do not normally&#x000A;accompany the operating system.  Such a contradiction means you cannot&#x000A;use both them and the Library together in an executable that you&#x000A;distribute.&#x000A;&#x000A;  7. You may place library facilities that are a work based on the&#x000A;Library side-by-side in a single library together with other library&#x000A;facilities not covered by this License, and distribute such a combined&#x000A;library, provided that the separate distribution of the work based on&#x000A;the Library and of the other library facilities is otherwise&#x000A;permitted, and provided that you do these two things:&#x000A;&#x000A;    a) Accompany the combined library with a copy of the same work&#x000A;    based on the Library, uncombined with any other library&#x000A;    facilities.  This must be distributed under the terms of the&#x000A;    Sections above.&#x000A;&#x000A;    b) Give prominent notice with the combined library of the fact&#x000A;    that part of it is a work based on the Library, and explaining&#x000A;    where to find the accompanying uncombined form of the same work.&#x000A;&#x000A;  8. You may not copy, modify, sublicense, link with, or distribute&#x000A;the Library except as expressly provided under this License.  Any&#x000A;attempt otherwise to copy, modify, sublicense, link with, or&#x000A;distribute the Library is void, and will automatically terminate your&#x000A;rights under this License.  However, parties who have received copies,&#x000A;or rights, from you under this License will not have their licenses&#x000A;terminated so long as such parties remain in full compliance.&#x000A;&#x000A;  9. You are not required to accept this License, since you have not&#x000A;signed it.  However, nothing else grants you permission to modify or&#x000A;distribute the Library or its derivative works.  These actions are&#x000A;prohibited by law if you do not accept this License.  Therefore, by&#x000A;modifying or distributing the Library (or any work based on the&#x000A;Library), you indicate your acceptance of this License to do so, and&#x000A;all its terms and conditions for copying, distributing or modifying&#x000A;the Library or works based on it.&#x000A;&#x000A;  10. Each time you redistribute the Library (or any work based on the&#x000A;Library), the recipient automatically receives a license from the&#x000A;original licensor to copy, distribute, link with or modify the Library&#x000A;subject to these terms and conditions.  You may not impose any further&#x000A;restrictions on the recipients&#39; exercise of the rights granted herein.&#x000A;You are not responsible for enforcing compliance by third parties with&#x000A;this License.&#x000A;&#x000A;  11. If, as a consequence of a court judgment or allegation of patent&#x000A;infringement or for any other reason (not limited to patent issues),&#x000A;conditions are imposed on you (whether by court order, agreement or&#x000A;otherwise) that contradict the conditions of this License, they do not&#x000A;excuse you from the conditions of this License.  If you cannot&#x000A;distribute so as to satisfy simultaneously your obligations under this&#x000A;License and any other pertinent obligations, then as a consequence you&#x000A;may not distribute the Library at all.  For example, if a patent&#x000A;license would not permit royalty-free redistribution of the Library by&#x000A;all those who receive copies directly or indirectly through you, then&#x000A;the only way you could satisfy both it and this License would be to&#x000A;refrain entirely from distribution of the Library.&#x000A;&#x000A;If any portion of this section is held invalid or unenforceable under any&#x000A;particular circumstance, the balance of the section is intended to apply,&#x000A;and the section as a whole is intended to apply in other circumstances.&#x000A;&#x000A;It is not the purpose of this section to induce you to infringe any&#x000A;patents or other property right claims or to contest validity of any&#x000A;such claims; this section has the sole purpose of protecting the&#x000A;integrity of the free software distribution system which is&#x000A;implemented by public license practices.  Many people have made&#x000A;generous contributions to the wide range of software distributed&#x000A;through that system in reliance on consistent application of that&#x000A;system; it is up to the author/donor to decide if he or she is willing&#x000A;to distribute software through any other system and a licensee cannot&#x000A;impose that choice.&#x000A;&#x000A;This section is intended to make thoroughly clear what is believed to&#x000A;be a consequence of the rest of this License.&#x000A;&#x000A;  12. If the distribution and/or use of the Library is restricted in&#x000A;certain countries either by patents or by copyrighted interfaces, the&#x000A;original copyright holder who places the Library under this License may add&#x000A;an explicit geographical distribution limitation excluding those countries,&#x000A;so that distribution is permitted only in or among countries not thus&#x000A;excluded.  In such case, this License incorporates the limitation as if&#x000A;written in the body of this License.&#x000A;&#x000A;  13. The Free Software Foundation may publish revised and/or new&#x000A;versions of the Lesser General Public License from time to time.&#x000A;Such new versions will be similar in spirit to the present version,&#x000A;but may differ in detail to address new problems or concerns.&#x000A;&#x000A;Each version is given a distinguishing version number.  If the Library&#x000A;specifies a version number of this License which applies to it and&#x000A;&quot;any later version&quot;, you have the option of following the terms and&#x000A;conditions either of that version or of any later version published by&#x000A;the Free Software Foundation.  If the Library does not specify a&#x000A;license version number, you may choose any version ever published by&#x000A;the Free Software Foundation.&#x000A;&#x000A;  14. If you wish to incorporate parts of the Library into other free&#x000A;programs whose distribution conditions are incompatible with these,&#x000A;write to the author to ask for permission.  For software which is&#x000A;copyrighted by the Free Software Foundation, write to the Free&#x000A;Software Foundation; we sometimes make exceptions for this.  Our&#x000A;decision will be guided by the two goals of preserving the free status&#x000A;of all derivatives of our free software and of promoting the sharing&#x000A;and reuse of software generally.&#x000A;&#x000A;                            NO WARRANTY&#x000A;&#x000A;  15. BECAUSE THE LIBRARY IS LICENSED FREE OF CHARGE, THERE IS NO&#x000A;WARRANTY FOR THE LIBRARY, TO THE EXTENT PERMITTED BY APPLICABLE LAW.&#x000A;EXCEPT WHEN OTHERWISE STATED IN WRITING THE COPYRIGHT HOLDERS AND/OR&#x000A;OTHER PARTIES PROVIDE THE LIBRARY &quot;AS IS&quot; WITHOUT WARRANTY OF ANY&#x000A;KIND, EITHER EXPRESSED OR IMPLIED, INCLUDING, BUT NOT LIMITED TO, THE&#x000A;IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR&#x000A;PURPOSE.  THE ENTIRE RISK AS TO THE QUALITY AND PERFORMANCE OF THE&#x000A;LIBRARY IS WITH YOU.  SHOULD THE LIBRARY PROVE DEFECTIVE, YOU ASSUME&#x000A;THE COST OF ALL NECESSARY SERVICING, REPAIR OR CORRECTION.&#x000A;&#x000A;  16. IN NO EVENT UNLESS REQUIRED BY APPLICABLE LAW OR AGREED TO IN&#x000A;WRITING WILL ANY COPYRIGHT HOLDER, OR ANY OTHER PARTY WHO MAY MODIFY&#x000A;AND/OR REDISTRIBUTE THE LIBRARY AS PERMITTED ABOVE, BE LIABLE TO YOU&#x000A;FOR DAMAGES, INCLUDING ANY GENERAL, SPECIAL, INCIDENTAL OR&#x000A;CONSEQUENTIAL DAMAGES ARISING OUT OF THE USE OR INABILITY TO USE THE&#x000A;LIBRARY (INCLUDING BUT NOT LIMITED TO LOSS OF DATA OR DATA BEING&#x000A;RENDERED INACCURATE OR LOSSES SUSTAINED BY YOU OR THIRD PARTIES OR A&#x000A;FAILURE OF THE LIBRARY TO OPERATE WITH ANY OTHER SOFTWARE), EVEN IF&#x000A;SUCH HOLDER OR OTHER PARTY HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH&#x000A;DAMAGES.&#x000A;&#x000A;                     END OF TERMS AND CONDITIONS&#x000A;&#x000A;           How to Apply These Terms to Your New Libraries&#x000A;&#x000A;  If you develop a new library, and you want it to be of the greatest&#x000A;possible use to the public, we recommend making it free software that&#x000A;everyone can redistribute and change.  You can do so by permitting&#x000A;redistribution under these terms (or, alternatively, under the terms of the&#x000A;ordinary General Public License).&#x000A;&#x000A;  To apply these terms, attach the following notices to the library.  It is&#x000A;safest to attach them to the start of each source file to most effectively&#x000A;convey the exclusion of warranty; and each file should have at least the&#x000A;&quot;copyright&quot; line and a pointer to where the full notice is found.&#x000A;&#x000A;    &lt;one line to give the library&#39;s name and a brief idea of what it does.&gt;&#x000A;    Copyright (C) &lt;year&gt;  &lt;name of author&gt;&#x000A;&#x000A;    This library is free software; you can redistribute it and/or&#x000A;    modify it under the terms of the GNU Lesser General Public&#x000A;    License as published by the Free Software Foundation; either&#x000A;    version 2.1 of the License, or (at your option) any later version.&#x000A;&#x000A;    This library is distributed in the hope that it will be useful,&#x000A;    but WITHOUT ANY WARRANTY; without even the implied warranty of&#x000A;    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU&#x000A;    Lesser General Public License for more details.&#x000A;&#x000A;    You should have received a copy of the GNU Lesser General Public&#x000A;    License along with this library; if not, write to the Free Software&#x000A;    Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA&#x000A;&#x000A;Also add information on how to contact you by electronic and paper mail.&#x000A;&#x000A;You should also get your employer (if you work as a programmer) or your&#x000A;school, if any, to sign a &quot;copyright disclaimer&quot; for the library, if&#x000A;necessary.  Here is a sample; alter the names:&#x000A;&#x000A;  Yoyodyne, Inc., hereby disclaims all copyright interest in the&#x000A;  library `Frob&#39; (a library for tweaking knobs) written by James Random Hacker.&#x000A;&#x000A;  &lt;signature of Ty Coon&gt;, 1 April 1990&#x000A;  Ty Coon, President of Vice&#x000A;&#x000A;That&#39;s all there is to it!&#x000A;</textarea>
+<a class="ui button" href="#" id="copy-text" style="border-left: none;">一键复制</a>
+<a class="ui button edit-blob" href="/luolonghao/kindeditor/edit/master/license.txt" title="只有登陆后才可以编辑">编辑</a>
+<a class="ui button web-ide" href="/-/ide/project/luolonghao/kindeditor/edit/master/-/license.txt" target="_blank">Web IDE</a>
+<a class="ui button edit-raw" href="/luolonghao/kindeditor/raw/master/license.txt" target="_blank">原始数据</a>
+<a class="ui button edit-blame" href="/luolonghao/kindeditor/blame/master/license.txt">按行查看</a>
+<a class="ui button edit-history" href="/luolonghao/kindeditor/commits/master/license.txt">历史</a>
+</div>
+<script>
+  "use strict";
+  try {
+    if((gon.wait_fork!=undefined && gon.wait_fork==true) || (gon.wait_fetch!=undefined && gon.wait_fetch==true)){
+      $('.edit-blob').popup({content:"当前仓库正在后台处理中,暂时无法编辑", on: 'hover', delay: { show: 200, hide: 200 }});
+      $('.edit-blob').click(function(e){
+        e.preventDefault();
+      })
+    }
+  
+    var setUrl = function() {
+      var params = window.location.search
+      if (params==undefined || $.trim(params).length==0) return;
+      $('span.options').children('.basic').find('a').each(function(index,ele){
+        var origin_href = $(ele).attr('href');
+        if (origin_href!="#" && origin_href.indexOf('?') == -1){
+          $(ele).attr('href',origin_href+params);
+        }
+      });
+    }
+  
+    setUrl();
+  
+    var clipboard = null,
+        $btncopy  = $("#copy-text");
+  
+    clipboard = new Clipboard("#copy-text", {
+      text: function(trigger) {
+        return $("#blob_raw").val();
+      }
+    })
+  
+    clipboard.on('success', function(e) {
+      $btncopy.popup('hide');
+      $btncopy.popup('destroy');
+      $btncopy.popup({content: '已复制', position: 'bottom center'});
+      $btncopy.popup('show');
+    })
+  
+    clipboard.on('error', function(e) {
+      var giteeModal = new GiteeModalHelper({okText: '确定'});
+      giteeModal.alert("一键复制", '复制失败，请手动复制');
+    })
+  
+    $(function() {
+      $btncopy.popup({
+        content: '点击复制',
+        position: 'bottom center'
+      })
+    })
+  
+  } catch (error) {
+    console.log('blob/action error:' + error);
+  }
+  
+  $('.disabled-edit-readonly').popup({
+    content: "只读文件不可编辑",
+    className: {
+      popup: 'ui popup',
+    },
+    position: 'bottom center',
+  })
+  $('.disabled-edit-readonly').click(() => {
+    return false
+  })
+</script>
+<style>
+  .disabled-edit-readonly {
+    background-color: #dcddde !important;
+    color: rgba(0, 0, 0, 0.4) !important;
+    opacity: 0.3 !important;
+    background-image: none !important;
+    -webkit-box-shadow: none !important;
+            box-shadow: none !important; }
+</style>
+</div>
+</div>
+<div class='contributor-description'><span class='recent-commit' style='margin-top: 0.7rem'>
+<a class="commit-author-link " href="/luolonghao">luolonghao</a>
+<span>提交于</span>
+<span class='timeago commit-date' title='2012-06-05 18:40:16 +0800'>
+2012-06-05 18:40
+</span>
+.
+<a href="/luolonghao/kindeditor/commit/632971c21dff70f548b68762dc2c4c7a0796f9b9">Update license file</a>
+</span>
+</div>
+</div>
+<div class='clearfix'></div>
+<div class='file_content code'>
+<div class='lines white'>
+<div class='line-numbers'><a href='#L1' id='L1'>1</a><a href='#L2' id='L2'>2</a><a href='#L3' id='L3'>3</a><a href='#L4' id='L4'>4</a><a href='#L5' id='L5'>5</a><a href='#L6' id='L6'>6</a><a href='#L7' id='L7'>7</a><a href='#L8' id='L8'>8</a><a href='#L9' id='L9'>9</a><a href='#L10' id='L10'>10</a><a href='#L11' id='L11'>11</a><a href='#L12' id='L12'>12</a><a href='#L13' id='L13'>13</a><a href='#L14' id='L14'>14</a><a href='#L15' id='L15'>15</a><a href='#L16' id='L16'>16</a><a href='#L17' id='L17'>17</a><a href='#L18' id='L18'>18</a><a href='#L19' id='L19'>19</a><a href='#L20' id='L20'>20</a><a href='#L21' id='L21'>21</a><a href='#L22' id='L22'>22</a><a href='#L23' id='L23'>23</a><a href='#L24' id='L24'>24</a><a href='#L25' id='L25'>25</a><a href='#L26' id='L26'>26</a><a href='#L27' id='L27'>27</a><a href='#L28' id='L28'>28</a><a href='#L29' id='L29'>29</a><a href='#L30' id='L30'>30</a><a href='#L31' id='L31'>31</a><a href='#L32' id='L32'>32</a><a href='#L33' id='L33'>33</a><a href='#L34' id='L34'>34</a><a href='#L35' id='L35'>35</a><a href='#L36' id='L36'>36</a><a href='#L37' id='L37'>37</a><a href='#L38' id='L38'>38</a><a href='#L39' id='L39'>39</a><a href='#L40' id='L40'>40</a><a href='#L41' id='L41'>41</a><a href='#L42' id='L42'>42</a><a href='#L43' id='L43'>43</a><a href='#L44' id='L44'>44</a><a href='#L45' id='L45'>45</a><a href='#L46' id='L46'>46</a><a href='#L47' id='L47'>47</a><a href='#L48' id='L48'>48</a><a href='#L49' id='L49'>49</a><a href='#L50' id='L50'>50</a><a href='#L51' id='L51'>51</a><a href='#L52' id='L52'>52</a><a href='#L53' id='L53'>53</a><a href='#L54' id='L54'>54</a><a href='#L55' id='L55'>55</a><a href='#L56' id='L56'>56</a><a href='#L57' id='L57'>57</a><a href='#L58' id='L58'>58</a><a href='#L59' id='L59'>59</a><a href='#L60' id='L60'>60</a><a href='#L61' id='L61'>61</a><a href='#L62' id='L62'>62</a><a href='#L63' id='L63'>63</a><a href='#L64' id='L64'>64</a><a href='#L65' id='L65'>65</a><a href='#L66' id='L66'>66</a><a href='#L67' id='L67'>67</a><a href='#L68' id='L68'>68</a><a href='#L69' id='L69'>69</a><a href='#L70' id='L70'>70</a><a href='#L71' id='L71'>71</a><a href='#L72' id='L72'>72</a><a href='#L73' id='L73'>73</a><a href='#L74' id='L74'>74</a><a href='#L75' id='L75'>75</a><a href='#L76' id='L76'>76</a><a href='#L77' id='L77'>77</a><a href='#L78' id='L78'>78</a><a href='#L79' id='L79'>79</a><a href='#L80' id='L80'>80</a><a href='#L81' id='L81'>81</a><a href='#L82' id='L82'>82</a><a href='#L83' id='L83'>83</a><a href='#L84' id='L84'>84</a><a href='#L85' id='L85'>85</a><a href='#L86' id='L86'>86</a><a href='#L87' id='L87'>87</a><a href='#L88' id='L88'>88</a><a href='#L89' id='L89'>89</a><a href='#L90' id='L90'>90</a><a href='#L91' id='L91'>91</a><a href='#L92' id='L92'>92</a><a href='#L93' id='L93'>93</a><a href='#L94' id='L94'>94</a><a href='#L95' id='L95'>95</a><a href='#L96' id='L96'>96</a><a href='#L97' id='L97'>97</a><a href='#L98' id='L98'>98</a><a href='#L99' id='L99'>99</a><a href='#L100' id='L100'>100</a><a href='#L101' id='L101'>101</a><a href='#L102' id='L102'>102</a><a href='#L103' id='L103'>103</a><a href='#L104' id='L104'>104</a><a href='#L105' id='L105'>105</a><a href='#L106' id='L106'>106</a><a href='#L107' id='L107'>107</a><a href='#L108' id='L108'>108</a><a href='#L109' id='L109'>109</a><a href='#L110' id='L110'>110</a><a href='#L111' id='L111'>111</a><a href='#L112' id='L112'>112</a><a href='#L113' id='L113'>113</a><a href='#L114' id='L114'>114</a><a href='#L115' id='L115'>115</a><a href='#L116' id='L116'>116</a><a href='#L117' id='L117'>117</a><a href='#L118' id='L118'>118</a><a href='#L119' id='L119'>119</a><a href='#L120' id='L120'>120</a><a href='#L121' id='L121'>121</a><a href='#L122' id='L122'>122</a><a href='#L123' id='L123'>123</a><a href='#L124' id='L124'>124</a><a href='#L125' id='L125'>125</a><a href='#L126' id='L126'>126</a><a href='#L127' id='L127'>127</a><a href='#L128' id='L128'>128</a><a href='#L129' id='L129'>129</a><a href='#L130' id='L130'>130</a><a href='#L131' id='L131'>131</a><a href='#L132' id='L132'>132</a><a href='#L133' id='L133'>133</a><a href='#L134' id='L134'>134</a><a href='#L135' id='L135'>135</a><a href='#L136' id='L136'>136</a><a href='#L137' id='L137'>137</a><a href='#L138' id='L138'>138</a><a href='#L139' id='L139'>139</a><a href='#L140' id='L140'>140</a><a href='#L141' id='L141'>141</a><a href='#L142' id='L142'>142</a><a href='#L143' id='L143'>143</a><a href='#L144' id='L144'>144</a><a href='#L145' id='L145'>145</a><a href='#L146' id='L146'>146</a><a href='#L147' id='L147'>147</a><a href='#L148' id='L148'>148</a><a href='#L149' id='L149'>149</a><a href='#L150' id='L150'>150</a><a href='#L151' id='L151'>151</a><a href='#L152' id='L152'>152</a><a href='#L153' id='L153'>153</a><a href='#L154' id='L154'>154</a><a href='#L155' id='L155'>155</a><a href='#L156' id='L156'>156</a><a href='#L157' id='L157'>157</a><a href='#L158' id='L158'>158</a><a href='#L159' id='L159'>159</a><a href='#L160' id='L160'>160</a><a href='#L161' id='L161'>161</a><a href='#L162' id='L162'>162</a><a href='#L163' id='L163'>163</a><a href='#L164' id='L164'>164</a><a href='#L165' id='L165'>165</a><a href='#L166' id='L166'>166</a><a href='#L167' id='L167'>167</a><a href='#L168' id='L168'>168</a><a href='#L169' id='L169'>169</a><a href='#L170' id='L170'>170</a><a href='#L171' id='L171'>171</a><a href='#L172' id='L172'>172</a><a href='#L173' id='L173'>173</a><a href='#L174' id='L174'>174</a><a href='#L175' id='L175'>175</a><a href='#L176' id='L176'>176</a><a href='#L177' id='L177'>177</a><a href='#L178' id='L178'>178</a><a href='#L179' id='L179'>179</a><a href='#L180' id='L180'>180</a><a href='#L181' id='L181'>181</a><a href='#L182' id='L182'>182</a><a href='#L183' id='L183'>183</a><a href='#L184' id='L184'>184</a><a href='#L185' id='L185'>185</a><a href='#L186' id='L186'>186</a><a href='#L187' id='L187'>187</a><a href='#L188' id='L188'>188</a><a href='#L189' id='L189'>189</a><a href='#L190' id='L190'>190</a><a href='#L191' id='L191'>191</a><a href='#L192' id='L192'>192</a><a href='#L193' id='L193'>193</a><a href='#L194' id='L194'>194</a><a href='#L195' id='L195'>195</a><a href='#L196' id='L196'>196</a><a href='#L197' id='L197'>197</a><a href='#L198' id='L198'>198</a><a href='#L199' id='L199'>199</a><a href='#L200' id='L200'>200</a><a href='#L201' id='L201'>201</a><a href='#L202' id='L202'>202</a><a href='#L203' id='L203'>203</a><a href='#L204' id='L204'>204</a><a href='#L205' id='L205'>205</a><a href='#L206' id='L206'>206</a><a href='#L207' id='L207'>207</a><a href='#L208' id='L208'>208</a><a href='#L209' id='L209'>209</a><a href='#L210' id='L210'>210</a><a href='#L211' id='L211'>211</a><a href='#L212' id='L212'>212</a><a href='#L213' id='L213'>213</a><a href='#L214' id='L214'>214</a><a href='#L215' id='L215'>215</a><a href='#L216' id='L216'>216</a><a href='#L217' id='L217'>217</a><a href='#L218' id='L218'>218</a><a href='#L219' id='L219'>219</a><a href='#L220' id='L220'>220</a><a href='#L221' id='L221'>221</a><a href='#L222' id='L222'>222</a><a href='#L223' id='L223'>223</a><a href='#L224' id='L224'>224</a><a href='#L225' id='L225'>225</a><a href='#L226' id='L226'>226</a><a href='#L227' id='L227'>227</a><a href='#L228' id='L228'>228</a><a href='#L229' id='L229'>229</a><a href='#L230' id='L230'>230</a><a href='#L231' id='L231'>231</a><a href='#L232' id='L232'>232</a><a href='#L233' id='L233'>233</a><a href='#L234' id='L234'>234</a><a href='#L235' id='L235'>235</a><a href='#L236' id='L236'>236</a><a href='#L237' id='L237'>237</a><a href='#L238' id='L238'>238</a><a href='#L239' id='L239'>239</a><a href='#L240' id='L240'>240</a><a href='#L241' id='L241'>241</a><a href='#L242' id='L242'>242</a><a href='#L243' id='L243'>243</a><a href='#L244' id='L244'>244</a><a href='#L245' id='L245'>245</a><a href='#L246' id='L246'>246</a><a href='#L247' id='L247'>247</a><a href='#L248' id='L248'>248</a><a href='#L249' id='L249'>249</a><a href='#L250' id='L250'>250</a><a href='#L251' id='L251'>251</a><a href='#L252' id='L252'>252</a><a href='#L253' id='L253'>253</a><a href='#L254' id='L254'>254</a><a href='#L255' id='L255'>255</a><a href='#L256' id='L256'>256</a><a href='#L257' id='L257'>257</a><a href='#L258' id='L258'>258</a><a href='#L259' id='L259'>259</a><a href='#L260' id='L260'>260</a><a href='#L261' id='L261'>261</a><a href='#L262' id='L262'>262</a><a href='#L263' id='L263'>263</a><a href='#L264' id='L264'>264</a><a href='#L265' id='L265'>265</a><a href='#L266' id='L266'>266</a><a href='#L267' id='L267'>267</a><a href='#L268' id='L268'>268</a><a href='#L269' id='L269'>269</a><a href='#L270' id='L270'>270</a><a href='#L271' id='L271'>271</a><a href='#L272' id='L272'>272</a><a href='#L273' id='L273'>273</a><a href='#L274' id='L274'>274</a><a href='#L275' id='L275'>275</a><a href='#L276' id='L276'>276</a><a href='#L277' id='L277'>277</a><a href='#L278' id='L278'>278</a><a href='#L279' id='L279'>279</a><a href='#L280' id='L280'>280</a><a href='#L281' id='L281'>281</a><a href='#L282' id='L282'>282</a><a href='#L283' id='L283'>283</a><a href='#L284' id='L284'>284</a><a href='#L285' id='L285'>285</a><a href='#L286' id='L286'>286</a><a href='#L287' id='L287'>287</a><a href='#L288' id='L288'>288</a><a href='#L289' id='L289'>289</a><a href='#L290' id='L290'>290</a><a href='#L291' id='L291'>291</a><a href='#L292' id='L292'>292</a><a href='#L293' id='L293'>293</a><a href='#L294' id='L294'>294</a><a href='#L295' id='L295'>295</a><a href='#L296' id='L296'>296</a><a href='#L297' id='L297'>297</a><a href='#L298' id='L298'>298</a><a href='#L299' id='L299'>299</a><a href='#L300' id='L300'>300</a><a href='#L301' id='L301'>301</a><a href='#L302' id='L302'>302</a><a href='#L303' id='L303'>303</a><a href='#L304' id='L304'>304</a><a href='#L305' id='L305'>305</a><a href='#L306' id='L306'>306</a><a href='#L307' id='L307'>307</a><a href='#L308' id='L308'>308</a><a href='#L309' id='L309'>309</a><a href='#L310' id='L310'>310</a><a href='#L311' id='L311'>311</a><a href='#L312' id='L312'>312</a><a href='#L313' id='L313'>313</a><a href='#L314' id='L314'>314</a><a href='#L315' id='L315'>315</a><a href='#L316' id='L316'>316</a><a href='#L317' id='L317'>317</a><a href='#L318' id='L318'>318</a><a href='#L319' id='L319'>319</a><a href='#L320' id='L320'>320</a><a href='#L321' id='L321'>321</a><a href='#L322' id='L322'>322</a><a href='#L323' id='L323'>323</a><a href='#L324' id='L324'>324</a><a href='#L325' id='L325'>325</a><a href='#L326' id='L326'>326</a><a href='#L327' id='L327'>327</a><a href='#L328' id='L328'>328</a><a href='#L329' id='L329'>329</a><a href='#L330' id='L330'>330</a><a href='#L331' id='L331'>331</a><a href='#L332' id='L332'>332</a><a href='#L333' id='L333'>333</a><a href='#L334' id='L334'>334</a><a href='#L335' id='L335'>335</a><a href='#L336' id='L336'>336</a><a href='#L337' id='L337'>337</a><a href='#L338' id='L338'>338</a><a href='#L339' id='L339'>339</a><a href='#L340' id='L340'>340</a><a href='#L341' id='L341'>341</a><a href='#L342' id='L342'>342</a><a href='#L343' id='L343'>343</a><a href='#L344' id='L344'>344</a><a href='#L345' id='L345'>345</a><a href='#L346' id='L346'>346</a><a href='#L347' id='L347'>347</a><a href='#L348' id='L348'>348</a><a href='#L349' id='L349'>349</a><a href='#L350' id='L350'>350</a><a href='#L351' id='L351'>351</a><a href='#L352' id='L352'>352</a><a href='#L353' id='L353'>353</a><a href='#L354' id='L354'>354</a><a href='#L355' id='L355'>355</a><a href='#L356' id='L356'>356</a><a href='#L357' id='L357'>357</a><a href='#L358' id='L358'>358</a><a href='#L359' id='L359'>359</a><a href='#L360' id='L360'>360</a><a href='#L361' id='L361'>361</a><a href='#L362' id='L362'>362</a><a href='#L363' id='L363'>363</a><a href='#L364' id='L364'>364</a><a href='#L365' id='L365'>365</a><a href='#L366' id='L366'>366</a><a href='#L367' id='L367'>367</a><a href='#L368' id='L368'>368</a><a href='#L369' id='L369'>369</a><a href='#L370' id='L370'>370</a><a href='#L371' id='L371'>371</a><a href='#L372' id='L372'>372</a><a href='#L373' id='L373'>373</a><a href='#L374' id='L374'>374</a><a href='#L375' id='L375'>375</a><a href='#L376' id='L376'>376</a><a href='#L377' id='L377'>377</a><a href='#L378' id='L378'>378</a><a href='#L379' id='L379'>379</a><a href='#L380' id='L380'>380</a><a href='#L381' id='L381'>381</a><a href='#L382' id='L382'>382</a><a href='#L383' id='L383'>383</a><a href='#L384' id='L384'>384</a><a href='#L385' id='L385'>385</a><a href='#L386' id='L386'>386</a><a href='#L387' id='L387'>387</a><a href='#L388' id='L388'>388</a><a href='#L389' id='L389'>389</a><a href='#L390' id='L390'>390</a><a href='#L391' id='L391'>391</a><a href='#L392' id='L392'>392</a><a href='#L393' id='L393'>393</a><a href='#L394' id='L394'>394</a><a href='#L395' id='L395'>395</a><a href='#L396' id='L396'>396</a><a href='#L397' id='L397'>397</a><a href='#L398' id='L398'>398</a><a href='#L399' id='L399'>399</a><a href='#L400' id='L400'>400</a><a href='#L401' id='L401'>401</a><a href='#L402' id='L402'>402</a><a href='#L403' id='L403'>403</a><a href='#L404' id='L404'>404</a><a href='#L405' id='L405'>405</a><a href='#L406' id='L406'>406</a><a href='#L407' id='L407'>407</a><a href='#L408' id='L408'>408</a><a href='#L409' id='L409'>409</a><a href='#L410' id='L410'>410</a><a href='#L411' id='L411'>411</a><a href='#L412' id='L412'>412</a><a href='#L413' id='L413'>413</a><a href='#L414' id='L414'>414</a><a href='#L415' id='L415'>415</a><a href='#L416' id='L416'>416</a><a href='#L417' id='L417'>417</a><a href='#L418' id='L418'>418</a><a href='#L419' id='L419'>419</a><a href='#L420' id='L420'>420</a><a href='#L421' id='L421'>421</a><a href='#L422' id='L422'>422</a><a href='#L423' id='L423'>423</a><a href='#L424' id='L424'>424</a><a href='#L425' id='L425'>425</a><a href='#L426' id='L426'>426</a><a href='#L427' id='L427'>427</a><a href='#L428' id='L428'>428</a><a href='#L429' id='L429'>429</a><a href='#L430' id='L430'>430</a><a href='#L431' id='L431'>431</a><a href='#L432' id='L432'>432</a><a href='#L433' id='L433'>433</a><a href='#L434' id='L434'>434</a><a href='#L435' id='L435'>435</a><a href='#L436' id='L436'>436</a><a href='#L437' id='L437'>437</a><a href='#L438' id='L438'>438</a><a href='#L439' id='L439'>439</a><a href='#L440' id='L440'>440</a><a href='#L441' id='L441'>441</a><a href='#L442' id='L442'>442</a><a href='#L443' id='L443'>443</a><a href='#L444' id='L444'>444</a><a href='#L445' id='L445'>445</a><a href='#L446' id='L446'>446</a><a href='#L447' id='L447'>447</a><a href='#L448' id='L448'>448</a><a href='#L449' id='L449'>449</a><a href='#L450' id='L450'>450</a><a href='#L451' id='L451'>451</a><a href='#L452' id='L452'>452</a><a href='#L453' id='L453'>453</a><a href='#L454' id='L454'>454</a><a href='#L455' id='L455'>455</a><a href='#L456' id='L456'>456</a><a href='#L457' id='L457'>457</a><a href='#L458' id='L458'>458</a><a href='#L459' id='L459'>459</a><a href='#L460' id='L460'>460</a><a href='#L461' id='L461'>461</a><a href='#L462' id='L462'>462</a><a href='#L463' id='L463'>463</a><a href='#L464' id='L464'>464</a><a href='#L465' id='L465'>465</a><a href='#L466' id='L466'>466</a><a href='#L467' id='L467'>467</a><a href='#L468' id='L468'>468</a><a href='#L469' id='L469'>469</a><a href='#L470' id='L470'>470</a><a href='#L471' id='L471'>471</a><a href='#L472' id='L472'>472</a><a href='#L473' id='L473'>473</a><a href='#L474' id='L474'>474</a><a href='#L475' id='L475'>475</a><a href='#L476' id='L476'>476</a><a href='#L477' id='L477'>477</a><a href='#L478' id='L478'>478</a><a href='#L479' id='L479'>479</a><a href='#L480' id='L480'>480</a><a href='#L481' id='L481'>481</a><a href='#L482' id='L482'>482</a><a href='#L483' id='L483'>483</a><a href='#L484' id='L484'>484</a><a href='#L485' id='L485'>485</a><a href='#L486' id='L486'>486</a><a href='#L487' id='L487'>487</a><a href='#L488' id='L488'>488</a><a href='#L489' id='L489'>489</a><a href='#L490' id='L490'>490</a><a href='#L491' id='L491'>491</a><a href='#L492' id='L492'>492</a><a href='#L493' id='L493'>493</a><a href='#L494' id='L494'>494</a><a href='#L495' id='L495'>495</a><a href='#L496' id='L496'>496</a><a href='#L497' id='L497'>497</a><a href='#L498' id='L498'>498</a><a href='#L499' id='L499'>499</a><a href='#L500' id='L500'>500</a><a href='#L501' id='L501'>501</a><a href='#L502' id='L502'>502</a></div><div class="highlight"><pre class=""><div class='line' id='LC1'>                  GNU LESSER GENERAL PUBLIC LICENSE&#x000A;</div><div class='line' id='LC2'>                       Version 2.1, February 1999&#x000A;</div><div class='line' id='LC3'>&#x000A;</div><div class='line' id='LC4'> Copyright (C) 1991, 1999 Free Software Foundation, Inc.&#x000A;</div><div class='line' id='LC5'> 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA&#x000A;</div><div class='line' id='LC6'> Everyone is permitted to copy and distribute verbatim copies&#x000A;</div><div class='line' id='LC7'> of this license document, but changing it is not allowed.&#x000A;</div><div class='line' id='LC8'>&#x000A;</div><div class='line' id='LC9'>[This is the first released version of the Lesser GPL.  It also counts&#x000A;</div><div class='line' id='LC10'> as the successor of the GNU Library Public License, version 2, hence&#x000A;</div><div class='line' id='LC11'> the version number 2.1.]&#x000A;</div><div class='line' id='LC12'>&#x000A;</div><div class='line' id='LC13'>                            Preamble&#x000A;</div><div class='line' id='LC14'>&#x000A;</div><div class='line' id='LC15'>  The licenses for most software are designed to take away your&#x000A;</div><div class='line' id='LC16'>freedom to share and change it.  By contrast, the GNU General Public&#x000A;</div><div class='line' id='LC17'>Licenses are intended to guarantee your freedom to share and change&#x000A;</div><div class='line' id='LC18'>free software--to make sure the software is free for all its users.&#x000A;</div><div class='line' id='LC19'>&#x000A;</div><div class='line' id='LC20'>  This license, the Lesser General Public License, applies to some&#x000A;</div><div class='line' id='LC21'>specially designated software packages--typically libraries--of the&#x000A;</div><div class='line' id='LC22'>Free Software Foundation and other authors who decide to use it.  You&#x000A;</div><div class='line' id='LC23'>can use it too, but we suggest you first think carefully about whether&#x000A;</div><div class='line' id='LC24'>this license or the ordinary General Public License is the better&#x000A;</div><div class='line' id='LC25'>strategy to use in any particular case, based on the explanations below.&#x000A;</div><div class='line' id='LC26'>&#x000A;</div><div class='line' id='LC27'>  When we speak of free software, we are referring to freedom of use,&#x000A;</div><div class='line' id='LC28'>not price.  Our General Public Licenses are designed to make sure that&#x000A;</div><div class='line' id='LC29'>you have the freedom to distribute copies of free software (and charge&#x000A;</div><div class='line' id='LC30'>for this service if you wish); that you receive source code or can get&#x000A;</div><div class='line' id='LC31'>it if you want it; that you can change the software and use pieces of&#x000A;</div><div class='line' id='LC32'>it in new free programs; and that you are informed that you can do&#x000A;</div><div class='line' id='LC33'>these things.&#x000A;</div><div class='line' id='LC34'>&#x000A;</div><div class='line' id='LC35'>  To protect your rights, we need to make restrictions that forbid&#x000A;</div><div class='line' id='LC36'>distributors to deny you these rights or to ask you to surrender these&#x000A;</div><div class='line' id='LC37'>rights.  These restrictions translate to certain responsibilities for&#x000A;</div><div class='line' id='LC38'>you if you distribute copies of the library or if you modify it.&#x000A;</div><div class='line' id='LC39'>&#x000A;</div><div class='line' id='LC40'>  For example, if you distribute copies of the library, whether gratis&#x000A;</div><div class='line' id='LC41'>or for a fee, you must give the recipients all the rights that we gave&#x000A;</div><div class='line' id='LC42'>you.  You must make sure that they, too, receive or can get the source&#x000A;</div><div class='line' id='LC43'>code.  If you link other code with the library, you must provide&#x000A;</div><div class='line' id='LC44'>complete object files to the recipients, so that they can relink them&#x000A;</div><div class='line' id='LC45'>with the library after making changes to the library and recompiling&#x000A;</div><div class='line' id='LC46'>it.  And you must show them these terms so they know their rights.&#x000A;</div><div class='line' id='LC47'>&#x000A;</div><div class='line' id='LC48'>  We protect your rights with a two-step method: (1) we copyright the&#x000A;</div><div class='line' id='LC49'>library, and (2) we offer you this license, which gives you legal&#x000A;</div><div class='line' id='LC50'>permission to copy, distribute and/or modify the library.&#x000A;</div><div class='line' id='LC51'>&#x000A;</div><div class='line' id='LC52'>  To protect each distributor, we want to make it very clear that&#x000A;</div><div class='line' id='LC53'>there is no warranty for the free library.  Also, if the library is&#x000A;</div><div class='line' id='LC54'>modified by someone else and passed on, the recipients should know&#x000A;</div><div class='line' id='LC55'>that what they have is not the original version, so that the original&#x000A;</div><div class='line' id='LC56'>author's reputation will not be affected by problems that might be&#x000A;</div><div class='line' id='LC57'>introduced by others.&#x000A;</div><div class='line' id='LC58'>&#x000A;</div><div class='line' id='LC59'>  Finally, software patents pose a constant threat to the existence of&#x000A;</div><div class='line' id='LC60'>any free program.  We wish to make sure that a company cannot&#x000A;</div><div class='line' id='LC61'>effectively restrict the users of a free program by obtaining a&#x000A;</div><div class='line' id='LC62'>restrictive license from a patent holder.  Therefore, we insist that&#x000A;</div><div class='line' id='LC63'>any patent license obtained for a version of the library must be&#x000A;</div><div class='line' id='LC64'>consistent with the full freedom of use specified in this license.&#x000A;</div><div class='line' id='LC65'>&#x000A;</div><div class='line' id='LC66'>  Most GNU software, including some libraries, is covered by the&#x000A;</div><div class='line' id='LC67'>ordinary GNU General Public License.  This license, the GNU Lesser&#x000A;</div><div class='line' id='LC68'>General Public License, applies to certain designated libraries, and&#x000A;</div><div class='line' id='LC69'>is quite different from the ordinary General Public License.  We use&#x000A;</div><div class='line' id='LC70'>this license for certain libraries in order to permit linking those&#x000A;</div><div class='line' id='LC71'>libraries into non-free programs.&#x000A;</div><div class='line' id='LC72'>&#x000A;</div><div class='line' id='LC73'>  When a program is linked with a library, whether statically or using&#x000A;</div><div class='line' id='LC74'>a shared library, the combination of the two is legally speaking a&#x000A;</div><div class='line' id='LC75'>combined work, a derivative of the original library.  The ordinary&#x000A;</div><div class='line' id='LC76'>General Public License therefore permits such linking only if the&#x000A;</div><div class='line' id='LC77'>entire combination fits its criteria of freedom.  The Lesser General&#x000A;</div><div class='line' id='LC78'>Public License permits more lax criteria for linking other code with&#x000A;</div><div class='line' id='LC79'>the library.&#x000A;</div><div class='line' id='LC80'>&#x000A;</div><div class='line' id='LC81'>  We call this license the "Lesser" General Public License because it&#x000A;</div><div class='line' id='LC82'>does Less to protect the user's freedom than the ordinary General&#x000A;</div><div class='line' id='LC83'>Public License.  It also provides other free software developers Less&#x000A;</div><div class='line' id='LC84'>of an advantage over competing non-free programs.  These disadvantages&#x000A;</div><div class='line' id='LC85'>are the reason we use the ordinary General Public License for many&#x000A;</div><div class='line' id='LC86'>libraries.  However, the Lesser license provides advantages in certain&#x000A;</div><div class='line' id='LC87'>special circumstances.&#x000A;</div><div class='line' id='LC88'>&#x000A;</div><div class='line' id='LC89'>  For example, on rare occasions, there may be a special need to&#x000A;</div><div class='line' id='LC90'>encourage the widest possible use of a certain library, so that it becomes&#x000A;</div><div class='line' id='LC91'>a de-facto standard.  To achieve this, non-free programs must be&#x000A;</div><div class='line' id='LC92'>allowed to use the library.  A more frequent case is that a free&#x000A;</div><div class='line' id='LC93'>library does the same job as widely used non-free libraries.  In this&#x000A;</div><div class='line' id='LC94'>case, there is little to gain by limiting the free library to free&#x000A;</div><div class='line' id='LC95'>software only, so we use the Lesser General Public License.&#x000A;</div><div class='line' id='LC96'>&#x000A;</div><div class='line' id='LC97'>  In other cases, permission to use a particular library in non-free&#x000A;</div><div class='line' id='LC98'>programs enables a greater number of people to use a large body of&#x000A;</div><div class='line' id='LC99'>free software.  For example, permission to use the GNU C Library in&#x000A;</div><div class='line' id='LC100'>non-free programs enables many more people to use the whole GNU&#x000A;</div><div class='line' id='LC101'>operating system, as well as its variant, the GNU/Linux operating&#x000A;</div><div class='line' id='LC102'>system.&#x000A;</div><div class='line' id='LC103'>&#x000A;</div><div class='line' id='LC104'>  Although the Lesser General Public License is Less protective of the&#x000A;</div><div class='line' id='LC105'>users' freedom, it does ensure that the user of a program that is&#x000A;</div><div class='line' id='LC106'>linked with the Library has the freedom and the wherewithal to run&#x000A;</div><div class='line' id='LC107'>that program using a modified version of the Library.&#x000A;</div><div class='line' id='LC108'>&#x000A;</div><div class='line' id='LC109'>  The precise terms and conditions for copying, distribution and&#x000A;</div><div class='line' id='LC110'>modification follow.  Pay close attention to the difference between a&#x000A;</div><div class='line' id='LC111'>"work based on the library" and a "work that uses the library".  The&#x000A;</div><div class='line' id='LC112'>former contains code derived from the library, whereas the latter must&#x000A;</div><div class='line' id='LC113'>be combined with the library in order to run.&#x000A;</div><div class='line' id='LC114'>&#x000A;</div><div class='line' id='LC115'>                  GNU LESSER GENERAL PUBLIC LICENSE&#x000A;</div><div class='line' id='LC116'>   TERMS AND CONDITIONS FOR COPYING, DISTRIBUTION AND MODIFICATION&#x000A;</div><div class='line' id='LC117'>&#x000A;</div><div class='line' id='LC118'>  0. This License Agreement applies to any software library or other&#x000A;</div><div class='line' id='LC119'>program which contains a notice placed by the copyright holder or&#x000A;</div><div class='line' id='LC120'>other authorized party saying it may be distributed under the terms of&#x000A;</div><div class='line' id='LC121'>this Lesser General Public License (also called "this License").&#x000A;</div><div class='line' id='LC122'>Each licensee is addressed as "you".&#x000A;</div><div class='line' id='LC123'>&#x000A;</div><div class='line' id='LC124'>  A "library" means a collection of software functions and/or data&#x000A;</div><div class='line' id='LC125'>prepared so as to be conveniently linked with application programs&#x000A;</div><div class='line' id='LC126'>(which use some of those functions and data) to form executables.&#x000A;</div><div class='line' id='LC127'>&#x000A;</div><div class='line' id='LC128'>  The "Library", below, refers to any such software library or work&#x000A;</div><div class='line' id='LC129'>which has been distributed under these terms.  A "work based on the&#x000A;</div><div class='line' id='LC130'>Library" means either the Library or any derivative work under&#x000A;</div><div class='line' id='LC131'>copyright law: that is to say, a work containing the Library or a&#x000A;</div><div class='line' id='LC132'>portion of it, either verbatim or with modifications and/or translated&#x000A;</div><div class='line' id='LC133'>straightforwardly into another language.  (Hereinafter, translation is&#x000A;</div><div class='line' id='LC134'>included without limitation in the term "modification".)&#x000A;</div><div class='line' id='LC135'>&#x000A;</div><div class='line' id='LC136'>  "Source code" for a work means the preferred form of the work for&#x000A;</div><div class='line' id='LC137'>making modifications to it.  For a library, complete source code means&#x000A;</div><div class='line' id='LC138'>all the source code for all modules it contains, plus any associated&#x000A;</div><div class='line' id='LC139'>interface definition files, plus the scripts used to control compilation&#x000A;</div><div class='line' id='LC140'>and installation of the library.&#x000A;</div><div class='line' id='LC141'>&#x000A;</div><div class='line' id='LC142'>  Activities other than copying, distribution and modification are not&#x000A;</div><div class='line' id='LC143'>covered by this License; they are outside its scope.  The act of&#x000A;</div><div class='line' id='LC144'>running a program using the Library is not restricted, and output from&#x000A;</div><div class='line' id='LC145'>such a program is covered only if its contents constitute a work based&#x000A;</div><div class='line' id='LC146'>on the Library (independent of the use of the Library in a tool for&#x000A;</div><div class='line' id='LC147'>writing it).  Whether that is true depends on what the Library does&#x000A;</div><div class='line' id='LC148'>and what the program that uses the Library does.&#x000A;</div><div class='line' id='LC149'>&#x000A;</div><div class='line' id='LC150'>  1. You may copy and distribute verbatim copies of the Library's&#x000A;</div><div class='line' id='LC151'>complete source code as you receive it, in any medium, provided that&#x000A;</div><div class='line' id='LC152'>you conspicuously and appropriately publish on each copy an&#x000A;</div><div class='line' id='LC153'>appropriate copyright notice and disclaimer of warranty; keep intact&#x000A;</div><div class='line' id='LC154'>all the notices that refer to this License and to the absence of any&#x000A;</div><div class='line' id='LC155'>warranty; and distribute a copy of this License along with the&#x000A;</div><div class='line' id='LC156'>Library.&#x000A;</div><div class='line' id='LC157'>&#x000A;</div><div class='line' id='LC158'>  You may charge a fee for the physical act of transferring a copy,&#x000A;</div><div class='line' id='LC159'>and you may at your option offer warranty protection in exchange for a&#x000A;</div><div class='line' id='LC160'>fee.&#x000A;</div><div class='line' id='LC161'>&#x000A;</div><div class='line' id='LC162'>  2. You may modify your copy or copies of the Library or any portion&#x000A;</div><div class='line' id='LC163'>of it, thus forming a work based on the Library, and copy and&#x000A;</div><div class='line' id='LC164'>distribute such modifications or work under the terms of Section 1&#x000A;</div><div class='line' id='LC165'>above, provided that you also meet all of these conditions:&#x000A;</div><div class='line' id='LC166'>&#x000A;</div><div class='line' id='LC167'>    a) The modified work must itself be a software library.&#x000A;</div><div class='line' id='LC168'>&#x000A;</div><div class='line' id='LC169'>    b) You must cause the files modified to carry prominent notices&#x000A;</div><div class='line' id='LC170'>    stating that you changed the files and the date of any change.&#x000A;</div><div class='line' id='LC171'>&#x000A;</div><div class='line' id='LC172'>    c) You must cause the whole of the work to be licensed at no&#x000A;</div><div class='line' id='LC173'>    charge to all third parties under the terms of this License.&#x000A;</div><div class='line' id='LC174'>&#x000A;</div><div class='line' id='LC175'>    d) If a facility in the modified Library refers to a function or a&#x000A;</div><div class='line' id='LC176'>    table of data to be supplied by an application program that uses&#x000A;</div><div class='line' id='LC177'>    the facility, other than as an argument passed when the facility&#x000A;</div><div class='line' id='LC178'>    is invoked, then you must make a good faith effort to ensure that,&#x000A;</div><div class='line' id='LC179'>    in the event an application does not supply such function or&#x000A;</div><div class='line' id='LC180'>    table, the facility still operates, and performs whatever part of&#x000A;</div><div class='line' id='LC181'>    its purpose remains meaningful.&#x000A;</div><div class='line' id='LC182'>&#x000A;</div><div class='line' id='LC183'>    (For example, a function in a library to compute square roots has&#x000A;</div><div class='line' id='LC184'>    a purpose that is entirely well-defined independent of the&#x000A;</div><div class='line' id='LC185'>    application.  Therefore, Subsection 2d requires that any&#x000A;</div><div class='line' id='LC186'>    application-supplied function or table used by this function must&#x000A;</div><div class='line' id='LC187'>    be optional: if the application does not supply it, the square&#x000A;</div><div class='line' id='LC188'>    root function must still compute square roots.)&#x000A;</div><div class='line' id='LC189'>&#x000A;</div><div class='line' id='LC190'>These requirements apply to the modified work as a whole.  If&#x000A;</div><div class='line' id='LC191'>identifiable sections of that work are not derived from the Library,&#x000A;</div><div class='line' id='LC192'>and can be reasonably considered independent and separate works in&#x000A;</div><div class='line' id='LC193'>themselves, then this License, and its terms, do not apply to those&#x000A;</div><div class='line' id='LC194'>sections when you distribute them as separate works.  But when you&#x000A;</div><div class='line' id='LC195'>distribute the same sections as part of a whole which is a work based&#x000A;</div><div class='line' id='LC196'>on the Library, the distribution of the whole must be on the terms of&#x000A;</div><div class='line' id='LC197'>this License, whose permissions for other licensees extend to the&#x000A;</div><div class='line' id='LC198'>entire whole, and thus to each and every part regardless of who wrote&#x000A;</div><div class='line' id='LC199'>it.&#x000A;</div><div class='line' id='LC200'>&#x000A;</div><div class='line' id='LC201'>Thus, it is not the intent of this section to claim rights or contest&#x000A;</div><div class='line' id='LC202'>your rights to work written entirely by you; rather, the intent is to&#x000A;</div><div class='line' id='LC203'>exercise the right to control the distribution of derivative or&#x000A;</div><div class='line' id='LC204'>collective works based on the Library.&#x000A;</div><div class='line' id='LC205'>&#x000A;</div><div class='line' id='LC206'>In addition, mere aggregation of another work not based on the Library&#x000A;</div><div class='line' id='LC207'>with the Library (or with a work based on the Library) on a volume of&#x000A;</div><div class='line' id='LC208'>a storage or distribution medium does not bring the other work under&#x000A;</div><div class='line' id='LC209'>the scope of this License.&#x000A;</div><div class='line' id='LC210'>&#x000A;</div><div class='line' id='LC211'>  3. You may opt to apply the terms of the ordinary GNU General Public&#x000A;</div><div class='line' id='LC212'>License instead of this License to a given copy of the Library.  To do&#x000A;</div><div class='line' id='LC213'>this, you must alter all the notices that refer to this License, so&#x000A;</div><div class='line' id='LC214'>that they refer to the ordinary GNU General Public License, version 2,&#x000A;</div><div class='line' id='LC215'>instead of to this License.  (If a newer version than version 2 of the&#x000A;</div><div class='line' id='LC216'>ordinary GNU General Public License has appeared, then you can specify&#x000A;</div><div class='line' id='LC217'>that version instead if you wish.)  Do not make any other change in&#x000A;</div><div class='line' id='LC218'>these notices.&#x000A;</div><div class='line' id='LC219'>&#x000A;</div><div class='line' id='LC220'>  Once this change is made in a given copy, it is irreversible for&#x000A;</div><div class='line' id='LC221'>that copy, so the ordinary GNU General Public License applies to all&#x000A;</div><div class='line' id='LC222'>subsequent copies and derivative works made from that copy.&#x000A;</div><div class='line' id='LC223'>&#x000A;</div><div class='line' id='LC224'>  This option is useful when you wish to copy part of the code of&#x000A;</div><div class='line' id='LC225'>the Library into a program that is not a library.&#x000A;</div><div class='line' id='LC226'>&#x000A;</div><div class='line' id='LC227'>  4. You may copy and distribute the Library (or a portion or&#x000A;</div><div class='line' id='LC228'>derivative of it, under Section 2) in object code or executable form&#x000A;</div><div class='line' id='LC229'>under the terms of Sections 1 and 2 above provided that you accompany&#x000A;</div><div class='line' id='LC230'>it with the complete corresponding machine-readable source code, which&#x000A;</div><div class='line' id='LC231'>must be distributed under the terms of Sections 1 and 2 above on a&#x000A;</div><div class='line' id='LC232'>medium customarily used for software interchange.&#x000A;</div><div class='line' id='LC233'>&#x000A;</div><div class='line' id='LC234'>  If distribution of object code is made by offering access to copy&#x000A;</div><div class='line' id='LC235'>from a designated place, then offering equivalent access to copy the&#x000A;</div><div class='line' id='LC236'>source code from the same place satisfies the requirement to&#x000A;</div><div class='line' id='LC237'>distribute the source code, even though third parties are not&#x000A;</div><div class='line' id='LC238'>compelled to copy the source along with the object code.&#x000A;</div><div class='line' id='LC239'>&#x000A;</div><div class='line' id='LC240'>  5. A program that contains no derivative of any portion of the&#x000A;</div><div class='line' id='LC241'>Library, but is designed to work with the Library by being compiled or&#x000A;</div><div class='line' id='LC242'>linked with it, is called a "work that uses the Library".  Such a&#x000A;</div><div class='line' id='LC243'>work, in isolation, is not a derivative work of the Library, and&#x000A;</div><div class='line' id='LC244'>therefore falls outside the scope of this License.&#x000A;</div><div class='line' id='LC245'>&#x000A;</div><div class='line' id='LC246'>  However, linking a "work that uses the Library" with the Library&#x000A;</div><div class='line' id='LC247'>creates an executable that is a derivative of the Library (because it&#x000A;</div><div class='line' id='LC248'>contains portions of the Library), rather than a "work that uses the&#x000A;</div><div class='line' id='LC249'>library".  The executable is therefore covered by this License.&#x000A;</div><div class='line' id='LC250'>Section 6 states terms for distribution of such executables.&#x000A;</div><div class='line' id='LC251'>&#x000A;</div><div class='line' id='LC252'>  When a "work that uses the Library" uses material from a header file&#x000A;</div><div class='line' id='LC253'>that is part of the Library, the object code for the work may be a&#x000A;</div><div class='line' id='LC254'>derivative work of the Library even though the source code is not.&#x000A;</div><div class='line' id='LC255'>Whether this is true is especially significant if the work can be&#x000A;</div><div class='line' id='LC256'>linked without the Library, or if the work is itself a library.  The&#x000A;</div><div class='line' id='LC257'>threshold for this to be true is not precisely defined by law.&#x000A;</div><div class='line' id='LC258'>&#x000A;</div><div class='line' id='LC259'>  If such an object file uses only numerical parameters, data&#x000A;</div><div class='line' id='LC260'>structure layouts and accessors, and small macros and small inline&#x000A;</div><div class='line' id='LC261'>functions (ten lines or less in length), then the use of the object&#x000A;</div><div class='line' id='LC262'>file is unrestricted, regardless of whether it is legally a derivative&#x000A;</div><div class='line' id='LC263'>work.  (Executables containing this object code plus portions of the&#x000A;</div><div class='line' id='LC264'>Library will still fall under Section 6.)&#x000A;</div><div class='line' id='LC265'>&#x000A;</div><div class='line' id='LC266'>  Otherwise, if the work is a derivative of the Library, you may&#x000A;</div><div class='line' id='LC267'>distribute the object code for the work under the terms of Section 6.&#x000A;</div><div class='line' id='LC268'>Any executables containing that work also fall under Section 6,&#x000A;</div><div class='line' id='LC269'>whether or not they are linked directly with the Library itself.&#x000A;</div><div class='line' id='LC270'>&#x000A;</div><div class='line' id='LC271'>  6. As an exception to the Sections above, you may also combine or&#x000A;</div><div class='line' id='LC272'>link a "work that uses the Library" with the Library to produce a&#x000A;</div><div class='line' id='LC273'>work containing portions of the Library, and distribute that work&#x000A;</div><div class='line' id='LC274'>under terms of your choice, provided that the terms permit&#x000A;</div><div class='line' id='LC275'>modification of the work for the customer's own use and reverse&#x000A;</div><div class='line' id='LC276'>engineering for debugging such modifications.&#x000A;</div><div class='line' id='LC277'>&#x000A;</div><div class='line' id='LC278'>  You must give prominent notice with each copy of the work that the&#x000A;</div><div class='line' id='LC279'>Library is used in it and that the Library and its use are covered by&#x000A;</div><div class='line' id='LC280'>this License.  You must supply a copy of this License.  If the work&#x000A;</div><div class='line' id='LC281'>during execution displays copyright notices, you must include the&#x000A;</div><div class='line' id='LC282'>copyright notice for the Library among them, as well as a reference&#x000A;</div><div class='line' id='LC283'>directing the user to the copy of this License.  Also, you must do one&#x000A;</div><div class='line' id='LC284'>of these things:&#x000A;</div><div class='line' id='LC285'>&#x000A;</div><div class='line' id='LC286'>    a) Accompany the work with the complete corresponding&#x000A;</div><div class='line' id='LC287'>    machine-readable source code for the Library including whatever&#x000A;</div><div class='line' id='LC288'>    changes were used in the work (which must be distributed under&#x000A;</div><div class='line' id='LC289'>    Sections 1 and 2 above); and, if the work is an executable linked&#x000A;</div><div class='line' id='LC290'>    with the Library, with the complete machine-readable "work that&#x000A;</div><div class='line' id='LC291'>    uses the Library", as object code and/or source code, so that the&#x000A;</div><div class='line' id='LC292'>    user can modify the Library and then relink to produce a modified&#x000A;</div><div class='line' id='LC293'>    executable containing the modified Library.  (It is understood&#x000A;</div><div class='line' id='LC294'>    that the user who changes the contents of definitions files in the&#x000A;</div><div class='line' id='LC295'>    Library will not necessarily be able to recompile the application&#x000A;</div><div class='line' id='LC296'>    to use the modified definitions.)&#x000A;</div><div class='line' id='LC297'>&#x000A;</div><div class='line' id='LC298'>    b) Use a suitable shared library mechanism for linking with the&#x000A;</div><div class='line' id='LC299'>    Library.  A suitable mechanism is one that (1) uses at run time a&#x000A;</div><div class='line' id='LC300'>    copy of the library already present on the user's computer system,&#x000A;</div><div class='line' id='LC301'>    rather than copying library functions into the executable, and (2)&#x000A;</div><div class='line' id='LC302'>    will operate properly with a modified version of the library, if&#x000A;</div><div class='line' id='LC303'>    the user installs one, as long as the modified version is&#x000A;</div><div class='line' id='LC304'>    interface-compatible with the version that the work was made with.&#x000A;</div><div class='line' id='LC305'>&#x000A;</div><div class='line' id='LC306'>    c) Accompany the work with a written offer, valid for at&#x000A;</div><div class='line' id='LC307'>    least three years, to give the same user the materials&#x000A;</div><div class='line' id='LC308'>    specified in Subsection 6a, above, for a charge no more&#x000A;</div><div class='line' id='LC309'>    than the cost of performing this distribution.&#x000A;</div><div class='line' id='LC310'>&#x000A;</div><div class='line' id='LC311'>    d) If distribution of the work is made by offering access to copy&#x000A;</div><div class='line' id='LC312'>    from a designated place, offer equivalent access to copy the above&#x000A;</div><div class='line' id='LC313'>    specified materials from the same place.&#x000A;</div><div class='line' id='LC314'>&#x000A;</div><div class='line' id='LC315'>    e) Verify that the user has already received a copy of these&#x000A;</div><div class='line' id='LC316'>    materials or that you have already sent this user a copy.&#x000A;</div><div class='line' id='LC317'>&#x000A;</div><div class='line' id='LC318'>  For an executable, the required form of the "work that uses the&#x000A;</div><div class='line' id='LC319'>Library" must include any data and utility programs needed for&#x000A;</div><div class='line' id='LC320'>reproducing the executable from it.  However, as a special exception,&#x000A;</div><div class='line' id='LC321'>the materials to be distributed need not include anything that is&#x000A;</div><div class='line' id='LC322'>normally distributed (in either source or binary form) with the major&#x000A;</div><div class='line' id='LC323'>components (compiler, kernel, and so on) of the operating system on&#x000A;</div><div class='line' id='LC324'>which the executable runs, unless that component itself accompanies&#x000A;</div><div class='line' id='LC325'>the executable.&#x000A;</div><div class='line' id='LC326'>&#x000A;</div><div class='line' id='LC327'>  It may happen that this requirement contradicts the license&#x000A;</div><div class='line' id='LC328'>restrictions of other proprietary libraries that do not normally&#x000A;</div><div class='line' id='LC329'>accompany the operating system.  Such a contradiction means you cannot&#x000A;</div><div class='line' id='LC330'>use both them and the Library together in an executable that you&#x000A;</div><div class='line' id='LC331'>distribute.&#x000A;</div><div class='line' id='LC332'>&#x000A;</div><div class='line' id='LC333'>  7. You may place library facilities that are a work based on the&#x000A;</div><div class='line' id='LC334'>Library side-by-side in a single library together with other library&#x000A;</div><div class='line' id='LC335'>facilities not covered by this License, and distribute such a combined&#x000A;</div><div class='line' id='LC336'>library, provided that the separate distribution of the work based on&#x000A;</div><div class='line' id='LC337'>the Library and of the other library facilities is otherwise&#x000A;</div><div class='line' id='LC338'>permitted, and provided that you do these two things:&#x000A;</div><div class='line' id='LC339'>&#x000A;</div><div class='line' id='LC340'>    a) Accompany the combined library with a copy of the same work&#x000A;</div><div class='line' id='LC341'>    based on the Library, uncombined with any other library&#x000A;</div><div class='line' id='LC342'>    facilities.  This must be distributed under the terms of the&#x000A;</div><div class='line' id='LC343'>    Sections above.&#x000A;</div><div class='line' id='LC344'>&#x000A;</div><div class='line' id='LC345'>    b) Give prominent notice with the combined library of the fact&#x000A;</div><div class='line' id='LC346'>    that part of it is a work based on the Library, and explaining&#x000A;</div><div class='line' id='LC347'>    where to find the accompanying uncombined form of the same work.&#x000A;</div><div class='line' id='LC348'>&#x000A;</div><div class='line' id='LC349'>  8. You may not copy, modify, sublicense, link with, or distribute&#x000A;</div><div class='line' id='LC350'>the Library except as expressly provided under this License.  Any&#x000A;</div><div class='line' id='LC351'>attempt otherwise to copy, modify, sublicense, link with, or&#x000A;</div><div class='line' id='LC352'>distribute the Library is void, and will automatically terminate your&#x000A;</div><div class='line' id='LC353'>rights under this License.  However, parties who have received copies,&#x000A;</div><div class='line' id='LC354'>or rights, from you under this License will not have their licenses&#x000A;</div><div class='line' id='LC355'>terminated so long as such parties remain in full compliance.&#x000A;</div><div class='line' id='LC356'>&#x000A;</div><div class='line' id='LC357'>  9. You are not required to accept this License, since you have not&#x000A;</div><div class='line' id='LC358'>signed it.  However, nothing else grants you permission to modify or&#x000A;</div><div class='line' id='LC359'>distribute the Library or its derivative works.  These actions are&#x000A;</div><div class='line' id='LC360'>prohibited by law if you do not accept this License.  Therefore, by&#x000A;</div><div class='line' id='LC361'>modifying or distributing the Library (or any work based on the&#x000A;</div><div class='line' id='LC362'>Library), you indicate your acceptance of this License to do so, and&#x000A;</div><div class='line' id='LC363'>all its terms and conditions for copying, distributing or modifying&#x000A;</div><div class='line' id='LC364'>the Library or works based on it.&#x000A;</div><div class='line' id='LC365'>&#x000A;</div><div class='line' id='LC366'>  10. Each time you redistribute the Library (or any work based on the&#x000A;</div><div class='line' id='LC367'>Library), the recipient automatically receives a license from the&#x000A;</div><div class='line' id='LC368'>original licensor to copy, distribute, link with or modify the Library&#x000A;</div><div class='line' id='LC369'>subject to these terms and conditions.  You may not impose any further&#x000A;</div><div class='line' id='LC370'>restrictions on the recipients' exercise of the rights granted herein.&#x000A;</div><div class='line' id='LC371'>You are not responsible for enforcing compliance by third parties with&#x000A;</div><div class='line' id='LC372'>this License.&#x000A;</div><div class='line' id='LC373'>&#x000A;</div><div class='line' id='LC374'>  11. If, as a consequence of a court judgment or allegation of patent&#x000A;</div><div class='line' id='LC375'>infringement or for any other reason (not limited to patent issues),&#x000A;</div><div class='line' id='LC376'>conditions are imposed on you (whether by court order, agreement or&#x000A;</div><div class='line' id='LC377'>otherwise) that contradict the conditions of this License, they do not&#x000A;</div><div class='line' id='LC378'>excuse you from the conditions of this License.  If you cannot&#x000A;</div><div class='line' id='LC379'>distribute so as to satisfy simultaneously your obligations under this&#x000A;</div><div class='line' id='LC380'>License and any other pertinent obligations, then as a consequence you&#x000A;</div><div class='line' id='LC381'>may not distribute the Library at all.  For example, if a patent&#x000A;</div><div class='line' id='LC382'>license would not permit royalty-free redistribution of the Library by&#x000A;</div><div class='line' id='LC383'>all those who receive copies directly or indirectly through you, then&#x000A;</div><div class='line' id='LC384'>the only way you could satisfy both it and this License would be to&#x000A;</div><div class='line' id='LC385'>refrain entirely from distribution of the Library.&#x000A;</div><div class='line' id='LC386'>&#x000A;</div><div class='line' id='LC387'>If any portion of this section is held invalid or unenforceable under any&#x000A;</div><div class='line' id='LC388'>particular circumstance, the balance of the section is intended to apply,&#x000A;</div><div class='line' id='LC389'>and the section as a whole is intended to apply in other circumstances.&#x000A;</div><div class='line' id='LC390'>&#x000A;</div><div class='line' id='LC391'>It is not the purpose of this section to induce you to infringe any&#x000A;</div><div class='line' id='LC392'>patents or other property right claims or to contest validity of any&#x000A;</div><div class='line' id='LC393'>such claims; this section has the sole purpose of protecting the&#x000A;</div><div class='line' id='LC394'>integrity of the free software distribution system which is&#x000A;</div><div class='line' id='LC395'>implemented by public license practices.  Many people have made&#x000A;</div><div class='line' id='LC396'>generous contributions to the wide range of software distributed&#x000A;</div><div class='line' id='LC397'>through that system in reliance on consistent application of that&#x000A;</div><div class='line' id='LC398'>system; it is up to the author/donor to decide if he or she is willing&#x000A;</div><div class='line' id='LC399'>to distribute software through any other system and a licensee cannot&#x000A;</div><div class='line' id='LC400'>impose that choice.&#x000A;</div><div class='line' id='LC401'>&#x000A;</div><div class='line' id='LC402'>This section is intended to make thoroughly clear what is believed to&#x000A;</div><div class='line' id='LC403'>be a consequence of the rest of this License.&#x000A;</div><div class='line' id='LC404'>&#x000A;</div><div class='line' id='LC405'>  12. If the distribution and/or use of the Library is restricted in&#x000A;</div><div class='line' id='LC406'>certain countries either by patents or by copyrighted interfaces, the&#x000A;</div><div class='line' id='LC407'>original copyright holder who places the Library under this License may add&#x000A;</div><div class='line' id='LC408'>an explicit geographical distribution limitation excluding those countries,&#x000A;</div><div class='line' id='LC409'>so that distribution is permitted only in or among countries not thus&#x000A;</div><div class='line' id='LC410'>excluded.  In such case, this License incorporates the limitation as if&#x000A;</div><div class='line' id='LC411'>written in the body of this License.&#x000A;</div><div class='line' id='LC412'>&#x000A;</div><div class='line' id='LC413'>  13. The Free Software Foundation may publish revised and/or new&#x000A;</div><div class='line' id='LC414'>versions of the Lesser General Public License from time to time.&#x000A;</div><div class='line' id='LC415'>Such new versions will be similar in spirit to the present version,&#x000A;</div><div class='line' id='LC416'>but may differ in detail to address new problems or concerns.&#x000A;</div><div class='line' id='LC417'>&#x000A;</div><div class='line' id='LC418'>Each version is given a distinguishing version number.  If the Library&#x000A;</div><div class='line' id='LC419'>specifies a version number of this License which applies to it and&#x000A;</div><div class='line' id='LC420'>"any later version", you have the option of following the terms and&#x000A;</div><div class='line' id='LC421'>conditions either of that version or of any later version published by&#x000A;</div><div class='line' id='LC422'>the Free Software Foundation.  If the Library does not specify a&#x000A;</div><div class='line' id='LC423'>license version number, you may choose any version ever published by&#x000A;</div><div class='line' id='LC424'>the Free Software Foundation.&#x000A;</div><div class='line' id='LC425'>&#x000A;</div><div class='line' id='LC426'>  14. If you wish to incorporate parts of the Library into other free&#x000A;</div><div class='line' id='LC427'>programs whose distribution conditions are incompatible with these,&#x000A;</div><div class='line' id='LC428'>write to the author to ask for permission.  For software which is&#x000A;</div><div class='line' id='LC429'>copyrighted by the Free Software Foundation, write to the Free&#x000A;</div><div class='line' id='LC430'>Software Foundation; we sometimes make exceptions for this.  Our&#x000A;</div><div class='line' id='LC431'>decision will be guided by the two goals of preserving the free status&#x000A;</div><div class='line' id='LC432'>of all derivatives of our free software and of promoting the sharing&#x000A;</div><div class='line' id='LC433'>and reuse of software generally.&#x000A;</div><div class='line' id='LC434'>&#x000A;</div><div class='line' id='LC435'>                            NO WARRANTY&#x000A;</div><div class='line' id='LC436'>&#x000A;</div><div class='line' id='LC437'>  15. BECAUSE THE LIBRARY IS LICENSED FREE OF CHARGE, THERE IS NO&#x000A;</div><div class='line' id='LC438'>WARRANTY FOR THE LIBRARY, TO THE EXTENT PERMITTED BY APPLICABLE LAW.&#x000A;</div><div class='line' id='LC439'>EXCEPT WHEN OTHERWISE STATED IN WRITING THE COPYRIGHT HOLDERS AND/OR&#x000A;</div><div class='line' id='LC440'>OTHER PARTIES PROVIDE THE LIBRARY "AS IS" WITHOUT WARRANTY OF ANY&#x000A;</div><div class='line' id='LC441'>KIND, EITHER EXPRESSED OR IMPLIED, INCLUDING, BUT NOT LIMITED TO, THE&#x000A;</div><div class='line' id='LC442'>IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR&#x000A;</div><div class='line' id='LC443'>PURPOSE.  THE ENTIRE RISK AS TO THE QUALITY AND PERFORMANCE OF THE&#x000A;</div><div class='line' id='LC444'>LIBRARY IS WITH YOU.  SHOULD THE LIBRARY PROVE DEFECTIVE, YOU ASSUME&#x000A;</div><div class='line' id='LC445'>THE COST OF ALL NECESSARY SERVICING, REPAIR OR CORRECTION.&#x000A;</div><div class='line' id='LC446'>&#x000A;</div><div class='line' id='LC447'>  16. IN NO EVENT UNLESS REQUIRED BY APPLICABLE LAW OR AGREED TO IN&#x000A;</div><div class='line' id='LC448'>WRITING WILL ANY COPYRIGHT HOLDER, OR ANY OTHER PARTY WHO MAY MODIFY&#x000A;</div><div class='line' id='LC449'>AND/OR REDISTRIBUTE THE LIBRARY AS PERMITTED ABOVE, BE LIABLE TO YOU&#x000A;</div><div class='line' id='LC450'>FOR DAMAGES, INCLUDING ANY GENERAL, SPECIAL, INCIDENTAL OR&#x000A;</div><div class='line' id='LC451'>CONSEQUENTIAL DAMAGES ARISING OUT OF THE USE OR INABILITY TO USE THE&#x000A;</div><div class='line' id='LC452'>LIBRARY (INCLUDING BUT NOT LIMITED TO LOSS OF DATA OR DATA BEING&#x000A;</div><div class='line' id='LC453'>RENDERED INACCURATE OR LOSSES SUSTAINED BY YOU OR THIRD PARTIES OR A&#x000A;</div><div class='line' id='LC454'>FAILURE OF THE LIBRARY TO OPERATE WITH ANY OTHER SOFTWARE), EVEN IF&#x000A;</div><div class='line' id='LC455'>SUCH HOLDER OR OTHER PARTY HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH&#x000A;</div><div class='line' id='LC456'>DAMAGES.&#x000A;</div><div class='line' id='LC457'>&#x000A;</div><div class='line' id='LC458'>                     END OF TERMS AND CONDITIONS&#x000A;</div><div class='line' id='LC459'>&#x000A;</div><div class='line' id='LC460'>           How to Apply These Terms to Your New Libraries&#x000A;</div><div class='line' id='LC461'>&#x000A;</div><div class='line' id='LC462'>  If you develop a new library, and you want it to be of the greatest&#x000A;</div><div class='line' id='LC463'>possible use to the public, we recommend making it free software that&#x000A;</div><div class='line' id='LC464'>everyone can redistribute and change.  You can do so by permitting&#x000A;</div><div class='line' id='LC465'>redistribution under these terms (or, alternatively, under the terms of the&#x000A;</div><div class='line' id='LC466'>ordinary General Public License).&#x000A;</div><div class='line' id='LC467'>&#x000A;</div><div class='line' id='LC468'>  To apply these terms, attach the following notices to the library.  It is&#x000A;</div><div class='line' id='LC469'>safest to attach them to the start of each source file to most effectively&#x000A;</div><div class='line' id='LC470'>convey the exclusion of warranty; and each file should have at least the&#x000A;</div><div class='line' id='LC471'>"copyright" line and a pointer to where the full notice is found.&#x000A;</div><div class='line' id='LC472'>&#x000A;</div><div class='line' id='LC473'>    &lt;one line to give the library's name and a brief idea of what it does.&gt;&#x000A;</div><div class='line' id='LC474'>    Copyright (C) &lt;year&gt;  &lt;name of author&gt;&#x000A;</div><div class='line' id='LC475'>&#x000A;</div><div class='line' id='LC476'>    This library is free software; you can redistribute it and/or&#x000A;</div><div class='line' id='LC477'>    modify it under the terms of the GNU Lesser General Public&#x000A;</div><div class='line' id='LC478'>    License as published by the Free Software Foundation; either&#x000A;</div><div class='line' id='LC479'>    version 2.1 of the License, or (at your option) any later version.&#x000A;</div><div class='line' id='LC480'>&#x000A;</div><div class='line' id='LC481'>    This library is distributed in the hope that it will be useful,&#x000A;</div><div class='line' id='LC482'>    but WITHOUT ANY WARRANTY; without even the implied warranty of&#x000A;</div><div class='line' id='LC483'>    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU&#x000A;</div><div class='line' id='LC484'>    Lesser General Public License for more details.&#x000A;</div><div class='line' id='LC485'>&#x000A;</div><div class='line' id='LC486'>    You should have received a copy of the GNU Lesser General Public&#x000A;</div><div class='line' id='LC487'>    License along with this library; if not, write to the Free Software&#x000A;</div><div class='line' id='LC488'>    Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA&#x000A;</div><div class='line' id='LC489'>&#x000A;</div><div class='line' id='LC490'>Also add information on how to contact you by electronic and paper mail.&#x000A;</div><div class='line' id='LC491'>&#x000A;</div><div class='line' id='LC492'>You should also get your employer (if you work as a programmer) or your&#x000A;</div><div class='line' id='LC493'>school, if any, to sign a "copyright disclaimer" for the library, if&#x000A;</div><div class='line' id='LC494'>necessary.  Here is a sample; alter the names:&#x000A;</div><div class='line' id='LC495'>&#x000A;</div><div class='line' id='LC496'>  Yoyodyne, Inc., hereby disclaims all copyright interest in the&#x000A;</div><div class='line' id='LC497'>  library `Frob' (a library for tweaking knobs) written by James Random Hacker.&#x000A;</div><div class='line' id='LC498'>&#x000A;</div><div class='line' id='LC499'>  &lt;signature of Ty Coon&gt;, 1 April 1990&#x000A;</div><div class='line' id='LC500'>  Ty Coon, President of Vice&#x000A;</div><div class='line' id='LC501'>&#x000A;</div><div class='line' id='LC502'>That's all there is to it!&#x000A;</div></pre></div></div>
+</div>
+<script>
+  toMathMlCode('','markdown-body');
+</script>
+
+</div>
+</div>
+<div class='tree_progress'></div>
+<div class='ui small modal' id='modal-linejump'>
+<div class='ui custom form content'>
+<div class='field'>
+<div class='ui right action input'>
+<input placeholder='跳转至某一行...' type='number'>
+<div class='ui orange button'>
+跳转
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class='row column inner-comment' id='blob-comment'>
+<input id="comment_path" name="comment_path" type="hidden" value="license.txt" />
+<div class='tree-comments'>
+<h3 id='tree_comm_title'>
+评论
+(
+<span class='comments-count'>
+0
+</span>
+)
+</h3>
+<div class='ui threaded comments middle aligned' id='notes-list'></div>
+<input id="ajax_add_note_id" name="ajax_add_note_id" type="hidden" />
+<div class='text-center'>
+<div class='tip-loading' style='display: none'>
+<div class='ui active mini inline loader'></div>
+正在加载...
+</div>
+</div>
+</div>
+<script>
+  "use strict";
+  $(function(){
+    var page = 1
+    var commentsCount = 0
+    var $container = $('.tree-comments')
+    var $comments = $container.find('.ui.comments')
+    var $tipLoading = $container.find('.tip-loading')
+    var $btnLoad = $container.find('.btn-load-more')
+    var noteAnchor = new Gitee.NoteAnchor({ defaultAnchor: '#tree_comm_title' })
+  
+    if (commentsCount < 1) {
+      return;
+    }
+  
+    var path;
+    if ($('#comment_path').val() === '') {
+      path = '/';
+    } else {
+      path = $('#comment_path').val();
+    }
+  
+    function loadComments () {
+      $btnLoad.hide();
+      $tipLoading.show();
+      $.ajax({
+        url: '/luolonghao/kindeditor/comment_list',
+        data: {
+          page: page,
+          path: path
+        },
+        success: function(data) {
+          var err;
+          try {
+            $tipLoading.hide();
+            $btnLoad.show();
+            if (data.status !== 0) {
+              $btnLoad.text('无更多评论')
+              return $btnLoad.prop('disabled', true).addClass('disabled');
+            } else {
+              TreeComment.CommentListHandler(data);
+              page += 1;
+              if (data.comments_count < 10) {
+                $('#ajax_add_note_id').val('');
+                $btnLoad.text('无更多评论')
+                $btnLoad.prop('disabled', true).addClass('disabled');
+              }
+              // osctree can not load script
+              $comments.find('.timeago').timeago();
+              $comments.find('.commenter-role-label').popup();
+              noteAnchor.locate();
+              toMathMlCode('', 'comments');
+              return $('.markdown-body pre code').each(function(i, block) {
+                return hljs.highlightBlock(block);
+              });
+            }
+          } catch (error) {
+            err = error;
+            return console.log('loadComments error:' + err);
+          }
+        }
+      });
+    };
+  
+  
+    function checkLoad () {
+      var listTop, top;
+      top = $(window).scrollTop();
+      listTop = $container.offset().top;
+      if (listTop >= top && listTop < top + $(window).height()) {
+        $(window).off('scroll', checkLoad);
+        return loadComments();
+      }
+    };
+  
+    $btnLoad.on('click', loadComments);
+    loadComments()
+  })
+</script>
+
+</div>
+<div class='inner-comment-box' id='comment-box'>
+<p>
+你可以在<a href="/login">登录</a>后，发表评论
+</p>
+
+</div>
+
+<div class='complaint'>
+<div class='ui modal small form' id='landing-comments-complaint-modal'>
+<i class='iconfont icon-close close'></i>
+<div class='header'>
+举报
+</div>
+<div class='content'>
+<div class='appeal-success-tip hide'>
+<i class='iconfont icon-ic_msg_success'></i>
+<div class='appeal-success-text'>
+举报成功
+</div>
+<span>
+我们将于2个工作日内通过站内信反馈结果给你！
+</span>
+</div>
+<div class='appeal-tip'>
+请认真填写举报原因，尽可能描述详细。
+</div>
+<div class='ui form appeal-form'>
+<div class='inline field'>
+<label class='left-part appeal-type-wrap'>
+举报类型
+</label>
+<div class='ui dropdown selection' id='appeal-comments-types'>
+<div class='text default'>
+请选择举报类型
+</div>
+<i class='dropdown icon'></i>
+<div class='menu'></div>
+</div>
+</div>
+<div class='inline field'>
+<label class='left-part'>
+举报原因
+</label>
+<textarea class='appeal-reason' id='appeal-comment-reason' name='msg' placeholder='请说明举报原因' rows='3'></textarea>
+</div>
+<div class='ui message callback-msg hide'></div>
+<div class='ui small error text message exceeded-size-tip'></div>
+</div>
+</div>
+<div class='actions'>
+<div class='ui button blank cancel'>
+取消
+</div>
+<div class='ui orange icon button disabled ok' id='complaint-comment-confirm'>
+发送
+</div>
+</div>
+</div>
+<script>
+  var $complaintCommentsModal = $('#landing-comments-complaint-modal'),
+      $complainCommentType = $complaintCommentsModal.find('#appeal-comments-types'),
+      $complaintModalTip = $complaintCommentsModal.find('.callback-msg'),
+      $complaintCommentsContent = $complaintCommentsModal.find('.appeal-reason'),
+      $complaintCommentBtn = $complaintCommentsModal.find('#complaint-comment-confirm'),
+      complaintSending = false,
+      initedCommentsType = false;
+  
+  function initCommentsTypeList() {
+    if (!initedCommentsType) {
+      $.ajax({
+        url: "/appeals/fetch_types",
+        method: 'get',
+        data: {'type': 'comment'},
+        success: function (data) {
+          var result = '';
+          for (var i = 0; i < data.length; i++) {
+            result = result + "<div class='item' data-value='" + data[i].id + "'>" + data[i].name + "</div>";
+          }
+          $complainCommentType.find('.menu').html(result);
+        }
+      });
+      $complainCommentType.dropdown({showOnFocus: false});
+      initedCommentsType = true;
+    }
+  }
+  $complainCommentType.on('click', function() {
+    $complaintCommentsModal.modal({
+      autofocus: false,
+      onApprove: function() {
+        return false;
+      },
+      onHidden: function() {
+        restoreCommonentDefault();
+      }
+    }).modal('show');
+  });
+  
+  $complaintCommentsContent.on('change keyup', function(e) {
+    var content = $(this).val();
+    if ($.trim(content).length > 0 && $complainCommentType.dropdown('get value').length > 0 ) {
+      $complaintCommentBtn.removeClass('disabled');
+      return;
+    }
+    $complaintCommentBtn.addClass('disabled');
+  });
+  
+  
+  $complainCommentType.dropdown({
+    showOnFocus: false,
+    onChange: function(value, text, $selectedItem) {
+      if (value.length > 0 && $.trim($complaintCommentsContent.val()).length > 0) {
+        $complaintCommentBtn.removeClass('disabled');
+        return
+      }
+      $complaintCommentBtn.addClass('disabled');
+    }
+  });
+  
+  function restoreCommonentDefault() {
+    $complainCommentType.dropdown('restore defaults');
+    $complaintCommentsContent.val('');
+    $('.exceeded-size-tip').text('').hide();
+    $complaintModalTip.text('').hide();
+    setTimeout(function() {
+      setCommentSendTip(false);
+    }, 1500);
+  }
+  
+  $complaintCommentBtn.on('click',function(e){
+    var reason = $complaintCommentsContent.val();
+    var appealableId = $('#landing-comments-complaint-modal').attr('data-id');
+    if (complaintSending) {
+      return;
+    }
+    var appealType = $complainCommentType.dropdown('get value');
+    var formData = new FormData();
+    formData.append('appeal_type_id', appealType);
+    formData.append('reason', reason);
+    formData.append('appeal_type','Note');
+    formData.append('target_id',appealableId);
+    $.ajax({
+      type: 'POST',
+      url: "/appeals",
+      cache: false,
+      contentType: false,
+      processData: false,
+      data: formData,
+      beforeSend: function() {
+        setCommentSendStatus(true);
+      },
+      success: function(res) {
+        if (res.status == 200) {
+          setCommentSendTip(true);
+          setTimeout(function() {
+            $complaintCommentsModal.modal('hide');
+            restoreCommonentDefault();
+          }, 3000);
+        }
+        setCommentSendStatus(false);
+      },
+      error: function(err) {
+        showCommonTips(err.responseJSON.message, 'error');
+        setCommentSendStatus(false);
+      }
+    })
+  });
+  
+  function showCommonTips(text, type) {
+    $complaintModalTip.text(text).show();
+    if (type == 'error') {
+      $complaintModalTip.removeClass('success').addClass('error');
+    } else {
+      $complaintModalTip.removeClass('error').addClass('success');
+    }
+  }
+  
+  function setCommentSendStatus(value) {
+    complaintSending = value;
+    if (complaintSending) {
+      $complaintCommentBtn.addClass('loading');
+      $complaintCommentsContent.attr('readonly', true);
+      $complainCommentType.attr('readonly', true);
+    } else {
+      $complaintCommentBtn.removeClass('loading');
+      $complaintCommentsContent.attr('readonly', false);
+      $complainCommentType.attr('readonly', false);
+    }
+  }
+  
+  function setCommentSendTip(value) {
+    if (value) {
+      $('.appeal-success-tip').removeClass('hide');
+      $('.appeal-tip').addClass('hide');
+      $('.appeal-form').addClass('hide');
+      $('#landing-comments-complaint-modal .actions').addClass('hide');
+    } else {
+      $('.appeal-success-tip').addClass('hide');
+      $('.appeal-tip').removeClass('hide');
+      $('.appeal-form').removeClass('hide');
+      $('#landing-comments-complaint-modal .actions').removeClass('hide');
+    }
+  }
+</script>
+
+</div>
+<script>
+  "use strict";
+  $('.js-check-star').checkbox('set unchecked')
+</script>
+
+</div>
+</div>
+</div>
+<script>
+  (function() {
+    $(function() {
+      Tree.init();
+      return TreeCommentActions.init();
+    });
+  
+  }).call(this);
+</script>
+
+</div>
+<script>
+  (function() {
+    var donateModal;
+  
+    Gitee.modalHelper = new GiteeModalHelper({
+      alertText: '提示',
+      okText: '确定'
+    });
+  
+    donateModal = new ProjectDonateModal({
+      el: '#project-donate-modal',
+      alipayUrl: '/luolonghao/kindeditor/alipay',
+      wepayUrl: '/luolonghao/kindeditor/wepay',
+      nameIsBlank: '名称不能为空',
+      nameTooLong: '名称过长（最多为 36 个字符）',
+      modalHelper: Gitee.modalHelper
+    });
+  
+    if ("" === 'true') {
+      donateModal.show();
+    }
+  
+    $('#project-donate').on('click', function() {
+      return donateModal.show();
+    });
+  
+  }).call(this);
+</script>
+<script>
+  Tree.initHighlightTheme('white')
+</script>
+
+
+</div>
+<div class='gitee-project-extension'>
+<div class='extension lang'>JavaScript</div>
+<div class='extension public'>1</div>
+<div class='extension https'>https://gitee.com/luolonghao/kindeditor.git</div>
+<div class='extension ssh'>git@gitee.com:luolonghao/kindeditor.git</div>
+<div class='extension namespace'>luolonghao</div>
+<div class='extension repo'>kindeditor</div>
+<div class='extension name'>kindeditor</div>
+<div class='extension branch'>master</div>
+</div>
+
+<script>
+  $(function() {
+    GitLab.GfmAutoComplete.dataSource = "/luolonghao/kindeditor/autocomplete_sources"
+    GitLab.GfmAutoComplete.Emoji.assetBase = '/assets/emoji'
+    GitLab.GfmAutoComplete.setup();
+  });
+</script>
+
+<footer id='git-footer-main'>
+<div class='ui container'>
+<div class='ui two column grid '>
+<div class='nine wide column git-footer-left'>
+<p><a href="https://gitee.com/" target="_blank">© Gitee.com</a></p>
+<div class='ui four column grid' id='footer-left'>
+<div class='column'>
+<div class='ui link list'>
+<div class='item'>
+<a class="item" href="/about_us">关于我们</a>
+</div>
+<div class='item'>
+<a class="item" href="/terms">使用条款</a>
+</div>
+<div class='item'>
+<a class="item" href="/oschina/git-osc/issues">意见建议</a>
+</div>
+<div class='item'>
+<a class="item" href="/links.html">合作伙伴</a>
+</div>
+</div>
+</div>
+<div class='column'>
+<div class='ui link list'>
+<div class='item'>
+<a class="item" href="/all-about-git">Git 大全</a>
+</div>
+<div class='item'>
+<a class="item" href="https://oschina.gitee.io/learn-git-branching/">Git 命令学习</a>
+</div>
+<div class='item'>
+<a class="item" href="https://copycat.gitee.com/">代码克隆检测</a>
+</div>
+<div class='item'>
+<a class="item" href="/appclient">APP与插件下载</a>
+</div>
+</div>
+</div>
+<div class='column'>
+<div class='ui link list'>
+<div class='item'>
+<a class="item" href="/gitee-stars">码云封面人物</a>
+</div>
+<div class='item'>
+<a class="item" href="/gvp">GVP项目</a>
+</div>
+<div class='item'>
+<a class="item" href="https://blog.gitee.com/">码云博客</a>
+</div>
+<div class='item'>
+<a class="item" href="/enterprises#nonprofit-plan">Gitee 公益计划</a>
+</div>
+</div>
+</div>
+<div class='column'>
+<div class='ui link list'>
+<div class='item'>
+<a class="item" href="/api/v5/swagger">OpenAPI</a>
+</div>
+<div class='item'>
+<a class="item" href="/help">帮助文档</a>
+</div>
+<div class='item'>
+<a class="item" href="/self_services">在线自助服务</a>
+</div>
+<div class='item'>
+<a class="item" href="/git-osc">更新日志</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class='seven wide column right aligned followus git-footer-right'>
+<div class='qrcode weixin'>
+<img alt="Qrcode weixin" src="https://assets.gitee.com/assets/qrcode-weixin-9e7cfb27165143d2b8e8b268a52ea822.jpg" />
+<p class='weixin-text'>微信服务号</p>
+</div>
+<div class='phone-and-qq column'>
+<div class='ui list official-support-container'>
+<div class='item'>
+<a class="icon-popup" href="//shang.qq.com/wpa/qunwpa?idkey=df785aa7af71f7d74149ab062742d761b845464350ecba25eb440357a3e573b7" title="点击加入码云官方群"><i class='iconfont icon-logo-qq'></i>
+<span>官方技术交流QQ群：1050025484</span>
+</a></div>
+<div class='item mail-and-zhihu'>
+<a href="mailto: git@oschina.cn"><i class='iconfont icon-ic-mail'></i>
+<span id='git-footer-email'>git#oschina.cn</span>
+</a><a href="https://www.zhihu.com/org/ma-yun-osc/ " target="_blank"><i class='iconfont icon-zhihu'></i>
+<span>码云Gitee</span>
+</a></div>
+<div class='item'>企业版售前及售后使用咨询：400-606-0201</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class='bottombar'>
+<div class='ui container'>
+<div class='ui grid'>
+<div class='seven wide column partner'>
+<div class='copyright'>
+<a href="http://www.beian.miit.gov.cn/">粤ICP备12009483号</a>
+深圳市奥思网络科技有限公司版权所有
+</div>
+</div>
+<div class='nine wide column right aligned'>
+<i class='icon world'></i>
+<a href="/language/zh-CN">简 体</a>
+/
+<a href="/language/zh-TW">繁 體</a>
+/
+<a href="/language/en">English</a>
+</div>
+</div>
+</div>
+</div>
+</footer>
+<script>
+  var officialEmail = $('#git-footer-email').text()
+  $('#git-footer-main .icon-popup').popup({ position: 'bottom center' })
+  $('#git-footer-email').text(officialEmail.replace('#', '@'))
+</script>
+
+
+<div class='side-toolbar'>
+<div class='button toolbar-help'>
+<i class='iconfont icon-help'></i>
+</div>
+<div class='ui popup left center dark'>点此查找更多帮助</div>
+<div class='toolbar-help-dialog'>
+<div class='toolbar-dialog-header'>
+<h3 class='toolbar-dialog-title'>搜索帮助</h3>
+<form accept-charset="UTF-8" action="/help/load_keywords_data" class="toolbar-help-search-form" method="get"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /></div>
+<div class='ui icon input fluid toolbar-help-search'>
+<input name='keywords' placeholder='请输入产品名称或问题' type='text'>
+<i class='icon search'></i>
+</div>
+</form>
+
+<i class='iconfont icon-close toolbar-dialog-close-icon'></i>
+</div>
+<div class='toolbar-dialog-content'>
+<div class='toolbar-help-hot-search'>
+<div class='toolbar-roll'>
+<a class="init active" href="https://oschina.gitee.io/learn-git-branching/?utm_source==gitee-help-widget" title="Git 命令在线学习"><i class='Blue icon icon-command iconfont'></i>
+<span>Git 命令在线学习</span>
+</a><a class="init " href="https://gitee.com/help/articles/4261?utm_source==gitee-help-widget" title="如何在码云上导入 GitHub 仓库"><i class='icon icon-clipboard iconfont orange'></i>
+<span>如何在码云上导入 GitHub 仓库</span>
+</a></div>
+<div class='toolbar-list'>
+<div class='toolbar-list-item'>
+<a href="/help/articles/4114">Git 仓库基础操作</a>
+</div>
+<div class='toolbar-list-item'>
+<a href="/help/articles/4166">企业版和社区版功能对比</a>
+</div>
+<div class='toolbar-list-item'>
+<a href="/help/articles/4191">SSH 公钥设置</a>
+</div>
+<div class='toolbar-list-item'>
+<a href="/help/articles/4194">如何处理代码冲突</a>
+</div>
+<div class='toolbar-list-item'>
+<a href="/help/articles/4232">仓库体积过大，如何减小？</a>
+</div>
+<div class='toolbar-list-item'>
+<a href="/help/articles/4279">如何找回被删除的仓库数据</a>
+</div>
+<div class='toolbar-list-item'>
+<a href="/help/articles/4283">码云使用容量说明</a>
+</div>
+<div class='toolbar-list-item'>
+<a href="/help/articles/4284">GitHub仓库快速导入Gitee及同步更新</a>
+</div>
+</div>
+</div>
+<div class='toolbar-help-search-reseult'>
+<div class='toolbar-help-flex-column'>
+<div class='ui centered inline loader toolbar-help-loader'></div>
+<div class='toolbar-list'></div>
+<div class='toolbar-help-link-to-help'>
+<a href="" target="_blank">查看更多搜索结果</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script>
+  var opt = { position: 'left center' };
+  var $helpSideToolbar = $(".button.toolbar-help");
+  var $toolbarRoll = $('.toolbar-roll');
+  
+  $(function() {
+    if (false) {
+      $helpSideToolbar.popup(opt);
+    } else {
+      $helpSideToolbar.popup('show', opt);
+      setTimeout(function() {
+        $helpSideToolbar.popup('hide', opt);
+      }, 3000);
+    }
+  
+    if ($toolbarRoll.length) {
+      setInterval(function() {
+        var $nextActiveLink = $toolbarRoll.find('a.active').next();
+        if (!$nextActiveLink.length) {
+          $nextActiveLink = $toolbarRoll.find('a:first-child');
+        }
+        $nextActiveLink.attr('class', 'active').siblings().removeClass('active init');
+      }, 5000);
+    }
+  })
+</script>
+
+<div class='button share-link'>
+<i class='iconfont icon-share'></i>
+</div>
+<div class='ui popup dark'>
+<div class='header'>
+分享到
+</div>
+<div class='bdsharebuttonbox' style='display: flex'>
+<a class='iconfont icon-home-service-wechat' data-cmd='weixin' title='分享到微信'></a>
+<a class='iconfont icon-weibo' data-cmd='tsina' title='分享到新浪微博'></a>
+<a class='iconfont icon-qq' data-cmd='sqq' title='分享到QQ好友'></a>
+<a class='iconfont icon-qzone' data-cmd='qzone' title='分享到QQ空间'></a>
+</div>
+</div>
+<div class='popup button' id='home-comment'>
+<i class='iconfont icon-comment'></i>
+</div>
+<div class='ui popup dark'>评论</div>
+<div class='toolbar-appeal popup button'>
+<i class='iconfont icon-report'></i>
+</div>
+<div class='ui popup dark'>
+仓库举报
+</div>
+<script>
+  $('.toolbar-appeal').popup({ position: 'left center' });
+</script>
+
+<div class='button gotop popup' id='gotop'>
+<i class='iconfont icon-top'></i>
+</div>
+<div class='ui popup dark'>回到顶部</div>
+</div>
+<div class='form modal normal-modal tiny ui' id='unlanding-complaint-modal'>
+<i class='iconfont icon-close close'></i>
+<div class='header'>
+登录提示
+</div>
+<div class='container actions'>
+<div class='content'>
+该操作需登录码云帐号，请先登录后再操作。
+</div>
+<div class='ui orange icon large button ok'>
+立即登录
+</div>
+<div class='ui button blank cancel'>
+没有帐号，去注册
+</div>
+</div>
+</div>
+<script>
+  var $elm = $('.toolbar-appeal');
+  
+  $elm.on('click', function() {
+    var modals = $("#unlanding-complaint-modal.normal-modal");
+    if (modals.length > 1) {
+      modals.eq(0).modal('show');
+    } else {
+      modals.modal('show');
+    }
+  })
+  $("#unlanding-complaint-modal.normal-modal").modal({
+    onDeny: function() {
+      window.location.href = "/signup?from=";
+    },
+    onApprove: function() {
+      window.location.href = "/login?from=";
+    }
+  })
+</script>
+
+<style>
+  .side-toolbar .bdsharebuttonbox a {
+    font-size: 24px;
+    color: white !important;
+    opacity: 0.9;
+    margin: 6px 6px 0px 6px;
+    background-image: none;
+    text-indent: 0;
+    height: auto;
+    width: auto;
+  }
+</style>
+<script>
+  (function() {
+    $('#project-user-message').popup({
+      position: 'left center'
+    });
+  
+  }).call(this);
+</script>
+<script>
+  Gitee.initSideToolbar({
+    hasComment: true,
+    commentUrl: '/luolonghao/kindeditor#tree_comm_title'
+  })
+</script>
+<script>
+  window._bd_share_config = {
+    "common": {
+      "bdSnsKey": {},
+      "bdText": document.title,
+      "bdMini": "1",
+      "bdMiniList": ["bdxc","tqf","douban","bdhome","sqq","thx","ibaidu","meilishuo","mogujie","diandian","huaban","duitang","hx","fx","youdao","sdo","qingbiji","people","xinhua","mail","isohu","yaolan","wealink","ty","iguba","fbook","twi","linkedin","h163","evernotecn","copy","print"],
+      "bdPic": "",
+      "bdStyle": "1",
+      "bdSize": "32"
+    },
+    "share": {}
+  }
+</script>
+<script src="/bd_share/static/api/js/share.js"></script>
+
+
+
+
+
+<script>
+  (function() {
+    this.__gac = {
+      domain: 'www.oschina.net'
+    };
+  
+  }).call(this);
+</script>
+<script defer src='//www.oschina.net/public/javascripts/cjl/ga.js?t=20160926' type='text/javascript'></script>
+
+</body>
+</html>
