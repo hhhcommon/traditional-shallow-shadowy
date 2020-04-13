@@ -1,0 +1,1789 @@
+<!DOCTYPE html>
+<html lang='zh-CN'>
+<head>
+<title>Fork 用户 · 扣丁禅师/CSipSimple - 码云 Gitee.com</title>
+<link href="https://assets.gitee.com/assets/favicon-9007bd527d8a7851c8330e783151df58.ico" rel="shortcut icon" type="image/vnd.microsoft.icon" />
+<meta content='gitee.com/zencodex/CSipSimple git https://gitee.com/zencodex/CSipSimple.git' name='go-import'>
+<meta charset='utf-8'>
+<meta content='always' name='referrer'>
+<meta content='码云' property='og:site_name'>
+<meta content='Object' property='og:type'>
+<meta content='http://gitee.com/zencodex/CSipSimple/members' property='og:url'>
+<meta content='https://gitee.com/static/images/logo_themecolor.png' itemprop='image' property='og:image'>
+<meta content='Fork 用户 · 扣丁禅师/CSipSimple - 码云 Gitee.com' itemprop='name' property='og:title'>
+<meta content='码云(gitee.com)是 OSCHINA.NET 推出的代码托管平台，支持 Git 和 SVN，提供免费的私有仓库托管。目前已有超过 500 万的开发者选择码云。' property='og:description'>
+<meta content='码云,代码托管,git,Git@OSC,gitee.com,开源,内源,项目管理,版本控制,开源代码,代码分享,项目协作,开源项目托管,免费代码托管,Git代码托管,Git托管服务' name='Keywords'>
+<meta content='Fork 仓库 扣丁禅师/CSipSimple 的用户' itemprop='description' name='Description'>
+
+<meta content="IE=edge" http-equiv="X-UA-Compatible" />
+<meta content="authenticity_token" name="csrf-param" />
+<meta content="1c2+zOfiFZXiT0a+tFWL+ulfFVGMSKZ2WdWKrFnkj2o=" name="csrf-token" />
+
+<link href="https://assets.gitee.com/assets/application-4353e40c527157901930256fb2cba2d4.css" media="screen" rel="stylesheet" />
+<script>
+//<![CDATA[
+window.gon = {};gon.locale="zh-CN";gon.sentry_dsn=null;gon.baidu_register_hm_push=null;gon.info={"controller_path":"projects","action_name":"members","current_user":false};gon.tour_env={"current_user":null,"action_name":"members","original_url":"http://gitee.com/zencodex/CSipSimple/members","controller_path":"projects"};gon.http_clone="https://gitee.com/zencodex/CSipSimple.git";gon.user_project="zencodex/CSipSimple";gon.manage_branch="管理分支";gon.manage_tag="管理标签";gon.enterprise_id=0;gon.create_reaction_path="/zencodex/CSipSimple/reactions";
+//]]>
+</script>
+<script src="https://assets.gitee.com/assets/static/sentry-5.1.0-109ee3d8895a239331efcf947ba7f5d8.js"></script>
+<script src="https://assets.gitee.com/assets/application-25134bf44f1dbb308bb450bdb036a1cc.js"></script>
+<script src="https://assets.gitee.com/assets/lib/jquery.timeago.zh-CN-9c36ca7c4899a28168320613879d208a.js"></script>
+
+<link href="https://assets.gitee.com/assets/projects/application-c4d2b90e83d054a150b44a0e5a32f7c5.css" media="screen" rel="stylesheet" />
+<script src="https://assets.gitee.com/assets/projects/app-06d07e23f4df11285e052fe9499ae8ba.js"></script>
+
+<script src="//res.wx.qq.com/open/js/jweixin-1.2.0.js"></script>
+<script>
+  var title = document.title.replace(/( - Gitee| - 码云)$/, '')
+      imgUrl = '';
+  
+  document.addEventListener('DOMContentLoaded', function(event) {
+    var imgUrlEl = document.querySelector('.readme-box .markdown-body > img, .readme-box .markdown-body :not(a) > img');
+    imgUrl = imgUrlEl && imgUrlEl.getAttribute('src');
+  
+    if (!imgUrl) {
+      imgUrlEl = document.querySelector('meta[itemprop=image]');
+      imgUrl = imgUrlEl && imgUrlEl.getAttribute('content'); 
+      imgUrl = imgUrl || "https://gitee.com/static/images/logo_themecolor.png";
+    }
+  
+    wx.config({
+      debug: false,
+      appId: "wxff219d611a159737",
+      timestamp: "1586759444",
+      nonceStr: "27d1275e478813a0a4feecbc2ff44140",
+      signature: "925a50f5ee60daac6aaf175d873774036f912927",
+      jsApiList: [
+        'onMenuShareTimeline',
+        'onMenuShareAppMessage'
+      ]
+    });
+  
+    wx.ready(function () {
+      wx.onMenuShareTimeline({
+        title: title, // 分享标题
+        link: "https://gitee.com/zencodex/CSipSimple/members", // 分享链接，该链接域名或路径必须与当前页面对应的公众号JS安全域名一致
+        imgUrl: imgUrl // 分享图标
+      });
+      wx.onMenuShareAppMessage({
+        title: title, // 分享标题
+        link: "https://gitee.com/zencodex/CSipSimple/members", // 分享链接，该链接域名或路径必须与当前页面对应的公众号JS安全域名一致
+        desc: document.querySelector('meta[name=Description]').getAttribute('content'),
+        imgUrl: imgUrl // 分享图标
+      });
+    });
+    wx.error(function(res){
+      console.error('err', res)
+    });
+  })
+</script>
+
+<script type='text/x-mathjax-config'>
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    displayMath: [["$$","$$"],["\\[","\\]"]],
+    processEscapes: true,
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
+    ignoreClass: "container|files",
+    processClass: "markdown-body"
+  }
+});
+</script>
+<script src="https://assets.gitee.com/uploads/resources/MathJax-2.7.2/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+<script>
+  (function () {
+    var messages = {
+      'zh-CN': {
+        addResult: '增加 <b>{term}</b>',
+        count: '已选择 {count}',
+        maxSelections: '最多 {maxCount} 个选择',
+        noResults: '未找到结果',
+        serverError: '连接服务器时发生错误'
+      },
+      'zh-TW': {
+        addResult: '增加 <b>{term}</b>',
+        count: '已選擇 {count}',
+        maxSelections: '最多 {maxCount} 個選擇',
+        noResults: '未找到結果',
+        serverError: '連接服務器時發生錯誤'
+      }
+    }
+  
+    if (messages[gon.locale]) {
+      $.fn.dropdown.settings.message = messages[gon.locale]
+    }
+  }());
+</script>
+
+<!--[if lt IE 10]>
+<script>
+    window.location.href = "/incompatible.html";
+</script>
+<![endif]-->
+</head>
+
+<body class='git-project lang-zh-CN'>
+<header class='common-header fixed noborder' id='git-header-nav'>
+<div class='ui container'>
+<div class='ui menu header-menu'>
+<div class='git-nav-expand-bar'>
+<i class='iconfont icon-mode-table'></i>
+</div>
+<div class='gitee-nav__sidebar'>
+<div class='gitee-nav__sidebar-container'>
+<div class='gitee-nav__sidebar-top'>
+<div class='gitee-nav__avatar-box'></div>
+<div class='gitee-nav__buttons-box'>
+<a class="ui button small fluid orange" href="/login">登录</a>
+<a class="ui button small fluid basic is-register" href="/signup">注册</a>
+</div>
+</div>
+<div class='gitee-nav__sidebar-middle'>
+<div class='gitee-nav__sidebar-list'>
+<ul>
+<li class='gitee-nav__sidebar-item'>
+<a href="/explore"><i class='iconfont icon-ic-discover'></i>
+<span class='gitee-nav__sidebar-name'>开源软件</span>
+</a></li>
+<li class='gitee-nav__sidebar-item'>
+<a href="/enterprises"><i class='iconfont icon-ic-enterprise'></i>
+<span class='gitee-nav__sidebar-name'>企业版</span>
+</a></li>
+<li class='gitee-nav__sidebar-item'>
+<a href="/education"><i class='iconfont icon-ic-education'></i>
+<span class='gitee-nav__sidebar-name'>高校版</span>
+</a></li>
+<li class='gitee-nav__sidebar-item split-line'></li>
+<li class='gitee-nav__sidebar-item'>
+<a href="/search"><i class='iconfont icon-ic-search'></i>
+<span class='gitee-nav__sidebar-name'>搜索</span>
+</a></li>
+<li class='gitee-nav__sidebar-item'>
+<a href="/help"><i class='iconfont icon-help-circle'></i>
+<span class='gitee-nav__sidebar-name'>帮助中心</span>
+</a></li>
+<li class='gitee-nav__sidebar-item'>
+<a href="/terms"><i class='iconfont icon-file'></i>
+<span class='gitee-nav__sidebar-name'>使用条款</span>
+</a></li>
+<li class='gitee-nav__sidebar-item'>
+<a href="/about_us"><i class='iconfont icon-issuepx'></i>
+<span class='gitee-nav__sidebar-name'>关于我们</span>
+</a></li>
+</ul>
+</div>
+</div>
+<div class='gitee-nav__sidebar-bottom'>
+<div class='gitee-nav__sidebar-close-button'>
+<i class='fa fa-angle-double-left'></i>
+</div>
+</div>
+</div>
+</div>
+
+<div class='item gitosc-logo'>
+<a href="/"><img alt='码云 Gitee — 基于 Git 的代码托管和研发协作平台' class='ui inline image' height='28' src='/static/images/logo.svg?t=158106664' title='码云 Gitee — 基于 Git 的代码托管和研发协作平台' width='95'>
+<img alt='码云 Gitee — 基于 Git 的代码托管和研发协作平台' class='ui inline black image' height='28' src='/static/images/logo-black.svg?t=158106664' title='码云 Gitee — 基于 Git 的代码托管和研发协作平台' width='95'>
+</a></div>
+<a class="item " href="/explore" title="开源软件">开源软件
+</a><a class="item " href="/enterprises" title="企业版">企业版
+<sup class='ui red label'>
+特惠
+</sup>
+</a><a class="item " href="/education" title="高校版">高校版
+</a><a class="item" href="https://blog.gitee.com/" id="gitee-blog" target="_blank" title="博客">博客
+</a><div class='center responsive-logo'>
+<a href="/"><img alt='码云 Gitee — 基于 Git 的代码托管和研发协作平台' class='ui inline image' height='24' src='/static/images/logo.svg?t=158106664' title='码云 Gitee — 基于 Git 的代码托管和研发协作平台' width='85'>
+<img alt='码云 Gitee — 基于 Git 的代码托管和研发协作平台' class='ui inline black image' height='24' src='/static/images/logo-black.svg?t=158106664' title='码云 Gitee — 基于 Git 的代码托管和研发协作平台' width='85'>
+</a></div>
+<div class='right menu userbar' id='git-nav-user-bar'>
+<form accept-charset="UTF-8" action="/search" class="ui item" data-text-filter="搜索格式不正确" data-text-require="搜索关键字不能少于1个" id="navbar-search-form" method="get"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /></div>
+<input id="navbar-search-type" name="type" type="hidden" />
+<input id="fork_filter" name="fork_filter" type="hidden" value="on" />
+<div class='ui search'>
+<input class="prompt" id="navbar-search-input" name="q" placeholder="搜索项目" type="text" value="" />
+</div>
+</form>
+
+<script>
+  var can_search_in_repo = 1,
+      repo = "VFhwTk1FMXFaekJaVkdNeVRUSlpQV0UzTmpObWE3NjNm",
+      reponame = "zencodex/CSipSimple";
+  
+  $(function() {
+    var $search = $('#navbar-search-form .ui.search');
+    $search.search({
+      apiSettings: {
+        url: '/search/relative_project?q={query}',
+        onResponse: function (res) {
+          if (res && res.status === 200 && res.data) {
+            var query = $search.search('get value');
+  
+            res.data.map(function (item) {
+              item.path_ns = '/' + item.path_ns;
+              item.icon = 'iconfont icon-project-public';
+            });
+            res.data.unshift({
+              name_ns: "在全站搜索 <b class='hl'>" + query +"</b> 相关项目",
+              path_ns: '/search?fork_filter=on&q=' + query,
+              icon: 'iconfont icon-search'
+            });
+            if(can_search_in_repo == 1) {
+              res.data.unshift({
+                name_ns: "在当前仓库搜索 <b class='hl'>" + query +"</b> 相关代码",
+                path_ns: '/search?type=code&q=' + query + '&repo=' + repo + '&reponame=' + reponame,
+                icon: 'iconfont icon-search'
+              });
+            }
+            return res;
+          } else {
+            return { data: [] };
+          }
+        }
+      },
+      fields: {
+        results: 'data',
+        description: 'name_ns',
+        url: 'path_ns',
+        icon: 'icon'
+      },
+      minCharacters: 1,
+      maxResults: 10,
+      searchDelay: 120,
+      showNoResults: false,
+      transition: 'fade'
+    });
+  });
+</script>
+
+<a class="item git-nav-user__login-item" href="/login">登录
+</a><a class="item git-nav-user__register-item" href="/signup">注册
+</a><script>
+  $('.destroy-user-session').on('click', function() {
+    $.cookie('access_token', null, { path: '/' });
+  })
+</script>
+
+</div>
+</div>
+</div>
+</header>
+<script>
+  Gitee.initNavbar()
+  Gitee.initRepoRemoteWay()
+</script>
+
+<!--[if lt IE 10]>
+<script>
+  window.location.href = "/incompatible.html"
+</script>
+<![endif]-->
+
+<div class='fixed-notice-infos'>
+<div class='all-messages'>
+<div class='ui info message' id='git-bulletin'>
+<a href=https://blog.gitee.com/2020/04/07/gitee-go/ target='_blank'>Gitee 企业版上线 DevOps 工具「Gitee Go」</a>
+<i class='icon remove' id='remove-bulletin'></i>
+</div>
+</div>
+<div class='ui container'>
+<div class='flash-messages' id='messages-container'></div>
+</div>
+<script>
+  (function() {
+    $(function() {
+      var $error_box, alertTip, notify_content, notify_options, template;
+      template = '<div data-notify="container" class="ui {0} message" role="alert">' + '<i data-notify="dismiss" class="close icon"></i>' + '<span data-notify="message">{2}</span>' + '</div>';
+      notify_content = null;
+      notify_options = {};
+      alertTip = '';
+      $error_box = $(".flash_error.flash_error_box");
+      if (notify_options.type === 'error' && $error_box.length > 0 && !$.isEmptyObject(notify_content.message)) {
+        if (notify_content.message === 'captcha_fail') {
+          alertTip = "验证码不正确";
+        } else if (notify_content.message === 'captcha_expired') {
+          alertTip = "验证码已过期，请点击刷新";
+        } else if (notify_content.message === 'not_found_in_database') {
+          alertTip = "帐号或者密码错误";
+        } else if (notify_content.message === 'not_found_and_show_captcha') {
+          alertTip = "帐号或者密码错误";
+        } else if (notify_content.message === 'phone_captcha_fail') {
+          alertTip = "手机验证码不通过";
+        } else {
+          alertTip = notify_content.message;
+        }
+        return $error_box.html(alertTip).show();
+      } else if (notify_content) {
+        if ("members" === 'third_party_binding') {
+          return $('#third_party_binding-message').html(notify_content.message).addClass('ui message red');
+        }
+        notify_options.delay = 3000;
+        notify_options.template = template;
+        notify_options.offset = {
+          x: 10,
+          y: 30
+        };
+        notify_options.element = '#messages-container';
+        return $.notify(notify_content, notify_options);
+      }
+    });
+  
+  }).call(this);
+</script>
+
+</div>
+<script>
+  (function() {
+    $(function() {
+      var setCookie;
+      setCookie = function(name, value) {
+        $.cookie(name, value, {
+          path: '/',
+          expires: 365
+        });
+      };
+      $('#remove-bulletin, #remove-bulletin-dashboard').on('click', function() {
+        setCookie('remove_bulletin', "gitee-maintain-1586321954");
+        $('#git-bulletin').hide();
+      });
+      $('#remove-member-bulletin').on('click', function() {
+        setCookie('remove_member_bulletin', "gitee_member_bulletin");
+        $(this).parent().hide();
+      });
+      return $('#remove-gift-bulletin').on('click', function() {
+        setCookie('remove_gift_bulletin', "gitee-gift-bulletin");
+        $(this).parent().hide();
+      });
+    });
+  
+  }).call(this);
+</script>
+<script>
+  function closeMessageBanner(pthis, type, val) {
+    var json = {}
+  
+    val = typeof val === 'undefined' ? null : val
+    $(pthis).parent().remove()
+    if (type === 'out_of_enterprise_member') {
+      json = {type: type, data: val}
+    } else if (type === 'enterprise_overdue') {
+      json = {type: type, data: val}
+    }
+    $.post('/profile/close_flash_tip', json)
+  }
+</script>
+
+<div class='site-content'>
+<div class='git-project-header'>
+<div class='fixed-notice-infos'>
+<div class='ui info icon floating message green' id='fetch-ok' style='display: none'>
+<div class='content'>
+<div class='header status-title'>
+<i class='info icon status-icon'></i>
+代码拉取完成，页面将自动刷新
+</div>
+</div>
+</div>
+<div class='ui info icon floating message error' id='fetch-error' style='display: none'>
+<div class='content'>
+<div class='header status-title'>
+<i class='info icon status-icon'></i>
+<span class='error_msg'></span>
+</div>
+</div>
+</div>
+</div>
+<div class='ui container'>
+<div class='git-project-categories'>
+<a href="/explore">开源项目</a>
+<span class='symbol'>></span>
+<a href="/explore/mobile-develop">手机/移动开发</a>
+<span class='symbol'>></span>
+<a href="/explore/mobile-app">移动App</a>
+<span class='symbol and-symbol'>&</span>
+</div>
+
+<div class='git-project-header-details'>
+<div class='git-project-header-container'>
+<div class='git-project-header-actions'>
+<span class='basic ui buttons pointing top left dropdown metrics-radar'>
+<div class='ui button project-radar'>
+<i class='iconfont icon-radar'></i>
+指数
+</div>
+<div class='ui button action-social-count exponent-total-sorce'>
+0
+</div>
+<div class='menu radar'>
+<div class='item radar-menu'>
+<div class='hide' data-url='/zencodex/CSipSimple/project_radars' id='metrics-radar'>
+<div class='title'>
+<div class='fisrt-title'>
+<div class='project-name' title='CSipSimple'>
+CSipSimple
+</div>
+<div class='gitee-exponent'>
+<div class='text'></div>
+<div class='exponent-score'></div>
+</div>
+</div>
+<div class='total-percent'>
+<div class='percent-header'></div>
+<div class='percent-score'></div>
+<div class='percent-end'></div>
+</div>
+</div>
+<div class='wrap'></div>
+<div class='project-radar-list'>
+<div class='descript-contianer'>
+<div class='descript-title'>
+<p>代码活跃度</p>
+<p>社区活跃度</p>
+<p>团队健康</p>
+<p>流行趋势</p>
+<p>影响力</p>
+</div>
+<div class='descript'>
+<p>：与代码提交频次相关</p>
+<p>：与项目和用户的issue、pr互动相关</p>
+<p>：与团队成员人数和稳定度相关</p>
+<p>：与项目近期受关注度相关</p>
+<p>：与项目的star、下载量等社交指标相关</p>
+</div>
+</div>
+</div>
+<div class='finaltime'></div>
+</div>
+<script src="https://assets.gitee.com/assets/skill_radar/rep_app-301ecccea9b1eac212beffa1823bf8c7.js"></script>
+
+</div>
+</div>
+</span>
+<div class='ui tiny modal project-donate-modal' id='project-donate-modal'>
+<i class='iconfont icon-close close'></i>
+<div class='header'>捐赠</div>
+<div class='content'>
+捐赠前请先登录
+</div>
+<div class='actions'>
+<a class='ui blank button cancel'>取消</a>
+<a class='ui orange ok button' href='/login'>前往登录</a>
+</div>
+</div>
+<div class='ui small modal wepay-qrcode'>
+<i class='iconfont icon-close close'></i>
+<div class='header'>
+扫描微信二维码支付
+<span class='wepay-cash'></span>
+</div>
+<div class='content weqcode-center'>
+<img id='wepay-qrcode' src=''>
+</div>
+<div class='actions'>
+<div class='ui cancel blank button'>取消</div>
+<div class='ui ok orange button'>
+支付完成
+</div>
+</div>
+</div>
+<div class='ui mini modal' id='confirm-alipay-modal'>
+<div class='header'>支付提示</div>
+<div class='content'>
+将跳转至支付宝完成支付
+</div>
+<div class='actions'>
+<div class='ui approve orange button'>
+确定
+</div>
+<div class='ui blank cancel button'>
+取消
+</div>
+</div>
+</div>
+
+<span class='ui basic buttons watch-container'>
+<a class="ui button watch" href="/login" title="你必须登录后才可以watch一个仓库"><i class='iconfont icon-watch'></i>
+Watch
+</a><a class="ui button action-social-count" href="/zencodex/CSipSimple/watchers" title="60">60
+</a></span>
+<span class='ui basic buttons star-container'>
+<a class="ui button star" href="/login" title="你必须登录后才可以star一个仓库"><i class='iconfont icon-star'></i>
+Star
+</a><a class="ui button action-social-count" href="/zencodex/CSipSimple/stargazers" title="120">120
+</a></span>
+<span class='ui basic buttons fork-container' title='无权 Fork 此仓库'>
+<a class="ui button fork" href="/login" title="你必须登录后才可以fork一个仓库"><i class='iconfont icon-fork'></i>
+Fork
+</a><a class="ui button action-social-count disabled-style" href="/zencodex/CSipSimple/members" title="53">53
+</a></span>
+</div>
+<h2 class='git-project-title'>
+<span class="project-title"><i class="project-icon iconfont icon-project-public" title="这是一个公开仓库"></i> <a class="author" href="/zencodex" title="扣丁禅师">扣丁禅师</a> / <a class="repository" href="/zencodex/CSipSimple" style="padding-bottom: 0px" target="" title="CSipSimple">CSipSimple</a></span><span class="project-badges"><a class="ui small label proj-language" href="/explore/all?lang=Android" target="_blank" title="主要编程语言">Android</a><a class="ui small license label" href="/zencodex/CSipSimple/blob/master/LICENSE" title="开源许可协议">GPL-3.0</a><a class="git-project-recommend-badge" href="/explore" title="已被推荐"><i class='iconfont icon-recommended'></i>
+</a></span>
+<input id="recomm_at" name="recomm_at" type="hidden" value="2015-03-31 08:33" />
+<input id="project_title" name="project_title" type="hidden" value="扣丁禅师/CSipSimple" />
+</h2>
+</div>
+</div>
+</div>
+<div class='row' id='import-result-message' style='padding-top: 0px; display: none'>
+<div class='sixteen wide column'>
+<div class='ui icon yellow message status-color'>
+<i class='info icon status-icon' style='width:60px;padding-right:12px;'></i>
+<i class='close icon'></i>
+<div class='header status-title'>
+同步状态
+</div>
+<span class='status-message'></span>
+</div>
+</div>
+</div>
+<script>
+  var title_import_url = "false";
+  var title_post_url = "/zencodex/CSipSimple/update_import";
+  var title_fork_url = "/zencodex/CSipSimple/sync_fork";
+  var title_project_path = "CSipSimple";
+  var title_p_name = "CSipSimple";
+  var title_p_id= "334284";
+  var title_description = "CSipSimple 是个款通用的支持SIP协议的互联网电话软件，可以在支持andriod的平板，手机上使用。支持语音编码: G.711 aLaw/uLaw, G.722.1, G.722, SPEEX, SPEEX-WB, AMR-WB, GSM, iLBC, G.729. 支持STUN, Outbound proxy server, Qos，VAD，AEC，AGC，CNG等众多功能和标准。";
+  var title_form_authenticity_token = "1c2+zOfiFZXiT0a+tFWL+ulfFVGMSKZ2WdWKrFnkj2o=";
+  var watch_type = "unwatch";
+  
+  $('.metrics-radar').dropdown({ action: 'nothing' });
+  $('.js-project-watch').dropdown('set selected', watch_type);
+  $('.checkbox.sync-wiki').checkbox();
+</script>
+<style>
+  i.loading {
+    -webkit-animation: icon-loading 1.2s linear infinite;
+    animation: icon-loading 1.2s linear infinite;
+  }
+  .qrcode_cs {
+    float: left;
+  }
+  .check-sync-wiki {
+    float: left;
+    height: 28px;
+    line-height: 28px;
+  }
+  .sync-wiki-warn {
+    color: #e28560;
+  }
+</style>
+
+<div class='git-project-nav'>
+<div class='ui container'>
+<div class='ui secondary pointing menu'>
+<a class="item " href="/zencodex/CSipSimple"><i class='iconfont icon-code'></i>
+代码
+</a><a class="item " href="/zencodex/CSipSimple/issues"><i class='iconfont icon-issue'></i>
+Issues
+<span class='ui mini circular label'>
+0
+</span>
+</a><a class="item " href="/zencodex/CSipSimple/pulls"><i class='iconfont icon-pull-request'></i>
+Pull Requests
+<span class='ui mini circular label'>
+0
+</span>
+</a><a class="item " href="/zencodex/CSipSimple/attach_files"><i class='iconfont icon-annex'></i>
+附件
+<span class='ui mini circular label'>0</span>
+</a><a class="item " href="/zencodex/CSipSimple/wikis"><i class='iconfont icon-wiki'></i>
+Wiki
+<span class='ui mini circular label'>
+25
+</span>
+</a><a class="item  " href="/zencodex/CSipSimple/graph/master"><i class='iconfont icon-statistics'></i>
+统计
+</a><div class='item project-devops-item'>
+<div class='ui pointing top right dropdown project-devops-dropdown'>
+<div class='text'>
+<i class='iconfont icon-devops'></i>
+DevOps
+</div>
+<i class='dropdown icon'></i>
+<div class='menu' style='display:none'>
+<a class="item" href="https://gitee.com/help/articles/4285" target="_blank"><img alt="Baidu efficiency cloud" src="https://assets.gitee.com/assets/baidu_efficiency_cloud-81a98c2eb67fac83b1453ca3d2feb326.svg" />
+<div class='item-title'>
+百度效率云
+</div>
+</a><a class="item" href="https://gitee.com/help/articles/4193" target="_blank"><img alt="Jenkins for gitee" src="https://assets.gitee.com/assets/jenkins_for_gitee-554ec65c490d0f1f18de632c48acc4e7.png" />
+<div class='item-title'>
+Jenkins for Gitee
+</div>
+</a><a class="item" href="/zencodex/CSipSimple/paas/huaweicloud_cse"><img alt="Hauweiwfw" src="https://assets.gitee.com/assets/hauweiwfw-6d23ceba77e4f4b8c4498f3f5dc2fd99.png" />
+<div class='item-title'>
+华为微服务平台
+</div>
+</a><a class="item" href="/zencodex/CSipSimple/paas/select_platform"><img alt="Mopaas mini" src="https://assets.gitee.com/assets/mopaas_mini-e0279e635080d94a1a1d7a386c86ac5f.png" />
+<div class='item-title'>
+MoPaaS V3
+</div>
+</a></div>
+</div>
+</div>
+<div class='item'>
+<div class='ui pointing top right dropdown git-project-service'>
+<div class='text'>
+<i class='iconfont icon-service'></i>
+服务
+</div>
+<i class='dropdown icon'></i>
+<div class='menu' style='display:none'>
+<a class="item" href="/zencodex/CSipSimple/pages"><img alt="Logo en" src="/static/images/logo-en.svg" />
+<div class='item-title'>
+Gitee Pages
+</div>
+</a><a class="item" href="/zencodex/CSipSimple/quality_analyses?platform=sonar_qube"><img alt="Sonar mini" src="https://assets.gitee.com/assets/sonar_mini-5e1b54bb9f6c951d97fb778ef623afea.png" />
+<div class='item-title'>
+质量分析
+</div>
+</a><a class="item" href="/zencodex/CSipSimple/quality_analyses?platform=codesafe"><img alt="Codesafe mini" src="https://assets.gitee.com/assets/codesafe_mini-accbe1e555e9864c552620240d10e4de.png" width="100%" />
+<div class='item-title'>
+奇安信代码卫士
+</div>
+</a><button class='ui orange basic button quit-button' id='quiting-button'>
+我知道了，不再自动展开
+</button>
+</div>
+</div>
+</div>
+<div class='item right mr-0 pr-0'>
+
+</div>
+</div>
+</div>
+</div>
+<script>
+  $('.git-project-nav .ui.dropdown').dropdown({ action: 'nothing' });
+</script>
+<style>
+  .git-project-nav i.checkmark.icon {
+    color: green;
+  }
+  #quiting-button {
+    display: none;
+  }
+  
+  .git-project-nav .dropdown .menu.hidden:after {
+    visibility: hidden !important;
+  }
+</style>
+<script>
+  isSignIn = false
+  isClickGuide = false
+  $('#git-versions.dropdown').dropdown();
+  $.ajax({
+    url:"/zencodex/CSipSimple/access/add_access_log",
+    type:"GET"
+  });
+  $('#quiting-button').on('click',function() {
+    $('.git-project-service').click();
+    if (isSignIn) {
+      $.post("/projects/set_service_guide")
+    }
+    $.cookie("Serve_State", true, { expires: 3650, path: '/'})
+    $('#quiting-button').hide();
+  });
+  if (!(isClickGuide || $.cookie("Serve_State") == 'true')) {
+    $('.git-project-service').click()
+    $('#quiting-button').show()
+  }
+</script>
+
+</div>
+<div class='ui container'>
+<div class='git-user-twl-col'>
+<div class='row git-user-content'>
+<h3 class='ui header'>
+Fork (53)
+</h3>
+<div class='ui horizontal relaxed list' id='fork_list'>
+<div class='item user-list-item' style='width: 250px !important;'>
+<a href="/hha3252" target="_blank"><img avatar="Simen-hha3252" class="ui avater fork-user-image" />
+</a><div class='content'>
+<div class='header' title='Simen/CSipSimple'>
+<a href="/hha3252/CSipSimple" target="_blank">Simen/CSipSimple
+</a></div>
+<span class='time-title'>
+<div>
+1个月 前
+</div>
+</span>
+</div>
+</div>
+<div class='item user-list-item' style='width: 250px !important;'>
+<a href="/studentfq2012" target="_blank"><img avatar="fuqiang-studentfq2012" class="ui avater fork-user-image" />
+</a><div class='content'>
+<div class='header' title='fuqiang/CSipSimple'>
+<a href="/studentfq2012/CSipSimple" target="_blank">fuqiang/CSipSimple
+</a></div>
+<span class='time-title'>
+<div>
+2个月 前
+</div>
+</span>
+</div>
+</div>
+<div class='item user-list-item' style='width: 250px !important;'>
+<a href="/ongo360" target="_blank"><img avatar="CharlesCui-ongo360" class="ui avater fork-user-image" />
+</a><div class='content'>
+<div class='header' title='CharlesCui/CSipSimple'>
+<a href="/ongo360/CSipSimple" target="_blank">CharlesCui/CSipSimple
+</a></div>
+<span class='time-title'>
+<div>
+1年多 前
+</div>
+</span>
+</div>
+</div>
+<div class='item user-list-item' style='width: 250px !important;'>
+<a href="/deviche" target="_blank"><img avatar="deviche-deviche" class="ui avater fork-user-image" />
+</a><div class='content'>
+<div class='header' title='deviche/CSipSimple'>
+<a href="/deviche/CSipSimple" target="_blank">deviche/CSipSimple
+</a></div>
+<span class='time-title'>
+<div>
+1年多 前
+</div>
+</span>
+</div>
+</div>
+<div class='item user-list-item' style='width: 250px !important;'>
+<a href="/cc603751448" target="_blank"><img avatar="603751448-cc603751448" class="ui avater fork-user-image" />
+</a><div class='content'>
+<div class='header' title='603751448/CSipSimple'>
+<a href="/cc603751448/CSipSimple" target="_blank">603751448/CSipSimple
+</a></div>
+<span class='time-title'>
+<div>
+1年多 前
+</div>
+</span>
+</div>
+</div>
+<div class='item user-list-item' style='width: 250px !important;'>
+<a href="/joe.chen" target="_blank"><img avatar="czou1986-joe.chen" class="ui avater fork-user-image" />
+</a><div class='content'>
+<div class='header' title='czou1986/CSipSimple'>
+<a href="/joe.chen/CSipSimple" target="_blank">czou1986/CSipSimple
+</a></div>
+<span class='time-title'>
+<div>
+接近2年 前
+</div>
+</span>
+</div>
+</div>
+<div class='item user-list-item' style='width: 250px !important;'>
+<a href="/yemiaoa" target="_blank"><img avatar="小葱赵小九-yemiaoa" class="ui avater fork-user-image" />
+</a><div class='content'>
+<div class='header' title='小葱赵小九/CSipSimple'>
+<a href="/yemiaoa/CSipSimple" target="_blank">小葱赵小九/CSipSimple
+</a></div>
+<span class='time-title'>
+<div>
+2年多 前
+</div>
+</span>
+</div>
+</div>
+<div class='item user-list-item' style='width: 250px !important;'>
+<a href="/ym898" target="_blank"><img avatar="杨明yc-ym898" class="ui avater fork-user-image" />
+</a><div class='content'>
+<div class='header' title='杨明yc/CSipSimple'>
+<a href="/ym898/CSipSimple" target="_blank">杨明yc/CSipSimple
+</a></div>
+<span class='time-title'>
+<div>
+3年 前
+</div>
+</span>
+</div>
+</div>
+<div class='item user-list-item' style='width: 250px !important;'>
+<a href="/idiotwoo" target="_blank"><img avatar="idiotwoo-idiotwoo" class="ui avater fork-user-image" />
+</a><div class='content'>
+<div class='header' title='idiotwoo/CSipSimple'>
+<a href="/idiotwoo/CSipSimple" target="_blank">idiotwoo/CSipSimple
+</a></div>
+<span class='time-title'>
+<div>
+3年 前
+</div>
+</span>
+</div>
+</div>
+<div class='item user-list-item' style='width: 250px !important;'>
+<a href="/www.bookingfood.com" target="_blank"><img alt="143565 www.bookingfood.com 1578919375" class="ui avater fork-user-image" src="https://portrait.gitee.com/uploads/avatars/user/47/143565_www.bookingfood.com_1578919375.png!avatar60" />
+</a><div class='content'>
+<div class='header' title='silingmonkey/CSipSimple'>
+<a href="/www.bookingfood.com/CSipSimple" target="_blank">silingmonkey/CSipSimple
+</a></div>
+<span class='time-title'>
+<div>
+接近4年 前
+</div>
+</span>
+</div>
+</div>
+<div class='item user-list-item' style='width: 250px !important;'>
+<a href="/newhe" target="_blank"><img avatar="小喻hehe-newhe" class="ui avater fork-user-image" />
+</a><div class='content'>
+<div class='header' title='小喻hehe/CSipSimple'>
+<a href="/newhe/CSipSimple" target="_blank">小喻hehe/CSipSimple
+</a></div>
+<span class='time-title'>
+<div>
+接近4年 前
+</div>
+</span>
+</div>
+</div>
+<div class='item user-list-item' style='width: 250px !important;'>
+<a href="/lifan" target="_blank"><img alt="452374 lifan 1578924330" class="ui avater fork-user-image" src="https://portrait.gitee.com/uploads/avatars/user/150/452374_lifan_1578924330.jpg!avatar60" />
+</a><div class='content'>
+<div class='header' title='李帆/CSipSimple'>
+<a href="/lifan/CSipSimple" target="_blank">李帆/CSipSimple
+</a></div>
+<span class='time-title'>
+<div>
+4年 前
+</div>
+</span>
+</div>
+</div>
+<div class='item user-list-item' style='width: 250px !important;'>
+<a href="/tonbit" target="_blank"><img avatar="tonbit-tonbit" class="ui avater fork-user-image" />
+</a><div class='content'>
+<div class='header' title='tonbit/CSipSimple'>
+<a href="/tonbit/CSipSimple" target="_blank">tonbit/CSipSimple
+</a></div>
+<span class='time-title'>
+<div>
+4年 前
+</div>
+</span>
+</div>
+</div>
+<div class='item user-list-item' style='width: 250px !important;'>
+<a href="/csioza" target="_blank"><img avatar="csioza-csioza" class="ui avater fork-user-image" />
+</a><div class='content'>
+<div class='header' title='csioza/CSipSimple'>
+<a href="/csioza/CSipSimple" target="_blank">csioza/CSipSimple
+</a></div>
+<span class='time-title'>
+<div>
+4年 前
+</div>
+</span>
+</div>
+</div>
+<div class='item user-list-item' style='width: 250px !important;'>
+<a href="/ilufei" target="_blank"><img alt="83855 ilufei 1578916800" class="ui avater fork-user-image" src="https://portrait.gitee.com/uploads/avatars/user/27/83855_ilufei_1578916800.png!avatar60" />
+</a><div class='content'>
+<div class='header' title='ilufei/CSipSimple'>
+<a href="/ilufei/CSipSimple" target="_blank">ilufei/CSipSimple
+</a></div>
+<span class='time-title'>
+<div>
+4年多 前
+</div>
+</span>
+</div>
+</div>
+<div class='item user-list-item' style='width: 250px !important;'>
+<a href="/kmarshj" target="_blank"><img avatar="吴海军-kmarshj" class="ui avater fork-user-image" />
+</a><div class='content'>
+<div class='header' title='吴海军/CSipSimple'>
+<a href="/kmarshj/CSipSimple" target="_blank">吴海军/CSipSimple
+</a></div>
+<span class='time-title'>
+<div>
+4年多 前
+</div>
+</span>
+</div>
+</div>
+<div class='item user-list-item' style='width: 250px !important;'>
+<a href="/jgsh" target="_blank"><img avatar="jgsh-jgsh" class="ui avater fork-user-image" />
+</a><div class='content'>
+<div class='header' title='jgsh/CSipSimple'>
+<a href="/jgsh/CSipSimple" target="_blank">jgsh/CSipSimple
+</a></div>
+<span class='time-title'>
+<div>
+4年多 前
+</div>
+</span>
+</div>
+</div>
+<div class='item user-list-item' style='width: 250px !important;'>
+<a href="/itcn_admin" target="_blank"><img avatar="唯风-itcn_admin" class="ui avater fork-user-image" />
+</a><div class='content'>
+<div class='header' title='developer/CSipSimple'>
+<a href="/itcn/CSipSimple" target="_blank">developer/CSipSimple
+</a></div>
+<span class='time-title'>
+<div>
+接近5年 前
+</div>
+</span>
+</div>
+</div>
+<div class='item user-list-item' style='width: 250px !important;'>
+<a href="/532268973" target="_blank"><img avatar="woaiwoxiu-532268973" class="ui avater fork-user-image" />
+</a><div class='content'>
+<div class='header' title='woaiwoxiu/CSipSimple'>
+<a href="/532268973/CSipSimple" target="_blank">woaiwoxiu/CSipSimple
+</a></div>
+<span class='time-title'>
+<div>
+接近5年 前
+</div>
+</span>
+</div>
+</div>
+<div class='item user-list-item' style='width: 250px !important;'>
+<a href="/linarz" target="_blank"><img alt="413104 linarz 1578923101" class="ui avater fork-user-image" src="https://portrait.gitee.com/uploads/avatars/user/137/413104_linarz_1578923101.png!avatar60" />
+</a><div class='content'>
+<div class='header' title='linarz/CSipSimple'>
+<a href="/linarz/CSipSimple" target="_blank">linarz/CSipSimple
+</a></div>
+<span class='time-title'>
+<div>
+接近5年 前
+</div>
+</span>
+</div>
+</div>
+<div class='item user-list-item' style='width: 250px !important;'>
+<a href="/tongxiucheng" target="_blank"><img avatar="Bug已睡觉-tongxiucheng" class="ui avater fork-user-image" />
+</a><div class='content'>
+<div class='header' title='Bug已睡觉/CSipSimple'>
+<a href="/tongxiucheng/CSipSimple" target="_blank">Bug已睡觉/CSipSimple
+</a></div>
+<span class='time-title'>
+<div>
+接近5年 前
+</div>
+</span>
+</div>
+</div>
+<div class='item user-list-item' style='width: 250px !important;'>
+<a href="/alan.li2015" target="_blank"><img avatar="alan2015-alan.li2015" class="ui avater fork-user-image" />
+</a><div class='content'>
+<div class='header' title='alan2015/CSipSimple'>
+<a href="/alan.li2015/CSipSimple" target="_blank">alan2015/CSipSimple
+</a></div>
+<span class='time-title'>
+<div>
+接近5年 前
+</div>
+</span>
+</div>
+</div>
+<div class='item user-list-item' style='width: 250px !important;'>
+<a href="/linving" target="_blank"><img alt="18547 linving 1578915217" class="ui avater fork-user-image" src="https://portrait.gitee.com/uploads/avatars/user/6/18547_linving_1578915217.png!avatar60" />
+</a><div class='content'>
+<div class='header' title='linving/CSipSimple'>
+<a href="/linving/CSipSimple" target="_blank">linving/CSipSimple
+</a></div>
+<span class='time-title'>
+<div>
+接近5年 前
+</div>
+</span>
+</div>
+</div>
+<div class='item user-list-item' style='width: 250px !important;'>
+<a href="/pxjianke" target="_blank"><img avatar="pxjianke-pxjianke" class="ui avater fork-user-image" />
+</a><div class='content'>
+<div class='header' title='pxjianke/CSipSimple'>
+<a href="/pxjianke/CSipSimple" target="_blank">pxjianke/CSipSimple
+</a></div>
+<span class='time-title'>
+<div>
+接近5年 前
+</div>
+</span>
+</div>
+</div>
+<div class='item user-list-item' style='width: 250px !important;'>
+<a href="/veicn" target="_blank"><img avatar="惟一-veicn" class="ui avater fork-user-image" />
+</a><div class='content'>
+<div class='header' title='惟一/CSipSimple'>
+<a href="/veicn/CSipSimple" target="_blank">惟一/CSipSimple
+</a></div>
+<span class='time-title'>
+<div>
+接近5年 前
+</div>
+</span>
+</div>
+</div>
+<div class='item user-list-item' style='width: 250px !important;'>
+<a href="/cloudhi" target="_blank"><img avatar="cloudhi-cloudhi" class="ui avater fork-user-image" />
+</a><div class='content'>
+<div class='header' title='cloudhi/CSipSimple'>
+<a href="/cloudhi/CSipSimple" target="_blank">cloudhi/CSipSimple
+</a></div>
+<span class='time-title'>
+<div>
+接近5年 前
+</div>
+</span>
+</div>
+</div>
+<div class='item user-list-item' style='width: 250px !important;'>
+<a href="/tangpan" target="_blank"><img avatar="木××木-tangpan" class="ui avater fork-user-image" />
+</a><div class='content'>
+<div class='header' title='木××木/CSipSimple'>
+<a href="/tangpan/CSipSimple" target="_blank">木××木/CSipSimple
+</a></div>
+<span class='time-title'>
+<div>
+接近5年 前
+</div>
+</span>
+</div>
+</div>
+<div class='item user-list-item' style='width: 250px !important;'>
+<a href="/doney" target="_blank"><img alt="7286 doney 1578914477" class="ui avater fork-user-image" src="https://portrait.gitee.com/uploads/avatars/user/2/7286_doney_1578914477.png!avatar60" />
+</a><div class='content'>
+<div class='header' title='王东祥/CSipSimple'>
+<a href="/doney/CSipSimple" target="_blank">王东祥/CSipSimple
+</a></div>
+<span class='time-title'>
+<div>
+5年 前
+</div>
+</span>
+</div>
+</div>
+<div class='item user-list-item' style='width: 250px !important;'>
+<a href="/djun100" target="_blank"><img avatar="djun100-djun100" class="ui avater fork-user-image" />
+</a><div class='content'>
+<div class='header' title='djun100/CSipSimple'>
+<a href="/djun100/CSipSimple" target="_blank">djun100/CSipSimple
+</a></div>
+<span class='time-title'>
+<div>
+5年 前
+</div>
+</span>
+</div>
+</div>
+<div class='item user-list-item' style='width: 250px !important;'>
+<a href="/longwithlove" target="_blank"><img avatar="longwithlove-longwithlove" class="ui avater fork-user-image" />
+</a><div class='content'>
+<div class='header' title='longwithlove/CSipSimple'>
+<a href="/longwithlove/CSipSimple" target="_blank">longwithlove/CSipSimple
+</a></div>
+<span class='time-title'>
+<div>
+5年 前
+</div>
+</span>
+</div>
+</div>
+<div class='item user-list-item' style='width: 250px !important;'>
+<a href="/glassweichao" target="_blank"><img alt="99525 glassweichao 1578917442" class="ui avater fork-user-image" src="https://portrait.gitee.com/uploads/avatars/user/33/99525_glassweichao_1578917442.png!avatar60" />
+</a><div class='content'>
+<div class='header' title='Charles Wei/CSipSimple'>
+<a href="/glassweichao/CSipSimple" target="_blank">Charles Wei/CSipSimple
+</a></div>
+<span class='time-title'>
+<div>
+5年 前
+</div>
+</span>
+</div>
+</div>
+<div class='item user-list-item' style='width: 250px !important;'>
+<a href="/tveiker" target="_blank"><img avatar="Tveiker-tveiker" class="ui avater fork-user-image" />
+</a><div class='content'>
+<div class='header' title='Tveiker/CSipSimple'>
+<a href="/tveiker/CSipSimple" target="_blank">Tveiker/CSipSimple
+</a></div>
+<span class='time-title'>
+<div>
+5年 前
+</div>
+</span>
+</div>
+</div>
+<div class='item user-list-item' style='width: 250px !important;'>
+<a href="/lurkingliu" target="_blank"><img avatar="penck-lurkingliu" class="ui avater fork-user-image" />
+</a><div class='content'>
+<div class='header' title='penck/CSipSimple'>
+<a href="/lurkingliu/CSipSimple" target="_blank">penck/CSipSimple
+</a></div>
+<span class='time-title'>
+<div>
+5年 前
+</div>
+</span>
+</div>
+</div>
+<div class='item user-list-item' style='width: 250px !important;'>
+<a href="/postdep" target="_blank"><img alt="917 postdep 1578913907" class="ui avater fork-user-image" src="https://portrait.gitee.com/uploads/avatars/user/0/917_postdep_1578913907.png!avatar60" />
+</a><div class='content'>
+<div class='header' title='katyperry/CSipSimple'>
+<a href="/postdep/CSipSimple" target="_blank">katyperry/CSipSimple
+</a></div>
+<span class='time-title'>
+<div>
+5年 前
+</div>
+</span>
+</div>
+</div>
+<div class='item user-list-item' style='width: 250px !important;'>
+<a href="/iuyes" target="_blank"><img avatar="有色白水-iuyes" class="ui avater fork-user-image" />
+</a><div class='content'>
+<div class='header' title='有色白水/CSipSimple'>
+<a href="/iuyes/CSipSimple" target="_blank">有色白水/CSipSimple
+</a></div>
+<span class='time-title'>
+<div>
+5年 前
+</div>
+</span>
+</div>
+</div>
+<div class='item user-list-item' style='width: 250px !important;'>
+<a href="/cder1" target="_blank"><img avatar="cder-cder1" class="ui avater fork-user-image" />
+</a><div class='content'>
+<div class='header' title='cder/CSipSimple'>
+<a href="/cder1/CSipSimple" target="_blank">cder/CSipSimple
+</a></div>
+<span class='time-title'>
+<div>
+5年 前
+</div>
+</span>
+</div>
+</div>
+<div class='item user-list-item' style='width: 250px !important;'>
+<a href="/zhangjiu" target="_blank"><img avatar="刘昱璋-zhangjiu" class="ui avater fork-user-image" />
+</a><div class='content'>
+<div class='header' title='刘昱璋/CSipSimple'>
+<a href="/zhangjiu/CSipSimple" target="_blank">刘昱璋/CSipSimple
+</a></div>
+<span class='time-title'>
+<div>
+5年 前
+</div>
+</span>
+</div>
+</div>
+<div class='item user-list-item' style='width: 250px !important;'>
+<a href="/endex" target="_blank"><img alt="354826 endex 1578921197" class="ui avater fork-user-image" src="https://portrait.gitee.com/uploads/avatars/user/118/354826_endex_1578921197.png!avatar60" />
+</a><div class='content'>
+<div class='header' title='放羊少年/CSipSimple'>
+<a href="/endex/CSipSimple" target="_blank">放羊少年/CSipSimple
+</a></div>
+<span class='time-title'>
+<div>
+5年 前
+</div>
+</span>
+</div>
+</div>
+<div class='item user-list-item' style='width: 250px !important;'>
+<a href="/jesusy" target="_blank"><img alt="69938 jesusy 1578916197" class="ui avater fork-user-image" src="https://portrait.gitee.com/uploads/avatars/user/23/69938_jesusy_1578916197.jpg!avatar60" />
+</a><div class='content'>
+<div class='header' title='jesus/CSipSimple'>
+<a href="/jesusy/CSipSimple" target="_blank">jesus/CSipSimple
+</a></div>
+<span class='time-title'>
+<div>
+5年 前
+</div>
+</span>
+</div>
+</div>
+<div class='item user-list-item' style='width: 250px !important;'>
+<a href="/vitah" target="_blank"><img alt="5561 vitah 1578914345" class="ui avater fork-user-image" src="https://portrait.gitee.com/uploads/avatars/user/1/5561_vitah_1578914345.png!avatar60" />
+</a><div class='content'>
+<div class='header' title='vitah/CSipSimple'>
+<a href="/vitah/CSipSimple" target="_blank">vitah/CSipSimple
+</a></div>
+<span class='time-title'>
+<div>
+5年 前
+</div>
+</span>
+</div>
+</div>
+<div class='item user-list-item' style='width: 250px !important;'>
+<a href="/chaos123" target="_blank"><img avatar="-Stupid--Liar--chaos123" class="ui avater fork-user-image" />
+</a><div class='content'>
+<div class='header' title='-Stupid--Liar-/CSipSimple'>
+<a href="/chaos123/CSipSimple" target="_blank">-Stupid--Liar-/CSipSimple
+</a></div>
+<span class='time-title'>
+<div>
+5年 前
+</div>
+</span>
+</div>
+</div>
+<div class='item user-list-item' style='width: 250px !important;'>
+<a href="/tuwei" target="_blank"><img avatar="xunjiwang-tuwei" class="ui avater fork-user-image" />
+</a><div class='content'>
+<div class='header' title='xunjiwang/CSipSimple'>
+<a href="/tuwei/CSipSimple" target="_blank">xunjiwang/CSipSimple
+</a></div>
+<span class='time-title'>
+<div>
+5年 前
+</div>
+</span>
+</div>
+</div>
+<div class='item user-list-item' style='width: 250px !important;'>
+<a href="/1047761605" target="_blank"><img alt="1334 1047761605 1578913995" class="ui avater fork-user-image" src="https://portrait.gitee.com/uploads/avatars/user/0/1334_1047761605_1578913995.jpg!avatar60" />
+</a><div class='content'>
+<div class='header' title='谢晓峰/CSipSimple'>
+<a href="/1047761605/CSipSimple" target="_blank">谢晓峰/CSipSimple
+</a></div>
+<span class='time-title'>
+<div>
+5年 前
+</div>
+</span>
+</div>
+</div>
+<div class='item user-list-item' style='width: 250px !important;'>
+<a href="/chenwenbin" target="_blank"><img avatar="释冰翼-chenwenbin" class="ui avater fork-user-image" />
+</a><div class='content'>
+<div class='header' title='释冰翼/CSipSimple'>
+<a href="/chenwenbin/CSipSimple" target="_blank">释冰翼/CSipSimple
+</a></div>
+<span class='time-title'>
+<div>
+5年 前
+</div>
+</span>
+</div>
+</div>
+<div class='item user-list-item' style='width: 250px !important;'>
+<a href="/Miaox" target="_blank"><img avatar="martinxiao-Miaox" class="ui avater fork-user-image" />
+</a><div class='content'>
+<div class='header' title='martinxiao/CSipSimple'>
+<a href="/Miaox/CSipSimple" target="_blank">martinxiao/CSipSimple
+</a></div>
+<span class='time-title'>
+<div>
+5年 前
+</div>
+</span>
+</div>
+</div>
+<div class='item user-list-item' style='width: 250px !important;'>
+<a href="/zbw" target="_blank"><img avatar="vvvvvvvv-zbw" class="ui avater fork-user-image" />
+</a><div class='content'>
+<div class='header' title='vvvvvvvv/CSipSimple'>
+<a href="/zbw/CSipSimple" target="_blank">vvvvvvvv/CSipSimple
+</a></div>
+<span class='time-title'>
+<div>
+5年 前
+</div>
+</span>
+</div>
+</div>
+<div class='item user-list-item' style='width: 250px !important;'>
+<a href="/blake2002" target="_blank"><img avatar="blake2002-blake2002" class="ui avater fork-user-image" />
+</a><div class='content'>
+<div class='header' title='blake2002/CSipSimple'>
+<a href="/blake2002/CSipSimple" target="_blank">blake2002/CSipSimple
+</a></div>
+<span class='time-title'>
+<div>
+5年 前
+</div>
+</span>
+</div>
+</div>
+<div class='item user-list-item' style='width: 250px !important;'>
+<a href="/microinfo" target="_blank"><img alt="13770 microinfo 1578914928" class="ui avater fork-user-image" src="https://portrait.gitee.com/uploads/avatars/user/4/13770_microinfo_1578914928.png!avatar60" />
+</a><div class='content'>
+<div class='header' title='microinfo/CSipSimple'>
+<a href="/microinfo/CSipSimple" target="_blank">microinfo/CSipSimple
+</a></div>
+<span class='time-title'>
+<div>
+5年 前
+</div>
+</span>
+</div>
+</div>
+<div class='clearfix'></div>
+</div>
+<footer class='ui grid page'>
+<div class='column center aligned'>
+<div class='column center aligned'>
+<div class='ui tiny pagination menu' id='git-discover-page'>
+
+<a class="item active" href="/zencodex/CSipSimple/members">1</a>
+
+<a class="item" href="/zencodex/CSipSimple/members?page=2" rel="next">2</a>
+
+<a class="icon item" href="/zencodex/CSipSimple/members?page=2" rel="next"><i class='fa fa-angle-right'></i>
+</a>
+</div>
+</div>
+
+</div>
+</footer>
+<style>
+  .ui.list .item .ui.hover.col{
+    color:#999 !important;
+  }
+  .ui.list .item .ui.hover.col:hover{
+    color:#4183c4 !important;
+  }
+  #fork_list .fork-user-image{
+    width: 50px;
+    height: 50px;
+    vertical-align: baseline;
+    border-radius: 500rem;
+    float: left;
+    margin-right: 6px;
+  }
+  #fork_list .content {
+    margin-left: 10px;
+    overflow: hidden;
+  }
+  #fork_list .header {
+    font-weight: bold;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  #fork_list .time-title {
+    margin-top: 6px;
+    float: left;
+    font-size: 11px
+  }
+  #fork_list .clearfix {
+    margin-top: 12px
+  }
+</style>
+
+</div>
+</div>
+<style>
+  .timestamp {
+    display: inline;
+    margin-left: 10px;
+  }
+  .ui.horizontal.relaxed.list > .item.user-list-item {
+    padding: 0.3em 0px !important;
+  }
+</style>
+
+</div>
+<script>
+  (function() {
+    var donateModal;
+  
+    Gitee.modalHelper = new GiteeModalHelper({
+      alertText: '提示',
+      okText: '确定'
+    });
+  
+    donateModal = new ProjectDonateModal({
+      el: '#project-donate-modal',
+      alipayUrl: '/zencodex/CSipSimple/alipay',
+      wepayUrl: '/zencodex/CSipSimple/wepay',
+      nameIsBlank: '名称不能为空',
+      nameTooLong: '名称过长（最多为 36 个字符）',
+      modalHelper: Gitee.modalHelper
+    });
+  
+    if ("" === 'true') {
+      donateModal.show();
+    }
+  
+    $('#project-donate').on('click', function() {
+      return donateModal.show();
+    });
+  
+  }).call(this);
+</script>
+<script>
+  Tree.initHighlightTheme('white')
+</script>
+
+
+</div>
+<div class='gitee-project-extension'>
+<div class='extension lang'>Android</div>
+<div class='extension public'>1</div>
+<div class='extension https'>https://gitee.com/zencodex/CSipSimple.git</div>
+<div class='extension ssh'>git@gitee.com:zencodex/CSipSimple.git</div>
+<div class='extension namespace'>zencodex</div>
+<div class='extension repo'>CSipSimple</div>
+<div class='extension name'>CSipSimple</div>
+<div class='extension branch'></div>
+</div>
+
+<script>
+  $(function() {
+    GitLab.GfmAutoComplete.dataSource = "/zencodex/CSipSimple/autocomplete_sources"
+    GitLab.GfmAutoComplete.Emoji.assetBase = '/assets/emoji'
+    GitLab.GfmAutoComplete.setup();
+  });
+</script>
+
+<footer id='git-footer-main'>
+<div class='ui container'>
+<div class='ui two column grid '>
+<div class='nine wide column git-footer-left'>
+<p><a href="https://gitee.com/" target="_blank">© Gitee.com</a></p>
+<div class='ui four column grid' id='footer-left'>
+<div class='column'>
+<div class='ui link list'>
+<div class='item'>
+<a class="item" href="/about_us">关于我们</a>
+</div>
+<div class='item'>
+<a class="item" href="/terms">使用条款</a>
+</div>
+<div class='item'>
+<a class="item" href="/oschina/git-osc/issues">意见建议</a>
+</div>
+<div class='item'>
+<a class="item" href="/links.html">合作伙伴</a>
+</div>
+</div>
+</div>
+<div class='column'>
+<div class='ui link list'>
+<div class='item'>
+<a class="item" href="/all-about-git">Git 大全</a>
+</div>
+<div class='item'>
+<a class="item" href="https://oschina.gitee.io/learn-git-branching/">Git 命令学习</a>
+</div>
+<div class='item'>
+<a class="item" href="https://copycat.gitee.com/">代码克隆检测</a>
+</div>
+<div class='item'>
+<a class="item" href="/appclient">APP与插件下载</a>
+</div>
+</div>
+</div>
+<div class='column'>
+<div class='ui link list'>
+<div class='item'>
+<a class="item" href="/gitee-stars">码云封面人物</a>
+</div>
+<div class='item'>
+<a class="item" href="/gvp">GVP项目</a>
+</div>
+<div class='item'>
+<a class="item" href="https://blog.gitee.com/">码云博客</a>
+</div>
+<div class='item'>
+<a class="item" href="/enterprises#nonprofit-plan">Gitee 公益计划</a>
+</div>
+</div>
+</div>
+<div class='column'>
+<div class='ui link list'>
+<div class='item'>
+<a class="item" href="/api/v5/swagger">OpenAPI</a>
+</div>
+<div class='item'>
+<a class="item" href="/help">帮助文档</a>
+</div>
+<div class='item'>
+<a class="item" href="/self_services">在线自助服务</a>
+</div>
+<div class='item'>
+<a class="item" href="/git-osc">更新日志</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class='seven wide column right aligned followus git-footer-right'>
+<div class='qrcode weixin'>
+<img alt="Qrcode weixin" src="https://assets.gitee.com/assets/qrcode-weixin-9e7cfb27165143d2b8e8b268a52ea822.jpg" />
+<p class='weixin-text'>微信服务号</p>
+</div>
+<div class='phone-and-qq column'>
+<div class='ui list official-support-container'>
+<div class='item'>
+<a class="icon-popup" href="//shang.qq.com/wpa/qunwpa?idkey=df785aa7af71f7d74149ab062742d761b845464350ecba25eb440357a3e573b7" title="点击加入码云官方群"><i class='iconfont icon-logo-qq'></i>
+<span>官方技术交流QQ群：1050025484</span>
+</a></div>
+<div class='item mail-and-zhihu'>
+<a href="mailto: git@oschina.cn"><i class='iconfont icon-ic-mail'></i>
+<span id='git-footer-email'>git#oschina.cn</span>
+</a><a href="https://www.zhihu.com/org/ma-yun-osc/ " target="_blank"><i class='iconfont icon-zhihu'></i>
+<span>码云Gitee</span>
+</a></div>
+<div class='item'>企业版售前及售后使用咨询：400-606-0201</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class='bottombar'>
+<div class='ui container'>
+<div class='ui grid'>
+<div class='seven wide column partner'>
+<div class='copyright'>
+<a href="http://www.beian.miit.gov.cn/">粤ICP备12009483号</a>
+深圳市奥思网络科技有限公司版权所有
+</div>
+</div>
+<div class='nine wide column right aligned'>
+<i class='icon world'></i>
+<a href="/language/zh-CN">简 体</a>
+/
+<a href="/language/zh-TW">繁 體</a>
+/
+<a href="/language/en">English</a>
+</div>
+</div>
+</div>
+</div>
+</footer>
+<script>
+  var officialEmail = $('#git-footer-email').text()
+  $('#git-footer-main .icon-popup').popup({ position: 'bottom center' })
+  $('#git-footer-email').text(officialEmail.replace('#', '@'))
+</script>
+
+
+<div class='side-toolbar'>
+<div class='button toolbar-help'>
+<i class='iconfont icon-help'></i>
+</div>
+<div class='ui popup left center dark'>点此查找更多帮助</div>
+<div class='toolbar-help-dialog'>
+<div class='toolbar-dialog-header'>
+<h3 class='toolbar-dialog-title'>搜索帮助</h3>
+<form accept-charset="UTF-8" action="/help/load_keywords_data" class="toolbar-help-search-form" method="get"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /></div>
+<div class='ui icon input fluid toolbar-help-search'>
+<input name='keywords' placeholder='请输入产品名称或问题' type='text'>
+<i class='icon search'></i>
+</div>
+</form>
+
+<i class='iconfont icon-close toolbar-dialog-close-icon'></i>
+</div>
+<div class='toolbar-dialog-content'>
+<div class='toolbar-help-hot-search'>
+<div class='toolbar-roll'>
+<a class="init active" href="https://oschina.gitee.io/learn-git-branching/?utm_source==gitee-help-widget" title="Git 命令在线学习"><i class='Blue icon icon-command iconfont'></i>
+<span>Git 命令在线学习</span>
+</a><a class="init " href="https://gitee.com/help/articles/4261?utm_source==gitee-help-widget" title="如何在码云上导入 GitHub 仓库"><i class='icon icon-clipboard iconfont orange'></i>
+<span>如何在码云上导入 GitHub 仓库</span>
+</a></div>
+<div class='toolbar-list'>
+<div class='toolbar-list-item'>
+<a href="/help/articles/4114">Git 仓库基础操作</a>
+</div>
+<div class='toolbar-list-item'>
+<a href="/help/articles/4166">企业版和社区版功能对比</a>
+</div>
+<div class='toolbar-list-item'>
+<a href="/help/articles/4191">SSH 公钥设置</a>
+</div>
+<div class='toolbar-list-item'>
+<a href="/help/articles/4194">如何处理代码冲突</a>
+</div>
+<div class='toolbar-list-item'>
+<a href="/help/articles/4232">仓库体积过大，如何减小？</a>
+</div>
+<div class='toolbar-list-item'>
+<a href="/help/articles/4279">如何找回被删除的仓库数据</a>
+</div>
+<div class='toolbar-list-item'>
+<a href="/help/articles/4283">码云使用容量说明</a>
+</div>
+<div class='toolbar-list-item'>
+<a href="/help/articles/4284">GitHub仓库快速导入Gitee及同步更新</a>
+</div>
+</div>
+</div>
+<div class='toolbar-help-search-reseult'>
+<div class='toolbar-help-flex-column'>
+<div class='ui centered inline loader toolbar-help-loader'></div>
+<div class='toolbar-list'></div>
+<div class='toolbar-help-link-to-help'>
+<a href="" target="_blank">查看更多搜索结果</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script>
+  var opt = { position: 'left center' };
+  var $helpSideToolbar = $(".button.toolbar-help");
+  var $toolbarRoll = $('.toolbar-roll');
+  
+  $(function() {
+    if (false) {
+      $helpSideToolbar.popup(opt);
+    } else {
+      $helpSideToolbar.popup('show', opt);
+      setTimeout(function() {
+        $helpSideToolbar.popup('hide', opt);
+      }, 3000);
+    }
+  
+    if ($toolbarRoll.length) {
+      setInterval(function() {
+        var $nextActiveLink = $toolbarRoll.find('a.active').next();
+        if (!$nextActiveLink.length) {
+          $nextActiveLink = $toolbarRoll.find('a:first-child');
+        }
+        $nextActiveLink.attr('class', 'active').siblings().removeClass('active init');
+      }, 5000);
+    }
+  })
+</script>
+
+<div class='button share-link'>
+<i class='iconfont icon-share'></i>
+</div>
+<div class='ui popup dark'>
+<div class='header'>
+分享到
+</div>
+<div class='bdsharebuttonbox' style='display: flex'>
+<a class='iconfont icon-home-service-wechat' data-cmd='weixin' title='分享到微信'></a>
+<a class='iconfont icon-weibo' data-cmd='tsina' title='分享到新浪微博'></a>
+<a class='iconfont icon-qq' data-cmd='sqq' title='分享到QQ好友'></a>
+<a class='iconfont icon-qzone' data-cmd='qzone' title='分享到QQ空间'></a>
+</div>
+</div>
+<div class='popup button' id='home-comment'>
+<i class='iconfont icon-comment'></i>
+</div>
+<div class='ui popup dark'>评论</div>
+<div class='toolbar-appeal popup button'>
+<i class='iconfont icon-report'></i>
+</div>
+<div class='ui popup dark'>
+仓库举报
+</div>
+<script>
+  $('.toolbar-appeal').popup({ position: 'left center' });
+</script>
+
+<div class='button gotop popup' id='gotop'>
+<i class='iconfont icon-top'></i>
+</div>
+<div class='ui popup dark'>回到顶部</div>
+</div>
+<div class='form modal normal-modal tiny ui' id='unlanding-complaint-modal'>
+<i class='iconfont icon-close close'></i>
+<div class='header'>
+登录提示
+</div>
+<div class='container actions'>
+<div class='content'>
+该操作需登录码云帐号，请先登录后再操作。
+</div>
+<div class='ui orange icon large button ok'>
+立即登录
+</div>
+<div class='ui button blank cancel'>
+没有帐号，去注册
+</div>
+</div>
+</div>
+<script>
+  var $elm = $('.toolbar-appeal');
+  
+  $elm.on('click', function() {
+    var modals = $("#unlanding-complaint-modal.normal-modal");
+    if (modals.length > 1) {
+      modals.eq(0).modal('show');
+    } else {
+      modals.modal('show');
+    }
+  })
+  $("#unlanding-complaint-modal.normal-modal").modal({
+    onDeny: function() {
+      window.location.href = "/signup?from=";
+    },
+    onApprove: function() {
+      window.location.href = "/login?from=";
+    }
+  })
+</script>
+
+<style>
+  .side-toolbar .bdsharebuttonbox a {
+    font-size: 24px;
+    color: white !important;
+    opacity: 0.9;
+    margin: 6px 6px 0px 6px;
+    background-image: none;
+    text-indent: 0;
+    height: auto;
+    width: auto;
+  }
+</style>
+<script>
+  (function() {
+    $('#project-user-message').popup({
+      position: 'left center'
+    });
+  
+  }).call(this);
+</script>
+<script>
+  Gitee.initSideToolbar({
+    hasComment: true,
+    commentUrl: '/zencodex/CSipSimple#tree_comm_title'
+  })
+</script>
+<script>
+  window._bd_share_config = {
+    "common": {
+      "bdSnsKey": {},
+      "bdText": document.title,
+      "bdMini": "1",
+      "bdMiniList": ["bdxc","tqf","douban","bdhome","sqq","thx","ibaidu","meilishuo","mogujie","diandian","huaban","duitang","hx","fx","youdao","sdo","qingbiji","people","xinhua","mail","isohu","yaolan","wealink","ty","iguba","fbook","twi","linkedin","h163","evernotecn","copy","print"],
+      "bdPic": "",
+      "bdStyle": "1",
+      "bdSize": "32"
+    },
+    "share": {}
+  }
+</script>
+<script src="/bd_share/static/api/js/share.js"></script>
+
+
+
+
+
+<script>
+  (function() {
+    this.__gac = {
+      domain: 'www.oschina.net'
+    };
+  
+  }).call(this);
+</script>
+<script defer src='//www.oschina.net/public/javascripts/cjl/ga.js?t=20160926' type='text/javascript'></script>
+
+</body>
+</html>
