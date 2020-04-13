@@ -1,0 +1,1264 @@
+<!DOCTYPE html>
+<html lang='zh-CN'>
+<head>
+<head>
+<title>TA 关注的仓库 - 李紫电 (tiandian) - 码云 Gitee.com</title>
+<link href="https://assets.gitee.com/assets/favicon-9007bd527d8a7851c8330e783151df58.ico" rel="shortcut icon" type="image/vnd.microsoft.icon" />
+<meta charset='utf-8'>
+<meta content='always' name='referrer'>
+<meta content='码云' property='og:site_name'>
+<meta content='Object' property='og:type'>
+<meta content='http://gitee.com/tiandian/watched' property='og:url'>
+<meta content='https://gitee.com/static/images/logo_themecolor.png' itemprop='image' property='og:image'>
+<meta content='TA 关注的仓库 - 李紫电 (tiandian) - 码云 Gitee.com' itemprop='name' property='og:title'>
+<meta content='码云(gitee.com)是 OSCHINA.NET 推出的代码托管平台，支持 Git 和 SVN，提供免费的私有仓库托管。目前已有超过 500 万的开发者选择码云。' property='og:description'>
+<meta content='码云,代码托管,git,Git@OSC,gitee.com,开源,内源,项目管理,版本控制,开源代码,代码分享,项目协作,开源项目托管,免费代码托管,Git代码托管,Git托管服务' name='Keywords'>
+<meta content='李紫电 关注的仓库' itemprop='description' name='Description'>
+
+<meta content="IE=edge" http-equiv="X-UA-Compatible" />
+<meta content="authenticity_token" name="csrf-param" />
+<meta content="UhCcN2PwwbV1X81xzvM1xYNiKBdmKPNea1SSfZxPIcg=" name="csrf-token" />
+
+<link href="https://assets.gitee.com/assets/application-4353e40c527157901930256fb2cba2d4.css" media="screen" rel="stylesheet" />
+<script>
+//<![CDATA[
+window.gon = {};gon.locale="zh-CN";gon.sentry_dsn=null;gon.baidu_register_hm_push=null;gon.info={"controller_path":"users","action_name":"watched","current_user":false};gon.tour_env={"current_user":null,"action_name":"watched","original_url":"http://gitee.com/tiandian/watched","controller_path":"users"};gon.all_taggings=[];
+//]]>
+</script>
+<script src="https://assets.gitee.com/assets/static/sentry-5.1.0-109ee3d8895a239331efcf947ba7f5d8.js"></script>
+<script src="https://assets.gitee.com/assets/application-25134bf44f1dbb308bb450bdb036a1cc.js"></script>
+<script src="https://assets.gitee.com/assets/lib/jquery.timeago.zh-CN-9c36ca7c4899a28168320613879d208a.js"></script>
+<script src="https://assets.gitee.com/assets/profiles/app-1942801bc1f60d21aeb8f2860e0571f0.js"></script>
+<script src="https://assets.gitee.com/assets/users/application-03d65ba9902e91ecc44a3100cfa70c0d.js"></script>
+
+<link href="https://assets.gitee.com/assets/users/application-eb3f1937aa6b1baf23384e5fa1ab54f3.css" media="screen" rel="stylesheet" />
+
+<script src="//res.wx.qq.com/open/js/jweixin-1.2.0.js"></script>
+<script>
+  var title = document.title.replace(/( - Gitee| - 码云)$/, '')
+      imgUrl = '';
+  
+  document.addEventListener('DOMContentLoaded', function(event) {
+    var imgUrlEl = document.querySelector('.readme-box .markdown-body > img, .readme-box .markdown-body :not(a) > img');
+    imgUrl = imgUrlEl && imgUrlEl.getAttribute('src');
+  
+    if (!imgUrl) {
+      imgUrlEl = document.querySelector('meta[itemprop=image]');
+      imgUrl = imgUrlEl && imgUrlEl.getAttribute('content'); 
+      imgUrl = imgUrl || "https://gitee.com/static/images/logo_themecolor.png";
+    }
+  
+    wx.config({
+      debug: false,
+      appId: "wxff219d611a159737",
+      timestamp: "1586750430",
+      nonceStr: "d5a5860d83b349970c6b0d56aa8ce235",
+      signature: "c286e6bda30ca296489331a4f4577a30cdd4f9b5",
+      jsApiList: [
+        'onMenuShareTimeline',
+        'onMenuShareAppMessage'
+      ]
+    });
+  
+    wx.ready(function () {
+      wx.onMenuShareTimeline({
+        title: title, // 分享标题
+        link: "https://gitee.com/tiandian/watched", // 分享链接，该链接域名或路径必须与当前页面对应的公众号JS安全域名一致
+        imgUrl: imgUrl // 分享图标
+      });
+      wx.onMenuShareAppMessage({
+        title: title, // 分享标题
+        link: "https://gitee.com/tiandian/watched", // 分享链接，该链接域名或路径必须与当前页面对应的公众号JS安全域名一致
+        desc: document.querySelector('meta[name=Description]').getAttribute('content'),
+        imgUrl: imgUrl // 分享图标
+      });
+    });
+    wx.error(function(res){
+      console.error('err', res)
+    });
+  })
+</script>
+
+<script type='text/x-mathjax-config'>
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    displayMath: [["$$","$$"],["\\[","\\]"]],
+    processEscapes: true,
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
+    ignoreClass: "container|files",
+    processClass: "markdown-body"
+  }
+});
+</script>
+<script src="https://assets.gitee.com/uploads/resources/MathJax-2.7.2/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+<script>
+  (function () {
+    var messages = {
+      'zh-CN': {
+        addResult: '增加 <b>{term}</b>',
+        count: '已选择 {count}',
+        maxSelections: '最多 {maxCount} 个选择',
+        noResults: '未找到结果',
+        serverError: '连接服务器时发生错误'
+      },
+      'zh-TW': {
+        addResult: '增加 <b>{term}</b>',
+        count: '已選擇 {count}',
+        maxSelections: '最多 {maxCount} 個選擇',
+        noResults: '未找到結果',
+        serverError: '連接服務器時發生錯誤'
+      }
+    }
+  
+    if (messages[gon.locale]) {
+      $.fn.dropdown.settings.message = messages[gon.locale]
+    }
+  }());
+</script>
+
+<!--[if lt IE 10]>
+<script>
+    window.location.href = "/incompatible.html";
+</script>
+<![endif]-->
+</head>
+
+</head>
+<body class='users-body large'>
+<header class='common-header fixed noborder' id='git-header-nav'>
+<div class='ui container'>
+<div class='ui menu header-menu'>
+<div class='git-nav-expand-bar'>
+<i class='iconfont icon-mode-table'></i>
+</div>
+<div class='gitee-nav__sidebar'>
+<div class='gitee-nav__sidebar-container'>
+<div class='gitee-nav__sidebar-top'>
+<div class='gitee-nav__avatar-box'></div>
+<div class='gitee-nav__buttons-box'>
+<a class="ui button small fluid orange" href="/login">登录</a>
+<a class="ui button small fluid basic is-register" href="/signup">注册</a>
+</div>
+</div>
+<div class='gitee-nav__sidebar-middle'>
+<div class='gitee-nav__sidebar-list'>
+<ul>
+<li class='gitee-nav__sidebar-item'>
+<a href="/explore"><i class='iconfont icon-ic-discover'></i>
+<span class='gitee-nav__sidebar-name'>开源软件</span>
+</a></li>
+<li class='gitee-nav__sidebar-item'>
+<a href="/enterprises"><i class='iconfont icon-ic-enterprise'></i>
+<span class='gitee-nav__sidebar-name'>企业版</span>
+</a></li>
+<li class='gitee-nav__sidebar-item'>
+<a href="/education"><i class='iconfont icon-ic-education'></i>
+<span class='gitee-nav__sidebar-name'>高校版</span>
+</a></li>
+<li class='gitee-nav__sidebar-item split-line'></li>
+<li class='gitee-nav__sidebar-item'>
+<a href="/search"><i class='iconfont icon-ic-search'></i>
+<span class='gitee-nav__sidebar-name'>搜索</span>
+</a></li>
+<li class='gitee-nav__sidebar-item'>
+<a href="/help"><i class='iconfont icon-help-circle'></i>
+<span class='gitee-nav__sidebar-name'>帮助中心</span>
+</a></li>
+<li class='gitee-nav__sidebar-item'>
+<a href="/terms"><i class='iconfont icon-file'></i>
+<span class='gitee-nav__sidebar-name'>使用条款</span>
+</a></li>
+<li class='gitee-nav__sidebar-item'>
+<a href="/about_us"><i class='iconfont icon-issuepx'></i>
+<span class='gitee-nav__sidebar-name'>关于我们</span>
+</a></li>
+</ul>
+</div>
+</div>
+<div class='gitee-nav__sidebar-bottom'>
+<div class='gitee-nav__sidebar-close-button'>
+<i class='fa fa-angle-double-left'></i>
+</div>
+</div>
+</div>
+</div>
+
+<div class='item gitosc-logo'>
+<a href="/"><img alt='码云 Gitee — 基于 Git 的代码托管和研发协作平台' class='ui inline image' height='28' src='/static/images/logo.svg?t=158106664' title='码云 Gitee — 基于 Git 的代码托管和研发协作平台' width='95'>
+<img alt='码云 Gitee — 基于 Git 的代码托管和研发协作平台' class='ui inline black image' height='28' src='/static/images/logo-black.svg?t=158106664' title='码云 Gitee — 基于 Git 的代码托管和研发协作平台' width='95'>
+</a></div>
+<a class="item " href="/explore" title="开源软件">开源软件
+</a><a class="item " href="/enterprises" title="企业版">企业版
+<sup class='ui red label'>
+特惠
+</sup>
+</a><a class="item " href="/education" title="高校版">高校版
+</a><a class="item" href="https://blog.gitee.com/" id="gitee-blog" target="_blank" title="博客">博客
+</a><div class='center responsive-logo'>
+<a href="/"><img alt='码云 Gitee — 基于 Git 的代码托管和研发协作平台' class='ui inline image' height='24' src='/static/images/logo.svg?t=158106664' title='码云 Gitee — 基于 Git 的代码托管和研发协作平台' width='85'>
+<img alt='码云 Gitee — 基于 Git 的代码托管和研发协作平台' class='ui inline black image' height='24' src='/static/images/logo-black.svg?t=158106664' title='码云 Gitee — 基于 Git 的代码托管和研发协作平台' width='85'>
+</a></div>
+<div class='right menu userbar' id='git-nav-user-bar'>
+<form accept-charset="UTF-8" action="/search" class="ui item" data-text-filter="搜索格式不正确" data-text-require="搜索关键字不能少于1个" id="navbar-search-form" method="get"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /></div>
+<input id="navbar-search-type" name="type" type="hidden" />
+<input id="fork_filter" name="fork_filter" type="hidden" value="on" />
+<div class='ui search'>
+<input class="prompt" id="navbar-search-input" name="q" placeholder="搜索项目" type="text" value="" />
+</div>
+</form>
+
+<script>
+  var can_search_in_repo = 0,
+      repo = "",
+      reponame = "";
+  
+  $(function() {
+    var $search = $('#navbar-search-form .ui.search');
+    $search.search({
+      apiSettings: {
+        url: '/search/relative_project?q={query}',
+        onResponse: function (res) {
+          if (res && res.status === 200 && res.data) {
+            var query = $search.search('get value');
+  
+            res.data.map(function (item) {
+              item.path_ns = '/' + item.path_ns;
+              item.icon = 'iconfont icon-project-public';
+            });
+            res.data.unshift({
+              name_ns: "在全站搜索 <b class='hl'>" + query +"</b> 相关项目",
+              path_ns: '/search?fork_filter=on&q=' + query,
+              icon: 'iconfont icon-search'
+            });
+            if(can_search_in_repo == 1) {
+              res.data.unshift({
+                name_ns: "在当前仓库搜索 <b class='hl'>" + query +"</b> 相关代码",
+                path_ns: '/search?type=code&q=' + query + '&repo=' + repo + '&reponame=' + reponame,
+                icon: 'iconfont icon-search'
+              });
+            }
+            return res;
+          } else {
+            return { data: [] };
+          }
+        }
+      },
+      fields: {
+        results: 'data',
+        description: 'name_ns',
+        url: 'path_ns',
+        icon: 'icon'
+      },
+      minCharacters: 1,
+      maxResults: 10,
+      searchDelay: 120,
+      showNoResults: false,
+      transition: 'fade'
+    });
+  });
+</script>
+
+<a class="item git-nav-user__login-item" href="/login">登录
+</a><a class="item git-nav-user__register-item" href="/signup">注册
+</a><script>
+  $('.destroy-user-session').on('click', function() {
+    $.cookie('access_token', null, { path: '/' });
+  })
+</script>
+
+</div>
+</div>
+</div>
+</header>
+<script>
+  Gitee.initNavbar()
+  Gitee.initRepoRemoteWay()
+</script>
+
+<div class='fixed-notice-infos'>
+<div class='all-messages'>
+<div class='ui info message' id='git-bulletin'>
+<a href=https://blog.gitee.com/2020/04/07/gitee-go/ target='_blank'>Gitee 企业版上线 DevOps 工具「Gitee Go」</a>
+<i class='icon remove' id='remove-bulletin'></i>
+</div>
+</div>
+<div class='ui container'>
+<div class='flash-messages' id='messages-container'></div>
+</div>
+<script>
+  (function() {
+    $(function() {
+      var $error_box, alertTip, notify_content, notify_options, template;
+      template = '<div data-notify="container" class="ui {0} message" role="alert">' + '<i data-notify="dismiss" class="close icon"></i>' + '<span data-notify="message">{2}</span>' + '</div>';
+      notify_content = null;
+      notify_options = {};
+      alertTip = '';
+      $error_box = $(".flash_error.flash_error_box");
+      if (notify_options.type === 'error' && $error_box.length > 0 && !$.isEmptyObject(notify_content.message)) {
+        if (notify_content.message === 'captcha_fail') {
+          alertTip = "验证码不正确";
+        } else if (notify_content.message === 'captcha_expired') {
+          alertTip = "验证码已过期，请点击刷新";
+        } else if (notify_content.message === 'not_found_in_database') {
+          alertTip = "帐号或者密码错误";
+        } else if (notify_content.message === 'not_found_and_show_captcha') {
+          alertTip = "帐号或者密码错误";
+        } else if (notify_content.message === 'phone_captcha_fail') {
+          alertTip = "手机验证码不通过";
+        } else {
+          alertTip = notify_content.message;
+        }
+        return $error_box.html(alertTip).show();
+      } else if (notify_content) {
+        if ("watched" === 'third_party_binding') {
+          return $('#third_party_binding-message').html(notify_content.message).addClass('ui message red');
+        }
+        notify_options.delay = 3000;
+        notify_options.template = template;
+        notify_options.offset = {
+          x: 10,
+          y: 30
+        };
+        notify_options.element = '#messages-container';
+        return $.notify(notify_content, notify_options);
+      }
+    });
+  
+  }).call(this);
+</script>
+
+</div>
+<script>
+  (function() {
+    $(function() {
+      var setCookie;
+      setCookie = function(name, value) {
+        $.cookie(name, value, {
+          path: '/',
+          expires: 365
+        });
+      };
+      $('#remove-bulletin, #remove-bulletin-dashboard').on('click', function() {
+        setCookie('remove_bulletin', "gitee-maintain-1586321954");
+        $('#git-bulletin').hide();
+      });
+      $('#remove-member-bulletin').on('click', function() {
+        setCookie('remove_member_bulletin', "gitee_member_bulletin");
+        $(this).parent().hide();
+      });
+      return $('#remove-gift-bulletin').on('click', function() {
+        setCookie('remove_gift_bulletin', "gitee-gift-bulletin");
+        $(this).parent().hide();
+      });
+    });
+  
+  }).call(this);
+</script>
+<script>
+  function closeMessageBanner(pthis, type, val) {
+    var json = {}
+  
+    val = typeof val === 'undefined' ? null : val
+    $(pthis).parent().remove()
+    if (type === 'out_of_enterprise_member') {
+      json = {type: type, data: val}
+    } else if (type === 'enterprise_overdue') {
+      json = {type: type, data: val}
+    }
+    $.post('/profile/close_flash_tip', json)
+  }
+</script>
+
+<!--[if lt IE 10]>
+<script>
+  window.location.href = "/incompatible.html"
+</script>
+<![endif]-->
+
+<div class='site-content'>
+<div class='ui container user_page' id='user-show-detail'>
+<div class='ui grid' id='rc-users__container'>
+<div class='four wide column dashbord-sidebar'>
+<div class='users__personal-container'>
+<div class='users__personal-avatar'>
+<a href="/tiandian"><img alt="369534 tiandian 1578921762" class="ui image avatar" src="https://portrait.gitee.com/uploads/avatars/user/123/369534_tiandian_1578921762.jpg!avatar200" />
+</a><div class='avatar-gender mars'>
+<i class='icon mars'></i>
+</div>
+</div>
+<div class='users__personal-name'>
+<h2>
+<span title='李紫电'>李紫电</span>
+</h2>
+<p>@tiandian</p>
+<p class='bio'>李紫电 暂无简介</p>
+<div class='mt-1'>
+<div class='ui small label'>JavaScript</div>
+<div class='ui small label'>PHP</div>
+<div class='ui small label'>HTML</div>
+<div class='ui small label'>HTML/CSS</div>
+</div>
+</div>
+<div class='users__personal-setting'>
+<a class="ui orange button" href="/login"><i class='icon empty heart'></i>
+<span>关注</span>
+</a><a class="ui basic button" href="/login"><i class='icon mail outline'></i>
+<span>私信</span>
+</a></div>
+<div class='users__personal-socials'>
+<div class='ui grid'>
+<div class='four wide column'>
+<a href="/tiandian/starred"><div class='social-count'>80</div>
+<div class='social-name'>Stars</div>
+</a></div>
+<div class='four wide column'>
+<a href="/tiandian/watched"><div class='social-count'>18</div>
+<div class='social-name'>Watches</div>
+</a></div>
+<div class='four wide column' id='followers-number'>
+<a href="/tiandian/followers"><div class='social-count'>48</div>
+<div class='social-name'>Followers</div>
+</a></div>
+<div class='four wide column'>
+<a href="/tiandian/following"><div class='social-count'>0</div>
+<div class='social-name'>Following</div>
+</a></div>
+</div>
+</div>
+<div class='users__personal-info'>
+<div class='info-item'>
+<i class='iconfont icon-location'></i>
+<span title='福建省/泉州市'>
+福建省/泉州市
+</span>
+</div>
+<div class='info-item' title='www.oscshop.cn 创始人'>
+<i class='iconfont icon-enterprise'></i>
+<span>www.oscshop.cn</span>
+<span>创始人</span>
+</div>
+<div class='info-item'>
+<i class='iconfont icon-qq'></i>
+<span>1093157171</span>
+</div>
+<div class='info-item'>
+<i class='iconfont icon-tag-wechat'></i>
+<span>lizidian1999</span>
+</div>
+</div>
+<script>
+  var $personalContainer = $('.users__personal-container');
+  var $followButton = $personalContainer.find('.follow-button');
+  var $followersNumber = $personalContainer.find('#followers-number .follow-num');
+  var $btnEditUserRemark = $personalContainer.find('#btn-edit-user-remark');
+  var $remarkName = $btnEditUserRemark.find('.js-remark-name');
+  
+  $followButton.on('click', function () {
+    var $this = $(this);
+    if ($this.hasClass('followed')) {
+      $.post("/tiandian/unfollow").done(function (res) {
+        if (res.code == 1) {
+          $this.removeClass('followed').find('span').text("关注");
+          if ($remarkName.hasClass('blank')) {
+            $btnEditUserRemark.addClass('hide');
+          }
+          if ($followersNumber.length) {
+            $followersNumber.text(res.data.followers_count);
+          }
+        }
+      });
+    } else {
+      $.post("/tiandian/follow").done(function (res) {
+        if (res.code == 1) {
+          $this.addClass('followed').find('span').text("取消关注");
+          if ($remarkName.hasClass('blank')) {
+            $btnEditUserRemark.removeClass('hide');
+          }
+          if ($followersNumber.length) {
+            $followersNumber.text(res.data.followers_count);
+          }
+        }
+      });
+    }
+  });
+</script>
+</div>
+
+
+
+</div>
+<div class='twelve wide column git-user-twl-col'>
+<div class='row git-user-content'>
+<div class='project-list'>
+<div class='git-user-content-header user-page-header'>
+<div class='git-user-header'>
+<div class='gitee-headbread'>
+<a href="/tiandian">李紫电的个人主页</a>
+<div class='gitee-divider'>/</div>
+<strong>关注的仓库<span id='projects-count'>(18)</span></strong>
+</div>
+
+</div>
+<div class='git-user-header__right'>
+<div class='ui top left pointing dropdown gradient button link item git-user-selection-dropdown'>
+<div class='text'>
+最近更新
+</div>
+<i class='icon dropdown'></i>
+<div class='menu'>
+<a class="item" href="/tiandian/watched">最近更新</a>
+<a class="item" href="/tiandian/watched?sort=watches.created_at+desc">最新Watch</a>
+<a class="item" href="/tiandian/watched?sort=projects.name">仓库名称</a>
+</div>
+</div>
+<div class='git-user-serach-prj'>
+<div class='ui left small icon search input' id='search_project'>
+<div class='ui icon input'>
+<input class='prompt' id='search-projects' placeholder='快速搜索...' type='text'>
+<i class='iconfont icon-search icon'></i>
+</div>
+</div>
+</div>
+<script>
+  $('#search-projects').on('keydown', function(e) {
+    if(e.keyCode == 13) {
+      var searchContent = $(this).val()
+      $.ajax({
+        type: 'GET',
+        url: "/tiandian/watched",
+        dataType: 'script',
+        beforeSend: function() {
+          $('#search_project').find('.ui.icon.input').addClass('loading')
+        },
+        complete: function() {
+          $('#search_project').find('.ui.icon.input').removeClass('loading')
+        },
+        data: {
+          search: searchContent
+        }
+      });
+    }
+  })
+</script>
+
+</div>
+</div>
+<div class='git-tags'>
+
+</div>
+<div id='search-projects-ulist'>
+<ul class='git-user-projects-ulist'>
+<div class='star-watch-container list-warpper'>
+<h4>
+<span class='watch-button pull-right'>
+<a class="ui basic button pre-watch" href="/login" title="你必须登录后才可以star一个仓库"><i class='iconfont icon-watch'></i>
+Watch
+</a></span>
+<span class='pro-name'>
+<span class='pro-name'>
+<span class="project-title"><i class="project-icon iconfont icon-project-public" title="这是一个公开仓库"></i> <a class="author" href="/yurunsoft" title="宇润">宇润</a> / <a class="repository" href="/yurunsoft/IMI" style="padding-bottom: 0px" target="_blank" title="imi">imi</a></span><span class="project-badges"><a class="ui small label proj-language" href="/explore/all?lang=PHP" target="_blank" title="主要编程语言">PHP</a></span>
+<i class='iconfont icon-recommended js-popup-default' data-position='right center' title='码云推荐项目'></i>
+
+</span>
+</span>
+</h4>
+<p class='description mb-1'>
+imi 是基于 PHP 协程应用开发框架，它支持 HttpApi、WebSocket、TCP、UDP 应用开发。QQ群：17916227。本仓库仅用于存档，不再发布更新日志，请移步 Github：https://github.com/Yurunsoft/IMI
+<div class='user-tags mb-1' id='user-project-tags-3413225'>
+
+</div>
+</p>
+<span class='create-time ml-2'>
+最近更新:
+<span>1小时前</span>
+</span>
+<ul class='repo-stats pull-left'>
+<li class='watch'>
+<a href="/yurunsoft/IMI/watchers" target="_blank"><i class='iconfont icon-watch'></i>
+</a><a href="/yurunsoft/IMI/watchers" target="_blank">43
+</a></li>
+<li class='star'>
+<a href="/yurunsoft/IMI/stargazers" target="_blank"><i class='iconfont icon-star'></i>
+</a><a href="/yurunsoft/IMI/stargazers" target="_blank">228
+</a></li>
+<li class='fork'>
+<a href="/yurunsoft/IMI/members" target="_blank"><i class='iconfont icon-fork'></i>
+</a><a href="/yurunsoft/IMI/members" target="_blank">42
+</a></li>
+</ul>
+</div>
+<div class='ui divider'></div>
+<div class='star-watch-container list-warpper'>
+<h4>
+<span class='watch-button pull-right'>
+<a class="ui basic button pre-watch" href="/login" title="你必须登录后才可以star一个仓库"><i class='iconfont icon-watch'></i>
+Watch
+</a></span>
+<span class='pro-name'>
+<span class='pro-name'>
+<span class="project-title"><i class="project-icon iconfont icon-project-public" title="这是一个公开仓库"></i> <a class="author" href="/crm8000" title="CRM8000">CRM8000</a> / <a class="repository" href="/crm8000/PSI" style="padding-bottom: 0px" target="_blank" title="PSI">PSI</a></span><span class="project-badges"><a class="ui small label proj-language" href="/explore/all?lang=PHP" target="_blank" title="主要编程语言">PHP</a></span>
+<i class='iconfont icon-recommended js-popup-default' data-position='right center' title='码云推荐项目'></i>
+
+</span>
+</span>
+</h4>
+<p class='description mb-1'>
+PSI 是企业管理软件
+<div class='user-tags mb-1' id='user-project-tags-298991'>
+
+</div>
+</p>
+<span class='create-time ml-2'>
+最近更新:
+<span>15小时前</span>
+</span>
+<ul class='repo-stats pull-left'>
+<li class='watch'>
+<a href="/crm8000/PSI/watchers" target="_blank"><i class='iconfont icon-watch'></i>
+</a><a href="/crm8000/PSI/watchers" target="_blank">631
+</a></li>
+<li class='star'>
+<a href="/crm8000/PSI/stargazers" target="_blank"><i class='iconfont icon-star'></i>
+</a><a href="/crm8000/PSI/stargazers" target="_blank">1719
+</a></li>
+<li class='fork'>
+<a href="/crm8000/PSI/members" target="_blank"><i class='iconfont icon-fork'></i>
+</a><a href="/crm8000/PSI/members" target="_blank">750
+</a></li>
+</ul>
+</div>
+<div class='ui divider'></div>
+<div class='star-watch-container list-warpper'>
+<h4>
+<span class='watch-button pull-right'>
+<a class="ui basic button pre-watch" href="/login" title="你必须登录后才可以star一个仓库"><i class='iconfont icon-watch'></i>
+Watch
+</a></span>
+<span class='pro-name'>
+<span class='pro-name'>
+<span class="project-title"><i class="project-icon iconfont icon-project-public" title="这是一个公开仓库"></i> <a class="author" href="/yurunsoft" title="宇润">宇润</a> / <a class="repository" href="/yurunsoft/PaySDK" style="padding-bottom: 0px" target="_blank" title="PaySDK">PaySDK</a></span><span class="project-badges"><a class="ui small label proj-language" href="/explore/all?lang=PHP" target="_blank" title="主要编程语言">PHP</a></span>
+<i class='iconfont icon-recommended js-popup-default' data-position='right center' title='码云推荐项目'></i>
+
+</span>
+</span>
+</h4>
+<p class='description mb-1'>
+PHP 集成支付 SDK ，集成了支付宝、微信支付的支付接口和其它相关接口的操作。可以轻松嵌入支持 PHP &gt;= 5.4 的任何系统中。宇润PHP全家桶技术支持群：17916227。本仓库仅用于存档，不再发布更新日志，请移步 Github：
+<div class='user-tags mb-1' id='user-project-tags-2419011'>
+
+</div>
+</p>
+<span class='create-time ml-2'>
+最近更新:
+<span>17天前</span>
+</span>
+<ul class='repo-stats pull-left'>
+<li class='watch'>
+<a href="/yurunsoft/PaySDK/watchers" target="_blank"><i class='iconfont icon-watch'></i>
+</a><a href="/yurunsoft/PaySDK/watchers" target="_blank">123
+</a></li>
+<li class='star'>
+<a href="/yurunsoft/PaySDK/stargazers" target="_blank"><i class='iconfont icon-star'></i>
+</a><a href="/yurunsoft/PaySDK/stargazers" target="_blank">398
+</a></li>
+<li class='fork'>
+<a href="/yurunsoft/PaySDK/members" target="_blank"><i class='iconfont icon-fork'></i>
+</a><a href="/yurunsoft/PaySDK/members" target="_blank">107
+</a></li>
+</ul>
+</div>
+<div class='ui divider'></div>
+<div class='star-watch-container list-warpper'>
+<h4>
+<span class='watch-button pull-right'>
+<a class="ui basic button pre-watch" href="/login" title="你必须登录后才可以star一个仓库"><i class='iconfont icon-watch'></i>
+Watch
+</a></span>
+<span class='pro-name'>
+<span class='pro-name'>
+<span class="project-title"><i class="project-icon iconfont icon-project-public" title="这是一个公开仓库"></i> <a class="author" href="/yurunsoft" title="宇润">宇润</a> / <a class="repository" href="/yurunsoft/YurunOAuthLogin" style="padding-bottom: 0px" target="_blank" title="YurunOAuthLogin">YurunOAuthLogin</a></span><span class="project-badges"><a class="ui small label proj-language" href="/explore/all?lang=PHP" target="_blank" title="主要编程语言">PHP</a></span>
+<i class='iconfont icon-recommended js-popup-default' data-position='right center' title='码云推荐项目'></i>
+
+</span>
+</span>
+</h4>
+<p class='description mb-1'>
+PHP 第三方登录授权 SDK，集成了QQ、微信、微博、Github等常用接口。QQ群：17916227。本仓库仅用于存档，不再发布更新日志，请移步 Github：
+<div class='user-tags mb-1' id='user-project-tags-2209002'>
+
+</div>
+</p>
+<span class='create-time ml-2'>
+最近更新:
+<span>20天前</span>
+</span>
+<ul class='repo-stats pull-left'>
+<li class='watch'>
+<a href="/yurunsoft/YurunOAuthLogin/watchers" target="_blank"><i class='iconfont icon-watch'></i>
+</a><a href="/yurunsoft/YurunOAuthLogin/watchers" target="_blank">51
+</a></li>
+<li class='star'>
+<a href="/yurunsoft/YurunOAuthLogin/stargazers" target="_blank"><i class='iconfont icon-star'></i>
+</a><a href="/yurunsoft/YurunOAuthLogin/stargazers" target="_blank">220
+</a></li>
+<li class='fork'>
+<a href="/yurunsoft/YurunOAuthLogin/members" target="_blank"><i class='iconfont icon-fork'></i>
+</a><a href="/yurunsoft/YurunOAuthLogin/members" target="_blank">61
+</a></li>
+</ul>
+</div>
+<div class='ui divider'></div>
+<div class='star-watch-container list-warpper'>
+<h4>
+<span class='watch-button pull-right'>
+<a class="ui basic button pre-watch" href="/login" title="你必须登录后才可以star一个仓库"><i class='iconfont icon-watch'></i>
+Watch
+</a></span>
+<span class='pro-name'>
+<span class='pro-name'>
+<span class="project-title"><i class="project-icon iconfont icon-project-public" title="这是一个公开仓库"></i> <a class="author" href="/tiandian" title="李紫电">李紫电</a> / <a class="repository" href="/tiandian/oscshop2" style="padding-bottom: 0px" target="_blank" title="oscshop2">oscshop2</a></span><span class="project-badges"><a class="ui small label proj-language" href="/explore/all?lang=PHP" target="_blank" title="主要编程语言">PHP</a></span>
+<i class='iconfont icon-recommended js-popup-default' data-position='right center' title='码云推荐项目'></i>
+
+</span>
+</span>
+</h4>
+<p class='description mb-1'>
+使用thinkphp5设计的开源免费B2C商城系统，包含微信手机端，遵循Apache2开源协议发布
+<div class='user-tags mb-1' id='user-project-tags-956096'>
+
+</div>
+</p>
+<span class='create-time ml-2'>
+最近更新:
+<span>7个月前</span>
+</span>
+<ul class='repo-stats pull-left'>
+<li class='watch'>
+<a href="/tiandian/oscshop2/watchers" target="_blank"><i class='iconfont icon-watch'></i>
+</a><a href="/tiandian/oscshop2/watchers" target="_blank">148
+</a></li>
+<li class='star'>
+<a href="/tiandian/oscshop2/stargazers" target="_blank"><i class='iconfont icon-star'></i>
+</a><a href="/tiandian/oscshop2/stargazers" target="_blank">357
+</a></li>
+<li class='fork'>
+<a href="/tiandian/oscshop2/members" target="_blank"><i class='iconfont icon-fork'></i>
+</a><a href="/tiandian/oscshop2/members" target="_blank">150
+</a></li>
+</ul>
+</div>
+<div class='ui divider'></div>
+<div class='star-watch-container list-warpper'>
+<h4>
+<span class='watch-button pull-right'>
+<a class="ui basic button pre-watch" href="/login" title="你必须登录后才可以star一个仓库"><i class='iconfont icon-watch'></i>
+Watch
+</a></span>
+<span class='pro-name'>
+<span class='pro-name'>
+<span class="project-title"><i class="project-icon iconfont icon-project-public" title="这是一个公开仓库"></i> <a class="author" href="/sy" title="泷涯">泷涯</a> / <a class="repository" href="/sy/Yesf" style="padding-bottom: 0px" target="_blank" title="Yesf">Yesf</a></span><span class="project-badges"><a class="ui small label proj-language" href="/explore/all?lang=PHP" target="_blank" title="主要编程语言">PHP</a></span>
+<i class='iconfont icon-recommended js-popup-default' data-position='right center' title='码云推荐项目'></i>
+
+</span>
+</span>
+</h4>
+<p class='description mb-1'>
+一个基于Swoole的PHP框架
+<div class='user-tags mb-1' id='user-project-tags-1565753'>
+
+</div>
+</p>
+<span class='create-time ml-2'>
+最近更新:
+<span>11个月前</span>
+</span>
+<ul class='repo-stats pull-left'>
+<li class='watch'>
+<a href="/sy/Yesf/watchers" target="_blank"><i class='iconfont icon-watch'></i>
+</a><a href="/sy/Yesf/watchers" target="_blank">16
+</a></li>
+<li class='star'>
+<a href="/sy/Yesf/stargazers" target="_blank"><i class='iconfont icon-star'></i>
+</a><a href="/sy/Yesf/stargazers" target="_blank">27
+</a></li>
+<li class='fork'>
+<a href="/sy/Yesf/members" target="_blank"><i class='iconfont icon-fork'></i>
+</a><a href="/sy/Yesf/members" target="_blank">9
+</a></li>
+</ul>
+</div>
+<div class='ui divider'></div>
+<div class='star-watch-container list-warpper'>
+<h4>
+<span class='watch-button pull-right'>
+<a class="ui basic button pre-watch" href="/login" title="你必须登录后才可以star一个仓库"><i class='iconfont icon-watch'></i>
+Watch
+</a></span>
+<span class='pro-name'>
+<span class='pro-name'>
+<span class="project-title"><i class="project-icon iconfont icon-project-public" title="这是一个公开仓库"></i> <a class="author" href="/tiandian" title="李紫电">李紫电</a> / <a class="repository" href="/tiandian/easyswoole_admin" style="padding-bottom: 0px" target="_blank" title="easyswoole_admin">easyswoole_admin</a></span><span class="project-badges"><a class="ui small label proj-language" href="/explore/all?lang=PHP" target="_blank" title="主要编程语言">PHP</a></span>
+
+</span>
+</span>
+</h4>
+<p class='description mb-1'>
+easyswoole3简单后台，热更新，系统配置，权限系统，菜单
+<div class='user-tags mb-1' id='user-project-tags-5597721'>
+
+</div>
+</p>
+<span class='create-time ml-2'>
+最近更新:
+<span>1年前</span>
+</span>
+<ul class='repo-stats pull-left'>
+<li class='watch'>
+<a href="/tiandian/easyswoole_admin/watchers" target="_blank"><i class='iconfont icon-watch'></i>
+</a><a href="/tiandian/easyswoole_admin/watchers" target="_blank">2
+</a></li>
+<li class='star'>
+<a href="/tiandian/easyswoole_admin/stargazers" target="_blank"><i class='iconfont icon-star'></i>
+</a><a href="/tiandian/easyswoole_admin/stargazers" target="_blank">6
+</a></li>
+<li class='fork'>
+<a href="/tiandian/easyswoole_admin/members" target="_blank"><i class='iconfont icon-fork'></i>
+</a><a href="/tiandian/easyswoole_admin/members" target="_blank">1
+</a></li>
+</ul>
+</div>
+<div class='ui divider'></div>
+<div class='star-watch-container list-warpper'>
+<h4>
+<span class='watch-button pull-right'>
+<a class="ui basic button pre-watch" href="/login" title="你必须登录后才可以star一个仓库"><i class='iconfont icon-watch'></i>
+Watch
+</a></span>
+<span class='pro-name'>
+<span class='pro-name'>
+<span class="project-title"><i class="project-icon iconfont icon-project-public" title="这是一个公开仓库"></i> <a class="author" href="/rainfer" title="rainfer">rainfer</a> / <a class="repository" href="/rainfer/YFCMF" style="padding-bottom: 0px" target="_blank" title="yfcmf">yfcmf</a></span><span class="project-badges"><a class="ui small label proj-language" href="/explore/all?lang=PHP" target="_blank" title="主要编程语言">PHP</a></span>
+<i class='iconfont icon-recommended js-popup-default' data-position='right center' title='码云推荐项目'></i>
+
+</span>
+</span>
+</h4>
+<p class='description mb-1'>
+YFCMF是采用ThinkPHP5.1.*+国外ACE1.40的UI模板的后台内容管理框架。演示网站：v3分支:http://v3.rainfer.cn/admin/  用户名：demo密码：123456  v2.3.1分支:http://v2.rainfer.cn/admin/ 用户名:demo 密码:123456 交流：http://sns.yfcmf.net 文档：http://doc.yfcmf.net QQ群：213321650
+<div class='user-tags mb-1' id='user-project-tags-884373'>
+
+</div>
+</p>
+<span class='create-time ml-2'>
+最近更新:
+<span>1年前</span>
+</span>
+<ul class='repo-stats pull-left'>
+<li class='watch'>
+<a href="/rainfer/YFCMF/watchers" target="_blank"><i class='iconfont icon-watch'></i>
+</a><a href="/rainfer/YFCMF/watchers" target="_blank">334
+</a></li>
+<li class='star'>
+<a href="/rainfer/YFCMF/stargazers" target="_blank"><i class='iconfont icon-star'></i>
+</a><a href="/rainfer/YFCMF/stargazers" target="_blank">980
+</a></li>
+<li class='fork'>
+<a href="/rainfer/YFCMF/members" target="_blank"><i class='iconfont icon-fork'></i>
+</a><a href="/rainfer/YFCMF/members" target="_blank">318
+</a></li>
+</ul>
+</div>
+<div class='ui divider'></div>
+<div class='star-watch-container list-warpper'>
+<h4>
+<span class='watch-button pull-right'>
+<a class="ui basic button pre-watch" href="/login" title="你必须登录后才可以star一个仓库"><i class='iconfont icon-watch'></i>
+Watch
+</a></span>
+<span class='pro-name'>
+<span class='pro-name'>
+<span class="project-title"><i class="project-icon iconfont icon-project-public" title="这是一个公开仓库"></i> <a class="author" href="/tumobi" title="tumobi">tumobi</a> / <a class="repository" href="/tumobi/nideshop-mini-program" style="padding-bottom: 0px" target="_blank" title="nideshop-mini-program">nideshop-mini-program</a></span><span class="project-badges"><a class="ui small label proj-language" href="/explore/all?lang=JavaScript" target="_blank" title="主要编程语言">JavaScript</a></span>
+<i class='iconfont icon-recommended js-popup-default' data-position='right center' title='码云推荐项目'></i>
+
+</span>
+</span>
+</h4>
+<p class='description mb-1'>
+ＮideShop：基于Node.js+MySQL开发的高仿网易严选开源B2C商城（微信小程序客户端）
+<div class='user-tags mb-1' id='user-project-tags-2192366'>
+
+</div>
+</p>
+<span class='create-time ml-2'>
+最近更新:
+<span>1年多前</span>
+</span>
+<ul class='repo-stats pull-left'>
+<li class='watch'>
+<a href="/tumobi/nideshop-mini-program/watchers" target="_blank"><i class='iconfont icon-watch'></i>
+</a><a href="/tumobi/nideshop-mini-program/watchers" target="_blank">178
+</a></li>
+<li class='star'>
+<a href="/tumobi/nideshop-mini-program/stargazers" target="_blank"><i class='iconfont icon-star'></i>
+</a><a href="/tumobi/nideshop-mini-program/stargazers" target="_blank">543
+</a></li>
+<li class='fork'>
+<a href="/tumobi/nideshop-mini-program/members" target="_blank"><i class='iconfont icon-fork'></i>
+</a><a href="/tumobi/nideshop-mini-program/members" target="_blank">175
+</a></li>
+</ul>
+</div>
+<div class='ui divider'></div>
+<div class='star-watch-container list-warpper'>
+<h4>
+<span class='watch-button pull-right'>
+<a class="ui basic button pre-watch" href="/login" title="你必须登录后才可以star一个仓库"><i class='iconfont icon-watch'></i>
+Watch
+</a></span>
+<span class='pro-name'>
+<span class='pro-name'>
+<span class="project-title"><i class="project-icon iconfont icon-project-public" title="这是一个公开仓库"></i> <a class="author" href="/null_708_9195" title="海上云霄">海上云霄</a> / <a class="repository" href="/null_708_9195/shopsn" style="padding-bottom: 0px" target="_blank" title="shopsn">shopsn</a></span><span class="project-badges"><a class="ui small label proj-language" href="/explore/all?lang=PHP" target="_blank" title="主要编程语言">PHP</a></span>
+
+</span>
+</span>
+</h4>
+<p class='description mb-1'>
+保留底部版权标志时允许商业无偿使用。无阉割版、无收费插件、无云市场等隐藏收费。任何电商主流程功能不做额外收费，如三大支付模块、物流信息、团购、优惠等。功能随时间逐步增加完善。盈利模式：个性化模板、个性化定制开发、如仓储、财务、门店等依附关系开发的较大型增值服务系统、。
+<div class='user-tags mb-1' id='user-project-tags-1335972'>
+
+</div>
+</p>
+<span class='create-time ml-2'>
+最近更新:
+<span>1年多前</span>
+</span>
+<ul class='repo-stats pull-left'>
+<li class='watch'>
+<a href="/null_708_9195/shopsn/watchers" target="_blank"><i class='iconfont icon-watch'></i>
+</a><a href="/null_708_9195/shopsn/watchers" target="_blank">159
+</a></li>
+<li class='star'>
+<a href="/null_708_9195/shopsn/stargazers" target="_blank"><i class='iconfont icon-star'></i>
+</a><a href="/null_708_9195/shopsn/stargazers" target="_blank">427
+</a></li>
+<li class='fork'>
+<a href="/null_708_9195/shopsn/members" target="_blank"><i class='iconfont icon-fork'></i>
+</a><a href="/null_708_9195/shopsn/members" target="_blank">179
+</a></li>
+</ul>
+</div>
+<div class='ui divider'></div>
+</ul>
+<style>
+  .ui.button.active:hover {
+    background-color: #fff; }
+</style>
+<script>
+  $('.star-button').each(function() {
+    $(this).on('ajax:success', (function() {
+      $(this).toggleClass('star')
+    }))
+  })
+</script>
+
+</div>
+</div>
+</div>
+<footer class='ui grid page'>
+<div class='column center aligned' id='projects-paginate'>
+<div class='column center aligned'>
+<div class='ui tiny pagination menu' id='git-discover-page'>
+
+<a class="item active" data-remote="true" href="/tiandian/watched">1</a>
+
+<a class="item" data-remote="true" href="/tiandian/watched?page=2" rel="next">2</a>
+
+<a class="icon item" data-remote="true" href="/tiandian/watched?page=2" rel="next"><i class='fa fa-angle-right'></i>
+</a>
+</div>
+</div>
+
+</div>
+</footer>
+
+</div>
+</div>
+</div>
+</div>
+<footer id='git-footer-main'>
+<div class='ui container'>
+<div class='ui two column grid '>
+<div class='nine wide column git-footer-left'>
+<p><a href="https://gitee.com/" target="_blank">© Gitee.com</a></p>
+<div class='ui four column grid' id='footer-left'>
+<div class='column'>
+<div class='ui link list'>
+<div class='item'>
+<a class="item" href="/about_us">关于我们</a>
+</div>
+<div class='item'>
+<a class="item" href="/terms">使用条款</a>
+</div>
+<div class='item'>
+<a class="item" href="/oschina/git-osc/issues">意见建议</a>
+</div>
+<div class='item'>
+<a class="item" href="/links.html">合作伙伴</a>
+</div>
+</div>
+</div>
+<div class='column'>
+<div class='ui link list'>
+<div class='item'>
+<a class="item" href="/all-about-git">Git 大全</a>
+</div>
+<div class='item'>
+<a class="item" href="https://oschina.gitee.io/learn-git-branching/">Git 命令学习</a>
+</div>
+<div class='item'>
+<a class="item" href="https://copycat.gitee.com/">代码克隆检测</a>
+</div>
+<div class='item'>
+<a class="item" href="/appclient">APP与插件下载</a>
+</div>
+</div>
+</div>
+<div class='column'>
+<div class='ui link list'>
+<div class='item'>
+<a class="item" href="/gitee-stars">码云封面人物</a>
+</div>
+<div class='item'>
+<a class="item" href="/gvp">GVP项目</a>
+</div>
+<div class='item'>
+<a class="item" href="https://blog.gitee.com/">码云博客</a>
+</div>
+<div class='item'>
+<a class="item" href="/enterprises#nonprofit-plan">Gitee 公益计划</a>
+</div>
+</div>
+</div>
+<div class='column'>
+<div class='ui link list'>
+<div class='item'>
+<a class="item" href="/api/v5/swagger">OpenAPI</a>
+</div>
+<div class='item'>
+<a class="item" href="/help">帮助文档</a>
+</div>
+<div class='item'>
+<a class="item" href="/self_services">在线自助服务</a>
+</div>
+<div class='item'>
+<a class="item" href="/git-osc">更新日志</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class='seven wide column right aligned followus git-footer-right'>
+<div class='qrcode weixin'>
+<img alt="Qrcode weixin" src="https://assets.gitee.com/assets/qrcode-weixin-9e7cfb27165143d2b8e8b268a52ea822.jpg" />
+<p class='weixin-text'>微信服务号</p>
+</div>
+<div class='phone-and-qq column'>
+<div class='ui list official-support-container'>
+<div class='item'>
+<a class="icon-popup" href="//shang.qq.com/wpa/qunwpa?idkey=df785aa7af71f7d74149ab062742d761b845464350ecba25eb440357a3e573b7" title="点击加入码云官方群"><i class='iconfont icon-logo-qq'></i>
+<span>官方技术交流QQ群：1050025484</span>
+</a></div>
+<div class='item mail-and-zhihu'>
+<a href="mailto: git@oschina.cn"><i class='iconfont icon-ic-mail'></i>
+<span id='git-footer-email'>git#oschina.cn</span>
+</a><a href="https://www.zhihu.com/org/ma-yun-osc/ " target="_blank"><i class='iconfont icon-zhihu'></i>
+<span>码云Gitee</span>
+</a></div>
+<div class='item'>企业版售前及售后使用咨询：400-606-0201</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class='bottombar'>
+<div class='ui container'>
+<div class='ui grid'>
+<div class='seven wide column partner'>
+<div class='copyright'>
+<a href="http://www.beian.miit.gov.cn/">粤ICP备12009483号</a>
+深圳市奥思网络科技有限公司版权所有
+</div>
+</div>
+<div class='nine wide column right aligned'>
+<i class='icon world'></i>
+<a href="/language/zh-CN">简 体</a>
+/
+<a href="/language/zh-TW">繁 體</a>
+/
+<a href="/language/en">English</a>
+</div>
+</div>
+</div>
+</div>
+</footer>
+<script>
+  var officialEmail = $('#git-footer-email').text()
+  $('#git-footer-main .icon-popup').popup({ position: 'bottom center' })
+  $('#git-footer-email').text(officialEmail.replace('#', '@'))
+</script>
+
+
+<div class='side-toolbar'>
+<div class='button toolbar-help'>
+<i class='iconfont icon-help'></i>
+</div>
+<div class='ui popup left center dark'>点此查找更多帮助</div>
+<div class='toolbar-help-dialog'>
+<div class='toolbar-dialog-header'>
+<h3 class='toolbar-dialog-title'>搜索帮助</h3>
+<form accept-charset="UTF-8" action="/help/load_keywords_data" class="toolbar-help-search-form" method="get"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /></div>
+<div class='ui icon input fluid toolbar-help-search'>
+<input name='keywords' placeholder='请输入产品名称或问题' type='text'>
+<i class='icon search'></i>
+</div>
+</form>
+
+<i class='iconfont icon-close toolbar-dialog-close-icon'></i>
+</div>
+<div class='toolbar-dialog-content'>
+<div class='toolbar-help-hot-search'>
+<div class='toolbar-roll'>
+<a class="init active" href="https://oschina.gitee.io/learn-git-branching/?utm_source==gitee-help-widget" title="Git 命令在线学习"><i class='Blue icon icon-command iconfont'></i>
+<span>Git 命令在线学习</span>
+</a><a class="init " href="https://gitee.com/help/articles/4261?utm_source==gitee-help-widget" title="如何在码云上导入 GitHub 仓库"><i class='icon icon-clipboard iconfont orange'></i>
+<span>如何在码云上导入 GitHub 仓库</span>
+</a></div>
+<div class='toolbar-list'>
+<div class='toolbar-list-item'>
+<a href="/help/articles/4114">Git 仓库基础操作</a>
+</div>
+<div class='toolbar-list-item'>
+<a href="/help/articles/4166">企业版和社区版功能对比</a>
+</div>
+<div class='toolbar-list-item'>
+<a href="/help/articles/4191">SSH 公钥设置</a>
+</div>
+<div class='toolbar-list-item'>
+<a href="/help/articles/4194">如何处理代码冲突</a>
+</div>
+<div class='toolbar-list-item'>
+<a href="/help/articles/4232">仓库体积过大，如何减小？</a>
+</div>
+<div class='toolbar-list-item'>
+<a href="/help/articles/4279">如何找回被删除的仓库数据</a>
+</div>
+<div class='toolbar-list-item'>
+<a href="/help/articles/4283">码云使用容量说明</a>
+</div>
+<div class='toolbar-list-item'>
+<a href="/help/articles/4284">GitHub仓库快速导入Gitee及同步更新</a>
+</div>
+</div>
+</div>
+<div class='toolbar-help-search-reseult'>
+<div class='toolbar-help-flex-column'>
+<div class='ui centered inline loader toolbar-help-loader'></div>
+<div class='toolbar-list'></div>
+<div class='toolbar-help-link-to-help'>
+<a href="" target="_blank">查看更多搜索结果</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script>
+  var opt = { position: 'left center' };
+  var $helpSideToolbar = $(".button.toolbar-help");
+  var $toolbarRoll = $('.toolbar-roll');
+  
+  $(function() {
+    if (false) {
+      $helpSideToolbar.popup(opt);
+    } else {
+      $helpSideToolbar.popup('show', opt);
+      setTimeout(function() {
+        $helpSideToolbar.popup('hide', opt);
+      }, 3000);
+    }
+  
+    if ($toolbarRoll.length) {
+      setInterval(function() {
+        var $nextActiveLink = $toolbarRoll.find('a.active').next();
+        if (!$nextActiveLink.length) {
+          $nextActiveLink = $toolbarRoll.find('a:first-child');
+        }
+        $nextActiveLink.attr('class', 'active').siblings().removeClass('active init');
+      }, 5000);
+    }
+  })
+</script>
+
+<div class='button share-link'>
+<i class='iconfont icon-share'></i>
+</div>
+<div class='ui popup dark'>
+<div class='header'>
+分享到
+</div>
+<div class='bdsharebuttonbox' style='display: flex'>
+<a class='iconfont icon-home-service-wechat' data-cmd='weixin' title='分享到微信'></a>
+<a class='iconfont icon-weibo' data-cmd='tsina' title='分享到新浪微博'></a>
+<a class='iconfont icon-qq' data-cmd='sqq' title='分享到QQ好友'></a>
+<a class='iconfont icon-qzone' data-cmd='qzone' title='分享到QQ空间'></a>
+</div>
+</div>
+<div class='button gotop popup' id='gotop'>
+<i class='iconfont icon-top'></i>
+</div>
+<div class='ui popup dark'>回到顶部</div>
+</div>
+<style>
+  .side-toolbar .bdsharebuttonbox a {
+    font-size: 24px;
+    color: white !important;
+    opacity: 0.9;
+    margin: 6px 6px 0px 6px;
+    background-image: none;
+    text-indent: 0;
+    height: auto;
+    width: auto;
+  }
+</style>
+<script>
+  (function() {
+    $('#project-user-message').popup({
+      position: 'left center'
+    });
+  
+  }).call(this);
+</script>
+<script>
+  Gitee.initSideToolbar({})
+</script>
+<script>
+  window._bd_share_config = {
+    "common": {
+      "bdSnsKey": {},
+      "bdText": document.title,
+      "bdMini": "1",
+      "bdMiniList": ["bdxc","tqf","douban","bdhome","sqq","thx","ibaidu","meilishuo","mogujie","diandian","huaban","duitang","hx","fx","youdao","sdo","qingbiji","people","xinhua","mail","isohu","yaolan","wealink","ty","iguba","fbook","twi","linkedin","h163","evernotecn","copy","print"],
+      "bdPic": "",
+      "bdStyle": "1",
+      "bdSize": "32"
+    },
+    "share": {}
+  }
+</script>
+<script src="/bd_share/static/api/js/share.js"></script>
+
+
+
+
+
+</body>
+</html>
