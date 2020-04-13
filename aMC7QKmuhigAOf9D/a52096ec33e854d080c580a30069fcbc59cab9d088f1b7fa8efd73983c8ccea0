@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+<title>研发项目管理软件(禅道) · 企业级微服务框架项目技术文档 · 看云</title>
+    <meta name="description"
+          content="企业级微服务开发框架的技术文档，基于SpringBoot2.x和SpringCloud并采用前后端分离的架构。引入组件化的思想实现高内聚低耦合，项目代码简洁注释丰富上手容易，真正实现了基于RBAC、jwt和oauth2的无状态统一权限认证的解决方案，并提供应用管理方便第三方系统接入；同时还集合各种微服务治理功能和监控功能。模块包括:企业级的认证系统、开发平台、应用监控、慢sql监控、统一日志、单点登录、Redis分布式高速缓存、配置中心、分布式任务调度、接口文档、代码生成等等"/>
+    <meta name="keywords"
+          content="微服务,前后端分离,监控,开发框架,RBAC权限,应用接入,SpringSecurity,SpringBoot,SpringCloud,JWT"/>
+            <meta name="viewport"
+                  content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no"
+                  data-react-helmet="true" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+                                <style data-react-helmet="true">
+        .dimmer {
+            box-sizing: content-box;
+            display: flex;
+            position: absolute;
+            top: 0 !important;
+            left: 0 !important;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            vertical-align: middle;
+            padding: 0;
+            background-color: #FFFFFF;
+            opacity: 1;
+            line-height: 1;
+            animation-fill-mode: both;
+            animation-duration: .5s;
+            transition: background-color .5s linear;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            user-select: none;
+            will-change: opacity;
+            z-index: 1000;
+        }
+
+        .loader {
+            box-sizing: content-box;
+            display: block;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            margin: 0;
+            text-align: center;
+            z-index: 1000;
+            -webkit-transform: translateX(-50%) translateY(-50%);
+            transform: translateX(-50%) translateY(-50%);
+        }
+
+        .loader:before {
+            position: absolute;
+            content: '';
+            top: 0;
+            left: 50%;
+            width: 50px;
+            height: 50px;
+            margin: 0 0 0 -25px;
+            border-radius: 50px;
+            border: 4px solid rgba(0, 0, 0, .1);
+        }
+
+        .loader:after {
+            position: absolute;
+            content: '';
+            top: 0;
+            left: 50%;
+            width:  50px;
+            height:  50px;
+            margin: 0 0 0 -25px;
+            animation: loader .6s linear;
+            animation-iteration-count: infinite;
+            border-radius:  50px;
+            border: 4px solid transparent;
+            border-top-color: #767676;
+            box-shadow: 0 0 0 1px transparent;
+        }
+
+        @keyframes loader {
+            from {
+                -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);
+            }
+            to {
+                -webkit-transform: rotate(360deg);
+                transform: rotate(360deg);
+            }
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        #main {
+            display: block !important;
+            height: 100vh;
+            overflow: hidden;
+        }
+    </style>
+</head>
+<body>
+<div id="main">
+    <div class="seo">
+        <div class="content">
+                            ~~~[purchase:4999]
+https://www.kancloud.cn/zlt2000/microservices-platform/purchase
+~~~
+                    </div>
+        <div class="catalog">
+            <ul>
+                                    <li><a href="919412">项目介绍</a></li>
+                                    <li><a href="919413">项目声明</a></li>
+                                    <li><a href="919414">项目简介</a></li>
+                                    <li><a href="919415">核心功能</a></li>
+                                    <li><a href="919416">运行环境</a></li>
+                                    <li><a href="936235">项目更新日志</a></li>
+                                    <li><a href="936236">文档更新日志</a></li>
+                                    <li><a href="981382">F&amp;Q</a></li>
+                                    <li><a href="919417">部署教程</a></li>
+                                    <li><a href="919418">环境准备</a></li>
+                                    <li><a href="919419">必要启动模块</a></li>
+                                    <li><a href="919420">扩展模块(可选)</a></li>
+                                    <li><a href="1335171">打包工程</a></li>
+                                    <li><a href="919421">开发说明</a></li>
+                                    <li><a href="1224745">登录认证</a></li>
+                                    <li><a href="1224748">基础功能</a></li>
+                                    <li><a href="1224749">分布式功能</a></li>
+                                    <li><a href="1239488">Spring Boot自定义配置自动提示</a></li>
+                                    <li><a href="1158135">核心接口</a></li>
+                                    <li><a href="919423">用户名密码+验证码登录</a></li>
+                                    <li><a href="919424">通过openId获取token</a></li>
+                                    <li><a href="919425">通过手机号获取token</a></li>
+                                    <li><a href="919426">第三方系统接口对接方式</a></li>
+                                    <li><a href="919427">第三方系统单点登录</a></li>
+                                    <li><a href="1158133">账号登出接口</a></li>
+                                    <li><a href="1160631">通用刷新token</a></li>
+                                    <li><a href="919428">系统设计</a></li>
+                                    <li><a href="973388">企业级微服务总体分层架构图</a></li>
+                                    <li><a href="919430">企业级服务认证架构设计</a></li>
+                                    <li><a href="972534">有网络隔离</a></li>
+                                    <li><a href="1153640">无网络隔离V1</a></li>
+                                    <li><a href="1153641">无网络隔离V2</a></li>
+                                    <li><a href="1165104">token自动续签设计(Redis Token)</a></li>
+                                    <li><a href="1202397">url级权限控制</a></li>
+                                    <li><a href="919431">企业级日志解决方案设计</a></li>
+                                    <li><a href="964522">企业级监控架构设计(Metrics)</a></li>
+                                    <li><a href="920411">框架技术选型</a></li>
+                                    <li><a href="925046">架构设计方法论思维导图</a></li>
+                                    <li><a href="925445">系统幂等性设计与实践</a></li>
+                                    <li><a href="967271">分布式ID生成器解决方案</a></li>
+                                    <li><a href="1050047">实时搜索系统设计</a></li>
+                                    <li><a href="919432">企业级功能</a></li>
+                                    <li><a href="1026654">alibaba/nacos注册中心</a></li>
+                                    <li><a href="936145">介绍与相关资料</a></li>
+                                    <li><a href="936355">设计模型</a></li>
+                                    <li><a href="936141">部署</a></li>
+                                    <li><a href="936142">配置中心</a></li>
+                                    <li><a href="936143">服务注册发现</a></li>
+                                    <li><a href="936144">生产部署方案</a></li>
+                                    <li><a href="989544">通过Nginx来实现环境隔离</a></li>
+                                    <li><a href="919434">统一日志中心详解</a></li>
+                                    <li><a href="961673">介绍与相关资料</a></li>
+                                    <li><a href="961674">docker安装部署</a></li>
+                                    <li><a href="961675">非docker安装部署</a></li>
+                                    <li><a href="961676">Filebeat安装部署</a></li>
+                                    <li><a href="961677">ES数据定期删除</a></li>
+                                    <li><a href="1524980">没数据问题排查思路</a></li>
+                                    <li><a href="1537304">Logstash的grok语法调试</a></li>
+                                    <li><a href="919435">慢查询sql详解</a></li>
+                                    <li><a href="1486265">审计日志-elk详解</a></li>
+                                    <li><a href="1026655">alibaba/sentinel限流熔断</a></li>
+                                    <li><a href="936146">介绍与相关资料</a></li>
+                                    <li><a href="936147">使用示范</a></li>
+                                    <li><a href="1129301">动态规则扩展</a></li>
+                                    <li><a href="936148">生产应用</a></li>
+                                    <li><a href="1203036">网关流控</a></li>
+                                    <li><a href="943967">JWT的RSA非对称密钥生成</a></li>
+                                    <li><a href="952920">Docker</a></li>
+                                    <li><a href="952921">安装(外网)</a></li>
+                                    <li><a href="952922">安装(内网)</a></li>
+                                    <li><a href="943966">构建项目镜像(免Dockerfile文件)</a></li>
+                                    <li><a href="955597">APM监控-SkyWalking</a></li>
+                                    <li><a href="955598">介绍与相关资料</a></li>
+                                    <li><a href="955599">APM系统简单对比(zipkin,pinpoint和skywalking)</a></li>
+                                    <li><a href="955625">server安装部署</a></li>
+                                    <li><a href="955626">agent安装</a></li>
+                                    <li><a href="989545">日志信息清理</a></li>
+                                    <li><a href="964113">Metrics监控</a></li>
+                                    <li><a href="964114">介绍与相关资料</a></li>
+                                    <li><a href="964284">安装部署</a></li>
+                                    <li><a href="964311">各组件监控</a></li>
+                                    <li><a href="988837">Grafana仪表盘模板下载</a></li>
+                                    <li><a href="1519914">Grafana告警配置</a></li>
+                                    <li><a href="985365">分布式事务</a></li>
+                                    <li><a href="985366">基础概念和理论</a></li>
+                                    <li><a href="985367">TX-LCN(同步场景)</a></li>
+                                    <li><a href="1280566">SEATA(同步场景)</a></li>
+                                    <li><a href="1326308">RocketMQ(异步场景)</a></li>
+                                    <li><a href="997744">MySQL</a></li>
+                                    <li><a href="997745">主从复制</a></li>
+                                    <li><a href="997746">主从切换</a></li>
+                                    <li><a href="997747">主主复制</a></li>
+                                    <li><a href="997748">高可用方案</a></li>
+                                    <li><a href="997749">Redis</a></li>
+                                    <li><a href="997750">单机</a></li>
+                                    <li><a href="997751">主从复制</a></li>
+                                    <li><a href="997752">主从复制+哨兵</a></li>
+                                    <li><a href="1153447">cluster集群</a></li>
+                                    <li><a href="997753">持久化方案</a></li>
+                                    <li><a href="1015740">数据库之分库分表</a></li>
+                                    <li><a href="1015741">分库分表思路</a></li>
+                                    <li><a href="1015742">分库分表部署上线方式</a></li>
+                                    <li><a href="1015743">ShardingSphere配置</a></li>
+                                    <li><a href="1025709">消息队列</a></li>
+                                    <li><a href="1023348">消息队列对比参照表</a></li>
+                                    <li><a href="1026656">Spring-Cloud-Stream消息框架</a></li>
+                                    <li><a href="1023346">RocketMQ</a></li>
+                                    <li><a href="1023347">介绍与相关资料</a></li>
+                                    <li><a href="1023349">安装部署</a></li>
+                                    <li><a href="1023350">常见异常处理</a></li>
+                                    <li><a href="1025894">RocketMQ事务消息原理</a></li>
+                                    <li><a href="1030626">FastDFS分布式文件系统</a></li>
+                                    <li><a href="1030627">介绍与相关资料</a></li>
+                                    <li><a href="1030628">特性详解</a></li>
+                                    <li><a href="1030629">文件系统的对比</a></li>
+                                    <li><a href="1030630">安装部署</a></li>
+                                    <li><a href="1036865">Canal数据库日志解析消费</a></li>
+                                    <li><a href="1036866">介绍与相关资料</a></li>
+                                    <li><a href="1036867">安装部署</a></li>
+                                    <li><a href="1050447">实时同步数据到ElasticSearch</a></li>
+                                    <li><a href="1224728">多租户(应用隔离)</a></li>
+                                    <li><a href="1224729">技术介绍与隔离方案</a></li>
+                                    <li><a href="1224730">本项目实现详解</a></li>
+                                    <li><a href="1228555">分布式日志链路跟踪</a></li>
+                                    <li><a href="1515193">单点登录详解</a></li>
+                                    <li><a href="937198">企业开发环境搭建</a></li>
+                                    <li><a href="937199">研发项目管理软件(禅道)</a></li>
+                                    <li><a href="937200">Maven私服</a></li>
+                                    <li><a href="937513">安装部署</a></li>
+                                    <li><a href="937514">使用介绍</a></li>
+                                    <li><a href="937569">Docker私有镜像仓库</a></li>
+                                    <li><a href="937570">安装部署</a></li>
+                                    <li><a href="937571">使用介绍</a></li>
+                                    <li><a href="966695">容器管理平台</a></li>
+                                    <li><a href="966696">介绍与相关资料</a></li>
+                                    <li><a href="966697">安装部署</a></li>
+                                    <li><a href="966698">使用介绍</a></li>
+                                    <li><a href="939998">持续集成部署CICD</a></li>
+                                    <li><a href="939957">持续交付的含义</a></li>
+                                    <li><a href="939958">影响持续交付的因素</a></li>
+                                    <li><a href="939959">代码分支策略选择</a></li>
+                                    <li><a href="937194">CICD流程设计</a></li>
+                                    <li><a href="937196">代码仓库Gitlab</a></li>
+                                    <li><a href="937187">安装部署</a></li>
+                                    <li><a href="937188">免密访问</a></li>
+                                    <li><a href="937189">webhook配置</a></li>
+                                    <li><a href="937197">自动化部署Jenkins</a></li>
+                                    <li><a href="937191">安装部署</a></li>
+                                    <li><a href="937192">ssh免密登录</a></li>
+                                    <li><a href="939017">流水线简单例子</a></li>
+                                    <li><a href="938981">流水线参数化构建例子</a></li>
+                                    <li><a href="937204">静态代码测试SonarQube</a></li>
+                                    <li><a href="989546">应用性能</a></li>
+                                    <li><a href="989547">压力测试工具</a></li>
+                                    <li><a href="989548">介绍和安装</a></li>
+                                    <li><a href="989549">使用介绍</a></li>
+                                    <li><a href="1434275">JVM</a></li>
+                                    <li><a href="989551">JVM性能调优</a></li>
+                                    <li><a href="1203547">常见JVM内存错误及解决方案</a></li>
+                                    <li><a href="1434276">JVM 分析工具详解</a></li>
+                                    <li><a href="989550">Spring Cloud性能调优</a></li>
+                                    <li><a href="1203305">Elasticsearch性能优化</a></li>
+                                    <li><a href="1278288">交流反馈</a></li>
+                                    <li><a href="1578728">云服务器购买优惠</a></li>
+                            </ul>
+        </div>
+    </div>
+    <div class="dimmer">
+        <div class="loader"></div>
+    </div>
+</div>
+<script type="application/payload+json">
+    {
+        "config":{"plugins":["highlight","copy-code","api"],"pluginsConfig":{"theme-default":{"show_nav":true,"logo":{"image":"https:\/\/gitee.com\/zlt2000\/images\/raw\/master\/head.jpg","url":"https:\/\/gitee.com\/zlt2000\/microservices-platform"},"navs":[{"title":"\u672c\u9879\u76ee\u5730\u5740","url":"https:\/\/gitee.com\/zlt2000\/microservices-platform","target":true},{"title":"\u9879\u76ee\u66f4\u65b0\u65e5\u5fd7","url":"https:\/\/www.kancloud.cn\/zlt2000\/microservices-platform\/936235","target":true},{"title":"\u6587\u6863\u66f4\u65b0\u65e5\u5fd7","url":"https:\/\/www.kancloud.cn\/zlt2000\/microservices-platform\/936236","target":true},{"title":"\u4ea4\u6d41\u7fa4\u5730\u5740","url":"http:\/\/shang.qq.com\/wpa\/qunwpa?idkey=17544199255998bda0d938fb72b08d076c40c52c9904520b76eb5eb0585da71e","target":true},{"title":"issue\u5730\u5740","url":"https:\/\/gitee.com\/zlt2000\/microservices-platform\/issues","target":true}]}},"id":413536,"title":"\u4f01\u4e1a\u7ea7\u5fae\u670d\u52a1\u6846\u67b6\u9879\u76ee\u6280\u672f\u6587\u6863","description":"\u4f01\u4e1a\u7ea7\u5fae\u670d\u52a1\u5f00\u53d1\u6846\u67b6\u7684\u6280\u672f\u6587\u6863\uff0c\u57fa\u4e8eSpringBoot2.x\u548cSpringCloud\u5e76\u91c7\u7528\u524d\u540e\u7aef\u5206\u79bb\u7684\u67b6\u6784\u3002\u5f15\u5165\u7ec4\u4ef6\u5316\u7684\u601d\u60f3\u5b9e\u73b0\u9ad8\u5185\u805a\u4f4e\u8026\u5408\uff0c\u9879\u76ee\u4ee3\u7801\u7b80\u6d01\u6ce8\u91ca\u4e30\u5bcc\u4e0a\u624b\u5bb9\u6613\uff0c\u771f\u6b63\u5b9e\u73b0\u4e86\u57fa\u4e8eRBAC\u3001jwt\u548coauth2\u7684\u65e0\u72b6\u6001\u7edf\u4e00\u6743\u9650\u8ba4\u8bc1\u7684\u89e3\u51b3\u65b9\u6848\uff0c\u5e76\u63d0\u4f9b\u5e94\u7528\u7ba1\u7406\u65b9\u4fbf\u7b2c\u4e09\u65b9\u7cfb\u7edf\u63a5\u5165\uff1b\u540c\u65f6\u8fd8\u96c6\u5408\u5404\u79cd\u5fae\u670d\u52a1\u6cbb\u7406\u529f\u80fd\u548c\u76d1\u63a7\u529f\u80fd\u3002\u6a21\u5757\u5305\u62ec:\u4f01\u4e1a\u7ea7\u7684\u8ba4\u8bc1\u7cfb\u7edf\u3001\u5f00\u53d1\u5e73\u53f0\u3001\u5e94\u7528\u76d1\u63a7\u3001\u6162sql\u76d1\u63a7\u3001\u7edf\u4e00\u65e5\u5fd7\u3001\u5355\u70b9\u767b\u5f55\u3001Redis\u5206\u5e03\u5f0f\u9ad8\u901f\u7f13\u5b58\u3001\u914d\u7f6e\u4e2d\u5fc3\u3001\u5206\u5e03\u5f0f\u4efb\u52a1\u8c03\u5ea6\u3001\u63a5\u53e3\u6587\u6863\u3001\u4ee3\u7801\u751f\u6210\u7b49\u7b49","cover":"https:\/\/cover.kancloud.cn\/zlt2000\/microservices-platform!middle","author":{"name":"\u9676\u9676","email":"zltdiablo@163.com","url":"https:\/\/www.kancloud.cn\/@zlt2000"}},
+        "options":{"book":{"id":413536,"title":"\u4f01\u4e1a\u7ea7\u5fae\u670d\u52a1\u6846\u67b6\u9879\u76ee\u6280\u672f\u6587\u6863","namespace":"zlt2000","name":"microservices-platform","price":4999,"cover":"https:\/\/cover.kancloud.cn\/zlt2000\/microservices-platform","middle_cover":"https:\/\/cover.kancloud.cn\/zlt2000\/microservices-platform!middle","small_cover":"https:\/\/cover.kancloud.cn\/zlt2000\/microservices-platform!small"},"plugins":{"host":"plugins.kancloud.cn","scheme":"https"},"web":{"host":"www.kancloud.cn","scheme":"https"},"environment":"reader","base":"\/zlt2000\/microservices-platform\/content","entry":"\/zlt2000\/microservices-platform"},
+        "style": "",
+        "article":{"path":"937199","ref":"\u4f01\u4e1a\u5f00\u53d1\u73af\u5883\u642d\u5efa-\u7814\u53d1\u9879\u76ee\u7ba1\u7406\u8f6f\u4ef6.md","title":"\u7814\u53d1\u9879\u76ee\u7ba1\u7406\u8f6f\u4ef6(\u7985\u9053)","content":"~~~[purchase:4999]\nhttps:\/\/www.kancloud.cn\/zlt2000\/microservices-platform\/purchase\n~~~"},
+        "summary":[{"id":919412,"pid":0,"name":"\u9879\u76ee\u4ecb\u7ecd.md","title":"\u9879\u76ee\u4ecb\u7ecd","is_probation":1,"ref":"\u9879\u76ee\u4ecb\u7ecd.md","path":"919412","index":0,"articles":[{"id":919413,"pid":919412,"name":"\u9879\u76ee\u58f0\u660e.md","title":"\u9879\u76ee\u58f0\u660e","is_probation":1,"ref":"\u9879\u76ee\u58f0\u660e.md","path":"919413","index":1},{"id":919414,"pid":919412,"name":"\u7b80\u4ecb.md","title":"\u9879\u76ee\u7b80\u4ecb","is_probation":1,"ref":"\u7b80\u4ecb.md","path":"919414","index":2},{"id":919415,"pid":919412,"name":"\u6838\u5fc3\u529f\u80fd.md","title":"\u6838\u5fc3\u529f\u80fd","is_probation":1,"ref":"\u6838\u5fc3\u529f\u80fd.md","path":"919415","index":3},{"id":919416,"pid":919412,"name":"\u8fd0\u884c\u73af\u5883.md","title":"\u8fd0\u884c\u73af\u5883","is_probation":1,"ref":"\u8fd0\u884c\u73af\u5883.md","path":"919416","index":4},{"id":936235,"pid":919412,"name":"\u9879\u76ee\u66f4\u65b0\u65e5\u5fd7.md","title":"\u9879\u76ee\u66f4\u65b0\u65e5\u5fd7","is_probation":1,"ref":"\u9879\u76ee\u66f4\u65b0\u65e5\u5fd7.md","path":"936235","index":5},{"id":936236,"pid":919412,"name":"\u6587\u6863\u66f4\u65b0\u65e5\u5fd7.md","title":"\u6587\u6863\u66f4\u65b0\u65e5\u5fd7","is_probation":1,"ref":"\u6587\u6863\u66f4\u65b0\u65e5\u5fd7.md","path":"936236","index":6},{"id":981382,"pid":919412,"name":"\u9879\u76ee\u4ecb\u7ecd-FAQ.md","title":"F&Q","is_probation":1,"ref":"\u9879\u76ee\u4ecb\u7ecd-FAQ.md","path":"981382","index":7}]},{"id":919417,"pid":0,"name":"\u90e8\u7f72\u6559\u7a0b.md","title":"\u90e8\u7f72\u6559\u7a0b","is_probation":1,"ref":"\u90e8\u7f72\u6559\u7a0b.md","path":"919417","index":8,"articles":[{"id":919418,"pid":919417,"name":"\u524d\u671f\u51c6\u5907.md","title":"\u73af\u5883\u51c6\u5907","is_probation":1,"ref":"\u524d\u671f\u51c6\u5907.md","path":"919418","index":9},{"id":919419,"pid":919417,"name":"\u5fc5\u8981\u542f\u52a8\u6a21\u5757.md","title":"\u5fc5\u8981\u542f\u52a8\u6a21\u5757","is_probation":1,"ref":"\u5fc5\u8981\u542f\u52a8\u6a21\u5757.md","path":"919419","index":10},{"id":919420,"pid":919417,"name":"\u6269\u5c55\u6a21\u5757.md","title":"\u6269\u5c55\u6a21\u5757(\u53ef\u9009)","is_probation":1,"ref":"\u6269\u5c55\u6a21\u5757.md","path":"919420","index":11},{"id":1335171,"pid":919417,"name":"\u90e8\u7f72\u6559\u7a0b\/\u6253\u5305\u5de5\u7a0b.md","title":"\u6253\u5305\u5de5\u7a0b","is_probation":1,"ref":"\u90e8\u7f72\u6559\u7a0b\/\u6253\u5305\u5de5\u7a0b.md","path":"1335171","index":12}]},{"id":919421,"pid":0,"name":"\u5f00\u53d1\u8bf4\u660e.md","title":"\u5f00\u53d1\u8bf4\u660e","is_probation":1,"ref":"\u5f00\u53d1\u8bf4\u660e.md","path":"919421","index":13,"articles":[{"id":1224745,"pid":919421,"name":"\u5f00\u53d1\u8bf4\u660e\/\u767b\u5f55\u8ba4\u8bc1.md","title":"\u767b\u5f55\u8ba4\u8bc1","is_probation":1,"ref":"\u5f00\u53d1\u8bf4\u660e\/\u767b\u5f55\u8ba4\u8bc1.md","path":"1224745","index":14},{"id":1224748,"pid":919421,"name":"\u5f00\u53d1\u8bf4\u660e\/\u57fa\u7840\u529f\u80fd.md","title":"\u57fa\u7840\u529f\u80fd","is_probation":1,"ref":"\u5f00\u53d1\u8bf4\u660e\/\u57fa\u7840\u529f\u80fd.md","path":"1224748","index":15},{"id":1224749,"pid":919421,"name":"\u5f00\u53d1\u8bf4\u660e\/\u5206\u5e03\u5f0f\u529f\u80fd.md","title":"\u5206\u5e03\u5f0f\u529f\u80fd","is_probation":1,"ref":"\u5f00\u53d1\u8bf4\u660e\/\u5206\u5e03\u5f0f\u529f\u80fd.md","path":"1224749","index":16},{"id":1239488,"pid":919421,"name":"\u5f00\u53d1\u8bf4\u660e\/SpringBoot\u81ea\u5b9a\u4e49\u914d\u7f6e\u81ea\u52a8\u63d0\u793a.md","title":"Spring Boot\u81ea\u5b9a\u4e49\u914d\u7f6e\u81ea\u52a8\u63d0\u793a","is_probation":1,"ref":"\u5f00\u53d1\u8bf4\u660e\/SpringBoot\u81ea\u5b9a\u4e49\u914d\u7f6e\u81ea\u52a8\u63d0\u793a.md","path":"1239488","index":17}]},{"id":1158135,"pid":0,"name":"\u6838\u5fc3\u63a5\u53e3.md","title":"\u6838\u5fc3\u63a5\u53e3","is_probation":1,"ref":"\u6838\u5fc3\u63a5\u53e3.md","path":"1158135","index":18,"articles":[{"id":919423,"pid":1158135,"name":"\u7528\u6237\u540d\u5bc6\u7801+\u9a8c\u8bc1\u7801\u767b\u5f55.md","title":"\u7528\u6237\u540d\u5bc6\u7801+\u9a8c\u8bc1\u7801\u767b\u5f55","is_probation":0,"ref":"\u7528\u6237\u540d\u5bc6\u7801+\u9a8c\u8bc1\u7801\u767b\u5f55.md","path":"919423","index":19},{"id":919424,"pid":1158135,"name":"\u901a\u8fc7openId\u83b7\u53d6token.md","title":"\u901a\u8fc7openId\u83b7\u53d6token","is_probation":0,"ref":"\u901a\u8fc7openId\u83b7\u53d6token.md","path":"919424","index":20},{"id":919425,"pid":1158135,"name":"\u901a\u8fc7\u624b\u673a\u53f7\u83b7\u53d6token.md","title":"\u901a\u8fc7\u624b\u673a\u53f7\u83b7\u53d6token","is_probation":0,"ref":"\u901a\u8fc7\u624b\u673a\u53f7\u83b7\u53d6token.md","path":"919425","index":21},{"id":919426,"pid":1158135,"name":"\u7b2c\u4e09\u65b9\u7cfb\u7edf\u5bf9\u63a5api.md","title":"\u7b2c\u4e09\u65b9\u7cfb\u7edf\u63a5\u53e3\u5bf9\u63a5\u65b9\u5f0f","is_probation":0,"ref":"\u7b2c\u4e09\u65b9\u7cfb\u7edf\u5bf9\u63a5api.md","path":"919426","index":22},{"id":919427,"pid":1158135,"name":"\u7b2c\u4e09\u65b9\u7cfb\u7edf\u5355\u70b9\u767b\u5f55.md","title":"\u7b2c\u4e09\u65b9\u7cfb\u7edf\u5355\u70b9\u767b\u5f55","is_probation":0,"ref":"\u7b2c\u4e09\u65b9\u7cfb\u7edf\u5355\u70b9\u767b\u5f55.md","path":"919427","index":23},{"id":1158133,"pid":1158135,"name":"\u63a5\u53e3\/\u8d26\u53f7\u767b\u51fa\u63a5\u53e3.md","title":"\u8d26\u53f7\u767b\u51fa\u63a5\u53e3","is_probation":0,"ref":"\u63a5\u53e3\/\u8d26\u53f7\u767b\u51fa\u63a5\u53e3.md","path":"1158133","index":24},{"id":1160631,"pid":1158135,"name":"\u63a5\u53e3\/\u901a\u7528\u5237\u65b0token.md","title":"\u901a\u7528\u5237\u65b0token","is_probation":0,"ref":"\u63a5\u53e3\/\u901a\u7528\u5237\u65b0token.md","path":"1160631","index":25}]},{"id":919428,"pid":0,"name":"\u7cfb\u7edf\u8bbe\u8ba1.md","title":"\u7cfb\u7edf\u8bbe\u8ba1","is_probation":1,"ref":"\u7cfb\u7edf\u8bbe\u8ba1.md","path":"919428","index":26,"articles":[{"id":973388,"pid":919428,"name":"\u7cfb\u7edf\u8bbe\u8ba1-\u4f01\u4e1a\u7ea7\u5fae\u670d\u52a1\u603b\u4f53\u5206\u5c42\u67b6\u6784\u56fe.md","title":"\u4f01\u4e1a\u7ea7\u5fae\u670d\u52a1\u603b\u4f53\u5206\u5c42\u67b6\u6784\u56fe","is_probation":0,"ref":"\u7cfb\u7edf\u8bbe\u8ba1-\u4f01\u4e1a\u7ea7\u5fae\u670d\u52a1\u603b\u4f53\u5206\u5c42\u67b6\u6784\u56fe.md","path":"973388","index":27},{"id":919430,"pid":919428,"name":"\u4f01\u4e1a\u7ea7\u8ba4\u8bc1\u67b6\u6784\u8bbe\u8ba1.md","title":"\u4f01\u4e1a\u7ea7\u670d\u52a1\u8ba4\u8bc1\u67b6\u6784\u8bbe\u8ba1","is_probation":1,"ref":"\u4f01\u4e1a\u7ea7\u8ba4\u8bc1\u67b6\u6784\u8bbe\u8ba1.md","path":"919430","index":28,"articles":[{"id":972534,"pid":919430,"name":"\u8ba4\u8bc1\u67b6\u6784\u8bbe\u8ba1-\u6709\u7f51\u7edc\u9694\u79bb.md","title":"\u6709\u7f51\u7edc\u9694\u79bb","is_probation":0,"ref":"\u8ba4\u8bc1\u67b6\u6784\u8bbe\u8ba1-\u6709\u7f51\u7edc\u9694\u79bb.md","path":"972534","index":29},{"id":1153640,"pid":919430,"name":"\u8ba4\u8bc1\u67b6\u6784-\u65e0\u7f51\u7edc\u9694\u79bbV1.md","title":"\u65e0\u7f51\u7edc\u9694\u79bbV1","is_probation":0,"ref":"\u8ba4\u8bc1\u67b6\u6784-\u65e0\u7f51\u7edc\u9694\u79bbV1.md","path":"1153640","index":30},{"id":1153641,"pid":919430,"name":"\u65e0\u7f51\u7edc\u9694\u79bbV2.md","title":"\u65e0\u7f51\u7edc\u9694\u79bbV2","is_probation":0,"ref":"\u65e0\u7f51\u7edc\u9694\u79bbV2.md","path":"1153641","index":31},{"id":1165104,"pid":919430,"name":"\u8ba4\u8bc1\u67b6\u6784\u8bbe\u8ba1\/token\u81ea\u52a8\u7eed\u7b7e\u8bbe\u8ba1RedisToken.md","title":"token\u81ea\u52a8\u7eed\u7b7e\u8bbe\u8ba1(Redis Token)","is_probation":0,"ref":"\u8ba4\u8bc1\u67b6\u6784\u8bbe\u8ba1\/token\u81ea\u52a8\u7eed\u7b7e\u8bbe\u8ba1RedisToken.md","path":"1165104","index":32},{"id":1202397,"pid":919430,"name":"\u8ba4\u8bc1\/url\u7ea7\u6743\u9650\u63a7\u5236.md","title":"url\u7ea7\u6743\u9650\u63a7\u5236","is_probation":0,"ref":"\u8ba4\u8bc1\/url\u7ea7\u6743\u9650\u63a7\u5236.md","path":"1202397","index":33}]},{"id":919431,"pid":919428,"name":"\u65e5\u5fd7\u89e3\u51b3\u65b9\u6848.md","title":"\u4f01\u4e1a\u7ea7\u65e5\u5fd7\u89e3\u51b3\u65b9\u6848\u8bbe\u8ba1","is_probation":0,"ref":"\u65e5\u5fd7\u89e3\u51b3\u65b9\u6848.md","path":"919431","index":34},{"id":964522,"pid":919428,"name":"\u7cfb\u7edf\u8bbe\u8ba1-\u4f01\u4e1a\u7ea7\u76d1\u63a7\u67b6\u6784\u8bbe\u8ba1.md","title":"\u4f01\u4e1a\u7ea7\u76d1\u63a7\u67b6\u6784\u8bbe\u8ba1(Metrics)","is_probation":0,"ref":"\u7cfb\u7edf\u8bbe\u8ba1-\u4f01\u4e1a\u7ea7\u76d1\u63a7\u67b6\u6784\u8bbe\u8ba1.md","path":"964522","index":35},{"id":920411,"pid":919428,"name":"\u6846\u67b6\u6280\u672f\u9009\u578b.md","title":"\u6846\u67b6\u6280\u672f\u9009\u578b","is_probation":0,"ref":"\u6846\u67b6\u6280\u672f\u9009\u578b.md","path":"920411","index":36},{"id":925046,"pid":919428,"name":"\u67b6\u6784\u8bbe\u8ba1\u65b9\u6cd5\u8bba\u601d\u7ef4\u5bfc\u56fe.md","title":"\u67b6\u6784\u8bbe\u8ba1\u65b9\u6cd5\u8bba\u601d\u7ef4\u5bfc\u56fe","is_probation":0,"ref":"\u67b6\u6784\u8bbe\u8ba1\u65b9\u6cd5\u8bba\u601d\u7ef4\u5bfc\u56fe.md","path":"925046","index":37},{"id":925445,"pid":919428,"name":"\u7cfb\u7edf\u5e42\u7b49\u6027\u8bbe\u8ba1\u4e0e\u5b9e\u8df5.md","title":"\u7cfb\u7edf\u5e42\u7b49\u6027\u8bbe\u8ba1\u4e0e\u5b9e\u8df5","is_probation":0,"ref":"\u7cfb\u7edf\u5e42\u7b49\u6027\u8bbe\u8ba1\u4e0e\u5b9e\u8df5.md","path":"925445","index":38},{"id":967271,"pid":919428,"name":"\u7cfb\u7edf\u8bbe\u8ba1-\u5206\u5e03\u5f0fID\u751f\u6210\u5668\u89e3\u51b3\u65b9\u6848.md","title":"\u5206\u5e03\u5f0fID\u751f\u6210\u5668\u89e3\u51b3\u65b9\u6848","is_probation":0,"ref":"\u7cfb\u7edf\u8bbe\u8ba1-\u5206\u5e03\u5f0fID\u751f\u6210\u5668\u89e3\u51b3\u65b9\u6848.md","path":"967271","index":39},{"id":1050047,"pid":919428,"name":"\u7cfb\u7edf\u8bbe\u8ba1-\u5b9e\u65f6\u641c\u7d22\u7cfb\u7edf\u8bbe\u8ba1.md","title":"\u5b9e\u65f6\u641c\u7d22\u7cfb\u7edf\u8bbe\u8ba1","is_probation":0,"ref":"\u7cfb\u7edf\u8bbe\u8ba1-\u5b9e\u65f6\u641c\u7d22\u7cfb\u7edf\u8bbe\u8ba1.md","path":"1050047","index":40}]},{"id":919432,"pid":0,"name":"\u4f01\u4e1a\u7ea7\u529f\u80fd.md","title":"\u4f01\u4e1a\u7ea7\u529f\u80fd","is_probation":1,"ref":"\u4f01\u4e1a\u7ea7\u529f\u80fd.md","path":"919432","index":41,"articles":[{"id":1026654,"pid":919432,"name":"\u4f01\u4e1a\u7ea7\u5e94\u7528-nacos\u6ce8\u518c\u4e2d\u5fc3.md","title":"alibaba\/nacos\u6ce8\u518c\u4e2d\u5fc3","is_probation":1,"ref":"\u4f01\u4e1a\u7ea7\u5e94\u7528-nacos\u6ce8\u518c\u4e2d\u5fc3.md","path":"1026654","index":42,"articles":[{"id":936145,"pid":1026654,"name":"nacos\/\u4ecb\u7ecd\u4e0e\u76f8\u5173\u8d44\u6599.md","title":"\u4ecb\u7ecd\u4e0e\u76f8\u5173\u8d44\u6599","is_probation":0,"ref":"nacos\/\u4ecb\u7ecd\u4e0e\u76f8\u5173\u8d44\u6599.md","path":"936145","index":43},{"id":936355,"pid":1026654,"name":"nacos-\u8bbe\u8ba1\u6a21\u578b.md","title":"\u8bbe\u8ba1\u6a21\u578b","is_probation":0,"ref":"nacos-\u8bbe\u8ba1\u6a21\u578b.md","path":"936355","index":44},{"id":936141,"pid":1026654,"name":"\u90e8\u7f72.md","title":"\u90e8\u7f72","is_probation":0,"ref":"\u90e8\u7f72.md","path":"936141","index":45},{"id":936142,"pid":1026654,"name":"\u914d\u7f6e\u4e2d\u5fc3.md","title":"\u914d\u7f6e\u4e2d\u5fc3","is_probation":0,"ref":"\u914d\u7f6e\u4e2d\u5fc3.md","path":"936142","index":46},{"id":936143,"pid":1026654,"name":"\u670d\u52a1\u6ce8\u518c\u53d1\u73b0.md","title":"\u670d\u52a1\u6ce8\u518c\u53d1\u73b0","is_probation":0,"ref":"\u670d\u52a1\u6ce8\u518c\u53d1\u73b0.md","path":"936143","index":47},{"id":936144,"pid":1026654,"name":"\u751f\u4ea7\u90e8\u7f72\u65b9\u6848.md","title":"\u751f\u4ea7\u90e8\u7f72\u65b9\u6848","is_probation":0,"ref":"\u751f\u4ea7\u90e8\u7f72\u65b9\u6848.md","path":"936144","index":48},{"id":989544,"pid":1026654,"name":"nacos-\u901a\u8fc7Nginx\u6765\u5b9e\u73b0\u73af\u5883\u9694\u79bb.md","title":"\u901a\u8fc7Nginx\u6765\u5b9e\u73b0\u73af\u5883\u9694\u79bb","is_probation":0,"ref":"nacos-\u901a\u8fc7Nginx\u6765\u5b9e\u73b0\u73af\u5883\u9694\u79bb.md","path":"989544","index":49}]},{"id":919434,"pid":919432,"name":"\u7edf\u4e00\u65e5\u5fd7\u4e2d\u5fc3\u8be6\u89e3.md","title":"\u7edf\u4e00\u65e5\u5fd7\u4e2d\u5fc3\u8be6\u89e3","is_probation":1,"ref":"\u7edf\u4e00\u65e5\u5fd7\u4e2d\u5fc3\u8be6\u89e3.md","path":"919434","index":50,"articles":[{"id":961673,"pid":919434,"name":"elk-\u4ecb\u7ecd\u4e0e\u76f8\u5173\u8d44\u6599.md","title":"\u4ecb\u7ecd\u4e0e\u76f8\u5173\u8d44\u6599","is_probation":0,"ref":"elk-\u4ecb\u7ecd\u4e0e\u76f8\u5173\u8d44\u6599.md","path":"961673","index":51},{"id":961674,"pid":919434,"name":"elk-docker\u5b89\u88c5\u90e8\u7f72.md","title":"docker\u5b89\u88c5\u90e8\u7f72","is_probation":0,"ref":"elk-docker\u5b89\u88c5\u90e8\u7f72.md","path":"961674","index":52},{"id":961675,"pid":919434,"name":"elk-\u975edocker\u5b89\u88c5\u90e8\u7f72.md","title":"\u975edocker\u5b89\u88c5\u90e8\u7f72","is_probation":0,"ref":"elk-\u975edocker\u5b89\u88c5\u90e8\u7f72.md","path":"961675","index":53},{"id":961676,"pid":919434,"name":"elk-Filebeat\u5b89\u88c5\u90e8\u7f72.md","title":"Filebeat\u5b89\u88c5\u90e8\u7f72","is_probation":0,"ref":"elk-Filebeat\u5b89\u88c5\u90e8\u7f72.md","path":"961676","index":54},{"id":961677,"pid":919434,"name":"elk-ES\u6570\u636e\u5b9a\u671f\u5220\u9664.md","title":"ES\u6570\u636e\u5b9a\u671f\u5220\u9664","is_probation":0,"ref":"elk-ES\u6570\u636e\u5b9a\u671f\u5220\u9664.md","path":"961677","index":55},{"id":1524980,"pid":919434,"name":"ELK\/\u6ca1\u6570\u636e\u95ee\u9898\u6392\u67e5\u601d\u8def.md","title":"\u6ca1\u6570\u636e\u95ee\u9898\u6392\u67e5\u601d\u8def","is_probation":0,"ref":"ELK\/\u6ca1\u6570\u636e\u95ee\u9898\u6392\u67e5\u601d\u8def.md","path":"1524980","index":56},{"id":1537304,"pid":919434,"name":"ELK\/Logstash\u7684grok\u8bed\u6cd5\u8c03\u8bd5.md","title":"Logstash\u7684grok\u8bed\u6cd5\u8c03\u8bd5","is_probation":0,"ref":"ELK\/Logstash\u7684grok\u8bed\u6cd5\u8c03\u8bd5.md","path":"1537304","index":57}]},{"id":919435,"pid":919432,"name":"\u6162\u67e5\u8be2sql\u8be6\u89e3.md","title":"\u6162\u67e5\u8be2sql\u8be6\u89e3","is_probation":0,"ref":"\u6162\u67e5\u8be2sql\u8be6\u89e3.md","path":"919435","index":58},{"id":1486265,"pid":919432,"name":"\u5ba1\u8ba1\u65e5\u5fd7\u8be6\u89e3.md","title":"\u5ba1\u8ba1\u65e5\u5fd7-elk\u8be6\u89e3","is_probation":0,"ref":"\u5ba1\u8ba1\u65e5\u5fd7\u8be6\u89e3.md","path":"1486265","index":59},{"id":1026655,"pid":919432,"name":"\u4f01\u4e1a\u7ea7\u529f\u80fd-sentinel\u9650\u6d41\u7194\u65ad.md","title":"alibaba\/sentinel\u9650\u6d41\u7194\u65ad","is_probation":1,"ref":"\u4f01\u4e1a\u7ea7\u529f\u80fd-sentinel\u9650\u6d41\u7194\u65ad.md","path":"1026655","index":60,"articles":[{"id":936146,"pid":1026655,"name":"sentinel\/\u4ecb\u7ecd\u4e0e\u76f8\u5173\u8d44\u6599.md","title":"\u4ecb\u7ecd\u4e0e\u76f8\u5173\u8d44\u6599","is_probation":0,"ref":"sentinel\/\u4ecb\u7ecd\u4e0e\u76f8\u5173\u8d44\u6599.md","path":"936146","index":61},{"id":936147,"pid":1026655,"name":"\u4f7f\u7528\u793a\u8303.md","title":"\u4f7f\u7528\u793a\u8303","is_probation":0,"ref":"\u4f7f\u7528\u793a\u8303.md","path":"936147","index":62},{"id":1129301,"pid":1026655,"name":"sentinel-\u52a8\u6001\u89c4\u5219\u6269\u5c55.md","title":"\u52a8\u6001\u89c4\u5219\u6269\u5c55","is_probation":0,"ref":"sentinel-\u52a8\u6001\u89c4\u5219\u6269\u5c55.md","path":"1129301","index":63},{"id":936148,"pid":1026655,"name":"\u751f\u4ea7\u5e94\u7528.md","title":"\u751f\u4ea7\u5e94\u7528","is_probation":0,"ref":"\u751f\u4ea7\u5e94\u7528.md","path":"936148","index":64},{"id":1203036,"pid":1026655,"name":"sentinel\/\u7f51\u5173\u6d41\u63a7.md","title":"\u7f51\u5173\u6d41\u63a7","is_probation":0,"ref":"sentinel\/\u7f51\u5173\u6d41\u63a7.md","path":"1203036","index":65}]},{"id":943967,"pid":919432,"name":"\u4f01\u4e1a\u7ea7\u529f\u80fd-JWT\u7684RSA\u975e\u5bf9\u79f0\u5bc6\u94a5\u751f\u6210.md","title":"JWT\u7684RSA\u975e\u5bf9\u79f0\u5bc6\u94a5\u751f\u6210","is_probation":0,"ref":"\u4f01\u4e1a\u7ea7\u529f\u80fd-JWT\u7684RSA\u975e\u5bf9\u79f0\u5bc6\u94a5\u751f\u6210.md","path":"943967","index":66},{"id":952920,"pid":919432,"name":"\u4f01\u4e1a\u7ea7\u529f\u80fd-Docker.md","title":"Docker","is_probation":1,"ref":"\u4f01\u4e1a\u7ea7\u529f\u80fd-Docker.md","path":"952920","index":67,"articles":[{"id":952921,"pid":952920,"name":"Docker-\u5916\u7f51\u5b89\u88c5.md","title":"\u5b89\u88c5(\u5916\u7f51)","is_probation":0,"ref":"Docker-\u5916\u7f51\u5b89\u88c5.md","path":"952921","index":68},{"id":952922,"pid":952920,"name":"Docker-\u5185\u7f51\u5b89\u88c5.md","title":"\u5b89\u88c5(\u5185\u7f51)","is_probation":0,"ref":"Docker-\u5185\u7f51\u5b89\u88c5.md","path":"952922","index":69},{"id":943966,"pid":952920,"name":"\u4f01\u4e1a\u7ea7\u529f\u80fd-\u6784\u5efa\u9879\u76ee\u955c\u50cf.md","title":"\u6784\u5efa\u9879\u76ee\u955c\u50cf(\u514dDockerfile\u6587\u4ef6)","is_probation":0,"ref":"\u4f01\u4e1a\u7ea7\u529f\u80fd-\u6784\u5efa\u9879\u76ee\u955c\u50cf.md","path":"943966","index":70}]},{"id":955597,"pid":919432,"name":"\u4f01\u4e1a\u7ea7\u529f\u80fd-APM\u76d1\u63a7SkyWalking.md","title":"APM\u76d1\u63a7-SkyWalking","is_probation":1,"ref":"\u4f01\u4e1a\u7ea7\u529f\u80fd-APM\u76d1\u63a7SkyWalking.md","path":"955597","index":71,"articles":[{"id":955598,"pid":955597,"name":"skywalking-\u4ecb\u7ecd\u4e0e\u76f8\u5173\u8d44\u6599.md","title":"\u4ecb\u7ecd\u4e0e\u76f8\u5173\u8d44\u6599","is_probation":0,"ref":"skywalking-\u4ecb\u7ecd\u4e0e\u76f8\u5173\u8d44\u6599.md","path":"955598","index":72},{"id":955599,"pid":955597,"name":"skywalking-APM\u7cfb\u7edf\u7b80\u5355\u5bf9\u6bd4.md","title":"APM\u7cfb\u7edf\u7b80\u5355\u5bf9\u6bd4(zipkin,pinpoint\u548cskywalking)","is_probation":0,"ref":"skywalking-APM\u7cfb\u7edf\u7b80\u5355\u5bf9\u6bd4.md","path":"955599","index":73},{"id":955625,"pid":955597,"name":"skywalking-server\u5b89\u88c5\u90e8\u7f72.md","title":"server\u5b89\u88c5\u90e8\u7f72","is_probation":0,"ref":"skywalking-server\u5b89\u88c5\u90e8\u7f72.md","path":"955625","index":74},{"id":955626,"pid":955597,"name":"skywalking-agent\u5b89\u88c5.md","title":"agent\u5b89\u88c5","is_probation":0,"ref":"skywalking-agent\u5b89\u88c5.md","path":"955626","index":75},{"id":989545,"pid":955597,"name":"skywalking-\u65e5\u5fd7\u4fe1\u606f\u6e05\u7406.md","title":"\u65e5\u5fd7\u4fe1\u606f\u6e05\u7406","is_probation":0,"ref":"skywalking-\u65e5\u5fd7\u4fe1\u606f\u6e05\u7406.md","path":"989545","index":76}]},{"id":964113,"pid":919432,"name":"\u4f01\u4e1a\u7ea7\u529f\u80fd-Metrics\u76d1\u63a7.md","title":"Metrics\u76d1\u63a7","is_probation":1,"ref":"\u4f01\u4e1a\u7ea7\u529f\u80fd-Metrics\u76d1\u63a7.md","path":"964113","index":77,"articles":[{"id":964114,"pid":964113,"name":"prometheus-\u4ecb\u7ecd\u4e0e\u76f8\u5173\u8d44\u6599.md","title":"\u4ecb\u7ecd\u4e0e\u76f8\u5173\u8d44\u6599","is_probation":0,"ref":"prometheus-\u4ecb\u7ecd\u4e0e\u76f8\u5173\u8d44\u6599.md","path":"964114","index":78},{"id":964284,"pid":964113,"name":"prometheus-\u5b89\u88c5\u90e8\u7f72.md","title":"\u5b89\u88c5\u90e8\u7f72","is_probation":0,"ref":"prometheus-\u5b89\u88c5\u90e8\u7f72.md","path":"964284","index":79},{"id":964311,"pid":964113,"name":"prometheus-\u5404\u7ec4\u4ef6\u76d1\u63a7.md","title":"\u5404\u7ec4\u4ef6\u76d1\u63a7","is_probation":0,"ref":"prometheus-\u5404\u7ec4\u4ef6\u76d1\u63a7.md","path":"964311","index":80},{"id":988837,"pid":964113,"name":"prometheus-Grafana\u4eea\u8868\u76d8\u6a21\u677f\u4e0b\u8f7d.md","title":"Grafana\u4eea\u8868\u76d8\u6a21\u677f\u4e0b\u8f7d","is_probation":0,"ref":"prometheus-Grafana\u4eea\u8868\u76d8\u6a21\u677f\u4e0b\u8f7d.md","path":"988837","index":81},{"id":1519914,"pid":964113,"name":"Metrics\u76d1\u63a7\/Grafana\u544a\u8b66\u914d\u7f6e.md","title":"Grafana\u544a\u8b66\u914d\u7f6e","is_probation":0,"ref":"Metrics\u76d1\u63a7\/Grafana\u544a\u8b66\u914d\u7f6e.md","path":"1519914","index":82}]},{"id":985365,"pid":919432,"name":"\u4f01\u4e1a\u7ea7\u529f\u80fd-\u5206\u5e03\u5f0f\u4e8b\u52a1.md","title":"\u5206\u5e03\u5f0f\u4e8b\u52a1","is_probation":1,"ref":"\u4f01\u4e1a\u7ea7\u529f\u80fd-\u5206\u5e03\u5f0f\u4e8b\u52a1.md","path":"985365","index":83,"articles":[{"id":985366,"pid":985365,"name":"\u5206\u5e03\u5f0f\u4e8b\u52a1-\u57fa\u7840\u6982\u5ff5\u548c\u7406\u8bba.md","title":"\u57fa\u7840\u6982\u5ff5\u548c\u7406\u8bba","is_probation":0,"ref":"\u5206\u5e03\u5f0f\u4e8b\u52a1-\u57fa\u7840\u6982\u5ff5\u548c\u7406\u8bba.md","path":"985366","index":84},{"id":985367,"pid":985365,"name":"\u5206\u5e03\u5f0f\u4e8b\u52a1-TX-LCN.md","title":"TX-LCN(\u540c\u6b65\u573a\u666f)","is_probation":0,"ref":"\u5206\u5e03\u5f0f\u4e8b\u52a1-TX-LCN.md","path":"985367","index":85},{"id":1280566,"pid":985365,"name":"SEATA.md","title":"SEATA(\u540c\u6b65\u573a\u666f)","is_probation":0,"ref":"SEATA.md","path":"1280566","index":86},{"id":1326308,"pid":985365,"name":"RocketMQ\u5f02\u6b65\u573a\u666f.md","title":"RocketMQ(\u5f02\u6b65\u573a\u666f)","is_probation":0,"ref":"RocketMQ\u5f02\u6b65\u573a\u666f.md","path":"1326308","index":87}]},{"id":997744,"pid":919432,"name":"\u4f01\u4e1a\u7ea7\u529f\u80fd-MySQL.md","title":"MySQL","is_probation":1,"ref":"\u4f01\u4e1a\u7ea7\u529f\u80fd-MySQL.md","path":"997744","index":88,"articles":[{"id":997745,"pid":997744,"name":"mysql-\u4e3b\u4ece\u590d\u5236.md","title":"\u4e3b\u4ece\u590d\u5236","is_probation":0,"ref":"mysql-\u4e3b\u4ece\u590d\u5236.md","path":"997745","index":89},{"id":997746,"pid":997744,"name":"mysql-\u4e3b\u4ece\u5207\u6362.md","title":"\u4e3b\u4ece\u5207\u6362","is_probation":0,"ref":"mysql-\u4e3b\u4ece\u5207\u6362.md","path":"997746","index":90},{"id":997747,"pid":997744,"name":"mysql-\u4e3b\u4e3b\u590d\u5236.md","title":"\u4e3b\u4e3b\u590d\u5236","is_probation":0,"ref":"mysql-\u4e3b\u4e3b\u590d\u5236.md","path":"997747","index":91},{"id":997748,"pid":997744,"name":"mysql-\u9ad8\u53ef\u7528\u65b9\u6848.md","title":"\u9ad8\u53ef\u7528\u65b9\u6848","is_probation":0,"ref":"mysql-\u9ad8\u53ef\u7528\u65b9\u6848.md","path":"997748","index":92}]},{"id":997749,"pid":919432,"name":"\u4f01\u4e1a\u7ea7\u529f\u80fd-Redis.md","title":"Redis","is_probation":1,"ref":"\u4f01\u4e1a\u7ea7\u529f\u80fd-Redis.md","path":"997749","index":93,"articles":[{"id":997750,"pid":997749,"name":"redis-\u5355\u673a.md","title":"\u5355\u673a","is_probation":0,"ref":"redis-\u5355\u673a.md","path":"997750","index":94},{"id":997751,"pid":997749,"name":"redis-\u4e3b\u4ece\u590d\u5236.md","title":"\u4e3b\u4ece\u590d\u5236","is_probation":0,"ref":"redis-\u4e3b\u4ece\u590d\u5236.md","path":"997751","index":95},{"id":997752,"pid":997749,"name":"redis-\u4e3b\u4ece\u54e8\u5175.md","title":"\u4e3b\u4ece\u590d\u5236+\u54e8\u5175","is_probation":0,"ref":"redis-\u4e3b\u4ece\u54e8\u5175.md","path":"997752","index":96},{"id":1153447,"pid":997749,"name":"redis\/cluster.md","title":"cluster\u96c6\u7fa4","is_probation":0,"ref":"redis\/cluster.md","path":"1153447","index":97},{"id":997753,"pid":997749,"name":"redis-\u6301\u4e45\u5316\u65b9\u6848.md","title":"\u6301\u4e45\u5316\u65b9\u6848","is_probation":0,"ref":"redis-\u6301\u4e45\u5316\u65b9\u6848.md","path":"997753","index":98}]},{"id":1015740,"pid":919432,"name":"\u4f01\u4e1a\u7ea7\u529f\u80fd-\u6570\u636e\u5e93\u4e4b\u5206\u5e93\u5206\u8868.md","title":"\u6570\u636e\u5e93\u4e4b\u5206\u5e93\u5206\u8868","is_probation":1,"ref":"\u4f01\u4e1a\u7ea7\u529f\u80fd-\u6570\u636e\u5e93\u4e4b\u5206\u5e93\u5206\u8868.md","path":"1015740","index":99,"articles":[{"id":1015741,"pid":1015740,"name":"\u5206\u5e93\u5206\u8868-\u5206\u5e93\u5206\u8868\u601d\u8def.md","title":"\u5206\u5e93\u5206\u8868\u601d\u8def","is_probation":0,"ref":"\u5206\u5e93\u5206\u8868-\u5206\u5e93\u5206\u8868\u601d\u8def.md","path":"1015741","index":100},{"id":1015742,"pid":1015740,"name":"\u5206\u5e93\u5206\u8868-\u5206\u5e93\u5206\u8868\u90e8\u7f72\u4e0a\u7ebf\u65b9\u5f0f.md","title":"\u5206\u5e93\u5206\u8868\u90e8\u7f72\u4e0a\u7ebf\u65b9\u5f0f","is_probation":0,"ref":"\u5206\u5e93\u5206\u8868-\u5206\u5e93\u5206\u8868\u90e8\u7f72\u4e0a\u7ebf\u65b9\u5f0f.md","path":"1015742","index":101},{"id":1015743,"pid":1015740,"name":"\u5206\u5e93\u5206\u8868-ShardingSphere\u914d\u7f6e.md","title":"ShardingSphere\u914d\u7f6e","is_probation":0,"ref":"\u5206\u5e93\u5206\u8868-ShardingSphere\u914d\u7f6e.md","path":"1015743","index":102}]},{"id":1025709,"pid":919432,"name":"\u4f01\u4e1a\u7ea7\u529f\u80fd-\u6d88\u606f\u961f\u5217.md","title":"\u6d88\u606f\u961f\u5217","is_probation":1,"ref":"\u4f01\u4e1a\u7ea7\u529f\u80fd-\u6d88\u606f\u961f\u5217.md","path":"1025709","index":103,"articles":[{"id":1023348,"pid":1025709,"name":"MQ-\u6d88\u606f\u961f\u5217\u5bf9\u6bd4\u53c2\u7167\u8868.md","title":"\u6d88\u606f\u961f\u5217\u5bf9\u6bd4\u53c2\u7167\u8868","is_probation":0,"ref":"MQ-\u6d88\u606f\u961f\u5217\u5bf9\u6bd4\u53c2\u7167\u8868.md","path":"1023348","index":104},{"id":1026656,"pid":1025709,"name":"MQ-Spring-Cloud-Stream\u6d88\u606f\u6846\u67b6.md","title":"Spring-Cloud-Stream\u6d88\u606f\u6846\u67b6","is_probation":0,"ref":"MQ-Spring-Cloud-Stream\u6d88\u606f\u6846\u67b6.md","path":"1026656","index":105},{"id":1023346,"pid":1025709,"name":"\u4f01\u4e1a\u7ea7\u529f\u80fd-RocketMQ.md","title":"RocketMQ","is_probation":1,"ref":"\u4f01\u4e1a\u7ea7\u529f\u80fd-RocketMQ.md","path":"1023346","index":106,"articles":[{"id":1023347,"pid":1023346,"name":"RocketMQ-\u4ecb\u7ecd\u4e0e\u76f8\u5173\u8d44\u6599.md","title":"\u4ecb\u7ecd\u4e0e\u76f8\u5173\u8d44\u6599","is_probation":0,"ref":"RocketMQ-\u4ecb\u7ecd\u4e0e\u76f8\u5173\u8d44\u6599.md","path":"1023347","index":107},{"id":1023349,"pid":1023346,"name":"RocketMQ-\u5b89\u88c5\u90e8\u7f72.md","title":"\u5b89\u88c5\u90e8\u7f72","is_probation":0,"ref":"RocketMQ-\u5b89\u88c5\u90e8\u7f72.md","path":"1023349","index":108},{"id":1023350,"pid":1023346,"name":"rocketMQ-\u5e38\u89c1\u5f02\u5e38\u5904\u7406.md","title":"\u5e38\u89c1\u5f02\u5e38\u5904\u7406","is_probation":0,"ref":"rocketMQ-\u5e38\u89c1\u5f02\u5e38\u5904\u7406.md","path":"1023350","index":109},{"id":1025894,"pid":1023346,"name":"RocketMQ-RocketMQ\u4e8b\u52a1\u6d88\u606f\u539f\u7406.md","title":"RocketMQ\u4e8b\u52a1\u6d88\u606f\u539f\u7406","is_probation":0,"ref":"RocketMQ-RocketMQ\u4e8b\u52a1\u6d88\u606f\u539f\u7406.md","path":"1025894","index":110}]}]},{"id":1030626,"pid":919432,"name":"\u4f01\u4e1a\u7ea7\u529f\u80fd-FastDFS.md","title":"FastDFS\u5206\u5e03\u5f0f\u6587\u4ef6\u7cfb\u7edf","is_probation":1,"ref":"\u4f01\u4e1a\u7ea7\u529f\u80fd-FastDFS.md","path":"1030626","index":111,"articles":[{"id":1030627,"pid":1030626,"name":"FastDFS-\u4ecb\u7ecd\u4e0e\u76f8\u5173\u8d44\u6599.md","title":"\u4ecb\u7ecd\u4e0e\u76f8\u5173\u8d44\u6599","is_probation":0,"ref":"FastDFS-\u4ecb\u7ecd\u4e0e\u76f8\u5173\u8d44\u6599.md","path":"1030627","index":112},{"id":1030628,"pid":1030626,"name":"FastDFS-\u7279\u6027\u8be6\u89e3.md","title":"\u7279\u6027\u8be6\u89e3","is_probation":0,"ref":"FastDFS-\u7279\u6027\u8be6\u89e3.md","path":"1030628","index":113},{"id":1030629,"pid":1030626,"name":"FastDFS-\u6587\u4ef6\u7cfb\u7edf\u7684\u5bf9\u6bd4.md","title":"\u6587\u4ef6\u7cfb\u7edf\u7684\u5bf9\u6bd4","is_probation":0,"ref":"FastDFS-\u6587\u4ef6\u7cfb\u7edf\u7684\u5bf9\u6bd4.md","path":"1030629","index":114},{"id":1030630,"pid":1030626,"name":"fastdfs-\u5b89\u88c5\u90e8\u7f72.md","title":"\u5b89\u88c5\u90e8\u7f72","is_probation":0,"ref":"fastdfs-\u5b89\u88c5\u90e8\u7f72.md","path":"1030630","index":115}]},{"id":1036865,"pid":919432,"name":"\u4f01\u4e1a\u7ea7\u529f\u80fd-Canal\u6570\u636e\u5e93\u65e5\u5fd7\u89e3\u6790\u6d88\u8d39.md","title":"Canal\u6570\u636e\u5e93\u65e5\u5fd7\u89e3\u6790\u6d88\u8d39","is_probation":1,"ref":"\u4f01\u4e1a\u7ea7\u529f\u80fd-Canal\u6570\u636e\u5e93\u65e5\u5fd7\u89e3\u6790\u6d88\u8d39.md","path":"1036865","index":116,"articles":[{"id":1036866,"pid":1036865,"name":"canal-\u4ecb\u7ecd\u4e0e\u76f8\u5173\u8d44\u6599.md","title":"\u4ecb\u7ecd\u4e0e\u76f8\u5173\u8d44\u6599","is_probation":0,"ref":"canal-\u4ecb\u7ecd\u4e0e\u76f8\u5173\u8d44\u6599.md","path":"1036866","index":117},{"id":1036867,"pid":1036865,"name":"canal-\u5b89\u88c5\u90e8\u7f72.md","title":"\u5b89\u88c5\u90e8\u7f72","is_probation":0,"ref":"canal-\u5b89\u88c5\u90e8\u7f72.md","path":"1036867","index":118},{"id":1050447,"pid":1036865,"name":"Canal-\u540c\u6b65\u6570\u636e\u5230ElasticSearch.md","title":"\u5b9e\u65f6\u540c\u6b65\u6570\u636e\u5230ElasticSearch","is_probation":0,"ref":"Canal-\u540c\u6b65\u6570\u636e\u5230ElasticSearch.md","path":"1050447","index":119}]},{"id":1224728,"pid":919432,"name":"\u4f01\u4e1a\u7ea7\u529f\u80fd\/\u591a\u79df\u6237\u5e94\u7528\u9694\u79bb.md","title":"\u591a\u79df\u6237(\u5e94\u7528\u9694\u79bb)","is_probation":1,"ref":"\u4f01\u4e1a\u7ea7\u529f\u80fd\/\u591a\u79df\u6237\u5e94\u7528\u9694\u79bb.md","path":"1224728","index":120,"articles":[{"id":1224729,"pid":1224728,"name":"\u591a\u79df\u6237\/\u4ecb\u7ecd\u4e0e\u65b9\u6848.md","title":"\u6280\u672f\u4ecb\u7ecd\u4e0e\u9694\u79bb\u65b9\u6848","is_probation":0,"ref":"\u591a\u79df\u6237\/\u4ecb\u7ecd\u4e0e\u65b9\u6848.md","path":"1224729","index":121},{"id":1224730,"pid":1224728,"name":"\u591a\u79df\u6237\/\u672c\u9879\u76ee\u5b9e\u73b0\u8be6\u89e3.md","title":"\u672c\u9879\u76ee\u5b9e\u73b0\u8be6\u89e3","is_probation":0,"ref":"\u591a\u79df\u6237\/\u672c\u9879\u76ee\u5b9e\u73b0\u8be6\u89e3.md","path":"1224730","index":122}]},{"id":1228555,"pid":919432,"name":"\u4f01\u4e1a\u7ea7\u529f\u80fd\/\u5206\u5e03\u5f0f\u65e5\u5fd7\u94fe\u8def\u8ddf\u8e2a.md","title":"\u5206\u5e03\u5f0f\u65e5\u5fd7\u94fe\u8def\u8ddf\u8e2a","is_probation":0,"ref":"\u4f01\u4e1a\u7ea7\u529f\u80fd\/\u5206\u5e03\u5f0f\u65e5\u5fd7\u94fe\u8def\u8ddf\u8e2a.md","path":"1228555","index":123},{"id":1515193,"pid":919432,"name":"\u4f01\u4e1a\u7ea7\u529f\u80fd\/\u5355\u70b9\u767b\u5f55\u8be6\u89e3.md","title":"\u5355\u70b9\u767b\u5f55\u8be6\u89e3","is_probation":0,"ref":"\u4f01\u4e1a\u7ea7\u529f\u80fd\/\u5355\u70b9\u767b\u5f55\u8be6\u89e3.md","path":"1515193","index":124}]},{"id":937198,"pid":0,"name":"\u4f01\u4e1a\u5f00\u53d1\u73af\u5883\u642d\u5efa.md","title":"\u4f01\u4e1a\u5f00\u53d1\u73af\u5883\u642d\u5efa","is_probation":1,"ref":"\u4f01\u4e1a\u5f00\u53d1\u73af\u5883\u642d\u5efa.md","path":"937198","index":125,"articles":[{"id":937199,"pid":937198,"name":"\u4f01\u4e1a\u5f00\u53d1\u73af\u5883\u642d\u5efa-\u7814\u53d1\u9879\u76ee\u7ba1\u7406\u8f6f\u4ef6.md","title":"\u7814\u53d1\u9879\u76ee\u7ba1\u7406\u8f6f\u4ef6(\u7985\u9053)","is_probation":0,"ref":"\u4f01\u4e1a\u5f00\u53d1\u73af\u5883\u642d\u5efa-\u7814\u53d1\u9879\u76ee\u7ba1\u7406\u8f6f\u4ef6.md","path":"937199","index":126},{"id":937200,"pid":937198,"name":"\u4f01\u4e1a\u7ea7\u5f00\u53d1\u73af\u5883\u642d\u5efa-Maven\u79c1\u670d.md","title":"Maven\u79c1\u670d","is_probation":1,"ref":"\u4f01\u4e1a\u7ea7\u5f00\u53d1\u73af\u5883\u642d\u5efa-Maven\u79c1\u670d.md","path":"937200","index":127,"articles":[{"id":937513,"pid":937200,"name":"maven\u79c1\u670d-\u5b89\u88c5\u90e8\u7f72.md","title":"\u5b89\u88c5\u90e8\u7f72","is_probation":0,"ref":"maven\u79c1\u670d-\u5b89\u88c5\u90e8\u7f72.md","path":"937513","index":128},{"id":937514,"pid":937200,"name":"maven\u79c1\u670d-\u4f7f\u7528\u4ecb\u7ecd.md","title":"\u4f7f\u7528\u4ecb\u7ecd","is_probation":0,"ref":"maven\u79c1\u670d-\u4f7f\u7528\u4ecb\u7ecd.md","path":"937514","index":129}]},{"id":937569,"pid":937198,"name":"\u4f01\u4e1a\u7ea7\u5f00\u53d1\u73af\u5883\u642d\u5efa-docker\u79c1\u6709\u955c\u50cf\u4ed3\u5e93.md","title":"Docker\u79c1\u6709\u955c\u50cf\u4ed3\u5e93","is_probation":1,"ref":"\u4f01\u4e1a\u7ea7\u5f00\u53d1\u73af\u5883\u642d\u5efa-docker\u79c1\u6709\u955c\u50cf\u4ed3\u5e93.md","path":"937569","index":130,"articles":[{"id":937570,"pid":937569,"name":"docker\u79c1\u6709\u955c\u50cf\u4ed3\u5e93-\u5b89\u88c5\u90e8\u7f72.md","title":"\u5b89\u88c5\u90e8\u7f72","is_probation":0,"ref":"docker\u79c1\u6709\u955c\u50cf\u4ed3\u5e93-\u5b89\u88c5\u90e8\u7f72.md","path":"937570","index":131},{"id":937571,"pid":937569,"name":"docker\u79c1\u6709\u955c\u50cf\u4ed3\u5e93-\u4f7f\u7528\u4ecb\u7ecd.md","title":"\u4f7f\u7528\u4ecb\u7ecd","is_probation":0,"ref":"docker\u79c1\u6709\u955c\u50cf\u4ed3\u5e93-\u4f7f\u7528\u4ecb\u7ecd.md","path":"937571","index":132}]},{"id":966695,"pid":937198,"name":"\u4f01\u4e1a\u7ea7\u5f00\u53d1\u73af\u5883\u642d\u5efa-\u5bb9\u5668\u7ba1\u7406\u5e73\u53f0.md","title":"\u5bb9\u5668\u7ba1\u7406\u5e73\u53f0","is_probation":1,"ref":"\u4f01\u4e1a\u7ea7\u5f00\u53d1\u73af\u5883\u642d\u5efa-\u5bb9\u5668\u7ba1\u7406\u5e73\u53f0.md","path":"966695","index":133,"articles":[{"id":966696,"pid":966695,"name":"rancher-\u4ecb\u7ecd\u4e0e\u76f8\u5173\u8d44\u6599.md","title":"\u4ecb\u7ecd\u4e0e\u76f8\u5173\u8d44\u6599","is_probation":0,"ref":"rancher-\u4ecb\u7ecd\u4e0e\u76f8\u5173\u8d44\u6599.md","path":"966696","index":134},{"id":966697,"pid":966695,"name":"rancher-\u5b89\u88c5\u90e8\u7f72.md","title":"\u5b89\u88c5\u90e8\u7f72","is_probation":0,"ref":"rancher-\u5b89\u88c5\u90e8\u7f72.md","path":"966697","index":135},{"id":966698,"pid":966695,"name":"rancher-\u4f7f\u7528\u4ecb\u7ecd.md","title":"\u4f7f\u7528\u4ecb\u7ecd","is_probation":0,"ref":"rancher-\u4f7f\u7528\u4ecb\u7ecd.md","path":"966698","index":136}]}]},{"id":939998,"pid":0,"name":"\u6301\u7eed\u96c6\u6210\u90e8\u7f72CICD.md","title":"\u6301\u7eed\u96c6\u6210\u90e8\u7f72CICD","is_probation":1,"ref":"\u6301\u7eed\u96c6\u6210\u90e8\u7f72CICD.md","path":"939998","index":137,"articles":[{"id":939957,"pid":939998,"name":"\u6301\u7eed\u96c6\u6210-\u6301\u7eed\u4ea4\u4ed8\u7684\u542b\u4e49.md","title":"\u6301\u7eed\u4ea4\u4ed8\u7684\u542b\u4e49","is_probation":0,"ref":"\u6301\u7eed\u96c6\u6210-\u6301\u7eed\u4ea4\u4ed8\u7684\u542b\u4e49.md","path":"939957","index":138},{"id":939958,"pid":939998,"name":"\u6301\u7eed\u96c6\u6210-\u5f71\u54cd\u6301\u7eed\u4ea4\u4ed8\u7684\u56e0\u7d20.md","title":"\u5f71\u54cd\u6301\u7eed\u4ea4\u4ed8\u7684\u56e0\u7d20","is_probation":0,"ref":"\u6301\u7eed\u96c6\u6210-\u5f71\u54cd\u6301\u7eed\u4ea4\u4ed8\u7684\u56e0\u7d20.md","path":"939958","index":139},{"id":939959,"pid":939998,"name":"\u6301\u7eed\u96c6\u6210-\u4ee3\u7801\u5206\u652f\u7b56\u7565\u9009\u62e9.md","title":"\u4ee3\u7801\u5206\u652f\u7b56\u7565\u9009\u62e9","is_probation":0,"ref":"\u6301\u7eed\u96c6\u6210-\u4ee3\u7801\u5206\u652f\u7b56\u7565\u9009\u62e9.md","path":"939959","index":140},{"id":937194,"pid":939998,"name":"\u6301\u7eed\u96c6\u6210-CICD\u6d41\u7a0b\u8bbe\u8ba1.md","title":"CICD\u6d41\u7a0b\u8bbe\u8ba1","is_probation":0,"ref":"\u6301\u7eed\u96c6\u6210-CICD\u6d41\u7a0b\u8bbe\u8ba1.md","path":"937194","index":141},{"id":937196,"pid":939998,"name":"\u6301\u7eed\u96c6\u6210-Gitlab.md","title":"\u4ee3\u7801\u4ed3\u5e93Gitlab","is_probation":1,"ref":"\u6301\u7eed\u96c6\u6210-Gitlab.md","path":"937196","index":142,"articles":[{"id":937187,"pid":937196,"name":"\u6301\u7eed\u96c6\u6210-Gitlab-\u5b89\u88c5\u90e8\u7f72.md","title":"\u5b89\u88c5\u90e8\u7f72","is_probation":0,"ref":"\u6301\u7eed\u96c6\u6210-Gitlab-\u5b89\u88c5\u90e8\u7f72.md","path":"937187","index":143},{"id":937188,"pid":937196,"name":"\u6301\u7eed\u96c6\u6210-Gitlab-\u514d\u5bc6\u8bbf\u95ee.md","title":"\u514d\u5bc6\u8bbf\u95ee","is_probation":0,"ref":"\u6301\u7eed\u96c6\u6210-Gitlab-\u514d\u5bc6\u8bbf\u95ee.md","path":"937188","index":144},{"id":937189,"pid":937196,"name":"\u6301\u7eed\u96c6\u6210-Gitlab-webhook\u914d\u7f6e.md","title":"webhook\u914d\u7f6e","is_probation":0,"ref":"\u6301\u7eed\u96c6\u6210-Gitlab-webhook\u914d\u7f6e.md","path":"937189","index":145}]},{"id":937197,"pid":939998,"name":"\u6301\u7eed\u96c6\u6210-Jenkins.md","title":"\u81ea\u52a8\u5316\u90e8\u7f72Jenkins","is_probation":1,"ref":"\u6301\u7eed\u96c6\u6210-Jenkins.md","path":"937197","index":146,"articles":[{"id":937191,"pid":937197,"name":"\u6301\u7eed\u96c6\u6210-jenkins-\u5b89\u88c5\u90e8\u7f72.md","title":"\u5b89\u88c5\u90e8\u7f72","is_probation":0,"ref":"\u6301\u7eed\u96c6\u6210-jenkins-\u5b89\u88c5\u90e8\u7f72.md","path":"937191","index":147},{"id":937192,"pid":937197,"name":"\u6301\u7eed\u96c6\u6210-jenkins-ssh\u514d\u5bc6\u767b\u5f55.md","title":"ssh\u514d\u5bc6\u767b\u5f55","is_probation":0,"ref":"\u6301\u7eed\u96c6\u6210-jenkins-ssh\u514d\u5bc6\u767b\u5f55.md","path":"937192","index":148},{"id":939017,"pid":937197,"name":"\u6301\u7eed\u96c6\u6210-jenkins-\u6d41\u6c34\u7ebf\u7b80\u5355\u4f8b\u5b50.md","title":"\u6d41\u6c34\u7ebf\u7b80\u5355\u4f8b\u5b50","is_probation":0,"ref":"\u6301\u7eed\u96c6\u6210-jenkins-\u6d41\u6c34\u7ebf\u7b80\u5355\u4f8b\u5b50.md","path":"939017","index":149},{"id":938981,"pid":937197,"name":"\u6301\u7eed\u96c6\u6210-jenkins-\u6d41\u6c34\u7ebf\u53c2\u6570\u5316\u6784\u5efa\u4f8b\u5b50.md","title":"\u6d41\u6c34\u7ebf\u53c2\u6570\u5316\u6784\u5efa\u4f8b\u5b50","is_probation":0,"ref":"\u6301\u7eed\u96c6\u6210-jenkins-\u6d41\u6c34\u7ebf\u53c2\u6570\u5316\u6784\u5efa\u4f8b\u5b50.md","path":"938981","index":150}]},{"id":937204,"pid":939998,"name":"\u6301\u7eed\u96c6\u6210-SonarQube.md","title":"\u9759\u6001\u4ee3\u7801\u6d4b\u8bd5SonarQube","is_probation":0,"ref":"\u6301\u7eed\u96c6\u6210-SonarQube.md","path":"937204","index":151}]},{"id":989546,"pid":0,"name":"\u5e94\u7528\u6027\u80fd.md","title":"\u5e94\u7528\u6027\u80fd","is_probation":1,"ref":"\u5e94\u7528\u6027\u80fd.md","path":"989546","index":152,"articles":[{"id":989547,"pid":989546,"name":"\u5e94\u7528\u6027\u80fd-\u538b\u529b\u6d4b\u8bd5\u5de5\u5177.md","title":"\u538b\u529b\u6d4b\u8bd5\u5de5\u5177","is_probation":1,"ref":"\u5e94\u7528\u6027\u80fd-\u538b\u529b\u6d4b\u8bd5\u5de5\u5177.md","path":"989547","index":153,"articles":[{"id":989548,"pid":989547,"name":"jmeter-\u4ecb\u7ecd\u548c\u5b89\u88c5.md","title":"\u4ecb\u7ecd\u548c\u5b89\u88c5","is_probation":0,"ref":"jmeter-\u4ecb\u7ecd\u548c\u5b89\u88c5.md","path":"989548","index":154},{"id":989549,"pid":989547,"name":"Jmeter-\u4f7f\u7528\u4ecb\u7ecd.md","title":"\u4f7f\u7528\u4ecb\u7ecd","is_probation":0,"ref":"Jmeter-\u4f7f\u7528\u4ecb\u7ecd.md","path":"989549","index":155}]},{"id":1434275,"pid":989546,"name":"\u5e94\u7528\u6027\u80fd\/JVM.md","title":"JVM","is_probation":0,"ref":"\u5e94\u7528\u6027\u80fd\/JVM.md","path":"1434275","index":156,"articles":[{"id":989551,"pid":1434275,"name":"\u5e94\u7528\u6027\u80fd-JVM\u6027\u80fd\u8c03\u4f18.md","title":"JVM\u6027\u80fd\u8c03\u4f18","is_probation":0,"ref":"\u5e94\u7528\u6027\u80fd-JVM\u6027\u80fd\u8c03\u4f18.md","path":"989551","index":157},{"id":1203547,"pid":1434275,"name":"\u5e94\u7528\u6027\u80fd\/\u5e38\u89c1JVM\u5185\u5b58\u9519\u8bef\u53ca\u89e3\u51b3\u65b9\u6848.md","title":"\u5e38\u89c1JVM\u5185\u5b58\u9519\u8bef\u53ca\u89e3\u51b3\u65b9\u6848","is_probation":0,"ref":"\u5e94\u7528\u6027\u80fd\/\u5e38\u89c1JVM\u5185\u5b58\u9519\u8bef\u53ca\u89e3\u51b3\u65b9\u6848.md","path":"1203547","index":158},{"id":1434276,"pid":1434275,"name":"JVM\/JVM\u5206\u6790\u5de5\u5177\u8be6\u89e3.md","title":"JVM \u5206\u6790\u5de5\u5177\u8be6\u89e3","is_probation":0,"ref":"JVM\/JVM\u5206\u6790\u5de5\u5177\u8be6\u89e3.md","path":"1434276","index":159}]},{"id":989550,"pid":989546,"name":"\u5e94\u7528\u6027\u80fd-SpringCloud\u6027\u80fd\u8c03\u4f18.md","title":"Spring Cloud\u6027\u80fd\u8c03\u4f18","is_probation":0,"ref":"\u5e94\u7528\u6027\u80fd-SpringCloud\u6027\u80fd\u8c03\u4f18.md","path":"989550","index":160},{"id":1203305,"pid":989546,"name":"\u5e94\u7528\u6027\u80fd\/Elasticsearch\u6027\u80fd\u4f18\u5316.md","title":"Elasticsearch\u6027\u80fd\u4f18\u5316","is_probation":0,"ref":"\u5e94\u7528\u6027\u80fd\/Elasticsearch\u6027\u80fd\u4f18\u5316.md","path":"1203305","index":161}]},{"id":1278288,"pid":0,"name":"\u4ea4\u6d41\u53cd\u9988.md","title":"\u4ea4\u6d41\u53cd\u9988","is_probation":1,"ref":"\u4ea4\u6d41\u53cd\u9988.md","path":"1278288","index":162},{"id":1578728,"pid":0,"name":"\u4e91\u670d\u52a1\u5668\u8d2d\u4e70\u4f18\u60e0.md","title":"\u4e91\u670d\u52a1\u5668\u8d2d\u4e70\u4f18\u60e0","is_probation":1,"ref":"\u4e91\u670d\u52a1\u5668\u8d2d\u4e70\u4f18\u60e0.md","path":"1578728","index":163}]
+    }
+</script>
+<script type="text/javascript" src="https://static.kancloud.cn/asset/reader.js?version=ed38795423544aa3e336"></script>
+<script type="text/javascript">
+    kancloud.bootstrap();
+</script>
+    <!-- Google Analytics -->
+    <script>
+        window.ga = window.ga || function () {
+            (ga.q = ga.q || []).push(arguments)
+        };
+        ga.l      = +new Date;
+        ga('create', 'UA-85687835-1', 'auto', 'web');
+        ga('set', 'transport', 'beacon');
+        
+                ga('web.send', 'pageview', {
+            dimension1:413536
+        });
+        window.sendPageView = function (page, title) {
+            ga('web.set', 'page', page);
+            ga('web.set', 'title', title);
+            ga('web.send', 'pageview', {
+                dimension1: 413536
+            });
+        }
+            </script>
+    <script async src='https://www.google-analytics.com/analytics.js'></script>
+    <!-- End Google Analytics -->
+</body>
+</html>
