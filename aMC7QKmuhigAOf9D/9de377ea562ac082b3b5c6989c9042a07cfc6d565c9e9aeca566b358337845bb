@@ -1,0 +1,1602 @@
+<!DOCTYPE html>
+<html lang='zh-CN'>
+<head>
+<title>Matlab - 移动App - 最新推荐项目 - 码云 Gitee.com</title>
+<link href="https://assets.gitee.com/assets/favicon-9007bd527d8a7851c8330e783151df58.ico" rel="shortcut icon" type="image/vnd.microsoft.icon" />
+<meta charset='utf-8'>
+<meta content='always' name='referrer'>
+<meta content='码云' property='og:site_name'>
+<meta content='Object' property='og:type'>
+<meta content='http://gitee.com/explore/mobile-app?lang=Matlab&amp;amp;license=Apache-2.0&amp;amp;order=recommend' property='og:url'>
+<meta content='https://gitee.com/static/images/logo_themecolor.png' itemprop='image' property='og:image'>
+<meta content='Matlab - 移动App - 最新推荐项目 - 码云 Gitee.com' itemprop='name' property='og:title'>
+<meta content='码云(gitee.com)是 OSCHINA.NET 推出的代码托管平台，支持 Git 和 SVN，提供免费的私有仓库托管。目前已有超过 500 万的开发者选择码云。' property='og:description'>
+<meta content='移动App, Matlab, 最新推荐项目, 客户端源码,跨平台移动应用开发框架,开源android阅读器,通讯录App,V2EX社区客户端' name='Keywords'>
+<meta content='移动App分类的列表页为您提供多种开源的移动App分类的工具，其中包括OSChina 客户端源码，跨平台移动应用开发引擎，Android拍照APP，知乎日报的 IOS客户端，V2EX社区客户端，新浪微博第三方客户端，开源android阅读器，基于React Native的通讯录App,旅游路线记录与分享APP，基于uni-app开发的跨平台app源码等多种移动App分类的工具' itemprop='description' name='Description'>
+
+<meta content="IE=edge" http-equiv="X-UA-Compatible" />
+<meta content="authenticity_token" name="csrf-param" />
+<meta content="GCVgdyLewykCdTC8YnGzSn964UoU1uswlsRpz5Ai1zs=" name="csrf-token" />
+
+<link href="https://assets.gitee.com/assets/application-4353e40c527157901930256fb2cba2d4.css" media="screen" rel="stylesheet" />
+<script>
+//<![CDATA[
+window.gon = {};gon.locale="zh-CN";gon.sentry_dsn=null;gon.baidu_register_hm_push=null;gon.info={"controller_path":"explores","action_name":"show","current_user":false};gon.tour_env={"current_user":null,"action_name":"show","original_url":"http://gitee.com/explore/mobile-app?lang=Matlab\u0026amp;license=Apache-2.0\u0026amp;order=recommend","controller_path":"explores"};
+//]]>
+</script>
+<script src="https://assets.gitee.com/assets/static/sentry-5.1.0-109ee3d8895a239331efcf947ba7f5d8.js"></script>
+<script src="https://assets.gitee.com/assets/application-25134bf44f1dbb308bb450bdb036a1cc.js"></script>
+<script src="https://assets.gitee.com/assets/lib/jquery.timeago.zh-CN-9c36ca7c4899a28168320613879d208a.js"></script>
+
+
+<script src="//res.wx.qq.com/open/js/jweixin-1.2.0.js"></script>
+<script>
+  var title = document.title.replace(/( - Gitee| - 码云)$/, '')
+      imgUrl = '';
+  
+  document.addEventListener('DOMContentLoaded', function(event) {
+    var imgUrlEl = document.querySelector('.readme-box .markdown-body > img, .readme-box .markdown-body :not(a) > img');
+    imgUrl = imgUrlEl && imgUrlEl.getAttribute('src');
+  
+    if (!imgUrl) {
+      imgUrlEl = document.querySelector('meta[itemprop=image]');
+      imgUrl = imgUrlEl && imgUrlEl.getAttribute('content'); 
+      imgUrl = imgUrl || "https://gitee.com/static/images/logo_themecolor.png";
+    }
+  
+    wx.config({
+      debug: false,
+      appId: "wxff219d611a159737",
+      timestamp: "1586759380",
+      nonceStr: "c55d2afee5c11ab09ff3de20c4c6422b",
+      signature: "2afe4e21fce43ba467601fefdc84fbaf7804bb99",
+      jsApiList: [
+        'onMenuShareTimeline',
+        'onMenuShareAppMessage'
+      ]
+    });
+  
+    wx.ready(function () {
+      wx.onMenuShareTimeline({
+        title: title, // 分享标题
+        link: "https://gitee.com/explore/mobile-app?lang=Matlab&amp;license=Apache-2.0&amp;order=recommend", // 分享链接，该链接域名或路径必须与当前页面对应的公众号JS安全域名一致
+        imgUrl: imgUrl // 分享图标
+      });
+      wx.onMenuShareAppMessage({
+        title: title, // 分享标题
+        link: "https://gitee.com/explore/mobile-app?lang=Matlab&amp;license=Apache-2.0&amp;order=recommend", // 分享链接，该链接域名或路径必须与当前页面对应的公众号JS安全域名一致
+        desc: document.querySelector('meta[name=Description]').getAttribute('content'),
+        imgUrl: imgUrl // 分享图标
+      });
+    });
+    wx.error(function(res){
+      console.error('err', res)
+    });
+  })
+</script>
+
+<script type='text/x-mathjax-config'>
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    displayMath: [["$$","$$"],["\\[","\\]"]],
+    processEscapes: true,
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
+    ignoreClass: "container|files",
+    processClass: "markdown-body"
+  }
+});
+</script>
+<script src="https://assets.gitee.com/uploads/resources/MathJax-2.7.2/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+<script>
+  (function () {
+    var messages = {
+      'zh-CN': {
+        addResult: '增加 <b>{term}</b>',
+        count: '已选择 {count}',
+        maxSelections: '最多 {maxCount} 个选择',
+        noResults: '未找到结果',
+        serverError: '连接服务器时发生错误'
+      },
+      'zh-TW': {
+        addResult: '增加 <b>{term}</b>',
+        count: '已選擇 {count}',
+        maxSelections: '最多 {maxCount} 個選擇',
+        noResults: '未找到結果',
+        serverError: '連接服務器時發生錯誤'
+      }
+    }
+  
+    if (messages[gon.locale]) {
+      $.fn.dropdown.settings.message = messages[gon.locale]
+    }
+  }());
+</script>
+
+<!--[if lt IE 10]>
+<script>
+    window.location.href = "/incompatible.html";
+</script>
+<![endif]-->
+</head>
+
+<link href="https://gitee.com/explore/mobile-app.atom" rel="alternate" title="Gitee Recommened Projects" type="application/atom+xml" />
+<script src="https://assets.gitee.com/assets/explore/app-4e837fe54d4d35b570bf6148a01b1247.js"></script>
+<link href="https://assets.gitee.com/assets/explore/application-8378379951d9b0b5115787e25ecfca6e.css" media="screen" rel="stylesheet" />
+<body class='large ui_basic' id='explores-show'>
+<header class='common-header fixed large noborder' id='git-header-nav'>
+<div class='ui container'>
+<div class='ui menu header-menu'>
+<div class='git-nav-expand-bar'>
+<i class='iconfont icon-mode-table'></i>
+</div>
+<div class='gitee-nav__sidebar'>
+<div class='gitee-nav__sidebar-container'>
+<div class='gitee-nav__sidebar-top'>
+<div class='gitee-nav__avatar-box'></div>
+<div class='gitee-nav__buttons-box'>
+<a class="ui button small fluid orange" href="/login">登录</a>
+<a class="ui button small fluid basic is-register" href="/signup">注册</a>
+</div>
+</div>
+<div class='gitee-nav__sidebar-middle'>
+<div class='gitee-nav__sidebar-list'>
+<ul>
+<li class='gitee-nav__sidebar-item'>
+<a href="/explore"><i class='iconfont icon-ic-discover'></i>
+<span class='gitee-nav__sidebar-name'>开源软件</span>
+</a></li>
+<li class='gitee-nav__sidebar-item'>
+<a href="/enterprises"><i class='iconfont icon-ic-enterprise'></i>
+<span class='gitee-nav__sidebar-name'>企业版</span>
+</a></li>
+<li class='gitee-nav__sidebar-item'>
+<a href="/education"><i class='iconfont icon-ic-education'></i>
+<span class='gitee-nav__sidebar-name'>高校版</span>
+</a></li>
+<li class='gitee-nav__sidebar-item split-line'></li>
+<li class='gitee-nav__sidebar-item'>
+<a href="/search"><i class='iconfont icon-ic-search'></i>
+<span class='gitee-nav__sidebar-name'>搜索</span>
+</a></li>
+<li class='gitee-nav__sidebar-item'>
+<a href="/help"><i class='iconfont icon-help-circle'></i>
+<span class='gitee-nav__sidebar-name'>帮助中心</span>
+</a></li>
+<li class='gitee-nav__sidebar-item'>
+<a href="/terms"><i class='iconfont icon-file'></i>
+<span class='gitee-nav__sidebar-name'>使用条款</span>
+</a></li>
+<li class='gitee-nav__sidebar-item'>
+<a href="/about_us"><i class='iconfont icon-issuepx'></i>
+<span class='gitee-nav__sidebar-name'>关于我们</span>
+</a></li>
+</ul>
+</div>
+</div>
+<div class='gitee-nav__sidebar-bottom'>
+<div class='gitee-nav__sidebar-close-button'>
+<i class='fa fa-angle-double-left'></i>
+</div>
+</div>
+</div>
+</div>
+
+<div class='item gitosc-logo'>
+<a href="/"><img alt='码云 Gitee — 基于 Git 的代码托管和研发协作平台' class='ui inline image' height='28' src='/static/images/logo.svg?t=158106664' title='码云 Gitee — 基于 Git 的代码托管和研发协作平台' width='95'>
+<img alt='码云 Gitee — 基于 Git 的代码托管和研发协作平台' class='ui inline black image' height='28' src='/static/images/logo-black.svg?t=158106664' title='码云 Gitee — 基于 Git 的代码托管和研发协作平台' width='95'>
+</a></div>
+<a class="item state-active" href="/explore" title="开源软件">开源软件
+</a><a class="item " href="/enterprises" title="企业版">企业版
+<sup class='ui red label'>
+特惠
+</sup>
+</a><a class="item " href="/education" title="高校版">高校版
+</a><a class="item" href="https://blog.gitee.com/" id="gitee-blog" target="_blank" title="博客">博客
+</a><div class='center responsive-logo'>
+<a href="/"><img alt='码云 Gitee — 基于 Git 的代码托管和研发协作平台' class='ui inline image' height='24' src='/static/images/logo.svg?t=158106664' title='码云 Gitee — 基于 Git 的代码托管和研发协作平台' width='85'>
+<img alt='码云 Gitee — 基于 Git 的代码托管和研发协作平台' class='ui inline black image' height='24' src='/static/images/logo-black.svg?t=158106664' title='码云 Gitee — 基于 Git 的代码托管和研发协作平台' width='85'>
+</a></div>
+<div class='right menu userbar' id='git-nav-user-bar'>
+<form accept-charset="UTF-8" action="/search" class="ui item" data-text-filter="搜索格式不正确" data-text-require="搜索关键字不能少于1个" id="navbar-search-form" method="get"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /></div>
+<input id="navbar-search-type" name="type" type="hidden" />
+<input id="fork_filter" name="fork_filter" type="hidden" value="on" />
+<div class='ui search'>
+<input class="prompt" id="navbar-search-input" name="q" placeholder="搜索项目" type="text" value="" />
+</div>
+</form>
+
+<script>
+  var can_search_in_repo = 0,
+      repo = "",
+      reponame = "";
+  
+  $(function() {
+    var $search = $('#navbar-search-form .ui.search');
+    $search.search({
+      apiSettings: {
+        url: '/search/relative_project?q={query}',
+        onResponse: function (res) {
+          if (res && res.status === 200 && res.data) {
+            var query = $search.search('get value');
+  
+            res.data.map(function (item) {
+              item.path_ns = '/' + item.path_ns;
+              item.icon = 'iconfont icon-project-public';
+            });
+            res.data.unshift({
+              name_ns: "在全站搜索 <b class='hl'>" + query +"</b> 相关项目",
+              path_ns: '/search?fork_filter=on&q=' + query,
+              icon: 'iconfont icon-search'
+            });
+            if(can_search_in_repo == 1) {
+              res.data.unshift({
+                name_ns: "在当前仓库搜索 <b class='hl'>" + query +"</b> 相关代码",
+                path_ns: '/search?type=code&q=' + query + '&repo=' + repo + '&reponame=' + reponame,
+                icon: 'iconfont icon-search'
+              });
+            }
+            return res;
+          } else {
+            return { data: [] };
+          }
+        }
+      },
+      fields: {
+        results: 'data',
+        description: 'name_ns',
+        url: 'path_ns',
+        icon: 'icon'
+      },
+      minCharacters: 1,
+      maxResults: 10,
+      searchDelay: 120,
+      showNoResults: false,
+      transition: 'fade'
+    });
+  });
+</script>
+
+<a class="item git-nav-user__login-item" href="/login">登录
+</a><a class="item git-nav-user__register-item" href="/signup">注册
+</a><script>
+  $('.destroy-user-session').on('click', function() {
+    $.cookie('access_token', null, { path: '/' });
+  })
+</script>
+
+</div>
+</div>
+</div>
+</header>
+<script>
+  Gitee.initNavbar()
+  Gitee.initRepoRemoteWay()
+</script>
+
+<div class='site-content'>
+<div class='fixed-notice-infos'>
+<div class='all-messages'>
+<div class='ui info message' id='git-bulletin'>
+<a href=https://blog.gitee.com/2020/04/07/gitee-go/ target='_blank'>Gitee 企业版上线 DevOps 工具「Gitee Go」</a>
+<i class='icon remove' id='remove-bulletin'></i>
+</div>
+</div>
+<div class='ui container'>
+<div class='flash-messages' id='messages-container'></div>
+</div>
+<script>
+  (function() {
+    $(function() {
+      var $error_box, alertTip, notify_content, notify_options, template;
+      template = '<div data-notify="container" class="ui {0} message" role="alert">' + '<i data-notify="dismiss" class="close icon"></i>' + '<span data-notify="message">{2}</span>' + '</div>';
+      notify_content = null;
+      notify_options = {};
+      alertTip = '';
+      $error_box = $(".flash_error.flash_error_box");
+      if (notify_options.type === 'error' && $error_box.length > 0 && !$.isEmptyObject(notify_content.message)) {
+        if (notify_content.message === 'captcha_fail') {
+          alertTip = "验证码不正确";
+        } else if (notify_content.message === 'captcha_expired') {
+          alertTip = "验证码已过期，请点击刷新";
+        } else if (notify_content.message === 'not_found_in_database') {
+          alertTip = "帐号或者密码错误";
+        } else if (notify_content.message === 'not_found_and_show_captcha') {
+          alertTip = "帐号或者密码错误";
+        } else if (notify_content.message === 'phone_captcha_fail') {
+          alertTip = "手机验证码不通过";
+        } else {
+          alertTip = notify_content.message;
+        }
+        return $error_box.html(alertTip).show();
+      } else if (notify_content) {
+        if ("show" === 'third_party_binding') {
+          return $('#third_party_binding-message').html(notify_content.message).addClass('ui message red');
+        }
+        notify_options.delay = 3000;
+        notify_options.template = template;
+        notify_options.offset = {
+          x: 10,
+          y: 30
+        };
+        notify_options.element = '#messages-container';
+        return $.notify(notify_content, notify_options);
+      }
+    });
+  
+  }).call(this);
+</script>
+
+</div>
+<script>
+  (function() {
+    $(function() {
+      var setCookie;
+      setCookie = function(name, value) {
+        $.cookie(name, value, {
+          path: '/',
+          expires: 365
+        });
+      };
+      $('#remove-bulletin, #remove-bulletin-dashboard').on('click', function() {
+        setCookie('remove_bulletin', "gitee-maintain-1586321954");
+        $('#git-bulletin').hide();
+      });
+      $('#remove-member-bulletin').on('click', function() {
+        setCookie('remove_member_bulletin', "gitee_member_bulletin");
+        $(this).parent().hide();
+      });
+      return $('#remove-gift-bulletin').on('click', function() {
+        setCookie('remove_gift_bulletin', "gitee-gift-bulletin");
+        $(this).parent().hide();
+      });
+    });
+  
+  }).call(this);
+</script>
+<script>
+  function closeMessageBanner(pthis, type, val) {
+    var json = {}
+  
+    val = typeof val === 'undefined' ? null : val
+    $(pthis).parent().remove()
+    if (type === 'out_of_enterprise_member') {
+      json = {type: type, data: val}
+    } else if (type === 'enterprise_overdue') {
+      json = {type: type, data: val}
+    }
+    $.post('/profile/close_flash_tip', json)
+  }
+</script>
+
+<div class='explore__container'>
+<div class='explore-recommend'>
+<div class='ui container'>
+<div class='ui grid'>
+<div class='three wide column'>
+<div class='explore-categories'>
+<div class='explore-categories__container'>
+<ul>
+<li class='explore-categories__item'>
+<a href="/explore/all?lang=Matlab&amp;license=Apache-2.0&amp;order=recommend"><b>
+<i class='explore-categories__item-icon iconfont icon-tag-all'></i>
+全部推荐项目
+</b>
+</a></li>
+<li class='explore-categories__item'>
+<a href="/explore/program-develop?lang=Matlab&amp;license=Apache-2.0&amp;order=recommend"><i class='explore-categories__item-icon icon-tag-program iconfont'></i>
+程序开发
+</a><div class='ui popup explore-categories__second'>
+<table>
+<tbody>
+<tr>
+<td>
+<a class="" href="/explore/segment?lang=Matlab&amp;license=Apache-2.0&amp;order=recommend">中英文分词</a>
+</td>
+<td>
+<a class="" href="/explore/payment-dev?lang=Matlab&amp;license=Apache-2.0&amp;order=recommend">支付开发包</a>
+</td>
+<td>
+<a class="" href="/explore/security-dev?lang=Matlab&amp;license=Apache-2.0&amp;order=recommend">安全开发相关</a>
+</td>
+<td>
+<a class="" href="/explore/utils?lang=Matlab&amp;license=Apache-2.0&amp;order=recommend">常用工具包</a>
+</td>
+</tr>
+<tr>
+<td>
+<a class="" href="/explore/excel-utils?lang=Matlab&amp;license=Apache-2.0&amp;order=recommend">Excel工具包</a>
+</td>
+<td>
+<a class="" href="/explore/barcode?lang=Matlab&amp;license=Apache-2.0&amp;order=recommend">条形码/二维码</a>
+</td>
+<td>
+<a class="" href="/explore/template-engine?lang=Matlab&amp;license=Apache-2.0&amp;order=recommend">模板引擎</a>
+</td>
+<td>
+<a class="" href="/explore/desktop-ui?lang=Matlab&amp;license=Apache-2.0&amp;order=recommend">桌面UI组件/框架</a>
+</td>
+</tr>
+<tr>
+<td>
+<a class="" href="/explore/web-dev-toolkits?lang=Matlab&amp;license=Apache-2.0&amp;order=recommend">网络开发包</a>
+</td>
+<td>
+<a class="" href="/explore/tts?lang=Matlab&amp;license=Apache-2.0&amp;order=recommend">语音处理</a>
+</td>
+<td>
+<a class="" href="/explore/networklib?lang=Matlab&amp;license=Apache-2.0&amp;order=recommend">网络工具</a>
+</td>
+<td>
+<a class="" href="/explore/web-service?lang=Matlab&amp;license=Apache-2.0&amp;order=recommend">网络服务</a>
+</td>
+</tr>
+<tr>
+<td>
+<a class="" href="/explore/data-mining?lang=Matlab&amp;license=Apache-2.0&amp;order=recommend">数据挖掘</a>
+</td>
+<td>
+<a class="" href="/explore/task-schedule?lang=Matlab&amp;license=Apache-2.0&amp;order=recommend">作业/任务调度</a>
+</td>
+<td>
+<a class="" href="/explore/scripting-language?lang=Matlab&amp;license=Apache-2.0&amp;order=recommend">编程语言/脚本语言</a>
+</td>
+<td>
+<a class="" href="/explore/cache-modules?lang=Matlab&amp;license=Apache-2.0&amp;order=recommend">缓存组件</a>
+</td>
+</tr>
+<tr>
+<td>
+<a class="" href="/explore/markdown-utils?lang=Matlab&amp;license=Apache-2.0&amp;order=recommend">Markdown开发包</a>
+</td>
+<td>
+<a class="" href="/explore/search-engine?lang=Matlab&amp;license=Apache-2.0&amp;order=recommend">搜索引擎</a>
+</td>
+<td>
+<a class="" href="/explore/microservice?lang=Matlab&amp;license=Apache-2.0&amp;order=recommend">微服务</a>
+</td>
+<td>
+<a class="" href="/explore/workflow?lang=Matlab&amp;license=Apache-2.0&amp;order=recommend">工作流</a>
+</td>
+</tr>
+<tr>
+<td>
+<a class="" href="/explore/charting-components?lang=Matlab&amp;license=Apache-2.0&amp;order=recommend">图表组件</a>
+</td>
+<td>
+<a class="" href="/explore/authority-management?lang=Matlab&amp;license=Apache-2.0&amp;order=recommend">权限管理</a>
+</td>
+<td>
+<a class="" href="/explore/reporting-tools?lang=Matlab&amp;license=Apache-2.0&amp;order=recommend">报表工具</a>
+</td>
+<td>
+<a class="" href="/explore/code-generator?lang=Matlab&amp;license=Apache-2.0&amp;order=recommend">代码生成器</a>
+</td>
+</tr>
+<tr>
+<td>
+<a class="" href="/explore/ioc-framework?lang=Matlab&amp;license=Apache-2.0&amp;order=recommend">IoC/AOP框架</a>
+</td>
+<td>
+<a class="" href="/explore/image-processing?lang=Matlab&amp;license=Apache-2.0&amp;order=recommend">图像处理</a>
+</td>
+<td>
+<a class="" href="/explore/rule-engine?lang=Matlab&amp;license=Apache-2.0&amp;order=recommend">规则引擎</a>
+</td>
+<td>
+<a class="" href="/explore/json-tools?lang=Matlab&amp;license=Apache-2.0&amp;order=recommend">JSON工具</a>
+</td>
+</tr>
+<tr>
+<td>
+<a class="" href="/explore/logging?lang=Matlab&amp;license=Apache-2.0&amp;order=recommend">日志工具包</a>
+</td>
+<td>
+<a class="" href="/explore/spring-boot-ext?lang=Matlab&amp;license=Apache-2.0&amp;order=recommend">Spring Boot 扩展</a>
+</td>
+<td>
+<a class="" href="/explore/captcha?lang=Matlab&amp;license=Apache-2.0&amp;order=recommend">验证码</a>
+</td>
+<td>
+<a class="" href="/explore/mathlibs?lang=Matlab&amp;license=Apache-2.0&amp;order=recommend">算法/数学计算</a>
+</td>
+</tr>
+<tr>
+<td>
+<a class="" href="/explore/node-plugins?lang=Matlab&amp;license=Apache-2.0&amp;order=recommend">Node 扩展</a>
+</td>
+<td>
+<a class="" href="/explore/process-engine?lang=Matlab&amp;license=Apache-2.0&amp;order=recommend">流程引擎/工具</a>
+</td>
+<td>
+<a class="" href="/explore/animation?lang=Matlab&amp;license=Apache-2.0&amp;order=recommend">动画开发</a>
+</td>
+<td>
+<a class="" href="/explore/mobile-communication?lang=Matlab&amp;license=Apache-2.0&amp;order=recommend">移动通信</a>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class='explore-categories__item'>
+<a href="/explore/Artificial-Intelligence?lang=Matlab&amp;license=Apache-2.0&amp;order=recommend"><i class='explore-categories__item-icon icon-tag-ai iconfont'></i>
+人工智能
+</a><div class='ui popup explore-categories__second'>
+<table>
+<tbody>
+<tr>
+<td>
+<a class="" href="/explore/ai?lang=Matlab&amp;license=Apache-2.0&amp;order=recommend">AI-人工智能</a>
+</td>
+<td>
+<a class="" href="/explore/vrar?lang=Matlab&amp;license=Apache-2.0&amp;order=recommend">VR/AR</a>
+</td>
+</tr>
+<tr>
+<td>
+<a class="" href="/explore/machine-learning?lang=Matlab&amp;license=Apache-2.0&amp;order=recommend">机器学习/深度学习</a>
+</td>
+<td>
+<a class="" href="/explore/cv?lang=Matlab&amp;license=Apache-2.0&amp;order=recommend">计算机视觉/人脸识别</a>
+</td>
+</tr>
+<tr>
+<td>
+<a class="" href="/explore/smart-home?lang=Matlab&amp;license=Apache-2.0&amp;order=recommend">智能家居</a>
+</td>
+<td>
+<a class="" href="/explore/auto-driving?lang=Matlab&amp;license=Apache-2.0&amp;order=recommend">自动驾驶/无人机</a>
+</td>
+</tr>
+<tr>
+<td>
+<a class="" href="/explore/robot?lang=Matlab&amp;license=Apache-2.0&amp;order=recommend">机器人</a>
+</td>
+<td>
+<a class="" href="/explore/nature-language?lang=Matlab&amp;license=Apache-2.0&amp;order=recommend">自然语言处理</a>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class='explore-categories__item'>
+<a href="/explore/blockchain-bitcoin?lang=Matlab&amp;license=Apache-2.0&amp;order=recommend"><i class='explore-categories__item-icon icon-tag-blockchain iconfont'></i>
+区块链/比特币
+</a></li>
+<li class='explore-categories__item'>
+<a href="/explore/wechat-devel?lang=Matlab&amp;license=Apache-2.0&amp;order=recommend"><i class='explore-categories__item-icon icon-tag-wechat iconfont'></i>
+微信开发
+</a><div class='ui popup explore-categories__second'>
+<table>
+<tbody>
+<tr>
+<td>
+<a class="" href="/explore/weixin-dev?lang=Matlab&amp;license=Apache-2.0&amp;order=recommend">微信开发包</a>
+</td>
+<td>
+<a class="" href="/explore/weixin-lapp?lang=Matlab&amp;license=Apache-2.0&amp;order=recommend">微信小程序/小游戏</a>
+</td>
+</tr>
+<tr>
+<td>
+<a class="" href="/explore/weixin-app?lang=Matlab&amp;license=Apache-2.0&amp;order=recommend">微信应用</a>
+</td>
+<td>
+<a class="" href="/explore/weixin-game?lang=Matlab&amp;license=Apache-2.0&amp;order=recommend">微信小游戏</a>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class='explore-categories__item'>
+<a href="/explore/enterprise-app?lang=Matlab&amp;license=Apache-2.0&amp;order=recommend"><i class='explore-categories__item-icon icon-tag-enterprise iconfont'></i>
+企业应用
+</a><div class='ui popup explore-categories__second'>
+<table>
+<tbody>
+<tr>
+<td>
+<a class="" href="/explore/gis?lang=Matlab&amp;license=Apache-2.0&amp;order=recommend">GIS/地图/导航/定位</a>
+</td>
+<td>
+<a class="" href="/explore/project-management?lang=Matlab&amp;license=Apache-2.0&amp;order=recommend">任务/项目管理</a>
+</td>
+</tr>
+<tr>
+<td>
+<a class="" href="/explore/erp?lang=Matlab&amp;license=Apache-2.0&amp;order=recommend">企业应用系统</a>
+</td>
+<td>
+<a class="" href="/explore/bi?lang=Matlab&amp;license=Apache-2.0&amp;order=recommend">BI-商业智能</a>
+</td>
+</tr>
+<tr>
+<td>
+<a class="" href="/explore/stocks?lang=Matlab&amp;license=Apache-2.0&amp;order=recommend">金融/股票证券</a>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class='explore-categories__item'>
+<a href="/explore/build-web-system?lang=Matlab&amp;license=Apache-2.0&amp;order=recommend"><i class='explore-categories__item-icon icon-tag-cms iconfont'></i>
+建站系统
+</a><div class='ui popup explore-categories__second'>
+<table>
+<tbody>
+<tr>
+<td>
+<a class="" href="/explore/cms?lang=Matlab&amp;license=Apache-2.0&amp;order=recommend">CMS建站系统</a>
+</td>
+<td>
+<a class="" href="/explore/ecommerce?lang=Matlab&amp;license=Apache-2.0&amp;order=recommend">新零售/网店/商城</a>
+</td>
+</tr>
+<tr>
+<td>
+<a class="" href="/explore/bbs?lang=Matlab&amp;license=Apache-2.0&amp;order=recommend">BBS论坛/问答</a>
+</td>
+<td>
+<a class="" href="/explore/blog?lang=Matlab&amp;license=Apache-2.0&amp;order=recommend">博客系统</a>
+</td>
+</tr>
+<tr>
+<td>
+<a class="" href="/explore/survey?lang=Matlab&amp;license=Apache-2.0&amp;order=recommend">问卷调查/表单系统</a>
+</td>
+<td>
+<a class="" href="/explore/sns?lang=Matlab&amp;license=Apache-2.0&amp;order=recommend">SNS社交系统</a>
+</td>
+</tr>
+<tr>
+<td>
+<a class="" href="/explore/instructional?lang=Matlab&amp;license=Apache-2.0&amp;order=recommend">教学管理</a>
+</td>
+<td>
+<a class="" href="/explore/gallery?lang=Matlab&amp;license=Apache-2.0&amp;order=recommend">相册/画廊/照片</a>
+</td>
+</tr>
+<tr>
+<td>
+<a class="" href="/explore/rss?lang=Matlab&amp;license=Apache-2.0&amp;order=recommend">RSS/Atom工具</a>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class='explore-categories__item'>
+<a href="/explore/web-app-develop?lang=Matlab&amp;license=Apache-2.0&amp;order=recommend"><i class='explore-categories__item-icon icon-tag-web iconfont'></i>
+WEB应用开发
+</a><div class='ui popup explore-categories__second'>
+<table>
+<tbody>
+<tr>
+<td>
+<a class="" href="/explore/webframework?lang=Matlab&amp;license=Apache-2.0&amp;order=recommend">Web开发框架</a>
+</td>
+<td>
+<a class="" href="/explore/jquery-plugins?lang=Matlab&amp;license=Apache-2.0&amp;order=recommend">jQuery插件</a>
+</td>
+</tr>
+<tr>
+<td>
+<a class="" href="/explore/webui?lang=Matlab&amp;license=Apache-2.0&amp;order=recommend">WebUI组件/框架</a>
+</td>
+<td>
+<a class="" href="/explore/javascript-toolkits?lang=Matlab&amp;license=Apache-2.0&amp;order=recommend">JavaScript工具包</a>
+</td>
+</tr>
+<tr>
+<td>
+<a class="" href="/explore/restful?lang=Matlab&amp;license=Apache-2.0&amp;order=recommend">RESTful项目</a>
+</td>
+<td>
+<a class="" href="/explore/backend?lang=Matlab&amp;license=Apache-2.0&amp;order=recommend">后台管理框架</a>
+</td>
+</tr>
+<tr>
+<td>
+<a class="" href="/explore/site-theme?lang=Matlab&amp;license=Apache-2.0&amp;order=recommend">网站主题</a>
+</td>
+<td>
+<a class="" href="/explore/vue-extensions?lang=Matlab&amp;license=Apache-2.0&amp;order=recommend">Vue扩展组件</a>
+</td>
+</tr>
+<tr>
+<td>
+<a class="" href="/explore/spider?lang=Matlab&amp;license=Apache-2.0&amp;order=recommend">Web爬虫</a>
+</td>
+<td>
+<a class="" href="/explore/oauth-dev?lang=Matlab&amp;license=Apache-2.0&amp;order=recommend">OAuth/单点登录/统一认证</a>
+</td>
+</tr>
+<tr>
+<td>
+<a class="" href="/explore/angular-extensions?lang=Matlab&amp;license=Apache-2.0&amp;order=recommend">Angular扩展</a>
+</td>
+<td>
+<a class="" href="/explore/bootstrap-plugins?lang=Matlab&amp;license=Apache-2.0&amp;order=recommend">Bootstrap扩展插件</a>
+</td>
+</tr>
+<tr>
+<td>
+<a class="" href="/explore/react-extensions?lang=Matlab&amp;license=Apache-2.0&amp;order=recommend">React 组件</a>
+</td>
+<td>
+<a class="" href="/explore/rpc?lang=Matlab&amp;license=Apache-2.0&amp;order=recommend">RPC开发框架</a>
+</td>
+</tr>
+<tr>
+<td>
+<a class="" href="/explore/api-gateway?lang=Matlab&amp;license=Apache-2.0&amp;order=recommend">API 网关</a>
+</td>
+<td>
+<a class="" href="/explore/short-url?lang=Matlab&amp;license=Apache-2.0&amp;order=recommend">短网址</a>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class='explore-categories__item'>
+<a href="/explore/application-tools?lang=Matlab&amp;license=Apache-2.0&amp;order=recommend"><i class='explore-categories__item-icon icon-tag-app iconfont'></i>
+应用工具
+</a><div class='ui popup explore-categories__second'>
+<table>
+<tbody>
+<tr>
+<td>
+<a class="" href="/explore/filemanager?lang=Matlab&amp;license=Apache-2.0&amp;order=recommend">文件管理工具</a>
+</td>
+<td>
+<a class="" href="/explore/multimedia?lang=Matlab&amp;license=Apache-2.0&amp;order=recommend">多媒体</a>
+</td>
+</tr>
+<tr>
+<td>
+<a class="" href="/explore/text-editor?lang=Matlab&amp;license=Apache-2.0&amp;order=recommend">文本编辑</a>
+</td>
+<td>
+<a class="" href="/explore/im?lang=Matlab&amp;license=Apache-2.0&amp;order=recommend">IM即时通讯/聊天</a>
+</td>
+</tr>
+<tr>
+<td>
+<a class="" href="/explore/application-software?lang=Matlab&amp;license=Apache-2.0&amp;order=recommend">应用软件</a>
+</td>
+<td>
+<a class="" href="/explore/vsc-plugins?lang=Matlab&amp;license=Apache-2.0&amp;order=recommend">Visual Studio Code 扩展</a>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class='active explore-categories__item'>
+<a href="/explore/mobile-develop?lang=Matlab&amp;license=Apache-2.0&amp;order=recommend"><i class='explore-categories__item-icon icon-tag-mobile iconfont'></i>
+手机/移动开发
+</a><div class='ui popup explore-categories__second'>
+<table>
+<tbody>
+<tr>
+<td>
+<a class="" href="/explore/android-modules?lang=Matlab&amp;license=Apache-2.0&amp;order=recommend">Android组件/项目</a>
+</td>
+<td>
+<a class="" href="/explore/ios-modules?lang=Matlab&amp;license=Apache-2.0&amp;order=recommend">iOS组件</a>
+</td>
+</tr>
+<tr>
+<td>
+<a class="active" href="/explore/mobile-app?lang=Matlab&amp;license=Apache-2.0&amp;order=recommend">移动App</a>
+</td>
+<td>
+<a class="" href="/explore/alipay?lang=Matlab&amp;license=Apache-2.0&amp;order=recommend">支付宝小程序</a>
+</td>
+</tr>
+<tr>
+<td>
+<a class="" href="/explore/baidu-app?lang=Matlab&amp;license=Apache-2.0&amp;order=recommend">百度小程序</a>
+</td>
+<td>
+<a class="" href="/explore/phonegap-cordova-plugins?lang=Matlab&amp;license=Apache-2.0&amp;order=recommend">PhoneGap/Cordova 插件</a>
+</td>
+</tr>
+<tr>
+<td>
+<a class="" href="/explore/cross-platform-mobiledev?lang=Matlab&amp;license=Apache-2.0&amp;order=recommend">跨平台移动开发</a>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class='explore-categories__item'>
+<a href="/explore/manage-monitor?lang=Matlab&amp;license=Apache-2.0&amp;order=recommend"><i class='explore-categories__item-icon icon-tag-manage iconfont'></i>
+DevOps/运维/网管
+</a><div class='ui popup explore-categories__second'>
+<table>
+<tbody>
+<tr>
+<td>
+<a class="" href="/explore/devops?lang=Matlab&amp;license=Apache-2.0&amp;order=recommend">DevOps运维开发</a>
+</td>
+<td>
+<a class="" href="/explore/nms?lang=Matlab&amp;license=Apache-2.0&amp;order=recommend">网管工具</a>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class='explore-categories__item'>
+<a href="/explore/develop-tools?lang=Matlab&amp;license=Apache-2.0&amp;order=recommend"><i class='explore-categories__item-icon icon-tag-devtool iconfont'></i>
+开发工具
+</a><div class='ui popup explore-categories__second'>
+<table>
+<tbody>
+<tr>
+<td>
+<a class="" href="/explore/vcs?lang=Matlab&amp;license=Apache-2.0&amp;order=recommend">版本管理系统</a>
+</td>
+<td>
+<a class="" href="/explore/devtools?lang=Matlab&amp;license=Apache-2.0&amp;order=recommend">开发/调试</a>
+</td>
+</tr>
+<tr>
+<td>
+<a class="" href="/explore/doc-tools?lang=Matlab&amp;license=Apache-2.0&amp;order=recommend">Wiki/文档工具</a>
+</td>
+<td>
+<a class="" href="/explore/ci?lang=Matlab&amp;license=Apache-2.0&amp;order=recommend">编译/构建/部署</a>
+</td>
+</tr>
+<tr>
+<td>
+<a class="" href="/explore/maven-plugin?lang=Matlab&amp;license=Apache-2.0&amp;order=recommend">Maven 插件</a>
+</td>
+<td>
+<a class="" href="/explore/idea-plugins?lang=Matlab&amp;license=Apache-2.0&amp;order=recommend">IDEA 插件</a>
+</td>
+</tr>
+<tr>
+<td>
+<a class="" href="/explore/gulp-extend?lang=Matlab&amp;license=Apache-2.0&amp;order=recommend">Gulp 扩展</a>
+</td>
+<td>
+<a class="" href="/explore/testing?lang=Matlab&amp;license=Apache-2.0&amp;order=recommend">测试工具</a>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class='explore-categories__item'>
+<a href="/explore/server-app?lang=Matlab&amp;license=Apache-2.0&amp;order=recommend"><i class='explore-categories__item-icon icon-tag-server iconfont'></i>
+服务器应用
+</a><div class='ui popup explore-categories__second'>
+<table>
+<tbody>
+<tr>
+<td>
+<a class="" href="/explore/distributed-service?lang=Matlab&amp;license=Apache-2.0&amp;order=recommend">分布式服务/框架</a>
+</td>
+<td>
+<a class="" href="/explore/message-server?lang=Matlab&amp;license=Apache-2.0&amp;order=recommend">消息服务器/消息队列</a>
+</td>
+</tr>
+<tr>
+<td>
+<a class="" href="/explore/docker-related?lang=Matlab&amp;license=Apache-2.0&amp;order=recommend">Docker相关</a>
+</td>
+<td>
+<a class="" href="/explore/containers?lang=Matlab&amp;license=Apache-2.0&amp;order=recommend">容器/虚拟机</a>
+</td>
+</tr>
+<tr>
+<td>
+<a class="" href="/explore/nginx-modules?lang=Matlab&amp;license=Apache-2.0&amp;order=recommend">Nginx扩展模块</a>
+</td>
+<td>
+<a class="" href="/explore/big-data?lang=Matlab&amp;license=Apache-2.0&amp;order=recommend">大数据</a>
+</td>
+</tr>
+<tr>
+<td>
+<a class="" href="/explore/cloud?lang=Matlab&amp;license=Apache-2.0&amp;order=recommend">云计算</a>
+</td>
+<td>
+<a class="" href="/explore/lamp?lang=Matlab&amp;license=Apache-2.0&amp;order=recommend">一键安装包</a>
+</td>
+</tr>
+<tr>
+<td>
+<a class="" href="/explore/openresty-extensions?lang=Matlab&amp;license=Apache-2.0&amp;order=recommend">OpenResty 扩展</a>
+</td>
+<td>
+<a class="" href="/explore/system-optimization?lang=Matlab&amp;license=Apache-2.0&amp;order=recommend">系统性能优化</a>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class='explore-categories__item'>
+<a href="/explore/database-related?lang=Matlab&amp;license=Apache-2.0&amp;order=recommend"><i class='explore-categories__item-icon icon-tag-database iconfont'></i>
+数据库相关
+</a><div class='ui popup explore-categories__second'>
+<table>
+<tbody>
+<tr>
+<td>
+<a class="" href="/explore/database-dev?lang=Matlab&amp;license=Apache-2.0&amp;order=recommend">数据库开发包</a>
+</td>
+<td>
+<a class="" href="/explore/database-service?lang=Matlab&amp;license=Apache-2.0&amp;order=recommend">数据库服务</a>
+</td>
+</tr>
+<tr>
+<td>
+<a class="" href="/explore/dbmanager?lang=Matlab&amp;license=Apache-2.0&amp;order=recommend">数据库管理/监控</a>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class='explore-categories__item'>
+<a href="/explore/game-and-entertainment?lang=Matlab&amp;license=Apache-2.0&amp;order=recommend"><i class='explore-categories__item-icon icon-tag-game iconfont'></i>
+游戏/娱乐
+</a><div class='ui popup explore-categories__second'>
+<table>
+<tbody>
+<tr>
+<td>
+<a class="" href="/explore/games?lang=Matlab&amp;license=Apache-2.0&amp;order=recommend">游戏</a>
+</td>
+<td>
+<a class="" href="/explore/game-dev?lang=Matlab&amp;license=Apache-2.0&amp;order=recommend">游戏开发</a>
+</td>
+</tr>
+<tr>
+<td>
+<a class="" href="/explore/3d-engine?lang=Matlab&amp;license=Apache-2.0&amp;order=recommend">3D引擎</a>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class='explore-categories__item'>
+<a href="/explore/plugin-and-extension?lang=Matlab&amp;license=Apache-2.0&amp;order=recommend"><i class='explore-categories__item-icon icon-tag-plugin iconfont'></i>
+插件和扩展
+</a><div class='ui popup explore-categories__second'>
+<table>
+<tbody>
+<tr>
+<td>
+<a class="" href="/explore/chrome-plugins?lang=Matlab&amp;license=Apache-2.0&amp;order=recommend">Chrome扩展</a>
+</td>
+<td>
+<a class="" href="/explore/wordpress-plugins?lang=Matlab&amp;license=Apache-2.0&amp;order=recommend">WordPress 扩展</a>
+</td>
+</tr>
+<tr>
+<td>
+<a class="" href="/explore/eclipse-plugins?lang=Matlab&amp;license=Apache-2.0&amp;order=recommend">Eclipse插件</a>
+</td>
+<td>
+<a class="" href="/explore/firefox-addons?lang=Matlab&amp;license=Apache-2.0&amp;order=recommend">Firefox扩展</a>
+</td>
+</tr>
+<tr>
+<td>
+<a class="" href="/explore/safari-plugins?lang=Matlab&amp;license=Apache-2.0&amp;order=recommend">Safari 插件</a>
+</td>
+<td>
+<a class="" href="/explore/jenkins-plugins?lang=Matlab&amp;license=Apache-2.0&amp;order=recommend">Jenkins 插件</a>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class='explore-categories__item'>
+<a href="/explore/other-open-source?lang=Matlab&amp;license=Apache-2.0&amp;order=recommend"><i class='explore-categories__item-icon icon-tag-misc iconfont'></i>
+其他开源
+</a><div class='ui popup explore-categories__second'>
+<table>
+<tbody>
+<tr>
+<td>
+<a class="" href="/explore/education?lang=Matlab&amp;license=Apache-2.0&amp;order=recommend">教学管理</a>
+</td>
+<td>
+<a class="" href="/explore/simulated-projects?lang=Matlab&amp;license=Apache-2.0&amp;order=recommend">高仿项目</a>
+</td>
+</tr>
+<tr>
+<td>
+<a class="" href="/explore/hardware?lang=Matlab&amp;license=Apache-2.0&amp;order=recommend">硬件相关项目</a>
+</td>
+<td>
+<a class="" href="/explore/ebooks-manual?lang=Matlab&amp;license=Apache-2.0&amp;order=recommend">图书/手册/教程</a>
+</td>
+</tr>
+<tr>
+<td>
+<a class="" href="/explore/acm?lang=Matlab&amp;license=Apache-2.0&amp;order=recommend">ACM/OJ 项目</a>
+</td>
+<td>
+<a class="" href="/explore/os?lang=Matlab&amp;license=Apache-2.0&amp;order=recommend">操作系统</a>
+</td>
+</tr>
+<tr>
+<td>
+<a class="" href="/explore/iot?lang=Matlab&amp;license=Apache-2.0&amp;order=recommend">物联网/边缘计算</a>
+</td>
+<td>
+<a class="" href="/explore/sample-code?lang=Matlab&amp;license=Apache-2.0&amp;order=recommend">教程配套代码</a>
+</td>
+</tr>
+<tr>
+<td>
+<a class="" href="/explore/vehicle?lang=Matlab&amp;license=Apache-2.0&amp;order=recommend">车载应用</a>
+</td>
+<td>
+<a class="" href="/explore/risc-v?lang=Matlab&amp;license=Apache-2.0&amp;order=recommend">RISC-V 开发</a>
+</td>
+</tr>
+<tr>
+<td>
+<a class="" href="/explore/bio-medical?lang=Matlab&amp;license=Apache-2.0&amp;order=recommend">生物/医疗/健康</a>
+</td>
+<td>
+<a class="" href="/explore/tcb-hackthon?lang=Matlab&amp;license=Apache-2.0&amp;order=recommend">2020公益黑客马拉松</a>
+</td>
+</tr>
+<tr>
+<td>
+<a class="" href="/explore/2019-ncov?lang=Matlab&amp;license=Apache-2.0&amp;order=recommend">新冠病毒相关开源</a>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<script>
+  $('.explore-categories__item').has('.popup').find('> a')
+    .popup({
+      inline     : true,
+      hoverable  : true,
+      position   : 'right center',
+    })
+</script>
+
+</div>
+<div class='nine wide column'>
+<div class='explore-projects__detail-list'>
+<div class='explore-project__selection'>
+<div class='explore-project__selection-container'>
+<div class='ui breadcrumb'>
+<a class="section" href="/explore/mobile-develop">手机/移动开发</a>
+<div class='divider'>/</div>
+<div class='active section'>移动App</div>
+</div>
+<div class='actions'>
+<div class='ui floating scrolling dropdown gradient button'>
+<div class='text'>Apache-2.0</div>
+<i class='icon dropdown'></i>
+<div class='menu'>
+<a class="item" href="/explore/mobile-app?lang=Matlab&amp;order=recommend">全部项目</a>
+<a class="item" href="/explore/mobile-app?lang=Matlab&amp;license=MulanPSL-1.0&amp;order=recommend">MulanPSL-1.0</a>
+<a class="item" href="/explore/mobile-app?lang=Matlab&amp;license=0BSD&amp;order=recommend">0BSD</a>
+<a class="item" href="/explore/mobile-app?lang=Matlab&amp;license=AFL-3.0&amp;order=recommend">AFL-3.0</a>
+<a class="item" href="/explore/mobile-app?lang=Matlab&amp;license=AGPL-3.0&amp;order=recommend">AGPL-3.0</a>
+<a class="item" href="/explore/mobile-app?lang=Matlab&amp;license=Artistic-2.0&amp;order=recommend">Artistic-2.0</a>
+<a class="item" href="/explore/mobile-app?lang=Matlab&amp;license=BSD-2-Clause&amp;order=recommend">BSD-2-Clause</a>
+<a class="item" href="/explore/mobile-app?lang=Matlab&amp;license=BSD-3-Clause&amp;order=recommend">BSD-3-Clause</a>
+<a class="item" href="/explore/mobile-app?lang=Matlab&amp;license=BSD-3-Clause-Clear&amp;order=recommend">BSD-3-Clause-Clear</a>
+<a class="item" href="/explore/mobile-app?lang=Matlab&amp;license=BSL-1.0&amp;order=recommend">BSL-1.0</a>
+<a class="item" href="/explore/mobile-app?lang=Matlab&amp;license=CC-BY-4.0&amp;order=recommend">CC-BY-4.0</a>
+<a class="item" href="/explore/mobile-app?lang=Matlab&amp;license=CC-BY-SA-4.0&amp;order=recommend">CC-BY-SA-4.0</a>
+<a class="item" href="/explore/mobile-app?lang=Matlab&amp;license=CC0-1.0&amp;order=recommend">CC0-1.0</a>
+<a class="item" href="/explore/mobile-app?lang=Matlab&amp;license=ECL-2.0&amp;order=recommend">ECL-2.0</a>
+<a class="item" href="/explore/mobile-app?lang=Matlab&amp;license=EPL-1.0&amp;order=recommend">EPL-1.0</a>
+<a class="item" href="/explore/mobile-app?lang=Matlab&amp;license=EPL-2.0&amp;order=recommend">EPL-2.0</a>
+<a class="item" href="/explore/mobile-app?lang=Matlab&amp;license=EUPL-1.1&amp;order=recommend">EUPL-1.1</a>
+<a class="item" href="/explore/mobile-app?lang=Matlab&amp;license=EUPL-1.2&amp;order=recommend">EUPL-1.2</a>
+<a class="item" href="/explore/mobile-app?lang=Matlab&amp;license=GPL-2.0&amp;order=recommend">GPL-2.0</a>
+<a class="item" href="/explore/mobile-app?lang=Matlab&amp;license=GPL-3.0&amp;order=recommend">GPL-3.0</a>
+<a class="item" href="/explore/mobile-app?lang=Matlab&amp;license=ISC&amp;order=recommend">ISC</a>
+<a class="item" href="/explore/mobile-app?lang=Matlab&amp;license=LGPL-2.1&amp;order=recommend">LGPL-2.1</a>
+<a class="item" href="/explore/mobile-app?lang=Matlab&amp;license=LGPL-3.0&amp;order=recommend">LGPL-3.0</a>
+<a class="item" href="/explore/mobile-app?lang=Matlab&amp;license=LPPL-1.3c&amp;order=recommend">LPPL-1.3c</a>
+<a class="item" href="/explore/mobile-app?lang=Matlab&amp;license=MIT&amp;order=recommend">MIT</a>
+<a class="item" href="/explore/mobile-app?lang=Matlab&amp;license=MPL-2.0&amp;order=recommend">MPL-2.0</a>
+<a class="item" href="/explore/mobile-app?lang=Matlab&amp;license=MS-PL&amp;order=recommend">MS-PL</a>
+<a class="item" href="/explore/mobile-app?lang=Matlab&amp;license=MS-RL&amp;order=recommend">MS-RL</a>
+<a class="item" href="/explore/mobile-app?lang=Matlab&amp;license=MulanPSL-2.0&amp;order=recommend">MulanPSL-2.0</a>
+<a class="item" href="/explore/mobile-app?lang=Matlab&amp;license=NCSA&amp;order=recommend">NCSA</a>
+<a class="item" href="/explore/mobile-app?lang=Matlab&amp;license=OFL-1.1&amp;order=recommend">OFL-1.1</a>
+<a class="item" href="/explore/mobile-app?lang=Matlab&amp;license=OSL-3.0&amp;order=recommend">OSL-3.0</a>
+<a class="item" href="/explore/mobile-app?lang=Matlab&amp;license=PostgreSQL&amp;order=recommend">PostgreSQL</a>
+<a class="item" href="/explore/mobile-app?lang=Matlab&amp;license=UPL-1.0&amp;order=recommend">UPL-1.0</a>
+<a class="item" href="/explore/mobile-app?lang=Matlab&amp;license=Unlicense&amp;order=recommend">Unlicense</a>
+<a class="item" href="/explore/mobile-app?lang=Matlab&amp;license=WTFPL&amp;order=recommend">WTFPL</a>
+<a class="item" href="/explore/mobile-app?lang=Matlab&amp;license=Zlib&amp;order=recommend">Zlib</a>
+</div>
+</div>
+<div class='ui floating scrolling dropdown gradient button'>
+<div class='text'>最新推荐</div>
+<i class='icon dropdown'></i>
+<div class='menu'>
+<a class="item" href="/explore/mobile-app?lang=Matlab&amp;license=Apache-2.0&amp;order=starred">Starred</a>
+<a class="item" href="/explore/mobile-app?lang=Matlab&amp;license=Apache-2.0&amp;order=recommend">最新推荐</a>
+<a class="item" href="/explore/mobile-app?lang=Matlab&amp;license=Apache-2.0&amp;order=latest">最近更新</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script>
+  $(function () {
+    $('.explore-project__selection .dropdown').dropdown()
+  })
+</script>
+
+<div class='ui divider'></div>
+<div class='ui relaxed divided items explore-repo__list'>
+<div class='item text-muted' style='text-align: center;'>啥也没有</div>
+</div>
+
+
+</div>
+</div>
+<div class='four wide column'>
+<div class='explore-languagues'>
+<div class='explore-languagues__container'>
+<div class='ui secondary vertical menu'>
+<a class="item " href="/explore/mobile-app?license=Apache-2.0&amp;order=recommend"><span>全部语言</span>
+<span class='pull-right'>42</span>
+</a><a class="item " href="/explore/mobile-app?lang=Android&amp;license=Apache-2.0&amp;order=recommend"><span>Android</span>
+<span class='pull-right'>26</span>
+</a><a class="item " href="/explore/mobile-app?lang=JavaScript&amp;license=Apache-2.0&amp;order=recommend"><span>JavaScript</span>
+<span class='pull-right'>4</span>
+</a><a class="item " href="/explore/mobile-app?lang=Swift&amp;license=Apache-2.0&amp;order=recommend"><span>Swift</span>
+<span class='pull-right'>4</span>
+</a><a class="item " href="/explore/mobile-app?lang=Objective-C&amp;license=Apache-2.0&amp;order=recommend"><span>Objective-C</span>
+<span class='pull-right'>3</span>
+</a><a class="item " href="/explore/mobile-app?lang=Java&amp;license=Apache-2.0&amp;order=recommend"><span>Java</span>
+<span class='pull-right'>2</span>
+</a><a class="item " href="/explore/mobile-app?lang=Kotlin&amp;license=Apache-2.0&amp;order=recommend"><span>Kotlin</span>
+<span class='pull-right'>2</span>
+</a><a class="item " href="/explore/mobile-app?lang=Html&amp;license=Apache-2.0&amp;order=recommend"><span>HTML</span>
+<span class='pull-right'>1</span>
+</a></div>
+<div class='ui secondary vertical menu hide explore-languagues__detail-menu'>
+</div>
+</div>
+</div>
+<script>
+  $(function () {
+    var $detailMenu = $('.explore-languagues__detail-menu')
+    var $showBtn = $('.explore-languagues .show-more')
+  
+    $showBtn.on('click', function () {
+      if ($detailMenu.hasClass('hide')) {
+        $detailMenu.removeClass('hide')
+        $showBtn.text('收起')
+      } else {
+        $detailMenu.addClass('hide')
+        $showBtn.text('更多语言')
+      }
+    })
+  
+    if ($detailMenu.has('.active').length) {
+      $showBtn.trigger('click')
+    }
+  })
+</script>
+
+<div class='explore-trending-projects__container'>
+<div class='ui pointing secondary menu'>
+<div class='item active' data-tab='daily-trending'>今日热门</div>
+<div class='item' data-tab='weekly-trending'>本周热门</div>
+</div>
+<div class='ui tab active' data-tab='daily-trending'>
+<div class='explore-trending-projects__list'>
+<div class='explore-trending-projects__list-item'>
+<div class='title'>
+<a href="/sadis/MachineLearning_" target="_blank" title="cmjia/MachineLearning_">cmjia/MachineLearning_</a>
+</div>
+<div class='description'>图解机器学习，算法实现</div>
+</div>
+<div class='explore-trending-projects__list-item'>
+<div class='title'>
+<a href="/scruel/ML-AndrewNg-Notes" target="_blank" title="scruel/ML-AndrewNg-Notes">scruel/ML-AndrewNg-Notes</a>
+</div>
+<div class='description'>Coursera吴恩达机器学习课程整理</div>
+</div>
+<div class='explore-trending-projects__list-item'>
+<div class='title'>
+<a href="/kktao/Optimization_Algorithm" target="_blank" title="kktao/Optimization_Algorithm">kktao/Optimization_Algorithm</a>
+</div>
+<div class='description'>梯度下降、牛顿法、共轭梯度法、蒙特卡洛、模拟退火、粒子群、蚁群、全局最优搭配局部最优算法的matlab和python程序</div>
+</div>
+<div class='explore-trending-projects__list-item'>
+<div class='title'>
+<a href="/wuyueshan27/million-mats" target="_blank" title="wuyueshan27/million-mats">wuyueshan27/million-mats</a>
+</div>
+<div class='description'>matlab学习库</div>
+</div>
+</div>
+</div>
+<div class='ui tab' data-tab='weekly-trending'>
+<div class='explore-trending-projects__list'>
+<div class='explore-trending-projects__list-item'>
+<div class='title'>
+<a href="/wuyueshan27/million-mats" target="_blank" title="wuyueshan27/million-mats">wuyueshan27/million-mats</a>
+</div>
+<div class='description'>matlab学习库</div>
+</div>
+<div class='explore-trending-projects__list-item'>
+<div class='title'>
+<a href="/kktao/Optimization_Algorithm" target="_blank" title="kktao/Optimization_Algorithm">kktao/Optimization_Algorithm</a>
+</div>
+<div class='description'>梯度下降、牛顿法、共轭梯度法、蒙特卡洛、模拟退火、粒子群、蚁群、全局最优搭配局部最优算法的matlab和python程序</div>
+</div>
+<div class='explore-trending-projects__list-item'>
+<div class='title'>
+<a href="/sadis/MachineLearning_" target="_blank" title="cmjia/MachineLearning_">cmjia/MachineLearning_</a>
+</div>
+<div class='description'>图解机器学习，算法实现</div>
+</div>
+<div class='explore-trending-projects__list-item'>
+<div class='title'>
+<a href="/dingtu/StepMotor_Matlab" target="_blank" title="skywolf/StepMotor_Matlab">skywolf/StepMotor_Matlab</a>
+</div>
+<div class='description'>Matlab计算步进电机加速曲线，可以生成加速曲线的png格式图片，和C语言格式查找表（TIM时间数和步数）。目前做了匀加速度和三角形加速度的，主程序入口是StepMotor.m，读取配置Ini文件，根据算法类型分别调用StepMotor_UniformAcc.m和StepMotor_TriangleAcc.m两个算法程序。其它如正弦曲线和指数曲线我自己还没整清楚。各参数见InitVars.m和示例ini文件。用matlab主要是画图省事，代码比较简单，容易移植到其它语言。</div>
+</div>
+<div class='explore-trending-projects__list-item'>
+<div class='title'>
+<a href="/scruel/ML-AndrewNg-Notes" target="_blank" title="scruel/ML-AndrewNg-Notes">scruel/ML-AndrewNg-Notes</a>
+</div>
+<div class='description'>Coursera吴恩达机器学习课程整理</div>
+</div>
+<div class='explore-trending-projects__list-item'>
+<div class='title'>
+<a href="/zehui_lin/Multi-task_Survival_Analysis" target="_blank" title="林泽辉/Multi-task_Survival_Analysis">林泽辉/Multi-task_Survival_Analysis</a>
+</div>
+<div class='description'>Multi-task survival analysis via regularized Cox regression </div>
+</div>
+<div class='explore-trending-projects__list-item'>
+<div class='title'>
+<a href="/yanshui177/RecPlate-lib" target="_blank" title="yanshui177/RecPlate-lib">yanshui177/RecPlate-lib</a>
+</div>
+<div class='description'>基于BP神经网络的车牌识别系统</div>
+</div>
+<div class='explore-trending-projects__list-item'>
+<div class='title'>
+<a href="/hwh6/Mathematical-Model-Implementation" target="_blank" title="huwenhao/Mathematical-Model-Implementation">huwenhao/Mathematical-Model-Implementation</a>
+</div>
+<div class='description'>给出了作者本人参与的数学建模竞赛中所使用的相关算法的MATLAB实现。</div>
+</div>
+<div class='explore-trending-projects__list-item'>
+<div class='title'>
+<a href="/songxiaochao/computational_physics" target="_blank" title="Chao/计算物理基础 彭芳麟 课后习题答案">Chao/计算物理基础 彭芳麟 课后习题答案</a>
+</div>
+<div class='description'>收集彭芳麟老师的计算物理基础课后习题答案，供学习交流之用。</div>
+</div>
+</div>
+</div>
+</div>
+<script>
+  $(function () {
+    $('.explore-trending-projects__container .menu .item').tab()
+  })
+</script>
+
+</div>
+</div>
+</div>
+</div>
+</div>
+
+</div>
+<footer id='git-footer-main'>
+<div class='ui container'>
+<div class='ui two column grid '>
+<div class='nine wide column git-footer-left'>
+<p><a href="https://gitee.com/" target="_blank">© Gitee.com</a></p>
+<div class='ui four column grid' id='footer-left'>
+<div class='column'>
+<div class='ui link list'>
+<div class='item'>
+<a class="item" href="/about_us">关于我们</a>
+</div>
+<div class='item'>
+<a class="item" href="/terms">使用条款</a>
+</div>
+<div class='item'>
+<a class="item" href="/oschina/git-osc/issues">意见建议</a>
+</div>
+<div class='item'>
+<a class="item" href="/links.html">合作伙伴</a>
+</div>
+</div>
+</div>
+<div class='column'>
+<div class='ui link list'>
+<div class='item'>
+<a class="item" href="/all-about-git">Git 大全</a>
+</div>
+<div class='item'>
+<a class="item" href="https://oschina.gitee.io/learn-git-branching/">Git 命令学习</a>
+</div>
+<div class='item'>
+<a class="item" href="https://copycat.gitee.com/">代码克隆检测</a>
+</div>
+<div class='item'>
+<a class="item" href="/appclient">APP与插件下载</a>
+</div>
+</div>
+</div>
+<div class='column'>
+<div class='ui link list'>
+<div class='item'>
+<a class="item" href="/gitee-stars">码云封面人物</a>
+</div>
+<div class='item'>
+<a class="item" href="/gvp">GVP项目</a>
+</div>
+<div class='item'>
+<a class="item" href="https://blog.gitee.com/">码云博客</a>
+</div>
+<div class='item'>
+<a class="item" href="/enterprises#nonprofit-plan">Gitee 公益计划</a>
+</div>
+</div>
+</div>
+<div class='column'>
+<div class='ui link list'>
+<div class='item'>
+<a class="item" href="/api/v5/swagger">OpenAPI</a>
+</div>
+<div class='item'>
+<a class="item" href="/help">帮助文档</a>
+</div>
+<div class='item'>
+<a class="item" href="/self_services">在线自助服务</a>
+</div>
+<div class='item'>
+<a class="item" href="/git-osc">更新日志</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class='seven wide column right aligned followus git-footer-right'>
+<div class='qrcode weixin'>
+<img alt="Qrcode weixin" src="https://assets.gitee.com/assets/qrcode-weixin-9e7cfb27165143d2b8e8b268a52ea822.jpg" />
+<p class='weixin-text'>微信服务号</p>
+</div>
+<div class='phone-and-qq column'>
+<div class='ui list official-support-container'>
+<div class='item'>
+<a class="icon-popup" href="//shang.qq.com/wpa/qunwpa?idkey=df785aa7af71f7d74149ab062742d761b845464350ecba25eb440357a3e573b7" title="点击加入码云官方群"><i class='iconfont icon-logo-qq'></i>
+<span>官方技术交流QQ群：1050025484</span>
+</a></div>
+<div class='item mail-and-zhihu'>
+<a href="mailto: git@oschina.cn"><i class='iconfont icon-ic-mail'></i>
+<span id='git-footer-email'>git#oschina.cn</span>
+</a><a href="https://www.zhihu.com/org/ma-yun-osc/ " target="_blank"><i class='iconfont icon-zhihu'></i>
+<span>码云Gitee</span>
+</a></div>
+<div class='item'>企业版售前及售后使用咨询：400-606-0201</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class='bottombar'>
+<div class='ui container'>
+<div class='ui grid'>
+<div class='seven wide column partner'>
+<div class='copyright'>
+<a href="http://www.beian.miit.gov.cn/">粤ICP备12009483号</a>
+深圳市奥思网络科技有限公司版权所有
+</div>
+</div>
+<div class='nine wide column right aligned'>
+<i class='icon world'></i>
+<a href="/language/zh-CN">简 体</a>
+/
+<a href="/language/zh-TW">繁 體</a>
+/
+<a href="/language/en">English</a>
+</div>
+</div>
+</div>
+</div>
+</footer>
+<script>
+  var officialEmail = $('#git-footer-email').text()
+  $('#git-footer-main .icon-popup').popup({ position: 'bottom center' })
+  $('#git-footer-email').text(officialEmail.replace('#', '@'))
+</script>
+
+
+<div class='side-toolbar'>
+<div class='button toolbar-help'>
+<i class='iconfont icon-help'></i>
+</div>
+<div class='ui popup left center dark'>点此查找更多帮助</div>
+<div class='toolbar-help-dialog'>
+<div class='toolbar-dialog-header'>
+<h3 class='toolbar-dialog-title'>搜索帮助</h3>
+<form accept-charset="UTF-8" action="/help/load_keywords_data" class="toolbar-help-search-form" method="get"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /></div>
+<div class='ui icon input fluid toolbar-help-search'>
+<input name='keywords' placeholder='请输入产品名称或问题' type='text'>
+<i class='icon search'></i>
+</div>
+</form>
+
+<i class='iconfont icon-close toolbar-dialog-close-icon'></i>
+</div>
+<div class='toolbar-dialog-content'>
+<div class='toolbar-help-hot-search'>
+<div class='toolbar-roll'>
+<a class="init active" href="https://oschina.gitee.io/learn-git-branching/?utm_source==gitee-help-widget" title="Git 命令在线学习"><i class='Blue icon icon-command iconfont'></i>
+<span>Git 命令在线学习</span>
+</a><a class="init " href="https://gitee.com/help/articles/4261?utm_source==gitee-help-widget" title="如何在码云上导入 GitHub 仓库"><i class='icon icon-clipboard iconfont orange'></i>
+<span>如何在码云上导入 GitHub 仓库</span>
+</a></div>
+<div class='toolbar-list'>
+<div class='toolbar-list-item'>
+<a href="/help/articles/4114">Git 仓库基础操作</a>
+</div>
+<div class='toolbar-list-item'>
+<a href="/help/articles/4166">企业版和社区版功能对比</a>
+</div>
+<div class='toolbar-list-item'>
+<a href="/help/articles/4191">SSH 公钥设置</a>
+</div>
+<div class='toolbar-list-item'>
+<a href="/help/articles/4194">如何处理代码冲突</a>
+</div>
+<div class='toolbar-list-item'>
+<a href="/help/articles/4232">仓库体积过大，如何减小？</a>
+</div>
+<div class='toolbar-list-item'>
+<a href="/help/articles/4279">如何找回被删除的仓库数据</a>
+</div>
+<div class='toolbar-list-item'>
+<a href="/help/articles/4283">码云使用容量说明</a>
+</div>
+<div class='toolbar-list-item'>
+<a href="/help/articles/4284">GitHub仓库快速导入Gitee及同步更新</a>
+</div>
+</div>
+</div>
+<div class='toolbar-help-search-reseult'>
+<div class='toolbar-help-flex-column'>
+<div class='ui centered inline loader toolbar-help-loader'></div>
+<div class='toolbar-list'></div>
+<div class='toolbar-help-link-to-help'>
+<a href="" target="_blank">查看更多搜索结果</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script>
+  var opt = { position: 'left center' };
+  var $helpSideToolbar = $(".button.toolbar-help");
+  var $toolbarRoll = $('.toolbar-roll');
+  
+  $(function() {
+    if (false) {
+      $helpSideToolbar.popup(opt);
+    } else {
+      $helpSideToolbar.popup('show', opt);
+      setTimeout(function() {
+        $helpSideToolbar.popup('hide', opt);
+      }, 3000);
+    }
+  
+    if ($toolbarRoll.length) {
+      setInterval(function() {
+        var $nextActiveLink = $toolbarRoll.find('a.active').next();
+        if (!$nextActiveLink.length) {
+          $nextActiveLink = $toolbarRoll.find('a:first-child');
+        }
+        $nextActiveLink.attr('class', 'active').siblings().removeClass('active init');
+      }, 5000);
+    }
+  })
+</script>
+
+<div class='button share-link'>
+<i class='iconfont icon-share'></i>
+</div>
+<div class='ui popup dark'>
+<div class='header'>
+分享到
+</div>
+<div class='bdsharebuttonbox' style='display: flex'>
+<a class='iconfont icon-home-service-wechat' data-cmd='weixin' title='分享到微信'></a>
+<a class='iconfont icon-weibo' data-cmd='tsina' title='分享到新浪微博'></a>
+<a class='iconfont icon-qq' data-cmd='sqq' title='分享到QQ好友'></a>
+<a class='iconfont icon-qzone' data-cmd='qzone' title='分享到QQ空间'></a>
+</div>
+</div>
+<div class='button gotop popup' id='gotop'>
+<i class='iconfont icon-top'></i>
+</div>
+<div class='ui popup dark'>回到顶部</div>
+</div>
+<style>
+  .side-toolbar .bdsharebuttonbox a {
+    font-size: 24px;
+    color: white !important;
+    opacity: 0.9;
+    margin: 6px 6px 0px 6px;
+    background-image: none;
+    text-indent: 0;
+    height: auto;
+    width: auto;
+  }
+</style>
+<script>
+  (function() {
+    $('#project-user-message').popup({
+      position: 'left center'
+    });
+  
+  }).call(this);
+</script>
+<script>
+  Gitee.initSideToolbar({})
+</script>
+<script>
+  window._bd_share_config = {
+    "common": {
+      "bdSnsKey": {},
+      "bdText": document.title,
+      "bdMini": "1",
+      "bdMiniList": ["bdxc","tqf","douban","bdhome","sqq","thx","ibaidu","meilishuo","mogujie","diandian","huaban","duitang","hx","fx","youdao","sdo","qingbiji","people","xinhua","mail","isohu","yaolan","wealink","ty","iguba","fbook","twi","linkedin","h163","evernotecn","copy","print"],
+      "bdPic": "",
+      "bdStyle": "1",
+      "bdSize": "32"
+    },
+    "share": {}
+  }
+</script>
+<script src="/bd_share/static/api/js/share.js"></script>
+
+
+
+
+
+<script>
+  (function() {
+    this.__gac = {
+      domain: 'www.oschina.net'
+    };
+  
+  }).call(this);
+</script>
+<script defer src='//www.oschina.net/public/javascripts/cjl/ga.js?t=20160926' type='text/javascript'></script>
+
+</body>
+</html>
