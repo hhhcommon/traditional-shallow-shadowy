@@ -1,0 +1,135 @@
+
+<!DOCTYPE html>
+<html lang="zh" >
+<head>
+    <meta charset="utf-8">
+    <!--[if IE]>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <![endif]-->
+    <meta name="robots" content="noodp, noydir"/>
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="-1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+    <meta name="data-spm" content="5176"/>
+            <meta name="description" content="欢迎登录阿里云RAM用户,阿里云是全球领先的云计算及人工智能科技公司,为200多个国家和地区的企业、开发者和政府机构提供云计算基础服务及解决方案。">
+        <title>阿里云-RAM用户登录</title>
+    <link rel="shortcut icon" href="//img.alicdn.com/tfs/TB1_ZXuNcfpK1RjSZFOXXa6nFXa-32-32.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="//g.alicdn.com/??aliyun/www-dpl/0.2.3/knight/css/global.css,aliyun/www-dpl/0.2.3/knight/css/iconfont.css,aliyun/www-dpl/0.2.3/knight/css/dpl.css?t=2020041312"/>
+    <link rel="stylesheet" href="//g.alicdn.com/aliyun/account/0.0.25/css/account_common.css?t=2020041312">
+          <link rel="stylesheet" href="//g.alicdn.com/aliyun/account/1.7.0/css/login/ims.css?t=2020041312">
+        <link type="text/css" href="//g.alicdn.com/sd/ncpc/nc.css?t=2020041312" rel="stylesheet"/>
+    <script nonce="XQE1oUHG2S" src="//g.alicdn.com/tb/tracker/4.2.1/p/index/index.js?t=2020041312"></script>
+</head>
+<body class="aliyun aliyun-ims-login" data-spm="3047821"><script type="text/javascript"
+id="beacon-aplus"
+src="//g.alicdn.com/alilog/mlog/aplus_v2.js"
+exparams="category=&userid=&aplus&yunid=&yunpk=&channel=&cps="
+nonce="XQE1oUHG2S"
+cspx="XQE1oUHG2S"
+async>
+</script>
+
+<div id="header" data-spm="1">
+    <div class="header-layout y-row">
+        <h1 class="logo" id="logo"
+                            ><a href="http://www.aliyun.com"
+            >阿里云</a></h1>
+
+        <h2 class="logo-title" style="margin-top:5px">
+                            RAM用户登录
+                    </h2>
+        <ul class="header-nav">
+            <li class="nav-first"><a href="http://www.aliyun.com" target="_blank">阿里云首页</a></li>
+        </ul>
+    </div>
+</div>
+<div class="content y-row" data-spm="2">
+        <div id="login-module" class="login_div">
+                    <div class="change-site">
+                <a href="/changeSite.htm?callback=https%3A%2F%2Fsignin.aliyun.com%2Foauth2%2Fv1%2Fauth%3Fauthorization_request%3Dcc1a3852-327e-4703-9e82-e703601e4dac">使用主帐号登录</a>
+            </div>
+            <br />
+                <form class="login-form" action="/login.htm" method="post">
+            <input type="hidden" name="sec_token" value="wVmlclWHGV5p8csBWlhPA5"/>
+            <input type="hidden" name="callback" value="https://signin.aliyun.com/oauth2/v1/auth?authorization_request=cc1a3852-327e-4703-9e82-e703601e4dac"/>
+            
+                                <div id="J_LoginTitle" class="login-title">子用户登录</div>
+
+                    <div id="ssohint" name="ssohint" style="display: none">
+                        <p id="ssohint_text" class="loading"/>
+                    </div>
+
+                    <div id="u16" class="ax_text_line">
+                        <p>
+                            <label for="user_principal_name">登录用户名称</label>
+                            <input id="user_principal_name" name="user_principal_name" type="text"
+                                   placeholder="登录用户名称"
+                                   value=""/>
+                        </p>
+
+                        <p class="ax_text_line_tip">RAM用户登录格式：&lt;子用户名称&gt;@&lt;默认域名&gt;，或&lt;子用户名称&gt;@&lt;企业别名&gt;。例如，username@company-alias.onaliyun.com 或 username@company-alias。</p>
+                    </div>
+
+                    <div id="u13" class="ax_text_line">
+                        <p>
+                            <label for="password_ims">输入您的密码</label>
+                            <input id="password_ims" name="password_ims" type="password" value=""
+                                   placeholder="输入您的密码"/>
+                        </p>
+                    </div>
+
+            
+
+
+            
+            <div id="u21">
+                <br />
+                <div id="u22" class="text">
+                  <input type="submit" class="fm-button submit-btn" value="登录" />
+                </div>
+            </div>
+            <div>
+                <div id="u26" class="text">
+                    <p id="errorMsgElement">  </p>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+    <div class="copyright-100" data-spm="999">
+    <div class="y-row copyright">
+        <p class="big"><span><a href="http://www.aliyun.com/about"></a></span><span><a href="http://www.aliyun.com/law"></a></span><span><a href="http://www.aliyun.com/links"></a></span></p>
+        <p><span><a href="http://page.1688.com/shtml/about/ali_group1.shtml"></a></span><span><a href="http://www.alibaba.com/"></a></span><span><a href="http://www.1688.com/">阿里巴巴中国站</a></span><span><a href="http://www.aliexpress.com/">全球速卖通</a></span><span><a href="http://www.taobao.com/">淘宝网</a></span><span><a href="http://www.tmall.com/">天猫</a></span><span><a href="http://ju.taobao.com/">聚划算</a></span><span><a href="http://www.etao.com/">一淘</a></span><span><a href="http://www.alimama.com/">阿里妈妈</a></span><span><a href="http://www.aliyun.com/">阿里云计算</a></span><span><a href="http://www.yunos.com/">云OS</a></span><span><a href="http://www.net.cn/">万网</a></span><span><a href="http://www.alipay.com/">支付宝</a></span><span><a href="http://www.laiwang.com/">来往</a></span></p>
+        <p>&copy; 2019 Aliyun.com 版权所有 ICP证：浙B2-20080101</p>
+        <p><a class="img img-1" data-spm-anchor-id="5176.7034545.0.0" target="_blank" href="http://122.224.75.236/wzba/login.do?spm=5176.7034545.0.0.ekp5XS&amp;method=hdurl&amp;doamin=http://www.aliyun.com/&amp;id=330108000016033&amp;SHID=1223.0AFF_NAME=com.rouger.gs.main.UserInfoAff&amp;AFF_ACTION=qyhzdetail&amp;PAGE_URL=ShowDetail"></a><a class="img img-2" target="_blank" href="http://www.aliyun.com/djcp"></a></p>
+    </div>
+</div>
+    <script nonce="XQE1oUHG2S" type="text/javascript" charset="utf-8" src="//g.alicdn.com/sd/ncpc/nc.js?t=2020041312"></script>
+<script nonce="XQE1oUHG2S" src="//g.alicdn.com/aliyun/account/0.0.8/js/jQuery1.9.0.js?t=2020041312"></script>
+<script nonce="XQE1oUHG2S" src="//g.alicdn.com/aliyun/account/1.7.0/js/login/ims.js?t=2020041312"></script>
+<script nonce="XQE1oUHG2S">
+
+    
+    window.JSTracker2 = window.JSTracker2 || [];
+    try{
+      window.initIMSLogin && window.initIMSLogin({
+        enableSamlSSO: "true" === 'true',
+                    deployIntl: "false" === 'true',
+        samlCallback: "https://signin.aliyun.com/oauth2/v1/auth?authorization_request=cc1a3852-327e-4703-9e82-e703601e4dac",
+        lang: {
+            next: "下一步",
+            welcome: "欢迎",
+            sso_redirect_button: "使用企业帐户登录"
+        }
+      });
+    }catch(e){
+      JSTracker2.push(e);
+      throw e;
+    }
+    
+
+</script>
+</body>
+</html>
