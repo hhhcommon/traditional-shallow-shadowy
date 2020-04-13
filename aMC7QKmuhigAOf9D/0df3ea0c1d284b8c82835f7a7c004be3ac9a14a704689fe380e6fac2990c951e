@@ -1,0 +1,1323 @@
+<!DOCTYPE html>
+<html lang='zh-CN'>
+<head>
+<head>
+<title>TA 关注的仓库 - langxj (langxj) - 码云 Gitee.com</title>
+<link href="https://assets.gitee.com/assets/favicon-9007bd527d8a7851c8330e783151df58.ico" rel="shortcut icon" type="image/vnd.microsoft.icon" />
+<meta charset='utf-8'>
+<meta content='always' name='referrer'>
+<meta content='码云' property='og:site_name'>
+<meta content='Object' property='og:type'>
+<meta content='http://gitee.com/langxj/watched' property='og:url'>
+<meta content='https://gitee.com/static/images/logo_themecolor.png' itemprop='image' property='og:image'>
+<meta content='TA 关注的仓库 - langxj (langxj) - 码云 Gitee.com' itemprop='name' property='og:title'>
+<meta content='码云(gitee.com)是 OSCHINA.NET 推出的代码托管平台，支持 Git 和 SVN，提供免费的私有仓库托管。目前已有超过 500 万的开发者选择码云。' property='og:description'>
+<meta content='码云,代码托管,git,Git@OSC,gitee.com,开源,内源,项目管理,版本控制,开源代码,代码分享,项目协作,开源项目托管,免费代码托管,Git代码托管,Git托管服务' name='Keywords'>
+<meta content='langxj 关注的仓库' itemprop='description' name='Description'>
+
+<meta content="IE=edge" http-equiv="X-UA-Compatible" />
+<meta content="authenticity_token" name="csrf-param" />
+<meta content="UdJCr/XygtuVSUk3QNLSJjiQWWbCTIrBvB/eHdzLmos=" name="csrf-token" />
+
+<link href="https://assets.gitee.com/assets/application-4353e40c527157901930256fb2cba2d4.css" media="screen" rel="stylesheet" />
+<script>
+//<![CDATA[
+window.gon = {};gon.locale="zh-CN";gon.sentry_dsn=null;gon.baidu_register_hm_push=null;gon.info={"controller_path":"users","action_name":"watched","current_user":false};gon.tour_env={"current_user":null,"action_name":"watched","original_url":"http://gitee.com/langxj/watched","controller_path":"users"};gon.all_taggings=[];
+//]]>
+</script>
+<script src="https://assets.gitee.com/assets/static/sentry-5.1.0-109ee3d8895a239331efcf947ba7f5d8.js"></script>
+<script src="https://assets.gitee.com/assets/application-25134bf44f1dbb308bb450bdb036a1cc.js"></script>
+<script src="https://assets.gitee.com/assets/lib/jquery.timeago.zh-CN-9c36ca7c4899a28168320613879d208a.js"></script>
+<script src="https://assets.gitee.com/assets/profiles/app-1942801bc1f60d21aeb8f2860e0571f0.js"></script>
+<script src="https://assets.gitee.com/assets/users/application-03d65ba9902e91ecc44a3100cfa70c0d.js"></script>
+
+<link href="https://assets.gitee.com/assets/users/application-eb3f1937aa6b1baf23384e5fa1ab54f3.css" media="screen" rel="stylesheet" />
+
+<script src="//res.wx.qq.com/open/js/jweixin-1.2.0.js"></script>
+<script>
+  var title = document.title.replace(/( - Gitee| - 码云)$/, '')
+      imgUrl = '';
+  
+  document.addEventListener('DOMContentLoaded', function(event) {
+    var imgUrlEl = document.querySelector('.readme-box .markdown-body > img, .readme-box .markdown-body :not(a) > img');
+    imgUrl = imgUrlEl && imgUrlEl.getAttribute('src');
+  
+    if (!imgUrl) {
+      imgUrlEl = document.querySelector('meta[itemprop=image]');
+      imgUrl = imgUrlEl && imgUrlEl.getAttribute('content'); 
+      imgUrl = imgUrl || "https://gitee.com/static/images/logo_themecolor.png";
+    }
+  
+    wx.config({
+      debug: false,
+      appId: "wxff219d611a159737",
+      timestamp: "1586741454",
+      nonceStr: "4822143d8adcdb011b232e6fc0b1c7b0",
+      signature: "0afdde1598f9edba88c5a1ec7a217c603df53f66",
+      jsApiList: [
+        'onMenuShareTimeline',
+        'onMenuShareAppMessage'
+      ]
+    });
+  
+    wx.ready(function () {
+      wx.onMenuShareTimeline({
+        title: title, // 分享标题
+        link: "https://gitee.com/langxj/watched", // 分享链接，该链接域名或路径必须与当前页面对应的公众号JS安全域名一致
+        imgUrl: imgUrl // 分享图标
+      });
+      wx.onMenuShareAppMessage({
+        title: title, // 分享标题
+        link: "https://gitee.com/langxj/watched", // 分享链接，该链接域名或路径必须与当前页面对应的公众号JS安全域名一致
+        desc: document.querySelector('meta[name=Description]').getAttribute('content'),
+        imgUrl: imgUrl // 分享图标
+      });
+    });
+    wx.error(function(res){
+      console.error('err', res)
+    });
+  })
+</script>
+
+<script type='text/x-mathjax-config'>
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    displayMath: [["$$","$$"],["\\[","\\]"]],
+    processEscapes: true,
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
+    ignoreClass: "container|files",
+    processClass: "markdown-body"
+  }
+});
+</script>
+<script src="https://assets.gitee.com/uploads/resources/MathJax-2.7.2/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+<script>
+  (function () {
+    var messages = {
+      'zh-CN': {
+        addResult: '增加 <b>{term}</b>',
+        count: '已选择 {count}',
+        maxSelections: '最多 {maxCount} 个选择',
+        noResults: '未找到结果',
+        serverError: '连接服务器时发生错误'
+      },
+      'zh-TW': {
+        addResult: '增加 <b>{term}</b>',
+        count: '已選擇 {count}',
+        maxSelections: '最多 {maxCount} 個選擇',
+        noResults: '未找到結果',
+        serverError: '連接服務器時發生錯誤'
+      }
+    }
+  
+    if (messages[gon.locale]) {
+      $.fn.dropdown.settings.message = messages[gon.locale]
+    }
+  }());
+</script>
+
+<!--[if lt IE 10]>
+<script>
+    window.location.href = "/incompatible.html";
+</script>
+<![endif]-->
+</head>
+
+</head>
+<body class='users-body large'>
+<header class='common-header fixed noborder' id='git-header-nav'>
+<div class='ui container'>
+<div class='ui menu header-menu'>
+<div class='git-nav-expand-bar'>
+<i class='iconfont icon-mode-table'></i>
+</div>
+<div class='gitee-nav__sidebar'>
+<div class='gitee-nav__sidebar-container'>
+<div class='gitee-nav__sidebar-top'>
+<div class='gitee-nav__avatar-box'></div>
+<div class='gitee-nav__buttons-box'>
+<a class="ui button small fluid orange" href="/login">登录</a>
+<a class="ui button small fluid basic is-register" href="/signup">注册</a>
+</div>
+</div>
+<div class='gitee-nav__sidebar-middle'>
+<div class='gitee-nav__sidebar-list'>
+<ul>
+<li class='gitee-nav__sidebar-item'>
+<a href="/explore"><i class='iconfont icon-ic-discover'></i>
+<span class='gitee-nav__sidebar-name'>开源软件</span>
+</a></li>
+<li class='gitee-nav__sidebar-item'>
+<a href="/enterprises"><i class='iconfont icon-ic-enterprise'></i>
+<span class='gitee-nav__sidebar-name'>企业版</span>
+</a></li>
+<li class='gitee-nav__sidebar-item'>
+<a href="/education"><i class='iconfont icon-ic-education'></i>
+<span class='gitee-nav__sidebar-name'>高校版</span>
+</a></li>
+<li class='gitee-nav__sidebar-item split-line'></li>
+<li class='gitee-nav__sidebar-item'>
+<a href="/search"><i class='iconfont icon-ic-search'></i>
+<span class='gitee-nav__sidebar-name'>搜索</span>
+</a></li>
+<li class='gitee-nav__sidebar-item'>
+<a href="/help"><i class='iconfont icon-help-circle'></i>
+<span class='gitee-nav__sidebar-name'>帮助中心</span>
+</a></li>
+<li class='gitee-nav__sidebar-item'>
+<a href="/terms"><i class='iconfont icon-file'></i>
+<span class='gitee-nav__sidebar-name'>使用条款</span>
+</a></li>
+<li class='gitee-nav__sidebar-item'>
+<a href="/about_us"><i class='iconfont icon-issuepx'></i>
+<span class='gitee-nav__sidebar-name'>关于我们</span>
+</a></li>
+</ul>
+</div>
+</div>
+<div class='gitee-nav__sidebar-bottom'>
+<div class='gitee-nav__sidebar-close-button'>
+<i class='fa fa-angle-double-left'></i>
+</div>
+</div>
+</div>
+</div>
+
+<div class='item gitosc-logo'>
+<a href="/"><img alt='码云 Gitee — 基于 Git 的代码托管和研发协作平台' class='ui inline image' height='28' src='/static/images/logo.svg?t=158106664' title='码云 Gitee — 基于 Git 的代码托管和研发协作平台' width='95'>
+<img alt='码云 Gitee — 基于 Git 的代码托管和研发协作平台' class='ui inline black image' height='28' src='/static/images/logo-black.svg?t=158106664' title='码云 Gitee — 基于 Git 的代码托管和研发协作平台' width='95'>
+</a></div>
+<a class="item " href="/explore" title="开源软件">开源软件
+</a><a class="item " href="/enterprises" title="企业版">企业版
+<sup class='ui red label'>
+特惠
+</sup>
+</a><a class="item " href="/education" title="高校版">高校版
+</a><a class="item" href="https://blog.gitee.com/" id="gitee-blog" target="_blank" title="博客">博客
+</a><div class='center responsive-logo'>
+<a href="/"><img alt='码云 Gitee — 基于 Git 的代码托管和研发协作平台' class='ui inline image' height='24' src='/static/images/logo.svg?t=158106664' title='码云 Gitee — 基于 Git 的代码托管和研发协作平台' width='85'>
+<img alt='码云 Gitee — 基于 Git 的代码托管和研发协作平台' class='ui inline black image' height='24' src='/static/images/logo-black.svg?t=158106664' title='码云 Gitee — 基于 Git 的代码托管和研发协作平台' width='85'>
+</a></div>
+<div class='right menu userbar' id='git-nav-user-bar'>
+<form accept-charset="UTF-8" action="/search" class="ui item" data-text-filter="搜索格式不正确" data-text-require="搜索关键字不能少于1个" id="navbar-search-form" method="get"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /></div>
+<input id="navbar-search-type" name="type" type="hidden" />
+<input id="fork_filter" name="fork_filter" type="hidden" value="on" />
+<div class='ui search'>
+<input class="prompt" id="navbar-search-input" name="q" placeholder="搜索项目" type="text" value="" />
+</div>
+</form>
+
+<script>
+  var can_search_in_repo = 0,
+      repo = "",
+      reponame = "";
+  
+  $(function() {
+    var $search = $('#navbar-search-form .ui.search');
+    $search.search({
+      apiSettings: {
+        url: '/search/relative_project?q={query}',
+        onResponse: function (res) {
+          if (res && res.status === 200 && res.data) {
+            var query = $search.search('get value');
+  
+            res.data.map(function (item) {
+              item.path_ns = '/' + item.path_ns;
+              item.icon = 'iconfont icon-project-public';
+            });
+            res.data.unshift({
+              name_ns: "在全站搜索 <b class='hl'>" + query +"</b> 相关项目",
+              path_ns: '/search?fork_filter=on&q=' + query,
+              icon: 'iconfont icon-search'
+            });
+            if(can_search_in_repo == 1) {
+              res.data.unshift({
+                name_ns: "在当前仓库搜索 <b class='hl'>" + query +"</b> 相关代码",
+                path_ns: '/search?type=code&q=' + query + '&repo=' + repo + '&reponame=' + reponame,
+                icon: 'iconfont icon-search'
+              });
+            }
+            return res;
+          } else {
+            return { data: [] };
+          }
+        }
+      },
+      fields: {
+        results: 'data',
+        description: 'name_ns',
+        url: 'path_ns',
+        icon: 'icon'
+      },
+      minCharacters: 1,
+      maxResults: 10,
+      searchDelay: 120,
+      showNoResults: false,
+      transition: 'fade'
+    });
+  });
+</script>
+
+<a class="item git-nav-user__login-item" href="/login">登录
+</a><a class="item git-nav-user__register-item" href="/signup">注册
+</a><script>
+  $('.destroy-user-session').on('click', function() {
+    $.cookie('access_token', null, { path: '/' });
+  })
+</script>
+
+</div>
+</div>
+</div>
+</header>
+<script>
+  Gitee.initNavbar()
+  Gitee.initRepoRemoteWay()
+</script>
+
+<div class='fixed-notice-infos'>
+<div class='all-messages'>
+<div class='ui info message' id='git-bulletin'>
+<a href=https://blog.gitee.com/2020/04/07/gitee-go/ target='_blank'>Gitee 企业版上线 DevOps 工具「Gitee Go」</a>
+<i class='icon remove' id='remove-bulletin'></i>
+</div>
+</div>
+<div class='ui container'>
+<div class='flash-messages' id='messages-container'></div>
+</div>
+<script>
+  (function() {
+    $(function() {
+      var $error_box, alertTip, notify_content, notify_options, template;
+      template = '<div data-notify="container" class="ui {0} message" role="alert">' + '<i data-notify="dismiss" class="close icon"></i>' + '<span data-notify="message">{2}</span>' + '</div>';
+      notify_content = null;
+      notify_options = {};
+      alertTip = '';
+      $error_box = $(".flash_error.flash_error_box");
+      if (notify_options.type === 'error' && $error_box.length > 0 && !$.isEmptyObject(notify_content.message)) {
+        if (notify_content.message === 'captcha_fail') {
+          alertTip = "验证码不正确";
+        } else if (notify_content.message === 'captcha_expired') {
+          alertTip = "验证码已过期，请点击刷新";
+        } else if (notify_content.message === 'not_found_in_database') {
+          alertTip = "帐号或者密码错误";
+        } else if (notify_content.message === 'not_found_and_show_captcha') {
+          alertTip = "帐号或者密码错误";
+        } else if (notify_content.message === 'phone_captcha_fail') {
+          alertTip = "手机验证码不通过";
+        } else {
+          alertTip = notify_content.message;
+        }
+        return $error_box.html(alertTip).show();
+      } else if (notify_content) {
+        if ("watched" === 'third_party_binding') {
+          return $('#third_party_binding-message').html(notify_content.message).addClass('ui message red');
+        }
+        notify_options.delay = 3000;
+        notify_options.template = template;
+        notify_options.offset = {
+          x: 10,
+          y: 30
+        };
+        notify_options.element = '#messages-container';
+        return $.notify(notify_content, notify_options);
+      }
+    });
+  
+  }).call(this);
+</script>
+
+</div>
+<script>
+  (function() {
+    $(function() {
+      var setCookie;
+      setCookie = function(name, value) {
+        $.cookie(name, value, {
+          path: '/',
+          expires: 365
+        });
+      };
+      $('#remove-bulletin, #remove-bulletin-dashboard').on('click', function() {
+        setCookie('remove_bulletin', "gitee-maintain-1586321954");
+        $('#git-bulletin').hide();
+      });
+      $('#remove-member-bulletin').on('click', function() {
+        setCookie('remove_member_bulletin', "gitee_member_bulletin");
+        $(this).parent().hide();
+      });
+      return $('#remove-gift-bulletin').on('click', function() {
+        setCookie('remove_gift_bulletin', "gitee-gift-bulletin");
+        $(this).parent().hide();
+      });
+    });
+  
+  }).call(this);
+</script>
+<script>
+  function closeMessageBanner(pthis, type, val) {
+    var json = {}
+  
+    val = typeof val === 'undefined' ? null : val
+    $(pthis).parent().remove()
+    if (type === 'out_of_enterprise_member') {
+      json = {type: type, data: val}
+    } else if (type === 'enterprise_overdue') {
+      json = {type: type, data: val}
+    }
+    $.post('/profile/close_flash_tip', json)
+  }
+</script>
+
+<!--[if lt IE 10]>
+<script>
+  window.location.href = "/incompatible.html"
+</script>
+<![endif]-->
+
+<div class='site-content'>
+<div class='ui container user_page' id='user-show-detail'>
+<div class='ui grid' id='rc-users__container'>
+<div class='four wide column dashbord-sidebar'>
+<div class='users__personal-container'>
+<div class='users__personal-avatar'>
+<a href="/langxj"><img avatar="langxj-langxj" class="ui image avatar" />
+</a></div>
+<div class='users__personal-name'>
+<h2>
+<span title='langxj'>langxj</span>
+</h2>
+<p>@langxj</p>
+<p class='bio'>langxj 暂无简介</p>
+</div>
+<div class='users__personal-setting'>
+<a class="ui orange button" href="/login"><i class='icon empty heart'></i>
+<span>关注</span>
+</a><a class="ui basic button" href="/login"><i class='icon mail outline'></i>
+<span>私信</span>
+</a></div>
+<div class='users__personal-socials'>
+<div class='ui grid'>
+<div class='four wide column'>
+<a href="/langxj/starred"><div class='social-count'>117</div>
+<div class='social-name'>Stars</div>
+</a></div>
+<div class='four wide column'>
+<a href="/langxj/watched"><div class='social-count'>77</div>
+<div class='social-name'>Watches</div>
+</a></div>
+<div class='four wide column' id='followers-number'>
+<a href="/langxj/followers"><div class='social-count'>1</div>
+<div class='social-name'>Followers</div>
+</a></div>
+<div class='four wide column'>
+<a href="/langxj/following"><div class='social-count'>1</div>
+<div class='social-name'>Following</div>
+</a></div>
+</div>
+</div>
+<div class='users__personal-info'>
+<div class='info-item'>
+<i class='iconfont icon-blog1'></i>
+<a href="https://github.com/langxj" target="_blank" title="https://github.com/langxj">https://github.com/langxj</a>
+</div>
+</div>
+<script>
+  var $personalContainer = $('.users__personal-container');
+  var $followButton = $personalContainer.find('.follow-button');
+  var $followersNumber = $personalContainer.find('#followers-number .follow-num');
+  var $btnEditUserRemark = $personalContainer.find('#btn-edit-user-remark');
+  var $remarkName = $btnEditUserRemark.find('.js-remark-name');
+  
+  $followButton.on('click', function () {
+    var $this = $(this);
+    if ($this.hasClass('followed')) {
+      $.post("/langxj/unfollow").done(function (res) {
+        if (res.code == 1) {
+          $this.removeClass('followed').find('span').text("关注");
+          if ($remarkName.hasClass('blank')) {
+            $btnEditUserRemark.addClass('hide');
+          }
+          if ($followersNumber.length) {
+            $followersNumber.text(res.data.followers_count);
+          }
+        }
+      });
+    } else {
+      $.post("/langxj/follow").done(function (res) {
+        if (res.code == 1) {
+          $this.addClass('followed').find('span').text("取消关注");
+          if ($remarkName.hasClass('blank')) {
+            $btnEditUserRemark.removeClass('hide');
+          }
+          if ($followersNumber.length) {
+            $followersNumber.text(res.data.followers_count);
+          }
+        }
+      });
+    }
+  });
+</script>
+</div>
+
+
+
+</div>
+<div class='twelve wide column git-user-twl-col'>
+<div class='row git-user-content'>
+<div class='project-list'>
+<div class='git-user-content-header user-page-header'>
+<div class='git-user-header'>
+<div class='gitee-headbread'>
+<a href="/langxj">langxj的个人主页</a>
+<div class='gitee-divider'>/</div>
+<strong>关注的仓库<span id='projects-count'>(77)</span></strong>
+</div>
+
+</div>
+<div class='git-user-header__right'>
+<div class='ui top left pointing dropdown gradient button link item git-user-selection-dropdown'>
+<div class='text'>
+最近更新
+</div>
+<i class='icon dropdown'></i>
+<div class='menu'>
+<a class="item" href="/langxj/watched">最近更新</a>
+<a class="item" href="/langxj/watched?sort=watches.created_at+desc">最新Watch</a>
+<a class="item" href="/langxj/watched?sort=projects.name">仓库名称</a>
+</div>
+</div>
+<div class='git-user-serach-prj'>
+<div class='ui left small icon search input' id='search_project'>
+<div class='ui icon input'>
+<input class='prompt' id='search-projects' placeholder='快速搜索...' type='text'>
+<i class='iconfont icon-search icon'></i>
+</div>
+</div>
+</div>
+<script>
+  $('#search-projects').on('keydown', function(e) {
+    if(e.keyCode == 13) {
+      var searchContent = $(this).val()
+      $.ajax({
+        type: 'GET',
+        url: "/langxj/watched",
+        dataType: 'script',
+        beforeSend: function() {
+          $('#search_project').find('.ui.icon.input').addClass('loading')
+        },
+        complete: function() {
+          $('#search_project').find('.ui.icon.input').removeClass('loading')
+        },
+        data: {
+          search: searchContent
+        }
+      });
+    }
+  })
+</script>
+
+</div>
+</div>
+<div class='git-tags'>
+
+</div>
+<div id='search-projects-ulist'>
+<ul class='git-user-projects-ulist'>
+<div class='star-watch-container list-warpper'>
+<h4>
+<span class='watch-button pull-right'>
+<a class="ui basic button pre-watch" href="/login" title="你必须登录后才可以star一个仓库"><i class='iconfont icon-watch'></i>
+Watch
+</a></span>
+<span class='pro-name'>
+<span class='pro-name'>
+<span class='main-pro-name'>
+<span class="project-title"><i class="project-icon iconfont icon-fork" title="这是一个公开的fork仓库"></i> <a class="author" href="/langxj" title="langxj">langxj</a> / <a class="repository" href="/langxj/windpower" style="padding-bottom: 0px" target="_blank" title="windpower">windpower</a></span><span class="project-badges"><a class="ui small label proj-language" href="/explore/all?lang=Java" target="_blank" title="主要编程语言">Java</a></span>
+
+</span>
+<span class='fork-pro-name'>
+<span class='fork-flag'>
+forked from
+</span>
+<a class="author" href="/zhangweijrdhcc" title="zhangweijrdhcc">zhangweijrdhcc</a> / <a class="repository" href="/zhangweijrdhcc/windpower" style="padding-bottom: 0px" target="_blank" title="windpower">windpower</a>
+</span>
+</span>
+</span>
+</h4>
+<p class='description mb-1'>
+此项目为模拟风电场监控项目，模拟一个电厂、十五台风机，数据采用随机数实时插入到时序数据库中，再由websocket+quartz从时序数据库中取出推送到界面展示。其中统计信息存放在关系型数据库中。
+采用***TrendDB时序数据库***进行模拟数据
+<div class='user-tags mb-1' id='user-project-tags-8508909'>
+
+</div>
+</p>
+<span class='create-time ml-2'>
+最近更新:
+<span>26天前</span>
+</span>
+<ul class='repo-stats pull-left'>
+<li class='watch'>
+<a href="/langxj/windpower/watchers" target="_blank"><i class='iconfont icon-watch'></i>
+</a><a href="/langxj/windpower/watchers" target="_blank">1
+</a></li>
+<li class='star'>
+<a href="/langxj/windpower/stargazers" target="_blank"><i class='iconfont icon-star'></i>
+</a><a href="/langxj/windpower/stargazers" target="_blank">0
+</a></li>
+<li class='fork'>
+<a href="/zhangweijrdhcc/windpower/members" target="_blank"><i class='iconfont icon-fork'></i>
+</a><a href="/zhangweijrdhcc/windpower/members" target="_blank">107
+</a></li>
+</ul>
+</div>
+<div class='ui divider'></div>
+<div class='star-watch-container list-warpper'>
+<h4>
+<span class='watch-button pull-right'>
+<a class="ui basic button pre-watch" href="/login" title="你必须登录后才可以star一个仓库"><i class='iconfont icon-watch'></i>
+Watch
+</a></span>
+<span class='pro-name'>
+<span class='pro-name'>
+<span class='main-pro-name'>
+<span class="project-title"><i class="project-icon iconfont icon-fork" title="这是一个公开的fork仓库"></i> <a class="author" href="/langxj" title="langxj">langxj</a> / <a class="repository" href="/langxj/yjgo" style="padding-bottom: 0px" target="_blank" title="云捷Go">云捷Go</a></span><span class="project-badges"><a class="ui small label proj-language" href="/explore/all?lang=Go" target="_blank" title="主要编程语言">Go</a></span>
+
+</span>
+<span class='fork-pro-name'>
+<span class='fork-flag'>
+forked from
+</span>
+<a class="author" href="/yunjieg" title="Zeroing-ZY">Zeroing-ZY</a> / <a class="repository" href="/yunjieg/yjgo" style="padding-bottom: 0px" target="_blank" title="云捷Go gf版">云捷Go gf版</a>
+</span>
+</span>
+</span>
+</h4>
+<p class='description mb-1'>
+用于所有的Web应用程序，如网站管理后台，网站会员中心，CMS，CRM，OA
+<div class='user-tags mb-1' id='user-project-tags-8508899'>
+
+</div>
+</p>
+<span class='create-time ml-2'>
+最近更新:
+<span>26天前</span>
+</span>
+<ul class='repo-stats pull-left'>
+<li class='watch'>
+<a href="/langxj/yjgo/watchers" target="_blank"><i class='iconfont icon-watch'></i>
+</a><a href="/langxj/yjgo/watchers" target="_blank">1
+</a></li>
+<li class='star'>
+<a href="/langxj/yjgo/stargazers" target="_blank"><i class='iconfont icon-star'></i>
+</a><a href="/langxj/yjgo/stargazers" target="_blank">0
+</a></li>
+<li class='fork'>
+<a href="/yunjieg/yjgo/members" target="_blank"><i class='iconfont icon-fork'></i>
+</a><a href="/yunjieg/yjgo/members" target="_blank">57
+</a></li>
+</ul>
+</div>
+<div class='ui divider'></div>
+<div class='star-watch-container list-warpper'>
+<h4>
+<span class='watch-button pull-right'>
+<a class="ui basic button pre-watch" href="/login" title="你必须登录后才可以star一个仓库"><i class='iconfont icon-watch'></i>
+Watch
+</a></span>
+<span class='pro-name'>
+<span class='pro-name'>
+<span class='main-pro-name'>
+<span class="project-title"><i class="project-icon iconfont icon-fork" title="这是一个公开的fork仓库"></i> <a class="author" href="/langxj" title="langxj">langxj</a> / <a class="repository" href="/langxj/WTS" style="padding-bottom: 0px" target="_blank" title="WTS">WTS</a></span><span class="project-badges"><a class="ui small label proj-language" href="/explore/all?lang=Java" target="_blank" title="主要编程语言">Java</a></span>
+
+</span>
+<span class='fork-pro-name'>
+<span class='fork-flag'>
+forked from
+</span>
+<a class="author" href="/macplus" title="macplus">macplus</a> / <a class="repository" href="/macplus/WTS" style="padding-bottom: 0px" target="_blank" title="WTS">WTS</a>
+</span>
+</span>
+</span>
+</h4>
+<p class='description mb-1'>
+本系统为在线答题系统（在线考试，问卷调查，在线练题），支持在线考试、在线练习等功能... 支持题型：单选题、多选题、填空题、问答题、判断题、附件题、材料题、视频题、音频题支持答题类型：手工配置 试卷答题、随机抽题练习社交功能：试题收藏、试题评论、试题解析、试题点赞权限控制：题库权限、考场权限
+<div class='user-tags mb-1' id='user-project-tags-8322673'>
+
+</div>
+</p>
+<span class='create-time ml-2'>
+最近更新:
+<span>1个月前</span>
+</span>
+<ul class='repo-stats pull-left'>
+<li class='watch'>
+<a href="/langxj/WTS/watchers" target="_blank"><i class='iconfont icon-watch'></i>
+</a><a href="/langxj/WTS/watchers" target="_blank">1
+</a></li>
+<li class='star'>
+<a href="/langxj/WTS/stargazers" target="_blank"><i class='iconfont icon-star'></i>
+</a><a href="/langxj/WTS/stargazers" target="_blank">0
+</a></li>
+<li class='fork'>
+<a href="/macplus/WTS/members" target="_blank"><i class='iconfont icon-fork'></i>
+</a><a href="/macplus/WTS/members" target="_blank">284
+</a></li>
+</ul>
+</div>
+<div class='ui divider'></div>
+<div class='star-watch-container list-warpper'>
+<h4>
+<span class='watch-button pull-right'>
+<a class="ui basic button pre-watch" href="/login" title="你必须登录后才可以star一个仓库"><i class='iconfont icon-watch'></i>
+Watch
+</a></span>
+<span class='pro-name'>
+<span class='pro-name'>
+<span class='main-pro-name'>
+<span class="project-title"><i class="project-icon iconfont icon-fork" title="这是一个公开的fork仓库"></i> <a class="author" href="/langxj" title="langxj">langxj</a> / <a class="repository" href="/langxj/pay-java-parent" style="padding-bottom: 0px" target="_blank" title="pay-java-parent">pay-java-parent</a></span><span class="project-badges"><a class="ui small label proj-language" href="/explore/all?lang=Java" target="_blank" title="主要编程语言">Java</a></span>
+
+</span>
+<span class='fork-pro-name'>
+<span class='fork-flag'>
+forked from
+</span>
+<a class="author" href="/egzosn" title="egan">egan</a> / <a class="repository" href="/egzosn/pay-java-parent" style="padding-bottom: 0px" target="_blank" title="pay-java-parent">pay-java-parent</a>
+</span>
+</span>
+</span>
+</h4>
+<p class='description mb-1'>
+全能第三方支付对接Java开发工具包.优雅的轻量级支付模块集成支付对接支付整合（微信,支付宝,银联,友店,富友,跨境支付paypal,payoneer(P卡派安盈)易极付）app,扫码,网页支付刷卡付条码付刷脸付转账服务商模式、支持多种支付类型多支付账户，支付与业务完全剥离，简单几行代码即可实现支付，简单快速完成支付模块的开发，可轻松嵌入到任何系统里 目前仅是一个开发工具包（即SDK），只提供简单Web实现，建议使用maven或gradle引用本项目即可使用本SDK提供的各种支付相关的功能
+<div class='user-tags mb-1' id='user-project-tags-7429610'>
+
+</div>
+</p>
+<span class='create-time ml-2'>
+最近更新:
+<span>5个月前</span>
+</span>
+<ul class='repo-stats pull-left'>
+<li class='watch'>
+<a href="/langxj/pay-java-parent/watchers" target="_blank"><i class='iconfont icon-watch'></i>
+</a><a href="/langxj/pay-java-parent/watchers" target="_blank">1
+</a></li>
+<li class='star'>
+<a href="/langxj/pay-java-parent/stargazers" target="_blank"><i class='iconfont icon-star'></i>
+</a><a href="/langxj/pay-java-parent/stargazers" target="_blank">0
+</a></li>
+<li class='fork'>
+<a href="/egzosn/pay-java-parent/members" target="_blank"><i class='iconfont icon-fork'></i>
+</a><a href="/egzosn/pay-java-parent/members" target="_blank">839
+</a></li>
+</ul>
+</div>
+<div class='ui divider'></div>
+<div class='star-watch-container list-warpper'>
+<h4>
+<span class='watch-button pull-right'>
+<a class="ui basic button pre-watch" href="/login" title="你必须登录后才可以star一个仓库"><i class='iconfont icon-watch'></i>
+Watch
+</a></span>
+<span class='pro-name'>
+<span class='pro-name'>
+<span class='main-pro-name'>
+<span class="project-title"><i class="project-icon iconfont icon-fork" title="这是一个公开的fork仓库"></i> <a class="author" href="/langxj" title="langxj">langxj</a> / <a class="repository" href="/langxj/spider-flow" style="padding-bottom: 0px" target="_blank" title="spider-flow">spider-flow</a></span><span class="project-badges"><a class="ui small label proj-language" href="/explore/all?lang=Java" target="_blank" title="主要编程语言">Java</a></span>
+
+</span>
+<span class='fork-pro-name'>
+<span class='fork-flag'>
+forked from
+</span>
+<a class="author" href="/jmxd" title="小东">小东</a> / <a class="repository" href="/jmxd/spider-flow" style="padding-bottom: 0px" target="_blank" title="spider-flow">spider-flow</a>
+</span>
+</span>
+</span>
+</h4>
+<p class='description mb-1'>
+新一代爬虫平台，以图形化方式定义爬虫流程，不写代码即可完成爬虫。
+<div class='user-tags mb-1' id='user-project-tags-7182784'>
+
+</div>
+</p>
+<span class='create-time ml-2'>
+最近更新:
+<span>6个月前</span>
+</span>
+<ul class='repo-stats pull-left'>
+<li class='watch'>
+<a href="/langxj/spider-flow/watchers" target="_blank"><i class='iconfont icon-watch'></i>
+</a><a href="/langxj/spider-flow/watchers" target="_blank">1
+</a></li>
+<li class='star'>
+<a href="/langxj/spider-flow/stargazers" target="_blank"><i class='iconfont icon-star'></i>
+</a><a href="/langxj/spider-flow/stargazers" target="_blank">0
+</a></li>
+<li class='fork'>
+<a href="/jmxd/spider-flow/members" target="_blank"><i class='iconfont icon-fork'></i>
+</a><a href="/jmxd/spider-flow/members" target="_blank">625
+</a></li>
+</ul>
+</div>
+<div class='ui divider'></div>
+<div class='star-watch-container list-warpper'>
+<h4>
+<span class='watch-button pull-right'>
+<a class="ui basic button pre-watch" href="/login" title="你必须登录后才可以star一个仓库"><i class='iconfont icon-watch'></i>
+Watch
+</a></span>
+<span class='pro-name'>
+<span class='pro-name'>
+<span class='main-pro-name'>
+<span class="project-title"><i class="project-icon iconfont icon-fork" title="这是一个公开的fork仓库"></i> <a class="author" href="/langxj" title="langxj">langxj</a> / <a class="repository" href="/langxj/lenosp" style="padding-bottom: 0px" target="_blank" title="lenosp">lenosp</a></span><span class="project-badges"><a class="ui small label proj-language" href="/explore/all?lang=Java" target="_blank" title="主要编程语言">Java</a></span>
+
+</span>
+<span class='fork-pro-name'>
+<span class='fork-flag'>
+forked from
+</span>
+<a class="author" href="/bweird" title="一枚码农">一枚码农</a> / <a class="repository" href="/bweird/lenosp" style="padding-bottom: 0px" target="_blank" title="lenosp">lenosp</a>
+</span>
+</span>
+</span>
+</h4>
+<p class='description mb-1'>
+lenos(p为spring boot 2.0 版本扩展名)一款快速开发模块化脚手架，采用spring boot 2.0.1、spring、SpringMvc、mybatis、shiro、activiti工作流、swagger、ehcache、redis、quartz、freemarker、layui技术开发；博客采用vue前后分离，持久层集成tkmapper丰富简单数据交互，支持mysql/sqlserver数据源，实现功能有系统模块：菜单管理、用户管理、角色管理，系统监控：系统日志、接口api、sql监控、可配置化定时任务，工作流程管理：流程管理(动态给节点配置角色)、模块列表(新建编辑发布流程)、请假流程、待办任务。博客模块为单独的前端后台多页面，服务为lenosp，本项目会一直维护并集成新的技术，给您的开发节约时间成本。演示地址：
+<div class='user-tags mb-1' id='user-project-tags-6691139'>
+
+</div>
+</p>
+<span class='create-time ml-2'>
+最近更新:
+<span>8个月前</span>
+</span>
+<ul class='repo-stats pull-left'>
+<li class='watch'>
+<a href="/langxj/lenosp/watchers" target="_blank"><i class='iconfont icon-watch'></i>
+</a><a href="/langxj/lenosp/watchers" target="_blank">1
+</a></li>
+<li class='star'>
+<a href="/langxj/lenosp/stargazers" target="_blank"><i class='iconfont icon-star'></i>
+</a><a href="/langxj/lenosp/stargazers" target="_blank">0
+</a></li>
+<li class='fork'>
+<a href="/bweird/lenosp/members" target="_blank"><i class='iconfont icon-fork'></i>
+</a><a href="/bweird/lenosp/members" target="_blank">1535
+</a></li>
+</ul>
+</div>
+<div class='ui divider'></div>
+<div class='star-watch-container list-warpper'>
+<h4>
+<span class='watch-button pull-right'>
+<a class="ui basic button pre-watch" href="/login" title="你必须登录后才可以star一个仓库"><i class='iconfont icon-watch'></i>
+Watch
+</a></span>
+<span class='pro-name'>
+<span class='pro-name'>
+<span class='main-pro-name'>
+<span class="project-title"><i class="project-icon iconfont icon-fork" title="这是一个公开的fork仓库"></i> <a class="author" href="/langxj" title="langxj">langxj</a> / <a class="repository" href="/langxj/O2OA" style="padding-bottom: 0px" target="_blank" title="O2OA">O2OA</a></span><span class="project-badges"><a class="ui small label proj-language" href="/explore/all?lang=Java" target="_blank" title="主要编程语言">Java</a></span>
+
+</span>
+<span class='fork-pro-name'>
+<span class='fork-flag'>
+forked from
+</span>
+<a class="author" href="/o2oa" title="O2OA">O2OA</a> / <a class="repository" href="/o2oa/O2OA" style="padding-bottom: 0px" target="_blank" title="O2OA">O2OA</a>
+</span>
+</span>
+</span>
+</h4>
+<p class='description mb-1'>
+O2OA是一款Java开源企业信息化建设平台，包括流程管理、门户管理、信息管理、数据管理和服务管理五大平台，可以大大减化企业信息化建设成本和业务应用开发难度。
+<div class='user-tags mb-1' id='user-project-tags-5322865'>
+
+</div>
+</p>
+<span class='create-time ml-2'>
+最近更新:
+<span>1年前</span>
+</span>
+<ul class='repo-stats pull-left'>
+<li class='watch'>
+<a href="/langxj/O2OA/watchers" target="_blank"><i class='iconfont icon-watch'></i>
+</a><a href="/langxj/O2OA/watchers" target="_blank">1
+</a></li>
+<li class='star'>
+<a href="/langxj/O2OA/stargazers" target="_blank"><i class='iconfont icon-star'></i>
+</a><a href="/langxj/O2OA/stargazers" target="_blank">0
+</a></li>
+<li class='fork'>
+<a href="/o2oa/O2OA/members" target="_blank"><i class='iconfont icon-fork'></i>
+</a><a href="/o2oa/O2OA/members" target="_blank">981
+</a></li>
+</ul>
+</div>
+<div class='ui divider'></div>
+<div class='star-watch-container list-warpper'>
+<h4>
+<span class='watch-button pull-right'>
+<a class="ui basic button pre-watch" href="/login" title="你必须登录后才可以star一个仓库"><i class='iconfont icon-watch'></i>
+Watch
+</a></span>
+<span class='pro-name'>
+<span class='pro-name'>
+<span class='main-pro-name'>
+<span class="project-title"><i class="project-icon iconfont icon-fork" title="这是一个公开的fork仓库"></i> <a class="author" href="/langxj" title="langxj">langxj</a> / <a class="repository" href="/langxj/PbootCMS" style="padding-bottom: 0px" target="_blank" title="PbootCMS">PbootCMS</a></span><span class="project-badges"><a class="ui small label proj-language" href="/explore/all?lang=PHP" target="_blank" title="主要编程语言">PHP</a></span>
+
+</span>
+<span class='fork-pro-name'>
+<span class='fork-flag'>
+forked from
+</span>
+<a class="author" href="/hnaoyun" title="星梦">星梦</a> / <a class="repository" href="/hnaoyun/PbootCMS" style="padding-bottom: 0px" target="_blank" title="PbootCMS">PbootCMS</a>
+</span>
+</span>
+</span>
+</h4>
+<p class='description mb-1'>
+PbootCMS是翱云科技开发的全新内核的PHP开源企业建站系统，系统以高效、简洁、强悍为开发目标，能够满足各类企业网站建设的需要；系统采用高效、简洁的模板标签，只要懂HTML就可快速开发企业网站；系统采用PHP语言开发，使用自主研发的高速MVVM多层开发框架及多级缓存技术；系统默认采用Sqlite轻型数据库，放入PHP空间即可直接使用，可选Mysql、Pgsql等数据库，满足各类存储需求；系统采用响应式管理后台，满足各类设备随时管理的需要；具备为小程序、APP等提供后端服务的能力。
+<div class='user-tags mb-1' id='user-project-tags-4837332'>
+
+</div>
+</p>
+<span class='create-time ml-2'>
+最近更新:
+<span>1年多前</span>
+</span>
+<ul class='repo-stats pull-left'>
+<li class='watch'>
+<a href="/langxj/PbootCMS/watchers" target="_blank"><i class='iconfont icon-watch'></i>
+</a><a href="/langxj/PbootCMS/watchers" target="_blank">1
+</a></li>
+<li class='star'>
+<a href="/langxj/PbootCMS/stargazers" target="_blank"><i class='iconfont icon-star'></i>
+</a><a href="/langxj/PbootCMS/stargazers" target="_blank">0
+</a></li>
+<li class='fork'>
+<a href="/hnaoyun/PbootCMS/members" target="_blank"><i class='iconfont icon-fork'></i>
+</a><a href="/hnaoyun/PbootCMS/members" target="_blank">200
+</a></li>
+</ul>
+</div>
+<div class='ui divider'></div>
+<div class='star-watch-container list-warpper'>
+<h4>
+<span class='watch-button pull-right'>
+<a class="ui basic button pre-watch" href="/login" title="你必须登录后才可以star一个仓库"><i class='iconfont icon-watch'></i>
+Watch
+</a></span>
+<span class='pro-name'>
+<span class='pro-name'>
+<span class='main-pro-name'>
+<span class="project-title"><i class="project-icon iconfont icon-fork" title="这是一个公开的fork仓库"></i> <a class="author" href="/langxj" title="langxj">langxj</a> / <a class="repository" href="/langxj/templatespider" style="padding-bottom: 0px" target="_blank" title="templatespider">templatespider</a></span><span class="project-badges"><a class="ui small label proj-language" href="/explore/all?lang=Java" target="_blank" title="主要编程语言">Java</a></span>
+
+</span>
+<span class='fork-pro-name'>
+<span class='fork-flag'>
+forked from
+</span>
+<a class="author" href="/mail_osc" title="鬼画符">鬼画符</a> / <a class="repository" href="/mail_osc/templatespider" style="padding-bottom: 0px" target="_blank" title="templatespider">templatespider</a>
+</span>
+</span>
+</span>
+</h4>
+<p class='description mb-1'>
+扒网站工具，看好哪个网站，指定好URL，自动扒下来做成模版。所见网站，皆可为我所用！
+<div class='user-tags mb-1' id='user-project-tags-4546087'>
+
+</div>
+</p>
+<span class='create-time ml-2'>
+最近更新:
+<span>1年多前</span>
+</span>
+<ul class='repo-stats pull-left'>
+<li class='watch'>
+<a href="/langxj/templatespider/watchers" target="_blank"><i class='iconfont icon-watch'></i>
+</a><a href="/langxj/templatespider/watchers" target="_blank">1
+</a></li>
+<li class='star'>
+<a href="/langxj/templatespider/stargazers" target="_blank"><i class='iconfont icon-star'></i>
+</a><a href="/langxj/templatespider/stargazers" target="_blank">0
+</a></li>
+<li class='fork'>
+<a href="/mail_osc/templatespider/members" target="_blank"><i class='iconfont icon-fork'></i>
+</a><a href="/mail_osc/templatespider/members" target="_blank">355
+</a></li>
+</ul>
+</div>
+<div class='ui divider'></div>
+<div class='star-watch-container list-warpper'>
+<h4>
+<span class='watch-button pull-right'>
+<a class="ui basic button pre-watch" href="/login" title="你必须登录后才可以star一个仓库"><i class='iconfont icon-watch'></i>
+Watch
+</a></span>
+<span class='pro-name'>
+<span class='pro-name'>
+<span class='main-pro-name'>
+<span class="project-title"><i class="project-icon iconfont icon-fork" title="这是一个公开的fork仓库"></i> <a class="author" href="/langxj" title="langxj">langxj</a> / <a class="repository" href="/langxj/deer-wms" style="padding-bottom: 0px" target="_blank" title="wms">wms</a></span><span class="project-badges"><a class="ui small label proj-language" href="/explore/all?lang=Java" target="_blank" title="主要编程语言">Java</a></span>
+
+</span>
+<span class='fork-pro-name'>
+<span class='fork-flag'>
+forked from
+</span>
+<a class="author" href="/GuoJingXun" title="wms仓库管理系统">wms仓库管理系统</a> / <a class="repository" href="/GuoJingXun/deer-wms" style="padding-bottom: 0px" target="_blank" title="wms">wms</a>
+</span>
+</span>
+</span>
+</h4>
+<p class='description mb-1'>
+deer-wms是基于条码技术、RFID(无线射频自动识别)技 术和现代化仓储精益管理思想开发出来的仓库管理系统，仓储实现自 动化管理，能有效地对仓储流程和空间进行管理，实现批次、单品管理、 快速出入库、货物调拨和动态盘点。可以自动地记录下物流的流动，RFID、条码技术 与信息处理技术的结合帮助我们合理地利用仓库空间。演示地址--》
+<div class='user-tags mb-1' id='user-project-tags-4489292'>
+
+</div>
+</p>
+<span class='create-time ml-2'>
+最近更新:
+<span>1年多前</span>
+</span>
+<ul class='repo-stats pull-left'>
+<li class='watch'>
+<a href="/langxj/deer-wms/watchers" target="_blank"><i class='iconfont icon-watch'></i>
+</a><a href="/langxj/deer-wms/watchers" target="_blank">1
+</a></li>
+<li class='star'>
+<a href="/langxj/deer-wms/stargazers" target="_blank"><i class='iconfont icon-star'></i>
+</a><a href="/langxj/deer-wms/stargazers" target="_blank">0
+</a></li>
+<li class='fork'>
+<a href="/GuoJingXun/deer-wms/members" target="_blank"><i class='iconfont icon-fork'></i>
+</a><a href="/GuoJingXun/deer-wms/members" target="_blank">372
+</a></li>
+</ul>
+</div>
+<div class='ui divider'></div>
+</ul>
+<style>
+  .ui.button.active:hover {
+    background-color: #fff; }
+</style>
+<script>
+  $('.star-button').each(function() {
+    $(this).on('ajax:success', (function() {
+      $(this).toggleClass('star')
+    }))
+  })
+</script>
+
+</div>
+</div>
+</div>
+<footer class='ui grid page'>
+<div class='column center aligned' id='projects-paginate'>
+<div class='column center aligned'>
+<div class='ui tiny pagination menu' id='git-discover-page'>
+
+<a class="item active" data-remote="true" href="/langxj/watched">1</a>
+
+<a class="item" data-remote="true" href="/langxj/watched?page=2" rel="next">2</a>
+
+<a class="item" data-remote="true" href="/langxj/watched?page=3">3</a>
+
+<div class='disabled item'>
+...
+</div>
+
+<a class="item" data-remote="true" href="/langxj/watched?page=7">7</a>
+
+<a class="item" data-remote="true" href="/langxj/watched?page=8">8</a>
+
+<a class="icon item" data-remote="true" href="/langxj/watched?page=2" rel="next"><i class='fa fa-angle-right'></i>
+</a>
+</div>
+</div>
+
+</div>
+</footer>
+
+</div>
+</div>
+</div>
+</div>
+<footer id='git-footer-main'>
+<div class='ui container'>
+<div class='ui two column grid '>
+<div class='nine wide column git-footer-left'>
+<p><a href="https://gitee.com/" target="_blank">© Gitee.com</a></p>
+<div class='ui four column grid' id='footer-left'>
+<div class='column'>
+<div class='ui link list'>
+<div class='item'>
+<a class="item" href="/about_us">关于我们</a>
+</div>
+<div class='item'>
+<a class="item" href="/terms">使用条款</a>
+</div>
+<div class='item'>
+<a class="item" href="/oschina/git-osc/issues">意见建议</a>
+</div>
+<div class='item'>
+<a class="item" href="/links.html">合作伙伴</a>
+</div>
+</div>
+</div>
+<div class='column'>
+<div class='ui link list'>
+<div class='item'>
+<a class="item" href="/all-about-git">Git 大全</a>
+</div>
+<div class='item'>
+<a class="item" href="https://oschina.gitee.io/learn-git-branching/">Git 命令学习</a>
+</div>
+<div class='item'>
+<a class="item" href="https://copycat.gitee.com/">代码克隆检测</a>
+</div>
+<div class='item'>
+<a class="item" href="/appclient">APP与插件下载</a>
+</div>
+</div>
+</div>
+<div class='column'>
+<div class='ui link list'>
+<div class='item'>
+<a class="item" href="/gitee-stars">码云封面人物</a>
+</div>
+<div class='item'>
+<a class="item" href="/gvp">GVP项目</a>
+</div>
+<div class='item'>
+<a class="item" href="https://blog.gitee.com/">码云博客</a>
+</div>
+<div class='item'>
+<a class="item" href="/enterprises#nonprofit-plan">Gitee 公益计划</a>
+</div>
+</div>
+</div>
+<div class='column'>
+<div class='ui link list'>
+<div class='item'>
+<a class="item" href="/api/v5/swagger">OpenAPI</a>
+</div>
+<div class='item'>
+<a class="item" href="/help">帮助文档</a>
+</div>
+<div class='item'>
+<a class="item" href="/self_services">在线自助服务</a>
+</div>
+<div class='item'>
+<a class="item" href="/git-osc">更新日志</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class='seven wide column right aligned followus git-footer-right'>
+<div class='qrcode weixin'>
+<img alt="Qrcode weixin" src="https://assets.gitee.com/assets/qrcode-weixin-9e7cfb27165143d2b8e8b268a52ea822.jpg" />
+<p class='weixin-text'>微信服务号</p>
+</div>
+<div class='phone-and-qq column'>
+<div class='ui list official-support-container'>
+<div class='item'>
+<a class="icon-popup" href="//shang.qq.com/wpa/qunwpa?idkey=df785aa7af71f7d74149ab062742d761b845464350ecba25eb440357a3e573b7" title="点击加入码云官方群"><i class='iconfont icon-logo-qq'></i>
+<span>官方技术交流QQ群：1050025484</span>
+</a></div>
+<div class='item mail-and-zhihu'>
+<a href="mailto: git@oschina.cn"><i class='iconfont icon-ic-mail'></i>
+<span id='git-footer-email'>git#oschina.cn</span>
+</a><a href="https://www.zhihu.com/org/ma-yun-osc/ " target="_blank"><i class='iconfont icon-zhihu'></i>
+<span>码云Gitee</span>
+</a></div>
+<div class='item'>企业版售前及售后使用咨询：400-606-0201</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class='bottombar'>
+<div class='ui container'>
+<div class='ui grid'>
+<div class='seven wide column partner'>
+<div class='copyright'>
+<a href="http://www.beian.miit.gov.cn/">粤ICP备12009483号</a>
+深圳市奥思网络科技有限公司版权所有
+</div>
+</div>
+<div class='nine wide column right aligned'>
+<i class='icon world'></i>
+<a href="/language/zh-CN">简 体</a>
+/
+<a href="/language/zh-TW">繁 體</a>
+/
+<a href="/language/en">English</a>
+</div>
+</div>
+</div>
+</div>
+</footer>
+<script>
+  var officialEmail = $('#git-footer-email').text()
+  $('#git-footer-main .icon-popup').popup({ position: 'bottom center' })
+  $('#git-footer-email').text(officialEmail.replace('#', '@'))
+</script>
+
+
+<div class='side-toolbar'>
+<div class='button toolbar-help'>
+<i class='iconfont icon-help'></i>
+</div>
+<div class='ui popup left center dark'>点此查找更多帮助</div>
+<div class='toolbar-help-dialog'>
+<div class='toolbar-dialog-header'>
+<h3 class='toolbar-dialog-title'>搜索帮助</h3>
+<form accept-charset="UTF-8" action="/help/load_keywords_data" class="toolbar-help-search-form" method="get"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /></div>
+<div class='ui icon input fluid toolbar-help-search'>
+<input name='keywords' placeholder='请输入产品名称或问题' type='text'>
+<i class='icon search'></i>
+</div>
+</form>
+
+<i class='iconfont icon-close toolbar-dialog-close-icon'></i>
+</div>
+<div class='toolbar-dialog-content'>
+<div class='toolbar-help-hot-search'>
+<div class='toolbar-roll'>
+<a class="init active" href="https://oschina.gitee.io/learn-git-branching/?utm_source==gitee-help-widget" title="Git 命令在线学习"><i class='Blue icon icon-command iconfont'></i>
+<span>Git 命令在线学习</span>
+</a><a class="init " href="https://gitee.com/help/articles/4261?utm_source==gitee-help-widget" title="如何在码云上导入 GitHub 仓库"><i class='icon icon-clipboard iconfont orange'></i>
+<span>如何在码云上导入 GitHub 仓库</span>
+</a></div>
+<div class='toolbar-list'>
+<div class='toolbar-list-item'>
+<a href="/help/articles/4114">Git 仓库基础操作</a>
+</div>
+<div class='toolbar-list-item'>
+<a href="/help/articles/4166">企业版和社区版功能对比</a>
+</div>
+<div class='toolbar-list-item'>
+<a href="/help/articles/4191">SSH 公钥设置</a>
+</div>
+<div class='toolbar-list-item'>
+<a href="/help/articles/4194">如何处理代码冲突</a>
+</div>
+<div class='toolbar-list-item'>
+<a href="/help/articles/4232">仓库体积过大，如何减小？</a>
+</div>
+<div class='toolbar-list-item'>
+<a href="/help/articles/4279">如何找回被删除的仓库数据</a>
+</div>
+<div class='toolbar-list-item'>
+<a href="/help/articles/4283">码云使用容量说明</a>
+</div>
+<div class='toolbar-list-item'>
+<a href="/help/articles/4284">GitHub仓库快速导入Gitee及同步更新</a>
+</div>
+</div>
+</div>
+<div class='toolbar-help-search-reseult'>
+<div class='toolbar-help-flex-column'>
+<div class='ui centered inline loader toolbar-help-loader'></div>
+<div class='toolbar-list'></div>
+<div class='toolbar-help-link-to-help'>
+<a href="" target="_blank">查看更多搜索结果</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script>
+  var opt = { position: 'left center' };
+  var $helpSideToolbar = $(".button.toolbar-help");
+  var $toolbarRoll = $('.toolbar-roll');
+  
+  $(function() {
+    if (false) {
+      $helpSideToolbar.popup(opt);
+    } else {
+      $helpSideToolbar.popup('show', opt);
+      setTimeout(function() {
+        $helpSideToolbar.popup('hide', opt);
+      }, 3000);
+    }
+  
+    if ($toolbarRoll.length) {
+      setInterval(function() {
+        var $nextActiveLink = $toolbarRoll.find('a.active').next();
+        if (!$nextActiveLink.length) {
+          $nextActiveLink = $toolbarRoll.find('a:first-child');
+        }
+        $nextActiveLink.attr('class', 'active').siblings().removeClass('active init');
+      }, 5000);
+    }
+  })
+</script>
+
+<div class='button share-link'>
+<i class='iconfont icon-share'></i>
+</div>
+<div class='ui popup dark'>
+<div class='header'>
+分享到
+</div>
+<div class='bdsharebuttonbox' style='display: flex'>
+<a class='iconfont icon-home-service-wechat' data-cmd='weixin' title='分享到微信'></a>
+<a class='iconfont icon-weibo' data-cmd='tsina' title='分享到新浪微博'></a>
+<a class='iconfont icon-qq' data-cmd='sqq' title='分享到QQ好友'></a>
+<a class='iconfont icon-qzone' data-cmd='qzone' title='分享到QQ空间'></a>
+</div>
+</div>
+<div class='button gotop popup' id='gotop'>
+<i class='iconfont icon-top'></i>
+</div>
+<div class='ui popup dark'>回到顶部</div>
+</div>
+<style>
+  .side-toolbar .bdsharebuttonbox a {
+    font-size: 24px;
+    color: white !important;
+    opacity: 0.9;
+    margin: 6px 6px 0px 6px;
+    background-image: none;
+    text-indent: 0;
+    height: auto;
+    width: auto;
+  }
+</style>
+<script>
+  (function() {
+    $('#project-user-message').popup({
+      position: 'left center'
+    });
+  
+  }).call(this);
+</script>
+<script>
+  Gitee.initSideToolbar({})
+</script>
+<script>
+  window._bd_share_config = {
+    "common": {
+      "bdSnsKey": {},
+      "bdText": document.title,
+      "bdMini": "1",
+      "bdMiniList": ["bdxc","tqf","douban","bdhome","sqq","thx","ibaidu","meilishuo","mogujie","diandian","huaban","duitang","hx","fx","youdao","sdo","qingbiji","people","xinhua","mail","isohu","yaolan","wealink","ty","iguba","fbook","twi","linkedin","h163","evernotecn","copy","print"],
+      "bdPic": "",
+      "bdStyle": "1",
+      "bdSize": "32"
+    },
+    "share": {}
+  }
+</script>
+<script src="/bd_share/static/api/js/share.js"></script>
+
+
+
+
+
+</body>
+</html>
