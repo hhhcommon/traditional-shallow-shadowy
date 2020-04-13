@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Download</title>
+
+	<link rel="stylesheet" href="/css/main.css" />
+	<link rel="canonical" href="https://graphviz.gitlab.io/download/">
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700,800,600' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Muli:400,300' rel='stylesheet' type='text/css'>
+    <link rel="icon" type="image/png" href="/_pages/Resources/favicon.png" />
+
+</head>
+
+
+<body>
+	<aside>
+	<div class="container">
+		<nav>
+			<ul>
+				
+				                       
+				<li><a href="/about/">About</a></li>
+				  
+				<li><a href="/download/">Download</a></li>
+				  
+				<li><a href="/gallery/">Gallery</a></li>
+				  
+				<li><a href="/documentation/">Documentation</a></li>
+				  
+				<li><a href="/theory/">Theory and Publications</a></li>
+				  
+				<li><a href="/license/">License</a></li>
+				  
+				<li><a href="/resources/">Resources</a></li>
+				  
+				<li><a href="/credits/">Credits</a></li>
+				  
+				<li><a href="/faq/">FAQ</a></li>
+				  
+				<li><a href="/contact/">Contact</a></li>
+				  
+				<li><a href="/twitter/">Twitter</a></li>
+				 
+                <li><a href="https://gitlab.com/graphviz/graphviz/issues" target="_blank">Issues/Bugs</a></li?
+			</ul>
+		</nav>
+	</div>
+</aside>
+
+<header>
+	<img src="https://graphviz.gitlab.io/_pages/Resources/app.png" />
+	<h1><a href="">Graphviz - Graph Visualization Software</a></h1>
+</header>
+
+	<main>
+		<article>
+			<h1>Download</h1>
+   
+    <h2 id="source-code">Source Code</h2>
+
+<p><a href="https://graphviz.gitlab.io/_pages/Download/Download_source.html">Source code packages</a> for the latest stable and
+development versions of Graphviz are available, along with instructions for anonymous
+access to the sources using <a href="http://git-scm.com/">Git</a>.</p>
+
+<h2 id="executable-packages">Executable Packages</h2>
+
+<p>Packages marked with an asterisk(*) are provided by outside parties.
+We list them for convenience, but disclaim responsibility for the contents of these packages.</p>
+
+<h3 id="linux">Linux</h3>
+
+<p>We do not provide precompiled packages any more.
+You may find it useful to try one of the following third-party sites.</p>
+
+<ul>
+  <li><a href="https://packages.ubuntu.com/search?keywords=graphviz&amp;searchon=names">Ubuntu packages</a>*</li>
+  <li><a href="https://apps.fedoraproject.org/packages/graphviz">Fedora project</a>*</li>
+  <li><a href="http://packages.debian.org/search?suite=all&amp;searchon=names&amp;keywords=graphviz">Debian packages</a>*</li>
+  <li><a href="http://rpmfind.net/linux/rpm2html/search.php?query=graphviz">Stable and development rpms for Redhat Enterprise, or Centos systems</a>* available but are out of date.
+<!---  The problem is that this probably just points back to graphviz.org * [Fedora](http://fedoraproject.org/)* On a working Fedora system, use `yum list "graphviz*"` to see all available Graphviz packages.  ---></li>
+</ul>
+
+<h3 id="windows">Windows</h3>
+
+<ul>
+  <li><a href="https://ci.appveyor.com/project/ellson/graphviz-pl238">Development Windows install packages</a></li>
+  <li><a href="https://graphviz.gitlab.io/_pages/Download/Download_windows.html">Stable 2.38 Windows install packages</a></li>
+  <li><a href="http://sourceware.org/cygwinports/">Cygwin Ports</a>* provides a port of Graphviz to Cygwin.</li>
+  <li><a href="http://wingraphviz.sourceforge.net/wingraphviz/">WinGraphviz</a>* Win32/COM object (dot/neato library for Visual Basic and ASP).</li>
+</ul>
+
+<p>Mostly correct notes for building Graphviz on Windows can be found
+<a href="https://graphviz.gitlab.io/_pages/doc/winbuild.html">here</a>.</p>
+
+<h3 id="mac">Mac</h3>
+
+<ul>
+  <li><a href="https://www.macports.org/">MacPorts</a>* provides both stable and development versions of
+Graphviz and the Mac GUI Graphviz.app. These can be obtained via the ports “graphviz”, “graphviz-devel”, “graphviz-gui” and “graphviz-gui-devel”.</li>
+  <li><a href="https://brew.sh/">Homebrew</a>* has a Graphviz port.</li>
+</ul>
+
+<p>We need help with OSX, if you would like to volunteer.</p>
+
+<p>We would appreciate if someone donates a script to
+run pkgbuild or productbuild to automatically generate OSX installers.
+<a href="https://itunes.apple.com/us/book/packaging-for-apple-administrators/id1173928620?mt=11&amp;ign-mpt=uo%3D4">Packaging for Apple Administrators</a>
+could be a good reference. Also blog articles like <a href="http://techion.com.au/blog/2014/8/17/creating-os-x-package-files-pkg-in-terminal">Creating OS X Package Files  (.pkg) in Terminal</a>. Note graphviz needs postinstall actions, at least <code class="highlighter-rouge">dot -c</code>; also <code class="highlighter-rouge">fc-cache</code> if Graphviz has freetype/cairopango drivers.</p>
+
+<h3 id="solaris">Solaris</h3>
+
+<p>For Solaris, please use the graphviz stable releases <a href="http://www.opencsw.org/packages/">here</a>. These are
+maintained by Laurent Blume / John Ellson. Currently available packages are:</p>
+
+<table>
+     <tr><td>graphviz</td><td>Graph Visualization Tools</td></tr>
+     <tr><td>graphviz_dev</td><td>Graphviz headers etc. for development</td></tr>
+     <tr><td>graphvizdoc</td><td>Graphviz documentation</td></tr>
+     <tr><td>graphvizgd</td><td>Graphviz renderers using gd</td></tr>
+     <tr><td>graphvizgraphs</td><td>Graphviz example graphs</td></tr>
+     <tr><td>graphvizguile</td><td>Graphviz language binding for guile</td></tr>
+     <tr><td>graphvizperl</td><td>Graphviz language binding for perl</td></tr>
+     <tr><td>graphvizpython</td><td>Graphviz language binding for python</td></tr>
+     <tr><td>graphvizruby</td><td>Graphviz language binding for ruby</td></tr>
+     <tr><td>graphvizsharp</td><td>Graphviz language binding for C#</td></tr>
+     <tr><td>graphviztcl</td><td>Graphviz language binding for tcl</td></tr>
+</table>
+
+<p>Minimally, graphviz and graphvizgd should be installed.</p>
+
+<h3 id="other-unix">Other Unix</h3>
+
+<ul>
+  <li><a href="http://www.freshports.org/graphics/graphviz/">FreeBSD</a>*</li>
+</ul>
+
+
+
+		</article>
+		<footer>
+</footer>
+
+	</main>
+</body>
+
+</html>
