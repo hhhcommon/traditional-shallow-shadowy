@@ -1,0 +1,1866 @@
+<!DOCTYPE html>
+<html lang='zh-CN'>
+<head>
+<script src="https://assets.gitee.com/assets/static/sentry-5.1.0-109ee3d8895a239331efcf947ba7f5d8.js"></script>
+<title>码云企业版 - 企业 Git 代码管理专家</title>
+<meta charset='utf-8'>
+<meta content='always' name='referrer'>
+<meta content='码云' property='og:site_name'>
+<meta content='Object' property='og:type'>
+<meta content='http://gitee.com/enterprises?from=homepage' property='og:url'>
+<meta content='https://gitee.com/static/images/logo_themecolor.png' itemprop='image' property='og:image'>
+<meta content='码云企业版 - 企业 Git 代码管理专家' itemprop='name' property='og:title'>
+<meta content='码云(gitee.com)是 OSCHINA.NET 推出的代码托管平台，支持 Git 和 SVN，提供免费的私有仓库托管。目前已有超过 500 万的开发者选择码云。' property='og:description'>
+<meta content='码云,Git,Gitee,码云企业版,代码托管,内源,代码管理,协作开发,项目管理' name='Keywords'>
+<meta content='码云企业版是 OSCHINA.NET 专为企业提供的基于 Git 的代码托管平台，助力企业开发，将代码托管、开发与项目管理工具融为一体，更提供人员、文档等开发资源的完善管理，协同开发，从此更加便捷！' itemprop='description' name='Description'>
+
+<meta content="IE=edge" http-equiv="X-UA-Compatible" />
+<meta content="authenticity_token" name="csrf-param" />
+<meta content="ix0lxDUGwxJt7wnPGJAtvfooYcZocGHublo8pro2OYQ=" name="csrf-token" />
+
+<link href="https://assets.gitee.com/assets/favicon-9007bd527d8a7851c8330e783151df58.ico" rel="shortcut icon" type="image/vnd.microsoft.icon" />
+<script src="//res.wx.qq.com/open/js/jweixin-1.2.0.js"></script>
+<script>
+  var title = document.title.replace(/( - Gitee| - 码云)$/, '')
+      imgUrl = '';
+  
+  document.addEventListener('DOMContentLoaded', function(event) {
+    var imgUrlEl = document.querySelector('.readme-box .markdown-body > img, .readme-box .markdown-body :not(a) > img');
+    imgUrl = imgUrlEl && imgUrlEl.getAttribute('src');
+  
+    if (!imgUrl) {
+      imgUrlEl = document.querySelector('meta[itemprop=image]');
+      imgUrl = imgUrlEl && imgUrlEl.getAttribute('content'); 
+      imgUrl = imgUrl || "https://gitee.com/static/images/logo_themecolor.png";
+    }
+  
+    wx.config({
+      debug: false,
+      appId: "wxff219d611a159737",
+      timestamp: "1586737372",
+      nonceStr: "a6a6a9c3b2c3f08b927420ecbac22978",
+      signature: "5b069b83909cacef61213b452dd3be15359b4bc3",
+      jsApiList: [
+        'onMenuShareTimeline',
+        'onMenuShareAppMessage'
+      ]
+    });
+  
+    wx.ready(function () {
+      wx.onMenuShareTimeline({
+        title: title, // 分享标题
+        link: "https://gitee.com/enterprises?from=homepage", // 分享链接，该链接域名或路径必须与当前页面对应的公众号JS安全域名一致
+        imgUrl: imgUrl // 分享图标
+      });
+      wx.onMenuShareAppMessage({
+        title: title, // 分享标题
+        link: "https://gitee.com/enterprises?from=homepage", // 分享链接，该链接域名或路径必须与当前页面对应的公众号JS安全域名一致
+        desc: document.querySelector('meta[name=Description]').getAttribute('content'),
+        imgUrl: imgUrl // 分享图标
+      });
+    });
+    wx.error(function(res){
+      console.error('err', res)
+    });
+  })
+</script>
+
+<script>
+//<![CDATA[
+window.gon = {};gon.locale="zh-CN";gon.sentry_dsn=null;gon.baidu_register_hm_push=null;gon.info={"controller_path":"enterprises","action_name":"index","current_user":false};gon.tour_env={"current_user":null,"action_name":"index","original_url":"http://gitee.com/enterprises?from=homepage","controller_path":"enterprises"};
+//]]>
+</script>
+<!--[if lt IE 10]>
+<script>
+    window.location.href = "/incompatible.html";
+</script>
+<![endif]-->
+
+<link href="https://assets.gitee.com/assets/application-4353e40c527157901930256fb2cba2d4.css" media="screen" rel="stylesheet" />
+<link href="https://assets.gitee.com/assets/enterprises-dfb54130ba83a8cc8fad3379f2591109.css" media="screen" rel="stylesheet" />
+<script src="https://assets.gitee.com/assets/application-25134bf44f1dbb308bb450bdb036a1cc.js"></script>
+
+
+<style>
+  #git-bulletin, #oneclick_login_by_osc, #osc_complete_infos{
+    display: none !important;
+  }
+</style>
+</head>
+<body class='ui_basic' id='enterprises-index'>
+<header class='common-header fixed hide large navbar-immersive navbar-transition noborder' id='git-header-nav'>
+<div class='ui container'>
+<div class='ui menu header-menu'>
+<div class='git-nav-expand-bar'>
+<i class='iconfont icon-mode-table'></i>
+</div>
+<div class='gitee-nav__sidebar'>
+<div class='gitee-nav__sidebar-container'>
+<div class='gitee-nav__sidebar-top'>
+<div class='gitee-nav__avatar-box'></div>
+<div class='gitee-nav__buttons-box'>
+<a class="ui button small fluid orange" href="/login">登录</a>
+<a class="ui button small fluid basic is-register" href="/signup">注册</a>
+</div>
+</div>
+<div class='gitee-nav__sidebar-middle'>
+<div class='gitee-nav__sidebar-list'>
+<ul>
+<li class='gitee-nav__sidebar-item'>
+<a href="/explore"><i class='iconfont icon-ic-discover'></i>
+<span class='gitee-nav__sidebar-name'>开源软件</span>
+</a></li>
+<li class='gitee-nav__sidebar-item'>
+<a href="/enterprises"><i class='iconfont icon-ic-enterprise'></i>
+<span class='gitee-nav__sidebar-name'>企业版</span>
+</a></li>
+<li class='gitee-nav__sidebar-item'>
+<a href="/education"><i class='iconfont icon-ic-education'></i>
+<span class='gitee-nav__sidebar-name'>高校版</span>
+</a></li>
+<li class='gitee-nav__sidebar-item split-line'></li>
+<li class='gitee-nav__sidebar-item'>
+<a href="/search"><i class='iconfont icon-ic-search'></i>
+<span class='gitee-nav__sidebar-name'>搜索</span>
+</a></li>
+<li class='gitee-nav__sidebar-item'>
+<a href="/help"><i class='iconfont icon-help-circle'></i>
+<span class='gitee-nav__sidebar-name'>帮助中心</span>
+</a></li>
+<li class='gitee-nav__sidebar-item'>
+<a href="/terms"><i class='iconfont icon-file'></i>
+<span class='gitee-nav__sidebar-name'>使用条款</span>
+</a></li>
+<li class='gitee-nav__sidebar-item'>
+<a href="/about_us"><i class='iconfont icon-issuepx'></i>
+<span class='gitee-nav__sidebar-name'>关于我们</span>
+</a></li>
+</ul>
+</div>
+</div>
+<div class='gitee-nav__sidebar-bottom'>
+<div class='gitee-nav__sidebar-close-button'>
+<i class='fa fa-angle-double-left'></i>
+</div>
+</div>
+</div>
+</div>
+
+<div class='item gitosc-logo'>
+<a href="/"><img alt='码云 Gitee — 基于 Git 的代码托管和研发协作平台' class='ui inline image' height='28' src='/static/images/logo.svg?t=158106664' title='码云 Gitee — 基于 Git 的代码托管和研发协作平台' width='95'>
+<img alt='码云 Gitee — 基于 Git 的代码托管和研发协作平台' class='ui inline black image' height='28' src='/static/images/logo-black.svg?t=158106664' title='码云 Gitee — 基于 Git 的代码托管和研发协作平台' width='95'>
+</a></div>
+<a class="item " href="/explore" title="开源软件">开源软件
+</a><a class="item state-active" href="/enterprises" title="企业版">企业版
+<sup class='ui red label'>
+特惠
+</sup>
+</a><a class="item " href="/education" title="高校版">高校版
+</a><a class="item" href="https://blog.gitee.com/" id="gitee-blog" target="_blank" title="博客">博客
+</a><div class='center responsive-logo'>
+<a href="/"><img alt='码云 Gitee — 基于 Git 的代码托管和研发协作平台' class='ui inline image' height='24' src='/static/images/logo.svg?t=158106664' title='码云 Gitee — 基于 Git 的代码托管和研发协作平台' width='85'>
+<img alt='码云 Gitee — 基于 Git 的代码托管和研发协作平台' class='ui inline black image' height='24' src='/static/images/logo-black.svg?t=158106664' title='码云 Gitee — 基于 Git 的代码托管和研发协作平台' width='85'>
+</a></div>
+<div class='right menu userbar' id='git-nav-user-bar'>
+<form accept-charset="UTF-8" action="/search" class="ui item" data-text-filter="搜索格式不正确" data-text-require="搜索关键字不能少于1个" id="navbar-search-form" method="get"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /></div>
+<input id="navbar-search-type" name="type" type="hidden" />
+<input id="fork_filter" name="fork_filter" type="hidden" value="on" />
+<div class='ui search'>
+<input class="prompt" id="navbar-search-input" name="q" placeholder="搜索项目" type="text" value="" />
+</div>
+</form>
+
+<script>
+  var can_search_in_repo = 0,
+      repo = "",
+      reponame = "";
+  
+  $(function() {
+    var $search = $('#navbar-search-form .ui.search');
+    $search.search({
+      apiSettings: {
+        url: '/search/relative_project?q={query}',
+        onResponse: function (res) {
+          if (res && res.status === 200 && res.data) {
+            var query = $search.search('get value');
+  
+            res.data.map(function (item) {
+              item.path_ns = '/' + item.path_ns;
+              item.icon = 'iconfont icon-project-public';
+            });
+            res.data.unshift({
+              name_ns: "在全站搜索 <b class='hl'>" + query +"</b> 相关项目",
+              path_ns: '/search?fork_filter=on&q=' + query,
+              icon: 'iconfont icon-search'
+            });
+            if(can_search_in_repo == 1) {
+              res.data.unshift({
+                name_ns: "在当前仓库搜索 <b class='hl'>" + query +"</b> 相关代码",
+                path_ns: '/search?type=code&q=' + query + '&repo=' + repo + '&reponame=' + reponame,
+                icon: 'iconfont icon-search'
+              });
+            }
+            return res;
+          } else {
+            return { data: [] };
+          }
+        }
+      },
+      fields: {
+        results: 'data',
+        description: 'name_ns',
+        url: 'path_ns',
+        icon: 'icon'
+      },
+      minCharacters: 1,
+      maxResults: 10,
+      searchDelay: 120,
+      showNoResults: false,
+      transition: 'fade'
+    });
+  });
+</script>
+
+<a class="item git-nav-user__login-item" href="/login">登录
+</a><a class="item git-nav-user__register-item" href="/signup">注册
+</a><script>
+  $('.destroy-user-session').on('click', function() {
+    $.cookie('access_token', null, { path: '/' });
+  })
+</script>
+
+</div>
+</div>
+</div>
+</header>
+<script>
+  Gitee.initNavbar()
+  Gitee.initRepoRemoteWay()
+</script>
+
+<div class='site-content'>
+<div class='fixed-notice-infos'>
+<div class='all-messages'>
+<div class='ui info message' id='git-bulletin'>
+<a href=https://blog.gitee.com/2020/04/07/gitee-go/ target='_blank'>Gitee 企业版上线 DevOps 工具「Gitee Go」</a>
+<i class='icon remove' id='remove-bulletin'></i>
+</div>
+</div>
+<div class='ui container'>
+<div class='flash-messages' id='messages-container'></div>
+</div>
+<script>
+  (function() {
+    $(function() {
+      var $error_box, alertTip, notify_content, notify_options, template;
+      template = '<div data-notify="container" class="ui {0} message" role="alert">' + '<i data-notify="dismiss" class="close icon"></i>' + '<span data-notify="message">{2}</span>' + '</div>';
+      notify_content = null;
+      notify_options = {};
+      alertTip = '';
+      $error_box = $(".flash_error.flash_error_box");
+      if (notify_options.type === 'error' && $error_box.length > 0 && !$.isEmptyObject(notify_content.message)) {
+        if (notify_content.message === 'captcha_fail') {
+          alertTip = "验证码不正确";
+        } else if (notify_content.message === 'captcha_expired') {
+          alertTip = "验证码已过期，请点击刷新";
+        } else if (notify_content.message === 'not_found_in_database') {
+          alertTip = "帐号或者密码错误";
+        } else if (notify_content.message === 'not_found_and_show_captcha') {
+          alertTip = "帐号或者密码错误";
+        } else if (notify_content.message === 'phone_captcha_fail') {
+          alertTip = "手机验证码不通过";
+        } else {
+          alertTip = notify_content.message;
+        }
+        return $error_box.html(alertTip).show();
+      } else if (notify_content) {
+        if ("index" === 'third_party_binding') {
+          return $('#third_party_binding-message').html(notify_content.message).addClass('ui message red');
+        }
+        notify_options.delay = 3000;
+        notify_options.template = template;
+        notify_options.offset = {
+          x: 10,
+          y: 30
+        };
+        notify_options.element = '#messages-container';
+        return $.notify(notify_content, notify_options);
+      }
+    });
+  
+  }).call(this);
+</script>
+
+</div>
+<script>
+  (function() {
+    $(function() {
+      var setCookie;
+      setCookie = function(name, value) {
+        $.cookie(name, value, {
+          path: '/',
+          expires: 365
+        });
+      };
+      $('#remove-bulletin, #remove-bulletin-dashboard').on('click', function() {
+        setCookie('remove_bulletin', "gitee-maintain-1586321954");
+        $('#git-bulletin').hide();
+      });
+      $('#remove-member-bulletin').on('click', function() {
+        setCookie('remove_member_bulletin', "gitee_member_bulletin");
+        $(this).parent().hide();
+      });
+      return $('#remove-gift-bulletin').on('click', function() {
+        setCookie('remove_gift_bulletin', "gitee-gift-bulletin");
+        $(this).parent().hide();
+      });
+    });
+  
+  }).call(this);
+</script>
+<script>
+  function closeMessageBanner(pthis, type, val) {
+    var json = {}
+  
+    val = typeof val === 'undefined' ? null : val
+    $(pthis).parent().remove()
+    if (type === 'out_of_enterprise_member') {
+      json = {type: type, data: val}
+    } else if (type === 'enterprise_overdue') {
+      json = {type: type, data: val}
+    }
+    $.post('/profile/close_flash_tip', json)
+  }
+</script>
+
+<!--[if lt IE 10]>
+<script>
+  window.location.href = "/incompatible.html"
+</script>
+<![endif]-->
+
+<div id='enterprises-page'>
+<div class='enterprises-jumbotron'>
+<div class='ui container' style=''>
+<div class='title'>
+<p>码云企业版</p>
+<p class='sub-title'>企业级软件协作开发管理平台</p>
+<p class='small'>有序规划和管理软件研发全生命周期</p>
+</div>
+<div class='btn-groups'>
+<a class="ui inverted button" href="/enterprises/demo" target="_blank">体验演示版</a>
+<a class="ui orange button" href="/enterprises/new?from=homepage">免费开通企业版</a>
+</div>
+<a class="news" href="https://www.oschina.net/news/111650/gitee-received-iso27001-and-iso9001" target="_blank">码云 Gitee 通过 ISO27001 安全认证与 ISO9001 质量认证</a>
+</div>
+</div>
+<div class='enterprise-tips'>
+<div class='title'>超过 10 万企业的信任之选</div>
+<div class='company-groups'>
+<img alt="Zsyh" src="https://assets.gitee.com/assets/enterprises/tips_logos/zsyh.png" title="招商银行" />
+<img alt="Bydqc" src="https://assets.gitee.com/assets/enterprises/tips_logos/bydqc.png" title="比亚迪汽车" />
+<img alt="Gdyh" src="https://assets.gitee.com/assets/enterprises/tips_logos/gdyh.png" title="光大银行" />
+<img alt="Nfzn" src="https://assets.gitee.com/assets/enterprises/tips_logos/nfzn.png" title="南方智能" />
+<img alt="Knowbox" src="https://assets.gitee.com/assets/enterprises/tips_logos/knowbox.png" title="小盒科技" />
+<img alt="Zxcbs" src="https://assets.gitee.com/assets/enterprises/tips_logos/zxcbs.png" title="中信出版社" />
+</div>
+</div>
+<div class='enterprise-intro' data-nav='功能'>
+<div class='intro-item'>
+<div class='ui container'>
+<div class='text'>
+<p class='title'>
+<span>精于代码托管</span>
+<span>便捷高效更胜自建 Git</span>
+</p>
+<p class='content'>
+<span>项目可包含多个代码仓库</span>
+<span>灵活适配不同开发架构</span>
+</p>
+<p class='content'>
+<span>细粒度权限管理</span>
+<span>分支、角色权限双重把控</span>
+</p>
+<p class='content'>
+<span>基于 Pull Request 的代码审查机制</span>
+<span>助力改进研发流程</span>
+</p>
+<p class='content'>
+<span>仓库自动快照</span>
+<span>有效降低代码风险</span>
+</p>
+<p class='content'>
+<span>快捷 CI</span>
+<span>还可一键对接阿里云/腾讯云/华为云等</span>
+</p>
+<div class='extend d-align-center'>
+<span class='new-icon mr-1'>NEW</span>
+<div class='link-groups'>
+<a href="https://blog.gitee.com/2019/05/29/svn-gitee-readonly-feature/" target="_blank">支持只读文件/目录，Git 仓库也可轻松拥有 SVN 的优势特性</a>
+</div>
+</div>
+</div>
+<img class='wow bounceIn' src='/assets/enterprises/intro1.png'>
+</div>
+</div>
+<div class='intro-item'>
+<div class='ui container'>
+<img class='wow bounceIn' src='/assets/enterprises/intro2.png'>
+<div class='text'>
+<p class='title'>
+<span>项目全过程管理</span>
+<span>灵活可控才敏捷</span>
+</p>
+<p class='content'>
+<span>全面精细管理需求、缺陷</span>
+<span>规划迭代</span>
+</p>
+<p class='content'>
+<span>灵活拆分任务</span>
+<span>支持多级子任务、关联任务</span>
+</p>
+<p class='content'>
+<span>所有代码改动均可关联至具体任务</span>
+</p>
+<p class='content'>
+<span>基于任务、代码聚焦讨论</span>
+<span>团队沟通更高效</span>
+</p>
+<p class='content'>
+<span>提供泳道看板、燃尽图等可视化工具</span>
+</p>
+<div class='extend'>
+<span>延伸阅读：</span>
+<div class='link-groups'>
+<a href="https://blog.gitee.com/2019/04/16/如何用码云企业版管理软件研发全流程/" target="_blank">如何用码云企业版管理软件研发全流程</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class='intro-item'>
+<div class='ui container'>
+<div class='text'>
+<p class='title'>
+<span>多人协作文档</span>
+<span>构建团队知识库</span>
+</p>
+<p class='content'>
+<span>支持 MarkDown</span>
+<span>轻松编写技术文档</span>
+</p>
+<p class='content'>
+<span>支持多人协作</span>
+<span>可控制文档权限</span>
+</p>
+<p class='content'>
+<span>树形结构/支持多级目录</span>
+<span>可导出为多种常用格式</span>
+</p>
+<p class='content'>
+<span>纳入 Git 管理 历史无限回溯</span>
+<span>文档无惧丢失</span>
+</p>
+</div>
+<img class='wow bounceIn' src='/assets/enterprises/intro3.png'>
+</div>
+</div>
+<div class='intro-item'>
+<div class='ui container'>
+<img class='wow bounceIn' src='/assets/enterprises/intro4.png?t=1574766319'>
+<div class='text'>
+<p class='title'>
+<span>完备安全策略</span>
+<span>让研发管理更轻松</span>
+</p>
+<p class='content'>
+<span>关键行为二次验证</span>
+<span>即时安全告警</span>
+</p>
+<p class='content'>
+<span>可独立开启 HTTPS + SSH + SVN</span>
+<span>任意组合</span>
+</p>
+<p class='content'>
+<span>可限制仓库强推、仓库访问 IP 限制</span>
+<span>提升安全等级</span>
+</p>
+<p class='content'>
+<span>完整操作日志</span>
+<span>一切操作留痕</span>
+</p>
+<p class='content'>
+<span>支持邮件/微信/钉钉同步通知</span>
+<span>随时掌握项目动态</span>
+</p>
+<div class='extend'>
+<span>
+<i class='iconfont icon-finger-click'></i>
+延伸阅读：
+</span>
+<div class='link-groups'>
+<a href="https://blog.gitee.com/2019/04/24/gitee_safe_02/" target="_blank">码云如何保护你的数据 —— 系统和网络篇</a>
+<a href="https://blog.gitee.com/2019/01/07/gitee_safe_01/" target="_blank">码云如何保护你的数据 —— 内部安全治理篇</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class='intro-item'>
+<div class='ui container'>
+<div class='text'>
+<p class='title'>
+<span>多维贡献统计</span>
+<span>工作成效尽收眼底</span>
+</p>
+<p class='content'>
+<span>多维度数据统计</span>
+<span>全面掌控项目进度</span>
+</p>
+<p class='content'>
+<span>自定义统计指标</span>
+<span>数据收集灵活可控</span>
+</p>
+<p class='content'>
+<span>统计数据可视化</span>
+<span>更直观明了</span>
+</p>
+<p class='content'>
+<span>一键打印统计结果</span>
+</p>
+</div>
+<img class='wow bounceIn' src='/assets/enterprises/intro5.png'>
+</div>
+</div>
+<div class='intro-item'>
+<div class='ui container'>
+<img class='wow bounceIn' src='/assets/enterprises/intro6.png'>
+<div class='text'>
+<p class='title'>
+<span>企业内源治理</span>
+<span>提高团队创新力</span>
+</p>
+<p class='content'>
+<span>内源仓库</span>
+<span>在内部进行开源实践</span>
+</p>
+<p class='content'>
+<span>增加代码复用</span>
+<span>提高产品质量</span>
+</p>
+<p class='content'>
+<span>加速知识共享</span>
+<span>提升团队能力</span>
+</p>
+<div class='extend'>
+<span>
+<i class='iconfont icon-finger-click'></i>
+延伸阅读：
+</span>
+<div class='link-groups'>
+<a href="https://gitee.com/InnerSource/" target="_blank">了解更多有关企业内源治理</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class='intro-item'>
+<div class='ui container'>
+<div class='text'>
+<p class='title'>
+<span>Gitee Scan 代码质量管理</span>
+<span>完善代码审查流程</span>
+</p>
+<p class='content'>
+<span>增量代码自动扫描</span>
+<span>提升 Code Review 效率</span>
+</p>
+<p class='content'>
+<span>多维缺陷报告</span>
+<span>快速定位错误代码</span>
+</p>
+<p class='content'>
+<span>代码规范检查</span>
+<span>降低出错概率</span>
+</p>
+<div class='extend'>
+<span>
+<i class='iconfont icon-finger-click'></i>
+延伸阅读：
+</span>
+<div class='link-groups'>
+<a href="https://blog.gitee.com/2020/03/17/gitee-scan/" target="_blank">代码质量管理利器 Gitee Scan 发布</a>
+</div>
+</div>
+</div>
+<img class='wow bounceIn' src='/assets/enterprises/intro7.png'>
+</div>
+</div>
+<div class='intro-item'>
+<div class='ui container'>
+<img class='wow bounceIn' src='/assets/enterprises/intro8.png'>
+<div class='text'>
+<p class='title'>
+<span>Gitee Go 持续集成引擎</span>
+<span>助力高效交付</span>
+</p>
+<p class='content'>
+<span>自定义构建流程</span>
+<span>构建集成自动化</span>
+</p>
+<p class='content'>
+<span>使用 YAML 配置</span>
+<span>简单高效</span>
+</p>
+<p class='content'>
+<span>支持多语言和工具的持续构建与集成</span>
+</p>
+</div>
+</div>
+</div>
+</div>
+<div class='enterprise-rect'>
+<div class='ui container'>
+<div class='enterprises-title'>
+<span>码云企业版功能矩阵</span>
+</div>
+<div class='rect'></div>
+</div>
+</div>
+<div class='enterprise-cases' data-nav='客户案例'>
+<div class='ui container'>
+<div class='enterprises-title'>
+<span>已为超过 100,000 家企业提供服务</span>
+</div>
+<div>
+<div class='left-content'>
+<li class='active'>
+典型客户
+</li>
+<li class=''>
+IT服务/软件
+</li>
+<li class=''>
+金融/证券/保险
+</li>
+<li class=''>
+教育/培训
+</li>
+<li class=''>
+文化/传媒/出版
+</li>
+<li class=''>
+通信/制造
+</li>
+<li class=''>
+事业单位/研究机构
+</li>
+<li class=''>
+人工智能/智能制造
+</li>
+<li class=''>
+其他行业
+</li>
+</div>
+<div class='right-content'>
+<li class='active'>
+<img src='https://assets.gitee.com/assets/enterprises/client_logos/financial/zsyh.png' title='招商银行'>
+<img src='https://assets.gitee.com/assets/enterprises/client_logos/financial/zszq.png' title='招商证券'>
+<img src='https://images.gitee.com/uploads/images/2019/0618/163334_ee370cee_1305863.png' title='光大银行'>
+<img src='https://images.gitee.com/uploads/images/2018/1221/153710_57f5fd71_1305863.png' title='比亚迪汽车'>
+<img src='https://images.gitee.com/uploads/images/2018/1221/160124_0691b6a1_1305863.png' title='中国联通'>
+<img src='https://images.gitee.com/uploads/images/2018/1221/175037_0ff01575_1305863.png' title='中国电信'>
+<img src='https://images.gitee.com/uploads/images/2019/1028/152439_af7aa7de_1305863.png' title='小盒科技'>
+<img src='https://assets.gitee.com/assets/enterprises/client_logos/it/wshh.png' title='文思海辉'>
+<img src='https://assets.gitee.com/assets/enterprises/client_logos/culture/sjzg.png' title='视觉中国'>
+<img src='https://assets.gitee.com/assets/enterprises/client_logos/culture/zxcbjt.png' title='中信出版集团'>
+<img src='https://assets.gitee.com/assets/enterprises/client_logos/culture/rmyd.png' title='人民邮电出版社'>
+<img src='https://assets.gitee.com/assets/enterprises/client_logos/manufacture/jy.png' title='九阳'>
+<img src='https://assets.gitee.com/assets/enterprises/client_logos/research/skjt.png' title='上勘集团'>
+<img src='https://assets.gitee.com/assets/enterprises/client_logos/research/zysd.png' title='中冶赛迪'>
+<img src='https://assets.gitee.com/assets/enterprises/client_logos/others/zgmh.png' title='中国民航信息集团有限公司'>
+<img src='https://assets.gitee.com/assets/enterprises/client_logos/culture/slsh.png' title='三联生活'>
+<img src='https://images.gitee.com/uploads/images/2019/1010/104247_0012725d_1305863.png' title='紫光集团'>
+<img src='https://images.gitee.com/uploads/images/2019/1011/105950_f5e34366_669935.png' title='微芯科技'>
+<img src='https://assets.gitee.com/assets/enterprises/client_logos/commerce/hzzp.png' title='杭州智屏(电视淘宝)'>
+<img src='https://assets.gitee.com/assets/enterprises/client_logos/culture/gfwh.png' title='观复文化北京分公司'>
+<img src='https://images.gitee.com/uploads/images/2020/0225/162120_4f0f8ceb_669935.png' title='中国地震局地球物理研究所'>
+<img src='https://images.gitee.com/uploads/images/2020/0305/161837_7a8f1467_1305863.png' title='之江实验室'>
+<img src='https://images.gitee.com/uploads/images/2020/0319/182059_218fcbe4_669935.png' title='大华会计事务所'>
+</li>
+<li class=''>
+<img src='https://assets.gitee.com/assets/enterprises/client_logos/it/wshh.png' title='文思海辉'>
+<img src='https://assets.gitee.com/assets/enterprises/client_logos/it/tjjsj.png' title='太极计算机股份有限公司'>
+<img src='https://assets.gitee.com/assets/enterprises/client_logos/it/zkrk.png' title='中科软科技'>
+<img src='https://assets.gitee.com/assets/enterprises/client_logos/it/zzlh.png' title='中招联合'>
+<img src='https://assets.gitee.com/assets/enterprises/client_logos/it/mlrt.png' title='美联软通'>
+<img src='https://assets.gitee.com/assets/enterprises/client_logos/it/ctrj.png' title='超图软件'>
+<img src='https://assets.gitee.com/assets/enterprises/client_logos/it/rjwl.png' title='锐捷网络'>
+<img src='https://assets.gitee.com/assets/enterprises/client_logos/it/gxd.png' title='北京国信达数据'>
+<img src='https://assets.gitee.com/assets/enterprises/client_logos/it/bjgy.png' title='北京工业大数据'>
+<img src='https://assets.gitee.com/assets/enterprises/client_logos/it/bxy.png' title='北信源'>
+<img src='https://assets.gitee.com/assets/enterprises/client_logos/it/whhl.png' title='武汉慧联无限科技有限公司'>
+<img src='https://assets.gitee.com/assets/enterprises/client_logos/it/pht.png' title='票汇通'>
+</li>
+<li class=''>
+<img src='https://assets.gitee.com/assets/enterprises/client_logos/financial/zsyh.png' title='招商银行'>
+<img src='https://assets.gitee.com/assets/enterprises/client_logos/financial/zszq.png' title='招商证券'>
+<img src='https://images.gitee.com/uploads/images/2019/0618/163334_ee370cee_1305863.png' title='光大银行'>
+<img src='https://assets.gitee.com/assets/enterprises/client_logos/financial/zjhj.png' title='中经汇金'>
+<img src='https://assets.gitee.com/assets/enterprises/client_logos/financial/qhgq.png' title='前海股权交易中心'>
+<img src='https://assets.gitee.com/assets/enterprises/client_logos/financial/ljzgtrs.png' title='陆家嘴国泰人寿'>
+<img src='https://assets.gitee.com/assets/enterprises/client_logos/financial/lsyh.png' title='临商银行'>
+<img src='https://assets.gitee.com/assets/enterprises/client_logos/financial/ftzn.png' title='钒钛智能'>
+<img src='https://images.gitee.com/uploads/images/2019/1224/102903_72a86701_1305863.png' title='山东城商行联盟'>
+<img src='https://images.gitee.com/uploads/images/2020/0111/141249_68402195_1305863.png' title='清华大学金融科技研究院'>
+</li>
+<li class=''>
+<img src='https://assets.gitee.com/assets/enterprises/client_logos/education/qhjy.png' title='启航教育'>
+<img src='https://assets.gitee.com/assets/enterprises/client_logos/education/sdjg.png' title='尚德机构'>
+<img src='https://assets.gitee.com/assets/enterprises/client_logos/education/wdjy.png' title='文都教育'>
+<img src='https://assets.gitee.com/assets/enterprises/client_logos/education/ytjy.png' title='研途教育'>
+<img src='https://assets.gitee.com/assets/enterprises/client_logos/education/ypjy.png' title='英浦教育'>
+<img src='https://images.gitee.com/uploads/images/2019/1028/152439_af7aa7de_1305863.png' title='小盒科技'>
+<img src='https://assets.gitee.com/assets/enterprises/client_logos/education/ysjy.png' title='优胜教育'>
+<img src='https://assets.gitee.com/assets/enterprises/client_logos/education/skjy.png' title='思可教育'>
+<img src='https://assets.gitee.com/assets/enterprises/client_logos/education/zjjy.png' title='知金教育'>
+<img src='https://assets.gitee.com/assets/enterprises/client_logos/education/xzzx.png' title='行知在线'>
+<img src='https://images.gitee.com/uploads/images/2019/0117/183427_8f08e926_1305863.png' title='实训邦'>
+</li>
+<li class=''>
+<img src='https://images.gitee.com/uploads/images/2019/0924/121122_c3af77e7_1305863.png' title='新京报'>
+<img src='https://images.gitee.com/uploads/images/2019/0924/120625_a345a659_1305863.png' title='皖新传媒'>
+<img src='https://images.gitee.com/uploads/images/2019/0111/180729_432af825_1305863.png' title='珠海特区报'>
+<img src='https://assets.gitee.com/assets/enterprises/client_logos/culture/zxcbjt.png' title='中信出版集团'>
+<img src='https://assets.gitee.com/assets/enterprises/client_logos/culture/rmyd.png' title='人民邮电出版社'>
+<img src='https://assets.gitee.com/assets/enterprises/client_logos/culture/slsh.png' title='三联生活'>
+<img src='https://assets.gitee.com/assets/enterprises/client_logos/culture/zgyxltb.png' title='中国医学论坛报'>
+<img src='https://assets.gitee.com/assets/enterprises/client_logos/culture/ztsz.png' title='中图数字'>
+<img src='https://assets.gitee.com/assets/enterprises/client_logos/culture/gdsdcm.png' title='广东时代传媒'>
+<img src='https://assets.gitee.com/assets/enterprises/client_logos/culture/gfwh.png' title='观复文化北京分公司'>
+<img src='https://assets.gitee.com/assets/enterprises/client_logos/culture/sjzg.png' title='视觉中国'>
+<img src='https://images.gitee.com/uploads/images/2019/1023/161131_ab4f6591_669935.png' title='青岛城市传媒'>
+</li>
+<li class=''>
+<img src='https://images.gitee.com/uploads/images/2018/1221/175322_6d86b53f_1305863.png' title='中国联通'>
+<img src='https://images.gitee.com/uploads/images/2018/1221/175037_0ff01575_1305863.png' title='中国电信'>
+<img src='https://images.gitee.com/uploads/images/2018/1221/153710_57f5fd71_1305863.png' title='比亚迪汽车'>
+<img src='https://assets.gitee.com/assets/enterprises/client_logos/manufacture/sqwl.png' title='上汽通用五菱'>
+<img src='https://assets.gitee.com/assets/enterprises/client_logos/manufacture/ydjt.png' title='粤电集团'>
+<img src='https://images.gitee.com/uploads/images/2019/0123/175941_cffcf561_1305863.png' title='上海贝尔'>
+<img src='https://assets.gitee.com/assets/enterprises/client_logos/manufacture/zjwl.png' title='中建网络'>
+<img src='https://assets.gitee.com/assets/enterprises/client_logos/manufacture/ft.png' title='方太'>
+<img src='https://assets.gitee.com/assets/enterprises/client_logos/manufacture/jy.png' title='九阳'>
+<img src='https://assets.gitee.com/assets/enterprises/client_logos/manufacture/jydq.png' title='中国家用电器协会'>
+<img src='https://assets.gitee.com/assets/enterprises/client_logos/others/hz.png' title='陕西华筑科技有限公司（华筑控股）'>
+<img src='https://assets.gitee.com/assets/enterprises/client_logos/manufacture/ntxx.png' title='南天信息'>
+<img src='https://assets.gitee.com/assets/enterprises/client_logos/manufacture/kddd.png' title='康迪电动汽车'>
+<img src='https://assets.gitee.com/assets/enterprises/client_logos/manufacture/mkad.png' title='麦克奥迪'>
+<img src='https://images.gitee.com/uploads/images/2019/0226/113524_1502d4a3_1305863.png' title='江苏富士通'>
+<img src='https://images.gitee.com/uploads/images/2019/0929/142212_1c2634ef_669935.jpeg' title='漫步者'>
+<img src='https://images.gitee.com/uploads/images/2019/1010/104247_0012725d_1305863.png' title='紫光集团'>
+<img src='https://images.gitee.com/uploads/images/2019/1011/105950_f5e34366_669935.png' title='微芯科技'>
+</li>
+<li class=''>
+<img src='https://images.gitee.com/uploads/images/2018/1230/111343_b6c32c0e_1305863.png' title='中国科学院'>
+<img src='https://images.gitee.com/uploads/images/2019/1008/174401_8b075d22_36.png' title='中规院(北京)规划设计公司'>
+<img src='https://assets.gitee.com/assets/enterprises/client_logos/research/zgslsd.png' title='中国水利水电科学研究院'>
+<img src='https://images.gitee.com/uploads/images/2019/0820/070806_c6270a37_36.jpeg' title='中煤科工集团重庆设计研究院'>
+<img src='https://assets.gitee.com/assets/enterprises/client_logos/research/gjty.png' title='国家体育总局体育科学研究所'>
+<img src='https://assets.gitee.com/assets/enterprises/client_logos/research/bjjt.png' title='北京交通发展研究院'>
+<img src='https://assets.gitee.com/assets/enterprises/client_logos/research/skjt.png' title='上勘集团'>
+<img src='https://assets.gitee.com/assets/enterprises/client_logos/research/zysd.png' title='中冶赛迪'>
+<img src='https://assets.gitee.com/assets/enterprises/client_logos/research/zkxx.png' title='中科信息'>
+<img src='https://assets.gitee.com/assets/enterprises/client_logos/research/wdjs.png' title='武汉大学信息检索与知识挖掘研究所'>
+<img src='https://images.gitee.com/uploads/images/2020/0305/161837_7a8f1467_1305863.png' title='之江实验室'>
+<img src='https://assets.gitee.com/assets/enterprises/client_logos/research/bjgr.png' title='北京国睿智鼎信息科学研究院'>
+<img src='https://assets.gitee.com/assets/enterprises/client_logos/research/hzgh.png' title='杭州市城市规划信息中心'>
+<img src='https://assets.gitee.com/assets/enterprises/client_logos/research/xjdz.png' title='新疆电子研究所股份有限公司'>
+<img src='https://images.gitee.com/uploads/images/2019/0221/142134_2edcb4ac_1305863.png' title='北京航天控制仪器研究所'>
+<img src='https://images.gitee.com/uploads/images/2019/0416/191513_1f7c9523_669935.png' title='国家超级计算广州中心'>
+<img src='https://images.gitee.com/uploads/images/2019/0311/150520_3f418945_1305863.png' title='华南理工大学-国家移动超声探测工程技术研究中心'>
+<img src='https://gitee.com/uploads/images/2019/0411/150633_388d6227_669935.png' title='浙江省第一测绘院'>
+<img src='https://images.gitee.com/uploads/images/2019/1025/151907_d5030330_669935.jpeg' title='中科院自动化研究所'>
+<img src='https://images.gitee.com/uploads/images/2019/1202/154244_7095afc5_669935.jpeg' title='中科院软件研究所'>
+<img src='https://images.gitee.com/uploads/images/2020/0225/162120_4f0f8ceb_669935.png' title='中国地震局地球物理研究所'>
+<img src='https://images.gitee.com/uploads/images/2020/0225/162606_78ed175e_669935.png' title='玉环市第二人民医院'>
+</li>
+<li class=''>
+<img src='https://assets.gitee.com/assets/enterprises/client_logos/ai/nfzn.png' title='广州南方智能技术有限公司'>
+<img src='https://assets.gitee.com/assets/enterprises/client_logos/ai/zktl.png' title='武汉中科图灵科技有限公司'>
+<img src='https://assets.gitee.com/assets/enterprises/client_logos/ai/zthl.png' title='众图互联'>
+<img src='https://assets.gitee.com/assets/enterprises/client_logos/ai/ckgc.png' title='深圳市创客工场科技有限公司'>
+<img src='https://images.gitee.com/uploads/images/2019/1028/135949_25175bbc_1305863.png' title='积加科技'>
+<img src='https://assets.gitee.com/assets/enterprises/client_logos/ai/yjkj.png' title='北京云迹科技有限公司'>
+<img src='https://assets.gitee.com/assets/enterprises/client_logos/ai/dyhk.png' title='南京大翼航空科技有限公司'>
+<img src='https://assets.gitee.com/assets/enterprises/client_logos/ai/tykj.png' title='图鸭科技'>
+<img src='https://assets.gitee.com/assets/enterprises/client_logos/ai/knjk.png' title='开能健康科技集团股份有限公司'>
+<img src='https://assets.gitee.com/assets/enterprises/client_logos/ai/bltzh.png' title='浙江布兰图智慧能源科技有限公司'>
+<img src='https://assets.gitee.com/assets/enterprises/client_logos/ai/zjjz.png' title='浙江极智'>
+<img src='https://assets.gitee.com/assets/enterprises/client_logos/ai/atzn.png' title='爱图智能（深圳）有限公司'>
+<img src='https://assets.gitee.com/assets/enterprises/client_logos/ai/gxxk.png' title='高新兴科技集团'>
+<img src='https://assets.gitee.com/assets/enterprises/client_logos/ai/hqkj.png' title='黑鲸科技'>
+</li>
+<li class=''>
+<img src='https://assets.gitee.com/assets/enterprises/client_logos/others/zgmh.png' title='中国民航信息集团有限公司'>
+<img src='https://assets.gitee.com/assets/enterprises/client_logos/commerce/hzzp.png' title='杭州智屏(电视淘宝)'>
+<img src='https://assets.gitee.com/assets/enterprises/client_logos/others/htjt.png' title='亨通集团'>
+<img src='https://assets.gitee.com/assets/enterprises/client_logos/others/trt.png' title='北京同仁堂国际'>
+<img src='https://assets.gitee.com/assets/enterprises/client_logos/others/yxt.png' title='深圳市医信通科技有限公司'>
+<img src='https://assets.gitee.com/assets/enterprises/client_logos/commerce/aqkj.png' title='爱亲科技'>
+<img src='https://assets.gitee.com/assets/enterprises/client_logos/others/zjys.png' title='浙江英树生物科技有限公司'>
+<img src='https://assets.gitee.com/assets/enterprises/client_logos/commerce/wjw.png' title='挖酒网'>
+<img src='https://assets.gitee.com/assets/enterprises/client_logos/others/hysd.png' title='环宇速递'>
+<img src='https://assets.gitee.com/assets/enterprises/client_logos/others/igola.png' title='iGola'>
+<img src='https://assets.gitee.com/assets/enterprises/client_logos/commerce/shsz.png' title='四海商舟'>
+<img src='https://assets.gitee.com/assets/enterprises/client_logos/commerce/hzjk.png' title='杭州集酷'>
+<img src='https://images.gitee.com/uploads/images/2019/1010/104804_2232096b_1305863.png' title='厦门港务'>
+</li>
+</div>
+</div>
+</div>
+</div>
+<div class='enterprise-comment'>
+<div class='ui container'>
+<div class='enterprises-title'>
+<span>客户评价</span>
+</div>
+</div>
+<div class='swiper-container' id='swiper-comment'>
+<div class='swiper-wrapper'>
+<div class='swiper-slide'>
+<div class='slide-comment'>码云企业版不仅解决了多团队多地开发地实时协作，代码检查与实时更新问题，还实现了环环相扣的研发流程管理，帮助团队有序规划，聚焦目标，管控风险，简约而不简单！</div>
+<div class='slide-asset'>
+<b class='slide-asset-position'>九州云腾</b>
+<span>研发总监 李胜钊</span>
+</div>
+</div>
+<div class='swiper-slide'>
+<div class='slide-comment'>码云企业版不只是一个代码托管的工具，更是带着深深 Geek 文化的项目管理平台，在码云企业版上的团队协作变得更加容易，整个流程管理变得更加透明流畅。</div>
+<div class='slide-asset'>
+<b class='slide-asset-position'>骑鹅旅行</b>
+<span>Head of PMO 李铭健</span>
+</div>
+</div>
+<div class='swiper-slide'>
+<div class='slide-comment'>码云企业版很好地支撑了我们对软件开发全周期地管理，实践公司精益生产的理念。仓库自动备份和操作日志全面记录是非常实用的功能，有效防范误操作。</div>
+<div class='slide-asset'>
+<b class='slide-asset-position'>塔联科技</b>
+<span>联合创始人 谢飞</span>
+</div>
+</div>
+<div class='swiper-slide'>
+<div class='slide-comment'>码云企业版有效优化了团队之间及技术团队内部的协作模式，实现了代码、文档等软件开发资源的统一和系统管理，使团队在开发中学习、成长、修正和完善。</div>
+<div class='slide-asset'>
+<b class='slide-asset-position'>丰速科技</b>
+<span>资深架构师 唐继模</span>
+</div>
+</div>
+<div class='swiper-slide'>
+<div class='slide-comment'>引入了码云企业版，精细化管理实现了高低搭配的团队规划，以及对需求、缺陷统一管理，大大降低了团队的沟通成本，是我们一直使用的协作开发工具。</div>
+<div class='slide-asset'>
+<b class='slide-asset-position'>超图研究院云产品研发中心</b>
+<span>产品总监 金建波</span>
+</div>
+</div>
+<div class='swiper-slide'>
+<div class='slide-comment'>码云已成为我工作的依赖，从个人私有库到企业版，每一项解决方案都直击痛点。而它更吸引人的，是开放的姿态和优质的本土化基因。告诉世界：我们在自豪地使用 Gitee !</div>
+<div class='slide-asset'>
+<b class='slide-asset-position'>Layui</b>
+<span>贤心</span>
+</div>
+</div>
+<div class='swiper-slide'>
+<div class='slide-comment'>在互联网技术百花齐放的今天，代码管理工具却几乎被 Git 一统江湖。Git 是分布式产品，具有速度快，扩展性好的特点，十分适合代码量大、用户多的企业。作为国内 Git 产品，码云对于国人来说，界面友好，响应客户需求及时，本地技术力量雄厚，是企业级应用的优秀选择。</div>
+<div class='slide-asset'>
+<b class='slide-asset-position'>招商银行</b>
+<span>推广负责人 邝海山</span>
+</div>
+</div>
+</div>
+<div class='swiper-pagination swiper-pagination-bullets'>
+<span class='swiper-pagination-bullet'></span>
+<span class='swiper-pagination-bullet'></span>
+<span class='swiper-pagination-bullet swiper-pagination-bullet-active'></span>
+<span class='swiper-pagination-bullet'></span>
+<span class='swiper-pagination-bullet'></span>
+</div>
+</div>
+
+</div>
+<div class='bg-black'>
+<div class='enterprise-orders' data-nav='价格' id='commerces'>
+<div class='ui container'>
+<div class='enterprises-title'>
+<span>套餐选择</span>
+</div>
+<div class='order-card-title'>
+<div class='title-item'>免费版</div>
+<div class='title-item'>基础版</div>
+<div class='title-item active'>标准版</div>
+<div class='title-item'>高级版</div>
+<div class='title-item'>尊享版</div>
+</div>
+<div class='order-cards pc'>
+<div class='panel l'>
+<i class='fa fa-angle-left'></i>
+</div>
+<div class='panel r'>
+<i class='fa fa-angle-right'></i>
+</div>
+<div class='order-card order-th'>
+<div class='order-header'>
+<h3 class='order-title'>
+<img alt="Pricing" height="113" src="https://gitee.com/static/images/pricing.png" />
+</h3>
+</div>
+<div class='divider'>
+<div class='divider-title'>配额</div>
+<div class='divider-info'>
+<div class='item'>
+<span>成员</span>
+</div>
+<div class='item'>
+<span>总仓库</span>
+</div>
+<div class='item'>
+<span>单仓库</span>
+</div>
+<div class='item'>
+<span>单文件</span>
+</div>
+<div class='item'>
+<span>总附件</span>
+</div>
+</div>
+</div>
+<div class='divider'>
+<div class='divider-title'>功能</div>
+<div class='divider-info'>
+<div class='item'>
+<span>仓库快照</span>
+<a href="https://gitee.com/help/articles/4163" target="_blank" title="查看帮助文档"><i class='iconfont icon-help-circle'></i>
+</a></div>
+<div class='item'>
+<span>限制 Git 强推</span>
+<a href="https://blog.gitee.com/2018/08/09/git_push_unallowed/" target="_blank" title="查看帮助文档"><i class='iconfont icon-help-circle'></i>
+</a></div>
+<div class='item'>
+<span>仓库访问安全 IP</span>
+<a href="https://blog.gitee.com/2019/01/09/gitee_ip_limit/" target="_blank" title="查看帮助文档"><i class='iconfont icon-help-circle'></i>
+</a></div>
+<div class='item'>
+<span>代码质量自动分析</span>
+<a href="https://gitee.com/help/articles/4182" target="_blank" title="查看帮助文档"><i class='iconfont icon-help-circle'></i>
+</a></div>
+<div class='item'>
+<span>仓库目录只读</span>
+<a href="https://gitee.com/help/articles/4256" target="_blank" title="查看帮助文档"><i class='iconfont icon-help-circle'></i>
+</a></div>
+</div>
+</div>
+<div class='divider'>
+<div class='divider-title'>服务</div>
+<div class='divider-info'>
+<div class='item'>社区与邮件支持</div>
+<div class='item'>7*24 专属技术支持</div>
+<div class='item'>提供发票，支持故障赔付</div>
+</div>
+</div>
+</div>
+<div class='order-card'>
+<div class='order-header'>
+<h3 class='order-title'>
+<p>免费版</p>
+</h3>
+<div class='order-price'>
+<span class='price'>免费</span>
+</div>
+<div class='btn-buy'>
+<a class='ui bordered orange btn' href='/enterprises/new?from=homepage'>开通</a>
+</div>
+</div>
+<div class='divider'>
+<div class='divider-title'></div>
+<div class='divider-info'>
+<div class='item'>
+<span>5 人</span>
+</div>
+<div class='item'>
+<span>5 GB</span>
+</div>
+<div class='item'>
+<span>最大 500 MB</span>
+</div>
+<div class='item'>
+<span>最大 50 MB</span>
+</div>
+<div class='item'>
+<span>3 GB</span>
+</div>
+</div>
+<div class='divider-title'></div>
+<div class='divider-info'>
+<div class='item'></div>
+<div class='item'></div>
+<div class='item'></div>
+<div class='item'></div>
+<div class='item'></div>
+</div>
+</div>
+<div class='divider'>
+<div class='divider-title'></div>
+<div class='divider-info'>
+<div class='item'>
+<i class='iconfont icon-check-circle'></i>
+</div>
+<div class='item'></div>
+<div class='item'></div>
+</div>
+</div>
+</div>
+<div class='order-card'>
+<div class='order-header'>
+<div class='discount-label'>
+限时
+</div>
+<h3 class='order-title'>
+<p>基础版</p>
+</h3>
+<div class='order-price'>
+<div>
+<span class='yuan'></span>
+<span class='price'>1280</span>
+<span class='slash'>/</span>
+<span class='year'>年</span>
+</div>
+<p class='tip'>低至 10.6 元/人/月</p>
+</div>
+<div class='btn-buy'>
+<a class='ui bordered orange btn' href='/enterprises/new?from=homepage'>购买</a>
+</div>
+</div>
+<div class='divider'>
+<div class='divider-title'></div>
+<div class='divider-info'>
+<div class='item'>
+<span class='expanded-number'>
+10 人
+<span>(可扩充)</span>
+</span>
+</div>
+<div class='item'>
+<span>10 GB</span>
+</div>
+<div class='item'>
+<span>最大 1 GB</span>
+</div>
+<div class='item'>
+<span>最大 100 MB</span>
+</div>
+<div class='item'>
+<span>5 GB</span>
+</div>
+</div>
+</div>
+<div class='divider'>
+<div class='divider-title'></div>
+<div class='divider-info'>
+<div class='item'>
+<i class='iconfont icon-check-circle'></i>
+</div>
+<div class='item'>
+<i class='iconfont icon-check-circle'></i>
+</div>
+<div class='item'>
+<i class='iconfont icon-check-circle'></i>
+</div>
+<div class='item'>
+<i class='iconfont icon-check-circle'></i>
+</div>
+<div class='item'>
+<i class='iconfont icon-check-circle'></i>
+</div>
+
+</div>
+</div>
+<div class='divider'>
+<div class='divider-title'></div>
+<div class='divider-info'>
+<div class='item'>
+<i class='iconfont icon-check-circle'></i>
+</div>
+<div class='item'>
+<i class='iconfont icon-check-circle'></i>
+</div>
+<div class='item'>
+<i class='iconfont icon-check-circle'></i>
+</div>
+</div>
+</div>
+</div>
+<div class='order-card active'>
+<div class='order-header'>
+<h3 class='order-title'>
+<p>标准版</p>
+</h3>
+<div class='order-price'>
+<div>
+<span class='yuan'></span>
+<span class='price'>1998</span>
+<span class='slash'>/</span>
+<span class='year'>年</span>
+</div>
+<p class='tip'>低至 8.3 元/人/月</p>
+</div>
+<div class='btn-buy'>
+<a class='ui bordered orange btn' href='/enterprises/new?from=homepage'>购买</a>
+</div>
+</div>
+<div class='divider'>
+<div class='divider-title'></div>
+<div class='divider-info'>
+<div class='item'>
+<span class='expanded-number'>
+20 人
+<span>(可扩充)</span>
+</span>
+</div>
+<div class='item'>
+<span>20 GB</span>
+</div>
+<div class='item'>
+<span>最大 1 GB</span>
+</div>
+<div class='item'>
+<span>最大 100 MB</span>
+</div>
+<div class='item'>
+<span>10 GB</span>
+</div>
+</div>
+</div>
+<div class='divider'>
+<div class='divider-title'></div>
+<div class='divider-info'>
+<div class='item'>
+<i class='iconfont icon-check-circle'></i>
+</div>
+<div class='item'>
+<i class='iconfont icon-check-circle'></i>
+</div>
+<div class='item'>
+<i class='iconfont icon-check-circle'></i>
+</div>
+<div class='item'>
+<i class='iconfont icon-check-circle'></i>
+</div>
+<div class='item'>
+<i class='iconfont icon-check-circle'></i>
+</div>
+
+</div>
+</div>
+<div class='divider'>
+<div class='divider-title'></div>
+<div class='divider-info'>
+<div class='item'>
+<i class='iconfont icon-check-circle'></i>
+</div>
+<div class='item'>
+<i class='iconfont icon-check-circle'></i>
+</div>
+<div class='item'>
+<i class='iconfont icon-check-circle'></i>
+</div>
+</div>
+</div>
+</div>
+<div class='order-card'>
+<div class='order-header'>
+<h3 class='order-title'>
+<p>高级版</p>
+</h3>
+<div class='order-price'>
+<div>
+<span class='yuan'></span>
+<span class='price'>3998</span>
+<span class='slash'>/</span>
+<span class='year'>年</span>
+</div>
+<p class='tip'>低至 6.6 元/人/月</p>
+</div>
+<div class='btn-buy'>
+<a class='ui bordered orange btn' href='/enterprises/new?from=homepage'>购买</a>
+</div>
+</div>
+<div class='divider'>
+<div class='divider-title'></div>
+<div class='divider-info'>
+<div class='item'>
+<span class='expanded-number'>
+50 人
+<span>(可扩充)</span>
+</span>
+</div>
+<div class='item'>
+<span>50 GB</span>
+</div>
+<div class='item'>
+<span>最大 2 GB</span>
+</div>
+<div class='item'>
+<span>最大 200 MB</span>
+</div>
+<div class='item'>
+<span>20 GB</span>
+</div>
+</div>
+</div>
+<div class='divider'>
+<div class='divider-title'></div>
+<div class='divider-info'>
+<div class='item'>
+<i class='iconfont icon-check-circle'></i>
+</div>
+<div class='item'>
+<i class='iconfont icon-check-circle'></i>
+</div>
+<div class='item'>
+<i class='iconfont icon-check-circle'></i>
+</div>
+<div class='item'>
+<i class='iconfont icon-check-circle'></i>
+</div>
+<div class='item'>
+<i class='iconfont icon-check-circle'></i>
+</div>
+
+</div>
+</div>
+<div class='divider'>
+<div class='divider-title'></div>
+<div class='divider-info'>
+<div class='item'>
+<i class='iconfont icon-check-circle'></i>
+</div>
+<div class='item'>
+<i class='iconfont icon-check-circle'></i>
+</div>
+<div class='item'>
+<i class='iconfont icon-check-circle'></i>
+</div>
+</div>
+</div>
+</div>
+<div class='order-card'>
+<div class='order-header'>
+<h3 class='order-title'>
+<p>尊享版</p>
+</h3>
+<div class='order-price'>
+<div>
+<span class='yuan'></span>
+<span class='price'>6998</span>
+<span class='slash'>/</span>
+<span class='year'>年</span>
+</div>
+<p class='tip'>低至 5.8 元/人/月</p>
+</div>
+<div class='btn-buy'>
+<a class='ui bordered orange btn' href='/enterprises/new?from=homepage'>购买</a>
+</div>
+</div>
+<div class='divider'>
+<div class='divider-title'></div>
+<div class='divider-info'>
+<div class='item'>
+<span class='expanded-number unlimited'>
+100 人
+<span>(可扩充)</span>
+</span>
+</div>
+<div class='item'>
+<span>100 GB</span>
+</div>
+<div class='item'>
+<span>最大 3 GB</span>
+</div>
+<div class='item'>
+<span>最大 300 MB</span>
+</div>
+<div class='item'>
+<span>50 GB</span>
+</div>
+</div>
+</div>
+<div class='divider'>
+<div class='divider-title'></div>
+<div class='divider-info'>
+<div class='item'>
+<i class='iconfont icon-check-circle'></i>
+</div>
+<div class='item'>
+<i class='iconfont icon-check-circle'></i>
+</div>
+<div class='item'>
+<i class='iconfont icon-check-circle'></i>
+</div>
+<div class='item'>
+<i class='iconfont icon-check-circle'></i>
+</div>
+<div class='item'>
+<i class='iconfont icon-check-circle'></i>
+</div>
+
+</div>
+</div>
+<div class='divider'>
+<div class='divider-title'></div>
+<div class='divider-info'>
+<div class='item'>
+<i class='iconfont icon-check-circle'></i>
+</div>
+<div class='item'>
+<i class='iconfont icon-check-circle'></i>
+</div>
+<div class='item'>
+<i class='iconfont icon-check-circle'></i>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script>
+  (function() {
+    var switch_order_card;
+  
+    if (false) {
+      switch_order_card = function(index) {
+        var $card, $item;
+        $item = $('.title-item').eq(index);
+        if ($item) {
+          $item.addClass('active').siblings().removeClass('active');
+        }
+        $card = $('.order-card').eq(index);
+        if ($card) {
+          return $card.addClass('active').siblings().removeClass('active');
+        }
+      };
+      $('.order-card-title').on('touchend', '.title-item', function() {
+        return switch_order_card($(this).index());
+      });
+      $('.order-cards').on('touchend', '.panel', function() {
+        var $active_index, index;
+        $active_index = $('.title-item.active').index();
+        if ($(this).hasClass('r')) {
+          index = $active_index + 1;
+          return switch_order_card(index > 4 ? 0 : index);
+        } else {
+          index = $active_index - 1;
+          return switch_order_card(index < 0 ? 4 : index);
+        }
+      });
+    }
+  
+  }).call(this);
+</script>
+
+</div>
+</div>
+<div class='enterprise-discount'>
+<div class='ui container'>
+<div class='enterprises-title'>
+<span>最新优惠</span>
+</div>
+<div class='discount'>
+<a class='maparea' href='https://blog.gitee.com/2019/01/05/gitee-startup/' target='blank'></a>
+</div>
+</div>
+</div>
+<div class='enterprise-private' data-nav='私有化部署'>
+<div class='ui container'>
+<div class='content'>
+<p class='title'>码云私有化部署方案</p>
+<p>提供私有化解决方案，将码云部署到企业内部，极大提升大规模开发团队的开发和管理效率。</p>
+<p>支持对企业内部多种开发平台的对接，包括 LDAP 用户认证和授权、项目管理、测试、持续集成、部署以及基于容器化的运行平台等。</p>
+<p>
+<a class="ui orange large button" href="https://enterprise.gitee.com/">了解详情</a>
+</p>
+</div>
+<div class='content'>
+<p class='title'>培训服务</p>
+<p>码云技术专家为客户提供现场培训，帮助研发团队快速上手 Git，使用码云企业版提升工作效率。</p>
+<p>如需了解培训及收费详情，</p>
+<p>请联系我们：400-606-0201</p>
+</div>
+</div>
+</div>
+</div>
+<div class='enterprise-qa' data-nav='FAQ'>
+<div class='ui container'>
+<div class='enterprises-title'>
+<span>常见问题与解答</span>
+</div>
+<div>
+<div class='content'>
+<div class='question'>
+Q1. 标准版 20 人员上限是什么？
+</div>
+<div class='answer'>
+标准版的企业创建者可为企业帐号添加最多 20 名企业成员，并可将这 20 人部分或者全部分配到各个企业仓库中，即每个企业仓库的成员最多就是这 20 人。
+</div>
+</div>
+<div class='content'>
+<div class='question'>
+Q2. 标准版 20G 仓库容量是什么？
+</div>
+<div class='answer'>
+企业标准版帐号下所有的代码、附件、文档等总的容量最多为 20G。
+</div>
+</div>
+<div class='content'>
+<div class='question'>
+Q3. 单仓库和单文件是什么？
+</div>
+<div class='answer'>
+某企业帐号创建了多个仓库（如 A、B、C三个仓库），单仓库是指其中的某一个仓库（如仓库A）。仓库 A 中上传了若干个文件（如 index.php、README.md），单文件是指其中的某一个文件（如 index.php）。
+</div>
+</div>
+<div class='content'>
+<div class='question'>
+Q4. 是否可以开具发票？
+</div>
+<div class='answer'>
+完成企业版的购买之后，可在线申请电子或纸质发票，支持开具增值税普通发票（电子发票仅限普票）或增值税专用发票，发票将在申请提交后 7～15 个工作日内发出。点击查看<a href="http://git.mydoc.io/?t=227873&amp;from=enterprise" target="_blank">开票流程</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class='enterprise-public' id='nonprofit-plan'>
+<div class='ui container'>
+<div class='enterprises-title'>
+<span>Gitee 公益支持计划</span>
+</div>
+<div class='content'>
+「Gitee 公益支持计划」希望通过为纯公益组织和非盈利机构提供免费的产品及服务支持，帮助他们提升研发效率、降低成本，将更多精力投入公益事业之中。愿通过帮助他们，让更多的人受益于技术创新。
+</div>
+<div class='news mt-1'>
+向奋战在疫情防控一线的医疗机构/公益组织/政府部门等免费提供支持，共克时艰。
+</div>
+<div class='mt-2 text-center'>
+<div class='ui gradient-button large orange button enterprise-leave-message'>
+申请公益支持
+</div>
+</div>
+</div>
+</div>
+<div class='footer'>
+<div class='ui container'>
+<div class='ui two column grid'>
+<div class='column left-panel'>
+<p class='title'>从码云企业版开始，从此团队开发简单又高效！</p>
+<div class='button-container'>
+<a class="ui orange button" href="/enterprises/new?from=homepage">免费开通企业版</a>
+<span>OR</span>
+<a class="ui inverted button" href="https://gitee.com/enterprises/demo" target="_blank">体验演示版</a>
+</div>
+</div>
+<div class='column right-panel'>
+<p class='title'>7x24 客服为您护航</p>
+<div class='info'>
+<div>
+<span>免费电话</span>
+<span>400-606-0201</span>
+</div>
+<div>
+<span>技术交流 QQ 群</span>
+<span>1050025484</span>
+</div>
+</div>
+<div class='time'>工作日 10:00-19:00</div>
+</div>
+</div>
+</div>
+</div>
+<div class='bottom-bar hide'>
+<div class='ui container'>
+<div class='ui menu footer-menu d-flex-between'>
+<div class='div left-wrap d-flex-center'>
+<div>
+<span class='footer-logo-wrap d-flex-center'>
+<img alt="logo" class="mr-1" src="/static/images/logo-round-white.svg" title="logo" />
+<span class='text-white'>企业版</span>
+</span>
+</div>
+<div class='div nav-item-wrap'></div>
+</div>
+<div class='right-wrap'>
+<div class='item pr-0'>
+<div class='enterprise-leave-message ui inverted button open-btn'>联系我们</div>
+</div>
+<div class='item'>
+<a class="ui inverted button open-btn" href="/enterprises/demo" target="_blank">体验演示版</a>
+</div>
+<div class='item pl-0 pr-0'>
+<a class="ui button create-btn" href="/enterprises/new?from=homepage">免费开通企业版</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class='ui modal tiny center message-from' id='enterprise-message-modal'>
+<i class='close iconfont icon-close'></i>
+<div class='header'>
+联系我们
+</div>
+<div class='content ui form'>
+<form accept-charset="UTF-8" action="/businesses" class="new_business" id="new_business" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="_method" type="hidden" value="put" /><input name="authenticity_token" type="hidden" value="ix0lxDUGwxJt7wnPGJAtvfooYcZocGHublo8pro2OYQ=" /></div><div class='text-muted need-help'>
+您可以致电400-606-0201（工作日10:00-19:00）或留下您的联系方式，我们的工作人员将于三个工作日内联系您
+</div>
+<div class='required field' id='contacts_type'>
+<label>咨询类型</label>
+<div class='inline field'>
+<label class='inline'></label>
+<div class='ui radio checkbox'>
+<input checked="checked" id="business_contacts_type_enterprise" name="business[contacts_type]" type="radio" value="enterprise" />
+<label for="business_contacts_type_enterprise">码云企业版</label>
+</div>
+&emsp;&emsp;
+<div class='ui radio checkbox'>
+<input id="business_contacts_type_privatization" name="business[contacts_type]" type="radio" value="privatization" />
+<label for="business_contacts_type_privatization">私有化部署</label>
+</div>
+</div>
+</div>
+<div class='two fields'>
+<div class='required field'>
+<label>姓名</label>
+<input id="business_name" name="business[name]" placeholder="请输入姓名" required="required" type="text" />
+</div>
+<div class='required field'>
+<label>公司名称</label>
+<input id="business_company" name="business[company]" placeholder="请输入公司名称" required="required" type="text" />
+</div>
+</div>
+<div class='two fields'>
+<div class='required field'>
+<label>手机</label>
+<input id="business_call_number" name="business[call_number]" placeholder="请输入联系电话" required="required" type="text" />
+</div>
+<div class='required field'>
+<label>邮箱</label>
+<input id="business_email" name="business[email]" placeholder="请输入邮箱" required="required" type="text" />
+</div>
+</div>
+<div class='field'>
+<label>咨询内容</label>
+<textarea id="business_content" maxlength="255" name="business[content]" placeholder="请输入咨询内容" rows="3" style="height: 80px;">
+</textarea>
+</div>
+<div class='fields two'>
+<div class='field required'>
+<label>验证码</label>
+<div class='ui right labeled captcha-labeled input'>
+<input id="business_captcha" name="captcha" type="text" />
+<div class='ui label'>
+<img alt="Rucaptcha" class="captcha_img" src="https://gitee.com/rucaptcha/" />
+</div>
+</div>
+</div>
+</div>
+</form>
+
+</div>
+<div class='actions'>
+<div class='ui blank cancel button'>
+取消
+</div>
+<div class='ui button orange approve' id='send-message'>
+提交
+</div>
+</div>
+</div>
+
+
+
+<script src="https://assets.gitee.com/assets/enterprises/app-f2d7e35d1378d9ad8c51c4799405bfae.js"></script>
+
+</div>
+<footer id='git-footer-main'>
+<div class='ui container'>
+<div class='ui two column grid '>
+<div class='nine wide column git-footer-left'>
+<p><a href="https://gitee.com/" target="_blank">© Gitee.com</a></p>
+<div class='ui four column grid' id='footer-left'>
+<div class='column'>
+<div class='ui link list'>
+<div class='item'>
+<a class="item" href="/about_us">关于我们</a>
+</div>
+<div class='item'>
+<a class="item" href="/terms">使用条款</a>
+</div>
+<div class='item'>
+<a class="item" href="/oschina/git-osc/issues">意见建议</a>
+</div>
+<div class='item'>
+<a class="item" href="/links.html">合作伙伴</a>
+</div>
+</div>
+</div>
+<div class='column'>
+<div class='ui link list'>
+<div class='item'>
+<a class="item" href="/all-about-git">Git 大全</a>
+</div>
+<div class='item'>
+<a class="item" href="https://oschina.gitee.io/learn-git-branching/">Git 命令学习</a>
+</div>
+<div class='item'>
+<a class="item" href="https://copycat.gitee.com/">代码克隆检测</a>
+</div>
+<div class='item'>
+<a class="item" href="/appclient">APP与插件下载</a>
+</div>
+</div>
+</div>
+<div class='column'>
+<div class='ui link list'>
+<div class='item'>
+<a class="item" href="/gitee-stars">码云封面人物</a>
+</div>
+<div class='item'>
+<a class="item" href="/gvp">GVP项目</a>
+</div>
+<div class='item'>
+<a class="item" href="https://blog.gitee.com/">码云博客</a>
+</div>
+<div class='item'>
+<a class="item" href="/enterprises#nonprofit-plan">Gitee 公益计划</a>
+</div>
+</div>
+</div>
+<div class='column'>
+<div class='ui link list'>
+<div class='item'>
+<a class="item" href="/api/v5/swagger">OpenAPI</a>
+</div>
+<div class='item'>
+<a class="item" href="/help">帮助文档</a>
+</div>
+<div class='item'>
+<a class="item" href="/self_services">在线自助服务</a>
+</div>
+<div class='item'>
+<a class="item" href="/git-osc">更新日志</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class='seven wide column right aligned followus git-footer-right'>
+<div class='qrcode weixin'>
+<img alt="Qrcode weixin" src="https://assets.gitee.com/assets/qrcode-weixin-9e7cfb27165143d2b8e8b268a52ea822.jpg" />
+<p class='weixin-text'>微信服务号</p>
+</div>
+<div class='phone-and-qq column'>
+<div class='ui list official-support-container'>
+<div class='item'>
+<a class="icon-popup" href="//shang.qq.com/wpa/qunwpa?idkey=df785aa7af71f7d74149ab062742d761b845464350ecba25eb440357a3e573b7" title="点击加入码云官方群"><i class='iconfont icon-logo-qq'></i>
+<span>官方技术交流QQ群：1050025484</span>
+</a></div>
+<div class='item mail-and-zhihu'>
+<a href="mailto: git@oschina.cn"><i class='iconfont icon-ic-mail'></i>
+<span id='git-footer-email'>git#oschina.cn</span>
+</a><a href="https://www.zhihu.com/org/ma-yun-osc/ " target="_blank"><i class='iconfont icon-zhihu'></i>
+<span>码云Gitee</span>
+</a></div>
+<div class='item'>企业版售前及售后使用咨询：400-606-0201</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class='bottombar'>
+<div class='ui container'>
+<div class='ui grid'>
+<div class='seven wide column partner'>
+<div class='copyright'>
+<a href="http://www.beian.miit.gov.cn/">粤ICP备12009483号</a>
+深圳市奥思网络科技有限公司版权所有
+</div>
+</div>
+<div class='nine wide column right aligned'>
+<i class='icon world'></i>
+<a href="/language/zh-CN">简 体</a>
+/
+<a href="/language/zh-TW">繁 體</a>
+/
+<a href="/language/en">English</a>
+</div>
+</div>
+</div>
+</div>
+</footer>
+<script>
+  var officialEmail = $('#git-footer-email').text()
+  $('#git-footer-main .icon-popup').popup({ position: 'bottom center' })
+  $('#git-footer-email').text(officialEmail.replace('#', '@'))
+</script>
+
+
+<div class='side-toolbar'>
+<div class='button toolbar-help'>
+<i class='iconfont icon-help'></i>
+</div>
+<div class='ui popup left center dark'>点此查找更多帮助</div>
+<div class='toolbar-help-dialog'>
+<div class='toolbar-dialog-header'>
+<h3 class='toolbar-dialog-title'>搜索帮助</h3>
+<form accept-charset="UTF-8" action="/help/load_keywords_data" class="toolbar-help-search-form" method="get"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /></div>
+<div class='ui icon input fluid toolbar-help-search'>
+<input name='keywords' placeholder='请输入产品名称或问题' type='text'>
+<i class='icon search'></i>
+</div>
+</form>
+
+<i class='iconfont icon-close toolbar-dialog-close-icon'></i>
+</div>
+<div class='toolbar-dialog-content'>
+<div class='toolbar-help-hot-search'>
+<div class='toolbar-roll'>
+<a class="init active" href="https://oschina.gitee.io/learn-git-branching/?utm_source==gitee-help-widget" title="Git 命令在线学习"><i class='Blue icon icon-command iconfont'></i>
+<span>Git 命令在线学习</span>
+</a><a class="init " href="https://gitee.com/help/articles/4261?utm_source==gitee-help-widget" title="如何在码云上导入 GitHub 仓库"><i class='icon icon-clipboard iconfont orange'></i>
+<span>如何在码云上导入 GitHub 仓库</span>
+</a></div>
+<div class='toolbar-list'>
+<div class='toolbar-list-item'>
+<a href="/help/articles/4114">Git 仓库基础操作</a>
+</div>
+<div class='toolbar-list-item'>
+<a href="/help/articles/4166">企业版和社区版功能对比</a>
+</div>
+<div class='toolbar-list-item'>
+<a href="/help/articles/4191">SSH 公钥设置</a>
+</div>
+<div class='toolbar-list-item'>
+<a href="/help/articles/4194">如何处理代码冲突</a>
+</div>
+<div class='toolbar-list-item'>
+<a href="/help/articles/4232">仓库体积过大，如何减小？</a>
+</div>
+<div class='toolbar-list-item'>
+<a href="/help/articles/4279">如何找回被删除的仓库数据</a>
+</div>
+<div class='toolbar-list-item'>
+<a href="/help/articles/4283">码云使用容量说明</a>
+</div>
+<div class='toolbar-list-item'>
+<a href="/help/articles/4284">GitHub仓库快速导入Gitee及同步更新</a>
+</div>
+</div>
+</div>
+<div class='toolbar-help-search-reseult'>
+<div class='toolbar-help-flex-column'>
+<div class='ui centered inline loader toolbar-help-loader'></div>
+<div class='toolbar-list'></div>
+<div class='toolbar-help-link-to-help'>
+<a href="" target="_blank">查看更多搜索结果</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script>
+  var opt = { position: 'left center' };
+  var $helpSideToolbar = $(".button.toolbar-help");
+  var $toolbarRoll = $('.toolbar-roll');
+  
+  $(function() {
+    if (false) {
+      $helpSideToolbar.popup(opt);
+    } else {
+      $helpSideToolbar.popup('show', opt);
+      setTimeout(function() {
+        $helpSideToolbar.popup('hide', opt);
+      }, 3000);
+    }
+  
+    if ($toolbarRoll.length) {
+      setInterval(function() {
+        var $nextActiveLink = $toolbarRoll.find('a.active').next();
+        if (!$nextActiveLink.length) {
+          $nextActiveLink = $toolbarRoll.find('a:first-child');
+        }
+        $nextActiveLink.attr('class', 'active').siblings().removeClass('active init');
+      }, 5000);
+    }
+  })
+</script>
+
+<div class='button share-link'>
+<i class='iconfont icon-share'></i>
+</div>
+<div class='ui popup dark'>
+<div class='header'>
+分享到
+</div>
+<div class='bdsharebuttonbox' style='display: flex'>
+<a class='iconfont icon-home-service-wechat' data-cmd='weixin' title='分享到微信'></a>
+<a class='iconfont icon-weibo' data-cmd='tsina' title='分享到新浪微博'></a>
+<a class='iconfont icon-qq' data-cmd='sqq' title='分享到QQ好友'></a>
+<a class='iconfont icon-qzone' data-cmd='qzone' title='分享到QQ空间'></a>
+</div>
+</div>
+<div class='button gotop popup' id='gotop'>
+<i class='iconfont icon-top'></i>
+</div>
+<div class='ui popup dark'>回到顶部</div>
+</div>
+<style>
+  .side-toolbar .bdsharebuttonbox a {
+    font-size: 24px;
+    color: white !important;
+    opacity: 0.9;
+    margin: 6px 6px 0px 6px;
+    background-image: none;
+    text-indent: 0;
+    height: auto;
+    width: auto;
+  }
+</style>
+<script>
+  (function() {
+    $('#project-user-message').popup({
+      position: 'left center'
+    });
+  
+  }).call(this);
+</script>
+<script>
+  Gitee.initSideToolbar({})
+</script>
+<script>
+  window._bd_share_config = {
+    "common": {
+      "bdSnsKey": {},
+      "bdText": document.title,
+      "bdMini": "1",
+      "bdMiniList": ["bdxc","tqf","douban","bdhome","sqq","thx","ibaidu","meilishuo","mogujie","diandian","huaban","duitang","hx","fx","youdao","sdo","qingbiji","people","xinhua","mail","isohu","yaolan","wealink","ty","iguba","fbook","twi","linkedin","h163","evernotecn","copy","print"],
+      "bdPic": "",
+      "bdStyle": "1",
+      "bdSize": "32"
+    },
+    "share": {}
+  }
+</script>
+<script src="/bd_share/static/api/js/share.js"></script>
+
+
+
+</body>
+</html>
