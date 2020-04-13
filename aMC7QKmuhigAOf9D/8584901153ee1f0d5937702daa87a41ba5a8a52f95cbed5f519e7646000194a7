@@ -1,0 +1,1633 @@
+<!DOCTYPE html>
+<html lang='zh-CN'>
+<head>
+<title>C/C++ - 编程语言/脚本语言 - 开源软件 - 码云 Gitee.com</title>
+<link href="https://assets.gitee.com/assets/favicon-9007bd527d8a7851c8330e783151df58.ico" rel="shortcut icon" type="image/vnd.microsoft.icon" />
+<meta charset='utf-8'>
+<meta content='always' name='referrer'>
+<meta content='码云' property='og:site_name'>
+<meta content='Object' property='og:type'>
+<meta content='http://gitee.com/explore/scripting-language?lang=c-cpp&amp;amp;license=Apache-2.0' property='og:url'>
+<meta content='https://gitee.com/static/images/logo_themecolor.png' itemprop='image' property='og:image'>
+<meta content='C/C++ - 编程语言/脚本语言 - 开源软件 - 码云 Gitee.com' itemprop='name' property='og:title'>
+<meta content='码云(gitee.com)是 OSCHINA.NET 推出的代码托管平台，支持 Git 和 SVN，提供免费的私有仓库托管。目前已有超过 500 万的开发者选择码云。' property='og:description'>
+<meta content='编程语言/脚本语言, C/C++, 开源软件, 高性能编程语言,.net 动态脚本' name='Keywords'>
+<meta content='编程语言/脚本语言分类的列表页为您提供多种开源的编程语言/脚本语言分类的工具，其中包括TypeScript脚本解释器，.net 动态脚本引擎，提升集合类处理操作的脚本语言，C#脚本引擎，构建图形界面可编译为 C 的编程语言，Julia，xLua的NGUI扩展案例，纯 C++ 实现的 Java 虚拟机，Swift 专门针对 OS X 和 iOS 的应用开发，基于 JVM 的敏捷开发语言等多种编程语言/脚本语言分类的工具' itemprop='description' name='Description'>
+
+<meta content="IE=edge" http-equiv="X-UA-Compatible" />
+<meta content="authenticity_token" name="csrf-param" />
+<meta content="h8uS0YIhFqgTxz6CFbV9XG0iqfSGBVjO36mxNZw5W5Q=" name="csrf-token" />
+
+<link href="https://assets.gitee.com/assets/application-4353e40c527157901930256fb2cba2d4.css" media="screen" rel="stylesheet" />
+<script>
+//<![CDATA[
+window.gon = {};gon.locale="zh-CN";gon.sentry_dsn=null;gon.baidu_register_hm_push=null;gon.info={"controller_path":"explores","action_name":"show","current_user":false};gon.tour_env={"current_user":null,"action_name":"show","original_url":"http://gitee.com/explore/scripting-language?lang=c-cpp\u0026amp;license=Apache-2.0","controller_path":"explores"};
+//]]>
+</script>
+<script src="https://assets.gitee.com/assets/static/sentry-5.1.0-109ee3d8895a239331efcf947ba7f5d8.js"></script>
+<script src="https://assets.gitee.com/assets/application-25134bf44f1dbb308bb450bdb036a1cc.js"></script>
+<script src="https://assets.gitee.com/assets/lib/jquery.timeago.zh-CN-9c36ca7c4899a28168320613879d208a.js"></script>
+
+
+<script src="//res.wx.qq.com/open/js/jweixin-1.2.0.js"></script>
+<script>
+  var title = document.title.replace(/( - Gitee| - 码云)$/, '')
+      imgUrl = '';
+  
+  document.addEventListener('DOMContentLoaded', function(event) {
+    var imgUrlEl = document.querySelector('.readme-box .markdown-body > img, .readme-box .markdown-body :not(a) > img');
+    imgUrl = imgUrlEl && imgUrlEl.getAttribute('src');
+  
+    if (!imgUrl) {
+      imgUrlEl = document.querySelector('meta[itemprop=image]');
+      imgUrl = imgUrlEl && imgUrlEl.getAttribute('content'); 
+      imgUrl = imgUrl || "https://gitee.com/static/images/logo_themecolor.png";
+    }
+  
+    wx.config({
+      debug: false,
+      appId: "wxff219d611a159737",
+      timestamp: "1586766004",
+      nonceStr: "de5ebf8942bb97c2aa6441550f6c6258",
+      signature: "b2992bbb2e33bf4059161e3d866b9ecf54b8122f",
+      jsApiList: [
+        'onMenuShareTimeline',
+        'onMenuShareAppMessage'
+      ]
+    });
+  
+    wx.ready(function () {
+      wx.onMenuShareTimeline({
+        title: title, // 分享标题
+        link: "https://gitee.com/explore/scripting-language?lang=c-cpp&amp;license=Apache-2.0", // 分享链接，该链接域名或路径必须与当前页面对应的公众号JS安全域名一致
+        imgUrl: imgUrl // 分享图标
+      });
+      wx.onMenuShareAppMessage({
+        title: title, // 分享标题
+        link: "https://gitee.com/explore/scripting-language?lang=c-cpp&amp;license=Apache-2.0", // 分享链接，该链接域名或路径必须与当前页面对应的公众号JS安全域名一致
+        desc: document.querySelector('meta[name=Description]').getAttribute('content'),
+        imgUrl: imgUrl // 分享图标
+      });
+    });
+    wx.error(function(res){
+      console.error('err', res)
+    });
+  })
+</script>
+
+<script type='text/x-mathjax-config'>
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    displayMath: [["$$","$$"],["\\[","\\]"]],
+    processEscapes: true,
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
+    ignoreClass: "container|files",
+    processClass: "markdown-body"
+  }
+});
+</script>
+<script src="https://assets.gitee.com/uploads/resources/MathJax-2.7.2/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+<script>
+  (function () {
+    var messages = {
+      'zh-CN': {
+        addResult: '增加 <b>{term}</b>',
+        count: '已选择 {count}',
+        maxSelections: '最多 {maxCount} 个选择',
+        noResults: '未找到结果',
+        serverError: '连接服务器时发生错误'
+      },
+      'zh-TW': {
+        addResult: '增加 <b>{term}</b>',
+        count: '已選擇 {count}',
+        maxSelections: '最多 {maxCount} 個選擇',
+        noResults: '未找到結果',
+        serverError: '連接服務器時發生錯誤'
+      }
+    }
+  
+    if (messages[gon.locale]) {
+      $.fn.dropdown.settings.message = messages[gon.locale]
+    }
+  }());
+</script>
+
+<!--[if lt IE 10]>
+<script>
+    window.location.href = "/incompatible.html";
+</script>
+<![endif]-->
+</head>
+
+<link href="https://gitee.com/explore/scripting-language.atom" rel="alternate" title="Gitee Recommened Projects" type="application/atom+xml" />
+<script src="https://assets.gitee.com/assets/explore/app-4e837fe54d4d35b570bf6148a01b1247.js"></script>
+<link href="https://assets.gitee.com/assets/explore/application-8378379951d9b0b5115787e25ecfca6e.css" media="screen" rel="stylesheet" />
+<body class='large ui_basic' id='explores-show'>
+<header class='common-header fixed large noborder' id='git-header-nav'>
+<div class='ui container'>
+<div class='ui menu header-menu'>
+<div class='git-nav-expand-bar'>
+<i class='iconfont icon-mode-table'></i>
+</div>
+<div class='gitee-nav__sidebar'>
+<div class='gitee-nav__sidebar-container'>
+<div class='gitee-nav__sidebar-top'>
+<div class='gitee-nav__avatar-box'></div>
+<div class='gitee-nav__buttons-box'>
+<a class="ui button small fluid orange" href="/login">登录</a>
+<a class="ui button small fluid basic is-register" href="/signup">注册</a>
+</div>
+</div>
+<div class='gitee-nav__sidebar-middle'>
+<div class='gitee-nav__sidebar-list'>
+<ul>
+<li class='gitee-nav__sidebar-item'>
+<a href="/explore"><i class='iconfont icon-ic-discover'></i>
+<span class='gitee-nav__sidebar-name'>开源软件</span>
+</a></li>
+<li class='gitee-nav__sidebar-item'>
+<a href="/enterprises"><i class='iconfont icon-ic-enterprise'></i>
+<span class='gitee-nav__sidebar-name'>企业版</span>
+</a></li>
+<li class='gitee-nav__sidebar-item'>
+<a href="/education"><i class='iconfont icon-ic-education'></i>
+<span class='gitee-nav__sidebar-name'>高校版</span>
+</a></li>
+<li class='gitee-nav__sidebar-item split-line'></li>
+<li class='gitee-nav__sidebar-item'>
+<a href="/search"><i class='iconfont icon-ic-search'></i>
+<span class='gitee-nav__sidebar-name'>搜索</span>
+</a></li>
+<li class='gitee-nav__sidebar-item'>
+<a href="/help"><i class='iconfont icon-help-circle'></i>
+<span class='gitee-nav__sidebar-name'>帮助中心</span>
+</a></li>
+<li class='gitee-nav__sidebar-item'>
+<a href="/terms"><i class='iconfont icon-file'></i>
+<span class='gitee-nav__sidebar-name'>使用条款</span>
+</a></li>
+<li class='gitee-nav__sidebar-item'>
+<a href="/about_us"><i class='iconfont icon-issuepx'></i>
+<span class='gitee-nav__sidebar-name'>关于我们</span>
+</a></li>
+</ul>
+</div>
+</div>
+<div class='gitee-nav__sidebar-bottom'>
+<div class='gitee-nav__sidebar-close-button'>
+<i class='fa fa-angle-double-left'></i>
+</div>
+</div>
+</div>
+</div>
+
+<div class='item gitosc-logo'>
+<a href="/"><img alt='码云 Gitee — 基于 Git 的代码托管和研发协作平台' class='ui inline image' height='28' src='/static/images/logo.svg?t=158106664' title='码云 Gitee — 基于 Git 的代码托管和研发协作平台' width='95'>
+<img alt='码云 Gitee — 基于 Git 的代码托管和研发协作平台' class='ui inline black image' height='28' src='/static/images/logo-black.svg?t=158106664' title='码云 Gitee — 基于 Git 的代码托管和研发协作平台' width='95'>
+</a></div>
+<a class="item state-active" href="/explore" title="开源软件">开源软件
+</a><a class="item " href="/enterprises" title="企业版">企业版
+<sup class='ui red label'>
+特惠
+</sup>
+</a><a class="item " href="/education" title="高校版">高校版
+</a><a class="item" href="https://blog.gitee.com/" id="gitee-blog" target="_blank" title="博客">博客
+</a><div class='center responsive-logo'>
+<a href="/"><img alt='码云 Gitee — 基于 Git 的代码托管和研发协作平台' class='ui inline image' height='24' src='/static/images/logo.svg?t=158106664' title='码云 Gitee — 基于 Git 的代码托管和研发协作平台' width='85'>
+<img alt='码云 Gitee — 基于 Git 的代码托管和研发协作平台' class='ui inline black image' height='24' src='/static/images/logo-black.svg?t=158106664' title='码云 Gitee — 基于 Git 的代码托管和研发协作平台' width='85'>
+</a></div>
+<div class='right menu userbar' id='git-nav-user-bar'>
+<form accept-charset="UTF-8" action="/search" class="ui item" data-text-filter="搜索格式不正确" data-text-require="搜索关键字不能少于1个" id="navbar-search-form" method="get"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /></div>
+<input id="navbar-search-type" name="type" type="hidden" />
+<input id="fork_filter" name="fork_filter" type="hidden" value="on" />
+<div class='ui search'>
+<input class="prompt" id="navbar-search-input" name="q" placeholder="搜索项目" type="text" value="" />
+</div>
+</form>
+
+<script>
+  var can_search_in_repo = 0,
+      repo = "",
+      reponame = "";
+  
+  $(function() {
+    var $search = $('#navbar-search-form .ui.search');
+    $search.search({
+      apiSettings: {
+        url: '/search/relative_project?q={query}',
+        onResponse: function (res) {
+          if (res && res.status === 200 && res.data) {
+            var query = $search.search('get value');
+  
+            res.data.map(function (item) {
+              item.path_ns = '/' + item.path_ns;
+              item.icon = 'iconfont icon-project-public';
+            });
+            res.data.unshift({
+              name_ns: "在全站搜索 <b class='hl'>" + query +"</b> 相关项目",
+              path_ns: '/search?fork_filter=on&q=' + query,
+              icon: 'iconfont icon-search'
+            });
+            if(can_search_in_repo == 1) {
+              res.data.unshift({
+                name_ns: "在当前仓库搜索 <b class='hl'>" + query +"</b> 相关代码",
+                path_ns: '/search?type=code&q=' + query + '&repo=' + repo + '&reponame=' + reponame,
+                icon: 'iconfont icon-search'
+              });
+            }
+            return res;
+          } else {
+            return { data: [] };
+          }
+        }
+      },
+      fields: {
+        results: 'data',
+        description: 'name_ns',
+        url: 'path_ns',
+        icon: 'icon'
+      },
+      minCharacters: 1,
+      maxResults: 10,
+      searchDelay: 120,
+      showNoResults: false,
+      transition: 'fade'
+    });
+  });
+</script>
+
+<a class="item git-nav-user__login-item" href="/login">登录
+</a><a class="item git-nav-user__register-item" href="/signup">注册
+</a><script>
+  $('.destroy-user-session').on('click', function() {
+    $.cookie('access_token', null, { path: '/' });
+  })
+</script>
+
+</div>
+</div>
+</div>
+</header>
+<script>
+  Gitee.initNavbar()
+  Gitee.initRepoRemoteWay()
+</script>
+
+<div class='site-content'>
+<div class='fixed-notice-infos'>
+<div class='all-messages'>
+<div class='ui info message' id='git-bulletin'>
+<a href=https://blog.gitee.com/2020/04/07/gitee-go/ target='_blank'>Gitee 企业版上线 DevOps 工具「Gitee Go」</a>
+<i class='icon remove' id='remove-bulletin'></i>
+</div>
+</div>
+<div class='ui container'>
+<div class='flash-messages' id='messages-container'></div>
+</div>
+<script>
+  (function() {
+    $(function() {
+      var $error_box, alertTip, notify_content, notify_options, template;
+      template = '<div data-notify="container" class="ui {0} message" role="alert">' + '<i data-notify="dismiss" class="close icon"></i>' + '<span data-notify="message">{2}</span>' + '</div>';
+      notify_content = null;
+      notify_options = {};
+      alertTip = '';
+      $error_box = $(".flash_error.flash_error_box");
+      if (notify_options.type === 'error' && $error_box.length > 0 && !$.isEmptyObject(notify_content.message)) {
+        if (notify_content.message === 'captcha_fail') {
+          alertTip = "验证码不正确";
+        } else if (notify_content.message === 'captcha_expired') {
+          alertTip = "验证码已过期，请点击刷新";
+        } else if (notify_content.message === 'not_found_in_database') {
+          alertTip = "帐号或者密码错误";
+        } else if (notify_content.message === 'not_found_and_show_captcha') {
+          alertTip = "帐号或者密码错误";
+        } else if (notify_content.message === 'phone_captcha_fail') {
+          alertTip = "手机验证码不通过";
+        } else {
+          alertTip = notify_content.message;
+        }
+        return $error_box.html(alertTip).show();
+      } else if (notify_content) {
+        if ("show" === 'third_party_binding') {
+          return $('#third_party_binding-message').html(notify_content.message).addClass('ui message red');
+        }
+        notify_options.delay = 3000;
+        notify_options.template = template;
+        notify_options.offset = {
+          x: 10,
+          y: 30
+        };
+        notify_options.element = '#messages-container';
+        return $.notify(notify_content, notify_options);
+      }
+    });
+  
+  }).call(this);
+</script>
+
+</div>
+<script>
+  (function() {
+    $(function() {
+      var setCookie;
+      setCookie = function(name, value) {
+        $.cookie(name, value, {
+          path: '/',
+          expires: 365
+        });
+      };
+      $('#remove-bulletin, #remove-bulletin-dashboard').on('click', function() {
+        setCookie('remove_bulletin', "gitee-maintain-1586321954");
+        $('#git-bulletin').hide();
+      });
+      $('#remove-member-bulletin').on('click', function() {
+        setCookie('remove_member_bulletin', "gitee_member_bulletin");
+        $(this).parent().hide();
+      });
+      return $('#remove-gift-bulletin').on('click', function() {
+        setCookie('remove_gift_bulletin', "gitee-gift-bulletin");
+        $(this).parent().hide();
+      });
+    });
+  
+  }).call(this);
+</script>
+<script>
+  function closeMessageBanner(pthis, type, val) {
+    var json = {}
+  
+    val = typeof val === 'undefined' ? null : val
+    $(pthis).parent().remove()
+    if (type === 'out_of_enterprise_member') {
+      json = {type: type, data: val}
+    } else if (type === 'enterprise_overdue') {
+      json = {type: type, data: val}
+    }
+    $.post('/profile/close_flash_tip', json)
+  }
+</script>
+
+<div class='explore__container'>
+<div class='explore-recommend'>
+<div class='ui container'>
+<div class='ui grid'>
+<div class='three wide column'>
+<div class='explore-categories'>
+<div class='explore-categories__container'>
+<ul>
+<li class='explore-categories__item'>
+<a href="/explore/all?lang=c-cpp&amp;license=Apache-2.0"><b>
+<i class='explore-categories__item-icon iconfont icon-tag-all'></i>
+全部推荐项目
+</b>
+</a></li>
+<li class='active explore-categories__item'>
+<a href="/explore/program-develop?lang=c-cpp&amp;license=Apache-2.0"><i class='explore-categories__item-icon icon-tag-program iconfont'></i>
+程序开发
+</a><div class='ui popup explore-categories__second'>
+<table>
+<tbody>
+<tr>
+<td>
+<a class="" href="/explore/segment?lang=c-cpp&amp;license=Apache-2.0">中英文分词</a>
+</td>
+<td>
+<a class="" href="/explore/payment-dev?lang=c-cpp&amp;license=Apache-2.0">支付开发包</a>
+</td>
+<td>
+<a class="" href="/explore/security-dev?lang=c-cpp&amp;license=Apache-2.0">安全开发相关</a>
+</td>
+<td>
+<a class="" href="/explore/utils?lang=c-cpp&amp;license=Apache-2.0">常用工具包</a>
+</td>
+</tr>
+<tr>
+<td>
+<a class="" href="/explore/excel-utils?lang=c-cpp&amp;license=Apache-2.0">Excel工具包</a>
+</td>
+<td>
+<a class="" href="/explore/barcode?lang=c-cpp&amp;license=Apache-2.0">条形码/二维码</a>
+</td>
+<td>
+<a class="" href="/explore/template-engine?lang=c-cpp&amp;license=Apache-2.0">模板引擎</a>
+</td>
+<td>
+<a class="" href="/explore/desktop-ui?lang=c-cpp&amp;license=Apache-2.0">桌面UI组件/框架</a>
+</td>
+</tr>
+<tr>
+<td>
+<a class="" href="/explore/web-dev-toolkits?lang=c-cpp&amp;license=Apache-2.0">网络开发包</a>
+</td>
+<td>
+<a class="" href="/explore/tts?lang=c-cpp&amp;license=Apache-2.0">语音处理</a>
+</td>
+<td>
+<a class="" href="/explore/networklib?lang=c-cpp&amp;license=Apache-2.0">网络工具</a>
+</td>
+<td>
+<a class="" href="/explore/web-service?lang=c-cpp&amp;license=Apache-2.0">网络服务</a>
+</td>
+</tr>
+<tr>
+<td>
+<a class="" href="/explore/data-mining?lang=c-cpp&amp;license=Apache-2.0">数据挖掘</a>
+</td>
+<td>
+<a class="" href="/explore/task-schedule?lang=c-cpp&amp;license=Apache-2.0">作业/任务调度</a>
+</td>
+<td>
+<a class="active" href="/explore/scripting-language?lang=c-cpp&amp;license=Apache-2.0">编程语言/脚本语言</a>
+</td>
+<td>
+<a class="" href="/explore/cache-modules?lang=c-cpp&amp;license=Apache-2.0">缓存组件</a>
+</td>
+</tr>
+<tr>
+<td>
+<a class="" href="/explore/markdown-utils?lang=c-cpp&amp;license=Apache-2.0">Markdown开发包</a>
+</td>
+<td>
+<a class="" href="/explore/search-engine?lang=c-cpp&amp;license=Apache-2.0">搜索引擎</a>
+</td>
+<td>
+<a class="" href="/explore/microservice?lang=c-cpp&amp;license=Apache-2.0">微服务</a>
+</td>
+<td>
+<a class="" href="/explore/workflow?lang=c-cpp&amp;license=Apache-2.0">工作流</a>
+</td>
+</tr>
+<tr>
+<td>
+<a class="" href="/explore/charting-components?lang=c-cpp&amp;license=Apache-2.0">图表组件</a>
+</td>
+<td>
+<a class="" href="/explore/authority-management?lang=c-cpp&amp;license=Apache-2.0">权限管理</a>
+</td>
+<td>
+<a class="" href="/explore/reporting-tools?lang=c-cpp&amp;license=Apache-2.0">报表工具</a>
+</td>
+<td>
+<a class="" href="/explore/code-generator?lang=c-cpp&amp;license=Apache-2.0">代码生成器</a>
+</td>
+</tr>
+<tr>
+<td>
+<a class="" href="/explore/ioc-framework?lang=c-cpp&amp;license=Apache-2.0">IoC/AOP框架</a>
+</td>
+<td>
+<a class="" href="/explore/image-processing?lang=c-cpp&amp;license=Apache-2.0">图像处理</a>
+</td>
+<td>
+<a class="" href="/explore/rule-engine?lang=c-cpp&amp;license=Apache-2.0">规则引擎</a>
+</td>
+<td>
+<a class="" href="/explore/json-tools?lang=c-cpp&amp;license=Apache-2.0">JSON工具</a>
+</td>
+</tr>
+<tr>
+<td>
+<a class="" href="/explore/logging?lang=c-cpp&amp;license=Apache-2.0">日志工具包</a>
+</td>
+<td>
+<a class="" href="/explore/spring-boot-ext?lang=c-cpp&amp;license=Apache-2.0">Spring Boot 扩展</a>
+</td>
+<td>
+<a class="" href="/explore/captcha?lang=c-cpp&amp;license=Apache-2.0">验证码</a>
+</td>
+<td>
+<a class="" href="/explore/mathlibs?lang=c-cpp&amp;license=Apache-2.0">算法/数学计算</a>
+</td>
+</tr>
+<tr>
+<td>
+<a class="" href="/explore/node-plugins?lang=c-cpp&amp;license=Apache-2.0">Node 扩展</a>
+</td>
+<td>
+<a class="" href="/explore/process-engine?lang=c-cpp&amp;license=Apache-2.0">流程引擎/工具</a>
+</td>
+<td>
+<a class="" href="/explore/animation?lang=c-cpp&amp;license=Apache-2.0">动画开发</a>
+</td>
+<td>
+<a class="" href="/explore/mobile-communication?lang=c-cpp&amp;license=Apache-2.0">移动通信</a>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class='explore-categories__item'>
+<a href="/explore/Artificial-Intelligence?lang=c-cpp&amp;license=Apache-2.0"><i class='explore-categories__item-icon icon-tag-ai iconfont'></i>
+人工智能
+</a><div class='ui popup explore-categories__second'>
+<table>
+<tbody>
+<tr>
+<td>
+<a class="" href="/explore/ai?lang=c-cpp&amp;license=Apache-2.0">AI-人工智能</a>
+</td>
+<td>
+<a class="" href="/explore/vrar?lang=c-cpp&amp;license=Apache-2.0">VR/AR</a>
+</td>
+</tr>
+<tr>
+<td>
+<a class="" href="/explore/machine-learning?lang=c-cpp&amp;license=Apache-2.0">机器学习/深度学习</a>
+</td>
+<td>
+<a class="" href="/explore/cv?lang=c-cpp&amp;license=Apache-2.0">计算机视觉/人脸识别</a>
+</td>
+</tr>
+<tr>
+<td>
+<a class="" href="/explore/smart-home?lang=c-cpp&amp;license=Apache-2.0">智能家居</a>
+</td>
+<td>
+<a class="" href="/explore/auto-driving?lang=c-cpp&amp;license=Apache-2.0">自动驾驶/无人机</a>
+</td>
+</tr>
+<tr>
+<td>
+<a class="" href="/explore/robot?lang=c-cpp&amp;license=Apache-2.0">机器人</a>
+</td>
+<td>
+<a class="" href="/explore/nature-language?lang=c-cpp&amp;license=Apache-2.0">自然语言处理</a>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class='explore-categories__item'>
+<a href="/explore/blockchain-bitcoin?lang=c-cpp&amp;license=Apache-2.0"><i class='explore-categories__item-icon icon-tag-blockchain iconfont'></i>
+区块链/比特币
+</a></li>
+<li class='explore-categories__item'>
+<a href="/explore/wechat-devel?lang=c-cpp&amp;license=Apache-2.0"><i class='explore-categories__item-icon icon-tag-wechat iconfont'></i>
+微信开发
+</a><div class='ui popup explore-categories__second'>
+<table>
+<tbody>
+<tr>
+<td>
+<a class="" href="/explore/weixin-dev?lang=c-cpp&amp;license=Apache-2.0">微信开发包</a>
+</td>
+<td>
+<a class="" href="/explore/weixin-lapp?lang=c-cpp&amp;license=Apache-2.0">微信小程序/小游戏</a>
+</td>
+</tr>
+<tr>
+<td>
+<a class="" href="/explore/weixin-app?lang=c-cpp&amp;license=Apache-2.0">微信应用</a>
+</td>
+<td>
+<a class="" href="/explore/weixin-game?lang=c-cpp&amp;license=Apache-2.0">微信小游戏</a>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class='explore-categories__item'>
+<a href="/explore/enterprise-app?lang=c-cpp&amp;license=Apache-2.0"><i class='explore-categories__item-icon icon-tag-enterprise iconfont'></i>
+企业应用
+</a><div class='ui popup explore-categories__second'>
+<table>
+<tbody>
+<tr>
+<td>
+<a class="" href="/explore/gis?lang=c-cpp&amp;license=Apache-2.0">GIS/地图/导航/定位</a>
+</td>
+<td>
+<a class="" href="/explore/project-management?lang=c-cpp&amp;license=Apache-2.0">任务/项目管理</a>
+</td>
+</tr>
+<tr>
+<td>
+<a class="" href="/explore/erp?lang=c-cpp&amp;license=Apache-2.0">企业应用系统</a>
+</td>
+<td>
+<a class="" href="/explore/bi?lang=c-cpp&amp;license=Apache-2.0">BI-商业智能</a>
+</td>
+</tr>
+<tr>
+<td>
+<a class="" href="/explore/stocks?lang=c-cpp&amp;license=Apache-2.0">金融/股票证券</a>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class='explore-categories__item'>
+<a href="/explore/build-web-system?lang=c-cpp&amp;license=Apache-2.0"><i class='explore-categories__item-icon icon-tag-cms iconfont'></i>
+建站系统
+</a><div class='ui popup explore-categories__second'>
+<table>
+<tbody>
+<tr>
+<td>
+<a class="" href="/explore/cms?lang=c-cpp&amp;license=Apache-2.0">CMS建站系统</a>
+</td>
+<td>
+<a class="" href="/explore/ecommerce?lang=c-cpp&amp;license=Apache-2.0">新零售/网店/商城</a>
+</td>
+</tr>
+<tr>
+<td>
+<a class="" href="/explore/bbs?lang=c-cpp&amp;license=Apache-2.0">BBS论坛/问答</a>
+</td>
+<td>
+<a class="" href="/explore/blog?lang=c-cpp&amp;license=Apache-2.0">博客系统</a>
+</td>
+</tr>
+<tr>
+<td>
+<a class="" href="/explore/survey?lang=c-cpp&amp;license=Apache-2.0">问卷调查/表单系统</a>
+</td>
+<td>
+<a class="" href="/explore/sns?lang=c-cpp&amp;license=Apache-2.0">SNS社交系统</a>
+</td>
+</tr>
+<tr>
+<td>
+<a class="" href="/explore/instructional?lang=c-cpp&amp;license=Apache-2.0">教学管理</a>
+</td>
+<td>
+<a class="" href="/explore/gallery?lang=c-cpp&amp;license=Apache-2.0">相册/画廊/照片</a>
+</td>
+</tr>
+<tr>
+<td>
+<a class="" href="/explore/rss?lang=c-cpp&amp;license=Apache-2.0">RSS/Atom工具</a>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class='explore-categories__item'>
+<a href="/explore/web-app-develop?lang=c-cpp&amp;license=Apache-2.0"><i class='explore-categories__item-icon icon-tag-web iconfont'></i>
+WEB应用开发
+</a><div class='ui popup explore-categories__second'>
+<table>
+<tbody>
+<tr>
+<td>
+<a class="" href="/explore/webframework?lang=c-cpp&amp;license=Apache-2.0">Web开发框架</a>
+</td>
+<td>
+<a class="" href="/explore/jquery-plugins?lang=c-cpp&amp;license=Apache-2.0">jQuery插件</a>
+</td>
+</tr>
+<tr>
+<td>
+<a class="" href="/explore/webui?lang=c-cpp&amp;license=Apache-2.0">WebUI组件/框架</a>
+</td>
+<td>
+<a class="" href="/explore/javascript-toolkits?lang=c-cpp&amp;license=Apache-2.0">JavaScript工具包</a>
+</td>
+</tr>
+<tr>
+<td>
+<a class="" href="/explore/restful?lang=c-cpp&amp;license=Apache-2.0">RESTful项目</a>
+</td>
+<td>
+<a class="" href="/explore/backend?lang=c-cpp&amp;license=Apache-2.0">后台管理框架</a>
+</td>
+</tr>
+<tr>
+<td>
+<a class="" href="/explore/site-theme?lang=c-cpp&amp;license=Apache-2.0">网站主题</a>
+</td>
+<td>
+<a class="" href="/explore/vue-extensions?lang=c-cpp&amp;license=Apache-2.0">Vue扩展组件</a>
+</td>
+</tr>
+<tr>
+<td>
+<a class="" href="/explore/spider?lang=c-cpp&amp;license=Apache-2.0">Web爬虫</a>
+</td>
+<td>
+<a class="" href="/explore/oauth-dev?lang=c-cpp&amp;license=Apache-2.0">OAuth/单点登录/统一认证</a>
+</td>
+</tr>
+<tr>
+<td>
+<a class="" href="/explore/angular-extensions?lang=c-cpp&amp;license=Apache-2.0">Angular扩展</a>
+</td>
+<td>
+<a class="" href="/explore/bootstrap-plugins?lang=c-cpp&amp;license=Apache-2.0">Bootstrap扩展插件</a>
+</td>
+</tr>
+<tr>
+<td>
+<a class="" href="/explore/react-extensions?lang=c-cpp&amp;license=Apache-2.0">React 组件</a>
+</td>
+<td>
+<a class="" href="/explore/rpc?lang=c-cpp&amp;license=Apache-2.0">RPC开发框架</a>
+</td>
+</tr>
+<tr>
+<td>
+<a class="" href="/explore/api-gateway?lang=c-cpp&amp;license=Apache-2.0">API 网关</a>
+</td>
+<td>
+<a class="" href="/explore/short-url?lang=c-cpp&amp;license=Apache-2.0">短网址</a>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class='explore-categories__item'>
+<a href="/explore/application-tools?lang=c-cpp&amp;license=Apache-2.0"><i class='explore-categories__item-icon icon-tag-app iconfont'></i>
+应用工具
+</a><div class='ui popup explore-categories__second'>
+<table>
+<tbody>
+<tr>
+<td>
+<a class="" href="/explore/filemanager?lang=c-cpp&amp;license=Apache-2.0">文件管理工具</a>
+</td>
+<td>
+<a class="" href="/explore/multimedia?lang=c-cpp&amp;license=Apache-2.0">多媒体</a>
+</td>
+</tr>
+<tr>
+<td>
+<a class="" href="/explore/text-editor?lang=c-cpp&amp;license=Apache-2.0">文本编辑</a>
+</td>
+<td>
+<a class="" href="/explore/im?lang=c-cpp&amp;license=Apache-2.0">IM即时通讯/聊天</a>
+</td>
+</tr>
+<tr>
+<td>
+<a class="" href="/explore/application-software?lang=c-cpp&amp;license=Apache-2.0">应用软件</a>
+</td>
+<td>
+<a class="" href="/explore/vsc-plugins?lang=c-cpp&amp;license=Apache-2.0">Visual Studio Code 扩展</a>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class='explore-categories__item'>
+<a href="/explore/mobile-develop?lang=c-cpp&amp;license=Apache-2.0"><i class='explore-categories__item-icon icon-tag-mobile iconfont'></i>
+手机/移动开发
+</a><div class='ui popup explore-categories__second'>
+<table>
+<tbody>
+<tr>
+<td>
+<a class="" href="/explore/android-modules?lang=c-cpp&amp;license=Apache-2.0">Android组件/项目</a>
+</td>
+<td>
+<a class="" href="/explore/ios-modules?lang=c-cpp&amp;license=Apache-2.0">iOS组件</a>
+</td>
+</tr>
+<tr>
+<td>
+<a class="" href="/explore/mobile-app?lang=c-cpp&amp;license=Apache-2.0">移动App</a>
+</td>
+<td>
+<a class="" href="/explore/alipay?lang=c-cpp&amp;license=Apache-2.0">支付宝小程序</a>
+</td>
+</tr>
+<tr>
+<td>
+<a class="" href="/explore/baidu-app?lang=c-cpp&amp;license=Apache-2.0">百度小程序</a>
+</td>
+<td>
+<a class="" href="/explore/phonegap-cordova-plugins?lang=c-cpp&amp;license=Apache-2.0">PhoneGap/Cordova 插件</a>
+</td>
+</tr>
+<tr>
+<td>
+<a class="" href="/explore/cross-platform-mobiledev?lang=c-cpp&amp;license=Apache-2.0">跨平台移动开发</a>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class='explore-categories__item'>
+<a href="/explore/manage-monitor?lang=c-cpp&amp;license=Apache-2.0"><i class='explore-categories__item-icon icon-tag-manage iconfont'></i>
+DevOps/运维/网管
+</a><div class='ui popup explore-categories__second'>
+<table>
+<tbody>
+<tr>
+<td>
+<a class="" href="/explore/devops?lang=c-cpp&amp;license=Apache-2.0">DevOps运维开发</a>
+</td>
+<td>
+<a class="" href="/explore/nms?lang=c-cpp&amp;license=Apache-2.0">网管工具</a>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class='explore-categories__item'>
+<a href="/explore/develop-tools?lang=c-cpp&amp;license=Apache-2.0"><i class='explore-categories__item-icon icon-tag-devtool iconfont'></i>
+开发工具
+</a><div class='ui popup explore-categories__second'>
+<table>
+<tbody>
+<tr>
+<td>
+<a class="" href="/explore/vcs?lang=c-cpp&amp;license=Apache-2.0">版本管理系统</a>
+</td>
+<td>
+<a class="" href="/explore/devtools?lang=c-cpp&amp;license=Apache-2.0">开发/调试</a>
+</td>
+</tr>
+<tr>
+<td>
+<a class="" href="/explore/doc-tools?lang=c-cpp&amp;license=Apache-2.0">Wiki/文档工具</a>
+</td>
+<td>
+<a class="" href="/explore/ci?lang=c-cpp&amp;license=Apache-2.0">编译/构建/部署</a>
+</td>
+</tr>
+<tr>
+<td>
+<a class="" href="/explore/maven-plugin?lang=c-cpp&amp;license=Apache-2.0">Maven 插件</a>
+</td>
+<td>
+<a class="" href="/explore/idea-plugins?lang=c-cpp&amp;license=Apache-2.0">IDEA 插件</a>
+</td>
+</tr>
+<tr>
+<td>
+<a class="" href="/explore/gulp-extend?lang=c-cpp&amp;license=Apache-2.0">Gulp 扩展</a>
+</td>
+<td>
+<a class="" href="/explore/testing?lang=c-cpp&amp;license=Apache-2.0">测试工具</a>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class='explore-categories__item'>
+<a href="/explore/server-app?lang=c-cpp&amp;license=Apache-2.0"><i class='explore-categories__item-icon icon-tag-server iconfont'></i>
+服务器应用
+</a><div class='ui popup explore-categories__second'>
+<table>
+<tbody>
+<tr>
+<td>
+<a class="" href="/explore/distributed-service?lang=c-cpp&amp;license=Apache-2.0">分布式服务/框架</a>
+</td>
+<td>
+<a class="" href="/explore/message-server?lang=c-cpp&amp;license=Apache-2.0">消息服务器/消息队列</a>
+</td>
+</tr>
+<tr>
+<td>
+<a class="" href="/explore/docker-related?lang=c-cpp&amp;license=Apache-2.0">Docker相关</a>
+</td>
+<td>
+<a class="" href="/explore/containers?lang=c-cpp&amp;license=Apache-2.0">容器/虚拟机</a>
+</td>
+</tr>
+<tr>
+<td>
+<a class="" href="/explore/nginx-modules?lang=c-cpp&amp;license=Apache-2.0">Nginx扩展模块</a>
+</td>
+<td>
+<a class="" href="/explore/big-data?lang=c-cpp&amp;license=Apache-2.0">大数据</a>
+</td>
+</tr>
+<tr>
+<td>
+<a class="" href="/explore/cloud?lang=c-cpp&amp;license=Apache-2.0">云计算</a>
+</td>
+<td>
+<a class="" href="/explore/lamp?lang=c-cpp&amp;license=Apache-2.0">一键安装包</a>
+</td>
+</tr>
+<tr>
+<td>
+<a class="" href="/explore/openresty-extensions?lang=c-cpp&amp;license=Apache-2.0">OpenResty 扩展</a>
+</td>
+<td>
+<a class="" href="/explore/system-optimization?lang=c-cpp&amp;license=Apache-2.0">系统性能优化</a>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class='explore-categories__item'>
+<a href="/explore/database-related?lang=c-cpp&amp;license=Apache-2.0"><i class='explore-categories__item-icon icon-tag-database iconfont'></i>
+数据库相关
+</a><div class='ui popup explore-categories__second'>
+<table>
+<tbody>
+<tr>
+<td>
+<a class="" href="/explore/database-dev?lang=c-cpp&amp;license=Apache-2.0">数据库开发包</a>
+</td>
+<td>
+<a class="" href="/explore/database-service?lang=c-cpp&amp;license=Apache-2.0">数据库服务</a>
+</td>
+</tr>
+<tr>
+<td>
+<a class="" href="/explore/dbmanager?lang=c-cpp&amp;license=Apache-2.0">数据库管理/监控</a>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class='explore-categories__item'>
+<a href="/explore/game-and-entertainment?lang=c-cpp&amp;license=Apache-2.0"><i class='explore-categories__item-icon icon-tag-game iconfont'></i>
+游戏/娱乐
+</a><div class='ui popup explore-categories__second'>
+<table>
+<tbody>
+<tr>
+<td>
+<a class="" href="/explore/games?lang=c-cpp&amp;license=Apache-2.0">游戏</a>
+</td>
+<td>
+<a class="" href="/explore/game-dev?lang=c-cpp&amp;license=Apache-2.0">游戏开发</a>
+</td>
+</tr>
+<tr>
+<td>
+<a class="" href="/explore/3d-engine?lang=c-cpp&amp;license=Apache-2.0">3D引擎</a>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class='explore-categories__item'>
+<a href="/explore/plugin-and-extension?lang=c-cpp&amp;license=Apache-2.0"><i class='explore-categories__item-icon icon-tag-plugin iconfont'></i>
+插件和扩展
+</a><div class='ui popup explore-categories__second'>
+<table>
+<tbody>
+<tr>
+<td>
+<a class="" href="/explore/chrome-plugins?lang=c-cpp&amp;license=Apache-2.0">Chrome扩展</a>
+</td>
+<td>
+<a class="" href="/explore/wordpress-plugins?lang=c-cpp&amp;license=Apache-2.0">WordPress 扩展</a>
+</td>
+</tr>
+<tr>
+<td>
+<a class="" href="/explore/eclipse-plugins?lang=c-cpp&amp;license=Apache-2.0">Eclipse插件</a>
+</td>
+<td>
+<a class="" href="/explore/firefox-addons?lang=c-cpp&amp;license=Apache-2.0">Firefox扩展</a>
+</td>
+</tr>
+<tr>
+<td>
+<a class="" href="/explore/safari-plugins?lang=c-cpp&amp;license=Apache-2.0">Safari 插件</a>
+</td>
+<td>
+<a class="" href="/explore/jenkins-plugins?lang=c-cpp&amp;license=Apache-2.0">Jenkins 插件</a>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class='explore-categories__item'>
+<a href="/explore/other-open-source?lang=c-cpp&amp;license=Apache-2.0"><i class='explore-categories__item-icon icon-tag-misc iconfont'></i>
+其他开源
+</a><div class='ui popup explore-categories__second'>
+<table>
+<tbody>
+<tr>
+<td>
+<a class="" href="/explore/education?lang=c-cpp&amp;license=Apache-2.0">教学管理</a>
+</td>
+<td>
+<a class="" href="/explore/simulated-projects?lang=c-cpp&amp;license=Apache-2.0">高仿项目</a>
+</td>
+</tr>
+<tr>
+<td>
+<a class="" href="/explore/hardware?lang=c-cpp&amp;license=Apache-2.0">硬件相关项目</a>
+</td>
+<td>
+<a class="" href="/explore/ebooks-manual?lang=c-cpp&amp;license=Apache-2.0">图书/手册/教程</a>
+</td>
+</tr>
+<tr>
+<td>
+<a class="" href="/explore/acm?lang=c-cpp&amp;license=Apache-2.0">ACM/OJ 项目</a>
+</td>
+<td>
+<a class="" href="/explore/os?lang=c-cpp&amp;license=Apache-2.0">操作系统</a>
+</td>
+</tr>
+<tr>
+<td>
+<a class="" href="/explore/iot?lang=c-cpp&amp;license=Apache-2.0">物联网/边缘计算</a>
+</td>
+<td>
+<a class="" href="/explore/sample-code?lang=c-cpp&amp;license=Apache-2.0">教程配套代码</a>
+</td>
+</tr>
+<tr>
+<td>
+<a class="" href="/explore/vehicle?lang=c-cpp&amp;license=Apache-2.0">车载应用</a>
+</td>
+<td>
+<a class="" href="/explore/risc-v?lang=c-cpp&amp;license=Apache-2.0">RISC-V 开发</a>
+</td>
+</tr>
+<tr>
+<td>
+<a class="" href="/explore/bio-medical?lang=c-cpp&amp;license=Apache-2.0">生物/医疗/健康</a>
+</td>
+<td>
+<a class="" href="/explore/tcb-hackthon?lang=c-cpp&amp;license=Apache-2.0">2020公益黑客马拉松</a>
+</td>
+</tr>
+<tr>
+<td>
+<a class="" href="/explore/2019-ncov?lang=c-cpp&amp;license=Apache-2.0">新冠病毒相关开源</a>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<script>
+  $('.explore-categories__item').has('.popup').find('> a')
+    .popup({
+      inline     : true,
+      hoverable  : true,
+      position   : 'right center',
+    })
+</script>
+
+</div>
+<div class='nine wide column'>
+<div class='explore-projects__detail-list'>
+<div class='explore-project__selection'>
+<div class='explore-project__selection-container'>
+<div class='ui breadcrumb'>
+<a class="section" href="/explore/program-develop">程序开发</a>
+<div class='divider'>/</div>
+<div class='active section'>编程语言/脚本语言</div>
+</div>
+<div class='actions'>
+<div class='ui floating scrolling dropdown gradient button'>
+<div class='text'>Apache-2.0</div>
+<i class='icon dropdown'></i>
+<div class='menu'>
+<a class="item" href="/explore/scripting-language?lang=c-cpp">全部项目</a>
+<a class="item" href="/explore/scripting-language?lang=c-cpp&amp;license=MulanPSL-1.0">MulanPSL-1.0</a>
+<a class="item" href="/explore/scripting-language?lang=c-cpp&amp;license=0BSD">0BSD</a>
+<a class="item" href="/explore/scripting-language?lang=c-cpp&amp;license=AFL-3.0">AFL-3.0</a>
+<a class="item" href="/explore/scripting-language?lang=c-cpp&amp;license=AGPL-3.0">AGPL-3.0</a>
+<a class="item" href="/explore/scripting-language?lang=c-cpp&amp;license=Artistic-2.0">Artistic-2.0</a>
+<a class="item" href="/explore/scripting-language?lang=c-cpp&amp;license=BSD-2-Clause">BSD-2-Clause</a>
+<a class="item" href="/explore/scripting-language?lang=c-cpp&amp;license=BSD-3-Clause">BSD-3-Clause</a>
+<a class="item" href="/explore/scripting-language?lang=c-cpp&amp;license=BSD-3-Clause-Clear">BSD-3-Clause-Clear</a>
+<a class="item" href="/explore/scripting-language?lang=c-cpp&amp;license=BSL-1.0">BSL-1.0</a>
+<a class="item" href="/explore/scripting-language?lang=c-cpp&amp;license=CC-BY-4.0">CC-BY-4.0</a>
+<a class="item" href="/explore/scripting-language?lang=c-cpp&amp;license=CC-BY-SA-4.0">CC-BY-SA-4.0</a>
+<a class="item" href="/explore/scripting-language?lang=c-cpp&amp;license=CC0-1.0">CC0-1.0</a>
+<a class="item" href="/explore/scripting-language?lang=c-cpp&amp;license=ECL-2.0">ECL-2.0</a>
+<a class="item" href="/explore/scripting-language?lang=c-cpp&amp;license=EPL-1.0">EPL-1.0</a>
+<a class="item" href="/explore/scripting-language?lang=c-cpp&amp;license=EPL-2.0">EPL-2.0</a>
+<a class="item" href="/explore/scripting-language?lang=c-cpp&amp;license=EUPL-1.1">EUPL-1.1</a>
+<a class="item" href="/explore/scripting-language?lang=c-cpp&amp;license=EUPL-1.2">EUPL-1.2</a>
+<a class="item" href="/explore/scripting-language?lang=c-cpp&amp;license=GPL-2.0">GPL-2.0</a>
+<a class="item" href="/explore/scripting-language?lang=c-cpp&amp;license=GPL-3.0">GPL-3.0</a>
+<a class="item" href="/explore/scripting-language?lang=c-cpp&amp;license=ISC">ISC</a>
+<a class="item" href="/explore/scripting-language?lang=c-cpp&amp;license=LGPL-2.1">LGPL-2.1</a>
+<a class="item" href="/explore/scripting-language?lang=c-cpp&amp;license=LGPL-3.0">LGPL-3.0</a>
+<a class="item" href="/explore/scripting-language?lang=c-cpp&amp;license=LPPL-1.3c">LPPL-1.3c</a>
+<a class="item" href="/explore/scripting-language?lang=c-cpp&amp;license=MIT">MIT</a>
+<a class="item" href="/explore/scripting-language?lang=c-cpp&amp;license=MPL-2.0">MPL-2.0</a>
+<a class="item" href="/explore/scripting-language?lang=c-cpp&amp;license=MS-PL">MS-PL</a>
+<a class="item" href="/explore/scripting-language?lang=c-cpp&amp;license=MS-RL">MS-RL</a>
+<a class="item" href="/explore/scripting-language?lang=c-cpp&amp;license=MulanPSL-2.0">MulanPSL-2.0</a>
+<a class="item" href="/explore/scripting-language?lang=c-cpp&amp;license=NCSA">NCSA</a>
+<a class="item" href="/explore/scripting-language?lang=c-cpp&amp;license=OFL-1.1">OFL-1.1</a>
+<a class="item" href="/explore/scripting-language?lang=c-cpp&amp;license=OSL-3.0">OSL-3.0</a>
+<a class="item" href="/explore/scripting-language?lang=c-cpp&amp;license=PostgreSQL">PostgreSQL</a>
+<a class="item" href="/explore/scripting-language?lang=c-cpp&amp;license=UPL-1.0">UPL-1.0</a>
+<a class="item" href="/explore/scripting-language?lang=c-cpp&amp;license=Unlicense">Unlicense</a>
+<a class="item" href="/explore/scripting-language?lang=c-cpp&amp;license=WTFPL">WTFPL</a>
+<a class="item" href="/explore/scripting-language?lang=c-cpp&amp;license=Zlib">Zlib</a>
+</div>
+</div>
+<div class='ui floating scrolling dropdown gradient button'>
+<div class='text'>Starred</div>
+<i class='icon dropdown'></i>
+<div class='menu'>
+<a class="item" href="/explore/scripting-language?lang=c-cpp&amp;license=Apache-2.0&amp;order=starred">Starred</a>
+<a class="item" href="/explore/scripting-language?lang=c-cpp&amp;license=Apache-2.0&amp;order=recommend">最新推荐</a>
+<a class="item" href="/explore/scripting-language?lang=c-cpp&amp;license=Apache-2.0&amp;order=latest">最近更新</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script>
+  $(function () {
+    $('.explore-project__selection .dropdown').dropdown()
+  })
+</script>
+
+<div class='ui divider'></div>
+<div class='ui relaxed divided items explore-repo__list'>
+<div class='item text-muted' style='text-align: center;'>啥也没有</div>
+</div>
+
+
+</div>
+</div>
+<div class='four wide column'>
+<div class='explore-languagues'>
+<div class='explore-languagues__container'>
+<div class='ui secondary vertical menu'>
+<a class="item " href="/explore/scripting-language?license=Apache-2.0"><span>全部语言</span>
+<span class='pull-right'>14</span>
+</a><a class="item " href="/explore/scripting-language?lang=Java&amp;license=Apache-2.0"><span>Java</span>
+<span class='pull-right'>4</span>
+</a><a class="item " href="/explore/scripting-language?lang=JavaScript&amp;license=Apache-2.0"><span>JavaScript</span>
+<span class='pull-right'>2</span>
+</a><a class="item " href="/explore/scripting-language?lang=C&amp;license=Apache-2.0"><span>C</span>
+<span class='pull-right'>1</span>
+</a><a class="item " href="/explore/scripting-language?lang=csharp&amp;license=Apache-2.0"><span>C#</span>
+<span class='pull-right'>1</span>
+</a><a class="item " href="/explore/scripting-language?lang=cpp&amp;license=Apache-2.0"><span>C++</span>
+<span class='pull-right'>1</span>
+</a><a class="item " href="/explore/scripting-language?lang=Scala&amp;license=Apache-2.0"><span>Scala</span>
+<span class='pull-right'>1</span>
+</a><a class="item " href="/explore/scripting-language?lang=Lua&amp;license=Apache-2.0"><span>Lua</span>
+<span class='pull-right'>1</span>
+</a><a class="item " href="/explore/scripting-language?lang=Erlang&amp;license=Apache-2.0"><span>Erlang</span>
+<span class='pull-right'>1</span>
+</a><a class="item " href="/explore/scripting-language?lang=Swift&amp;license=Apache-2.0"><span>Swift</span>
+<span class='pull-right'>1</span>
+</a></div>
+<div class='ui secondary vertical menu hide explore-languagues__detail-menu'>
+<a class="item " href="/explore/scripting-language?lang=Kotlin&amp;license=Apache-2.0"><span>Kotlin</span>
+<span class='pull-right'>1</span>
+</a></div>
+<a class='show-more'>更多语言</a>
+</div>
+</div>
+<script>
+  $(function () {
+    var $detailMenu = $('.explore-languagues__detail-menu')
+    var $showBtn = $('.explore-languagues .show-more')
+  
+    $showBtn.on('click', function () {
+      if ($detailMenu.hasClass('hide')) {
+        $detailMenu.removeClass('hide')
+        $showBtn.text('收起')
+      } else {
+        $detailMenu.addClass('hide')
+        $showBtn.text('更多语言')
+      }
+    })
+  
+    if ($detailMenu.has('.active').length) {
+      $showBtn.trigger('click')
+    }
+  })
+</script>
+
+<div class='explore-trending-projects__container'>
+<div class='ui pointing secondary menu'>
+<div class='item active' data-tab='daily-trending'>今日热门</div>
+<div class='item' data-tab='weekly-trending'>本周热门</div>
+</div>
+<div class='ui tab active' data-tab='daily-trending'>
+<div class='explore-trending-projects__list'>
+<div class='explore-trending-projects__list-item'>
+<div class='title'>
+<a href="/xrkmonitorcom/open" target="_blank" title="xrkmonitor/xrkmonitor">xrkmonitor/xrkmonitor</a>
+</div>
+<div class='description'>xrkmonitor - 集自定义监控、日志监控、数据可视化以及监控告警为一体的国产开源监控系统，直接部署即可使用。</div>
+</div>
+<div class='explore-trending-projects__list-item'>
+<div class='title'>
+<a href="/TarsCloud/TarsCpp" target="_blank" title="TarsCloud/TarsCpp">TarsCloud/TarsCpp</a>
+</div>
+<div class='description'>该工程是Tars RPC框架C++语言的源代码 目录名称 功能 servant C++语言框架rpc的源码实现 tools C++语言框架IDL工具的源码实现 util C++语言</div>
+</div>
+<div class='explore-trending-projects__list-item'>
+<div class='title'>
+<a href="/armxu/ESPDuinoCode" target="_blank" title="armxu/基于ESPDuino的智慧物联开发宝典源码170907">armxu/基于ESPDuino的智慧物联开发宝典源码170907</a>
+</div>
+<div class='description'>基于ESPDuino的智慧物联开发宝典源码170907</div>
+</div>
+<div class='explore-trending-projects__list-item'>
+<div class='title'>
+<a href="/Mixao/UartServer" target="_blank" title="MonkeyCode/UartServer">MonkeyCode/UartServer</a>
+</div>
+<div class='description'>串口编程接口规范</div>
+</div>
+<div class='explore-trending-projects__list-item'>
+<div class='title'>
+<a href="/ALONE_WORK/QtCeShiXiangMu" target="_blank" title="ALONE_WORK/QtModuleTest">ALONE_WORK/QtModuleTest</a>
+</div>
+<div class='description'>本项目中包含多个Qt的Demo程序，用于各个模块的测试使用</div>
+</div>
+<div class='explore-trending-projects__list-item'>
+<div class='title'>
+<a href="/TarsCloud/Tars" target="_blank" title="TarsCloud/Tars">TarsCloud/Tars</a>
+</div>
+<div class='description'>Tars 是基于名字服务使用 Tars 协议的高性能 RPC 开发框架，同时配套一体化的服务治理平台，帮助个人或者企业快速的以微服务的方式构建自己稳定可靠的分布式应用</div>
+</div>
+<div class='explore-trending-projects__list-item'>
+<div class='title'>
+<a href="/drabel/LibQQt" target="_blank" title="LibQQt应用程序开发组织/LibQQt">LibQQt应用程序开发组织/LibQQt</a>
+</div>
+<div class='description'>基于Qt，为嵌入式、Android、iOS、桌面开发制作的应用程序开发框架。</div>
+</div>
+</div>
+</div>
+<div class='ui tab' data-tab='weekly-trending'>
+<div class='explore-trending-projects__list'>
+<div class='explore-trending-projects__list-item'>
+<div class='title'>
+<a href="/xrkmonitorcom/open" target="_blank" title="xrkmonitor/xrkmonitor">xrkmonitor/xrkmonitor</a>
+</div>
+<div class='description'>xrkmonitor - 集自定义监控、日志监控、数据可视化以及监控告警为一体的国产开源监控系统，直接部署即可使用。</div>
+</div>
+<div class='explore-trending-projects__list-item'>
+<div class='title'>
+<a href="/ALONE_WORK/QtCeShiXiangMu" target="_blank" title="ALONE_WORK/QtModuleTest">ALONE_WORK/QtModuleTest</a>
+</div>
+<div class='description'>本项目中包含多个Qt的Demo程序，用于各个模块的测试使用</div>
+</div>
+<div class='explore-trending-projects__list-item'>
+<div class='title'>
+<a href="/TarsCloud/TarsCpp" target="_blank" title="TarsCloud/TarsCpp">TarsCloud/TarsCpp</a>
+</div>
+<div class='description'>该工程是Tars RPC框架C++语言的源代码 目录名称 功能 servant C++语言框架rpc的源码实现 tools C++语言框架IDL工具的源码实现 util C++语言</div>
+</div>
+<div class='explore-trending-projects__list-item'>
+<div class='title'>
+<a href="/scarsty/kys-cpp" target="_blank" title="sb500/kys-cpp">sb500/kys-cpp</a>
+</div>
+<div class='description'>《金庸群侠传》C++复刻版，这是一个以SDL2为基础实现的2D游戏引擎。同时相当于提供了一个使用该引擎制作DOS游戏《金庸群侠传》移植版的范例。</div>
+</div>
+<div class='explore-trending-projects__list-item'>
+<div class='title'>
+<a href="/neuks/RouteSpace" target="_blank" title="一心/RouteSpace 电路设计软件">一心/RouteSpace 电路设计软件</a>
+</div>
+<div class='description'>RouteSpace 电路设计软件</div>
+</div>
+<div class='explore-trending-projects__list-item'>
+<div class='title'>
+<a href="/jackarain/avpn" target="_blank" title="Jack.arain/avpn">Jack.arain/avpn</a>
+</div>
+<div class='description'>一个vpn的库实现，在这个基础上，可以轻松实现tun2socks等功能。</div>
+</div>
+<div class='explore-trending-projects__list-item'>
+<div class='title'>
+<a href="/wbhex/qt-WRCharting" target="_blank" title="何雄/qt-WRCharting">何雄/qt-WRCharting</a>
+</div>
+<div class='description'>使用QT开发的无线电相关基本图形，主要包括频谱图，瀑布图，波形图等</div>
+</div>
+<div class='explore-trending-projects__list-item'>
+<div class='title'>
+<a href="/polarphp/polarphp" target="_blank" title="polarphp/polarphp">polarphp/polarphp</a>
+</div>
+<div class='description'>PHP 语言编译器和运行时</div>
+</div>
+<div class='explore-trending-projects__list-item'>
+<div class='title'>
+<a href="/lambochen/algorithm" target="_blank" title="LamboChen/algorithm">LamboChen/algorithm</a>
+</div>
+<div class='description'>数据结构与算法学习，ACM，算法竞赛</div>
+</div>
+<div class='explore-trending-projects__list-item'>
+<div class='title'>
+<a href="/drabel/LibQQt" target="_blank" title="LibQQt应用程序开发组织/LibQQt">LibQQt应用程序开发组织/LibQQt</a>
+</div>
+<div class='description'>基于Qt，为嵌入式、Android、iOS、桌面开发制作的应用程序开发框架。</div>
+</div>
+</div>
+</div>
+</div>
+<script>
+  $(function () {
+    $('.explore-trending-projects__container .menu .item').tab()
+  })
+</script>
+
+</div>
+</div>
+</div>
+</div>
+</div>
+
+</div>
+<footer id='git-footer-main'>
+<div class='ui container'>
+<div class='ui two column grid '>
+<div class='nine wide column git-footer-left'>
+<p><a href="https://gitee.com/" target="_blank">© Gitee.com</a></p>
+<div class='ui four column grid' id='footer-left'>
+<div class='column'>
+<div class='ui link list'>
+<div class='item'>
+<a class="item" href="/about_us">关于我们</a>
+</div>
+<div class='item'>
+<a class="item" href="/terms">使用条款</a>
+</div>
+<div class='item'>
+<a class="item" href="/oschina/git-osc/issues">意见建议</a>
+</div>
+<div class='item'>
+<a class="item" href="/links.html">合作伙伴</a>
+</div>
+</div>
+</div>
+<div class='column'>
+<div class='ui link list'>
+<div class='item'>
+<a class="item" href="/all-about-git">Git 大全</a>
+</div>
+<div class='item'>
+<a class="item" href="https://oschina.gitee.io/learn-git-branching/">Git 命令学习</a>
+</div>
+<div class='item'>
+<a class="item" href="https://copycat.gitee.com/">代码克隆检测</a>
+</div>
+<div class='item'>
+<a class="item" href="/appclient">APP与插件下载</a>
+</div>
+</div>
+</div>
+<div class='column'>
+<div class='ui link list'>
+<div class='item'>
+<a class="item" href="/gitee-stars">码云封面人物</a>
+</div>
+<div class='item'>
+<a class="item" href="/gvp">GVP项目</a>
+</div>
+<div class='item'>
+<a class="item" href="https://blog.gitee.com/">码云博客</a>
+</div>
+<div class='item'>
+<a class="item" href="/enterprises#nonprofit-plan">Gitee 公益计划</a>
+</div>
+</div>
+</div>
+<div class='column'>
+<div class='ui link list'>
+<div class='item'>
+<a class="item" href="/api/v5/swagger">OpenAPI</a>
+</div>
+<div class='item'>
+<a class="item" href="/help">帮助文档</a>
+</div>
+<div class='item'>
+<a class="item" href="/self_services">在线自助服务</a>
+</div>
+<div class='item'>
+<a class="item" href="/git-osc">更新日志</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class='seven wide column right aligned followus git-footer-right'>
+<div class='qrcode weixin'>
+<img alt="Qrcode weixin" src="https://assets.gitee.com/assets/qrcode-weixin-9e7cfb27165143d2b8e8b268a52ea822.jpg" />
+<p class='weixin-text'>微信服务号</p>
+</div>
+<div class='phone-and-qq column'>
+<div class='ui list official-support-container'>
+<div class='item'>
+<a class="icon-popup" href="//shang.qq.com/wpa/qunwpa?idkey=df785aa7af71f7d74149ab062742d761b845464350ecba25eb440357a3e573b7" title="点击加入码云官方群"><i class='iconfont icon-logo-qq'></i>
+<span>官方技术交流QQ群：1050025484</span>
+</a></div>
+<div class='item mail-and-zhihu'>
+<a href="mailto: git@oschina.cn"><i class='iconfont icon-ic-mail'></i>
+<span id='git-footer-email'>git#oschina.cn</span>
+</a><a href="https://www.zhihu.com/org/ma-yun-osc/ " target="_blank"><i class='iconfont icon-zhihu'></i>
+<span>码云Gitee</span>
+</a></div>
+<div class='item'>企业版售前及售后使用咨询：400-606-0201</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class='bottombar'>
+<div class='ui container'>
+<div class='ui grid'>
+<div class='seven wide column partner'>
+<div class='copyright'>
+<a href="http://www.beian.miit.gov.cn/">粤ICP备12009483号</a>
+深圳市奥思网络科技有限公司版权所有
+</div>
+</div>
+<div class='nine wide column right aligned'>
+<i class='icon world'></i>
+<a href="/language/zh-CN">简 体</a>
+/
+<a href="/language/zh-TW">繁 體</a>
+/
+<a href="/language/en">English</a>
+</div>
+</div>
+</div>
+</div>
+</footer>
+<script>
+  var officialEmail = $('#git-footer-email').text()
+  $('#git-footer-main .icon-popup').popup({ position: 'bottom center' })
+  $('#git-footer-email').text(officialEmail.replace('#', '@'))
+</script>
+
+
+<div class='side-toolbar'>
+<div class='button toolbar-help'>
+<i class='iconfont icon-help'></i>
+</div>
+<div class='ui popup left center dark'>点此查找更多帮助</div>
+<div class='toolbar-help-dialog'>
+<div class='toolbar-dialog-header'>
+<h3 class='toolbar-dialog-title'>搜索帮助</h3>
+<form accept-charset="UTF-8" action="/help/load_keywords_data" class="toolbar-help-search-form" method="get"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /></div>
+<div class='ui icon input fluid toolbar-help-search'>
+<input name='keywords' placeholder='请输入产品名称或问题' type='text'>
+<i class='icon search'></i>
+</div>
+</form>
+
+<i class='iconfont icon-close toolbar-dialog-close-icon'></i>
+</div>
+<div class='toolbar-dialog-content'>
+<div class='toolbar-help-hot-search'>
+<div class='toolbar-roll'>
+<a class="init active" href="https://oschina.gitee.io/learn-git-branching/?utm_source==gitee-help-widget" title="Git 命令在线学习"><i class='Blue icon icon-command iconfont'></i>
+<span>Git 命令在线学习</span>
+</a><a class="init " href="https://gitee.com/help/articles/4261?utm_source==gitee-help-widget" title="如何在码云上导入 GitHub 仓库"><i class='icon icon-clipboard iconfont orange'></i>
+<span>如何在码云上导入 GitHub 仓库</span>
+</a></div>
+<div class='toolbar-list'>
+<div class='toolbar-list-item'>
+<a href="/help/articles/4114">Git 仓库基础操作</a>
+</div>
+<div class='toolbar-list-item'>
+<a href="/help/articles/4166">企业版和社区版功能对比</a>
+</div>
+<div class='toolbar-list-item'>
+<a href="/help/articles/4191">SSH 公钥设置</a>
+</div>
+<div class='toolbar-list-item'>
+<a href="/help/articles/4194">如何处理代码冲突</a>
+</div>
+<div class='toolbar-list-item'>
+<a href="/help/articles/4232">仓库体积过大，如何减小？</a>
+</div>
+<div class='toolbar-list-item'>
+<a href="/help/articles/4279">如何找回被删除的仓库数据</a>
+</div>
+<div class='toolbar-list-item'>
+<a href="/help/articles/4283">码云使用容量说明</a>
+</div>
+<div class='toolbar-list-item'>
+<a href="/help/articles/4284">GitHub仓库快速导入Gitee及同步更新</a>
+</div>
+</div>
+</div>
+<div class='toolbar-help-search-reseult'>
+<div class='toolbar-help-flex-column'>
+<div class='ui centered inline loader toolbar-help-loader'></div>
+<div class='toolbar-list'></div>
+<div class='toolbar-help-link-to-help'>
+<a href="" target="_blank">查看更多搜索结果</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script>
+  var opt = { position: 'left center' };
+  var $helpSideToolbar = $(".button.toolbar-help");
+  var $toolbarRoll = $('.toolbar-roll');
+  
+  $(function() {
+    if (false) {
+      $helpSideToolbar.popup(opt);
+    } else {
+      $helpSideToolbar.popup('show', opt);
+      setTimeout(function() {
+        $helpSideToolbar.popup('hide', opt);
+      }, 3000);
+    }
+  
+    if ($toolbarRoll.length) {
+      setInterval(function() {
+        var $nextActiveLink = $toolbarRoll.find('a.active').next();
+        if (!$nextActiveLink.length) {
+          $nextActiveLink = $toolbarRoll.find('a:first-child');
+        }
+        $nextActiveLink.attr('class', 'active').siblings().removeClass('active init');
+      }, 5000);
+    }
+  })
+</script>
+
+<div class='button share-link'>
+<i class='iconfont icon-share'></i>
+</div>
+<div class='ui popup dark'>
+<div class='header'>
+分享到
+</div>
+<div class='bdsharebuttonbox' style='display: flex'>
+<a class='iconfont icon-home-service-wechat' data-cmd='weixin' title='分享到微信'></a>
+<a class='iconfont icon-weibo' data-cmd='tsina' title='分享到新浪微博'></a>
+<a class='iconfont icon-qq' data-cmd='sqq' title='分享到QQ好友'></a>
+<a class='iconfont icon-qzone' data-cmd='qzone' title='分享到QQ空间'></a>
+</div>
+</div>
+<div class='button gotop popup' id='gotop'>
+<i class='iconfont icon-top'></i>
+</div>
+<div class='ui popup dark'>回到顶部</div>
+</div>
+<style>
+  .side-toolbar .bdsharebuttonbox a {
+    font-size: 24px;
+    color: white !important;
+    opacity: 0.9;
+    margin: 6px 6px 0px 6px;
+    background-image: none;
+    text-indent: 0;
+    height: auto;
+    width: auto;
+  }
+</style>
+<script>
+  (function() {
+    $('#project-user-message').popup({
+      position: 'left center'
+    });
+  
+  }).call(this);
+</script>
+<script>
+  Gitee.initSideToolbar({})
+</script>
+<script>
+  window._bd_share_config = {
+    "common": {
+      "bdSnsKey": {},
+      "bdText": document.title,
+      "bdMini": "1",
+      "bdMiniList": ["bdxc","tqf","douban","bdhome","sqq","thx","ibaidu","meilishuo","mogujie","diandian","huaban","duitang","hx","fx","youdao","sdo","qingbiji","people","xinhua","mail","isohu","yaolan","wealink","ty","iguba","fbook","twi","linkedin","h163","evernotecn","copy","print"],
+      "bdPic": "",
+      "bdStyle": "1",
+      "bdSize": "32"
+    },
+    "share": {}
+  }
+</script>
+<script src="/bd_share/static/api/js/share.js"></script>
+
+
+
+
+
+<script>
+  (function() {
+    this.__gac = {
+      domain: 'www.oschina.net'
+    };
+  
+  }).call(this);
+</script>
+<script defer src='//www.oschina.net/public/javascripts/cjl/ga.js?t=20160926' type='text/javascript'></script>
+
+</body>
+</html>
