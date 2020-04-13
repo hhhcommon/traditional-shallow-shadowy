@@ -1,0 +1,527 @@
+<!DOCTYPE HTML>
+<html class="no-js">
+<head>
+  	<meta http-equiv="content-language" content="zh-CN">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="renderer" content="webkit">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  
+  	<meta name="shenma-site-verification" content="ecd4fdae4a097fb6956c04d32d068029_1554981681">
+  
+  	<!--Google 网站管理员验证-->
+    <meta name="google-site-verification" content="l7jBT83684yBPlnL-W7RbbI-G3GNI5_nZk2j0DwNehs" />
+    
+  	<!--搜狗    网站管理员验证-->
+  	<meta name="sogou_site_verification" content="OPAseatSMV"/>
+  	
+  	<!--Bing	网站管理员验证-->
+  	<meta name="msvalidate.01" content="A11864B533577E7D7803E18EA0FFBE3D" />
+        <title>现在网|现在博客-分享、记录生活的点滴</title>
+    <!-- 使用url函数转换相关路径 -->
+    <link href="https://cdn.bootcss.com/normalize/8.0.0/normalize.min.css" rel="stylesheet">
+    <!--<link href="https://static-1253554378.file.myqcloud.com/layui/2.4.5/css/layui.css" rel="stylesheet">-->
+    <link rel="stylesheet" href="https://nowtime.cc/usr/themes/default/grid.css">
+    <link rel="stylesheet" href="https://nowtime.cc/usr/themes/default/style.css">
+    <!--[if lt IE 9]>
+        <script src="https://cdn.bootcss.com/html5shiv/r29/html5.min.js"></script>
+        <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+<!--    <script src="https://cdn.bootcss.com/socket.io/2.2.0/socket.io.js"></script>-->
+<!--    transports='["websocket"]'-->
+    <!-- 通过自有函数输出HTML头部信息 -->
+    <meta name="keywords" content="现在网,现在博客,C/C++,技术博客,PHP开发,源码分享,奇技淫巧,建站技术,初文,PHP源码,Linux教程,PHP教程,刷机教程,Google,Android,ROM" />
+<meta name="generator" content="Typecho 1.2/18.1.29" />
+<meta name="template" content="default" />
+<link rel="pingback" href="https://nowtime.cc/action/xmlrpc" />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://nowtime.cc/action/xmlrpc?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://nowtime.cc/action/xmlrpc?wlw" />
+<link rel="alternate" type="application/rss+xml" title="现在网|现在博客-分享、记录生活的点滴 &raquo; RSS 2.0" href="https://nowtime.cc/feed/" />
+<link rel="alternate" type="application/rdf+xml" title="现在网|现在博客-分享、记录生活的点滴 &raquo; RSS 1.0" href="https://nowtime.cc/feed/rss/" />
+<link rel="alternate" type="application/atom+xml" title="现在网|现在博客-分享、记录生活的点滴 &raquo; ATOM 1.0" href="https://nowtime.cc/feed/atom/" />
+<link rel="stylesheet" type="text/css" href="https://nowtime.cc/usr/plugins/GoogleCodePrettify/src/desert.css" />	<meta name="baidu-site-verification" content="WNDZS9ZTbI" />
+<!--    <script>-->
+<!--    (function() {-->
+<!--        var socket = io('wss://websocket.iton.pw:2120');-->
+<!--        uid = getCookie('count_online_user');-->
+<!--        if(uid === ''){-->
+<!--            return;//中止执行-->
+<!--        }-->
+<!--        // socket连接后以uid登录-->
+<!--        socket.on('connect', function(){-->
+<!--            socket.emit('login', uid);-->
+<!--        });-->
+<!--        // 后端推送来在线数据时-->
+<!--        socket.on('update_online_count', function(online_stat){-->
+<!--            //console.log(online_stat);-->
+<!--          	$("#footer-online-num").html(online_stat);-->
+<!--        });-->
+<!--    })();-->
+<!---->
+<!--    function getCookie(cname)-->
+<!--    {-->
+<!--        var name = cname + "=";-->
+<!--        var ca = document.cookie.split(';');-->
+<!--        for(var i=0; i<ca.length; i++)-->
+<!--        {-->
+<!--            var c = ca[i].trim();-->
+<!--            if (c.indexOf(name)==0) return c.substring(name.length,c.length);-->
+<!--        }-->
+<!--        return "";-->
+<!--    }-->
+<!--</script>-->
+  </head>
+<body>
+  
+<!--[if lt IE 8]>
+    <div class="browsehappy" role="dialog">
+        当前网页 <strong>不支持</strong> 你正在使用的浏览器. 为了正常的访问, 请 <a href="http://browsehappy.com/">升级你的浏览器</a>.
+    </div>
+<![endif]-->
+
+<header id="header" class="clearfix">
+    <div class="container">
+        <div class="row">
+            <div class="site-name col-mb-12 col-9">
+                            <a id="logo" href="https://nowtime.cc/">现在网|现在博客-分享、记录生活的点滴</a>
+                <p class="description"></p>
+                        </div>
+            <div class="site-search col-3 kit-hidden-tb">
+                <form id="search" method="post" action="https://nowtime.cc/" role="search">
+                    <label for="s" class="sr-only">搜索关键字</label>
+                    <input type="text" name="s" class="text" placeholder="输入关键字搜索" />
+                    <button type="submit" class="submit">搜索</button>
+                </form>
+            </div>
+
+            <div class="col-mb-12">
+                <nav id="nav-menu" class="clearfix" role="navigation">
+                    <a class="current" href="https://nowtime.cc/">首页</a>
+                                                            <a href="https://nowtime.cc/liuyan.html" title="留言板">留言板</a>
+                                        <a href="https://nowtime.cc/time-line.html" title="时间线">时间线</a>
+                                        <a href="https://nowtime.cc/class-table.html" title="课程表">课程表</a>
+                                        <a href="https://nowtime.cc/links.html" title="友情链接">友情链接</a>
+                                        <a href="https://nowtime.cc/about.html" title="关于我&amp;本站">关于我&amp;本站</a>
+                                    </nav>
+            </div>
+        </div><!-- end .row -->
+    </div>
+</header><!-- end #header -->
+<div id="body">
+    <div class="container">
+        <div class="row">
+
+    
+    
+
+<div class="col-mb-12 col-8" id="main" role="main">
+	        <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+			<h2 class="post-title" itemprop="name headline"><a itemtype="url" href="https://nowtime.cc/php/922.html">TodayInHistory | 历史上的今天数据库 PHP版API</a></h2>
+			<ul class="post-meta">
+				<li itemprop="author" itemscope itemtype="http://schema.org/Person">作者: <a itemprop="name" href="https://nowtime.cc/author/1/" rel="author">Chuwen</a></li>
+				<li>时间: <time datetime="2020-04-12T22:23:42+08:00" itemprop="datePublished">2020-04-12</time></li>
+				<li>分类: <a href="https://nowtime.cc/category/php/">PHP</a></li>
+				<li itemprop="interactionCount"><a itemprop="discussionUrl" href="https://nowtime.cc/php/922.html#comments">评论</a></li>
+			</ul>
+            <div class="post-content" itemprop="articleBody">
+    			<h1>🕘 TodayInHistory | 历史上的今天</h1><p>历史上的今天数据库，数据源于“维基百科”，演示地址：<a href="https://api.nowtime.cc/today_in_history.html">https://api.nowtime.cc/today_in_history.html</a></p><p>GitHub 项目地址：<a href="https://github.com/PrintNow/TodayInHistory">https://github.com/PrintNow/TodayInHistory</a></p><p>对你有用别忘了点个 Start⭐</p><h2>💬 说一下爬虫思路</h2><ol><li>先下载 <code>https://zh.wikipedia.org/wiki/1月1日</code></li></ol><p>到 <code>https://zh.wikipedia.org/wiki/12月31日</code> 366天的页面（我用了 3分钟 左右全部下载完成）</p><ol><li>然后写代码（<del>用的世界上最好的语言</del> PHP）进行数据清洗，这步我花了好久，大概两三个小时（惭愧惭愧，水平有限😑）</li><li>清洗完成后导出为 <a href="history_in_today.json">history_in_today.json</a> 文件</li><li>然后写代码（<del>用的世界上最好的语言</del> PHP）将其批量插入 MySQL数据库</li><li>写 API 逻辑代码，我用的 ThinkPHP 框架，接口地址：<a href="https://api.nowtime.cc/v1/today_in_history">https://api.nowtime.cc/v1/today_in_history</a></li><li>然后根据我之前写的 <a href="https://github.com/PrintNow/TimeLine">PrintNow/TimeLine</a> 时间线，修改成了 <a href="index.html">index.html</a></li><li>然后你就看到了本项目</li></ol><h1>🧀 使用方法</h1><blockquote>我准备了两份数据 <a href="history_in_today.sql">history_in_today.sql</a> 和 <a href="history_in_today.json">history_in_today.json</a><br>你可以随意发挥，或使用我写好的，如下👇</blockquote><ol><li>🐘 准备一个 PHP 环境</li><li><a href="https://github.com/PrintNow/TodayInHistory/archive/master.zip">下载源码</a>，解压后<strong>放置网站根目录</strong></li><li>将 <code>history_in_today.sql</code> 导入 <code>MySQL 数据库</code></li><li>配置好数据库信息，在 <code>api.php</code> 第 14~17 行</li><li>修改 [static/script.js]() 第3行，将 <code>https://api.nowtime.cc/v1/today_in_history</code> 替换成 <code>http://你的域名/api.php</code></li><li>打开 <code>http://你的域名/index.html</code></li><li>enjoy 😋</li></ol><h1>🖼 截图</h1><p><img src="https://cdn.nowtime.cc/2020/04/12/3758673377.png" alt="历史上的今天" title="历史上的今天"></p><h1>⌨ API 字段说明</h1><h2>🥁 请求</h2><blockquote>使用 GET 方法请求 <code>https://api.nowtime.cc/v1/today_in_history</code></p><p>例子，获取<em>1月1日</em>，降序排序：<code>https://api.nowtime.cc/v1/today_in_history?month=1&amp;day=1&amp;order=asc</code></blockquote><table><thead><tr><th>字段</th><th>说明</th></tr></thead><tbody><tr><td>month</td><td>月份。默认值是本月，你可以输入 <code>1~12</code> 之间的数字</td></tr><tr><td>day</td><td>日期。默认值是今天，你可以输入 <code>1~31</code> 之间的数字</td></tr><tr><td>order</td><td>排序方式。根据 <strong>年份</strong>排序，默认值是 <code>desc</code> 降序（从大到小），你可以输入 <code>desc</code> 或 <code>asc</code></td></tr></tbody></table><h2>◀ 返回</h2><table><thead><tr><th>字段</th><th>类型</th><th>说明</th></tr></thead><tbody><tr><td>code</td><td>int</td><td><strong>[必有]</strong> 状态码，正常返回 <code>200</code>，其它包括数据不存在都返回如 500、-1</td></tr><tr><td>msg</td><td>string</td><td><strong>[必有]</strong> 信息，正常返回 <code>ok</code>，非 <code>200</code> 状态码返回<strong>错误原因</strong></td></tr><tr><td>count</td><td>int</td><td>历史上的今天返回数量</td></tr><tr><td>disclaimer</td><td>string</td><td><strong>[必有]</strong> 免责声明，可以自己在 <code>api.php</code> 第82行 进行修改</td></tr><tr><td>data</td><td>array</td><td>历史上的今天 数据，字段说明请看下方</td></tr><tr><td>year</td><td>int</td><td><strong>[必有]</strong> 年份，如果前面带有有负号 <code>-</code>，则代表是<strong>公元前</strong></td></tr><tr><td>month</td><td>int</td><td><strong>[必有]</strong> 月份</td></tr><tr><td>type</td><td>int</td><td><strong>[必有]</strong> 事件类型，1：大事件，2：出生，3：逝世</td></tr><tr><td>data</td><td>string</td><td><strong>[必有]</strong> 事件信息，如果当天有多个事件，将以 <code>${{delimiter}}</code> 作为分隔符进行分割。PHP 可以使用 <code>explode()</code> 函数进行分割，JavaScript 可以使用 <code>split</code> 方法进行分割</td></tr></tbody></table><blockquote>请注意，以下是我进行了修改的，实际返回条数不止 <strong>2条</strong></blockquote><pre><code>{
+    &quot;code&quot;: 200,
+    &quot;msg&quot;: &quot;ok&quot;,
+    &quot;count&quot;: 2,
+    &quot;disclaimer&quot;: &quot;数据源于“维基百科”，经过加工后为您呈现本数据，数据采集于 2020\/04\/12 12:00，在此之后一些数据可能发生了改变，请以事实为准！本站不承担任何因数据改变而造成的任何责任&quot;,
+    &quot;data&quot;: [{
+        &quot;year&quot;: 2020,
+        &quot;month&quot;: 1,
+        &quot;day&quot;: 1,
+        &quot;type&quot;: 3,
+        &quot;data&quot;: &quot;大卫·斯特恩，前任美国国家篮球协会总裁（1942年出生）&quot;
+    }, {
+        &quot;year&quot;: 2019,
+        &quot;month&quot;: 1,
+        &quot;day&quot;: 1,
+        &quot;type&quot;: 1,
+        &quot;data&quot;: &quot;中华民国实施大型餐饮业如连锁速食店等，内用将禁止提供塑胶吸管的规定[3][4]；中华民国依法届期终止第三代行动通讯（3G）业务。&quot;
+    }]
+}</code></pre>            </div>
+        </article>
+	        <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+			<h2 class="post-title" itemprop="name headline"><a itemtype="url" href="https://nowtime.cc/php/921.html">Typecho 使用 CommentToDingtalk (评论推送至钉钉)插件遇到的问题</a></h2>
+			<ul class="post-meta">
+				<li itemprop="author" itemscope itemtype="http://schema.org/Person">作者: <a itemprop="name" href="https://nowtime.cc/author/1/" rel="author">Chuwen</a></li>
+				<li>时间: <time datetime="2020-04-06T20:25:07+08:00" itemprop="datePublished">2020-04-06</time></li>
+				<li>分类: <a href="https://nowtime.cc/category/php/">PHP</a></li>
+				<li itemprop="interactionCount"><a itemprop="discussionUrl" href="https://nowtime.cc/php/921.html#comments">3 条评论</a></li>
+			</ul>
+            <div class="post-content" itemprop="articleBody">
+    			<blockquote>CommentToDingtalk 项目地址：<a href="https://github.com/MoLeft/CommentToDingtalk">https://github.com/MoLeft/CommentToDingtalk</a></blockquote><h1>运行报以下错误</h1><pre><code>Using $this when not in object context
+Error: Using $this when not in object context in //nowtime.cc/usr/plugins/CommentToDingtalk/Plugin.php:123
+Stack trace:
+#0 /nowtime.cc/usr/plugins/CommentToDingtalk/Plugin.php(87): CommentToDingtalk_Plugin::getWebhook('https://oapi.di...', 'SECca000000000...')
+#1 /nowtime.cc/var/Typecho/Plugin.php(489): CommentToDingtalk_Plugin::send(Object(Widget_Feedback), NULL)
+#2 /nowtime.cc/var/Widget/Feedback.php(146): Typecho_Plugin-&gt;__call('Widget_Feedback...', Array)
+#3 /nowtime.cc/var/Widget/Feedback.php(336): Widget_Feedback-&gt;comment()
+#4 /nowtime.cc/var/Typecho/Router.php(138): Widget_Feedback-&gt;action()
+#5 /nowtime.cc/index.php(30): Typecho_Router::dispatch()
+#6 {main}</code></pre><h1>原因</h1><p>在静态方法中调用非静态方法，导致其报错</p><h1>解决方法</h1><p>将 <strong>静态方法</strong> 中调用 <strong>非静态方法</strong> <code>$this-&gt;</code> 改成 <code>(new self())-&gt;</code> 即可</p><p>以下是修改后的 <code>Plugin.php</code>，你可以直接复制以下代码进行替换：</p><pre><code>&lt;?php
+if (!defined('__TYPECHO_ROOT_DIR__')) {
+    exit;
+}
+
+/**
+ * Typecho评论推送到钉钉插件
+ *
+ * @package CommentToDingtalk
+ * @author MoLeft
+ * @version 1.0
+ * @link http://www.moleft.cn/
+ */
+class CommentToDingtalk_Plugin implements Typecho_Plugin_Interface
+{
+    /* 激活插件方法 */
+    public static function activate()
+    {
+        //挂载评论接口
+        Typecho_Plugin::factory('Widget_Feedback')-&gt;finishComment = array('CommentToDingtalk_Plugin', 'send');
+
+        return '插件已激活,请设置相关信息';
+    }
+
+    /* 禁用插件方法 */
+    public static function deactivate()
+    {
+        return '插件已禁用';
+    }
+
+    /* 插件配置方法 */
+    public static function config(Typecho_Widget_Helper_Form $form)
+    {
+        $webhook = new Typecho_Widget_Helper_Form_Element_Text('webhook', null, '', 'Webhook地址', '请将钉钉中的webhook地址填到此处');
+        $secret  = new Typecho_Widget_Helper_Form_Element_Text('secret', null, '', 'Secret密钥', '请将钉钉中的Secret密钥填到此处');
+        $form-&gt;addInput($webhook);
+        $form-&gt;addInput($secret);
+    }
+
+    /**
+     * 个人用户的配置面板
+     *
+     * @access public
+     * @param Typecho_Widget_Helper_Form $form
+     * @return void
+     */
+    public static function personalConfig(Typecho_Widget_Helper_Form $form)
+    {
+
+    }
+
+    /* 插件实现方法 */
+    public static function render()
+    {
+
+    }
+
+    /* 推送通知方法 */
+    public static function send($post)
+    {
+        //获取系统配置
+        $options = Helper::options();
+        //判断是否配置webhook地址
+        if (is_null($options-&gt;plugin('CommentToDingtalk')-&gt;webhook)) {
+            throw new Typecho_Plugin_Exception(_t('Webhook地址未配置'));
+        }
+        //判断是否配置secret密钥
+        if (is_null($options-&gt;plugin('CommentToDingtalk')-&gt;secret)) {
+            throw new Typecho_Plugin_Exception(_t('Secret密钥未配置'));
+        }
+        $webhook = $options-&gt;plugin('CommentToDingtalk')-&gt;webhook;
+        $secret  = $options-&gt;plugin('CommentToDingtalk')-&gt;secret;
+        $text = &quot;###您收到了一条新评论\n文章标题：{$post-&gt;title}\n评论作者：{$post-&gt;author}\n评论内容：{$post-&gt;text}&quot;;
+        $data = [
+            'msgtype' =&gt; 'actionCard',
+            'actionCard' =&gt; [
+                'title' =&gt; '您收到了一条新评论',
+                'text' =&gt; $text,
+                'btnOrientation' =&gt; 1,
+                'hideAvatar' =&gt; 0,
+                'singleTitle' =&gt; '查看详情',
+                'singleURL' =&gt;$post-&gt;permalink
+            ]
+        ];
+        
+        //我修改了这里
+        //我修改了这里
+        //我修改了这里
+        $response = (new self())-&gt;request((new self())-&gt;getWebhook($webhook,$secret), json_encode($data));
+        //我修改了这里
+        //我修改了这里
+        //我修改了这里
+
+        if($response['errcode'] !== 0){
+            //发送失败，记录日志
+            $log = @file_get_contents('./error.log');
+            file_put_contents('./error.log','['.date(&quot;Y-m-d H:i:s&quot;).']'.$response['errmsg']);
+        }
+    }
+
+    /* Curl请求精简版 */
+    private function request($url, $postData)
+    {
+        $ch = curl_init();
+        curl_setopt($ch, CURLOPT_URL, $url);
+        curl_setopt($ch, CURLOPT_POST, 1);
+        curl_setopt($ch, CURLOPT_CONNECTTIMEOUT, 5);
+        curl_setopt($ch, CURLOPT_HTTPHEADER, array('Content-Type: application/json;charset=utf-8'));
+        curl_setopt($ch, CURLOPT_POSTFIELDS, $postData);
+        curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+        // 线下环境不用开启curl证书验证, 未调通情况可尝试添加该代码
+        // curl_setopt ($ch, CURLOPT_SSL_VERIFYHOST, 0);
+        // curl_setopt ($ch, CURLOPT_SSL_VERIFYPEER, 0);
+        $data = curl_exec($ch);
+        curl_close($ch);
+        return json_decode($data, true);
+    }
+
+    /* webhook地址 */
+    private function getWebhook($webhook, $secret)
+    {
+        list($msec, $sec) = explode(' ', microtime());
+        $timestamp        = (float) sprintf('%.0f', (floatval($msec) + floatval($sec)) * 1000);
+        $sign             = $this-&gt;signSecret($timestamp, $secret);
+        $webhook_url      = &quot;{$webhook}&amp;timestamp={$timestamp}&amp;sign={$sign}&quot;;
+        return $webhook_url;
+    }
+
+    /* 计算签名 */
+    private function signSecret($timestamp,$secret){
+        $stringToSign = $timestamp.&quot;\n&quot;.$secret;
+        return urlencode(base64_encode(hash_hmac('sha256', $stringToSign, $secret, true)));
+    }
+}</code></pre>            </div>
+        </article>
+	        <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+			<h2 class="post-title" itemprop="name headline"><a itemtype="url" href="https://nowtime.cc/php/916.html">WordPress 设置私人站点，不登陆无法访问</a></h2>
+			<ul class="post-meta">
+				<li itemprop="author" itemscope itemtype="http://schema.org/Person">作者: <a itemprop="name" href="https://nowtime.cc/author/1/" rel="author">Chuwen</a></li>
+				<li>时间: <time datetime="2020-04-06T19:56:00+08:00" itemprop="datePublished">2020-04-06</time></li>
+				<li>分类: <a href="https://nowtime.cc/category/php/">PHP</a></li>
+				<li itemprop="interactionCount"><a itemprop="discussionUrl" href="https://nowtime.cc/php/916.html#comments">7 条评论</a></li>
+			</ul>
+            <div class="post-content" itemprop="articleBody">
+    			<h1>前言</h1><p>我专门搭建了属于 <strong>私人的博客</strong>，不想给没有拥有该站账号的人访问（或许到了某一天我会悄悄地开放）</p><h1>开始</h1><p>打开 <code>/wp-blog-header.php</code> 文件，在 <code>require_once __DIR__ . '/wp-load.php';</code> 这一行后面加入以下代码：</p><pre><code>&lt;?php
+/**
+ * Loads the WordPress environment and template.
+ *
+ * @package WordPress
+ */
+
+if ( ! isset( $wp_did_header ) ) {
+
+    $wp_did_header = true;
+
+    // Load the WordPress library.
+    require_once __DIR__ . '/wp-load.php';
+    
+        //加入这段代码即可
+        //is_user_logged_in() 函数事判断用户是否登录
+        //如果登陆了就返回 true，未登录返回 false
+    if(!is_user_logged_in()){
+        die(&quot;&lt;h1&gt;很抱歉，这是我的私人站点，我不想给任何人查看本站的内容！除非你拥有本站账号&lt;/h1&gt;如果你要登录请点击：&lt;a href='/wp-admin'&gt;登录&lt;/a&gt;&quot;);
+    }
+
+    // Set up the WordPress query.
+    wp();
+
+    // Load the theme template.
+    require_once ABSPATH . WPINC . '/template-loader.php';
+
+}
+</code></pre><h1>效果</h1><p>未登录显示的页面：<br><img src="https://cdn.nowtime.cc/2020/04/06/231126751.png" alt="未登录显示的页面" title="未登录显示的页面"></p><p>登录了显示的页面：<br><img src="https://cdn.nowtime.cc/2020/04/06/2400331521.png" alt="登录了显示的页面" title="登录了显示的页面"></p>            </div>
+        </article>
+	        <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+			<h2 class="post-title" itemprop="name headline"><a itemtype="url" href="https://nowtime.cc/nginx/915.html">Nginx/Tengine 添加模块(非覆盖安装)</a></h2>
+			<ul class="post-meta">
+				<li itemprop="author" itemscope itemtype="http://schema.org/Person">作者: <a itemprop="name" href="https://nowtime.cc/author/1/" rel="author">Chuwen</a></li>
+				<li>时间: <time datetime="2020-04-06T15:46:52+08:00" itemprop="datePublished">2020-04-06</time></li>
+				<li>分类: <a href="https://nowtime.cc/category/nginx/">Nginx</a></li>
+				<li itemprop="interactionCount"><a itemprop="discussionUrl" href="https://nowtime.cc/nginx/915.html#comments">评论</a></li>
+			</ul>
+            <div class="post-content" itemprop="articleBody">
+    			<blockquote>假设我要添加 <a href="https://github.com/alibaba/nginx-http-concat">nginx-http-concat</a> 这个模块</blockquote><h1>查看原来的编译参数</h1><pre><code>nginx -V</code></pre><p>返回结果</p><pre><code>root@Chuwen:~/tengine-2.3.2# nginx -V
+Tengine version: Tengine/2.3.2
+nginx version: nginx/1.17.3
+built by gcc 6.3.0 20170516 (Debian 6.3.0-18+deb9u1) 
+built with OpenSSL 1.1.1b  26 Feb 2019
+TLS SNI support enabled
+configure arguments: --user=www --group=www --prefix=/www/server/nginx --add-module=/www/server/nginx/src/ngx_devel_kit --add-module=/www/server/nginx/src/lua_nginx_module --add-module=/www/server/nginx/src/ngx_cache_purge --add-module=/www/server/nginx/src/nginx-sticky-module --with-openssl=/www/server/nginx/src/openssl --with-pcre=pcre-8.43 --with-http_v2_module --with-stream --with-stream_ssl_module --with-stream_ssl_preread_module --with-http_stub_status_module --with-http_ssl_module --with-http_image_filter_module --with-http_gzip_static_module --with-http_gunzip_module --with-ipv6 --with-http_sub_module --with-http_flv_module --with-http_addition_module --with-http_realip_module --with-http_mp4_module --with-ld-opt=-Wl,-E --with-cc-opt=-Wno-error --with-http_dav_module --add-module=/www/server/nginx/src/nginx-dav-ext-module</code></pre><h1>添加需要的模块</h1><pre><code>--add-module=/root/nginx-http-concat-master</code></pre><h1>重新编译配置</h1><blockquote>加上之前的参数与新增的参数</blockquote><pre><code># 进入源码目录，假设你没有删除
+cd /www/server/nginx
+
+./configure --user=www --group=www --prefix=/www/server/nginx --add-module=/root/ngx_devel_kit --add-module=/www/server/nginx/src/lua_nginx_module --add-module=/www/server/nginx/src/ngx_cache_purge --add-module=/www/server/nginx/src/nginx-sticky-module --with-openssl=/www/server/nginx/src/openssl --with-pcre=pcre-8.43 --with-http_v2_module --with-stream --with-stream_ssl_module --with-stream_ssl_preread_module --with-http_stub_status_module --with-http_ssl_module --with-http_image_filter_module --with-http_gzip_static_module --with-http_gunzip_module --with-ipv6 --with-http_sub_module --with-http_flv_module --with-http_addition_module --with-http_realip_module --with-http_mp4_module --with-ld-opt=-Wl,-E --with-cc-opt=-Wno-error --with-http_dav_module --add-module=/www/server/nginx/src/nginx-dav-ext-module \
+--add-module=/root/nginx-http-concat-master
+# 添加模块</code></pre><h1>执行编译，但不安装</h1><pre><code>make</code></pre><h1>查看下编译好的二进制文件</h1><pre><code>ldd objs/nginx |grep lua </code></pre><h1>替换 nginx 二进制文件</h1><pre><code>mv /usr/local/nginx/sbin/nginx /usr/local/nginx/sbin/nginx_back_2020.04.06
+cp ./objs/nginx /www/server/nginx/sbin/nginx</code></pre><hr><p>参考自：<a href="https://blog.linuxhub.cn/?p=3220">https://blog.linuxhub.cn/?p=3220</a></p>            </div>
+        </article>
+	        <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+			<h2 class="post-title" itemprop="name headline"><a itemtype="url" href="https://nowtime.cc/uncategorized/906.html">(2019年8月) 第44次《中国互联网络发展状况统计报告》 | 中国(电信、移动、联通等...) IPv4/IPv6 持有量</a></h2>
+			<ul class="post-meta">
+				<li itemprop="author" itemscope itemtype="http://schema.org/Person">作者: <a itemprop="name" href="https://nowtime.cc/author/1/" rel="author">Chuwen</a></li>
+				<li>时间: <time datetime="2020-03-31T10:33:00+08:00" itemprop="datePublished">2020-03-31</time></li>
+				<li>分类: <a href="https://nowtime.cc/category/uncategorized/">其他分类</a></li>
+				<li itemprop="interactionCount"><a itemprop="discussionUrl" href="https://nowtime.cc/uncategorized/906.html#comments">评论</a></li>
+			</ul>
+            <div class="post-content" itemprop="articleBody">
+    			<h1>第44次《中国互联网络发展状况统计报告》</h1><blockquote>参考数据：<a href="http://www.cac.gov.cn/pdf/20190829/44.pdf">第44次《中国互联网络发展状况统计报告》</a><br>数据来源：<a href="http://www.cnnic.cn">中国互联网络信息中心</a></p><p>该报告没有写出 <em>中国主要骨干网络国际出口带宽数</em><br>以下是为便于读者阅读，摘要的部分数据，具体以 <a href="http://www.cac.gov.cn/pdf/20190829/44.pdf">第44次《中国互联网络发展状况统计报告》</a> 为准</blockquote><h1>摘要</h1><h2>基础数据</h2><blockquote>仅为粗略摘要，可能有摘抄错误的地方，详细请查阅 <a href="http://www.cac.gov.cn/pdf/20190829/44.pdf">第44次《中国互联网络发展状况统计报告》</a></blockquote><ul><li>截至2019年6月，我国网民规模达 8.54亿，较2018年底增长 2598万，互联网普及率达 61.2%，较 2018年底提升1.6个百分点。</li><li>截至2019年6月，我国手机网民规模达8.47亿，较2018年底增长2984万，我国网民使用手机上网的比例达99.1%,较2018年底提升0.5个百分点。</li><li>截至2019年6月，我国农村网民规模为2.25亿，占网民整体的26.3%，较2018年底增长305万;城镇网民规模为6.30亿，占网民整体的73.7%，较2018年底增长2293万。</li><li>截至2019年6月,我国网民使用手机上网的比例达99.1%;使用电视上网的比例为33.1%;使用台式电脑上网、笔记本电脑上网、平板电脑上网的比例分别为46.2%、36.1%和28.3%。</li><li>截至2019年6月，我国IPv6地址数量为50286块/32，较2018年底增长14.3%。</li><li>截至2019年6月，我国域名总数为4800万个;其中，“.CN”域名总数为2185万个，较2018年底增长2.9%，占我国域名总数的45.5%。</li><li>截至2019年6月，我国即时通信用户规模达8.25亿，较2018年底增长3298万，占网民整体的96.5%;手机即时通信用户规模达8.21亿，较2018年底增长4040万，占手机网民的96.9%。</li><li>截至2019年6月，我国网络新闻用户规模达6.86亿，较2018年底增长1114万，占网民整体的80.3%;手机网络新闻用户规模达6.60亿，较2018年底增长734万，占手机网民的78.0%。</li><li>截至2019年6月，我国网络购物用户规模达6.39亿，较2018年底增长2871万，占网民整体的74.8%;手机网络购物用户规模达6.22亿,较2018年底增长2989万，占手机网民的73.4%。</li><li>截至2019年6月，我国网上外卖用户规模达4.21亿，较2018年底增长1516万，占网民整体的49.3%;手机网上外卖用户规模达4.17亿,较2018年底增长2037万，占手机网民的49.3%。</li><li>截至2019年6月，我国网络支付用户规模达6.33亿，较2018年底增长3265万，占网民整体的74.1%;手机网络支付用户规模达6.21亿,较2018年底增长3788万，占手机网民的73.4%。</li><li>截至2019年6月，我国网络视频用户2规模达7.59亿，较2018年底增长3391万，占网民整体的88.8%;其中，短视频用户规模为6.48亿，占网民整体的75.8%。</li><li>截至2019年6月，我国网约出租车用户规模达3.37亿，较2018年底增长670万，占网民整体的39.4%;我国网约专车或快车用户规模达3.39亿，较2018年底增长633万，占网民整体的39.7%。</li><li>截至2019年6月，我国在线政务服务用户规模达5.09亿，占网民整体的59.6%。</li></ul><h2>趋势特点</h2><blockquote>部分摘要，详细请查阅 <a href="http://www.cac.gov.cn/pdf/20190829/44.pdf">第44次《中国互联网络发展状况统计报告》</a></blockquote><p><strong>IPv6 地址数量全球第一，“.CN”域名数量持续增长</strong><br>截至2019年6月，我国 IPv6地址 数量为 <code>50286块 / 32</code>，较2018年底增长14.3%，已跃居全球第一位。我国IPv6规模部署不断加速，IPv6 活跃用户数达 1.3 亿，基础电信企业已分配IPv6地址用户数 12.07亿3;域名总数为 4800万个，其中“.CN”域名总数为 2185万个，较2018年底增长 2.9%，占我国域名总数的 45.5%。2019年6月，首届“中国互联网基础资源大会2019”在京召开，大会围绕网络强国战略大局，回顾中国互联网二十五周年发展历程，聚焦互联网基础资源行业发展，展示前沿创新技术，搭建行业交流平台，推动行业规范有序发展。</p><hr><h1>互联网基础资源 <em>(摘要)</em></h1><h2>（1）基础资源概述</h2><blockquote>截至 2019年6月，我国 IPv4 地址数量为 38598万个，IPv6 地址数量为 <code>50286块/32</code>。我国域名总数为 4800万个。其中，“.CN”域名总数为2185万个,占我国域名总数的 45.5%。</blockquote><h3>2018.12- 2019.6 互联网基础资源对比</h3><blockquote><strong>IPv4* </strong> 2018年12月服2019年6月数据均含港、澳、台地区。<br><strong>IPv6* </strong> 2018年12月服2019年6月数据均含港、澳、台地区。<br><strong>域名 - 2018年12月* </strong> 2018年12月统计数据不含新通用顶级域名(New gTLD)数量。<br><strong>域名 - 2019年6月* </strong> 2019年6月统计数据含新通用顶级域名(NewgTLD)数量。</blockquote><table><thead><tr><th align="right"> </th><th align="right">2018年12月</th><th align="right">2019年6月</th><th align="right">半年增长量</th><th align="right">半年增长率</th></tr></thead><tbody><tr><td align="right">IPv4* (个)</td><td align="right">385,843 968</td><td align="right">385,979,136</td><td align="right">135,168</td><td align="right">0.04%</td></tr><tr><td align="right">IPv6* (块/32)</td><td align="right">43,985</td><td align="right">50,286</td><td align="right">6,301</td><td align="right">14.3%</td></tr><tr><td align="right">域名 (个)</td><td align="right">37,927,527*</td><td align="right">48,001,471*</td><td align="right">--</td><td align="right">--</td></tr><tr><td align="right">其中.CN域名 (个)</td><td align="right">21 ,243,478</td><td align="right">21 ,851 ,990</td><td align="right">608,512</td><td align="right">2.9%</td></tr></tbody></table><hr><h2>中国各地区 IPv4 地址数量</h2><table><thead><tr><th align="center">地区</th><th align="center">地址量</th><th align="center">折合数</th></tr></thead><tbody><tr><td align="center">中国大陆</td><td align="center">338,991,360</td><td align="center">20A + 52B + 153C</td></tr><tr><td align="center">中国台湾</td><td align="center">35,678,976</td><td align="center">2A + 32B + 107C</td></tr><tr><td align="center">中国香港</td><td align="center">10,972,672</td><td align="center">167B + 110C</td></tr><tr><td align="center">中国澳门</td><td align="center">336,128</td><td align="center">5B + 32C</td></tr></tbody></table><!--![中国各地区 IPv4 地址数量 - nowtime.cc 现在网][5]--><hr><h2>大陆地区按分配单位 IPv4 地址数</h2><table><thead><tr><th align="center">单位名称</th><th align="center">地址量</th><th align="center">折合数</th></tr></thead><tbody><tr><td align="center">中国电信集团公司</td><td align="center">125,763,328</td><td align="center">7A+126B+255C</td></tr><tr><td align="center">中国联合网络通信有限公司</td><td align="center">69,866,752*</td><td align="center">4A+42B+21C</td></tr><tr><td align="center">CNNIC IP 地址分配联盟</td><td align="center">61,960,448*</td><td align="center">3A+177B+113C</td></tr><tr><td align="center">中国移动通信集团公司</td><td align="center">35,294,208</td><td align="center">2A+26B+140C</td></tr><tr><td align="center">中国教育和科研计算机网</td><td align="center">16,649,728</td><td align="center">254B+14C</td></tr><tr><td align="center">中移铁通有限公司</td><td align="center">15,796,224*</td><td align="center">241B+8C</td></tr><tr><td align="center">其它</td><td align="center">13,660,672</td><td align="center">208A+114C</td></tr><tr><td align="center">合计</td><td align="center">338,991,360</td><td align="center">20A+52B+153C</td></tr></tbody></table><p><img src="https://cdn.nowtime.cc/2020/03/31/466394716.png" alt="大陆地区按分配单位 IPv4 地址数 - nowtime.cc 现在网" title="大陆地区按分配单位 IPv4 地址数 - nowtime.cc 现在网"></p><hr><h2>中国大陆地区按分配单位 IPv6 地址数</h2><table><thead><tr><th align="center">单位名称</th><th align="center">地址量</th></tr></thead><tbody><tr><td align="center">中国电信集团公司</td><td align="center">16,387</td></tr><tr><td align="center">CNNIC IP 地址分配联盟</td><td align="center">14,025*</td></tr><tr><td align="center">中国教育和科研计算机网</td><td align="center">6,162</td></tr><tr><td align="center">中国联合网络通信有限公司</td><td align="center">4,097</td></tr><tr><td align="center">中国移动通信集团公司</td><td align="center">4,097</td></tr><tr><td align="center">中移铁通有限公司</td><td align="center">2,049*</td></tr><tr><td align="center">中国科技网</td><td align="center">17*</td></tr><tr><td align="center">其它</td><td align="center">481</td></tr><tr><td align="center">合计</td><td align="center">47,315</td></tr></tbody></table><p><img src="https://cdn.nowtime.cc/2020/03/31/276695503.png" alt="中国大陆地区按分配单位 IPv6 地址数" title="中国大陆地区按分配单位 IPv6 地址数"></p><hr><blockquote><h3>以往报告：</h3><ul><li><a href="https://nowtime.cc/news/757.html">(2019年2月)中国主要骨干网络国际出口带宽数 | 第43次《中国互联网络发展状况统计报告》</a></li><li><a href="https://nowtime.cc/news/556.html">(2018年8月)中国主要骨干网络国际出口带宽数 | 第42次《中国互联网络发展状况统计报告》</a></li></ul></blockquote>            </div>
+        </article>
+	
+    <ol class="page-navigator"><li class="current"><a href="https://nowtime.cc/page/1/">1</a></li><li><a href="https://nowtime.cc/page/2/">2</a></li><li><a href="https://nowtime.cc/page/3/">3</a></li><li><a href="https://nowtime.cc/page/4/">4</a></li><li><span>...</span></li><li><a href="https://nowtime.cc/page/41/">41</a></li><li class="next"><a href="https://nowtime.cc/page/2/">后一页 &raquo;</a></li></ol></div><!-- end #main-->
+
+<div class="col-mb-12 col-offset-1 col-3 kit-hidden-tb" id="secondary" role="complementary">
+        <section class="widget">
+		<h3 class="widget-title">最新文章</h3>
+        <ul class="widget-list">
+            <li><a href="https://nowtime.cc/php/922.html">TodayInHistory | 历史上的今天数据库 PHP版API</a></li><li><a href="https://nowtime.cc/php/921.html">Typecho 使用 CommentToDingtalk (评论推送至钉钉)插件遇到的问题</a></li><li><a href="https://nowtime.cc/php/916.html">WordPress 设置私人站点，不登陆无法访问</a></li><li><a href="https://nowtime.cc/nginx/915.html">Nginx/Tengine 添加模块(非覆盖安装)</a></li><li><a href="https://nowtime.cc/uncategorized/906.html">(2019年8月) 第44次《中国互联网络发展状况统计报告》 | 中国(电信、移动、联通等...) IPv4/IPv6 持有量</a></li><li><a href="https://nowtime.cc/js/902.html">Ajax 跨域请求 Cookie 无法携带/保存的解决办法</a></li><li><a href="https://nowtime.cc/nginx/901.html">Nginx如何配置跨域(多个域名)</a></li><li><a href="https://nowtime.cc/html5/897.html">MDUI 实现右击菜单弹出菜单栏</a></li><li><a href="https://nowtime.cc/chat/895.html">Curiosity's 1.8-Billion-Pixel Panorama</a></li><li><a href="https://nowtime.cc/trick/892.html">各大图床 API</a></li>        </ul>
+    </section>
+    
+        <section class="widget">
+		<h3 class="widget-title">最近回复</h3>
+        <ul class="widget-list">
+                            <li><a href="https://nowtime.cc/php/921.html#comment-259">Chuwen</a>: 嗯嗯，但用 self::request 在高版本（我是在 PHP...</li>
+                    <li><a href="https://nowtime.cc/php/921.html#comment-258">MoLeft</a>: 其实这个错误是我的锅，因为我博客上面用的是self::reque...</li>
+                    <li><a href="https://nowtime.cc/php/921.html#comment-257">Chuwen</a>: 测试评论</li>
+                    <li><a href="https://nowtime.cc/php/916.html#comment-256">Chuwen</a>: 测试评论</li>
+                    <li><a href="https://nowtime.cc/php/916.html#comment-255">Chuwen</a>: 测试评论</li>
+                    <li><a href="https://nowtime.cc/php/916.html#comment-254">Chuwen</a>: 测试评论</li>
+                    <li><a href="https://nowtime.cc/php/916.html#comment-253">Chuwen</a>: 测试评论</li>
+                    <li><a href="https://nowtime.cc/php/916.html#comment-252">Chuwen</a>: 测试下评论</li>
+                    <li><a href="https://nowtime.cc/php/916.html#comment-251">Chuwen</a>: 测试下评论</li>
+                    <li><a href="https://nowtime.cc/php/916.html#comment-250">Chuwen</a>: 测试下评论</li>
+                </ul>
+    </section>
+    
+        <section class="widget">
+		<h3 class="widget-title">分类</h3>
+        <ul class="widget-list"><li class="category-level-0 category-parent"><a href="https://nowtime.cc/category/activity_sharing/">活动分享</a></li><li class="category-level-0 category-parent"><a href="https://nowtime.cc/category/linux/">Linux</a><ul class="widget-list"><li class="category-level-1 category-child category-level-odd"><a href="https://nowtime.cc/category/linux-trick/">Linux技巧</a></li><li class="category-level-1 category-child category-level-odd"><a href="https://nowtime.cc/category/router/">路由器</a></li></ul></li><li class="category-level-0 category-parent"><a href="https://nowtime.cc/category/webdev/">WEB开发</a></li><li class="category-level-0 category-parent"><a href="https://nowtime.cc/category/php/">PHP</a><ul class="widget-list"><li class="category-level-1 category-child category-level-odd"><a href="https://nowtime.cc/category/php-trick/">PHP技巧</a></li><li class="category-level-1 category-child category-level-odd"><a href="https://nowtime.cc/category/php-source/">PHP源码</a></li></ul></li><li class="category-level-0 category-parent"><a href="https://nowtime.cc/category/nginx/">Nginx</a></li><li class="category-level-0 category-parent"><a href="https://nowtime.cc/category/jquery/">JQuery</a></li><li class="category-level-0 category-parent"><a href="https://nowtime.cc/category/html5/">HTML5</a></li><li class="category-level-0 category-parent"><a href="https://nowtime.cc/category/chat/">唠嗑闲聊</a></li><li class="category-level-0 category-parent"><a href="https://nowtime.cc/category/news/">谈天说地</a></li><li class="category-level-0 category-parent"><a href="https://nowtime.cc/category/trick/">神奇技巧</a></li><li class="category-level-0 category-parent"><a href="https://nowtime.cc/category/uncategorized/">其他分类</a></li><li class="category-level-0 category-parent"><a href="https://nowtime.cc/category/program-tools/">编程工具</a></li><li class="category-level-0 category-parent"><a href="https://nowtime.cc/category/type/">分类</a><ul class="widget-list"><li class="category-level-1 category-child category-level-odd"><a href="https://nowtime.cc/category/%E5%AD%90%E5%88%86%E7%B1%BB/">子分类</a></li></ul></li><li class="category-level-0 category-parent"><a href="https://nowtime.cc/category/lua/">Lua</a></li><li class="category-level-0 category-parent"><a href="https://nowtime.cc/category/android/">Android</a></li><li class="category-level-0 category-parent"><a href="https://nowtime.cc/category/java/">Java</a></li><li class="category-level-0 category-parent"><a href="https://nowtime.cc/category/windows/">Windows</a></li><li class="category-level-0 category-parent"><a href="https://nowtime.cc/category/bootstrap/">Bootstrap</a></li><li class="category-level-0 category-parent"><a href="https://nowtime.cc/category/tech/">科技资讯</a></li><li class="category-level-0 category-parent"><a href="https://nowtime.cc/category/js/">JavaScript</a></li><li class="category-level-0 category-parent"><a href="https://nowtime.cc/category/software/">软件</a></li><li class="category-level-0 category-parent"><a href="https://nowtime.cc/category/c/">C/C++</a></li><li class="category-level-0 category-parent"><a href="https://nowtime.cc/category/photoshop/">PhotoShop</a></li><li class="category-level-0 category-parent"><a href="https://nowtime.cc/category/mysql/">MySQL</a></li><li class="category-level-0 category-parent"><a href="https://nowtime.cc/category/github/">GitHub</a></li><li class="category-level-0 category-parent"><a href="https://nowtime.cc/category/golang/">Golang</a></li><li class="category-level-0 category-parent"><a href="https://nowtime.cc/category/docker/">Docker</a></li></ul>	</section>
+    
+        <section class="widget">
+		<h3 class="widget-title">归档</h3>
+        <ul class="widget-list">
+            <li><a href="https://nowtime.cc/2020/04/">April 2020</a></li><li><a href="https://nowtime.cc/2020/03/">March 2020</a></li><li><a href="https://nowtime.cc/2020/02/">February 2020</a></li><li><a href="https://nowtime.cc/2020/01/">January 2020</a></li><li><a href="https://nowtime.cc/2019/12/">December 2019</a></li><li><a href="https://nowtime.cc/2019/11/">November 2019</a></li><li><a href="https://nowtime.cc/2019/10/">October 2019</a></li><li><a href="https://nowtime.cc/2019/09/">September 2019</a></li><li><a href="https://nowtime.cc/2019/08/">August 2019</a></li><li><a href="https://nowtime.cc/2019/07/">July 2019</a></li><li><a href="https://nowtime.cc/2019/06/">June 2019</a></li><li><a href="https://nowtime.cc/2019/05/">May 2019</a></li><li><a href="https://nowtime.cc/2019/04/">April 2019</a></li><li><a href="https://nowtime.cc/2019/03/">March 2019</a></li><li><a href="https://nowtime.cc/2019/02/">February 2019</a></li><li><a href="https://nowtime.cc/2019/01/">January 2019</a></li><li><a href="https://nowtime.cc/2018/12/">December 2018</a></li><li><a href="https://nowtime.cc/2018/11/">November 2018</a></li><li><a href="https://nowtime.cc/2018/10/">October 2018</a></li><li><a href="https://nowtime.cc/2018/08/">August 2018</a></li><li><a href="https://nowtime.cc/2018/07/">July 2018</a></li><li><a href="https://nowtime.cc/2018/06/">June 2018</a></li><li><a href="https://nowtime.cc/2018/05/">May 2018</a></li><li><a href="https://nowtime.cc/2018/04/">April 2018</a></li><li><a href="https://nowtime.cc/2018/01/">January 2018</a></li><li><a href="https://nowtime.cc/2017/12/">December 2017</a></li><li><a href="https://nowtime.cc/2017/10/">October 2017</a></li><li><a href="https://nowtime.cc/2017/09/">September 2017</a></li><li><a href="https://nowtime.cc/2017/08/">August 2017</a></li><li><a href="https://nowtime.cc/2017/07/">July 2017</a></li><li><a href="https://nowtime.cc/2017/06/">June 2017</a></li><li><a href="https://nowtime.cc/2017/05/">May 2017</a></li><li><a href="https://nowtime.cc/2017/04/">April 2017</a></li><li><a href="https://nowtime.cc/2017/03/">March 2017</a></li><li><a href="https://nowtime.cc/2017/02/">February 2017</a></li>        </ul>
+	</section>
+    
+    	<section class="widget">
+		<h3 class="widget-title">其它</h3>
+        <ul class="widget-list">
+                            <li class="last"><a href="https://nowtime.cc/admin/login.php">登录</a></li>
+                        <li><a href="https://nowtime.cc/feed/">文章 RSS</a></li>
+            <li><a href="https://nowtime.cc/feed/comments/">评论 RSS</a></li>
+            <li><a href="http://www.typecho.org">Typecho</a></li>
+        </ul>
+	</section>
+    
+</div><!-- end #sidebar -->
+        
+                </div><!-- end .row -->
+            </div>
+        </div><!-- end #body -->
+
+
+        <footer id="footer" role="contentinfo">
+        <!--   	<span>当前：<a id="footer-online-num" style="font-size:16px"></a> 人在线</span><br/>-->
+            <span>Copyright &copy; 2017 ~ 2020 <a href="https://nowtime.cc/" title="现在工具网-NowTool.cn">现在网</a>. All Rights Reserved.</span><br/>
+            <span><a href="https://nowtime.cc/links.html" target="_blank">友情链接</a></span>|
+            <span><a href="http://www.beian.miit.gov.cn/" target="_blank">赣ICP备17001352号-1</a></span>|
+            <span><a href="https://nowtime.cc/about.html" target="_blank">关于我&amp;本站</a></span>
+                      <hr/>
+          <h4>如无特别声明，本站的文章均为 <a href="https://nowtime.cc" target="_blank">现在网</a>（<code>NowTime.cc</code>）原创，转载请遵循 <a href="https://creativecommons.org/licenses/by-nc/4.0/deed.zh" target="_blank">署名-非商业性使用 4.0 国际（CC BY-NC 4.0）</a> 协议，即转载请注明文章来源。</h4>
+        </footer><!-- end #footer -->
+
+        <script src="https://cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
+        <script src="https://static-1253554378.file.myqcloud.com/layui/2.4.5/layui.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.5/lib/darkmode-js.min.js"></script>
+
+<style>
+.gray {
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    -ms-filter: grayscale(100%);
+    -o-filter: grayscale(100%);
+    -webkit-filter: grayscale(1);
+}
+</style>
+
+        <script>
+var options = {
+  bottom: '64px', // default: '32px'
+  right: 'unset', // default: '32px'
+  left: '16px', // default: 'unset'
+  time: '0.5s', // default: '0.3s'
+  mixColor: '#fff', // default: '#fff'
+  backgroundColor: '#fff',  // default: '#fff'
+  buttonColorDark: '#100f2c',  // default: '#100f2c'
+  buttonColorLight: '#fff', // default: '#fff'
+  saveInCookies: false, // default: true,
+  label: '🌓', // default: ''
+  autoMatchOsTheme: true // default: true
+}
+
+const darkmode = new Darkmode(options);
+darkmode.showWidget();
+
+if(parseInt(new Date().getTime()/1000) >= 1585929600 && parseInt(new Date().getTime()/1000) < 1586015999){
+document.body.classList.add("gray");
+}
+
+
+layui.config({base:"https://static-1253554378.file.myqcloud.com/layui/2.4.5/",});layui.use(["layer"],function(){layer.photos({photos:"#body",anim:5})});$(function(){var _hmt=_hmt||[];var hm=document.createElement("script");hm.src="https://hm.baidu.com/hm.js?08efea742a49ed393930ea0c72f83fa1";var s=document.getElementsByTagName("script")[0];s.parentNode.insertBefore(hm,s);var bp=document.createElement("script");var curProtocol=window.location.protocol.split(":")[0];if(curProtocol==="https"){bp.src="https://zz.bdstatic.com/linksubmit/push.js"}else{bp.src="http://push.zhanzhang.baidu.com/push.js"}var s=document.getElementsByTagName("script")[0];s.parentNode.insertBefore(bp,s)});var a_idx=0;jQuery(document).ready(function($){$("body").click(function(e){var a=new Array("富强","民主","文明","和谐","自由","平等","公正","法治","爱国","敬业","诚信","友善");var $i=$("<span/>").text(a[a_idx]);a_idx=(a_idx+1)%a.length;var x=e.pageX,y=e.pageY;$i.css({"z-index":1e+69,"top":y-20,"left":x,"position":"absolute","font-weight":"bold","color":"#ff6651"});$("body").append($i);$i.animate({"top":y-180,"opacity":0},1500,function(){$i.remove()})})});function run_date(date){var created=Date.parse(date);var now=new Date().getTime();var cha=now-created;var day=cha/86400000;var day_c=Math.floor(day);var hour=24*(day-day_c);var hour_c=Math.floor(hour);var min=60*(hour-hour_c);var min_c=Math.floor(min);var sec=Math.floor(60*(min-min_c));return"<a>"+day_c+"</a> 天 <a>"+hour_c+"</a> 小时 <a>"+min_c+"</a> 分 <a>"+sec+"</a> 秒"}$(document).ready(function(){if($("#site-run-time").length===1){setInterval(function(){$("#site-run-time").html(run_date("2017/02/10"))},1000)}});
+
+
+var scrollImg=document.createElement("div");scrollImg.title="点击返回顶部";scrollImg.style="cursor:pointer;position:fixed;right:48px;top:-70px;z-index:2;width:70px;height:70px;background:url(https://cdn.nowtime.cc/2020/01/10/2785826742.png) no-repeat;background-size:60px;transition:all .5s ease-in-out;opacity:1;";document.body.appendChild(scrollImg);var hnH=320;window.onscroll=function(){var scrollTop=document.documentElement.scrollTop||document.body.scrollTop;if(scrollTop>hnH){scrollImg.style.top="72%"}else{if(scrollTop<hnH){scrollImg.style.top="-70px"}}};if((document.documentElement.scrollTop||document.body.scrollTop)>hnH){scrollImg.style.top="72%"}scrollImg.onclick=function(){$("#box").animate({height:"300px"});window.scrollTo({top:0,behavior:"smooth"})};
+        </script>
+
+        <script type="application/ld+json">
+            {
+              "@context" : "http://schema.org",
+              "@type" : "BlogPosting",
+              "name" : "TodayInHistory | 历史上的今天数据库 PHP版API",
+              "headline" : "TodayInHistory | 历史上的今天数据库 PHP版API",
+              "author" : {
+                "@type" : "Article",
+                "name" : "陈文洲",
+                "author" : "陈文洲",
+                "image" : "http://q1.qlogo.cn/g?b=qq&nk=1361289290&s=0",
+                "datePublished" : "2020-04-12"
+              },
+              "dateModified" : "2020-04-12",
+              "datePublished" : "2020-04-12",
+              "url" : "https://nowtime.cc/php/922.html",
+              "publisher" : {
+                "@type" : "Thing",
+                "name" : "现在网"
+              },
+              "image" : ["https://cdn.nowtime.cc/2020/04/12/3758673377.png"]            }
+        </script>
+        <script src="https://nowtime.cc/usr/plugins/Like/js/jquery.js"></script>    <style type='text/css'>
+		.fa-thumbs-up{margin-right: 5px;top: 2px;width: 16px;height: 16px;display: inline-block; background: url(https://nowtime.cc/usr/plugins/Like/thumb_up.png) no-repeat left center; }
+    </style>
+
+<script type="text/javascript" src="https://nowtime.cc/usr/plugins/Like/js/jquery.fs.macaroon.js"></script>
+<script>
+    $(".post-like").on("click", function(){
+    	var th = $(this);
+		var id = th.attr('data-pid');
+		var cookies = $.macaroon('_syan_like') || "";
+		if (!id || !/^\d{1,10}$/.test(id)) return;
+		if (-1 !== cookies.indexOf("," + id + ",")) return alert("您已经赞过了！");
+		cookies ? cookies.length >= 160 ? (cookies = cookies.substring(0, cookies.length - 1), cookies = cookies.substr
+(1).split(","), cookies.splice(0, 1), cookies.push(id), cookies = cookies.join(","), $.macaroon("_syan_like", "," + cookies + 
+",")) : $.macaroon("_syan_like", cookies + id + ",") : $.macaroon("_syan_like", "," + id + ",");
+		$.post('https://nowtime.cc/action/like?up',{
+		cid:id
+		},function(data){
+		th.addClass('actived');
+		var zan = th.find('span').text();
+		th.find('span').text(parseInt(zan) + 1);
+		},'json');
+	});
+</script>
+<script type="text/javascript" src="https://nowtime.cc/usr/plugins/GoogleCodePrettify/prettify.js"></script><script type="text/javascript">window.onload = function () {var pre = document.getElementsByTagName('pre');for(i=0,l=pre.length;i<l;i++) pre[i].className += " prettyprint linenums";prettyPrint();}</script>    </body>
+</html>
