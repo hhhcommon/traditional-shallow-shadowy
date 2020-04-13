@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+    <link type="text/css" rel="stylesheet" href="/static/css/style.css"/>
+    <meta name="viewport" content="user-scalable=0">
+    <meta charset="UTF-8">
+    <title>云智校</title>
+</head>
+<body>
+<div style="position: absolute;right: 8%;top: 8%;width: 32%">
+    <img src="/static/images/phone.png" width="100%"/></div>
+<div style="position: absolute;width: 46%;top: 8%;left: 7%">
+    <img src="/static/images/logo.png" width="100%"/>
+</div>
+  <div style="position: absolute;width: 46%;top: 24%;left: 7%">
+        <div class="button"  style="padding-top: 0px; padding-bottom: 3%;">
+           <font size="18"> 学生端下载</font>
+        </div>
+    </div>
+    <div style="position: absolute;width: 46%;top: 31%;left: 7%">
+         <div class="button" style="padding-top: 0px; padding-bottom: 3%;">
+            <font size="18">商家端下载</font>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div style="position: absolute; padding-top: 500px; z-index: -999">
+    <img src="/static/images/插画.jpg" width="100%"/>
+</div>
+</body>
+<script>
+     function download_client() {
+            isWeiXin();
+            var u = navigator.userAgent, app = navigator.appVersion;
+            var isAndroid = u.indexOf('Android') > -1 || u.indexOf('Linux') > -1; //g
+            var isIOS = !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/); //ios终端
+            if (isAndroid) {
+                this.window.location.href='http://lc-avefaaux.cn-n1.lcfile.com/a2f180060daf6acbd5cb/app-release.apk'
+            }
+            if (isIOS) {
+                this.window.location.href='https://itunes.apple.com/cn/app/id1454996678?mt=8'
+            }
+     }
+     function download_shop_client() {
+           isWeiXin();
+            var u = navigator.userAgent, app = navigator.appVersion;
+            var isAndroid = u.indexOf('Android') > -1 || u.indexOf('Linux') > -1; //g
+            var isIOS = !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/); //ios终端
+            if (isAndroid) {
+                this.window.location.href='http://lc-avefaaux.cn-n1.lcfile.com/67f1e71b5d557927c74a/app-release.apk'
+            }
+            if (isIOS) {
+                this.window.location.href='https://itunes.apple.com/cn/app/id1454996678?mt=8'
+            }
+     }
+     function isWeiXin(){
+        //window.navigator.userAgent属性包含了浏览器类型、版本、操作系统类型、浏览器引擎类型等信息，这个属性可以用来判断浏览器类型
+        var ua = window.navigator.userAgent.toLowerCase();
+        //通过正则表达式匹配ua中是否含有MicroMessenger字符串
+        if(ua.match(/MicroMessenger/i) == 'micromessenger'){
+            alert("微信内不支持下载，请点击右上角省略号，在浏览器中打开");
+        }else{
+
+        }
+    }
+</script>
+</html>
